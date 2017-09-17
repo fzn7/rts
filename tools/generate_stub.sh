@@ -1,5 +1,5 @@
 basedir=../spring_103.0/rts
-outputdir=output
+outputdir=output/stubs
 
 echo "clear outputdir -> ${outputdir}"
 rm -rf $outputdir

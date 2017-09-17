@@ -1,0 +1,161 @@
+/* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
+
+#include "ConfigSource.h"
+#include "ConfigVariable.h"
+#include "System/Log/ILog.h"
+#include "System/Platform/ScopedFileLock.h"
+
+#ifdef WIN32
+	#include <io.h>
+#endif
+#include <string.h>
+#include <stdexcept>
+#include <boost/bind.hpp>
+
+/******************************************************************************/
+
+using std::map;
+using std::string;
+
+typedef map<string, string> StringMap;
+
+/******************************************************************************/
+
+bool ReadOnlyConfigSource::IsSet(const string& key) const
+{
+    //stub method
+}
+
+string ReadOnlyConfigSource::GetString(const string& key) const
+{
+    //stub method
+}
+
+/******************************************************************************/
+
+void ReadWriteConfigSource::SetString(const string& key, const string& value)
+{
+    //stub method
+}
+
+void ReadWriteConfigSource::Delete(const string& key)
+{
+    //stub method
+}
+
+/******************************************************************************/
+
+FileConfigSource::FileConfigSource(const string& filename) : filename(filename)
+{
+    //stub method
+}
+
+void FileConfigSource::SetStringInternal(const std::string& key, const std::string& value)
+{
+    //stub method
+}
+
+void FileConfigSource::SetString(const string& key, const string& value)
+{
+    //stub method
+}
+
+void FileConfigSource::DeleteInternal(const string& key)
+{
+    //stub method
+}
+
+void FileConfigSource::Delete(const string& key)
+{
+    //stub method
+}
+
+void FileConfigSource::ReadModifyWrite(boost::function<void ()> modify) {
+	FILE* file = fopen(filename.c_str(), "r+");
+
+	if (file) {
+		ScopedFileLock scoped_lock(fileno(file), true);
+		Read(file);
+		modify();
+		Write(file);
+	}
+	else {
+		modify();
+	}
+
+	// must be outside above 'if (file)' block because of the lock.
+	if (file) {
+		fclose(file);
+	}
+}
+
+/**
+ * @brief strip whitespace
+ *
+ * Strips whitespace off the string [begin, end] by setting the last
+ * whitespace character from the end to 0 and returning a pointer
+ * to the first non-whitespace character from the beginning.
+ *
+ * Precondition: end must point to the last character of the string,
+ * i.e. the one before the terminating '\0'.
+ */
+char* FileConfigSource::Strip(char* begin, char* end) {
+	while (end >= begin && isspace(*end)) --end;
+	while (begin <= end && isspace(*begin)) ++begin;
+	*(end + 1) = '\0';
+	return begin;
+}
+
+/**
+ * @brief Rewind file and re-read it.
+ */
+void FileConfigSource::Read(FILE* file)
+{
+    //stub method
+}
+
+/**
+ * @brief Truncate file and write data to it.
+ */
+void FileConfigSource::Write(FILE* file)
+{
+    //stub method
+}
+
+/******************************************************************************/
+
+/**
+ * @brief Fill with default values of declared configuration variables.
+ */
+DefaultConfigSource::DefaultConfigSource()
+{
+    //stub method
+}
+
+
+/**
+ * @brief Fill with safemode values of declared configuration variables.
+ */
+SafemodeConfigSource::SafemodeConfigSource()
+{
+    //stub method
+}
+
+/**
+ * @brief Fill with dedicated values of declared configuration variables.
+ */
+DedicatedConfigSource::DedicatedConfigSource()
+{
+    //stub method
+}
+
+
+/**
+ * @brief Fill with headless values of declared configuration variables.
+ */
+HeadlessConfigSource::HeadlessConfigSource()
+{
+    //stub method
+}
+
+/******************************************************************************/

@@ -1,0 +1,204 @@
+/* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
+
+#if defined(_MSC_VER) && !defined(S_ISDIR)
+#	define S_ISDIR(m) (((m) & 0170000) == 0040000)
+#endif
+
+#include "FileSystemAbstraction.h"
+
+#include "FileQueryFlags.h"
+
+#include "System/Util.h"
+#include "System/Log/ILog.h"
+#include "System/Exceptions.h"
+
+#include <cassert>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <string.h>
+#include <boost/regex.hpp>
+#include <boost/filesystem.hpp>
+
+#ifndef _WIN32
+	#include <dirent.h>
+	#include <sstream>
+	#include <unistd.h>
+	#include <time.h>
+#else
+	#include <windows.h>
+	#include <io.h>
+	#include <direct.h>
+	#include <fstream>
+	// Win-API redifines these, which breaks things
+	#if defined(CreateDirectory)
+		#undef CreateDirectory
+	#endif
+	#if defined(DeleteFile)
+		#undef DeleteFile
+	#endif
+#endif
+
+
+
+std::string FileSystemAbstraction::RemoveLocalPathPrefix(const std::string& path)
+{
+    //stub method
+}
+
+bool FileSystemAbstraction::IsFSRoot(const std::string& p)
+{
+    //stub method
+}
+
+bool FileSystemAbstraction::IsPathSeparator(char aChar) {
+	return ((aChar == cPS_WIN32) || (aChar == cPS_POSIX));
+}
+
+bool FileSystemAbstraction::IsNativePathSeparator(char aChar) {
+	return (aChar == cPS);
+}
+
+bool FileSystemAbstraction::HasPathSepAtEnd(const std::string& path) {
+
+	bool pathSepAtEnd = false;
+
+	if (!path.empty()) {
+		pathSepAtEnd = IsNativePathSeparator(path.at(path.size() - 1));
+	}
+
+	return pathSepAtEnd;
+}
+
+void FileSystemAbstraction::EnsurePathSepAtEnd(std::string& path) {
+
+	if (path.empty()) {
+		path += "." sPS;
+	} else if (!HasPathSepAtEnd(path)) {
+		path += cPS;
+	}
+}
+std::string FileSystemAbstraction::EnsurePathSepAtEnd(const std::string& path) {
+
+	std::string pathCopy(path);
+	EnsurePathSepAtEnd(pathCopy);
+	return pathCopy;
+}
+
+void FileSystemAbstraction::EnsureNoPathSepAtEnd(std::string& path) {
+
+	if (HasPathSepAtEnd(path)) {
+		path.resize(path.size() - 1);
+	}
+}
+std::string FileSystemAbstraction::EnsureNoPathSepAtEnd(const std::string& path) {
+
+	std::string pathCopy(path);
+	EnsureNoPathSepAtEnd(pathCopy);
+	return pathCopy;
+}
+
+std::string FileSystemAbstraction::StripTrailingSlashes(const std::string& path)
+{
+    //stub method
+}
+
+std::string FileSystemAbstraction::GetParent(const std::string& path)
+{
+    //stub method
+}
+
+size_t FileSystemAbstraction::GetFileSize(const std::string& file)
+{
+    //stub method
+}
+
+bool FileSystemAbstraction::IsReadableFile(const std::string& file)
+{
+    //stub method
+}
+
+std::string FileSystemAbstraction::GetFileModificationDate(const std::string& file)
+{
+    //stub method
+}
+
+
+char FileSystemAbstraction::GetNativePathSeparator()
+{
+    //stub method
+}
+
+bool FileSystemAbstraction::IsAbsolutePath(const std::string& path)
+{
+    //stub method
+}
+
+
+/**
+ * @brief creates a rwxr-xr-x dir in the writedir
+ *
+ * Returns true if the postcondition of this function is that dir exists in
+ * the write directory.
+ *
+ * Note that this function does not check access to the dir, ie. if you've
+ * created it manually with 0000 permissions then this function may return
+ * true, subsequent operation on files inside the directory may still fail.
+ *
+ * As a rule of thumb, set identical permissions on identical items in the
+ * data directory, ie. all subdirectories the same perms, all files the same
+ * perms.
+ */
+bool FileSystemAbstraction::MkDir(const std::string& dir)
+{
+    //stub method
+}
+
+bool FileSystemAbstraction::DeleteFile(const std::string& file)
+{
+    //stub method
+}
+
+bool FileSystemAbstraction::FileExists(const std::string& file)
+{
+    //stub method
+}
+
+bool FileSystemAbstraction::DirExists(const std::string& dir)
+{
+    //stub method
+}
+
+
+bool FileSystemAbstraction::DirIsWritable(const std::string& dir)
+{
+    //stub method
+}
+
+
+bool FileSystemAbstraction::ComparePaths(const std::string& path1, const std::string& path2)
+{
+    //stub method
+}
+
+
+std::string FileSystemAbstraction::GetCwd()
+{
+    //stub method
+}
+
+void FileSystemAbstraction::ChDir(const std::string& dir)
+{
+    //stub method
+}
+
+static void FindFiles(std::vector<std::string>& matches, const std::string& datadir, const std::string& dir, const boost::regex& regexPattern, int flags)
+{
+    //stub method
+}
+
+void FileSystemAbstraction::FindFiles(std::vector<std::string>& matches, const std::string& dataDir, const std::string& dir, const std::string& regex, int flags)
+{
+    //stub method
+}
+
