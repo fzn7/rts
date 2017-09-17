@@ -8,25 +8,20 @@
 #include <algorithm>
 #include <cstdlib>
 
-namespace netcode
+namespace netcode {
+
+PackPacket::PackPacket(const unsigned length)
+  : RawPacket(length)
+  , pos(0)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-PackPacket::PackPacket(const unsigned length, unsigned char msgID)
-	: RawPacket(length)
-	, pos(0)
+PackPacket&
+PackPacket::operator<<(const std::string& text)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
-PackPacket& PackPacket::operator<<(const std::string& text)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
 }
-
-}
-

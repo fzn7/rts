@@ -1,20 +1,18 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
+#include <cctype>
+#include <map>
 #include <set>
 #include <string>
 #include <vector>
-#include <map>
-#include <cctype>
-
 
 #include "LuaUnitDefs.h"
 
-#include "LuaInclude.h"
 #include "LuaConfig.h"
 #include "LuaDefs.h"
 #include "LuaHandle.h"
+#include "LuaInclude.h"
 #include "LuaUtils.h"
 #include "Map/MapInfo.h"
 #include "Rendering/IconHandler.h"
@@ -30,228 +28,235 @@
 #include "System/Log/ILog.h"
 #include "System/Util.h"
 
-
 static ParamMap paramMap;
 
-static bool InitParamMap();
+static bool
+InitParamMap();
 
 // iteration routines
-static int Next(lua_State* L);
-static int Pairs(lua_State* L);
+static int
+Next(lua_State* L);
+static int
+Pairs(lua_State* L);
 
 // meta-table calls
-static int UnitDefIndex(lua_State* L);
-static int UnitDefNewIndex(lua_State* L);
-static int UnitDefMetatable(lua_State* L);
+static int
+UnitDefIndex(lua_State* L);
+static int
+UnitDefNewIndex(lua_State* L);
+static int
+UnitDefMetatable(lua_State* L);
 
 // special access functions
-static int UnitDefToID(lua_State* L, const void* data);
-static int WeaponDefToID(lua_State* L, const void* data);
-static int CustomParamsTable(lua_State* L, const void* data);
-static int BuildOptions(lua_State* L, const void* data);
-static int SoundsTable(lua_State* L, const void* data);
-static int WeaponsTable(lua_State* L, const void* data);
-static int CategorySetFromBits(lua_State* L, const void* data);
-static int CategorySetFromString(lua_State* L, const void* data);
-
-
-/******************************************************************************/
-/******************************************************************************/
-
-bool LuaUnitDefs::PushEntries(lua_State* L)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-
-
-/******************************************************************************/
-
-static int UnitDefIndex(lua_State* L)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-
-static int UnitDefNewIndex(lua_State* L)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-
-static int UnitDefMetatable(lua_State* L)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-
-/******************************************************************************/
-
-static int Next(lua_State* L)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-
-static int Pairs(lua_State* L)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
+static int
+UnitDefToID(lua_State* L, const void* data);
+static int
+WeaponDefToID(lua_State* L, const void* data);
+static int
+CustomParamsTable(lua_State* L, const void* data);
+static int
+BuildOptions(lua_State* L, const void* data);
+static int
+SoundsTable(lua_State* L, const void* data);
+static int
+WeaponsTable(lua_State* L, const void* data);
+static int
+CategorySetFromBits(lua_State* L, const void* data);
+static int
+CategorySetFromString(lua_State* L, const void* data);
 
 /******************************************************************************/
 /******************************************************************************/
 
-static int UnitDefToID(lua_State* L, const void* data)
+bool
+LuaUnitDefs::PushEntries(lua_State* L)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
+/******************************************************************************/
 
-static int WeaponDefToID(lua_State* L, const void* data)
+static int
+UnitDefIndex(lua_State* L)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static int WeaponDefToName(lua_State* L, const void* data)
+static int
+UnitDefNewIndex(lua_State* L)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static int SafeIconType(lua_State* L, const void* data)
+static int
+UnitDefMetatable(lua_State* L)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
+/******************************************************************************/
 
-static int CustomParamsTable(lua_State* L, const void* data)
+static int
+Next(lua_State* L)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static int BuildOptions(lua_State* L, const void* data)
+static int
+Pairs(lua_State* L)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
+/******************************************************************************/
+/******************************************************************************/
 
-static inline int BuildCategorySet(lua_State* L, const vector<string>& cats)
+static int
+UnitDefToID(lua_State* L, const void* data)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static int CategorySetFromBits(lua_State* L, const void* data)
+static int
+WeaponDefToID(lua_State* L, const void* data)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static int CategorySetFromString(lua_State* L, const void* data)
+static int
+WeaponDefToName(lua_State* L, const void* data)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static int WeaponsTable(lua_State* L, const void* data)
+static int
+SafeIconType(lua_State* L, const void* data)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static void PushGuiSoundSet(lua_State* L, const string& name,
-                            const GuiSoundSet& soundSet)
+static int
+CustomParamsTable(lua_State* L, const void* data)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static int SoundsTable(lua_State* L, const void* data) {
-	const UnitDef::SoundStruct& sounds = *((const UnitDef::SoundStruct*) data);
-
-	lua_newtable(L);
-	PushGuiSoundSet(L, "select",      sounds.select);
-	PushGuiSoundSet(L, "ok",          sounds.ok);
-	PushGuiSoundSet(L, "arrived",     sounds.arrived);
-	PushGuiSoundSet(L, "build",       sounds.build);
-	PushGuiSoundSet(L, "repair",      sounds.repair);
-	PushGuiSoundSet(L, "working",     sounds.working);
-	PushGuiSoundSet(L, "underattack", sounds.underattack);
-	PushGuiSoundSet(L, "cant",        sounds.cant);
-	PushGuiSoundSet(L, "activate",    sounds.activate);
-	PushGuiSoundSet(L, "deactivate",  sounds.deactivate);
-
-	return 1;
-}
-
-
-
-
-static int MoveDefTable(lua_State* L, const void* data)
+static int
+BuildOptions(lua_State* L, const void* data)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static int TotalEnergyOut(lua_State* L, const void* data)
+static inline int
+BuildCategorySet(lua_State* L, const vector<string>& cats)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-#define TYPE_FUNC(FuncName, LuaType)                           \
-	static int FuncName(lua_State* L, const void* data)        \
-	{                                                          \
-		const UnitDef* ud = static_cast<const UnitDef*>(data); \
-		lua_push ## LuaType(L, ud->FuncName());                \
-		return 1;                                              \
-	}
-
-
-
-static int ModelTable(lua_State* L, const void* data) {
-	return (LuaUtils::PushModelTable(L, static_cast<const SolidObjectDef*>(data)));
+static int
+CategorySetFromBits(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-static int ModelName(lua_State* L, const void* data) {
-	return (LuaUtils::PushModelName(L, static_cast<const SolidObjectDef*>(data)));
+static int
+CategorySetFromString(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-static int ModelHeight(lua_State* L, const void* data) {
-	return (LuaUtils::PushModelHeight(L, static_cast<const SolidObjectDef*>(data), true));
+static int
+WeaponsTable(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-static int ModelRadius(lua_State* L, const void* data) {
-	return (LuaUtils::PushModelRadius(L, static_cast<const SolidObjectDef*>(data), true));
+static void
+PushGuiSoundSet(lua_State* L, const string& name, const GuiSoundSet& soundSet)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-static int ColVolTable(lua_State* L, const void* data) {
-	return (LuaUtils::PushColVolTable(L, static_cast<const CollisionVolume*>(data)));
+static int
+SoundsTable(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
+static int
+MoveDefTable(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+static int
+TotalEnergyOut(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+#define TYPE_FUNC(FuncName, LuaType)                                           \
+    static int FuncName(lua_State* L, const void* data)                        \
+    {                                                                          \
+        const UnitDef* ud = static_cast<const UnitDef*>(data);                 \
+        lua_push##LuaType(L, ud->FuncName());                                  \
+        return 1;                                                              \
+    }
+
+static int
+ModelTable(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+static int
+ModelName(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+static int
+ModelHeight(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+static int
+ModelRadius(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+static int
+ColVolTable(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
 TYPE_FUNC(IsTransportUnit, boolean)
 TYPE_FUNC(IsImmobileUnit, boolean)
@@ -268,41 +273,43 @@ TYPE_FUNC(IsHoveringAirUnit, boolean)
 TYPE_FUNC(IsFighterAirUnit, boolean)
 TYPE_FUNC(IsBomberAirUnit, boolean)
 
-
-
-static int ReturnEmptyString(lua_State* L, const void* data) {
-	LOG_L(L_WARNING, "%s - deprecated field!", lua_tostring(L, 2));
-	lua_pushstring(L, "");
-	return 1;
-}
-
-static int ReturnFalse(lua_State* L, const void* data) {
-	LOG_L(L_WARNING, "%s - deprecated field!", lua_tostring(L, 2));
-	lua_pushboolean(L, false);
-	return 1;
-}
-
-static int ReturnMinusOne(lua_State* L, const void* data) {
-	LOG_L(L_WARNING, "%s - deprecated field!", lua_tostring(L, 2));
-	lua_pushnumber(L, -1);
-	return 1;
-}
-
-static int ReturnNil(lua_State* L, const void* data) {
-	LOG_L(L_WARNING, "%s - deprecated field!", lua_tostring(L, 2));
-	lua_pushnil(L);
-	return 1;
-}
-
-/******************************************************************************/
-/******************************************************************************/
-
-static bool InitParamMap()
+static int
+ReturnEmptyString(lua_State* L, const void* data)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
+static int
+ReturnFalse(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+static int
+ReturnMinusOne(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+static int
+ReturnNil(lua_State* L, const void* data)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+/******************************************************************************/
+/******************************************************************************/
+
+static bool
+InitParamMap()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
 /******************************************************************************/
 /******************************************************************************/

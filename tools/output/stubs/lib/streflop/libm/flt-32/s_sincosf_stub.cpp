@@ -24,13 +24,12 @@
 
 #include "math_private.h"
 
-
 namespace streflop_libm {
 void
-__sincosf (Simple x, Simple *sinx, Simple *cosx)
+__sincosf(Simple x, Simple* sinx, Simple* cosx)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__sincosf, sincosf)
+weak_alias(__sincosf, sincosf)
 }

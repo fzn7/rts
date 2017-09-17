@@ -2,13 +2,13 @@
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #ifndef WIN32
-	#include <unistd.h>
-	#include <sys/stat.h>
-	#include <sys/types.h>
+#include <unistd.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #else
-	#include <io.h>
-	#include <direct.h>
-	#include <windows.h>
+#include <io.h>
+#include <direct.h>
+#include <windows.h>
 #endif
 #include <stdlib.h>
 
@@ -21,37 +21,39 @@
 #include "System/Platform/Win/win32.h"
 #include <boost/foreach.hpp>
 
-
 using std::string;
 using std::vector;
 
-
-static void AddCfgFile(vector<string>& locations, const  std::string& filepath)
+static void
+AddCfgFile(vector<string>& locations, const std::string& filepath)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static void LoadCfgs(vector<string>& locations, const std::string& defCfg, const std::string& verCfg)
+static void
+LoadCfgs(vector<string>& locations,
+         const std::string& defCfg,
+         const std::string& verCfg)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static void LoadCfgsInFolder(vector<string>& locations, const std::string& path, const bool hidden = false)
+static void
+LoadCfgsInFolder(vector<string>& locations,
+                 const std::string& path,
+                 const bool hidden = false)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
-
 
 /**
  * @brief Get the names of the default configuration files
  */
-void ConfigLocater::GetDefaultLocations(vector<string>& locations)
+void
+ConfigLocater::GetDefaultLocations(vector<string>& locations)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

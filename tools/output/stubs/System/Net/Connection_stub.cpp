@@ -6,11 +6,8 @@
 namespace netcode {
 
 CConnection::CConnection()
-	: dataSent(0)
-	, dataRecv(0)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
+  : dataSent(0)
+  , dataRecv(0)
+{}
 
 } // namespace netcode

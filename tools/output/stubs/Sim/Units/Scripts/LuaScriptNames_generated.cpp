@@ -13,100 +13,103 @@ using std::vector;
 static vector<string> scriptNames;
 static map<string, int> scriptMap;
 
-
-const vector<string>& CLuaUnitScriptNames::GetScriptNames()
+const vector<string>&
+CLuaUnitScriptNames::GetScriptNames()
 {
-	if (!scriptNames.empty())
-		return scriptNames;
+    if (!scriptNames.empty())
+        return scriptNames;
 
-	scriptNames.resize(LUAFN_Last);
+    scriptNames.resize(LUAFN_Last);
 
-	scriptNames[LUAFN_Destroy]       = "Destroy";
-	scriptNames[LUAFN_StartMoving]   = "StartMoving";
-	scriptNames[LUAFN_StopMoving]    = "StopMoving";
-	scriptNames[LUAFN_Activate]      = "Activate";
-	scriptNames[LUAFN_Killed]        = "Killed";
-	scriptNames[LUAFN_Deactivate]    = "Deactivate";
-	scriptNames[LUAFN_WindChanged]   = "WindChanged";
-	scriptNames[LUAFN_ExtractionRateChanged] = "ExtractionRateChanged";
-	scriptNames[LUAFN_RockUnit]      = "RockUnit";
-	scriptNames[LUAFN_MoveRate]      = "MoveRate";
-	scriptNames[LUAFN_SetSFXOccupy]  = "setSFXoccupy";
-	scriptNames[LUAFN_HitByWeapon]   = "HitByWeapon";
+    scriptNames[LUAFN_Destroy] = "Destroy";
+    scriptNames[LUAFN_StartMoving] = "StartMoving";
+    scriptNames[LUAFN_StopMoving] = "StopMoving";
+    scriptNames[LUAFN_Activate] = "Activate";
+    scriptNames[LUAFN_Killed] = "Killed";
+    scriptNames[LUAFN_Deactivate] = "Deactivate";
+    scriptNames[LUAFN_WindChanged] = "WindChanged";
+    scriptNames[LUAFN_ExtractionRateChanged] = "ExtractionRateChanged";
+    scriptNames[LUAFN_RockUnit] = "RockUnit";
+    scriptNames[LUAFN_MoveRate] = "MoveRate";
+    scriptNames[LUAFN_SetSFXOccupy] = "setSFXoccupy";
+    scriptNames[LUAFN_HitByWeapon] = "HitByWeapon";
 
-	scriptNames[LUAFN_QueryLandingPads]     = "QueryLandingPads";
-	scriptNames[LUAFN_Falling]              = "Falling";
-	scriptNames[LUAFN_Landed]               = "Landed";
-	scriptNames[LUAFN_BeginTransport]       = "BeginTransport";
-	scriptNames[LUAFN_QueryTransport]       = "QueryTransport";
-	scriptNames[LUAFN_TransportPickup]      = "TransportPickup";
-	scriptNames[LUAFN_StartUnload]          = "StartUnload";
-	scriptNames[LUAFN_EndTransport]         = "EndTransport";
-	scriptNames[LUAFN_TransportDrop]        = "TransportDrop";
-	scriptNames[LUAFN_StartBuilding]        = "StartBuilding";
-	scriptNames[LUAFN_StopBuilding]         = "StopBuilding";
-	scriptNames[LUAFN_QueryNanoPiece]       = "QueryNanoPiece";
-	scriptNames[LUAFN_QueryBuildInfo]       = "QueryBuildInfo";
+    scriptNames[LUAFN_QueryLandingPads] = "QueryLandingPads";
+    scriptNames[LUAFN_Falling] = "Falling";
+    scriptNames[LUAFN_Landed] = "Landed";
+    scriptNames[LUAFN_BeginTransport] = "BeginTransport";
+    scriptNames[LUAFN_QueryTransport] = "QueryTransport";
+    scriptNames[LUAFN_TransportPickup] = "TransportPickup";
+    scriptNames[LUAFN_StartUnload] = "StartUnload";
+    scriptNames[LUAFN_EndTransport] = "EndTransport";
+    scriptNames[LUAFN_TransportDrop] = "TransportDrop";
+    scriptNames[LUAFN_StartBuilding] = "StartBuilding";
+    scriptNames[LUAFN_StopBuilding] = "StopBuilding";
+    scriptNames[LUAFN_QueryNanoPiece] = "QueryNanoPiece";
+    scriptNames[LUAFN_QueryBuildInfo] = "QueryBuildInfo";
 
-	scriptNames[LUAFN_MoveFinished] = "MoveFinished";
-	scriptNames[LUAFN_TurnFinished] = "TurnFinished";
+    scriptNames[LUAFN_MoveFinished] = "MoveFinished";
+    scriptNames[LUAFN_TurnFinished] = "TurnFinished";
 
-	// Also add the weapon aiming stuff
-	scriptNames[LUAFN_QueryWeapon]   = "QueryWeapon";
-	scriptNames[LUAFN_AimWeapon]     = "AimWeapon";
-	scriptNames[LUAFN_AimShield]     = "AimShield"; // TODO: maybe not the best name?
-	scriptNames[LUAFN_AimFromWeapon] = "AimFromWeapon";
-	scriptNames[LUAFN_FireWeapon]    = "FireWeapon";
-	scriptNames[LUAFN_EndBurst]      = "EndBurst";
-	scriptNames[LUAFN_Shot]          = "Shot";
-	scriptNames[LUAFN_BlockShot]     = "BlockShot";
-	scriptNames[LUAFN_TargetWeight]  = "TargetWeight";
+    // Also add the weapon aiming stuff
+    scriptNames[LUAFN_QueryWeapon] = "QueryWeapon";
+    scriptNames[LUAFN_AimWeapon] = "AimWeapon";
+    scriptNames[LUAFN_AimShield] =
+      "AimShield"; // TODO: maybe not the best name?
+    scriptNames[LUAFN_AimFromWeapon] = "AimFromWeapon";
+    scriptNames[LUAFN_FireWeapon] = "FireWeapon";
+    scriptNames[LUAFN_EndBurst] = "EndBurst";
+    scriptNames[LUAFN_Shot] = "Shot";
+    scriptNames[LUAFN_BlockShot] = "BlockShot";
+    scriptNames[LUAFN_TargetWeight] = "TargetWeight";
 
-	//for (size_t i = 0; i < scriptNames.size(); ++i) {
-	//	LOG_L(L_DEBUG, "LUAFN: %3d %s", i, scriptNames[i].c_str());
-	//}
+    // for (size_t i = 0; i < scriptNames.size(); ++i) {
+    //	LOG_L(L_DEBUG, "LUAFN: %3d %s", i, scriptNames[i].c_str());
+    //}
 
-	return scriptNames;
+    return scriptNames;
 }
 
-
-const std::map<std::string, int>& CLuaUnitScriptNames::GetScriptMap()
+const std::map<std::string, int>&
+CLuaUnitScriptNames::GetScriptMap()
 {
-	if (!scriptMap.empty())
-		return scriptMap;
+    if (!scriptMap.empty())
+        return scriptMap;
 
-	const vector<string>& n = GetScriptNames();
+    const vector<string>& n = GetScriptNames();
 
-	for (size_t i = 0; i < n.size(); ++i) {
-		scriptMap.insert(pair<string, int>(n[i], i));
-	}
+    for (size_t i = 0; i < n.size(); ++i) {
+        scriptMap.insert(pair<string, int>(n[i], i));
+    }
 
-	//for (std::map<string, int>::const_iterator it = scriptMap.begin(); it != scriptMap.end(); ++it) {
-	//	LOG_L(L_DEBUG, "LUAFN: %s -> %3d", it->first.c_str(), it->second);
-	//}
+    // for (std::map<string, int>::const_iterator it = scriptMap.begin(); it !=
+    // scriptMap.end(); ++it) { 	LOG_L(L_DEBUG, "LUAFN: %s -> %3d",
+    //it->first.c_str(), it->second);
+    //}
 
-	return scriptMap;
+    return scriptMap;
 }
 
-
-int CLuaUnitScriptNames::GetScriptNumber(const std::string& fname)
+int
+CLuaUnitScriptNames::GetScriptNumber(const std::string& fname)
 {
-	const map<string, int>& scriptMap = GetScriptMap();
-	const map<string, int>::const_iterator it = scriptMap.find(fname);
+    const map<string, int>& scriptMap = GetScriptMap();
+    const map<string, int>::const_iterator it = scriptMap.find(fname);
 
-	if (it != scriptMap.end())
-		return it->second;
+    if (it != scriptMap.end())
+        return it->second;
 
-	return -1;
+    return -1;
 }
 
-const string& CLuaUnitScriptNames::GetScriptName(int num)
+const string&
+CLuaUnitScriptNames::GetScriptName(int num)
 {
-	const static string empty;
-	const std::vector<std::string>& n = GetScriptNames();
+    const static string empty;
+    const std::vector<std::string>& n = GetScriptNames();
 
-	if (num >= 0 && num < int(n.size()))
-		return n[num];
+    if (num >= 0 && num < int(n.size()))
+        return n[num];
 
-	return empty;
+    return empty;
 }

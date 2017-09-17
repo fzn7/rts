@@ -4,17 +4,15 @@
 #include "FeatureDef.h"
 
 FeatureDef::FeatureDef()
-	: SolidObjectDef()
-	, deathFeatureDefID(-1)
-	, reclaimTime(0)
-	, drawType(DRAWTYPE_NONE)
-	, resurrectable(false)
-	, smokeTime(0)
-	, destructable(false)
-	, autoreclaim(true)
-	, burnable(false)
-	, floating(false)
-	, geoThermal(false)
-{
-}
-
+  : SolidObjectDef()
+  , deathFeatureDefID(-1)
+  , reclaimTime(0)
+  , drawType(DRAWTYPE_NONE)
+  , resurrectable(false)
+  , smokeTime(0)
+  , destructable(false)
+  , autoreclaim(true)
+  , burnable(false)
+  , floating(false)
+  , geoThermal(false)
+{}

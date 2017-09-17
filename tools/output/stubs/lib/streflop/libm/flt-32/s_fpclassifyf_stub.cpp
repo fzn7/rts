@@ -24,13 +24,12 @@
 
 #include "math_private.h"
 
-
 namespace streflop_libm {
 int
-__fpclassifyf (Simple x)
+__fpclassifyf(Simple x)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-libm_hidden_def (__fpclassifyf)
+libm_hidden_def(__fpclassifyf)
 }

@@ -6,35 +6,32 @@
 #include "Map/HeightMapTexture.h"
 #include "Map/ReadMap.h"
 #include "Rendering/GlobalRendering.h"
-#include "Rendering/Shaders/ShaderHandler.h"
 #include "Rendering/Shaders/Shader.h"
+#include "Rendering/Shaders/ShaderHandler.h"
 #include "System/Color.h"
-#include "System/Exceptions.h"
 #include "System/Config/ConfigHandler.h"
+#include "System/Exceptions.h"
 #include "System/Log/ILog.h"
 
-
 // currently defined in HeightLinePalette.cpp
-//CONFIG(bool, ColorElev).defaultValue(true).description("If heightmap (default hotkey [F1]) should be colored or not.");
-
-
+// CONFIG(bool, ColorElev).defaultValue(true).description("If heightmap (default
+// hotkey [F1]) should be colored or not.");
 
 CHeightTexture::CHeightTexture()
-: CPboInfoTexture("height")
-, CEventClient("[CHeightTexture]", 271990, false)
-, needUpdate(true)
+  : CPboInfoTexture("height")
+  , CEventClient("[CHeightTexture]", 271990, false)
+  , needUpdate(true)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CHeightTexture::UpdateCPU()
+void
+CHeightTexture::UpdateCPU()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 CHeightTexture::~CHeightTexture()
 {
@@ -42,22 +39,22 @@ CHeightTexture::~CHeightTexture()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CHeightTexture::Update()
+void
+CHeightTexture::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CHeightTexture::UnsyncedHeightMapUpdate(const SRectangle& rect)
+void
+CHeightTexture::UnsyncedHeightMapUpdate(const SRectangle& rect)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CHeightTexture::IsUpdateNeeded()
+bool
+CHeightTexture::IsUpdateNeeded()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

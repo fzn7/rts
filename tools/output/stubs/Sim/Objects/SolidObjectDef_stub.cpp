@@ -9,67 +9,63 @@
 #include "System/Log/ILog.h"
 
 SolidObjectDecalDef::SolidObjectDecalDef()
-	: useGroundDecal(false)
-	, groundDecalType(-1)
-	, groundDecalSizeX(-1)
-	, groundDecalSizeY(-1)
-	, groundDecalDecaySpeed(0.0f)
+  : useGroundDecal(false)
+  , groundDecalType(-1)
+  , groundDecalSizeX(-1)
+  , groundDecalSizeY(-1)
+  , groundDecalDecaySpeed(0.0f)
 
-	, leaveTrackDecals(false)
-	, trackDecalType(-1)
-	, trackDecalWidth(0.0f)
-	, trackDecalOffset(0.0f)
-	, trackDecalStrength(0.0f)
-	, trackDecalStretch(0.0f)
+  , leaveTrackDecals(false)
+  , trackDecalType(-1)
+  , trackDecalWidth(0.0f)
+  , trackDecalOffset(0.0f)
+  , trackDecalStrength(0.0f)
+  , trackDecalStretch(0.0f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
 SolidObjectDef::SolidObjectDef()
-	: id(-1)
+  : id(-1)
 
-	, xsize(0)
-	, zsize(0)
+  , xsize(0)
+  , zsize(0)
 
-	, metal(0.0f)
-	, energy(0.0f)
-	, health(0.0f)
-	, mass(0.0f)
-	, crushResistance(0.0f)
+  , metal(0.0f)
+  , energy(0.0f)
+  , health(0.0f)
+  , mass(0.0f)
+  , crushResistance(0.0f)
 
-	, collidable(false)
-	, selectable(true)
-	, upright(false)
-	, reclaimable(true)
+  , collidable(false)
+  , selectable(true)
+  , upright(false)
+  , reclaimable(true)
 
-	, model(nullptr)
+  , model(nullptr)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void SolidObjectDef::PreloadModel() const
+S3DModel*
+SolidObjectDef::LoadModel() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-S3DModel* SolidObjectDef::LoadModel() const
+float
+SolidObjectDef::GetModelRadius() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-float SolidObjectDef::GetModelRadius() const
+void
+SolidObjectDef::ParseCollisionVolume(const LuaTable& table)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
-void SolidObjectDef::ParseCollisionVolume(const LuaTable& table)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-

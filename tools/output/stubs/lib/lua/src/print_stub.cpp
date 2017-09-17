@@ -16,57 +16,65 @@
 #include "lopcodes.h"
 #include "lundump.h"
 
-#define PrintFunction	luaU_print
+#define PrintFunction luaU_print
 
-#define Sizeof(x)	((int)sizeof(x))
-#define VOID(p)		((const void*)(p))
+#define Sizeof(x) ((int)sizeof(x))
+#define VOID(p) ((const void*)(p))
 
-static void PrintString(const TString* ts)
+static void
+PrintString(const TString* ts)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void PrintConstant(const Proto* f, int i)
+static void
+PrintConstant(const Proto* f, int i)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void PrintCode(const Proto* f)
+static void
+PrintCode(const Proto* f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-#define SS(x)	(x==1)?"":"s"
-#define S(x)	x,SS(x)
+#define SS(x) (x == 1) ? "" : "s"
+#define S(x) x, SS(x)
 
-static void PrintHeader(const Proto* f)
+static void
+PrintHeader(const Proto* f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void PrintConstants(const Proto* f)
+static void
+PrintConstants(const Proto* f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void PrintLocals(const Proto* f)
+static void
+PrintLocals(const Proto* f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void PrintUpvalues(const Proto* f)
+static void
+PrintUpvalues(const Proto* f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void PrintFunction(const Proto* f, int full)
+void
+PrintFunction(const Proto* f, int full)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

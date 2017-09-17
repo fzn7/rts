@@ -1,41 +1,38 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
 #ifdef SYNCDEBUG
 
+#include "Logger.h"
+#include "System/SafeCStrings.h"
+#include "System/Util.h"
 #include <assert.h>
 #include <errno.h>
+#include <sstream>
 #include <stdarg.h>
 #include <string.h>
-#include <sstream>
-#include <time.h>
-#include <sys/types.h>
 #include <sys/stat.h>
-#include "Logger.h"
-#include "System/Util.h"
-#include "System/SafeCStrings.h"
+#include <sys/types.h>
+#include <time.h>
 
 #ifdef _MSC_VER
+#include "System/Platform/CrashHandler.h"
 #include <Windows.h>
 #include <imagehlp.h>
-#include "System/Platform/CrashHandler.h"
 #endif
 
 #ifdef WIN32
 // msvcrt doesn't have thread safe ctime_r
-# define ctime_r(tm, buf) ctime(tm)
+#define ctime_r(tm, buf) ctime(tm)
 #endif
 
-
-extern "C" void get_executable_name(char *output, int size);
-
+extern "C" void
+get_executable_name(char* output, int size);
 
 /**
  * @brief name of the addr2line binary
  */
 #define ADDR2LINE "addr2line"
-
 
 /**
  * @brief name of the c++filt binary
@@ -43,7 +40,6 @@ extern "C" void get_executable_name(char *output, int size);
  * Only used on MinGW to work around an addr2line bug.
  */
 #define CPPFILT "c++filt"
-
 
 /**
  * @brief log function
@@ -56,24 +52,24 @@ extern "C" void get_executable_name(char *output, int size);
  * to addr2line, which converts it to a function, filename & line number.
  * The "{...}" string is then fully replaced by "function [filename:lineno]".
  */
-void CLogger::AddLine(const char* fmt, ...)
+void
+CLogger::AddLine(const char* fmt, ...)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /**
  * @brief close one logging session
  *
  * Writes the buffered data to file after filtering it through addr2line.
  */
-void CLogger::CloseSession()
+void
+CLogger::CloseSession()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /**
  * @brief flushes the buffer
@@ -82,12 +78,12 @@ void CLogger::CloseSession()
  * open, composes the addr2line commandline, pipes the buffer through it and
  * writes the output of that - after some formatting - to the real logfile.
  */
-void CLogger::FlushBuffer()
+void
+CLogger::FlushBuffer()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /**
  * @brief demangles sym
@@ -99,7 +95,8 @@ void CLogger::FlushBuffer()
  * underscores from the symbol before trying to demangle them, resulting
  * no demangling ever happening.
  */
-void CLogger::CppFilt(char* sym, int size)
+void
+CLogger::CppFilt(char* sym, int size)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

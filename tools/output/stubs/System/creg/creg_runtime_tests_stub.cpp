@@ -2,23 +2,24 @@
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "creg_runtime_tests.h"
-#include "creg_cond.h"
-#include "System/myMath.h"
-#include "System/Util.h"
 #include "System/Log/ILog.h"
-#include <vector>
+#include "System/Util.h"
+#include "System/myMath.h"
+#include "creg_cond.h"
+#include <cmath>
 #include <map>
 #include <set>
-#include <cmath>
+#include <vector>
 
-
-static void PreCregTest(const char* logmsg)
+static void
+PreCregTest(const char* logmsg)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static bool PostCregTest(int fineClasses, int brokenClasses, int ignore = 0)
+static bool
+PostCregTest(int fineClasses, int brokenClasses, int ignore = 0)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -27,41 +28,39 @@ static bool PostCregTest(int fineClasses, int brokenClasses, int ignore = 0)
 /**
  * Tests if all CREG classes are complete
  */
-static bool TestCregClasses1()
+static bool
+TestCregClasses1()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static bool TestCregClasses2()
+static bool
+TestCregClasses2()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static bool TestCregClasses3()
+static bool
+TestCregClasses3()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static bool TestCregClasses4()
+static bool
+TestCregClasses4()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 namespace creg {
-	bool RuntimeTest()
-	{
-		bool res = true;
-		res &= TestCregClasses1();
-		res &= TestCregClasses2();
-		res &= TestCregClasses3();
-		res &= TestCregClasses4();
-		return res;
-	}
+bool
+RuntimeTest()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 }

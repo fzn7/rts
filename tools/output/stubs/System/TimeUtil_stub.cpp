@@ -3,13 +3,14 @@
 
 #include "System/TimeUtil.h"
 
-#include "System/Util.h"
 #include "System/Exceptions.h"
+#include "System/Util.h"
 
-#include <string>
 #include <ctime>
+#include <string>
 
-std::string CTimeUtil::GetCurrentTimeStr()
+std::string
+CTimeUtil::GetCurrentTimeStr()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

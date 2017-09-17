@@ -8,25 +8,31 @@
 #include "Rendering/GL/myGL.h"
 #include "System/Log/ILog.h"
 
-namespace agui
+namespace agui {
+
+Button::Button(const std::string& _label, GuiElement* _parent)
+  : GuiElement(_parent)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void Button::Label(const std::string& _label)
+void
+Button::Label(const std::string& _label)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void Button::DrawSelf()
+void
+Button::DrawSelf()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool Button::HandleEventSelf(const SDL_Event& ev)
+bool
+Button::HandleEventSelf(const SDL_Event& ev)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

@@ -16,76 +16,75 @@
 #include "lstate.h"
 #include "lundump.h"
 
-typedef struct {
- lua_State* L;
- lua_Writer writer;
- void* data;
- int strip;
- int status;
-} DumpState;
-
-#define DumpMem(b,n,size,D)	DumpBlock(b,(n)*(size),D)
-#define DumpVar(x,D)	 	DumpMem(&x,1,sizeof(x),D)
-
-static void DumpBlock(const void* b, size_t size, DumpState* D)
+typedef struct
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void DumpChar(int y, DumpState* D)
+static void
+DumpChar(int y, DumpState* D)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void DumpInt(int x, DumpState* D)
+static void
+DumpInt(int x, DumpState* D)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void DumpNumber(lua_Number x, DumpState* D)
+static void
+DumpNumber(lua_Number x, DumpState* D)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void DumpVector(const void* b, int n, size_t size, DumpState* D)
+static void
+DumpVector(const void* b, int n, size_t size, DumpState* D)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void DumpString(const TString* s, DumpState* D)
+static void
+DumpString(const TString* s, DumpState* D)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-#define DumpCode(f,D)	 DumpVector(f->code,f->sizecode,sizeof(Instruction),D)
+#define DumpCode(f, D) DumpVector(f->code, f->sizecode, sizeof(Instruction), D)
 
-static void DumpFunction(const Proto* f, const TString* p, DumpState* D);
+static void
+DumpFunction(const Proto* f, const TString* p, DumpState* D);
 
-static void DumpConstants(const Proto* f, DumpState* D)
+static void
+DumpConstants(const Proto* f, DumpState* D)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void DumpDebug(const Proto* f, DumpState* D)
+static void
+DumpDebug(const Proto* f, DumpState* D)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void DumpFunction(const Proto* f, const TString* p, DumpState* D)
+static void
+DumpFunction(const Proto* f, const TString* p, DumpState* D)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void DumpHeader(DumpState* D)
+static void
+DumpHeader(DumpState* D)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -94,7 +93,8 @@ static void DumpHeader(DumpState* D)
 /*
 ** dump Lua function as precompiled chunk
 */
-int luaU_dump (lua_State* L, const Proto* f, lua_Writer w, void* data, int strip)
+int
+luaU_dump(lua_State* L, const Proto* f, lua_Writer w, void* data, int strip)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

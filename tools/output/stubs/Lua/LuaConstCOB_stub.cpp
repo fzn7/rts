@@ -6,31 +6,28 @@
 #include "LuaConstCOB.h"
 #include "LuaInclude.h"
 #include "LuaUtils.h"
-#include "Sim/Units/Scripts/CobDefines.h"
 #include "Sim/Projectiles/PieceProjectile.h"
-
+#include "Sim/Units/Scripts/CobDefines.h"
 
 /******************************************************************************/
 /******************************************************************************/
 
-
-bool LuaConstCOB::PushEntries(lua_State* L)
+bool
+LuaConstCOB::PushEntries(lua_State* L)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
 /******************************************************************************/
 /******************************************************************************/
 
-
-bool LuaConstSFX::PushEntries(lua_State* L)
+bool
+LuaConstSFX::PushEntries(lua_State* L)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /******************************************************************************/
 /******************************************************************************/

@@ -16,7 +16,6 @@
  * ====================================================
  */
 
-
 #include "../streflop_libm_bridge.h"
 #include "SMath.h"
 #include "math_private.h"
@@ -27,20 +26,20 @@ static const Simple
 #else
 static Simple
 #endif
-TWO23[2]={
-  8.3886080000e+06f, /* 0x4b000000 */
- -8.3886080000e+06f, /* 0xcb000000 */
-};
+  TWO23[2] = {
+      8.3886080000e+06f,  /* 0x4b000000 */
+      -8.3886080000e+06f, /* 0xcb000000 */
+  };
 
 #ifdef __STDC__
-	Simple __nearbyintf(Simple x)
+Simple
+__nearbyintf(Simple x)
 #else
-	Simple __nearbyintf(x)
-	Simple x;
+Simple __nearbyintf(x) Simple x;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__nearbyintf, nearbyintf)
+weak_alias(__nearbyintf, nearbyintf)
 }

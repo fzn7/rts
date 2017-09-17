@@ -12,29 +12,36 @@ using std::string;
 /**
  * @brief Log an error about a ConfigVariableMetaData
  */
-#define LOG_VAR(data, fmt, ...) \
-	LOG_L(L_ERROR, "%s:%d: " fmt, data->GetDeclarationFile().Get().c_str(), data->GetDeclarationLine().Get(), ## __VA_ARGS__) \
+#define LOG_VAR(data, fmt, ...)                                                \
+    LOG_L(L_ERROR,                                                             \
+          "%s:%d: " fmt,                                                       \
+          data->GetDeclarationFile().Get().c_str(),                            \
+          data->GetDeclarationLine().Get(),                                    \
+          ##__VA_ARGS__)
 
-
-ConfigVariable::MetaDataMap& ConfigVariable::GetMutableMetaDataMap()
+ConfigVariable::MetaDataMap&
+ConfigVariable::GetMutableMetaDataMap()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const ConfigVariable::MetaDataMap& ConfigVariable::GetMetaDataMap()
+const ConfigVariable::MetaDataMap&
+ConfigVariable::GetMetaDataMap()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void ConfigVariable::AddMetaData(const ConfigVariableMetaData* data)
+void
+ConfigVariable::AddMetaData(const ConfigVariableMetaData* data)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const ConfigVariableMetaData* ConfigVariable::GetMetaData(const string& key)
+const ConfigVariableMetaData*
+ConfigVariable::GetMetaData(const string& key)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -42,15 +49,15 @@ const ConfigVariableMetaData* ConfigVariable::GetMetaData(const string& key)
 
 #ifdef DEBUG
 CONFIG(std::string, test)
-	.defaultValue("x y z")
-	.description("\"quoted\", escaped: \\, \b, \f, \n, \r, \t");
+  .defaultValue("x y z")
+  .description("\"quoted\", escaped: \\, \b, \f, \n, \r, \t");
 #endif
-
 
 /**
  * @brief Call Quote if type is not bool, float or int.
  */
-static inline string Quote(const string& type, const string& value)
+static inline string
+Quote(const string& type, const string& value)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -59,7 +66,8 @@ static inline string Quote(const string& type, const string& value)
 /**
  * @brief Write a ConfigVariableMetaData to a stream.
  */
-static std::ostream& operator<< (std::ostream& out, const ConfigVariableMetaData* d)
+static std::ostream&
+operator<<(std::ostream& out, const ConfigVariableMetaData* d)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -71,9 +79,11 @@ static std::ostream& operator<< (std::ostream& out, const ConfigVariableMetaData
  * This can be tested using, for example:
  *
  *	./spring --list-config-vars |
- *		python -c 'import json, sys; json.dump(json.load(sys.stdin), sys.stdout)'
+ *		python -c 'import json, sys; json.dump(json.load(sys.stdin),
+ *sys.stdout)'
  */
-void ConfigVariable::OutputMetaDataMap()
+void
+ConfigVariable::OutputMetaDataMap()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

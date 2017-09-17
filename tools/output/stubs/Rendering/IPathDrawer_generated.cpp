@@ -2,11 +2,11 @@
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 #include "IPathDrawer.h"
 #include "DefaultPathDrawer.h"
-#include "QTPFSPathDrawer.h"
 #include "Game/SelectedUnitsHandler.h"
+#include "QTPFSPathDrawer.h"
 #include "Sim/MoveTypes/MoveDefHandler.h"
-#include "Sim/Path/IPathManager.h"
 #include "Sim/Path/Default/PathManager.h"
+#include "Sim/Path/IPathManager.h"
 #include "Sim/Path/QTPFS/PathManager.hpp"
 #include "Sim/Units/Unit.h"
 #include "Sim/Units/UnitDef.h"
@@ -14,58 +14,68 @@
 
 IPathDrawer* pathDrawer = NULL;
 
-IPathDrawer* IPathDrawer::GetInstance() {
-	if (pathDrawer == NULL) {
-		if (dynamic_cast<QTPFS::PathManager*>(pathManager) != NULL) {
-			return (pathDrawer = new QTPFSPathDrawer());
-		}
-		if (dynamic_cast<CPathManager*>(pathManager) != NULL) {
-			return (pathDrawer = new DefaultPathDrawer());
-		}
+IPathDrawer*
+IPathDrawer::GetInstance()
+{
+    if (pathDrawer == NULL) {
+        if (dynamic_cast<QTPFS::PathManager*>(pathManager) != NULL) {
+            return (pathDrawer = new QTPFSPathDrawer());
+        }
+        if (dynamic_cast<CPathManager*>(pathManager) != NULL) {
+            return (pathDrawer = new DefaultPathDrawer());
+        }
 
-		pathDrawer = new IPathDrawer();
-	}
+        pathDrawer = new IPathDrawer();
+    }
 
-	return pathDrawer;
+    return pathDrawer;
 }
 
-void IPathDrawer::FreeInstance(IPathDrawer* pd) {
-	assert(pd == pathDrawer);
-	delete pd;
-	pathDrawer = NULL;
+void
+IPathDrawer::FreeInstance(IPathDrawer* pd)
+{
+    assert(pd == pathDrawer);
+    delete pd;
+    pathDrawer = NULL;
 }
 
-
-
-IPathDrawer::IPathDrawer(): CEventClient("[IPathDrawer]", 271991, false), enabled(false) {
-	eventHandler.AddClient(this);
+IPathDrawer::IPathDrawer()
+  : CEventClient("[IPathDrawer]", 271991, false)
+  , enabled(false)
+{
+    eventHandler.AddClient(this);
 }
-IPathDrawer::~IPathDrawer() {
-	eventHandler.RemoveClient(this);
-}
-
-const MoveDef* IPathDrawer::GetSelectedMoveDef() {
-	const MoveDef* md = NULL;
-	const CUnitSet& unitSet = selectedUnitsHandler.selectedUnits;
-
-	if (!unitSet.empty()) {
-		const CUnit* unit = *(unitSet.begin());
-		md = unit->moveDef;
-	}
-
-	return md;
+IPathDrawer::~IPathDrawer()
+{
+    eventHandler.RemoveClient(this);
 }
 
-SColor IPathDrawer::GetSpeedModColor(const float sm) {
-	SColor col(120, 0, 80);
+const MoveDef*
+IPathDrawer::GetSelectedMoveDef()
+{
+    const MoveDef* md = NULL;
+    const CUnitSet& unitSet = selectedUnitsHandler.selectedUnits;
 
-	if (sm > 0.0f) {
-		col.r = 255 - std::min(sm * 255.0f, 255.0f);
-		col.g = 255 - col.r;
-		col.b =   0;
-	}
+    if (!unitSet.empty()) {
+        const CUnit* unit = *(unitSet.begin());
+        md = unit->moveDef;
+    }
 
-	return col;
+    return md;
+}
+
+SColor
+IPathDrawer::GetSpeedModColor(const float sm)
+{
+    SColor col(120, 0, 80);
+
+    if (sm > 0.0f) {
+        col.r = 255 - std::min(sm * 255.0f, 255.0f);
+        col.g = 255 - col.r;
+        col.b = 0;
+    }
+
+    return col;
 }
 
 #if 0
@@ -91,4 +101,3 @@ float IPathDrawer::GetSpeedModNoObstacles(const MoveDef* md, int sqx, int sqz) {
 	return m;
 }
 #endif
-

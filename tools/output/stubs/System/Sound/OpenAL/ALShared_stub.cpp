@@ -7,7 +7,8 @@
 
 #include <stddef.h>
 
-bool CheckError(const char* msg)
+bool
+CheckError(const char* msg)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

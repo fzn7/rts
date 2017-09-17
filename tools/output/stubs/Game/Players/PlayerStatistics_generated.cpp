@@ -6,27 +6,25 @@
 #include "System/Platform/byteorder.h"
 
 CR_BIND(PlayerStatistics, )
-CR_REG_METADATA(PlayerStatistics, (
-	CR_MEMBER(mousePixels),
-	CR_MEMBER(mouseClicks),
-	CR_MEMBER(keyPresses),
-	CR_MEMBER(numCommands),
-	CR_MEMBER(unitCommands)
-))
-
+CR_REG_METADATA(PlayerStatistics,
+                (CR_MEMBER(mousePixels),
+                 CR_MEMBER(mouseClicks),
+                 CR_MEMBER(keyPresses),
+                 CR_MEMBER(numCommands),
+                 CR_MEMBER(unitCommands)))
 
 PlayerStatistics::PlayerStatistics()
-	: TeamControllerStatistics()
-	, mousePixels(0)
-	, mouseClicks(0)
-	, keyPresses(0)
-{
-}
+  : TeamControllerStatistics()
+  , mousePixels(0)
+  , mouseClicks(0)
+  , keyPresses(0)
+{}
 
-void PlayerStatistics::swab()
+void
+PlayerStatistics::swab()
 {
-	TeamControllerStatistics::swab();
-	swabDWordInPlace(mousePixels);
-	swabDWordInPlace(mouseClicks);
-	swabDWordInPlace(keyPresses);
+    TeamControllerStatistics::swab();
+    swabDWordInPlace(mousePixels);
+    swabDWordInPlace(mouseClicks);
+    swabDWordInPlace(keyPresses);
 }

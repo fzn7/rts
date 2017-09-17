@@ -4,29 +4,29 @@
 #include "ExplosionListener.h"
 #include "System/Util.h"
 
-
 std::vector<IExplosionListener*> CExplosionCreator::explosionListeners;
-
 
 IExplosionListener::~IExplosionListener()
 {
-	CExplosionCreator::RemoveExplosionListener(this);
+    CExplosionCreator::RemoveExplosionListener(this);
 }
 
-void CExplosionCreator::AddExplosionListener(IExplosionListener* listener)
+void
+CExplosionCreator::AddExplosionListener(IExplosionListener* listener)
 {
-	VectorInsertUnique(explosionListeners, listener, true);
+    VectorInsertUnique(explosionListeners, listener, true);
 }
 
-void CExplosionCreator::RemoveExplosionListener(IExplosionListener* listener)
+void
+CExplosionCreator::RemoveExplosionListener(IExplosionListener* listener)
 {
-	VectorErase(explosionListeners, listener);
+    VectorErase(explosionListeners, listener);
 }
 
-void CExplosionCreator::FireExplosionEvent(const CExplosionParams& event)
+void
+CExplosionCreator::FireExplosionEvent(const CExplosionParams& event)
 {
-	for (auto& expList: explosionListeners) {
-		expList->ExplosionOccurred(event);
-	}
+    for (auto& expList : explosionListeners) {
+        expList->ExplosionOccurred(event);
+    }
 }
-

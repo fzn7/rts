@@ -4,11 +4,11 @@
 #include "ConfigHandler.h"
 #include "ConfigLocater.h"
 #include "ConfigSource.h"
-#include "System/Util.h"
 #include "System/Log/ILog.h"
+#include "System/Util.h"
 
 #ifdef WIN32
-	#include <io.h>
+#include <io.h>
 #endif
 #include <stdio.h>
 #include <string.h>
@@ -28,7 +28,6 @@ using std::vector;
 typedef map<string, string> StringMap;
 
 ConfigHandler* configHandler = NULL;
-
 
 /******************************************************************************/
 
@@ -55,39 +54,43 @@ ConfigHandlerImpl::~ConfigHandlerImpl()
  *  3a) delete setting if equal to the one in `defaults'
  *  3b) add new value to `defaults' if different
  */
-void ConfigHandlerImpl::RemoveDefaults()
+void
+ConfigHandlerImpl::RemoveDefaults()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-StringMap ConfigHandlerImpl::GetDataWithoutDefaults() const
+StringMap
+ConfigHandlerImpl::GetDataWithoutDefaults() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void ConfigHandlerImpl::Delete(const string& key)
+void
+ConfigHandlerImpl::Delete(const string& key)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool ConfigHandlerImpl::IsSet(const string& key) const
+bool
+ConfigHandlerImpl::IsSet(const string& key) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool ConfigHandlerImpl::IsReadOnly(const string& key) const
+bool
+ConfigHandlerImpl::IsReadOnly(const string& key) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-string ConfigHandlerImpl::GetString(const string& key) const
+string
+ConfigHandlerImpl::GetString(const string& key) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -108,57 +111,61 @@ string ConfigHandlerImpl::GetString(const string& key) const
  * This would happen if e.g. unitsync and spring would access
  * the config file at the same time, if we would not lock.
  */
-void ConfigHandlerImpl::SetString(const string& key, const string& value, bool useOverlay)
+void
+ConfigHandlerImpl::SetString(const string& key,
+                             const string& value,
+                             bool useOverlay)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void ConfigHandlerImpl::Update()
+void
+ConfigHandlerImpl::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-string ConfigHandlerImpl::GetConfigFile() const {
-	return writableSource->GetFilename();
+string
+ConfigHandlerImpl::GetConfigFile() const
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-const StringMap ConfigHandlerImpl::GetData() const {
-	StringMap data;
-	for_each_source_const(it) {
-		const StringMap& sourceData = (*it)->GetData();
-		// insert doesn't overwrite, so this preserves correct overrides
-		data.insert(sourceData.begin(), sourceData.end());
-	}
-	return data;
+const StringMap
+ConfigHandlerImpl::GetData() const
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void ConfigHandlerImpl::AddObserver(ConfigNotifyCallback observer, void* holder) {
-	boost::mutex::scoped_lock lck(observerMutex);
-	observers.emplace_back(observer, holder);
+void
+ConfigHandlerImpl::AddObserver(ConfigNotifyCallback observer, void* holder)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void ConfigHandlerImpl::RemoveObserver(void* holder) {
-	boost::mutex::scoped_lock lck(observerMutex);
-	for (list<NamedConfigNotifyCallback>::iterator it = observers.begin(); it != observers.end(); ++it) {
-		if (it->holder == holder) {
-			observers.erase(it);
-			return;
-		}
-	}
+void
+ConfigHandlerImpl::RemoveObserver(void* holder)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /******************************************************************************/
 
-void ConfigHandler::Instantiate(const std::string configSource, const bool safemode)
+void
+ConfigHandler::Instantiate(const std::string configSource, const bool safemode)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void ConfigHandler::Deallocate()
+void
+ConfigHandler::Deallocate()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

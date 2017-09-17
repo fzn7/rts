@@ -28,10 +28,13 @@ namespace Platform {
  * could be found, or the used program returned an error) the message is
  * written to stderr.
  */
-void MsgBox(const std::string& message, const std::string& caption, const unsigned int& flags)
+void
+MsgBox(const std::string& message,
+       const std::string& caption,
+       const unsigned int& flags)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-} //namespace Platform
+} // namespace Platform

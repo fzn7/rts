@@ -3,13 +3,11 @@
 
 #include "CriticalSection.h"
 
-
 CriticalSection::CriticalSection() noexcept
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 CriticalSection::~CriticalSection()
 {
@@ -17,22 +15,22 @@ CriticalSection::~CriticalSection()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CriticalSection::lock()
+void
+CriticalSection::lock()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CriticalSection::try_lock() noexcept
+bool
+CriticalSection::try_lock() noexcept
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CriticalSection::unlock()
+void
+CriticalSection::unlock()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

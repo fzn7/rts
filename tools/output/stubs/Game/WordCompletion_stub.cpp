@@ -7,33 +7,28 @@
 //        ex: '/give <ammount> {unitname} <team-ID>'
 //        user-input: '/give 10 armcom 1'
 
-
 #include "WordCompletion.h"
 #include "System/Log/ILog.h"
 #include "System/Util.h"
 
-#include <stdexcept>
 #include <algorithm>
+#include <stdexcept>
 
 CWordCompletion* CWordCompletion::singleton = NULL;
 
-void CWordCompletion::CreateInstance() {
-	if (singleton == NULL) {
-		singleton = new CWordCompletion();
-	} else {
-		throw std::logic_error("WordCompletion singleton is already initialized");
-	}
+void
+CWordCompletion::CreateInstance()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void CWordCompletion::DestroyInstance() {
-	if (singleton != NULL) {
-		SafeDelete(singleton);
-	} else {
-		throw std::logic_error("WordCompletion singleton was not initialized or is already destroyed");
-	}
+void
+CWordCompletion::DestroyInstance()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
-
-
 
 CWordCompletion::CWordCompletion()
 {
@@ -41,28 +36,32 @@ CWordCompletion::CWordCompletion()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CWordCompletion::Reset()
+void
+CWordCompletion::Reset()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CWordCompletion::AddWord(const std::string& word, bool startOfLine,
-		bool unitName, bool miniMap)
+void
+CWordCompletion::AddWord(const std::string& word,
+                         bool startOfLine,
+                         bool unitName,
+                         bool miniMap)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CWordCompletion::RemoveWord(const std::string& word)
+void
+CWordCompletion::RemoveWord(const std::string& word)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-std::vector<std::string> CWordCompletion::Complete(std::string& msg) const
+std::vector<std::string>
+CWordCompletion::Complete(std::string& msg) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

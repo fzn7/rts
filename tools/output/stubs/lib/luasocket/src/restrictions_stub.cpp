@@ -6,8 +6,8 @@
 #include <map>
 #include <string>
 
-#include "System/Log/ILog.h"
 #include "System/Config/ConfigHandler.h"
+#include "System/Log/ILog.h"
 
 #define WILDCARD_HOST "*"
 #define WILDCARD_PORT -1
@@ -16,7 +16,7 @@
 #define LOG_SECTION_LUASOCKET "LuaSocket"
 LOG_REGISTER_SECTION_GLOBAL(LOG_SECTION_LUASOCKET)
 #ifdef LOG_SECTION_CURRENT
-	#undef LOG_SECTION_CURRENT
+#undef LOG_SECTION_CURRENT
 #endif
 #define LOG_SECTION_CURRENT LOG_SECTION_LUASOCKET
 
@@ -26,7 +26,7 @@ CONFIG(std::string, UDPAllowConnect).defaultValue("").readOnly(true);
 CONFIG(std::string, UDPAllowListen).defaultValue(WILDCARD_HOST).readOnly(true);
 #endif
 
-CLuaSocketRestrictions* luaSocketRestrictions=0;
+CLuaSocketRestrictions* luaSocketRestrictions = 0;
 
 CLuaSocketRestrictions::CLuaSocketRestrictions()
 {
@@ -34,19 +34,26 @@ CLuaSocketRestrictions::CLuaSocketRestrictions()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CLuaSocketRestrictions::addRule(RestrictType type, const std::string& hostname, int port, bool allowed)
+void
+CLuaSocketRestrictions::addRule(RestrictType type,
+                                const std::string& hostname,
+                                int port,
+                                bool allowed)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CLuaSocketRestrictions::addRule(RestrictType type, const std::string& rule)
+void
+CLuaSocketRestrictions::addRule(RestrictType type, const std::string& rule)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CLuaSocketRestrictions::addRules(RestrictType type, const std::string& configstr)
+void
+CLuaSocketRestrictions::addRules(RestrictType type,
+                                 const std::string& configstr)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -60,39 +67,36 @@ bool isValidIpAddress(char *ipAddress)
 }
 */
 
-bool CLuaSocketRestrictions::isAllowed(RestrictType type, const char* hostname, int port) {
-	const TSocketRule* rule = getRule(type, hostname, port);
-	if (rule==NULL) {
-		return false;
-	}
-	return rule->allowed;
-}
-
-const TSocketRule* CLuaSocketRestrictions::getRule(RestrictType type, const char* hostname, int port) {
+bool
+CLuaSocketRestrictions::isAllowed(RestrictType type,
+                                  const char* hostname,
+                                  int port)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CLuaSocketRestrictions::addIP(const char* hostname, const char* ip)
+const TSocketRule*
+CLuaSocketRestrictions::getRule(RestrictType type,
+                                const char* hostname,
+                                int port)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const char* CLuaSocketRestrictions::ruleToStr(RestrictType type) {
-	switch(type) {
-		case TCP_CONNECT:
-			return "TCP_CONNECT";
-		case TCP_LISTEN:
-			return "TCP_LISTEN ";
-		case UDP_LISTEN:
-			return "UDP_LISTEN ";
-		case UDP_CONNECT:
-			return "UDP_CONNECT";
-		default:
-			return "INVALID";
-	}
+void
+CLuaSocketRestrictions::addIP(const char* hostname, const char* ip)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+const char*
+CLuaSocketRestrictions::ruleToStr(RestrictType type)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CLuaSocketRestrictions::~CLuaSocketRestrictions()
@@ -100,4 +104,3 @@ CLuaSocketRestrictions::~CLuaSocketRestrictions()
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-

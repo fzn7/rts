@@ -10,73 +10,80 @@
 
 using std::cout;
 
-
 /**
  * @brief Log an error about a DefTagMetaData
  */
-#define LOG_VAR(data, fmt, ...) \
-	LOG_L(L_ERROR, "%s:%d: " fmt, data->GetDeclarationFile().Get().c_str(), data->GetDeclarationLine().Get(), ## __VA_ARGS__) \
+#define LOG_VAR(data, fmt, ...)                                                \
+    LOG_L(L_ERROR,                                                             \
+          "%s:%d: " fmt,                                                       \
+          data->GetDeclarationFile().Get().c_str(),                            \
+          data->GetDeclarationLine().Get(),                                    \
+          ##__VA_ARGS__)
 
-
-DefType::~DefType() {
-	for (const DefTagMetaData* md: tags)
-		delete md;
-}
-
-std::vector<const DefType*>& DefType::GetTypes()
+DefType::~DefType()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-DefType::DefType(const std::string& n) : name(n), luaTable(NULL) {
-	GetTypes().push_back(this);
-}
-
-
-void DefType::AddMetaData(const DefTagMetaData* data)
+std::vector<const DefType*>&
+DefType::GetTypes()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-const DefTagMetaData* DefType::GetMetaDataByInternalKey(const string& key)
+DefType::DefType(const std::string& n)
+  : name(n)
+  , luaTable(NULL)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-const DefTagMetaData* DefType::GetMetaDataByExternalKey(const string& key)
+void
+DefType::AddMetaData(const DefTagMetaData* data)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-std::string DefTagMetaData::GetTypeName(const std::type_info& typeInfo)
+const DefTagMetaData*
+DefType::GetMetaDataByInternalKey(const string& key)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
+const DefTagMetaData*
+DefType::GetMetaDataByExternalKey(const string& key)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+std::string
+DefTagMetaData::GetTypeName(const std::type_info& typeInfo)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
 /**
  * @brief Call Quote if type is not bool, float or int.
  */
-static inline string Quote(const string& type, const string& value)
+static inline string
+Quote(const string& type, const string& value)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
 /**
  * @brief Write a DefTagMetaData to a stream.
  */
-static std::ostream& operator<< (std::ostream& out, const DefTagMetaData* d)
+static std::ostream&
+operator<<(std::ostream& out, const DefTagMetaData* d)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -88,36 +95,41 @@ static std::ostream& operator<< (std::ostream& out, const DefTagMetaData* d)
  * This can be tested using, for example:
  *
  *	./spring --list-def-tags |
- *		python -c 'import json, sys; json.dump(json.load(sys.stdin), sys.stdout)'
+ *		python -c 'import json, sys; json.dump(json.load(sys.stdin),
+ *sys.stdout)'
  */
-void DefType::OutputMetaDataMap() const
+void
+DefType::OutputMetaDataMap() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void DefType::OutputTagMap()
+void
+DefType::OutputTagMap()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void DefType::CheckType(const DefTagMetaData* meta, const std::type_info& want)
+void
+DefType::CheckType(const DefTagMetaData* meta, const std::type_info& want)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void DefType::ReportUnknownTags(const std::string& instanceName, const LuaTable& luaTable, const std::string pre)
+void
+DefType::ReportUnknownTags(const std::string& instanceName,
+                           const LuaTable& luaTable,
+                           const std::string pre)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void DefType::Load(void* instance, const LuaTable& luaTable)
+void
+DefType::Load(void* instance, const LuaTable& luaTable)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

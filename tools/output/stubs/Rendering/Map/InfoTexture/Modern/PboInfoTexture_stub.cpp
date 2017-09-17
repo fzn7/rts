@@ -3,13 +3,11 @@
 
 #include "PboInfoTexture.h"
 
-
 CPboInfoTexture::CPboInfoTexture(const std::string& _name)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 CPboInfoTexture::~CPboInfoTexture()
 {

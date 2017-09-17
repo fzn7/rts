@@ -55,16 +55,18 @@
 
 #endif
 
-typedef void (WINAPI *PGNSI)(LPSYSTEM_INFO);
-typedef BOOL (WINAPI *PGPI)(DWORD, DWORD, DWORD, DWORD, PDWORD);
+typedef void(WINAPI* PGNSI)(LPSYSTEM_INFO);
+typedef BOOL(WINAPI* PGPI)(DWORD, DWORD, DWORD, DWORD, PDWORD);
 
 #ifndef SM_SERVERR2
 #define SM_SERVERR2 89
 #endif
 
-// this is a modified version of http://msdn.microsoft.com/en-us/library/ms724429(VS.85).aspx
-// always provide a long enough buffer
-std::string GetOSDisplayString()
+// this is a modified version of
+// http://msdn.microsoft.com/en-us/library/ms724429(VS.85).aspx always provide a
+// long enough buffer
+std::string
+GetOSDisplayString()
 {
     OSVERSIONINFOEX osvi;
     SYSTEM_INFO si;
@@ -77,183 +79,174 @@ std::string GetOSDisplayString()
 
     osvi.dwOSVersionInfoSize = sizeof(OSVERSIONINFOEX);
 
-    if ( !(bOsVersionInfoEx = GetVersionEx ((OSVERSIONINFO *) &osvi)) )
-		return std::string("error getting Windows version");
+    if (!(bOsVersionInfoEx = GetVersionEx((OSVERSIONINFO*)&osvi)))
+        return std::string("error getting Windows version");
 
     // Call GetNativeSystemInfo if supported or GetSystemInfo otherwise.
 
-    pGNSI = (PGNSI) GetProcAddress(
-                GetModuleHandle(TEXT("kernel32.dll")),
-                "GetNativeSystemInfo");
+    pGNSI = (PGNSI)GetProcAddress(GetModuleHandle(TEXT("kernel32.dll")),
+                                  "GetNativeSystemInfo");
     if (NULL != pGNSI)
         pGNSI(&si);
-    else GetSystemInfo(&si);
+    else
+        GetSystemInfo(&si);
 
-    if ( VER_PLATFORM_WIN32_NT==osvi.dwPlatformId &&
-            osvi.dwMajorVersion > 4 )
-    {
-		std::ostringstream oss;
+    if (VER_PLATFORM_WIN32_NT == osvi.dwPlatformId && osvi.dwMajorVersion > 4) {
+        std::ostringstream oss;
         oss << "Microsoft ";
 
         // Test for the specific product.
 
-        if ( osvi.dwMajorVersion == 6)
-        {
+        if (osvi.dwMajorVersion == 6) {
             if (osvi.dwMinorVersion == 0) {
-                if ( osvi.wProductType == VER_NT_WORKSTATION )
+                if (osvi.wProductType == VER_NT_WORKSTATION)
                     oss << "Windows Vista ";
-                else oss << "Windows Server 2008 ";
+                else
+                    oss << "Windows Server 2008 ";
             } else if (osvi.dwMinorVersion == 1) {
-               if( osvi.wProductType == VER_NT_WORKSTATION )
-                   oss << "Windows 7 ";
-               else oss << "Windows Server 2008 R2 ";
+                if (osvi.wProductType == VER_NT_WORKSTATION)
+                    oss << "Windows 7 ";
+                else
+                    oss << "Windows Server 2008 R2 ";
             }
 
-            PGPI pGPI = (PGPI) GetProcAddress(
-                       GetModuleHandle(TEXT("kernel32.dll")),
-                       "GetProductInfo");
+            PGPI pGPI = (PGPI)GetProcAddress(
+              GetModuleHandle(TEXT("kernel32.dll")), "GetProductInfo");
 
-            pGPI( 6, 0, 0, 0, &dwType);
+            pGPI(6, 0, 0, 0, &dwType);
 
-            switch ( dwType )
-            {
-            case PRODUCT_ULTIMATE:
-                oss << "Ultimate Edition";
-                break;
-            case PRODUCT_HOME_PREMIUM:
-                oss << "Home Premium Edition";
-                break;
-            case PRODUCT_HOME_BASIC:
-                oss << "Home Basic Edition";
-                break;
-            case PRODUCT_ENTERPRISE:
-                oss << "Enterprise Edition";
-                break;
-            case PRODUCT_BUSINESS:
-                oss << "Business Edition";
-                break;
-            case PRODUCT_STARTER:
-                oss << "Starter Edition";
-                break;
-            case PRODUCT_CLUSTER_SERVER:
-                oss << "Cluster Server Edition";
-                break;
-            case PRODUCT_DATACENTER_SERVER:
-                oss << "Datacenter Edition";
-                break;
-            case PRODUCT_DATACENTER_SERVER_CORE:
-                oss << "Datacenter Edition (core installation)";
-                break;
-            case PRODUCT_ENTERPRISE_SERVER:
-                oss << "Enterprise Edition";
-                break;
-            case PRODUCT_ENTERPRISE_SERVER_CORE:
-                oss << "Enterprise Edition (core installation)";
-                break;
-            case PRODUCT_ENTERPRISE_SERVER_IA64:
-                oss << "Enterprise Edition for Itanium-based Systems";
-                break;
-            case PRODUCT_SMALLBUSINESS_SERVER:
-                oss << "Small Business Server";
-                break;
-                /* 	undocumented?
-                case PRODUCT_SMALLBUSINESS_SERVER_PREMIUM:
-                oss << "Small Business Server Premium Edition";
-                break; */
-            case PRODUCT_STANDARD_SERVER:
-                oss << "Standard Edition";
-                break;
-            case PRODUCT_STANDARD_SERVER_CORE:
-                oss << "Standard Edition (core installation)";
-                break;
-            case PRODUCT_WEB_SERVER:
-                oss << "Web Server Edition";
-                break;
+            switch (dwType) {
+                case PRODUCT_ULTIMATE:
+                    oss << "Ultimate Edition";
+                    break;
+                case PRODUCT_HOME_PREMIUM:
+                    oss << "Home Premium Edition";
+                    break;
+                case PRODUCT_HOME_BASIC:
+                    oss << "Home Basic Edition";
+                    break;
+                case PRODUCT_ENTERPRISE:
+                    oss << "Enterprise Edition";
+                    break;
+                case PRODUCT_BUSINESS:
+                    oss << "Business Edition";
+                    break;
+                case PRODUCT_STARTER:
+                    oss << "Starter Edition";
+                    break;
+                case PRODUCT_CLUSTER_SERVER:
+                    oss << "Cluster Server Edition";
+                    break;
+                case PRODUCT_DATACENTER_SERVER:
+                    oss << "Datacenter Edition";
+                    break;
+                case PRODUCT_DATACENTER_SERVER_CORE:
+                    oss << "Datacenter Edition (core installation)";
+                    break;
+                case PRODUCT_ENTERPRISE_SERVER:
+                    oss << "Enterprise Edition";
+                    break;
+                case PRODUCT_ENTERPRISE_SERVER_CORE:
+                    oss << "Enterprise Edition (core installation)";
+                    break;
+                case PRODUCT_ENTERPRISE_SERVER_IA64:
+                    oss << "Enterprise Edition for Itanium-based Systems";
+                    break;
+                case PRODUCT_SMALLBUSINESS_SERVER:
+                    oss << "Small Business Server";
+                    break;
+                    /* 	undocumented?
+                    case PRODUCT_SMALLBUSINESS_SERVER_PREMIUM:
+                    oss << "Small Business Server Premium Edition";
+                    break; */
+                case PRODUCT_STANDARD_SERVER:
+                    oss << "Standard Edition";
+                    break;
+                case PRODUCT_STANDARD_SERVER_CORE:
+                    oss << "Standard Edition (core installation)";
+                    break;
+                case PRODUCT_WEB_SERVER:
+                    oss << "Web Server Edition";
+                    break;
             }
-            if ( si.wProcessorArchitecture==PROCESSOR_ARCHITECTURE_AMD64 )
-                oss <<  ", 64-bit";
-            else if (si.wProcessorArchitecture==PROCESSOR_ARCHITECTURE_INTEL )
+            if (si.wProcessorArchitecture == PROCESSOR_ARCHITECTURE_AMD64)
+                oss << ", 64-bit";
+            else if (si.wProcessorArchitecture == PROCESSOR_ARCHITECTURE_INTEL)
                 oss << ", 32-bit";
         }
 
-        if ( osvi.dwMajorVersion == 5 && osvi.dwMinorVersion == 2 )
-        {
-            if ( GetSystemMetrics(SM_SERVERR2) )
-                oss <<  "Windows Server 2003 R2, ";
-            else if ( osvi.wSuiteMask==VER_SUITE_STORAGE_SERVER )
-                oss <<  "Windows Storage Server 2003";
-            else if ( osvi.wProductType == VER_NT_WORKSTATION &&
-                      si.wProcessorArchitecture==PROCESSOR_ARCHITECTURE_AMD64)
-            {
-                oss <<  "Windows XP Professional x64 Edition";
-            }
-            else oss << "Windows Server 2003, ";
+        if (osvi.dwMajorVersion == 5 && osvi.dwMinorVersion == 2) {
+            if (GetSystemMetrics(SM_SERVERR2))
+                oss << "Windows Server 2003 R2, ";
+            else if (osvi.wSuiteMask == VER_SUITE_STORAGE_SERVER)
+                oss << "Windows Storage Server 2003";
+            else if (osvi.wProductType == VER_NT_WORKSTATION &&
+                     si.wProcessorArchitecture ==
+                       PROCESSOR_ARCHITECTURE_AMD64) {
+                oss << "Windows XP Professional x64 Edition";
+            } else
+                oss << "Windows Server 2003, ";
 
             // Test for the server type.
-            if ( osvi.wProductType != VER_NT_WORKSTATION )
-            {
-                if ( si.wProcessorArchitecture==PROCESSOR_ARCHITECTURE_IA64 )
-                {
-                    if ( osvi.wSuiteMask & VER_SUITE_DATACENTER )
-                        oss <<  "Datacenter Edition for Itanium-based Systems";
-                    else if ( osvi.wSuiteMask & VER_SUITE_ENTERPRISE )
-                        oss <<  "Enterprise Edition for Itanium-based Systems";
+            if (osvi.wProductType != VER_NT_WORKSTATION) {
+                if (si.wProcessorArchitecture == PROCESSOR_ARCHITECTURE_IA64) {
+                    if (osvi.wSuiteMask & VER_SUITE_DATACENTER)
+                        oss << "Datacenter Edition for Itanium-based Systems";
+                    else if (osvi.wSuiteMask & VER_SUITE_ENTERPRISE)
+                        oss << "Enterprise Edition for Itanium-based Systems";
                 }
 
-                else if ( si.wProcessorArchitecture==PROCESSOR_ARCHITECTURE_AMD64 )
-                {
-                    if ( osvi.wSuiteMask & VER_SUITE_DATACENTER )
-                        oss <<  "Datacenter x64 Edition";
-                    else if ( osvi.wSuiteMask & VER_SUITE_ENTERPRISE )
-                        oss <<  "Enterprise x64 Edition";
-                    else oss <<  "Standard x64 Edition";
+                else if (si.wProcessorArchitecture ==
+                         PROCESSOR_ARCHITECTURE_AMD64) {
+                    if (osvi.wSuiteMask & VER_SUITE_DATACENTER)
+                        oss << "Datacenter x64 Edition";
+                    else if (osvi.wSuiteMask & VER_SUITE_ENTERPRISE)
+                        oss << "Enterprise x64 Edition";
+                    else
+                        oss << "Standard x64 Edition";
                 }
 
-                else
-                {
-                    if ( osvi.wSuiteMask & VER_SUITE_COMPUTE_SERVER )
-                        oss <<  "Compute Cluster Edition";
-                    else if ( osvi.wSuiteMask & VER_SUITE_DATACENTER )
-                        oss <<  "Datacenter Edition";
-                    else if ( osvi.wSuiteMask & VER_SUITE_ENTERPRISE )
-                        oss <<  "Enterprise Edition" ;
-                    else if ( osvi.wSuiteMask & VER_SUITE_BLADE )
-                        oss <<  "Web Edition";
-                    else oss <<  "Standard Edition";
+                else {
+                    if (osvi.wSuiteMask & VER_SUITE_COMPUTE_SERVER)
+                        oss << "Compute Cluster Edition";
+                    else if (osvi.wSuiteMask & VER_SUITE_DATACENTER)
+                        oss << "Datacenter Edition";
+                    else if (osvi.wSuiteMask & VER_SUITE_ENTERPRISE)
+                        oss << "Enterprise Edition";
+                    else if (osvi.wSuiteMask & VER_SUITE_BLADE)
+                        oss << "Web Edition";
+                    else
+                        oss << "Standard Edition";
                 }
             }
         }
 
-        if ( osvi.dwMajorVersion == 5 && osvi.dwMinorVersion == 1 )
-        {
+        if (osvi.dwMajorVersion == 5 && osvi.dwMinorVersion == 1) {
             oss << "Windows XP ";
-            if ( osvi.wSuiteMask & VER_SUITE_PERSONAL )
-                oss <<  "Home Edition";
-            else oss <<  "Professional";
+            if (osvi.wSuiteMask & VER_SUITE_PERSONAL)
+                oss << "Home Edition";
+            else
+                oss << "Professional";
         }
 
-        if ( osvi.dwMajorVersion == 5 && osvi.dwMinorVersion == 0 )
-        {
+        if (osvi.dwMajorVersion == 5 && osvi.dwMinorVersion == 0) {
             oss << "Windows 2000 ";
 
-            if ( osvi.wProductType == VER_NT_WORKSTATION )
-            {
-                oss <<  "Professional";
-            }
-            else
-            {
-                if ( osvi.wSuiteMask & VER_SUITE_DATACENTER )
-                    oss <<  "Datacenter Server";
-                else if ( osvi.wSuiteMask & VER_SUITE_ENTERPRISE )
-                    oss <<  "Advanced Server";
-                else oss <<  "Server";
+            if (osvi.wProductType == VER_NT_WORKSTATION) {
+                oss << "Professional";
+            } else {
+                if (osvi.wSuiteMask & VER_SUITE_DATACENTER)
+                    oss << "Datacenter Server";
+                else if (osvi.wSuiteMask & VER_SUITE_ENTERPRISE)
+                    oss << "Advanced Server";
+                else
+                    oss << "Server";
             }
         }
 
         // Include service pack (if any) and build number.
 
-        if (strlen(osvi.szCSDVersion) > 0 )
-        {
+        if (strlen(osvi.szCSDVersion) > 0) {
             oss << " " << osvi.szCSDVersion;
         }
 
@@ -262,48 +255,45 @@ std::string GetOSDisplayString()
         return oss.str();
     }
 
-    else
-    {
+    else {
         return std::string("unsupported version of Windows");
     }
 }
 
-
 // this tries to read info about the CPU and available memory
-std::string GetHardwareInfoString()
+std::string
+GetHardwareInfoString()
 {
-	std::ostringstream oss;
+    std::ostringstream oss;
 
     unsigned char regbuf[200];
-    DWORD regLength=sizeof(regbuf);
-    DWORD regType=REG_SZ;
+    DWORD regLength = sizeof(regbuf);
+    DWORD regType = REG_SZ;
     HKEY regkey;
     if (RegOpenKeyEx(HKEY_LOCAL_MACHINE,
                      "Hardware\\Description\\System\\CentralProcessor\\0",
-                     0, KEY_READ, &regkey)==ERROR_SUCCESS)
-    {
-        if (RegQueryValueEx(regkey,"ProcessorNameString",0,&regType,regbuf,&regLength)==ERROR_SUCCESS)
-        {
+                     0,
+                     KEY_READ,
+                     &regkey) == ERROR_SUCCESS) {
+        if (RegQueryValueEx(
+              regkey, "ProcessorNameString", 0, &regType, regbuf, &regLength) ==
+            ERROR_SUCCESS) {
             oss << regbuf << "; ";
-        }
-        else
-        {
+        } else {
             oss << "cannot read processor data; ";
         }
         RegCloseKey(regkey);
-    }
-    else
-    {
+    } else {
         oss << "cannot open key with processor data; ";
     }
 
     MEMORYSTATUSEX statex;
-    const int div = 1024*1024;
-    statex.dwLength = sizeof (statex);
+    const int div = 1024 * 1024;
+    statex.dwLength = sizeof(statex);
 
-    GlobalMemoryStatusEx (&statex);
+    GlobalMemoryStatusEx(&statex);
 
-    oss << (statex.ullTotalPhys/div) << "MB RAM, "
-    << (statex.ullTotalPageFile/div) << "MB pagefile";
+    oss << (statex.ullTotalPhys / div) << "MB RAM, "
+        << (statex.ullTotalPageFile / div) << "MB pagefile";
     return oss.str();
 }

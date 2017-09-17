@@ -4,7 +4,6 @@
 #include "EFXfuncs.h"
 #include "System/Util.h"
 
-
 LPALGENEFFECTS alGenEffects = NULL;
 LPALDELETEEFFECTS alDeleteEffects = NULL;
 LPALISEFFECT alIsEffect = NULL;
@@ -39,8 +38,8 @@ LPALGETAUXILIARYEFFECTSLOTIV alGetAuxiliaryEffectSlotiv = NULL;
 LPALGETAUXILIARYEFFECTSLOTF alGetAuxiliaryEffectSlotf = NULL;
 LPALGETAUXILIARYEFFECTSLOTFV alGetAuxiliaryEffectSlotfv = NULL;
 
-
-static void InitEfxProcAddr()
+static void
+InitEfxProcAddr()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

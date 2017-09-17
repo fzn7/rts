@@ -1,23 +1,22 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-#include <windows.h>
-#include <process.h>
 #include <imagehlp.h>
+#include <process.h>
 #include <signal.h>
+#include <windows.h>
 
-#include "System/Platform/CrashHandler.h"
-#include "System/Platform/errorhandler.h"
+#include "Game/GameVersion.h"
+#include "Net/Protocol/NetProtocol.h"
 #include "System/Log/ILog.h"
 #include "System/Log/LogSinkHandler.h"
 #include "System/LogOutput.h"
-#include "Net/Protocol/NetProtocol.h"
-#include "seh.h"
-#include "System/Util.h"
+#include "System/Platform/CrashHandler.h"
+#include "System/Platform/errorhandler.h"
 #include "System/SafeCStrings.h"
-#include "Game/GameVersion.h"
+#include "System/Util.h"
+#include "seh.h"
 #include <new>
-
 
 #define BUFFER_SIZE 2048
 #define MAX_STACK_DEPTH 4096
@@ -26,123 +25,136 @@ namespace CrashHandler {
 
 CRITICAL_SECTION stackLock;
 bool imageHelpInitialised = false;
-int stackLockInit() { InitializeCriticalSection(&stackLock); return 0; }
+int
+stackLockInit()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 int dummyStackLock = stackLockInit();
 
-static void SigAbrtHandler(int signal)
+static void
+SigAbrtHandler(int signal)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
 /** Convert exception code to human readable string. */
-static const char* ExceptionName(DWORD exceptionCode)
+static const char*
+ExceptionName(DWORD exceptionCode)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool InitImageHlpDll()
+bool
+InitImageHlpDll()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /** Callback for SymEnumerateModules */
 #if _MSC_VER >= 1500
-	static BOOL CALLBACK EnumModules(PCSTR moduleName, ULONG baseOfDll, PVOID userContext)
-	{
-		LOG_L(L_ERROR, "0x%08lx\t%s", baseOfDll, moduleName);
-		return TRUE;
-	}
-#else // _MSC_VER >= 1500
-	static BOOL CALLBACK EnumModules(LPSTR moduleName, DWORD baseOfDll, PVOID userContext)
-	{
-		LOG_L(L_ERROR, "0x%08lx\t%s", baseOfDll, moduleName);
-		return TRUE;
-	}
+static BOOL CALLBACK
+EnumModules(PCSTR moduleName, ULONG baseOfDll, PVOID userContext)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+#else  // _MSC_VER >= 1500
+static BOOL CALLBACK
+EnumModules(LPSTR moduleName, DWORD baseOfDll, PVOID userContext)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 #endif // _MSC_VER >= 1500
 
-static DWORD __stdcall AllocTest(void *param) {
-	GlobalFree(GlobalAlloc(GMEM_FIXED, 16384));
-	return 0;
+static DWORD __stdcall AllocTest(void* param)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /** Print out a stacktrace. */
-inline static void StacktraceInline(const char *threadName, LPEXCEPTION_POINTERS e, HANDLE hThread = INVALID_HANDLE_VALUE, const int logLevel = LOG_LEVEL_ERROR)
+inline static void
+StacktraceInline(const char* threadName,
+                 LPEXCEPTION_POINTERS e,
+                 HANDLE hThread = INVALID_HANDLE_VALUE,
+                 const int logLevel = LOG_LEVEL_ERROR)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void Stacktrace(const char *threadName, LPEXCEPTION_POINTERS e, HANDLE hThread = INVALID_HANDLE_VALUE, const int logLevel = LOG_LEVEL_ERROR) {
-	StacktraceInline(threadName, e, hThread, logLevel);
-}
-
-
-void Stacktrace(Threading::NativeThreadHandle thread, const std::string& threadName, const int logLevel)
+static void
+Stacktrace(const char* threadName,
+           LPEXCEPTION_POINTERS e,
+           HANDLE hThread = INVALID_HANDLE_VALUE,
+           const int logLevel = LOG_LEVEL_ERROR)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void PrepareStacktrace(const int logLevel) {
-	EnterCriticalSection( &stackLock );
-
-	InitImageHlpDll();
-
-	// Record list of loaded DLLs.
-	LOG_I(logLevel, "DLL information:");
-	SymEnumerateModules(GetCurrentProcess(), (PSYM_ENUMMODULES_CALLBACK)EnumModules, NULL);
+void
+Stacktrace(Threading::NativeThreadHandle thread,
+           const std::string& threadName,
+           const int logLevel)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void CleanupStacktrace(const int logLevel) {
-	LOG_CLEANUP();
-	// Unintialize IMAGEHLP.DLL
-	SymCleanup(GetCurrentProcess());
-	imageHelpInitialised = false;
-
-	LeaveCriticalSection( &stackLock );
+void
+PrepareStacktrace(const int logLevel)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void OutputStacktrace() {
-	LOG_L(L_ERROR, "Error handler invoked for Spring %s.", (SpringVersion::GetFull()).c_str());
-
-	PrepareStacktrace();
-
-	Stacktrace(NULL, NULL);
-
-	CleanupStacktrace();
+void
+CleanupStacktrace(const int logLevel)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void NewHandler() {
-	LOG_L(L_ERROR, "Failed to allocate memory"); // make sure this ends up in the log also
+void
+OutputStacktrace()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
-	OutputStacktrace();
-
-	ErrorMessageBox("Failed to allocate memory", "Spring: Fatal Error", MBF_OK | MBF_CRASH);
+void
+NewHandler()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /** Called by windows if an exception happens. */
-LONG CALLBACK ExceptionHandler(LPEXCEPTION_POINTERS e)
+LONG CALLBACK
+ExceptionHandler(LPEXCEPTION_POINTERS e)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /** Install crash handler. */
-void Install()
+void
+Install()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
 /** Uninstall crash handler. */
-void Remove()
+void
+Remove()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

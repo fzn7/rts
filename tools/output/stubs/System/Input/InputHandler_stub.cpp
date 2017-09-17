@@ -6,26 +6,24 @@
 
 InputHandler input;
 
-InputHandler::InputHandler()
+InputHandler::InputHandler() {}
+
+void
+InputHandler::PushEvent(const SDL_Event& ev)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void InputHandler::PushEvent(const SDL_Event& ev)
+void
+InputHandler::PushEvents()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void InputHandler::PushEvents()
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-
-boost::signals2::connection InputHandler::AddHandler(SignalType::slot_function_type handler)
+boost::signals2::connection
+InputHandler::AddHandler(SignalType::slot_function_type handler)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

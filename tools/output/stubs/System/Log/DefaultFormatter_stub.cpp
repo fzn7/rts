@@ -8,16 +8,15 @@
  * timestamp.
  */
 
-#include "LogUtil.h"
 #include "Level.h"
+#include "LogUtil.h"
 #include "Section.h"
-#include "System/maindefines.h"
 #include "System/SafeCStrings.h"
+#include "System/maindefines.h"
 
-#include <cstdio>
 #include <cstdarg>
+#include <cstdio>
 #include <cstring>
-
 
 #ifdef __cplusplus
 extern "C" {
@@ -30,90 +29,74 @@ extern "C" {
 static const int SECTION_SIZE_MIN = 10;
 static const int SECTION_SIZE_MAX = 20;
 
-
 // *******************************************************************************************
 // Helpers
-static inline void ResizeBuffer(char** buffer, size_t* bufferSize, const bool copy = false)
+static inline void
+ResizeBuffer(char** buffer, size_t* bufferSize, const bool copy = false)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static inline void PrintfAppend(char** buffer, size_t* bufferSize, const char* fmt, va_list arguments)
+static inline void
+PrintfAppend(char** buffer,
+             size_t* bufferSize,
+             const char* fmt,
+             va_list arguments)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 // *******************************************************************************************
 
 /*
 static void log_formatter_createPrefix_xorgStyle(
-	char** buffer,
-	size_t* bufferSize,
-	const char* section,
-	int level
+        char** buffer,
+        size_t* bufferSize,
+        const char* section,
+        int level
 ) {
-	const char* prepSection = log_util_prepareSection(section);
-	const char levelChar = log_util_levelToChar(level);
+        const char* prepSection = log_util_prepareSection(section);
+        const char levelChar = log_util_levelToChar(level);
 
-	SNPRINTF(*buffer, *bufferSize, "(%c%c) %*.*s - ", levelChar, levelChar,
-			SECTION_SIZE_MIN, SECTION_SIZE_MAX, prepSection);
+        SNPRINTF(*buffer, *bufferSize, "(%c%c) %*.*s - ", levelChar, levelChar,
+                        SECTION_SIZE_MIN, SECTION_SIZE_MAX, prepSection);
 }
 */
 
 /*
 static void log_formatter_createPrefix_testing(
-	char** buffer,
-	size_t* bufferSize,
-	const char* section,
-	int level
+        char** buffer,
+        size_t* bufferSize,
+        const char* section,
+        int level
 ) {
-	const char* prepSection = log_util_prepareSection(section);
-	const char* levelStr = log_util_levelToString(level);
+        const char* prepSection = log_util_prepareSection(section);
+        const char* levelStr = log_util_levelToString(level);
 
-	SNPRINTF(*buffer, *bufferSize, "%s %s: ", levelStr, prepSection);
+        SNPRINTF(*buffer, *bufferSize, "%s %s: ", levelStr, prepSection);
 }
 */
 
-static void log_formatter_createPrefix_default(
-	char** buffer,
-	size_t* bufferSize,
-	const char* section,
-	int level
-) {
-	(*buffer)[0] = '\0';
-
-	if (!LOG_SECTION_IS_DEFAULT(section)) {
-		const char* prepSection = log_util_prepareSection(section);
-		STRCAT_T(*buffer, *bufferSize, "[");
-		STRCAT_T(*buffer, *bufferSize, prepSection);
-		STRCAT_T(*buffer, *bufferSize, "] ");
-	}
-	if (level != LOG_LEVEL_INFO && level != LOG_LEVEL_NOTICE) {
-		const char* levelStr = log_util_levelToString(level);
-		STRCAT_T(*buffer, *bufferSize, levelStr);
-		STRCAT_T(*buffer, *bufferSize, ": ");
-	}
+static void
+log_formatter_createPrefix_default(char** buffer,
+                                   size_t* bufferSize,
+                                   const char* section,
+                                   int level)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static inline void log_formatter_createPrefix(
-	char** buffer,
-	size_t* bufferSize,
-	const char* section,
-	int level
-) {
-	//log_formatter_createPrefix_xorgStyle(buffer, bufferSize, section, level);
-	//log_formatter_createPrefix_testing(buffer, bufferSize, section, level);
-	log_formatter_createPrefix_default(buffer, bufferSize, section, level);
-
-	// check if the buffer was large enough, if not resize it and try again
-	if ((strlen(*buffer) + 1) >= *bufferSize) {
-		ResizeBuffer(buffer, bufferSize);
-		log_formatter_createPrefix(buffer, bufferSize, section, level); // recursive
-	}
+static inline void
+log_formatter_createPrefix(char** buffer,
+                           size_t* bufferSize,
+                           const char* section,
+                           int level)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // *******************************************************************************************
@@ -128,15 +111,18 @@ static inline void log_formatter_createPrefix(
  * Formats a log entry into its final string form.
  * @return a string buffer, allocated with new[] -> you have to delete[] it
  */
-char* log_formatter_format(const char* section, int level, const char* fmt, va_list arguments)
+char*
+log_formatter_format(const char* section,
+                     int level,
+                     const char* fmt,
+                     va_list arguments)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-///@}
+    ///@}
 
 #ifdef __cplusplus
 } // extern "C"
 #endif
-

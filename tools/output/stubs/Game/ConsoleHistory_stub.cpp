@@ -3,9 +3,7 @@
 
 #include "ConsoleHistory.h"
 
-
 const unsigned int CConsoleHistory::MAX_LINES = 256;
-
 
 CConsoleHistory::CConsoleHistory()
 {
@@ -13,43 +11,42 @@ CConsoleHistory::CConsoleHistory()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
 CConsoleHistory::~CConsoleHistory()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CConsoleHistory::ResetPosition()
+void
+CConsoleHistory::ResetPosition()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CConsoleHistory::AddLine(const std::string& msg)
+bool
+CConsoleHistory::AddLine(const std::string& msg)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-	
-bool CConsoleHistory::AddLineRaw(const std::string& msg)
+bool
+CConsoleHistory::AddLineRaw(const std::string& msg)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-std::string CConsoleHistory::NextLine(const std::string& current)
+std::string
+CConsoleHistory::NextLine(const std::string& current)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-std::string CConsoleHistory::PrevLine(const std::string& current)
+std::string
+CConsoleHistory::PrevLine(const std::string& current)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

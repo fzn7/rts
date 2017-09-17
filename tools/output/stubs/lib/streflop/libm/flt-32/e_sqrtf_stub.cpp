@@ -10,7 +10,7 @@
  *
  * Developed at SunPro, a Sun Microsystems, Inc. business.
  * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice 
+ * software is freely granted, provided that this notice
  * is preserved.
  * ====================================================
  */
@@ -24,16 +24,16 @@ static char rcsid[] = "$NetBSD: e_sqrtf.c,v 1.4f 1995/05/10 20:46:19 jtc Exp $";
 
 namespace streflop_libm {
 #ifdef __STDC__
-static	const Simple	one	= 1.0f, tiny=1.0e-30f;
+static const Simple one = 1.0f, tiny = 1.0e-30f;
 #else
-static	Simple	one	= 1.0f, tiny=1.0e-30f;
+static Simple one = 1.0f, tiny = 1.0e-30f;
 #endif
 
 #ifdef __STDC__
-	Simple __ieee754_sqrtf(Simple x)
+Simple
+__ieee754_sqrtf(Simple x)
 #else
-	Simple __ieee754_sqrtf(x)
-	Simple x;
+Simple __ieee754_sqrtf(x) Simple x;
 #endif
 {
     //stub method

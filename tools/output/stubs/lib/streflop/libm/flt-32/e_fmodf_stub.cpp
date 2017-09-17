@@ -10,7 +10,7 @@
  *
  * Developed at SunPro, a Sun Microsystems, Inc. business.
  * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice 
+ * software is freely granted, provided that this notice
  * is preserved.
  * ====================================================
  */
@@ -19,7 +19,7 @@
 static char rcsid[] = "$NetBSD: e_fmodf.c,v 1.4f 1995/05/10 20:45:10 jtc Exp $";
 #endif
 
-/* 
+/*
  * __ieee754_fmodf(x,y)
  * Return x mod y in exact arithmetic
  * Method: shift and subtract
@@ -30,16 +30,22 @@ static char rcsid[] = "$NetBSD: e_fmodf.c,v 1.4f 1995/05/10 20:45:10 jtc Exp $";
 
 namespace streflop_libm {
 #ifdef __STDC__
-static const Simple one = 1.0f, Zero[] = {0.0f, -0.0f,};
+static const Simple one = 1.0f, Zero[] = {
+    0.0f,
+    -0.0f,
+};
 #else
-static Simple one = 1.0f, Zero[] = {0.0f, -0.0f,};
+static Simple one = 1.0f, Zero[] = {
+    0.0f,
+    -0.0f,
+};
 #endif
 
 #ifdef __STDC__
-	Simple __ieee754_fmodf(Simple x, Simple y)
+Simple
+__ieee754_fmodf(Simple x, Simple y)
 #else
-	Simple __ieee754_fmodf(x,y)
-	Simple x,y ;
+Simple __ieee754_fmodf(x, y) Simple x, y;
 #endif
 {
     //stub method

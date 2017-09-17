@@ -6,9 +6,6 @@
 CR_BIND_DERIVED(CNoWeapon, CWeapon, (NULL, NULL))
 CR_REG_METADATA(CNoWeapon, )
 
-CNoWeapon::CNoWeapon(CUnit* owner, const WeaponDef* def) : CWeapon(owner, def)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
+CNoWeapon::CNoWeapon(CUnit* owner, const WeaponDef* def)
+  : CWeapon(owner, def)
+{}

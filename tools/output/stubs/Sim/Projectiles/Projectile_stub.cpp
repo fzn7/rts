@@ -5,54 +5,51 @@
 #include "Map/MapInfo.h"
 #include "Rendering/Colors.h"
 #include "Rendering/GL/VertexArray.h"
-#include "Sim/Projectiles/ExpGenSpawnableMemberInfo.h"
-#include "Sim/Projectiles/ProjectileHandler.h"
 #include "Sim/Misc/QuadField.h"
 #include "Sim/Misc/TeamHandler.h"
+#include "Sim/Projectiles/ExpGenSpawnableMemberInfo.h"
+#include "Sim/Projectiles/ProjectileHandler.h"
 #include "Sim/Units/Unit.h"
 #include "Sim/Units/UnitHandler.h"
 #include "System/Matrix44f.h"
 
 CR_BIND_DERIVED_INTERFACE(CProjectile, CExpGenSpawnable)
 
-CR_REG_METADATA(CProjectile,
-(
-	CR_MEMBER(synced),
-	CR_MEMBER(weapon),
-	CR_MEMBER(piece),
-	CR_MEMBER(hitscan),
+CR_REG_METADATA(
+  CProjectile,
+  (CR_MEMBER(synced),
+   CR_MEMBER(weapon),
+   CR_MEMBER(piece),
+   CR_MEMBER(hitscan),
 
-	CR_MEMBER(luaMoveCtrl),
-	CR_MEMBER(checkCol),
-	CR_MEMBER(ignoreWater),
-	CR_MEMBER(deleteMe),
-	CR_IGNORED(callEvent), //we want the render event called for all projectiles
+   CR_MEMBER(luaMoveCtrl),
+   CR_MEMBER(checkCol),
+   CR_MEMBER(ignoreWater),
+   CR_MEMBER(deleteMe),
+   CR_IGNORED(callEvent), // we want the render event called for all projectiles
 
-	CR_MEMBER(castShadow),
-	CR_MEMBER(drawSorted),
+   CR_MEMBER(castShadow),
+   CR_MEMBER(drawSorted),
 
-	CR_MEMBER_BEGINFLAG(CM_Config),
-		CR_MEMBER(dir),
-	CR_MEMBER_ENDFLAG(CM_Config),
-	CR_MEMBER(drawPos),
+   CR_MEMBER_BEGINFLAG(CM_Config),
+   CR_MEMBER(dir),
+   CR_MEMBER_ENDFLAG(CM_Config),
+   CR_MEMBER(drawPos),
 
-	CR_MEMBER(mygravity),
-	CR_IGNORED(sortDist),
-	CR_MEMBER(sortDistOffset),
-	CR_MEMBER(tempNum),
+   CR_MEMBER(mygravity),
+   CR_IGNORED(sortDist),
+   CR_MEMBER(sortDistOffset),
+   CR_MEMBER(tempNum),
 
-	CR_MEMBER(ownerID),
-	CR_MEMBER(teamID),
-	CR_MEMBER(allyteamID),
-	CR_MEMBER(cegID),
+   CR_MEMBER(ownerID),
+   CR_MEMBER(teamID),
+   CR_MEMBER(allyteamID),
+   CR_MEMBER(cegID),
 
-	CR_MEMBER(projectileType),
-	CR_MEMBER(collisionFlags),
+   CR_MEMBER(projectileType),
+   CR_MEMBER(collisionFlags),
 
-	CR_MEMBER(quads)
-))
-
-
+   CR_MEMBER(quads)))
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -60,77 +57,36 @@ CR_REG_METADATA(CProjectile,
 bool CProjectile::inArray = false;
 CVertexArray* CProjectile::va = NULL;
 
-
 CProjectile::CProjectile()
-	: synced(false)
-	, weapon(false)
-	, piece(false)
-	, hitscan(false)
+  : synced(false)
+  , weapon(false)
+  , piece(false)
+  , hitscan(false)
 
-	, luaMoveCtrl(false)
-	, checkCol(true)
-	, ignoreWater(false)
-	, deleteMe(false)
-	, callEvent(true)
-	, castShadow(false)
-	, drawSorted(true)
+  , luaMoveCtrl(false)
+  , checkCol(true)
+  , ignoreWater(false)
+  , deleteMe(false)
+  , callEvent(true)
+  , castShadow(false)
+  , drawSorted(true)
 
-	, mygravity(mapInfo? mapInfo->map.gravity: 0.0f)
-	, sortDist(0.0f)
-	, sortDistOffset(0.0f)
-	, tempNum(0)
+  , mygravity(mapInfo ? mapInfo->map.gravity : 0.0f)
+  , sortDist(0.0f)
+  , sortDistOffset(0.0f)
+  , tempNum(0)
 
-	, ownerID(-1u)
-	, teamID(-1u)
-	, allyteamID(-1)
-	, cegID(-1u)
+  , ownerID(-1u)
+  , teamID(-1u)
+  , allyteamID(-1)
+  , cegID(-1u)
 
-	, projectileType(-1u)
-	, collisionFlags(0)
+  , projectileType(-1u)
+  , collisionFlags(0)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
-CProjectile::CProjectile(
-	const float3& pos,
-	const float3& spd,
-	const CUnit* owner,
-	bool isSynced,
-	bool isWeapon,
-	bool isPiece,
-	bool isHitScan
-): CExpGenSpawnable(pos, spd)
-
-	, synced(isSynced)
-	, weapon(isWeapon)
-	, piece(isPiece)
-	, hitscan(isHitScan)
-
-	, luaMoveCtrl(false)
-	, checkCol(true)
-	, ignoreWater(false)
-	, deleteMe(false)
-	, callEvent(true)
-	, castShadow(false)
-	, drawSorted(true)
-
-	, dir(ZeroVector) // set via Init()
-	, mygravity(mapInfo? mapInfo->map.gravity: 0.0f)
-	, sortDistOffset(0.f)
-
-	, ownerID(-1u)
-	, teamID(-1u)
-	, allyteamID(-1)
-	, cegID(-1u)
-
-	, projectileType(-1u)
-	, collisionFlags(0)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
 
 CProjectile::~CProjectile()
 {
@@ -138,68 +94,57 @@ CProjectile::~CProjectile()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CProjectile::Init(const CUnit* owner, const float3& offset)
+void
+CProjectile::Init(const CUnit* owner, const float3& offset)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CProjectile::Update()
+void
+CProjectile::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CProjectile::Delete()
+void
+CProjectile::Delete()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CProjectile::DrawOnMinimap(CVertexArray& lines, CVertexArray& points)
+void
+CProjectile::DrawOnMinimap(CVertexArray& lines, CVertexArray& points)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CProjectile::DrawArray()
+void
+CProjectile::DrawArray()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-CUnit* CProjectile::owner() const {
-	// NOTE:
-	//   this death dependency optimization using "ownerID" is logically flawed:
-	//   because ID's are reused it could return a unit that is not the original
-	//   owner (unlikely however unless ID's get recycled very rapidly)
-	return (unitHandler->GetUnit(ownerID));
+CUnit*
+CProjectile::owner() const
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-
-CMatrix44f CProjectile::GetTransformMatrix(bool offsetPos) const {
-	float3 xdir;
-	float3 ydir;
-
-	if (math::fabs(dir.y) < 0.95f) {
-		xdir = dir.cross(UpVector);
-		xdir.SafeANormalize();
-	} else {
-		xdir.x = 1.0f;
-	}
-
-	ydir = xdir.cross(dir);
-
-	return (CMatrix44f(drawPos + (dir * radius * 0.9f * offsetPos), -xdir, ydir, dir));
+CMatrix44f
+CProjectile::GetTransformMatrix(bool offsetPos) const
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CProjectile::GetMemberInfo(SExpGenSpawnableMemberInfo& memberInfo)
+bool
+CProjectile::GetMemberInfo(SExpGenSpawnableMemberInfo& memberInfo)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

@@ -24,20 +24,20 @@ static char rcsid[] = "$NetBSD: s_tanhf.c,v 1.4f 1995/05/10 20:48:24 jtc Exp $";
 
 namespace streflop_libm {
 #ifdef __STDC__
-static const Simple one=1.0f, two=2.0f, tiny = 1.0e-30f;
+static const Simple one = 1.0f, two = 2.0f, tiny = 1.0e-30f;
 #else
-static Simple one=1.0f, two=2.0f, tiny = 1.0e-30f;
+static Simple one = 1.0f, two = 2.0f, tiny = 1.0e-30f;
 #endif
 
 #ifdef __STDC__
-	Simple __tanhf(Simple x)
+Simple
+__tanhf(Simple x)
 #else
-	Simple __tanhf(x)
-	Simple x;
+Simple __tanhf(x) Simple x;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__tanhf, tanhf)
+weak_alias(__tanhf, tanhf)
 }

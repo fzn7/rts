@@ -4,42 +4,37 @@
 #include "LogSinkHandler.h"
 #include "Backend.h"
 
-#include <string>
 #include <cassert>
-
-
+#include <string>
 
 /// Records a log entry
-static void log_sink_record_logSinkHandler(const char* section, int level,
-		const char* record)
+static void
+log_sink_record_logSinkHandler(const char* section,
+                               int level,
+                               const char* record)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void LogSinkHandler::AddSink(ILogSink* logSink) {
-	assert(logSink != NULL);
-
-	if (sinks.empty()) {
-		log_backend_registerSink(&log_sink_record_logSinkHandler);
-	}
-
-	sinks.insert(logSink);
+void
+LogSinkHandler::AddSink(ILogSink* logSink)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void LogSinkHandler::RemoveSink(ILogSink* logSink) {
-	assert(logSink != NULL);
-	sinks.erase(logSink);
-
-	if (sinks.empty()) {
-		log_backend_unregisterSink(&log_sink_record_logSinkHandler);
-	}
+void
+LogSinkHandler::RemoveSink(ILogSink* logSink)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void LogSinkHandler::RecordLogMessage(const std::string& section, int level,
-			const std::string& text) const
+void
+LogSinkHandler::RecordLogMessage(const std::string& section,
+                                 int level,
+                                 const std::string& text) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

@@ -1,10 +1,10 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-#include <string>
 #include <fstream>
-#include <vector>
 #include <list>
+#include <string>
+#include <vector>
 
 #include "DumpState.h"
 
@@ -24,11 +24,11 @@
 #include "Sim/Units/UnitHandler.h"
 #include "Sim/Weapons/Weapon.h"
 #include "Sim/Weapons/WeaponDefHandler.h"
-#include "System/Util.h"
 #include "System/Log/ILog.h"
+#include "System/Util.h"
 
-
-void DumpState(int newMinFrameNum, int newMaxFrameNum, int newFramePeriod)
+void
+DumpState(int newMinFrameNum, int newMaxFrameNum, int newFramePeriod)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

@@ -16,7 +16,8 @@
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: s_scalbnf.c,v 1.4f 1995/05/10 20:48:10 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: s_scalbnf.c,v 1.4f 1995/05/10 20:48:10 jtc Exp $";
 #endif
 
 #include "SMath.h"
@@ -28,20 +29,20 @@ static const Simple
 #else
 static Simple
 #endif
-two25   =  3.355443200e+07f,	/* 0x4c000000 */
-twom25  =  2.9802322388e-08f,	/* 0x33000000 */
-huge   = 1.0e+30f,
-tiny   = 1.0e-30f;
+  two25 = 3.355443200e+07f,   /* 0x4c000000 */
+  twom25 = 2.9802322388e-08f, /* 0x33000000 */
+  huge = 1.0e+30f, tiny = 1.0e-30f;
 
 #ifdef __STDC__
-	Simple __scalblnf (Simple x, long int n)
+Simple
+__scalblnf(Simple x, long int n)
 #else
-	Simple __scalblnf (x,n)
-	Simple x; long int n;
+Simple __scalblnf(x, n) Simple x;
+long int n;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__scalblnf, scalblnf)
+weak_alias(__scalblnf, scalblnf)
 }

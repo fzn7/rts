@@ -4,16 +4,15 @@
 #include "IInfoTextureHandler.h"
 #include "Legacy/LegacyInfoTextureHandler.h"
 #include "Modern/InfoTextureHandler.h"
-#include "Rendering/GlobalRendering.h"
 #include "Rendering/GL/FBO.h"
+#include "Rendering/GlobalRendering.h"
 #include "System/Exceptions.h"
 #include "System/Log/ILog.h"
 
-
 IInfoTextureHandler* infoTextureHandler = nullptr;
 
-
-void IInfoTextureHandler::Create()
+void
+IInfoTextureHandler::Create()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

@@ -4,17 +4,18 @@
 #include "StreamSink.h"
 #include "Backend.h"
 
+#include <cstring>
 #include <ostream>
 #include <string>
-#include <cstring>
-
 
 static std::ostream* logStreamInt = NULL;
 
-void log_sink_stream_setLogStream(std::ostream* logStream) {
-	logStreamInt = logStream;
+void
+log_sink_stream_setLogStream(std::ostream* logStream)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
-
 
 #ifdef __cplusplus
 extern "C" {
@@ -27,7 +28,8 @@ extern "C" {
 ///@{
 
 /// Records a log entry
-void log_sink_record_stream(const char* section, int level, const char* record)
+void
+log_sink_record_stream(const char* section, int level, const char* record)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -35,20 +37,14 @@ void log_sink_record_stream(const char* section, int level, const char* record)
 
 ///@}
 
-
 namespace {
-	/// Auto-registers the sink defined in this file before main() is called
-	struct StreamSinkRegistrator {
-		StreamSinkRegistrator() {
-			log_backend_registerSink(&log_sink_record_stream);
-		}
-		~StreamSinkRegistrator() {
-			log_backend_unregisterSink(&log_sink_record_stream);
-		}
-	} streamSinkRegistrator;
+/// Auto-registers the sink defined in this file before main() is called
+struct StreamSinkRegistrator
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef __cplusplus
 } // extern "C"
 #endif
-

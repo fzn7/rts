@@ -5,22 +5,19 @@
 
 #include "Rendering/GL/myGL.h"
 
-namespace agui
+namespace agui {
+
+VerticalLayout::VerticalLayout(GuiElement* parent)
+  : GuiElement(parent)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void VerticalLayout::DrawSelf()
+void
+VerticalLayout::GeometryChangeSelf()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
-void VerticalLayout::GeometryChangeSelf()
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
 }

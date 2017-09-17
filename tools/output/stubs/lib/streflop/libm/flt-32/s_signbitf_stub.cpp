@@ -26,7 +26,7 @@
 
 namespace streflop_libm {
 int
-__signbitf (Simple x)
+__signbitf(Simple x)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

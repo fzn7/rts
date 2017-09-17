@@ -10,13 +10,14 @@
  *
  * Developed at SunPro, a Sun Microsystems, Inc. business.
  * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice 
+ * software is freely granted, provided that this notice
  * is preserved.
  * ====================================================
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: s_copysignf.c,v 1.4f 1995/05/10 20:46:59 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: s_copysignf.c,v 1.4f 1995/05/10 20:46:59 jtc Exp $";
 #endif
 
 /*
@@ -30,14 +31,14 @@ static char rcsid[] = "$NetBSD: s_copysignf.c,v 1.4f 1995/05/10 20:46:59 jtc Exp
 
 namespace streflop_libm {
 #ifdef __STDC__
-	Simple __copysignf(Simple x, Simple y)
+Simple
+__copysignf(Simple x, Simple y)
 #else
-	Simple __copysignf(x,y)
-	Simple x,y;
+Simple __copysignf(x, y) Simple x, y;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__copysignf, copysignf)
+weak_alias(__copysignf, copysignf)
 }

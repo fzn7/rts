@@ -8,32 +8,46 @@
 #include "System/Platform/CrashHandler.h"
 #include "System/maindefines.h"
 
-template <> const float& safe_vector<float>::safe_element(size_type idx) const {
-	static const float def = 0.0f;
+template<>
+const float&
+safe_vector<float>::safe_element(size_type idx) const
+{
+    static const float def = 0.0f;
 
-	if (showError) {
-		showError = false;
-		LOG_L(L_ERROR, "[%s const] index " _STPF_ " out of bounds! (size " _STPF_ ")", __FUNCTION__, idx, size());
+    if (showError) {
+        showError = false;
+        LOG_L(L_ERROR,
+              "[%s const] index " _STPF_ " out of bounds! (size " _STPF_ ")",
+              __FUNCTION__,
+              idx,
+              size());
 #ifndef UNITSYNC
-		CrashHandler::OutputStacktrace();
+        CrashHandler::OutputStacktrace();
 #endif
-	}
+    }
 
-	return def;
+    return def;
 }
 
-template <> float& safe_vector<float>::safe_element(size_type idx) {
-	static float def = 0.0f;
+template<>
+float&
+safe_vector<float>::safe_element(size_type idx)
+{
+    static float def = 0.0f;
 
-	if (showError) {
-		showError = false;
-		LOG_L(L_ERROR, "[%s] index " _STPF_ " out of bounds! (size " _STPF_ ")", __FUNCTION__, idx, size());
+    if (showError) {
+        showError = false;
+        LOG_L(L_ERROR,
+              "[%s] index " _STPF_ " out of bounds! (size " _STPF_ ")",
+              __FUNCTION__,
+              idx,
+              size());
 #ifndef UNITSYNC
-		CrashHandler::OutputStacktrace();
+        CrashHandler::OutputStacktrace();
 #endif
-	}
+    }
 
-	return def;
+    return def;
 }
 
 #endif // USE_SAFE_VECTOR

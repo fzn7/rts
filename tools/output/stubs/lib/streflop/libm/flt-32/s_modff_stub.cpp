@@ -30,14 +30,14 @@ static Simple one = 1.0f;
 #endif
 
 #ifdef __STDC__
-	Simple __modff(Simple x, Simple *iptr)
+Simple
+__modff(Simple x, Simple* iptr)
 #else
-	Simple __modff(x, iptr)
-	Simple x,*iptr;
+Simple __modff(x, iptr) Simple x, *iptr;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__modff, modff)
+weak_alias(__modff, modff)
 }

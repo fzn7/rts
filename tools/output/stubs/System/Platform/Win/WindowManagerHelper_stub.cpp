@@ -6,17 +6,17 @@
 #include <SDL_syswm.h>
 #include <windows.h>
 
-
 namespace WindowManagerHelper {
 
-void BlockCompositing(SDL_Window* window)
+void
+BlockCompositing(SDL_Window* window)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-int GetWindowState(SDL_Window* window)
+int
+GetWindowState(SDL_Window* window)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

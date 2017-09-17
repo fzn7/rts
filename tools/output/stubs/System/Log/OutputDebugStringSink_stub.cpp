@@ -14,7 +14,6 @@
 
 #include <windows.h>
 
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -26,8 +25,10 @@ extern "C" {
 ///@{
 
 /// Records a log entry
-static void log_sink_record_outputDebugString(const char* section, int level,
-		const char* record)
+static void
+log_sink_record_outputDebugString(const char* section,
+                                  int level,
+                                  const char* record)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -35,17 +36,12 @@ static void log_sink_record_outputDebugString(const char* section, int level,
 
 ///@}
 
-
 namespace {
-	/// Auto-registers the sink defined in this file before main() is called
-	struct OutputDebugStringSinkRegistrator {
-		OutputDebugStringSinkRegistrator() {
-			log_backend_registerSink(&log_sink_record_outputDebugString);
-		}
-		~OutputDebugStringSinkRegistrator() {
-			log_backend_unregisterSink(&log_sink_record_outputDebugString);
-		}
-	} outputDebugStringSinkRegistrator;
+/// Auto-registers the sink defined in this file before main() is called
+struct OutputDebugStringSinkRegistrator
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef __cplusplus
@@ -53,4 +49,3 @@ namespace {
 #endif
 
 #endif // _MSC_VER
-

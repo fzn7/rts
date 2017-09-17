@@ -28,14 +28,11 @@
    single-precision.
    */
 #ifndef _GNU_SOURCE
-# define _GNU_SOURCE
+#define _GNU_SOURCE
 #endif
 #include "../streflop_libm_bridge.h"
-#include "../streflop_libm_bridge.h"
-#include "ieee754.h"
 #include "SMath.h"
-#include "../streflop_libm_bridge.h"
-#include "../streflop_libm_bridge.h"
+#include "ieee754.h"
 #include "math_private.h"
 
 #include "t_exp2f.h"
@@ -45,7 +42,7 @@ static const Simple TWO127 = 1.7014118346e+38f;
 
 namespace streflop_libm {
 Simple
-__ieee754_exp2f (Simple x)
+__ieee754_exp2f(Simple x)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

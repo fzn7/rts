@@ -4,55 +4,51 @@
 #include <algorithm>
 #include <cctype>
 
-#include "GroundDecalHandler.h"
 #include "Game/Camera.h"
 #include "Game/GameHelper.h"
 #include "Game/GameSetup.h"
 #include "Game/GlobalUnsynced.h"
+#include "GroundDecalHandler.h"
 #include "Lua/LuaParser.h"
 #include "Map/Ground.h"
 #include "Map/MapInfo.h"
 #include "Map/ReadMap.h"
-#include "Rendering/GlobalRendering.h"
-#include "Rendering/ShadowHandler.h"
-#include "Rendering/UnitDrawer.h"
 #include "Rendering/Env/ISky.h"
 #include "Rendering/Env/SunLighting.h"
-#include "Rendering/GL/myGL.h"
 #include "Rendering/GL/VertexArray.h"
+#include "Rendering/GL/myGL.h"
+#include "Rendering/GlobalRendering.h"
 #include "Rendering/Map/InfoTexture/IInfoTextureHandler.h"
-#include "Rendering/Shaders/ShaderHandler.h"
 #include "Rendering/Shaders/Shader.h"
+#include "Rendering/Shaders/ShaderHandler.h"
+#include "Rendering/ShadowHandler.h"
 #include "Rendering/Textures/Bitmap.h"
+#include "Rendering/UnitDrawer.h"
 #include "Sim/Features/FeatureDef.h"
+#include "Sim/Projectiles/ExplosionListener.h"
 #include "Sim/Units/Unit.h"
 #include "Sim/Units/UnitDef.h"
 #include "Sim/Units/UnitHandler.h"
-#include "Sim/Projectiles/ExplosionListener.h"
 #include "Sim/Weapons/WeaponDef.h"
 #include "System/Config/ConfigHandler.h"
 #include "System/EventHandler.h"
 #include "System/Exceptions.h"
-#include "System/Log/ILog.h"
-#include "System/myMath.h"
-#include "System/Util.h"
 #include "System/FileSystem/FileSystem.h"
+#include "System/Log/ILog.h"
+#include "System/Util.h"
+#include "System/myMath.h"
 
-
-using std::min;
 using std::max;
-
+using std::min;
 
 CONFIG(int, GroundScarAlphaFade).defaultValue(0);
 
 CGroundDecalHandler::CGroundDecalHandler()
-	: CEventClient("[CGroundDecalHandler]", 314159, false)
+  : CEventClient("[CGroundDecalHandler]", 314159, false)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
-
 
 CGroundDecalHandler::~CGroundDecalHandler()
 {
@@ -60,350 +56,269 @@ CGroundDecalHandler::~CGroundDecalHandler()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CGroundDecalHandler::LoadDecalShaders() {
-	#define sh shaderHandler
-	decalShaders.resize(DECAL_SHADER_LAST, NULL);
-
-	// SM3 maps have no baked lighting, so decals blend differently
-	const bool haveShadingTexture = (readMap->GetShadingTexture() != 0);
-	const char* fragmentProgramNameARB = haveShadingTexture?
-		"ARB/GroundDecalsSMF.fp":
-		"ARB/GroundDecalsSM3.fp";
-	const std::string extraDef = haveShadingTexture?
-		"#define HAVE_SHADING_TEX 1\n":
-		"#define HAVE_SHADING_TEX 0\n";
-
-	decalShaders[DECAL_SHADER_ARB ] = sh->CreateProgramObject("[GroundDecalHandler]", "DecalShaderARB",  true);
-	decalShaders[DECAL_SHADER_GLSL] = sh->CreateProgramObject("[GroundDecalHandler]", "DecalShaderGLSL", false);
-	decalShaders[DECAL_SHADER_CURR] = decalShaders[DECAL_SHADER_ARB];
-
-	if (globalRendering->haveARB && !globalRendering->haveGLSL) {
-		decalShaders[DECAL_SHADER_ARB]->AttachShaderObject(sh->CreateShaderObject("ARB/GroundDecals.vp", "", GL_VERTEX_PROGRAM_ARB));
-		decalShaders[DECAL_SHADER_ARB]->AttachShaderObject(sh->CreateShaderObject(fragmentProgramNameARB, "", GL_FRAGMENT_PROGRAM_ARB));
-		decalShaders[DECAL_SHADER_ARB]->Link();
-	} else {
-		if (globalRendering->haveGLSL) {
-			decalShaders[DECAL_SHADER_GLSL]->AttachShaderObject(sh->CreateShaderObject("GLSL/GroundDecalsVertProg.glsl", "",       GL_VERTEX_SHADER));
-			decalShaders[DECAL_SHADER_GLSL]->AttachShaderObject(sh->CreateShaderObject("GLSL/GroundDecalsFragProg.glsl", extraDef, GL_FRAGMENT_SHADER));
-			decalShaders[DECAL_SHADER_GLSL]->Link();
-
-			decalShaders[DECAL_SHADER_GLSL]->SetUniformLocation("decalTex");           // idx 0
-			decalShaders[DECAL_SHADER_GLSL]->SetUniformLocation("shadeTex");           // idx 1
-			decalShaders[DECAL_SHADER_GLSL]->SetUniformLocation("shadowTex");          // idx 2
-			decalShaders[DECAL_SHADER_GLSL]->SetUniformLocation("mapSizePO2");         // idx 3
-			decalShaders[DECAL_SHADER_GLSL]->SetUniformLocation("groundAmbientColor"); // idx 4
-			decalShaders[DECAL_SHADER_GLSL]->SetUniformLocation("shadowMatrix");       // idx 5
-			decalShaders[DECAL_SHADER_GLSL]->SetUniformLocation("shadowParams");       // idx 6
-			decalShaders[DECAL_SHADER_GLSL]->SetUniformLocation("shadowDensity");      // idx 7
-
-			decalShaders[DECAL_SHADER_GLSL]->Enable();
-			decalShaders[DECAL_SHADER_GLSL]->SetUniform1i(0, 0); // decalTex  (idx 0, texunit 0)
-			decalShaders[DECAL_SHADER_GLSL]->SetUniform1i(1, 1); // shadeTex  (idx 1, texunit 1)
-			decalShaders[DECAL_SHADER_GLSL]->SetUniform1i(2, 2); // shadowTex (idx 2, texunit 2)
-			decalShaders[DECAL_SHADER_GLSL]->SetUniform2f(3, 1.0f / (mapDims.pwr2mapx * SQUARE_SIZE), 1.0f / (mapDims.pwr2mapy * SQUARE_SIZE));
-			decalShaders[DECAL_SHADER_GLSL]->SetUniform1f(7, sky->GetLight()->GetGroundShadowDensity());
-			decalShaders[DECAL_SHADER_GLSL]->Disable();
-			decalShaders[DECAL_SHADER_GLSL]->Validate();
-
-			decalShaders[DECAL_SHADER_CURR] = decalShaders[DECAL_SHADER_GLSL];
-		}
-	}
-
-	#undef sh
-}
-
-void CGroundDecalHandler::SunChanged() {
-	if (globalRendering->haveGLSL && decalShaders.size() > DECAL_SHADER_GLSL) {
-		decalShaders[DECAL_SHADER_GLSL]->Enable();
-		decalShaders[DECAL_SHADER_GLSL]->SetUniform1f(7, sky->GetLight()->GetGroundShadowDensity());
-		decalShaders[DECAL_SHADER_GLSL]->Disable();
-	}
-}
-
-static inline void AddQuadVertices(CVertexArray* va, int x, float* yv, int z, const float* uv, unsigned char* color)
+void
+CGroundDecalHandler::LoadDecalShaders()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-inline void CGroundDecalHandler::DrawObjectDecal(SolidObjectGroundDecal* decal)
+void
+CGroundDecalHandler::SunChanged()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-inline void CGroundDecalHandler::DrawGroundScar(CGroundDecalHandler::Scar* scar, bool fade)
+static inline void
+AddQuadVertices(CVertexArray* va,
+                int x,
+                float* yv,
+                int z,
+                const float* uv,
+                unsigned char* color)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void CGroundDecalHandler::GatherDecalsForType(CGroundDecalHandler::SolidObjectDecalType* decalType) {
-	decalsToDraw.clear();
-
-	auto& objectDecals = decalType->objectDecals;
-
-	for (int i = 0; i < objectDecals.size();) {
-		SolidObjectGroundDecal* decal = objectDecals[i];
-		CSolidObject* decalOwner = decal->owner;
-
-		if (decalOwner == NULL) {
-			if (decal->gbOwner == NULL) {
-				decal->alpha -= (decal->alphaFalloff * globalRendering->lastFrameTime * 0.001f * gs->speedFactor);
-			}
-			if (decal->alpha < 0.0f) {
-				// make sure RemoveSolidObject() won't try to modify this decal
-				if (decalOwner != NULL) {
-					decalOwner->groundDecal = NULL;
-				}
-
-				objectDecals[i] = objectDecals.back();
-				objectDecals.pop_back();
-
-				delete decal;
-				continue;
-			}
-			++i;
-		} else {
-			++i;
-			if (decalOwner->GetBlockingMapID() < unitHandler->MaxUnits()) {
-				const CUnit* decalOwnerUnit = static_cast<const CUnit*>(decalOwner);
-				if (decalOwnerUnit->isIcon)
-					continue;
-				if (!gu->spectatingFullView &&
-					(decalOwnerUnit->losStatus[gu->myAllyTeam] & LOS_INLOS) == 0 &&
-					(!gameSetup->ghostedBuildings || (decalOwnerUnit->losStatus[gu->myAllyTeam] & LOS_PREVLOS) == 0))
-					continue;
-
-				decal->alpha = std::max(0.0f, decalOwnerUnit->buildProgress);
-			} else {
-				const CFeature* decalOwnerFeature = static_cast<const CFeature*>(decalOwner);
-				if (!decalOwnerFeature->IsInLosForAllyTeam(gu->myAllyTeam))
-					continue;
-				if (decalOwnerFeature->drawAlpha < 0.01f)
-					continue;
-				decal->alpha = decalOwnerFeature->drawAlpha;
-			}
-		}
-		if (!camera->InView(decal->pos, decal->radius))
-			continue;
-		decalsToDraw.push_back(decal);
-	}
-}
-
-void CGroundDecalHandler::DrawObjectDecals() {
-	// create and draw the quads for each building decal
-	for (SolidObjectDecalType* decalType: objectDecalTypes) {
-		if (decalType->objectDecals.empty())
-			continue;
-
-		{
-			GatherDecalsForType(decalType);
-		}
-
-		if (!decalsToDraw.empty()) {
-			glBindTexture(GL_TEXTURE_2D, decalType->texture);
-			for (SolidObjectGroundDecal* decal: decalsToDraw) {
-				DrawObjectDecal(decal);
-			}
-		}
-
-		// glBindTexture(GL_TEXTURE_2D, 0);
-	}
-}
-
-
-void CGroundDecalHandler::AddScars()
+inline void
+CGroundDecalHandler::DrawObjectDecal(SolidObjectGroundDecal* decal)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CGroundDecalHandler::DrawScars() {
-	// create and draw the 16x16 quads for each ground scar
-	for (int i = 0; i < scars.size();) {
-		Scar* scar = scars[i];
-
-		if (scar->lifeTime < gs->frameNum) {
-			RemoveScar(scar, false);
-			scars[i] = scars.back();
-			scars.pop_back();
-			continue;
-		}
-
-		DrawGroundScar(scar, groundScarAlphaFade);
-		++i;
-	}
-}
-
-
-
-
-void CGroundDecalHandler::Draw()
+inline void
+CGroundDecalHandler::DrawGroundScar(CGroundDecalHandler::Scar* scar, bool fade)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CGroundDecalHandler::BindTextures()
+void
+CGroundDecalHandler::GatherDecalsForType(
+  CGroundDecalHandler::SolidObjectDecalType* decalType)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CGroundDecalHandler::KillTextures()
+void
+CGroundDecalHandler::DrawObjectDecals()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CGroundDecalHandler::BindShader(const float3& ambientColor)
+void
+CGroundDecalHandler::AddScars()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CGroundDecalHandler::DrawDecals()
+void
+CGroundDecalHandler::DrawScars()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CGroundDecalHandler::AddDecal(CUnit* unit, const float3& newPos)
+void
+CGroundDecalHandler::Draw()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CGroundDecalHandler::AddExplosion(float3 pos, float damage, float radius)
+void
+CGroundDecalHandler::BindTextures()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CGroundDecalHandler::LoadScar(const std::string& file, unsigned char* buf,
-                                   int xoffset, int yoffset)
+void
+CGroundDecalHandler::KillTextures()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-int CGroundDecalHandler::OverlapSize(Scar* s1, Scar* s2)
+void
+CGroundDecalHandler::BindShader(const float3& ambientColor)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CGroundDecalHandler::TestOverlaps(Scar* scar)
+void
+CGroundDecalHandler::DrawDecals()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CGroundDecalHandler::RemoveScar(Scar* scar, bool removeFromScars)
+void
+CGroundDecalHandler::AddDecal(CUnit* unit, const float3& newPos)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-int CGroundDecalHandler::GetSolidObjectDecalType(const std::string& name)
+void
+CGroundDecalHandler::AddExplosion(float3 pos, float damage, float radius)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-SolidObjectGroundDecal::~SolidObjectGroundDecal() {
-	SafeDelete(va);
-}
-
-CGroundDecalHandler::Scar::~Scar() {
-	SafeDelete(va);
-}
-
-
-
-
-
-
-
-
-void CGroundDecalHandler::MoveSolidObject(CSolidObject* object, const float3& pos)
+void
+CGroundDecalHandler::LoadScar(const std::string& file,
+                              unsigned char* buf,
+                              int xoffset,
+                              int yoffset)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CGroundDecalHandler::RemoveSolidObject(CSolidObject* object, GhostSolidObject* gb)
+int
+CGroundDecalHandler::OverlapSize(Scar* s1, Scar* s2)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
+void
+CGroundDecalHandler::TestOverlaps(Scar* scar)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+CGroundDecalHandler::RemoveScar(Scar* scar, bool removeFromScars)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+int
+CGroundDecalHandler::GetSolidObjectDecalType(const std::string& name)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+SolidObjectGroundDecal::~SolidObjectGroundDecal()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+CGroundDecalHandler::Scar::~Scar()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+CGroundDecalHandler::MoveSolidObject(CSolidObject* object, const float3& pos)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+CGroundDecalHandler::RemoveSolidObject(CSolidObject* object,
+                                       GhostSolidObject* gb)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
 /**
  * @brief immediately remove an object's ground decal, if any (without fade out)
  */
-void CGroundDecalHandler::ForceRemoveSolidObject(CSolidObject* object)
+void
+CGroundDecalHandler::ForceRemoveSolidObject(CSolidObject* object)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-void CGroundDecalHandler::UnitMoved(const CUnit* unit) { AddDecal(const_cast<CUnit*>(unit), unit->pos); }
-
-void CGroundDecalHandler::GhostDestroyed(GhostSolidObject* gb) {
-	if (gb->decal)
-		gb->decal->gbOwner = NULL;
+void
+CGroundDecalHandler::UnitMoved(const CUnit* unit)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-
-
-
-void CGroundDecalHandler::GhostCreated(CSolidObject* object, GhostSolidObject* gb) { RemoveSolidObject(object, gb); }
-void CGroundDecalHandler::FeatureMoved(const CFeature* feature, const float3& oldpos) { MoveSolidObject(const_cast<CFeature*>(feature), feature->pos); }
-
-void CGroundDecalHandler::ExplosionOccurred(const CExplosionParams& event) {
-	if ((event.weaponDef != nullptr) && !event.weaponDef->visuals.explosionScar)
-		return;
-
-	AddExplosion(event.pos, event.damages.GetDefault(), event.craterAreaOfEffect);
+void
+CGroundDecalHandler::GhostDestroyed(GhostSolidObject* gb)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void CGroundDecalHandler::RenderUnitCreated(const CUnit* unit, int cloaked) { MoveSolidObject(const_cast<CUnit*>(unit), unit->pos); }
-void CGroundDecalHandler::RenderUnitDestroyed(const CUnit* unit) {
-	RemoveSolidObject(const_cast<CUnit*>(unit), nullptr);
+void
+CGroundDecalHandler::GhostCreated(CSolidObject* object, GhostSolidObject* gb)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+void
+CGroundDecalHandler::FeatureMoved(const CFeature* feature, const float3& oldpos)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void CGroundDecalHandler::RenderFeatureCreated(const CFeature* feature) { MoveSolidObject(const_cast<CFeature*>(feature), feature->pos); }
-void CGroundDecalHandler::RenderFeatureDestroyed(const CFeature* feature) { RemoveSolidObject(const_cast<CFeature*>(feature), nullptr); }
+void
+CGroundDecalHandler::ExplosionOccurred(const CExplosionParams& event)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+CGroundDecalHandler::RenderUnitCreated(const CUnit* unit, int cloaked)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+void
+CGroundDecalHandler::RenderUnitDestroyed(const CUnit* unit)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+CGroundDecalHandler::RenderFeatureCreated(const CFeature* feature)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+void
+CGroundDecalHandler::RenderFeatureDestroyed(const CFeature* feature)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
 // FIXME: Add a RenderUnitLoaded event
-void CGroundDecalHandler::UnitLoaded(const CUnit* unit, const CUnit* transport) { ForceRemoveSolidObject(const_cast<CUnit*>(unit)); }
-void CGroundDecalHandler::UnitUnloaded(const CUnit* unit, const CUnit* transport) { MoveSolidObject(const_cast<CUnit*>(unit), unit->pos); }
-
+void
+CGroundDecalHandler::UnitLoaded(const CUnit* unit, const CUnit* transport)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+void
+CGroundDecalHandler::UnitUnloaded(const CUnit* unit, const CUnit* transport)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}

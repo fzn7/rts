@@ -21,88 +21,86 @@
 #include "lundump.h"
 #include "lzio.h"
 
-typedef struct {
- lua_State* L;
- ZIO* Z;
- Mbuffer* b;
- const char* name;
-} LoadState;
-
-#ifdef LUAC_TRUST_BINARIES
-#define IF(c,s)
-#define error(S,s)
-#else
-#define IF(c,s)		if (c) error(S,s)
-
-static void error(LoadState* S, const char* why)
+typedef struct
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 
-#define LoadMem(S,b,n,size)	LoadBlock(S,b,(n)*(size))
-#define	LoadByte(S)		(lu_byte)LoadChar(S)
-#define LoadVar(S,x)		LoadMem(S,&x,1,sizeof(x))
-#define LoadVector(S,b,n,size)	LoadMem(S,b,n,size)
+#define LoadMem(S, b, n, size) LoadBlock(S, b, (n) * (size))
+#define LoadByte(S) (lu_byte) LoadChar(S)
+#define LoadVar(S, x) LoadMem(S, &x, 1, sizeof(x))
+#define LoadVector(S, b, n, size) LoadMem(S, b, n, size)
 
-static void LoadBlock(LoadState* S, void* b, size_t size)
+static void
+LoadBlock(LoadState* S, void* b, size_t size)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static int LoadChar(LoadState* S)
+static int
+LoadChar(LoadState* S)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static int LoadInt(LoadState* S)
+static int
+LoadInt(LoadState* S)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static lua_Number LoadNumber(LoadState* S)
+static lua_Number
+LoadNumber(LoadState* S)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static TString* LoadString(LoadState* S)
+static TString*
+LoadString(LoadState* S)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void LoadCode(LoadState* S, Proto* f)
+static void
+LoadCode(LoadState* S, Proto* f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static Proto* LoadFunction(LoadState* S, TString* p);
+static Proto*
+LoadFunction(LoadState* S, TString* p);
 
-static void LoadConstants(LoadState* S, Proto* f)
+static void
+LoadConstants(LoadState* S, Proto* f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void LoadDebug(LoadState* S, Proto* f)
+static void
+LoadDebug(LoadState* S, Proto* f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static Proto* LoadFunction(LoadState* S, TString* p)
+static Proto*
+LoadFunction(LoadState* S, TString* p)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void LoadHeader(LoadState* S)
+static void
+LoadHeader(LoadState* S)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -111,16 +109,18 @@ static void LoadHeader(LoadState* S)
 /*
 ** load precompiled chunk
 */
-Proto* luaU_undump (lua_State* L, ZIO* Z, Mbuffer* buff, const char* name)
+Proto*
+luaU_undump(lua_State* L, ZIO* Z, Mbuffer* buff, const char* name)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
 /*
-* make header
-*/
-void luaU_header (char* h)
+ * make header
+ */
+void
+luaU_header(char* h)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

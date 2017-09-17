@@ -4,7 +4,8 @@
 #include "UnitSet.h"
 #include "Unit.h"
 
-bool UnitComparator::operator() (const CUnit* u1, const CUnit* u2) const
+bool
+UnitComparator::operator()(const CUnit* u1, const CUnit* u2) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

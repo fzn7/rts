@@ -4,18 +4,18 @@
 #include "System/Platform/WindowManagerHelper.h"
 #include <SDL_video.h>
 
-
 namespace WindowManagerHelper {
 
-void BlockCompositing(SDL_Window* window)
+void
+BlockCompositing(SDL_Window* window)
 {
-	//FIXME implement?
+    // FIXME implement?
 }
 
-
-int GetWindowState(SDL_Window* window)
+int
+GetWindowState(SDL_Window* window)
 {
-	return SDL_GetWindowFlags(window);
+    return SDL_GetWindowFlags(window);
 }
 
 }; // namespace WindowManagerHelper

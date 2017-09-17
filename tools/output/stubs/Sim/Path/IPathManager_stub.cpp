@@ -8,25 +8,16 @@
 
 IPathManager* pathManager = NULL;
 
-IPathManager* IPathManager::GetInstance(unsigned int type) {
-	if (pathManager == NULL) {
-		const char* fmtStr = "[IPathManager::GetInstance] using %s path-manager";
-		const char* typeStr = "";
-
-		switch (type) {
-			case PFS_TYPE_DEFAULT: { typeStr = "DEFAULT"; pathManager = new       CPathManager(); } break;
-			case PFS_TYPE_QTPFS:   { typeStr = "QTPFS";   pathManager = new QTPFS::PathManager(); } break;
-		}
-
-		LOG(fmtStr, typeStr);
-	}
-
-	return pathManager;
+IPathManager*
+IPathManager::GetInstance(unsigned int type)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void IPathManager::FreeInstance(IPathManager* pm) {
-	assert(pm == pathManager);
-	delete pm;
-	pathManager = NULL;
+void
+IPathManager::FreeInstance(IPathManager* pm)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
-

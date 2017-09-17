@@ -2,27 +2,31 @@
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "IGroundDecalDrawer.h"
-#include "Rendering/Env/Decals/GroundDecalHandler.h"
 #include "Rendering/Env/Decals/DecalsDrawerGL4.h"
+#include "Rendering/Env/Decals/GroundDecalHandler.h"
 #include "System/Config/ConfigHandler.h"
 #include "System/Exceptions.h"
 #include "System/Log/ILog.h"
 
-
-CONFIG(int, GroundDecals).defaultValue(3).headlessValue(0).description("Controls whether ground decals underneath buildings and ground scars from explosions will be rendered. Values >1 define how long such decals will stay.");
+CONFIG(int, GroundDecals)
+  .defaultValue(3)
+  .headlessValue(0)
+  .description("Controls whether ground decals underneath buildings and ground "
+               "scars from explosions will be rendered. Values >1 define how "
+               "long such decals will stay.");
 
 static NullGroundDecalDrawer nullDecalDrawer;
 IGroundDecalDrawer* IGroundDecalDrawer::singleton = &nullDecalDrawer;
 int IGroundDecalDrawer::decalLevel = 0;
 
-
-static IGroundDecalDrawer* GetInstance()
+static IGroundDecalDrawer*
+GetInstance()
 {
-	IGroundDecalDrawer* instance = &nullDecalDrawer;
-	if (!IGroundDecalDrawer::GetDrawDecals()) {
-		LOG_L(L_INFO, "Loaded DecalsDrawer: %s", "off");
-		return instance;
-	}
+    IGroundDecalDrawer* instance = &nullDecalDrawer;
+    if (!IGroundDecalDrawer::GetDrawDecals()) {
+        LOG_L(L_INFO, "Loaded DecalsDrawer: %s", "off");
+        return instance;
+    }
 
 #if 0
 	try {
@@ -35,42 +39,42 @@ static IGroundDecalDrawer* GetInstance()
 	}
 #endif
 
-	if (instance == &nullDecalDrawer) {
-		instance = new CGroundDecalHandler();
-		LOG_L(L_INFO, "Loaded DecalsDrawer: %s", "Legacy");
-	}
+    if (instance == &nullDecalDrawer) {
+        instance = new CGroundDecalHandler();
+        LOG_L(L_INFO, "Loaded DecalsDrawer: %s", "Legacy");
+    }
 
-	return instance;
+    return instance;
 }
 
-
-void IGroundDecalDrawer::Init()
+void
+IGroundDecalDrawer::Init()
 {
-	decalLevel = configHandler->GetInt("GroundDecals");
+    decalLevel = configHandler->GetInt("GroundDecals");
 
-	FreeInstance();
-	singleton = GetInstance();
+    FreeInstance();
+    singleton = GetInstance();
 }
 
-
-void IGroundDecalDrawer::FreeInstance()
+void
+IGroundDecalDrawer::FreeInstance()
 {
-	if (singleton != &nullDecalDrawer)
-		SafeDelete(singleton);
+    if (singleton != &nullDecalDrawer)
+        SafeDelete(singleton);
 }
 
-
-void IGroundDecalDrawer::SetDrawDecals(bool v)
+void
+IGroundDecalDrawer::SetDrawDecals(bool v)
 {
-	if (v) {
-		decalLevel =  std::abs(decalLevel);
-	} else {
-		decalLevel = -std::abs(decalLevel);
-	}
+    if (v) {
+        decalLevel = std::abs(decalLevel);
+    } else {
+        decalLevel = -std::abs(decalLevel);
+    }
 
-	if (groundDecals == &nullDecalDrawer) {
-		groundDecals = GetInstance();
-	}
+    if (groundDecals == &nullDecalDrawer) {
+        groundDecals = GetInstance();
+    }
 
-	groundDecals->OnDecalLevelChanged();
+    groundDecals->OnDecalLevelChanged();
 }

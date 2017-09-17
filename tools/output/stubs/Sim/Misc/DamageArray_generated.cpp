@@ -9,167 +9,170 @@
 
 CR_BIND(DamageArray, )
 
-CR_REG_METADATA(DamageArray, (
-	CR_MEMBER(paralyzeDamageTime),
-	CR_MEMBER(impulseFactor),
-	CR_MEMBER(impulseBoost),
-	CR_MEMBER(craterMult),
-	CR_MEMBER(craterBoost),
-	CR_MEMBER(damages)
-))
+CR_REG_METADATA(DamageArray,
+                (CR_MEMBER(paralyzeDamageTime),
+                 CR_MEMBER(impulseFactor),
+                 CR_MEMBER(impulseBoost),
+                 CR_MEMBER(craterMult),
+                 CR_MEMBER(craterBoost),
+                 CR_MEMBER(damages)))
 
 DamageArray::DamageArray(float damage)
-	: paralyzeDamageTime(0)
-	, impulseFactor(1.0f)
-	, impulseBoost(0.0f)
-	, craterMult(1.0f)
-	, craterBoost(0.0f)
+  : paralyzeDamageTime(0)
+  , impulseFactor(1.0f)
+  , impulseBoost(0.0f)
+  , craterMult(1.0f)
+  , craterBoost(0.0f)
 {
-	SetDefaultDamage(damage);
+    SetDefaultDamage(damage);
 }
 
-
-DamageArray DamageArray::operator * (float damageMult) const {
-	DamageArray da(*this);
-
-	for (unsigned int a = 0; a < damages.size(); ++a)
-		da.damages[a] *= damageMult;
-
-	return da;
-}
-
-
-void DamageArray::SetDefaultDamage(float damage)
+DamageArray DamageArray::operator*(float damageMult) const
 {
-	damages.clear();
-	if (damageArrayHandler != NULL) {
-		damages.resize(damageArrayHandler->GetNumTypes(), damage);
-		assert(!damages.empty());
-	} else {
-		// default-damage only (never reached?)
-		damages.resize(1, damage);
-	}
+    DamageArray da(*this);
+
+    for (unsigned int a = 0; a < damages.size(); ++a)
+        da.damages[a] *= damageMult;
+
+    return da;
 }
 
+void
+DamageArray::SetDefaultDamage(float damage)
+{
+    damages.clear();
+    if (damageArrayHandler != NULL) {
+        damages.resize(damageArrayHandler->GetNumTypes(), damage);
+        assert(!damages.empty());
+    } else {
+        // default-damage only (never reached?)
+        damages.resize(1, damage);
+    }
+}
 
 CR_BIND_DERIVED(DynDamageArray, DamageArray, )
 
-CR_REG_METADATA(DynDamageArray, (
-	CR_MEMBER(dynDamageExp),
-	CR_MEMBER(dynDamageMin),
-	CR_MEMBER(dynDamageRange),
-	CR_MEMBER(dynDamageInverted),
-	CR_MEMBER(craterAreaOfEffect),
-	CR_MEMBER(damageAreaOfEffect),
-	CR_MEMBER(edgeEffectiveness),
-	CR_MEMBER(explosionSpeed),
-	CR_MEMBER(refCount),
-	CR_MEMBER(fromDef),
+CR_REG_METADATA(DynDamageArray,
+                (CR_MEMBER(dynDamageExp),
+                 CR_MEMBER(dynDamageMin),
+                 CR_MEMBER(dynDamageRange),
+                 CR_MEMBER(dynDamageInverted),
+                 CR_MEMBER(craterAreaOfEffect),
+                 CR_MEMBER(damageAreaOfEffect),
+                 CR_MEMBER(edgeEffectiveness),
+                 CR_MEMBER(explosionSpeed),
+                 CR_MEMBER(refCount),
+                 CR_MEMBER(fromDef),
 
-	CR_POSTLOAD(PostLoad)
-))
+                 CR_POSTLOAD(PostLoad)))
 
 DynDamageArray::DynDamageArray(float damage)
-	: DamageArray(damage)
-	, dynDamageExp(0.0f)
-	, dynDamageMin(0.0f)
-	, dynDamageRange(0.0f)
-	, dynDamageInverted(false)
-	, craterAreaOfEffect(4.0f)
-	, damageAreaOfEffect(4.0f)
-	, edgeEffectiveness(0.0f)
-	, explosionSpeed(1.0f) // always overwritten
-	, refCount(1)
-	, fromDef(false)
-{ }
+  : DamageArray(damage)
+  , dynDamageExp(0.0f)
+  , dynDamageMin(0.0f)
+  , dynDamageRange(0.0f)
+  , dynDamageInverted(false)
+  , craterAreaOfEffect(4.0f)
+  , damageAreaOfEffect(4.0f)
+  , edgeEffectiveness(0.0f)
+  , explosionSpeed(1.0f) // always overwritten
+  , refCount(1)
+  , fromDef(false)
+{}
 
 DynDamageArray::~DynDamageArray()
 {
-	assert(refCount == 1);
+    assert(refCount == 1);
 }
 
-void DynDamageArray::PostLoad()
+void
+DynDamageArray::PostLoad()
 {
-	// weapondefs aren't serialized but if their damages tables are in use
-	// these pointers will be serialized.
-	// so during loading, a duplicate of the damages table is created
-	// with a wrong refCount (it still counts the ref in the weaponDef).
-	// that's why we need to decrement it and mark that we aren't a def table
-	if (fromDef) {
-		--refCount;
-		fromDef = false;
-	}
-	assert(refCount > 0);
+    // weapondefs aren't serialized but if their damages tables are in use
+    // these pointers will be serialized.
+    // so during loading, a duplicate of the damages table is created
+    // with a wrong refCount (it still counts the ref in the weaponDef).
+    // that's why we need to decrement it and mark that we aren't a def table
+    if (fromDef) {
+        --refCount;
+        fromDef = false;
+    }
+    assert(refCount > 0);
 }
 
-DamageArray DynDamageArray::GetDynamicDamages(const float3& startPos, const float3& curPos) const
+DamageArray
+DynDamageArray::GetDynamicDamages(const float3& startPos,
+                                  const float3& curPos) const
 {
-	DamageArray dynDamages(*this);
+    DamageArray dynDamages(*this);
 
-	if (dynDamageExp <= 0.0f)
-		return dynDamages;
+    if (dynDamageExp <= 0.0f)
+        return dynDamages;
 
+    const float travDist =
+      std::min(dynDamageRange, curPos.distance2D(startPos));
+    const float damageMod =
+      1.0f - math::pow(1.0f / dynDamageRange * travDist, dynDamageExp);
+    const float ddmod =
+      dynDamageMin / damages[0]; // get damage mod from first damage type
 
-	const float travDist  = std::min(dynDamageRange, curPos.distance2D(startPos));
-	const float damageMod = 1.0f - math::pow(1.0f / dynDamageRange * travDist, dynDamageExp);
-	const float ddmod     = dynDamageMin / damages[0]; // get damage mod from first damage type
+    if (dynDamageInverted) {
+        for (int i = 0; i < damageArrayHandler->GetNumTypes(); ++i) {
+            float d = damages[i] - damageMod * damages[i];
 
-	if (dynDamageInverted) {
-		for (int i = 0; i < damageArrayHandler->GetNumTypes(); ++i) {
-			float d = damages[i] - damageMod * damages[i];
+            if (dynDamageMin > 0.0f)
+                d = std::max(damages[i] * ddmod, d);
 
-			if (dynDamageMin > 0.0f)
-				d = std::max(damages[i] * ddmod, d);
+            // to prevent div by 0
+            d = std::max(0.0001f, d);
+            dynDamages.Set(i, d);
+        }
+    } else {
+        for (int i = 0; i < damageArrayHandler->GetNumTypes(); ++i) {
+            float d = damageMod * damages[i];
 
-			// to prevent div by 0
-			d = std::max(0.0001f, d);
-			dynDamages.Set(i, d);
-		}
-	} else {
-		for (int i = 0; i < damageArrayHandler->GetNumTypes(); ++i) {
-			float d = damageMod * damages[i];
+            if (dynDamageMin > 0.0f)
+                d = std::max(damages[i] * ddmod, d);
 
-			if (dynDamageMin > 0.0f)
-				d = std::max(damages[i] * ddmod, d);
+            // div by 0
+            d = std::max(0.0001f, d);
+            dynDamages.Set(i, d);
+        }
+    }
 
-			// div by 0
-			d = std::max(0.0001f, d);
-			dynDamages.Set(i, d);
-		}
-	}
-
-	return dynDamages;
+    return dynDamages;
 }
 
-
-const DynDamageArray* DynDamageArray::IncRef(const DynDamageArray* dda)
+const DynDamageArray*
+DynDamageArray::IncRef(const DynDamageArray* dda)
 {
-	++dda->refCount;
-	return dda;
+    ++dda->refCount;
+    return dda;
 }
 
-
-void DynDamageArray::DecRef(const DynDamageArray* dda)
+void
+DynDamageArray::DecRef(const DynDamageArray* dda)
 {
-	if (dda->refCount == 1) {
-		delete const_cast<DynDamageArray*>(dda);
-	} else {
-		--dda->refCount;
-	}
+    if (dda->refCount == 1) {
+        delete const_cast<DynDamageArray*>(dda);
+    } else {
+        --dda->refCount;
+    }
 }
 
-DynDamageArray* DynDamageArray::GetMutable(const DynDamageArray*& dda)
+DynDamageArray*
+DynDamageArray::GetMutable(const DynDamageArray*& dda)
 {
-	if (dda != nullptr) {
-		if (dda->refCount == 1)
-			return const_cast<DynDamageArray*>(dda);
+    if (dda != nullptr) {
+        if (dda->refCount == 1)
+            return const_cast<DynDamageArray*>(dda);
 
-		//We're still in use by someone, so copy and replace
-		//pointer
-		DecRef(dda);
-	}
+        // We're still in use by someone, so copy and replace
+        // pointer
+        DecRef(dda);
+    }
 
-	DynDamageArray* newDDA = new DynDamageArray(*dda);
-	dda = newDDA;
-	return newDDA;
+    DynDamageArray* newDDA = new DynDamageArray(*dda);
+    dda = newDDA;
+    return newDDA;
 }

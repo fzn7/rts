@@ -23,10 +23,9 @@
 #include "SMath.h"
 #include "math_private.h"
 
-
 namespace streflop_libm {
 Simple
-__ieee754_gammaf_r (Simple x, int *signgamp)
+__ieee754_gammaf_r(Simple x, int* signgamp)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

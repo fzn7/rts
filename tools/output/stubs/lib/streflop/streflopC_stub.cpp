@@ -9,17 +9,26 @@
 extern "C" {
 #endif
 
-void streflop_init_Simple() {
-	streflop::streflop_init<streflop::Simple>();
+void
+streflop_init_Simple()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void streflop_init_Double() {
-	streflop::streflop_init<streflop::Double>();
+void
+streflop_init_Double()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #if defined(Extended)
-void streflop_init_Extended() {
-	streflop::streflop_init<streflop::Extended>();
+void
+streflop_init_Extended()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif // defined(Extended)
 

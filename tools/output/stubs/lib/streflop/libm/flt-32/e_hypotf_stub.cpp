@@ -16,7 +16,8 @@
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: e_hypotf.c,v 1.5f 1995/05/12 04:57:30 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: e_hypotf.c,v 1.5f 1995/05/12 04:57:30 jtc Exp $";
 #endif
 
 #include "SMath.h"
@@ -24,10 +25,10 @@ static char rcsid[] = "$NetBSD: e_hypotf.c,v 1.5f 1995/05/12 04:57:30 jtc Exp $"
 
 namespace streflop_libm {
 #ifdef __STDC__
-	Simple __ieee754_hypotf(Simple x, Simple y)
+Simple
+__ieee754_hypotf(Simple x, Simple y)
 #else
-	Simple __ieee754_hypotf(x,y)
-	Simple x, y;
+Simple __ieee754_hypotf(x, y) Simple x, y;
 #endif
 {
     //stub method

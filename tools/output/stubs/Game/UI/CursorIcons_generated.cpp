@@ -3,230 +3,285 @@
 
 #include <algorithm>
 
-
-#include "CursorIcons.h"
 #include "CommandColors.h"
-#include "MouseHandler.h"
-#include "GuiHandler.h"
-#include "Sim/Units/CommandAI/Command.h"
+#include "CursorIcons.h"
 #include "Game/Camera.h"
 #include "Game/GameHelper.h"
+#include "GuiHandler.h"
+#include "MouseHandler.h"
 #include "Rendering/Fonts/glFont.h"
-#include "Rendering/UnitDrawer.h"
 #include "Rendering/GL/myGL.h"
+#include "Rendering/UnitDrawer.h"
+#include "Sim/Units/CommandAI/Command.h"
 #include "Sim/Units/UnitDef.h"
 #include "Sim/Units/UnitDefHandler.h"
 
-
 CCursorIcons cursorIcons;
-
 
 CCursorIcons::CCursorIcons()
 {
-	enabled = true;
+    enabled = true;
 }
 
+CCursorIcons::~CCursorIcons() {}
 
-CCursorIcons::~CCursorIcons()
+void
+CCursorIcons::Enable(bool value)
 {
+    enabled = value;
 }
 
-
-void CCursorIcons::Enable(bool value)
+void
+CCursorIcons::Clear()
 {
-	enabled = value;
+    icons.clear();
+    texts.clear();
+    buildIcons.clear();
 }
 
-
-void CCursorIcons::Clear()
+void
+CCursorIcons::SetCustomType(int cmdID, const string& cursor)
 {
-	icons.clear();
-	texts.clear();
-	buildIcons.clear();
+    if (cursor.empty()) {
+        customTypes.erase(cmdID);
+    } else {
+        customTypes[cmdID] = cursor;
+    }
 }
 
-
-void CCursorIcons::SetCustomType(int cmdID, const string& cursor)
+void
+CCursorIcons::Draw()
 {
-	if (cursor.empty()) {
-		customTypes.erase(cmdID);
-	} else {
-		customTypes[cmdID] = cursor;
-	}
+    glPushAttrib(GL_ENABLE_BIT | GL_DEPTH_BUFFER_BIT | GL_CURRENT_BIT);
+    glEnable(GL_TEXTURE_2D);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glAlphaFunc(GL_GREATER, 0.01f);
+    glDepthMask(GL_FALSE);
+
+    DrawCursors();
+    DrawBuilds();
+
+    glBindTexture(GL_TEXTURE_2D, 0);
+    glPopAttrib();
+
+    Clear();
 }
 
-
-void CCursorIcons::Draw()
+void
+CCursorIcons::DrawCursors()
 {
-	glPushAttrib(GL_ENABLE_BIT | GL_DEPTH_BUFFER_BIT | GL_CURRENT_BIT);
-	glEnable(GL_TEXTURE_2D);
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	glAlphaFunc(GL_GREATER, 0.01f);
-	glDepthMask(GL_FALSE);
+    if (icons.empty() || !cmdColors.UseQueueIcons())
+        return;
 
-	DrawCursors();
-	DrawBuilds();
+    glMatrixMode(GL_PROJECTION);
+    glPushMatrix();
+    glLoadIdentity();
+    gluOrtho2D(0.0f, 1.0f, 0.0f, 1.0f);
+    glMatrixMode(GL_MODELVIEW);
+    glPushMatrix();
+    glLoadIdentity();
 
-	glBindTexture(GL_TEXTURE_2D, 0);
-	glPopAttrib();
+    glColor4f(1.0f, 1.0f, 1.0f, cmdColors.QueueIconAlpha());
 
-	Clear();
+    int currentCmd = (icons.begin()->cmd + 1); // force the first binding
+    const CMouseCursor* currentCursor = NULL;
+
+    for (auto it = icons.cbegin(); it != icons.cend(); ++it) {
+        const int command = it->cmd;
+        if (command != currentCmd) {
+            currentCmd = command;
+            currentCursor = GetCursor(currentCmd);
+            if (currentCursor != NULL) {
+                currentCursor->BindTexture();
+            }
+        }
+        if (currentCursor != NULL) {
+            const float3 winPos = camera->CalcWindowCoordinates(it->pos);
+            if (winPos.z <= 1.0f) {
+                currentCursor->DrawQuad((int)winPos.x, (int)winPos.y);
+            }
+        }
+    }
+
+    DrawTexts(); // use the same transformation
+
+    glMatrixMode(GL_PROJECTION);
+    glPopMatrix();
+    glMatrixMode(GL_MODELVIEW);
+    glPopMatrix();
 }
 
-
-void CCursorIcons::DrawCursors()
+void
+CCursorIcons::DrawTexts()
 {
-	if (icons.empty() || !cmdColors.UseQueueIcons())
-		return;
+    if (texts.empty())
+        return;
 
-	glMatrixMode(GL_PROJECTION);
-	glPushMatrix();
-	glLoadIdentity();
-	gluOrtho2D(0.0f, 1.0f, 0.0f, 1.0f);
-	glMatrixMode(GL_MODELVIEW);
-	glPushMatrix();
-	glLoadIdentity();
+    glViewport(globalRendering->viewPosX,
+               0,
+               globalRendering->viewSizeX,
+               globalRendering->viewSizeY);
+    glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
 
-	glColor4f(1.0f, 1.0f, 1.0f, cmdColors.QueueIconAlpha());
+    const float fontScale = 1.0f;
+    const float yOffset = 50.0f * globalRendering->pixelY;
 
-	int currentCmd = (icons.begin()->cmd + 1); // force the first binding
-	const CMouseCursor* currentCursor = NULL;
+    font->Begin();
+    font->SetColors(); // default
 
-	for (auto it = icons.cbegin(); it != icons.cend(); ++it) {
-		const int command = it->cmd;
-		if (command != currentCmd) {
-			currentCmd = command;
-			currentCursor = GetCursor(currentCmd);
-			if (currentCursor != NULL) {
-				currentCursor->BindTexture();
-			}
-		}
-		if (currentCursor != NULL) {
-			const float3 winPos = camera->CalcWindowCoordinates(it->pos);
-			if (winPos.z <= 1.0f) {
-				currentCursor->DrawQuad((int)winPos.x, (int)winPos.y);
-			}
-		}
-	}
+    std::set<IconText>::iterator it;
+    for (it = texts.begin(); it != texts.end(); ++it) {
+        const float3 winPos = camera->CalcWindowCoordinates(it->pos);
+        if (winPos.z <= 1.0f) {
+            const float x = (winPos.x * globalRendering->pixelX);
+            const float y = (winPos.y * globalRendering->pixelY) + yOffset;
 
-	DrawTexts(); // use the same transformation
-
-	glMatrixMode(GL_PROJECTION);
-	glPopMatrix();
-	glMatrixMode(GL_MODELVIEW);
-	glPopMatrix();
+            if (guihandler->GetOutlineFonts()) {
+                font->glPrint(x,
+                              y,
+                              fontScale,
+                              FONT_OUTLINE | FONT_CENTER | FONT_TOP |
+                                FONT_SCALE | FONT_NORM,
+                              it->text);
+            } else {
+                font->glPrint(x,
+                              y,
+                              fontScale,
+                              FONT_SCALE | FONT_CENTER | FONT_TOP | FONT_NORM,
+                              it->text);
+            }
+        }
+    }
+    font->End();
 }
 
-
-void CCursorIcons::DrawTexts()
+void
+CCursorIcons::DrawBuilds()
 {
-	if (texts.empty())
-		return;
+    glViewport(globalRendering->viewPosX,
+               0,
+               globalRendering->viewSizeX,
+               globalRendering->viewSizeY);
 
-	glViewport(globalRendering->viewPosX, 0, globalRendering->viewSizeX, globalRendering->viewSizeY);
-	glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+    glEnable(GL_DEPTH_TEST);
+    glColor4f(1.0f, 1.0f, 1.0f, 0.3f);
 
-	const float fontScale = 1.0f;
-	const float yOffset = 50.0f * globalRendering->pixelY;
+    for (auto it = buildIcons.begin(); it != buildIcons.end(); ++it) {
+        glPushMatrix();
+        glLoadIdentity();
+        glTranslatef3(it->pos);
+        glRotatef(it->facing * 90.0f, 0.0f, 1.0f, 0.0f);
 
-	font->Begin();
-	font->SetColors(); //default
+        CUnitDrawer::DrawIndividualDefAlpha(
+          unitDefHandler->GetUnitDefByID(-(it->cmd)), it->team, false);
 
-	std::set<IconText>::iterator it;
-	for (it = texts.begin(); it != texts.end(); ++it) {
-		const float3 winPos = camera->CalcWindowCoordinates(it->pos);
-		if (winPos.z <= 1.0f) {
-			const float x = (winPos.x * globalRendering->pixelX);
-			const float y = (winPos.y * globalRendering->pixelY) + yOffset;
+        glPopMatrix();
+    }
 
-			if (guihandler->GetOutlineFonts()) {
-				font->glPrint(x, y, fontScale, FONT_OUTLINE | FONT_CENTER | FONT_TOP | FONT_SCALE | FONT_NORM, it->text);
-			} else {
-				font->glPrint(x, y, fontScale, FONT_SCALE | FONT_CENTER | FONT_TOP | FONT_NORM, it->text);
-			}
-		}
-	}
-	font->End();
+    glDisable(GL_DEPTH_TEST);
 }
 
-
-void CCursorIcons::DrawBuilds()
+const CMouseCursor*
+CCursorIcons::GetCursor(int cmd) const
 {
-	glViewport(globalRendering->viewPosX, 0, globalRendering->viewSizeX, globalRendering->viewSizeY);
+    string cursorName;
 
-	glEnable(GL_DEPTH_TEST);
-	glColor4f(1.0f, 1.0f, 1.0f, 0.3f);
+    switch (cmd) {
+        case CMD_WAIT:
+            cursorName = "Wait";
+            break;
+        case CMD_TIMEWAIT:
+            cursorName = "TimeWait";
+            break;
+        case CMD_SQUADWAIT:
+            cursorName = "SquadWait";
+            break;
+        case CMD_DEATHWAIT:
+            cursorName = "Wait";
+            break; // there is a "DeathWait" cursor, but to prevent cheating, we
+                   // have to use the same like for CMD_WAIT
+        case CMD_GATHERWAIT:
+            cursorName = "GatherWait";
+            break;
+        case CMD_MOVE:
+            cursorName = "Move";
+            break;
+        case CMD_PATROL:
+            cursorName = "Patrol";
+            break;
+        case CMD_FIGHT:
+            cursorName = "Fight";
+            break;
+        case CMD_ATTACK:
+            cursorName = "Attack";
+            break;
+        case CMD_AREA_ATTACK:
+            cursorName = "Area attack";
+            break;
+        case CMD_GUARD:
+            cursorName = "Guard";
+            break;
+        case CMD_REPAIR:
+            cursorName = "Repair";
+            break;
+        case CMD_LOAD_ONTO:
+            cursorName = "Load units";
+            break;
+        case CMD_LOAD_UNITS:
+            cursorName = "Load units";
+            break;
+        case CMD_UNLOAD_UNITS:
+            cursorName = "Unload units";
+            break;
+        case CMD_UNLOAD_UNIT:
+            cursorName = "Unload units";
+            break;
+        case CMD_RECLAIM:
+            cursorName = "Reclaim";
+            break;
+        case CMD_MANUALFIRE:
+            cursorName = "ManualFire";
+            break;
+        case CMD_RESURRECT:
+            cursorName = "Resurrect";
+            break;
+        case CMD_CAPTURE:
+            cursorName = "Capture";
+            break;
+        case CMD_SELFD:
+            cursorName = "SelfD";
+            break;
+        case CMD_RESTORE:
+            cursorName = "Restore";
+            break;
+            /*
+                            case CMD_STOP:
+                            case CMD_GROUPSELECT:
+                            case CMD_GROUPADD:
+                            case CMD_GROUPCLEAR:
+                            case CMD_FIRE_STATE:
+                            case CMD_MOVE_STATE:
+                            case CMD_SETBASE:
+                            case CMD_INTERNAL:
+                            case CMD_SET_WANTED_MAX_SPEED:
+                            case CMD_ONOFF:
+                            case CMD_CLOAK:
+                            case CMD_STOCKPILE:
+                            case CMD_REPEAT:
+                            case CMD_TRAJECTORY:
+                            case CMD_AUTOREPAIRLEVEL:
+            */
+        default: {
+            std::map<int, std::string>::const_iterator it =
+              customTypes.find(cmd);
+            if (it == customTypes.end()) {
+                return NULL;
+            }
+            cursorName = it->second;
+        }
+    }
 
-	for (auto it = buildIcons.begin() ; it != buildIcons.end(); ++it) {
-		glPushMatrix();
-		glLoadIdentity();
-		glTranslatef3(it->pos);
-		glRotatef(it->facing * 90.0f, 0.0f, 1.0f, 0.0f);
-
-		CUnitDrawer::DrawIndividualDefAlpha(unitDefHandler->GetUnitDefByID(-(it->cmd)), it->team, false);
-
-		glPopMatrix();
-	}
-
-	glDisable(GL_DEPTH_TEST);
-}
-
-
-
-const CMouseCursor* CCursorIcons::GetCursor(int cmd) const
-{
-	string cursorName;
-
-	switch (cmd) {
-		case CMD_WAIT:            cursorName = "Wait";         break;
-		case CMD_TIMEWAIT:        cursorName = "TimeWait";     break;
-		case CMD_SQUADWAIT:       cursorName = "SquadWait";    break;
-		case CMD_DEATHWAIT:       cursorName = "Wait";         break; // there is a "DeathWait" cursor, but to prevent cheating, we have to use the same like for CMD_WAIT
-		case CMD_GATHERWAIT:      cursorName = "GatherWait";   break;
-		case CMD_MOVE:            cursorName = "Move";         break;
-		case CMD_PATROL:          cursorName = "Patrol";       break;
-		case CMD_FIGHT:           cursorName = "Fight";        break;
-		case CMD_ATTACK:          cursorName = "Attack";       break;
-		case CMD_AREA_ATTACK:     cursorName = "Area attack";  break;
-		case CMD_GUARD:           cursorName = "Guard";        break;
-		case CMD_REPAIR:          cursorName = "Repair";       break;
-		case CMD_LOAD_ONTO:       cursorName = "Load units";   break;
-		case CMD_LOAD_UNITS:      cursorName = "Load units";   break;
-		case CMD_UNLOAD_UNITS:    cursorName = "Unload units"; break;
-		case CMD_UNLOAD_UNIT:     cursorName = "Unload units"; break;
-		case CMD_RECLAIM:         cursorName = "Reclaim";      break;
-		case CMD_MANUALFIRE:      cursorName = "ManualFire";   break;
-		case CMD_RESURRECT:       cursorName = "Resurrect";    break;
-		case CMD_CAPTURE:         cursorName = "Capture";      break;
-		case CMD_SELFD:           cursorName = "SelfD";        break;
-		case CMD_RESTORE:         cursorName = "Restore";      break;
-/*
-		case CMD_STOP:
-		case CMD_GROUPSELECT:
-		case CMD_GROUPADD:
-		case CMD_GROUPCLEAR:
-		case CMD_FIRE_STATE:
-		case CMD_MOVE_STATE:
-		case CMD_SETBASE:
-		case CMD_INTERNAL:
-		case CMD_SET_WANTED_MAX_SPEED:
-		case CMD_ONOFF:
-		case CMD_CLOAK:
-		case CMD_STOCKPILE:
-		case CMD_REPEAT:
-		case CMD_TRAJECTORY:
-		case CMD_AUTOREPAIRLEVEL:
-*/
-		default: {
-			std::map<int, std::string>::const_iterator it = customTypes.find(cmd);
-			if (it == customTypes.end()) {
-				return NULL;
-			}
-			cursorName = it->second;
-		}
-	}
-
-	// look for the cursor of this name assigned in MouseHandler
-	return mouse->FindCursor(cursorName);
+    // look for the cursor of this name assigned in MouseHandler
+    return mouse->FindCursor(cursorName);
 }

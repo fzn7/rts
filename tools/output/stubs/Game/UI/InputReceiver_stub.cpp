@@ -1,17 +1,15 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
 #include "InputReceiver.h"
 #include "Rendering/GL/myGL.h"
-
 
 float CInputReceiver::guiAlpha = 0.8f;
 
 CInputReceiver* CInputReceiver::activeReceiver = NULL;
 
-
-std::list<CInputReceiver*>& GetInputReceivers()
+std::list<CInputReceiver*>&
+GetInputReceivers()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -29,41 +27,39 @@ CInputReceiver::~CInputReceiver()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CInputReceiver::CollectGarbage()
+void
+CInputReceiver::CollectGarbage()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-CInputReceiver* CInputReceiver::GetReceiverAt(int x,int y)
+CInputReceiver*
+CInputReceiver::GetReceiverAt(int x, int y)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool CInputReceiver::InBox(float x, float y, const ContainerBox& box) const
+bool
+CInputReceiver::InBox(float x, float y, const ContainerBox& box) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CInputReceiver::DrawBox(const ContainerBox& box, int how)
+void
+CInputReceiver::DrawBox(const ContainerBox& box, int how)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
 CInputReceiver::ContainerBox::ContainerBox()
-	: x1(0.0f)
-	, y1(0.0f)
-	, x2(0.0f)
-	, y2(0.0f)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-CInputReceiver::ContainerBox CInputReceiver::ContainerBox::operator+(CInputReceiver::ContainerBox other) const
+  : x1(0.0f)
+  , y1(0.0f)
+  , x2(0.0f)
+  , y2(0.0f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

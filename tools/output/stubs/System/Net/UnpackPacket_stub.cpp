@@ -5,10 +5,14 @@
 
 #include <boost/shared_ptr.hpp>
 
-namespace netcode
+namespace netcode {
+
+UnpackPacket::UnpackPacket(boost::shared_ptr<const RawPacket> packet,
+                           size_t skipBytes)
+  : pckt(packet)
+  , pos(skipBytes)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 }

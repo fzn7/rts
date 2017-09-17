@@ -5,27 +5,24 @@
 #include "Sim/Units/Unit.h"
 #include "System/Log/ILog.h"
 
-
 // keep one global copy so we don't need to allocate a lot of
 // near empty objects for mods that use Lua unit scripts.
 CNullUnitScript CNullUnitScript::value(nullptr);
 
 CR_BIND_DERIVED(CNullUnitScript, CUnitScript, (nullptr))
 
-CR_REG_METADATA(CNullUnitScript, (
-	CR_POSTLOAD(PostLoad)
-))
+CR_REG_METADATA(CNullUnitScript, (CR_POSTLOAD(PostLoad)))
 
-CNullUnitScript::CNullUnitScript(CUnit *u)
-	: CUnitScript(u)
+CNullUnitScript::CNullUnitScript(CUnit* u)
+  : CUnitScript(u)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CNullUnitScript::ShowScriptError(const std::string& msg)
+void
+CNullUnitScript::ShowScriptError(const std::string& msg)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-

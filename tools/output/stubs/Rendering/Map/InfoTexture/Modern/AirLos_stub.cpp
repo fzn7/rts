@@ -4,23 +4,20 @@
 #include "AirLos.h"
 #include "Game/GlobalUnsynced.h"
 #include "Rendering/GlobalRendering.h"
-#include "Rendering/Shaders/ShaderHandler.h"
 #include "Rendering/Shaders/Shader.h"
+#include "Rendering/Shaders/ShaderHandler.h"
 #include "Sim/Misc/LosHandler.h"
 #include "System/Exceptions.h"
-#include "System/TimeProfiler.h"
 #include "System/Log/ILog.h"
-
-
+#include "System/TimeProfiler.h"
 
 CAirLosTexture::CAirLosTexture()
-: CPboInfoTexture("airlos")
-, uploadTex(0)
+  : CPboInfoTexture("airlos")
+  , uploadTex(0)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 CAirLosTexture::~CAirLosTexture()
 {
@@ -28,15 +25,15 @@ CAirLosTexture::~CAirLosTexture()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CAirLosTexture::UpdateCPU()
+void
+CAirLosTexture::UpdateCPU()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CAirLosTexture::Update()
+void
+CAirLosTexture::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

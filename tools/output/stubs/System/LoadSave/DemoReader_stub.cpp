@@ -5,28 +5,29 @@
 
 #ifndef TOOLS
 #include "System/Config/ConfigHandler.h"
-CONFIG(bool, DisableDemoVersionCheck).defaultValue(false).description("Allow to play every replay file (may crash / cause undefined behaviour in replays)");
+CONFIG(bool, DisableDemoVersionCheck)
+  .defaultValue(false)
+  .description("Allow to play every replay file (may crash / cause undefined "
+               "behaviour in replays)");
 #endif
+#include "Game/GameVersion.h"
 #include "System/Exceptions.h"
-#include "System/FileSystem/GZFileHandler.h"
 #include "System/FileSystem/FileSystem.h"
+#include "System/FileSystem/GZFileHandler.h"
 #include "System/Log/ILog.h"
 #include "System/Net/RawPacket.h"
-#include "Game/GameVersion.h"
 
-#include <limits.h>
-#include <stdexcept>
 #include <cassert>
 #include <cstring>
-
+#include <limits.h>
+#include <stdexcept>
 
 CDemoReader::CDemoReader(const std::string& filename, float curTime)
-	: playbackDemo(NULL)
+  : playbackDemo(NULL)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 CDemoReader::~CDemoReader()
 {
@@ -34,21 +35,22 @@ CDemoReader::~CDemoReader()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-netcode::RawPacket* CDemoReader::GetData(const float readTime)
+netcode::RawPacket*
+CDemoReader::GetData(const float readTime)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool CDemoReader::ReachedEnd()
+bool
+CDemoReader::ReachedEnd()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CDemoReader::LoadStats()
+void
+CDemoReader::LoadStats()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

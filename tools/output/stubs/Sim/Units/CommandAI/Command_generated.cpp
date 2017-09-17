@@ -4,13 +4,12 @@
 #include "Command.h"
 
 CR_BIND(Command, )
-CR_REG_METADATA(Command, (
-	CR_MEMBER(id),
-	CR_MEMBER(aiCommandId),
+CR_REG_METADATA(Command,
+                (CR_MEMBER(id),
+                 CR_MEMBER(aiCommandId),
 
-	CR_MEMBER(timeOut),
-	CR_MEMBER(tag),
-	CR_MEMBER(options),
+                 CR_MEMBER(timeOut),
+                 CR_MEMBER(tag),
+                 CR_MEMBER(options),
 
-	CR_MEMBER(params)
-))
+                 CR_MEMBER(params)))

@@ -4,14 +4,14 @@
 #include "Clipboard.h"
 #include <SDL_clipboard.h>
 
-
-std::string CClipboard::GetContents() const
+std::string
+CClipboard::GetContents() const
 {
-	char* text = SDL_GetClipboardText();
-	if (text == NULL) {
-		return "";
-	}
-	std::string s = text;
-	SDL_free(text);
-	return s;
+    char* text = SDL_GetClipboardText();
+    if (text == NULL) {
+        return "";
+    }
+    std::string s = text;
+    SDL_free(text);
+    return s;
 }

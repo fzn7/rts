@@ -5,8 +5,8 @@
 
 #include <cstring>
 
-CDemo::CDemo():
-	demoName("demos/unnamed.sdfz")
+CDemo::CDemo()
+  : demoName("demos/unnamed.sdfz")
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

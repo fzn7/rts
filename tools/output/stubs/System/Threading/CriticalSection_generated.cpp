@@ -3,32 +3,30 @@
 
 #include "CriticalSection.h"
 
-
 CriticalSection::CriticalSection() noexcept
 {
-	InitializeCriticalSection(&mtx);
+    InitializeCriticalSection(&mtx);
 }
-
 
 CriticalSection::~CriticalSection()
 {
-	DeleteCriticalSection(&mtx);
+    DeleteCriticalSection(&mtx);
 }
 
-
-void CriticalSection::lock()
+void
+CriticalSection::lock()
 {
-	EnterCriticalSection(&mtx);
+    EnterCriticalSection(&mtx);
 }
 
-
-bool CriticalSection::try_lock() noexcept
+bool
+CriticalSection::try_lock() noexcept
 {
-	return TryEnterCriticalSection(&mtx);
+    return TryEnterCriticalSection(&mtx);
 }
 
-
-void CriticalSection::unlock()
+void
+CriticalSection::unlock()
 {
-	LeaveCriticalSection(&mtx);
+    LeaveCriticalSection(&mtx);
 }

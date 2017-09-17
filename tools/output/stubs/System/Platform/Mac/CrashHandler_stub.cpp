@@ -3,7 +3,7 @@
 
 #include "System/Platform/CrashHandler.h"
 
-#if defined(__APPLE__) 
+#if defined(__APPLE__)
 // ### Unix(compliant) CrashHandler START
 
 #include <AvailabilityMacros.h>
@@ -17,17 +17,21 @@
 
 /**
  * @brief TranslateStackTrace
- * @param stacktrace These are the lines and addresses produced by backtrace_symbols()
- * Translates the module and address information from backtrace symbols into a vector of StackFrame objects,
- *   each with its own set of entries representing the function call and any inlined functions for that call.
+ * @param stacktrace These are the lines and addresses produced by
+ * backtrace_symbols() Translates the module and address information from
+ * backtrace symbols into a vector of StackFrame objects, each with its own set
+ * of entries representing the function call and any inlined functions for
+ * that call.
  */
-static void TranslateStackTrace(bool* aiCrash, StackTrace& stacktrace, const int logLevel)
+static void
+TranslateStackTrace(bool* aiCrash, StackTrace& stacktrace, const int logLevel)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void LogStacktrace(const int logLevel, StackTrace& stacktrace)
+static void
+LogStacktrace(const int logLevel, StackTrace& stacktrace)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -38,14 +42,26 @@ static void LogStacktrace(const int logLevel, StackTrace& stacktrace)
 // ### Fallback CrashHandler (old Apple) START
 
 namespace CrashHandler {
-	void Install() {}
-	void Remove() {}
+void
+Install()
+{}
+void
+Remove()
+{}
 
-	void Stacktrace(Threading::NativeThreadHandle thread, const std::string& threadName) {}
-	void PrepareStacktrace() {}
-	void CleanupStacktrace() {}
+void
+Stacktrace(Threading::NativeThreadHandle thread, const std::string& threadName)
+{}
+void
+PrepareStacktrace()
+{}
+void
+CleanupStacktrace()
+{}
 
-	void OutputStacktrace() {}
+void
+OutputStacktrace()
+{}
 };
 
 // ### Fallback CrashHandler (old Apple) END

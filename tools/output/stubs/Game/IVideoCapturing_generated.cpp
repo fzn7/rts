@@ -3,47 +3,46 @@
 
 #include "IVideoCapturing.h"
 
-
-#if       defined AVI_CAPTURING
+#if defined AVI_CAPTURING
 #include "AviVideoCapturing.h"
-#else  // defined AVI_CAPTURING
+#else // defined AVI_CAPTURING
 #include "DummyVideoCapturing.h"
 #endif // defined AVI_CAPTURING
 
 #include <cstdlib> // for NULL
 
-IVideoCapturing* IVideoCapturing::GetInstance()
+IVideoCapturing*
+IVideoCapturing::GetInstance()
 {
-#if       defined AVI_CAPTURING
-	static AviVideoCapturing instance;
+#if defined AVI_CAPTURING
+    static AviVideoCapturing instance;
 #else  // defined AVI_CAPTURING
-	static DummyVideoCapturing instance;
+    static DummyVideoCapturing instance;
 #endif // defined AVI_CAPTURING
 
-	return &instance;
+    return &instance;
 }
 
-
-void IVideoCapturing::FreeInstance()
+void
+IVideoCapturing::FreeInstance()
 {
-	SetCapturing(false);
+    SetCapturing(false);
 }
 
-
-IVideoCapturing::IVideoCapturing()
-{
-}
+IVideoCapturing::IVideoCapturing() {}
 
 IVideoCapturing::~IVideoCapturing()
 {
-	FreeInstance();
+    FreeInstance();
 }
 
-void IVideoCapturing::SetCapturing(bool enabled) {
+void
+IVideoCapturing::SetCapturing(bool enabled)
+{
 
-	if (!GetInstance()->IsCapturing() && enabled) {
-		GetInstance()->StartCapturing();
-	} else if (GetInstance()->IsCapturing() && !enabled) {
-		GetInstance()->StopCapturing();
-	}
+    if (!GetInstance()->IsCapturing() && enabled) {
+        GetInstance()->StartCapturing();
+    } else if (GetInstance()->IsCapturing() && !enabled) {
+        GetInstance()->StopCapturing();
+    }
 }

@@ -7,15 +7,14 @@
 #include "EFXPresets.h"
 #include "EFXfuncs.h"
 
-#include "System/Sound/SoundLog.h"
 #include "System/Config/ConfigHandler.h"
+#include "System/Sound/SoundLog.h"
 #include "System/myMath.h"
 
-
 /******************************************************************************/
 /******************************************************************************/
 
-static std::string default_preset = "outdoors_valley";//"bathroom";
+static std::string default_preset = "outdoors_valley"; //"bathroom";
 
 /******************************************************************************/
 /******************************************************************************/
@@ -24,20 +23,19 @@ CEFX* efx = NULL;
 float CEFX::heightRolloffModifier = 1.f;
 
 CEFX::CEFX(ALCdevice* device)
-	:enabled(false)
-	,supported(false)
-	,sfxProperties(NULL)
-	,sfxSlot(0)
-	,sfxReverb(0)
-	,sfxFilter(0)
-	,updates(0)
-	,maxSlots(0)
-	,maxSlotsPerSource(0)
+  : enabled(false)
+  , supported(false)
+  , sfxProperties(NULL)
+  , sfxSlot(0)
+  , sfxReverb(0)
+  , sfxFilter(0)
+  , updates(0)
+  , maxSlots(0)
+  , maxSlotsPerSource(0)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 CEFX::~CEFX()
 {
@@ -45,48 +43,50 @@ CEFX::~CEFX()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CEFX::Enable()
+void
+CEFX::Enable()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CEFX::Disable()
+void
+CEFX::Disable()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CEFX::SetPreset(std::string name, bool verbose, bool commit)
+void
+CEFX::SetPreset(std::string name, bool verbose, bool commit)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CEFX::SetHeightRolloffModifer(const float& mod)
+void
+CEFX::SetHeightRolloffModifer(const float& mod)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CEFX::CommitEffects()
+void
+CEFX::CommitEffects()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CEFX::SetAirAbsorptionFactor(ALfloat value)
+void
+CEFX::SetAirAbsorptionFactor(ALfloat value)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CEFX::ConfigNotify(const std::string& key, const std::string& value)
+void
+CEFX::ConfigNotify(const std::string& key, const std::string& value)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

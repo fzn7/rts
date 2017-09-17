@@ -8,25 +8,25 @@
 
 #define LOG_SECTION_CREG_SERIALIZER "CregSerializer"
 
-#include "creg_cond.h"
 #include "Serializer.h"
+#include "creg_cond.h"
 
+#include "System/Exceptions.h"
 #include "System/Log/ILog.h"
 #include "System/Platform/byteorder.h"
-#include "System/Exceptions.h"
 
-#include <fstream>
 #include <assert.h>
-#include <stdexcept>
-#include <map>
-#include <vector>
-#include <string>
-#include <string.h>
 #include <boost/cstdint.hpp>
+#include <fstream>
+#include <map>
+#include <stdexcept>
+#include <string.h>
+#include <string>
+#include <vector>
 
 using namespace creg;
-using std::string;
 using std::map;
+using std::string;
 using std::vector;
 
 LOG_REGISTER_SECTION_GLOBAL(LOG_SECTION_CREG_SERIALIZER)
@@ -41,19 +41,22 @@ struct PackageHeader
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void WriteZStr(std::ostream& file, const std::string& str)
+static void
+WriteZStr(std::ostream& file, const std::string& str)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void WriteVarSizeUInt(std::ostream* stream, unsigned int val)
+void
+WriteVarSizeUInt(std::ostream* stream, unsigned int val)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void ReadVarSizeUInt(std::istream* stream, unsigned int* buf)
+void
+ReadVarSizeUInt(std::istream* stream, unsigned int* buf)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -68,48 +71,57 @@ COutputStreamSerializer::COutputStreamSerializer()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool COutputStreamSerializer::IsWriting()
+bool
+COutputStreamSerializer::IsWriting()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-COutputStreamSerializer::ObjectRef* COutputStreamSerializer::FindObjectRef(void* inst, creg::Class* objClass, bool isEmbedded)
+COutputStreamSerializer::ObjectRef*
+COutputStreamSerializer::FindObjectRef(void* inst,
+                                       creg::Class* objClass,
+                                       bool isEmbedded)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void COutputStreamSerializer::SerializeObject(Class* c, void* ptr, ObjectRef* objr)
+void
+COutputStreamSerializer::SerializeObject(Class* c, void* ptr, ObjectRef* objr)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void COutputStreamSerializer::SerializeObjectInstance(void* inst, creg::Class* objClass)
+void
+COutputStreamSerializer::SerializeObjectInstance(void* inst,
+                                                 creg::Class* objClass)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void COutputStreamSerializer::SerializeObjectPtr(void** ptr, creg::Class* objClass)
+void
+COutputStreamSerializer::SerializeObjectPtr(void** ptr, creg::Class* objClass)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void COutputStreamSerializer::Serialize(void* data, int byteSize)
+void
+COutputStreamSerializer::Serialize(void* data, int byteSize)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void COutputStreamSerializer::SerializeInt(void* data, int byteSize)
+void
+COutputStreamSerializer::SerializeInt(void* data, int byteSize)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 struct COutputStreamSerializer::ClassRef
 {
@@ -122,72 +134,76 @@ struct COutputStreamSerializer::ClassRef
 //-------------------------------------------------------------------------
 
 CInputStreamSerializer::CInputStreamSerializer()
-	: stream(NULL)
+  : stream(NULL)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-CInputStreamSerializer::~CInputStreamSerializer()
+bool
+CInputStreamSerializer::IsWriting()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool CInputStreamSerializer::IsWriting()
+void
+CInputStreamSerializer::SerializeObject(Class* c, void* ptr)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CInputStreamSerializer::SerializeObject(Class* c, void* ptr)
+void
+CInputStreamSerializer::Serialize(void* data, int byteSize)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CInputStreamSerializer::Serialize(void* data, int byteSize)
+void
+CInputStreamSerializer::SerializeInt(void* data, int byteSize)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CInputStreamSerializer::SerializeInt(void* data, int byteSize)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-void CInputStreamSerializer::SerializeObjectPtr(void** ptr, creg::Class* cls)
+void
+CInputStreamSerializer::SerializeObjectPtr(void** ptr, creg::Class* cls)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
 // Serialize an instance of an object embedded into another object
-void CInputStreamSerializer::SerializeObjectInstance(void* inst, creg::Class* cls)
+void
+CInputStreamSerializer::SerializeObjectInstance(void* inst, creg::Class* cls)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CInputStreamSerializer::AddPostLoadCallback(void (*cb)(void*), void* ud)
+void
+CInputStreamSerializer::AddPostLoadCallback(void (*cb)(void*), void* ud)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CallPostLoad(creg::Class* c, creg::Class* oc, void* obj)
+void
+CallPostLoad(creg::Class* c, creg::Class* oc, void* obj)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CInputStreamSerializer::LoadPackage(std::istream* s, void*& root, creg::Class*& rootCls)
+void
+CInputStreamSerializer::LoadPackage(std::istream* s,
+                                    void*& root,
+                                    creg::Class*& rootCls)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-ISerializer::~ISerializer() {
-}
+ISerializer::~ISerializer() {}

@@ -13,16 +13,13 @@
 
 #include "System/TimeProfiler.h"
 
-
-
 CInfoTextureHandler::CInfoTextureHandler()
-: returnToLOS(false)
-, infoTex(nullptr)
+  : returnToLOS(false)
+  , infoTex(nullptr)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 CInfoTextureHandler::~CInfoTextureHandler()
 {
@@ -30,77 +27,78 @@ CInfoTextureHandler::~CInfoTextureHandler()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CInfoTextureHandler::AddInfoTexture(CPboInfoTexture* itex)
+void
+CInfoTextureHandler::AddInfoTexture(CPboInfoTexture* itex)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-const CInfoTexture* CInfoTextureHandler::GetInfoTextureConst(const std::string& name) const
+const CInfoTexture*
+CInfoTextureHandler::GetInfoTextureConst(const std::string& name) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-CInfoTexture* CInfoTextureHandler::GetInfoTexture(const std::string& name)
+CInfoTexture*
+CInfoTextureHandler::GetInfoTexture(const std::string& name)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CInfoTextureHandler::IsEnabled() const
+bool
+CInfoTextureHandler::IsEnabled() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CInfoTextureHandler::DisableCurrentMode()
+void
+CInfoTextureHandler::DisableCurrentMode()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CInfoTextureHandler::SetMode(const std::string& name)
+void
+CInfoTextureHandler::SetMode(const std::string& name)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CInfoTextureHandler::ToggleMode(const std::string& name)
+void
+CInfoTextureHandler::ToggleMode(const std::string& name)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-const std::string& CInfoTextureHandler::GetMode() const
+const std::string&
+CInfoTextureHandler::GetMode() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-GLuint CInfoTextureHandler::GetCurrentInfoTexture() const
+GLuint
+CInfoTextureHandler::GetCurrentInfoTexture() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-int2 CInfoTextureHandler::GetCurrentInfoTextureSize() const
+int2
+CInfoTextureHandler::GetCurrentInfoTextureSize() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CInfoTextureHandler::Update()
+void
+CInfoTextureHandler::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

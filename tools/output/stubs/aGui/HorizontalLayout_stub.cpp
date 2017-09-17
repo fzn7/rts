@@ -5,22 +5,19 @@
 
 #include "Rendering/GL/myGL.h"
 
-namespace agui
+namespace agui {
+
+HorizontalLayout::HorizontalLayout(GuiElement* parent)
+  : GuiElement(parent)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void HorizontalLayout::DrawSelf()
+void
+HorizontalLayout::GeometryChangeSelf()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
-void HorizontalLayout::GeometryChangeSelf()
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
 }

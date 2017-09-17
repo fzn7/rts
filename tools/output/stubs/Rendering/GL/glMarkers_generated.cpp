@@ -4,23 +4,29 @@
 #include "glMarkers.h"
 #include "myGL.h"
 
-void CGraphicsMarker::Begin(const char* name) {
+void
+CGraphicsMarker::Begin(const char* name)
+{
 #if defined(glPushGroupMarkerEXT) && defined(glPopGroupMarkerEXT)
-	if(glPushGroupMarkerEXT && glPopGroupMarkerEXT)
-		glPushGroupMarkerEXT(0, name);
+    if (glPushGroupMarkerEXT && glPopGroupMarkerEXT)
+        glPushGroupMarkerEXT(0, name);
 #endif
 }
 
-void CGraphicsMarker::End() {
+void
+CGraphicsMarker::End()
+{
 #if defined(glPushGroupMarkerEXT) && defined(glPopGroupMarkerEXT)
-	if (glPushGroupMarkerEXT && glPopGroupMarkerEXT)
-		glPopGroupMarkerEXT();
+    if (glPushGroupMarkerEXT && glPopGroupMarkerEXT)
+        glPopGroupMarkerEXT();
 #endif
 }
 
-void CGraphicsMarker::Event(const char* name) {
+void
+CGraphicsMarker::Event(const char* name)
+{
 #if defined(glInsertEventMarkerEXT)
-	if(glInsertEventMarkerEXT)
-		glInsertEventMarkerEXT(0, name);
+    if (glInsertEventMarkerEXT)
+        glInsertEventMarkerEXT(0, name);
 #endif
 }

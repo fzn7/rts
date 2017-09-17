@@ -1,7 +1,6 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
 #include "InMapDrawView.h"
 #include "Rendering/Colors.h"
 #include "Rendering/Fonts/glFont.h"
@@ -15,12 +14,14 @@
 
 CInMapDrawView* inMapDrawerView = NULL;
 
-
 /**
  * how far on the way between x and y [0.0f, 1.0f]
  */
-static inline unsigned char smoothStep(int x, int y, int a) {
-	return (unsigned char)((x * (1.0f - a)) + (y * a));
+static inline unsigned char
+smoothStep(int x, int y, int a)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CInMapDrawView::CInMapDrawView()
@@ -29,35 +30,34 @@ CInMapDrawView::CInMapDrawView()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
 CInMapDrawView::~CInMapDrawView()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-struct InMapDraw_QuadDrawer: public CReadMap::IQuadDrawer
+struct InMapDraw_QuadDrawer : public CReadMap::IQuadDrawer
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void InMapDraw_QuadDrawer::DrawLine(const CInMapDrawModel::MapLine* line) const
+void
+InMapDraw_QuadDrawer::DrawLine(const CInMapDrawModel::MapLine* line) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void InMapDraw_QuadDrawer::DrawQuad(int x, int y)
+void
+InMapDraw_QuadDrawer::DrawQuad(int x, int y)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void CInMapDrawView::Draw()
+void
+CInMapDrawView::Draw()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

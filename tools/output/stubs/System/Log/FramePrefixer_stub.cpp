@@ -10,7 +10,6 @@
 #include <cstdarg>
 #include <cstring>
 
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -18,13 +17,15 @@ extern "C" {
 // GlobalSynced makes sure this can not be dangling
 static int* frameNumRef = NULL;
 
-void log_framePrefixer_setFrameNumReference(int* frameNumReference)
+void
+log_framePrefixer_setFrameNumReference(int* frameNumReference)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-size_t log_framePrefixer_createPrefix(char* result, size_t resultSize)
+size_t
+log_framePrefixer_createPrefix(char* result, size_t resultSize)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -33,4 +34,3 @@ size_t log_framePrefixer_createPrefix(char* result, size_t resultSize)
 #ifdef __cplusplus
 } // extern "C"
 #endif
-

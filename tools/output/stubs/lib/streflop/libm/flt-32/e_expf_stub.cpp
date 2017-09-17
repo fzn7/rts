@@ -30,27 +30,38 @@ static const Simple
 #else
 static Simple
 #endif
-one	= 1.0f,
-halF[2]	= {0.5f,-0.5f,},
-twom100 = 7.8886090522e-31f,      /* 2**-100=0x0d800000 */
-o_threshold=  8.8721679688e+01f,  /* 0x42b17180 */
-u_threshold= -1.0397208405e+02f,  /* 0xc2cff1b5 */
-ln2HI[2]   ={ 6.9313812256e-01f,		/* 0x3f317180 */
-	     -6.9313812256e-01f,},	/* 0xbf317180 */
-ln2LO[2]   ={ 9.0580006145e-06f,  	/* 0x3717f7d1 */
-	     -9.0580006145e-06f,},	/* 0xb717f7d1 */
-invln2 =  1.4426950216e+00f, 		/* 0x3fb8aa3b */
-P1   =  1.6666667163e-01f, /* 0x3e2aaaab */
-P2   = -2.7777778450e-03f, /* 0xbb360b61 */
-P3   =  6.6137559770e-05f, /* 0x388ab355 */
-P4   = -1.6533901999e-06f, /* 0xb5ddea0e */
-P5   =  4.1381369442e-08f; /* 0x3331bb4c */
+  one = 1.0f,
+  halF[2] =
+    {
+        0.5f,
+        -0.5f,
+    },
+  twom100 = 7.8886090522e-31f,      /* 2**-100=0x0d800000 */
+  o_threshold = 8.8721679688e+01f,  /* 0x42b17180 */
+  u_threshold = -1.0397208405e+02f, /* 0xc2cff1b5 */
+  ln2HI[2] =
+    {
+        6.9313812256e-01f, /* 0x3f317180 */
+        -6.9313812256e-01f,
+    }, /* 0xbf317180 */
+  ln2LO[2] =
+    {
+        9.0580006145e-06f, /* 0x3717f7d1 */
+        -9.0580006145e-06f,
+    },                        /* 0xb717f7d1 */
+  invln2 = 1.4426950216e+00f, /* 0x3fb8aa3b */
+  P1 = 1.6666667163e-01f,     /* 0x3e2aaaab */
+  P2 = -2.7777778450e-03f,    /* 0xbb360b61 */
+  P3 = 6.6137559770e-05f,     /* 0x388ab355 */
+  P4 = -1.6533901999e-06f,    /* 0xb5ddea0e */
+  P5 = 4.1381369442e-08f;     /* 0x3331bb4c */
 
 #ifdef __STDC__
-	Simple __ieee754_expf(Simple x)	/* default IEEE Double exp */
+Simple
+__ieee754_expf(Simple x) /* default IEEE Double exp */
 #else
-	Simple __ieee754_expf(x)	/* default IEEE Double exp */
-	Simple x;
+Simple __ieee754_expf(x) /* default IEEE Double exp */
+  Simple x;
 #endif
 {
     //stub method

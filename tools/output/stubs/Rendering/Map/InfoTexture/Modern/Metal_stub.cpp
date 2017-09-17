@@ -5,33 +5,31 @@
 #include "Map/MetalMap.h"
 #include "Map/ReadMap.h"
 
-
-
 CMetalTexture::CMetalTexture()
-: CPboInfoTexture("metal")
-, CEventClient("[CMetalTexture]", 271990, false)
-, metalMapChanged(true)
+  : CPboInfoTexture("metal")
+  , CEventClient("[CMetalTexture]", 271990, false)
+  , metalMapChanged(true)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CMetalTexture::Update()
+void
+CMetalTexture::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CMetalTexture::MetalMapChanged(const int x, const int z)
+void
+CMetalTexture::MetalMapChanged(const int x, const int z)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CMetalTexture::IsUpdateNeeded()
+bool
+CMetalTexture::IsUpdateNeeded()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

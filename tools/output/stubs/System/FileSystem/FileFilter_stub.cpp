@@ -3,24 +3,21 @@
 
 #include "FileFilter.h"
 
-
 #include <boost/regex.hpp>
 
-#include <limits.h>
 #include <ctype.h>
+#include <limits.h>
 #include <sstream>
 #include <vector>
 
 using std::string;
 using std::vector;
 
-
 class CFileFilter : public IFileFilter
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /** @brief Add a filtering rule.
 
@@ -46,22 +43,24 @@ Note that:
    a file from a more generic pattern.
  - By default, no file matches. This can be changed using AddRule("*") ofc.
 */
-void CFileFilter::AddRule(const string& rule)
+void
+CFileFilter::AddRule(const string& rule)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /** @brief Checks whether filename matches this filter. */
-bool CFileFilter::Match(const string& filename) const
+bool
+CFileFilter::Match(const string& filename) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-string CFileFilter::glob_to_regex(const string& glob) // FIXME remove; duplicate in FileSystem::ConvertGlobToRegex
+string
+CFileFilter::glob_to_regex(const string& glob) // FIXME remove; duplicate in
+                                               // FileSystem::ConvertGlobToRegex
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

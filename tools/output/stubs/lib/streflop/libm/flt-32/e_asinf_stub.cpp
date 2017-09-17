@@ -16,11 +16,11 @@
  */
 
 /*
-  Modifications for single precision expansion are 
+  Modifications for single precision expansion are
   Copyright (C) 2001 Stephen L. Moshier <moshier@na-net.ornl.gov>
-  and are incorporated herein by permission of the author.  The author 
+  and are incorporated herein by permission of the author.  The author
   reserves the right to distribute this material elsewhere under different
-  copying permissions.  These modifications are distributed here under 
+  copying permissions.  These modifications are distributed here under
   the following terms:
 
     This library is free software; you can redistribute it and/or
@@ -50,27 +50,23 @@ static const Simple
 #else
 static Simple
 #endif
-one =  1.0000000000e+00f, /* 0x3F800000 */
-huge =  1.000e+30f,
+  one = 1.0000000000e+00f, /* 0x3F800000 */
+  huge = 1.000e+30f,
 
-pio2_hi = 1.57079637050628662109375f,
-pio2_lo = -4.37113900018624283e-8f,
-pio4_hi = 0.785398185253143310546875f,
+  pio2_hi = 1.57079637050628662109375f, pio2_lo = -4.37113900018624283e-8f,
+  pio4_hi = 0.785398185253143310546875f,
 
-/* asin x = x + x^3 p(x^2)
-   -0.5f <= x <= 0.5f;
-   Peak relative error 4.8e-9f */
-p0 = 1.666675248e-1f,
-p1 = 7.495297643e-2f,
-p2 = 4.547037598e-2f,
-p3 = 2.417951451e-2f,
-p4 = 4.216630880e-2f;
+  /* asin x = x + x^3 p(x^2)
+     -0.5f <= x <= 0.5f;
+     Peak relative error 4.8e-9f */
+  p0 = 1.666675248e-1f, p1 = 7.495297643e-2f, p2 = 4.547037598e-2f,
+  p3 = 2.417951451e-2f, p4 = 4.216630880e-2f;
 
 #ifdef __STDC__
-	Simple __ieee754_asinf(Simple x)
+Simple
+__ieee754_asinf(Simple x)
 #else
-	Simple __ieee754_asinf(x)
-	Simple x;
+Simple __ieee754_asinf(x) Simple x;
 #endif
 {
     //stub method

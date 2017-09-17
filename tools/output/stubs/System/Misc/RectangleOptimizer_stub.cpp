@@ -12,94 +12,90 @@
 #include <cassert>
 
 CR_BIND(CRectangleOptimizer, )
-CR_REG_METADATA(CRectangleOptimizer, (
-	CR_MEMBER(maxAreaPerRect),
-	CR_MEMBER(rectangles),
-	CR_MEMBER(needsUpdate)
-))
+CR_REG_METADATA(CRectangleOptimizer,
+                (CR_MEMBER(maxAreaPerRect),
+                 CR_MEMBER(rectangles),
+                 CR_MEMBER(needsUpdate)))
 
 unsigned CRectangleOptimizer::statsTotalSize = 0;
-unsigned CRectangleOptimizer::statsOptSize   = 0;
+unsigned CRectangleOptimizer::statsOptSize = 0;
 
 CRectangleOptimizer::CRectangleOptimizer()
-	: maxAreaPerRect(500 * 500) // FIXME auto adjust this in HeightMapUpdate!
-	, needsUpdate(false)
+  : maxAreaPerRect(500 * 500) // FIXME auto adjust this in HeightMapUpdate!
+  , needsUpdate(false)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-CRectangleOptimizer::~CRectangleOptimizer()
+unsigned
+CRectangleOptimizer::GetTotalArea() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-unsigned CRectangleOptimizer::GetTotalArea() const
+void
+CRectangleOptimizer::Optimize()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CRectangleOptimizer::Optimize()
+void
+CRectangleOptimizer::StageMerge()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CRectangleOptimizer::StageMerge()
+void
+CRectangleOptimizer::StageOverlap()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CRectangleOptimizer::StageOverlap()
+void
+CRectangleOptimizer::StageSplitTooLarge()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CRectangleOptimizer::StageSplitTooLarge()
+inline std::bitset<4>
+CRectangleOptimizer::GetEdgesInRect(const SRectangle& rect1,
+                                    const SRectangle& rect2)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-inline std::bitset<4> CRectangleOptimizer::GetEdgesInRect(const SRectangle& rect1, const SRectangle& rect2)
+inline std::bitset<4>
+CRectangleOptimizer::GetSharedEdges(const SRectangle& rect1,
+                                    const SRectangle& rect2)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-inline std::bitset<4> CRectangleOptimizer::GetSharedEdges(const SRectangle& rect1, const SRectangle& rect2)
+inline bool
+CRectangleOptimizer::AreMergable(const SRectangle& rect1,
+                                 const SRectangle& rect2)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-inline bool CRectangleOptimizer::AreMergable(const SRectangle& rect1, const SRectangle& rect2)
+bool
+CRectangleOptimizer::HandleMerge(SRectangle& rect1, SRectangle& rect2)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CRectangleOptimizer::HandleMerge(SRectangle& rect1, SRectangle& rect2)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-
-int CRectangleOptimizer::HandleOverlapping(SRectangle* rect1, SRectangle* rect2)
+int
+CRectangleOptimizer::HandleOverlapping(SRectangle* rect1, SRectangle* rect2)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

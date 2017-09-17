@@ -24,14 +24,21 @@
 #include "SMath.h"
 #include "math_private.h"
 
+#define CBRT2 1.2599210498948731648f     /* 2^(1/3) */
+#define SQR_CBRT2 1.5874010519681994748f /* 2^(2/3) */
 
-#define CBRT2 1.2599210498948731648f		/* 2^(1/3) */
-#define SQR_CBRT2 1.5874010519681994748f		/* 2^(2/3) */
+static const Simple factor[5] = { 1.0f / SQR_CBRT2,
+                                  1.0f / CBRT2,
+                                  1.0f,
+                                  CBRT2,
+                                  SQR_CBRT2 };
 
-static const Simple factor[5] =
+namespace streflop_libm {
+Simple
+__cbrtf(Simple x)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__cbrtf, cbrtf)
+weak_alias(__cbrtf, cbrtf)
 }

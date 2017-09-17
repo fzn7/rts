@@ -3,33 +3,24 @@
 
 #include "AllyTeam.h"
 
-#include <cstdlib>
 #include "System/creg/STL_Map.h"
-
+#include <cstdlib>
 
 CR_BIND(AllyTeam, )
 
-CR_REG_METADATA(AllyTeam, (
-	CR_MEMBER(startRectTop),
-	CR_MEMBER(startRectBottom),
-	CR_MEMBER(startRectLeft),
-	CR_MEMBER(startRectRight),
-	CR_MEMBER(allies),
-	CR_MEMBER(customValues)
-))
-
+CR_REG_METADATA(AllyTeam,
+                (CR_MEMBER(startRectTop),
+                 CR_MEMBER(startRectBottom),
+                 CR_MEMBER(startRectLeft),
+                 CR_MEMBER(startRectRight),
+                 CR_MEMBER(allies),
+                 CR_MEMBER(customValues)))
 
 AllyTeam::AllyTeam()
-	: startRectTop(0)
-	, startRectBottom(1)
-	, startRectLeft(0)
-	, startRectRight(1)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-void AllyTeam::SetValue(const std::string& key, const std::string& value)
+  : startRectTop(0)
+  , startRectBottom(1)
+  , startRectLeft(0)
+  , startRectRight(1)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

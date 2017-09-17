@@ -7,20 +7,18 @@
 #include "System/Log/ILog.h"
 #include "System/Net/Socket.h"
 
+#include <boost/cstdint.hpp>
 #include <string.h>
 #include <vector>
-#include <boost/cstdint.hpp>
-
 
 #define LOG_SECTION_AUTOHOST_INTERFACE "AutohostInterface"
 LOG_REGISTER_SECTION_GLOBAL(LOG_SECTION_AUTOHOST_INTERFACE)
 
 // use the specific section for all LOG*() calls in this source file
 #ifdef LOG_SECTION_CURRENT
-	#undef LOG_SECTION_CURRENT
+#undef LOG_SECTION_CURRENT
 #endif
 #define LOG_SECTION_CURRENT LOG_SECTION_AUTOHOST_INTERFACE
-
 
 namespace {
 
@@ -37,114 +35,134 @@ enum EVENT
 
 using namespace boost::asio;
 
-AutohostInterface::AutohostInterface(const std::string& remoteIP, int remotePort, const std::string& localIP, int localPort)
-		: autohost(netcode::netservice)
-		, initialized(false)
+AutohostInterface::AutohostInterface(const std::string& remoteIP,
+                                     int remotePort,
+                                     const std::string& localIP,
+                                     int localPort)
+  : autohost(netcode::netservice)
+  , initialized(false)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-std::string AutohostInterface::TryBindSocket(
-			boost::asio::ip::udp::socket& socket,
-			const std::string& remoteIP, int remotePort,
-			const std::string& localIP, int localPort)
+std::string
+AutohostInterface::TryBindSocket(boost::asio::ip::udp::socket& socket,
+                                 const std::string& remoteIP,
+                                 int remotePort,
+                                 const std::string& localIP,
+                                 int localPort)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-AutohostInterface::~AutohostInterface()
+AutohostInterface::~AutohostInterface() {}
+
+void
+AutohostInterface::SendStart()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::SendStart()
+void
+AutohostInterface::SendQuit()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::SendQuit()
+void
+AutohostInterface::SendStartPlaying(const unsigned char* gameID,
+                                    const std::string& demoName)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::SendStartPlaying(const unsigned char* gameID, const std::string& demoName)
+void
+AutohostInterface::SendGameOver(uchar playerNum,
+                                const std::vector<uchar>& winningAllyTeams)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::SendGameOver(uchar playerNum, const std::vector<uchar>& winningAllyTeams)
+void
+AutohostInterface::SendPlayerJoined(uchar playerNum, const std::string& name)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::SendPlayerJoined(uchar playerNum, const std::string& name)
+void
+AutohostInterface::SendPlayerLeft(uchar playerNum, uchar reason)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::SendPlayerLeft(uchar playerNum, uchar reason)
+void
+AutohostInterface::SendPlayerReady(uchar playerNum, uchar readyState)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::SendPlayerReady(uchar playerNum, uchar readyState)
+void
+AutohostInterface::SendPlayerChat(uchar playerNum,
+                                  uchar destination,
+                                  const std::string& chatmsg)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::SendPlayerChat(uchar playerNum, uchar destination, const std::string& chatmsg)
+void
+AutohostInterface::SendPlayerDefeated(uchar playerNum)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::SendPlayerDefeated(uchar playerNum)
+void
+AutohostInterface::Message(const std::string& message)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::Message(const std::string& message)
+void
+AutohostInterface::Warning(const std::string& message)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::Warning(const std::string& message)
+void
+AutohostInterface::SendLuaMsg(const boost::uint8_t* msg, size_t msgSize)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::SendLuaMsg(const boost::uint8_t* msg, size_t msgSize)
+void
+AutohostInterface::Send(const boost::uint8_t* msg, size_t msgSize)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AutohostInterface::Send(const boost::uint8_t* msg, size_t msgSize)
+std::string
+AutohostInterface::GetChatMessage()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-std::string AutohostInterface::GetChatMessage()
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-void AutohostInterface::Send(boost::asio::mutable_buffers_1 buffer)
+void
+AutohostInterface::Send(boost::asio::mutable_buffers_1 buffer)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

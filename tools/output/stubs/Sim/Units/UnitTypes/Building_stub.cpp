@@ -1,7 +1,6 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
 #include "Building.h"
 #include "Game/GameHelper.h"
 #include "Map/ReadMap.h"
@@ -24,32 +23,23 @@ CBuilding::CBuilding()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void CBuilding::PreInit(const UnitLoadParams& params)
+void
+CBuilding::PreInit(const UnitLoadParams& params)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CBuilding::PostInit(const CUnit* builder)
+void
+CBuilding::PostInit(const CUnit* builder)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CBuilding::ForcedMove(const float3& newPos) {
-	// heading might have changed if building was dropped from transport
-	// (always needs to be axis-aligned because yardmaps are not rotated)
-	heading = GetHeadingFromFacing(buildFacing);
-
-	UpdateDirVectors(false);
-	SetVelocity(ZeroVector);
-
-	// update quadfield, etc.
-	CUnit::ForcedMove(CGameHelper::Pos2BuildPos(BuildInfo(unitDef, newPos, buildFacing), true));
-
-	unitLoader->FlattenGround(this);
+void
+CBuilding::ForcedMove(const float3& newPos)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
-

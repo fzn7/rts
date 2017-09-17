@@ -28,28 +28,28 @@ static const Simple
 #else
 static Simple
 #endif
-ln2_hi =   6.9313812256e-01f,	/* 0x3f317180 */
-ln2_lo =   9.0580006145e-06f,	/* 0x3717f7d1 */
-two25 =    3.355443200e+07f,	/* 0x4c000000 */
-Lg1 = 6.6666668653e-01f,	/* 3F2AAAAB */
-Lg2 = 4.0000000596e-01f,	/* 3ECCCCCD */
-Lg3 = 2.8571429849e-01f, /* 3E924925 */
-Lg4 = 2.2222198546e-01f, /* 3E638E29 */
-Lg5 = 1.8183572590e-01f, /* 3E3A3325 */
-Lg6 = 1.5313838422e-01f, /* 3E1CD04F */
-Lg7 = 1.4798198640e-01f; /* 3E178897 */
+  ln2_hi = 6.9313812256e-01f, /* 0x3f317180 */
+  ln2_lo = 9.0580006145e-06f, /* 0x3717f7d1 */
+  two25 = 3.355443200e+07f,   /* 0x4c000000 */
+  Lg1 = 6.6666668653e-01f,    /* 3F2AAAAB */
+  Lg2 = 4.0000000596e-01f,    /* 3ECCCCCD */
+  Lg3 = 2.8571429849e-01f,    /* 3E924925 */
+  Lg4 = 2.2222198546e-01f,    /* 3E638E29 */
+  Lg5 = 1.8183572590e-01f,    /* 3E3A3325 */
+  Lg6 = 1.5313838422e-01f,    /* 3E1CD04F */
+  Lg7 = 1.4798198640e-01f;    /* 3E178897 */
 
 #ifdef __STDC__
-static const Simple zero   =  0.0f;
+static const Simple zero = 0.0f;
 #else
-static Simple zero   =  0.0f;
+static Simple zero = 0.0f;
 #endif
 
 #ifdef __STDC__
-	Simple __ieee754_logf(Simple x)
+Simple
+__ieee754_logf(Simple x)
 #else
-	Simple __ieee754_logf(x)
-	Simple x;
+Simple __ieee754_logf(x) Simple x;
 #endif
 {
     //stub method

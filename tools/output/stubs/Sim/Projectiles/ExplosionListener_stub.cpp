@@ -4,9 +4,7 @@
 #include "ExplosionListener.h"
 #include "System/Util.h"
 
-
 std::vector<IExplosionListener*> CExplosionCreator::explosionListeners;
-
 
 IExplosionListener::~IExplosionListener()
 {
@@ -14,21 +12,23 @@ IExplosionListener::~IExplosionListener()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CExplosionCreator::AddExplosionListener(IExplosionListener* listener)
+void
+CExplosionCreator::AddExplosionListener(IExplosionListener* listener)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CExplosionCreator::RemoveExplosionListener(IExplosionListener* listener)
+void
+CExplosionCreator::RemoveExplosionListener(IExplosionListener* listener)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CExplosionCreator::FireExplosionEvent(const CExplosionParams& event)
+void
+CExplosionCreator::FireExplosionEvent(const CExplosionParams& event)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-

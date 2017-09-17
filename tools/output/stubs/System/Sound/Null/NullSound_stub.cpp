@@ -6,7 +6,9 @@
 
 #include "System/Sound/SoundLog.h"
 
-void NullSound::PrintDebugInfo() {
-	LOG("Null Sound System");
+void
+NullSound::PrintDebugInfo()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
-

@@ -4,9 +4,5 @@
 #include "Rectangle.h"
 
 CR_BIND(SRectangle, )
-CR_REG_METADATA(SRectangle, (
-	CR_MEMBER(x1),
-	CR_MEMBER(y1),
-	CR_MEMBER(x2),
-	CR_MEMBER(y2)
-))
+CR_REG_METADATA(SRectangle,
+                (CR_MEMBER(x1), CR_MEMBER(y1), CR_MEMBER(x2), CR_MEMBER(y2)))

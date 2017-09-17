@@ -1,7 +1,6 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
 #include "TAPalette.h"
 #include "System/FileSystem/FileHandler.h"
 
@@ -13,7 +12,8 @@ CTAPalette::CTAPalette()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CTAPalette::Init(CFileHandler& paletteFile)
+void
+CTAPalette::Init(CFileHandler& paletteFile)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

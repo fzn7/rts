@@ -3,10 +3,7 @@
 
 #include <assert.h>
 
-
 #include "ExternalAI/SkirmishAIHandler.h"
-#include "Player.h"
-#include "PlayerHandler.h"
 #include "Game/Camera.h"
 #include "Game/CameraHandler.h"
 #include "Game/GlobalUnsynced.h"
@@ -15,84 +12,84 @@
 #include "Game/UI/UnitTracker.h"
 #include "Lua/LuaUI.h"
 #include "Map/ReadMap.h"
-#include "Sim/Misc/TeamHandler.h"
+#include "Player.h"
+#include "PlayerHandler.h"
 #include "Sim/Misc/GlobalSynced.h"
+#include "Sim/Misc/TeamHandler.h"
 #include "Sim/Units/Unit.h"
 #include "Sim/Units/UnitHandler.h"
-#include "System/myMath.h"
 #include "System/EventHandler.h"
 #include "System/Log/ILog.h"
 #include "System/creg/STL_Set.h"
-
+#include "System/myMath.h"
 
 CR_BIND_DERIVED(CPlayer, PlayerBase, )
-CR_REG_METADATA(CPlayer, (
-	CR_MEMBER(active),
-	CR_MEMBER(playerNum),
-	CR_IGNORED(ping),
-	CR_MEMBER(currentStats),
-	CR_IGNORED(fpsController),
-	CR_MEMBER(controlledTeams)
-))
-
+CR_REG_METADATA(CPlayer,
+                (CR_MEMBER(active),
+                 CR_MEMBER(playerNum),
+                 CR_IGNORED(ping),
+                 CR_MEMBER(currentStats),
+                 CR_IGNORED(fpsController),
+                 CR_MEMBER(controlledTeams)))
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
 CPlayer::CPlayer()
-	: PlayerBase()
-	, active(false)
-	, playerNum(-1)
-	, ping(0)
+  : PlayerBase()
+  , active(false)
+  , playerNum(-1)
+  , ping(0)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void CPlayer::SetControlledTeams()
+void
+CPlayer::SetControlledTeams()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CPlayer::UpdateControlledTeams()
+void
+CPlayer::UpdateControlledTeams()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CPlayer::StartSpectating()
+void
+CPlayer::StartSpectating()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CPlayer::JoinTeam(int newTeam)
+void
+CPlayer::JoinTeam(int newTeam)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CPlayer::GameFrame(int frameNum)
+void
+CPlayer::GameFrame(int frameNum)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void CPlayer::StartControllingUnit()
+void
+CPlayer::StartControllingUnit()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CPlayer::StopControllingUnit()
+void
+CPlayer::StopControllingUnit()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

@@ -9,273 +9,290 @@
 #include "Map/ReadMap.h"
 #include "Sim/Misc/QuadField.h"
 #include "Sim/Units/CommandAI/BuilderCAI.h"
-#include "System/creg/STL_Set.h"
 #include "System/EventHandler.h"
 #include "System/TimeProfiler.h"
 #include "System/Util.h"
+#include "System/creg/STL_Set.h"
 
 CFeatureHandler* featureHandler = NULL;
 
 /******************************************************************************/
 
 CR_BIND(CFeatureHandler, )
-CR_REG_METADATA(CFeatureHandler, (
-	CR_MEMBER(idPool),
-	CR_MEMBER(toBeFreedFeatureIDs),
-	CR_MEMBER(activeFeatures),
-	CR_MEMBER(features),
-	CR_MEMBER(updateFeatures)
-))
+CR_REG_METADATA(CFeatureHandler,
+                (CR_MEMBER(idPool),
+                 CR_MEMBER(toBeFreedFeatureIDs),
+                 CR_MEMBER(activeFeatures),
+                 CR_MEMBER(features),
+                 CR_MEMBER(updateFeatures)))
 
 /******************************************************************************/
 
 CFeatureHandler::~CFeatureHandler()
 {
-	for (CFeatureSet::iterator fi = activeFeatures.begin(); fi != activeFeatures.end(); ++fi) {
-		delete *fi;
-	}
+    for (CFeatureSet::iterator fi = activeFeatures.begin();
+         fi != activeFeatures.end();
+         ++fi) {
+        delete *fi;
+    }
 
-	activeFeatures.clear();
-	features.clear();
+    activeFeatures.clear();
+    features.clear();
 }
 
-
-void CFeatureHandler::LoadFeaturesFromMap()
+void
+CFeatureHandler::LoadFeaturesFromMap()
 {
-	// create map-specified feature instances
-	const int numFeatures = readMap->GetNumFeatures();
-	if (numFeatures == 0)
-		return;
-	std::vector<MapFeatureInfo> mfi;
-	mfi.resize(numFeatures);
-	readMap->GetFeatureInfo(&mfi[0]);
+    // create map-specified feature instances
+    const int numFeatures = readMap->GetNumFeatures();
+    if (numFeatures == 0)
+        return;
+    std::vector<MapFeatureInfo> mfi;
+    mfi.resize(numFeatures);
+    readMap->GetFeatureInfo(&mfi[0]);
 
-	for (int a = 0; a < numFeatures; ++a) {
-		const FeatureDef* def = featureDefHandler->GetFeatureDef(readMap->GetFeatureTypeName(mfi[a].featureType), true);
-		if (def == nullptr)
-			continue;
+    for (int a = 0; a < numFeatures; ++a) {
+        const FeatureDef* def = featureDefHandler->GetFeatureDef(
+          readMap->GetFeatureTypeName(mfi[a].featureType), true);
+        if (def == nullptr)
+            continue;
 
-		FeatureLoadParams params = {
-			def,
-			NULL,
+        FeatureLoadParams params = {
+            def,
+            NULL,
 
-			float3(mfi[a].pos.x, CGround::GetHeightReal(mfi[a].pos.x, mfi[a].pos.z), mfi[a].pos.z),
-			ZeroVector,
+            float3(mfi[a].pos.x,
+                   CGround::GetHeightReal(mfi[a].pos.x, mfi[a].pos.z),
+                   mfi[a].pos.z),
+            ZeroVector,
 
-			-1, // featureID
-			-1, // teamID
-			-1, // allyTeamID
+            -1, // featureID
+            -1, // teamID
+            -1, // allyTeamID
 
-			static_cast<short int>(mfi[a].rotation),
-			FACING_SOUTH,
+            static_cast<short int>(mfi[a].rotation),
+            FACING_SOUTH,
 
-			0, // smokeTime
-		};
+            0, // smokeTime
+        };
 
-		LoadFeature(params);
-	}
+        LoadFeature(params);
+    }
 }
 
-
-CFeature* CFeatureHandler::LoadFeature(const FeatureLoadParams& params) {
-	// need to check this BEFORE creating the instance
-	if (!CanAddFeature(params.featureID))
-		return nullptr;
-
-	// Initialize() calls AddFeature -> no memory-leak
-	CFeature* feature = new CFeature();
-	feature->Initialize(params);
-	return feature;
-}
-
-
-bool CFeatureHandler::NeedAllocateNewFeatureIDs(const CFeature* feature) const
+CFeature*
+CFeatureHandler::LoadFeature(const FeatureLoadParams& params)
 {
-	if (feature->id < 0 && idPool.IsEmpty())
-		return true;
-	if (feature->id >= 0 && feature->id >= features.size())
-		return true;
+    // need to check this BEFORE creating the instance
+    if (!CanAddFeature(params.featureID))
+        return nullptr;
 
-	return false;
+    // Initialize() calls AddFeature -> no memory-leak
+    CFeature* feature = new CFeature();
+    feature->Initialize(params);
+    return feature;
 }
 
-void CFeatureHandler::AllocateNewFeatureIDs(const CFeature* feature)
+bool
+CFeatureHandler::NeedAllocateNewFeatureIDs(const CFeature* feature) const
 {
-	// if feature->id is non-negative, then allocate enough to
-	// make it a valid index (we have no hard MAX_FEATURES cap)
-	// and always make sure to at least double the pool
-	// note: WorldObject::id is signed, so block RHS underflow
-	const unsigned int numNewIDs = std::max(int(features.size()) + (128 * idPool.IsEmpty()), (feature->id + 1) - int(features.size()));
+    if (feature->id < 0 && idPool.IsEmpty())
+        return true;
+    if (feature->id >= 0 && feature->id >= features.size())
+        return true;
 
-	idPool.Expand(features.size(), numNewIDs);
-	features.resize(features.size() + numNewIDs, NULL);
+    return false;
 }
 
-void CFeatureHandler::InsertActiveFeature(CFeature* feature)
+void
+CFeatureHandler::AllocateNewFeatureIDs(const CFeature* feature)
 {
-	idPool.AssignID(feature);
+    // if feature->id is non-negative, then allocate enough to
+    // make it a valid index (we have no hard MAX_FEATURES cap)
+    // and always make sure to at least double the pool
+    // note: WorldObject::id is signed, so block RHS underflow
+    const unsigned int numNewIDs =
+      std::max(int(features.size()) + (128 * idPool.IsEmpty()),
+               (feature->id + 1) - int(features.size()));
 
-	assert(feature->id < features.size());
-	assert(features[feature->id] == NULL);
-
-	activeFeatures.insert(feature);
-	features[feature->id] = feature;
+    idPool.Expand(features.size(), numNewIDs);
+    features.resize(features.size() + numNewIDs, NULL);
 }
 
-
-
-bool CFeatureHandler::AddFeature(CFeature* feature)
+void
+CFeatureHandler::InsertActiveFeature(CFeature* feature)
 {
-	// LoadFeature should make sure this is true
-	assert(CanAddFeature(feature->id));
+    idPool.AssignID(feature);
 
-	if (NeedAllocateNewFeatureIDs(feature)) {
-		AllocateNewFeatureIDs(feature);
-	}
+    assert(feature->id < features.size());
+    assert(features[feature->id] == NULL);
 
-	InsertActiveFeature(feature);
-	SetFeatureUpdateable(feature);
-	return true;
+    activeFeatures.insert(feature);
+    features[feature->id] = feature;
 }
 
-
-void CFeatureHandler::DeleteFeature(CFeature* feature)
+bool
+CFeatureHandler::AddFeature(CFeature* feature)
 {
-	SetFeatureUpdateable(feature);
-	feature->deleteMe = true;
+    // LoadFeature should make sure this is true
+    assert(CanAddFeature(feature->id));
+
+    if (NeedAllocateNewFeatureIDs(feature)) {
+        AllocateNewFeatureIDs(feature);
+    }
+
+    InsertActiveFeature(feature);
+    SetFeatureUpdateable(feature);
+    return true;
 }
 
-CFeature* CFeatureHandler::GetFeature(int id)
+void
+CFeatureHandler::DeleteFeature(CFeature* feature)
 {
-	if (id >= 0 && id < features.size())
-		return features[id];
-
-	return nullptr;
+    SetFeatureUpdateable(feature);
+    feature->deleteMe = true;
 }
 
-
-CFeature* CFeatureHandler::CreateWreckage(
-	const FeatureLoadParams& cparams,
-	const int numWreckLevels,
-	bool emitSmoke)
+CFeature*
+CFeatureHandler::GetFeature(int id)
 {
-	const FeatureDef* fd = cparams.featureDef;
+    if (id >= 0 && id < features.size())
+        return features[id];
 
-	if (fd == nullptr)
-		return nullptr;
-
-	// move down the wreck-chain by <numWreckLevels> steps beyond <fd>
-	for (int i = 0; i < numWreckLevels; i++) {
-		if ((fd = featureDefHandler->GetFeatureDefByID(fd->deathFeatureDefID)) == nullptr) {
-			return nullptr;
-		}
-	}
-
-	if (!eventHandler.AllowFeatureCreation(fd, cparams.teamID, cparams.pos))
-		return nullptr;
-
-	if (!fd->modelName.empty()) {
-		FeatureLoadParams params = cparams;
-
-		params.unitDef = ((fd->resurrectable == 0) || (numWreckLevels > 0 && fd->resurrectable < 0)) ? nullptr: cparams.unitDef;
-		params.smokeTime = fd->smokeTime * emitSmoke;
-		params.featureDef = fd;
-
-		return (LoadFeature(params));
-	}
-
-	return nullptr;
+    return nullptr;
 }
 
-
-
-void CFeatureHandler::Update()
+CFeature*
+CFeatureHandler::CreateWreckage(const FeatureLoadParams& cparams,
+                                const int numWreckLevels,
+                                bool emitSmoke)
 {
-	SCOPED_TIMER("FeatureHandler::Update");
+    const FeatureDef* fd = cparams.featureDef;
 
-	if ((gs->frameNum & 31) == 0) {
-		toBeFreedFeatureIDs.erase(std::remove_if(toBeFreedFeatureIDs.begin(), toBeFreedFeatureIDs.end(),
-			[this](int id) { return this->TryFreeFeatureID(id); }
-		), toBeFreedFeatureIDs.end());
-	}
+    if (fd == nullptr)
+        return nullptr;
 
-	updateFeatures.erase(std::remove_if(updateFeatures.begin(), updateFeatures.end(), 
-		[this](CFeature* feature) { return this->UpdateFeature(feature); }
-	), updateFeatures.end());
+    // move down the wreck-chain by <numWreckLevels> steps beyond <fd>
+    for (int i = 0; i < numWreckLevels; i++) {
+        if ((fd = featureDefHandler->GetFeatureDefByID(
+               fd->deathFeatureDefID)) == nullptr) {
+            return nullptr;
+        }
+    }
+
+    if (!eventHandler.AllowFeatureCreation(fd, cparams.teamID, cparams.pos))
+        return nullptr;
+
+    if (!fd->modelName.empty()) {
+        FeatureLoadParams params = cparams;
+
+        params.unitDef = ((fd->resurrectable == 0) ||
+                          (numWreckLevels > 0 && fd->resurrectable < 0))
+                           ? nullptr
+                           : cparams.unitDef;
+        params.smokeTime = fd->smokeTime * emitSmoke;
+        params.featureDef = fd;
+
+        return (LoadFeature(params));
+    }
+
+    return nullptr;
 }
 
-
-bool CFeatureHandler::TryFreeFeatureID(int id)
+void
+CFeatureHandler::Update()
 {
-	if (CBuilderCAI::IsFeatureBeingReclaimed(id)) {
-		// postpone putting this ID back into the free pool
-		// (this gives area-reclaimers time to choose a new
-		// target with a different ID)
-		return false;
-	}
+    SCOPED_TIMER("FeatureHandler::Update");
 
-	assert(features[id] == nullptr);
-	idPool.FreeID(id, true);
+    if ((gs->frameNum & 31) == 0) {
+        toBeFreedFeatureIDs.erase(
+          std::remove_if(toBeFreedFeatureIDs.begin(),
+                         toBeFreedFeatureIDs.end(),
+                         [this](int id) { return this->TryFreeFeatureID(id); }),
+          toBeFreedFeatureIDs.end());
+    }
 
-	return true;
+    updateFeatures.erase(std::remove_if(updateFeatures.begin(),
+                                        updateFeatures.end(),
+                                        [this](CFeature* feature) {
+                                            return this->UpdateFeature(feature);
+                                        }),
+                         updateFeatures.end());
 }
 
-
-bool CFeatureHandler::UpdateFeature(CFeature* feature)
+bool
+CFeatureHandler::TryFreeFeatureID(int id)
 {
-	assert(feature->inUpdateQue);
+    if (CBuilderCAI::IsFeatureBeingReclaimed(id)) {
+        // postpone putting this ID back into the free pool
+        // (this gives area-reclaimers time to choose a new
+        // target with a different ID)
+        return false;
+    }
 
-	if (feature->deleteMe) {
-		eventHandler.RenderFeatureDestroyed(feature);
-		eventHandler.FeatureDestroyed(feature);
-		toBeFreedFeatureIDs.push_back(feature->id);
-		activeFeatures.erase(feature);
-		features[feature->id] = NULL;
+    assert(features[id] == nullptr);
+    idPool.FreeID(id, true);
 
-		// ID must match parameter for object commands, just use this
-		CSolidObject::SetDeletingRefID(feature->GetBlockingMapID());
-		// destructor removes feature from update-queue
-		delete feature;
-		CSolidObject::SetDeletingRefID(-1);
-
-		return true;
-	}
-
-	if (!feature->Update()) {
-		// feature is done updating itself, remove from queue
-		feature->inUpdateQue = false;
-
-		return true;
-	}
-
-	return false;
+    return true;
 }
 
-
-void CFeatureHandler::SetFeatureUpdateable(CFeature* feature)
+bool
+CFeatureHandler::UpdateFeature(CFeature* feature)
 {
-	if (feature->inUpdateQue) {
-		assert(std::find(updateFeatures.begin(), updateFeatures.end(), feature) != updateFeatures.end());
-		return;
-	}
+    assert(feature->inUpdateQue);
 
-	// always true
-	feature->inUpdateQue = VectorInsertUnique(updateFeatures, feature);
+    if (feature->deleteMe) {
+        eventHandler.RenderFeatureDestroyed(feature);
+        eventHandler.FeatureDestroyed(feature);
+        toBeFreedFeatureIDs.push_back(feature->id);
+        activeFeatures.erase(feature);
+        features[feature->id] = NULL;
+
+        // ID must match parameter for object commands, just use this
+        CSolidObject::SetDeletingRefID(feature->GetBlockingMapID());
+        // destructor removes feature from update-queue
+        delete feature;
+        CSolidObject::SetDeletingRefID(-1);
+
+        return true;
+    }
+
+    if (!feature->Update()) {
+        // feature is done updating itself, remove from queue
+        feature->inUpdateQue = false;
+
+        return true;
+    }
+
+    return false;
 }
 
-
-void CFeatureHandler::TerrainChanged(int x1, int y1, int x2, int y2)
+void
+CFeatureHandler::SetFeatureUpdateable(CFeature* feature)
 {
-	const float3 mins(x1 * SQUARE_SIZE, 0, y1 * SQUARE_SIZE);
-	const float3 maxs(x2 * SQUARE_SIZE, 0, y2 * SQUARE_SIZE);
+    if (feature->inUpdateQue) {
+        assert(std::find(updateFeatures.begin(),
+                         updateFeatures.end(),
+                         feature) != updateFeatures.end());
+        return;
+    }
 
-	const auto& quads = quadField->GetQuadsRectangle(mins, maxs);
-
-	for (const int qi: quads) {
-		for (CFeature* f: quadField->GetQuad(qi).features) {
-			// put this feature back in the update-queue
-			SetFeatureUpdateable(f);
-		}
-	}
+    // always true
+    feature->inUpdateQue = VectorInsertUnique(updateFeatures, feature);
 }
 
+void
+CFeatureHandler::TerrainChanged(int x1, int y1, int x2, int y2)
+{
+    const float3 mins(x1 * SQUARE_SIZE, 0, y1 * SQUARE_SIZE);
+    const float3 maxs(x2 * SQUARE_SIZE, 0, y2 * SQUARE_SIZE);
+
+    const auto& quads = quadField->GetQuadsRectangle(mins, maxs);
+
+    for (const int qi : quads) {
+        for (CFeature* f : quadField->GetQuad(qi).features) {
+            // put this feature back in the update-queue
+            SetFeatureUpdateable(f);
+        }
+    }
+}

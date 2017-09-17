@@ -16,7 +16,8 @@
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: e_atan2f.c,v 1.4f 1995/05/10 20:44:53 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: e_atan2f.c,v 1.4f 1995/05/10 20:44:53 jtc Exp $";
 #endif
 
 #include "SMath.h"
@@ -28,18 +29,17 @@ static const Simple
 #else
 static Simple
 #endif
-tiny  = 1.0e-30f,
-zero  = 0.0f,
-pi_o_4  = 7.8539818525e-01f,  /* 0x3f490fdb */
-pi_o_2  = 1.5707963705e+00f,  /* 0x3fc90fdb */
-pi      = 3.1415927410e+00f,  /* 0x40490fdb */
-pi_lo   = -8.7422776573e-08f; /* 0xb3bbbd2e */
+  tiny = 1.0e-30f,
+  zero = 0.0f, pi_o_4 = 7.8539818525e-01f, /* 0x3f490fdb */
+  pi_o_2 = 1.5707963705e+00f,              /* 0x3fc90fdb */
+  pi = 3.1415927410e+00f,                  /* 0x40490fdb */
+  pi_lo = -8.7422776573e-08f;              /* 0xb3bbbd2e */
 
 #ifdef __STDC__
-	Simple __ieee754_atan2f(Simple y, Simple x)
+Simple
+__ieee754_atan2f(Simple y, Simple x)
 #else
-	Simple __ieee754_atan2f(y,x)
-	Simple  y,x;
+Simple __ieee754_atan2f(y, x) Simple y, x;
 #endif
 {
     //stub method

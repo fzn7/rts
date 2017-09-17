@@ -13,123 +13,121 @@
 
 #include "System/TimeProfiler.h"
 
-
-
 CInfoTextureHandler::CInfoTextureHandler()
-: returnToLOS(false)
-, infoTex(nullptr)
+  : returnToLOS(false)
+  , infoTex(nullptr)
 {
-	if (!infoTextureHandler)
-		infoTextureHandler = this;
+    if (!infoTextureHandler)
+        infoTextureHandler = this;
 
-	AddInfoTexture(new CInfoTextureCombiner());
-	AddInfoTexture(new CLosTexture());
-	AddInfoTexture(new CAirLosTexture());
-	AddInfoTexture(new CMetalTexture());
-	AddInfoTexture(new CMetalExtractionTexture());
-	AddInfoTexture(new CRadarTexture());
-	AddInfoTexture(new CHeightTexture());
-	AddInfoTexture(new CPathTexture());
+    AddInfoTexture(new CInfoTextureCombiner());
+    AddInfoTexture(new CLosTexture());
+    AddInfoTexture(new CAirLosTexture());
+    AddInfoTexture(new CMetalTexture());
+    AddInfoTexture(new CMetalExtractionTexture());
+    AddInfoTexture(new CRadarTexture());
+    AddInfoTexture(new CHeightTexture());
+    AddInfoTexture(new CPathTexture());
 
-	infoTex = dynamic_cast<CInfoTextureCombiner*>(GetInfoTexture("info"));
-	assert(infoTex);
+    infoTex = dynamic_cast<CInfoTextureCombiner*>(GetInfoTexture("info"));
+    assert(infoTex);
 
-	Update();
+    Update();
 }
-
 
 CInfoTextureHandler::~CInfoTextureHandler()
 {
-	for (auto& pitex: infoTextures) {
-		delete pitex.second;
-	}
-	infoTextureHandler = nullptr;
+    for (auto& pitex : infoTextures) {
+        delete pitex.second;
+    }
+    infoTextureHandler = nullptr;
 }
 
-
-void CInfoTextureHandler::AddInfoTexture(CPboInfoTexture* itex)
+void
+CInfoTextureHandler::AddInfoTexture(CPboInfoTexture* itex)
 {
-	infoTextures[itex->GetName()] = itex;
+    infoTextures[itex->GetName()] = itex;
 }
 
-
-const CInfoTexture* CInfoTextureHandler::GetInfoTextureConst(const std::string& name) const
+const CInfoTexture*
+CInfoTextureHandler::GetInfoTextureConst(const std::string& name) const
 {
-	static const CDummyInfoTexture dummy;
+    static const CDummyInfoTexture dummy;
 
-	const auto it = infoTextures.find(name);
+    const auto it = infoTextures.find(name);
 
-	if (it != infoTextures.end())
-		return it->second;
+    if (it != infoTextures.end())
+        return it->second;
 
-	return &dummy;
+    return &dummy;
 }
 
-CInfoTexture* CInfoTextureHandler::GetInfoTexture(const std::string& name)
+CInfoTexture*
+CInfoTextureHandler::GetInfoTexture(const std::string& name)
 {
-	return (const_cast<CInfoTexture*>(GetInfoTextureConst(name)));
+    return (const_cast<CInfoTexture*>(GetInfoTextureConst(name)));
 }
 
-
-bool CInfoTextureHandler::IsEnabled() const
+bool
+CInfoTextureHandler::IsEnabled() const
 {
-	return infoTex->IsEnabled();
+    return infoTex->IsEnabled();
 }
 
-
-void CInfoTextureHandler::DisableCurrentMode()
+void
+CInfoTextureHandler::DisableCurrentMode()
 {
-	if (returnToLOS && (infoTex->GetMode() != "los")) {
-		// return to LOS-mode if it was active before
-		infoTex->SwitchMode("los");
-	} else {
-		returnToLOS = false;
-		infoTex->SwitchMode("");
-	}
+    if (returnToLOS && (infoTex->GetMode() != "los")) {
+        // return to LOS-mode if it was active before
+        infoTex->SwitchMode("los");
+    } else {
+        returnToLOS = false;
+        infoTex->SwitchMode("");
+    }
 }
 
-
-void CInfoTextureHandler::SetMode(const std::string& name)
+void
+CInfoTextureHandler::SetMode(const std::string& name)
 {
-	if (name == "los") {
-		returnToLOS = true;
-	}
+    if (name == "los") {
+        returnToLOS = true;
+    }
 
-	infoTex->SwitchMode(name);
+    infoTex->SwitchMode(name);
 }
 
-
-void CInfoTextureHandler::ToggleMode(const std::string& name)
+void
+CInfoTextureHandler::ToggleMode(const std::string& name)
 {
-	if (infoTex->GetMode() == name)
-		return DisableCurrentMode();
+    if (infoTex->GetMode() == name)
+        return DisableCurrentMode();
 
-	SetMode(name);
+    SetMode(name);
 }
 
-
-const std::string& CInfoTextureHandler::GetMode() const
+const std::string&
+CInfoTextureHandler::GetMode() const
 {
-	return infoTex->GetMode();
+    return infoTex->GetMode();
 }
 
-
-GLuint CInfoTextureHandler::GetCurrentInfoTexture() const
+GLuint
+CInfoTextureHandler::GetCurrentInfoTexture() const
 {
-	return infoTex->GetTexture();
+    return infoTex->GetTexture();
 }
 
-
-int2 CInfoTextureHandler::GetCurrentInfoTextureSize() const
+int2
+CInfoTextureHandler::GetCurrentInfoTextureSize() const
 {
-	return infoTex->GetTexSize();
+    return infoTex->GetTexSize();
 }
 
-
-void CInfoTextureHandler::Update()
+void
+CInfoTextureHandler::Update()
 {
-	for (auto& p: infoTextures) {
-		if (p.second->IsUpdateNeeded())
-			p.second->Update();
-	}
+    for (auto& p : infoTextures) {
+        if (p.second->IsUpdateNeeded())
+            p.second->Update();
+    }
 }

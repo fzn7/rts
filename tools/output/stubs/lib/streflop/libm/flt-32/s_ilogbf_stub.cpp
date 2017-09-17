@@ -16,7 +16,8 @@
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: s_ilogbf.c,v 1.4f 1995/05/10 20:47:31 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: s_ilogbf.c,v 1.4f 1995/05/10 20:47:31 jtc Exp $";
 #endif
 
 #include "../streflop_libm_bridge.h"
@@ -25,14 +26,14 @@ static char rcsid[] = "$NetBSD: s_ilogbf.c,v 1.4f 1995/05/10 20:47:31 jtc Exp $"
 
 namespace streflop_libm {
 #ifdef __STDC__
-	int __ilogbf(Simple x)
+int
+__ilogbf(Simple x)
 #else
-	int __ilogbf(x)
-	Simple x;
+int __ilogbf(x) Simple x;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__ilogbf, ilogbf)
+weak_alias(__ilogbf, ilogbf)
 }

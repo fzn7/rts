@@ -10,7 +10,7 @@
  *
  * Developed at SunPro, a Sun Microsystems, Inc. business.
  * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice 
+ * software is freely granted, provided that this notice
  * is preserved.
  * ====================================================
  */
@@ -26,22 +26,22 @@ namespace streflop_libm {
 #ifdef __STDC__
 static const Simple
 #else
-static Simple 
+static Simple
 #endif
-TWO23[2]={
-  8.3886080000e+06f, /* 0x4b000000 */
- -8.3886080000e+06f, /* 0xcb000000 */
-};
+  TWO23[2] = {
+      8.3886080000e+06f,  /* 0x4b000000 */
+      -8.3886080000e+06f, /* 0xcb000000 */
+  };
 
 #ifdef __STDC__
-	Simple __rintf(Simple x)
+Simple
+__rintf(Simple x)
 #else
-	Simple __rintf(x)
-	Simple x;
+Simple __rintf(x) Simple x;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__rintf, rintf)
+weak_alias(__rintf, rintf)
 }

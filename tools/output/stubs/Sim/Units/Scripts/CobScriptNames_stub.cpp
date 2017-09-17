@@ -14,28 +14,29 @@ using std::vector;
 static vector<string> scriptNames;
 static map<string, int> scriptMap;
 
-
-const vector<string>& CCobUnitScriptNames::GetScriptNames()
+const vector<string>&
+CCobUnitScriptNames::GetScriptNames()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-const std::map<std::string, int>& CCobUnitScriptNames::GetScriptMap()
+const std::map<std::string, int>&
+CCobUnitScriptNames::GetScriptMap()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-int CCobUnitScriptNames::GetScriptNumber(const std::string& fname)
+int
+CCobUnitScriptNames::GetScriptNumber(const std::string& fname)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const string& CCobUnitScriptNames::GetScriptName(int num)
+const string&
+CCobUnitScriptNames::GetScriptName(int num)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

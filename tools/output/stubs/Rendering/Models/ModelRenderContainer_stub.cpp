@@ -17,12 +17,12 @@ LOG_REGISTER_SECTION_GLOBAL(LOG_SECTION_WORLD_OBJECT_MODEL_RENDERER)
 
 // use the specific section for all LOG*() calls in this source file
 #ifdef LOG_SECTION_CURRENT
-	#undef LOG_SECTION_CURRENT
+#undef LOG_SECTION_CURRENT
 #endif
 #define LOG_SECTION_CURRENT LOG_SECTION_WORLD_OBJECT_MODEL_RENDERER
 
-
-IModelRenderContainer* IModelRenderContainer::GetInstance(int modelType)
+IModelRenderContainer*
+IModelRenderContainer::GetInstance(int modelType)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -34,43 +34,44 @@ IModelRenderContainer::~IModelRenderContainer()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void IModelRenderContainer::AddUnit(const CUnit* u)
+void
+IModelRenderContainer::AddUnit(const CUnit* u)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void IModelRenderContainer::DelUnit(const CUnit* u)
+void
+IModelRenderContainer::DelUnit(const CUnit* u)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void IModelRenderContainer::AddFeature(const CFeature* f)
+void
+IModelRenderContainer::AddFeature(const CFeature* f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void IModelRenderContainer::DelFeature(const CFeature* f)
+void
+IModelRenderContainer::DelFeature(const CFeature* f)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void IModelRenderContainer::AddProjectile(const CProjectile* p)
+void
+IModelRenderContainer::AddProjectile(const CProjectile* p)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void IModelRenderContainer::DelProjectile(const CProjectile* p)
+void
+IModelRenderContainer::DelProjectile(const CProjectile* p)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-

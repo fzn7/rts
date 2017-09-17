@@ -3,7 +3,6 @@
 
 #include <cctype>
 
-
 #include "KeyCodes.h"
 #include "SDL_keycode.h"
 #include "System/Log/ILog.h"
@@ -12,63 +11,63 @@
 
 CKeyCodes* keyCodes = NULL;
 
-
-int CKeyCodes::GetCode(const std::string& name) const
+int
+CKeyCodes::GetCode(const std::string& name) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-std::string CKeyCodes::GetName(int code) const
+std::string
+CKeyCodes::GetName(int code) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-std::string CKeyCodes::GetDefaultName(int code) const
+std::string
+CKeyCodes::GetDefaultName(int code) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CKeyCodes::AddKeySymbol(const std::string& name, int code)
+bool
+CKeyCodes::AddKeySymbol(const std::string& name, int code)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CKeyCodes::IsValidLabel(const std::string& label)
+bool
+CKeyCodes::IsValidLabel(const std::string& label)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CKeyCodes::IsModifier(int code)
+bool
+CKeyCodes::IsModifier(int code)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CKeyCodes::IsPrintable(int code)
+bool
+CKeyCodes::IsPrintable(int code)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void CKeyCodes::AddPair(const std::string& name, const int code, const bool printable)
+void
+CKeyCodes::AddPair(const std::string& name,
+                   const int code,
+                   const bool printable)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 CKeyCodes::CKeyCodes()
 {
@@ -76,29 +75,29 @@ CKeyCodes::CKeyCodes()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CKeyCodes::Reset()
+void
+CKeyCodes::Reset()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CKeyCodes::PrintNameToCode() const
+void
+CKeyCodes::PrintNameToCode() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CKeyCodes::PrintCodeToName() const
+void
+CKeyCodes::PrintCodeToName() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CKeyCodes::SaveUserKeySymbols(FILE* file) const
+void
+CKeyCodes::SaveUserKeySymbols(FILE* file) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

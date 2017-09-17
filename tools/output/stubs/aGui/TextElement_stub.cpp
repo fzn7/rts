@@ -5,22 +5,20 @@
 
 #include "Rendering/Fonts/glFont.h"
 
-namespace agui
+namespace agui {
+
+TextElement::TextElement(const std::string& _text, GuiElement* parent)
+  : GuiElement(parent)
+  , text(_text)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void TextElement::SetText(const std::string& str)
+void
+TextElement::DrawSelf()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
-void TextElement::DrawSelf()
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
 }

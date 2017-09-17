@@ -4,16 +4,18 @@
 #include "System/Platform/MessageBox.h"
 #include <windows.h>
 
-
 namespace Platform {
 
 /**
  * @brief message box function
  */
-void MsgBox(const std::string& message, const std::string& caption, const unsigned int& flags)
+void
+MsgBox(const std::string& message,
+       const std::string& caption,
+       const unsigned int& flags)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-}; //namespace Platform
+}; // namespace Platform

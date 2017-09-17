@@ -12,7 +12,8 @@
  * Instantiates the loader, attempts to dlopen the
  * shared object lazily.
  */
-SoLib::SoLib(const char* fileName) : so(NULL)
+SoLib::SoLib(const char* fileName)
+  : so(NULL)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -21,16 +22,18 @@ SoLib::SoLib(const char* fileName) : so(NULL)
 /**
  * Just dlcloses the shared object
  */
-void SoLib::Unload() {
-
-	if (so != NULL) {
-		dlclose(so);
-		so = NULL;
-	}
+void
+SoLib::Unload()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-bool SoLib::LoadFailed() {
-	return so == NULL;
+bool
+SoLib::LoadFailed()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -45,7 +48,8 @@ SoLib::~SoLib()
 /**
  * Attempts to locate the symbol address with dlsym
  */
-void* SoLib::FindAddress(const char* symbol)
+void*
+SoLib::FindAddress(const char* symbol)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

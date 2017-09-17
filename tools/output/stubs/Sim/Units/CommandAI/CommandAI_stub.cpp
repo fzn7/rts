@@ -1,13 +1,12 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
 #include "CommandAI.h"
 
 #include "BuilderCAI.h"
-#include "FactoryCAI.h"
 #include "ExternalAI/EngineOutHandler.h"
 #include "ExternalAI/SkirmishAIHandler.h"
+#include "FactoryCAI.h"
 #include "Game/GlobalUnsynced.h"
 #include "Game/SelectedUnitsHandler.h"
 #include "Game/WaitCommandsAI.h"
@@ -20,17 +19,17 @@
 #include "Sim/Misc/TeamHandler.h"
 #include "Sim/MoveTypes/MoveType.h"
 #include "Sim/Units/BuildInfo.h"
-#include "Sim/Units/UnitDef.h"
 #include "Sim/Units/Unit.h"
+#include "Sim/Units/UnitDef.h"
 #include "Sim/Units/UnitHandler.h"
 #include "Sim/Weapons/Weapon.h"
 #include "Sim/Weapons/WeaponDef.h"
 #include "System/EventHandler.h"
-#include "System/myMath.h"
 #include "System/Log/ILog.h"
 #include "System/Util.h"
-#include "System/creg/STL_Set.h"
 #include "System/creg/STL_Deque.h"
+#include "System/creg/STL_Set.h"
+#include "System/myMath.h"
 #include <assert.h>
 
 // number of SlowUpdate calls that a target (unit) must
@@ -45,52 +44,58 @@
 static const int TARGET_LOST_TIMER = 4;
 static const float COMMAND_CANCEL_DIST = 17.0f;
 
-void CCommandAI::InitCommandDescriptionCache() { commandDescriptionCache = new CCommandDescriptionCache(); }
-void CCommandAI::KillCommandDescriptionCache() { SafeDelete(commandDescriptionCache); }
+void
+CCommandAI::InitCommandDescriptionCache()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+void
+CCommandAI::KillCommandDescriptionCache()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
 CR_BIND(CCommandQueue, )
-CR_REG_METADATA(CCommandQueue, (
-	CR_MEMBER(queue),
-	CR_MEMBER(queueType),
-	CR_MEMBER(tagCounter)
-))
+CR_REG_METADATA(CCommandQueue,
+                (CR_MEMBER(queue), CR_MEMBER(queueType), CR_MEMBER(tagCounter)))
 
 CR_BIND_DERIVED(CCommandAI, CObject, )
-CR_REG_METADATA(CCommandAI, (
-	CR_MEMBER(stockpileWeapon),
+CR_REG_METADATA(CCommandAI,
+                (CR_MEMBER(stockpileWeapon),
 
-	CR_MEMBER(possibleCommands),
-	CR_MEMBER(nonQueingCommands),
-	CR_MEMBER(commandQue),
-	CR_MEMBER(lastUserCommand),
-	CR_MEMBER(selfDCountdown),
-	CR_MEMBER(lastFinishCommand),
+                 CR_MEMBER(possibleCommands),
+                 CR_MEMBER(nonQueingCommands),
+                 CR_MEMBER(commandQue),
+                 CR_MEMBER(lastUserCommand),
+                 CR_MEMBER(selfDCountdown),
+                 CR_MEMBER(lastFinishCommand),
 
-	CR_MEMBER(owner),
+                 CR_MEMBER(owner),
 
-	CR_MEMBER(orderTarget),
-	CR_MEMBER(targetDied),
-	CR_MEMBER(inCommand),
-	CR_MEMBER(repeatOrders),
-	CR_MEMBER(lastSelectedCommandPage),
-	CR_MEMBER(unimportantMove),
-	CR_MEMBER(commandDeathDependences),
-	CR_MEMBER(targetLostTimer)
-))
+                 CR_MEMBER(orderTarget),
+                 CR_MEMBER(targetDied),
+                 CR_MEMBER(inCommand),
+                 CR_MEMBER(repeatOrders),
+                 CR_MEMBER(lastSelectedCommandPage),
+                 CR_MEMBER(unimportantMove),
+                 CR_MEMBER(commandDeathDependences),
+                 CR_MEMBER(targetLostTimer)))
 
-CCommandAI::CCommandAI():
-	stockpileWeapon(0),
-	lastUserCommand(-1000),
-	selfDCountdown(0),
-	lastFinishCommand(0),
-	owner(NULL),
-	orderTarget(0),
-	targetDied(false),
-	inCommand(false),
-	repeatOrders(false),
-	lastSelectedCommandPage(0),
-	unimportantMove(false),
-	targetLostTimer(TARGET_LOST_TIMER)
+CCommandAI::CCommandAI()
+  : stockpileWeapon(0)
+  , lastUserCommand(-1000)
+  , selfDCountdown(0)
+  , lastFinishCommand(0)
+  , owner(NULL)
+  , orderTarget(0)
+  , targetDied(false)
+  , inCommand(false)
+  , repeatOrders(false)
+  , lastSelectedCommandPage(0)
+  , unimportantMove(false)
+  , targetLostTimer(TARGET_LOST_TIMER)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -102,392 +107,335 @@ CCommandAI::~CCommandAI()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::UpdateCommandDescription(unsigned int cmdDescIdx, const Command& cmd) {
-	SCommandDescription cd = *possibleCommands[cmdDescIdx];
-	cd.params[0] = IntToString(int(cmd.GetParam(0)), "%d");
-	commandDescriptionCache->DecRef(*possibleCommands[cmdDescIdx]);
-	possibleCommands[cmdDescIdx] = commandDescriptionCache->GetPtr(cd);
-}
-
-void CCommandAI::UpdateCommandDescription(unsigned int cmdDescIdx, const SCommandDescription& modCmdDesc) {
-	const SCommandDescription* curCmdDesc = possibleCommands[cmdDescIdx];
-
-	// modCmdDesc should be a modified copy of curCmdDesc
-	assert(&modCmdDesc != curCmdDesc);
-
-	// erase in case we do not want it to be non-queueing anymore
-	if (!curCmdDesc->queueing)
-		nonQueingCommands.erase(curCmdDesc->id);
-
-	// re-insert otherwise (possibly with a different cmdID!)
-	if (!modCmdDesc.queueing)
-		nonQueingCommands.insert(modCmdDesc.id);
-	commandDescriptionCache->DecRef(*curCmdDesc);
-
-	// update
-	possibleCommands[cmdDescIdx] = commandDescriptionCache->GetPtr(modCmdDesc);
-
-	selectedUnitsHandler.PossibleCommandChange(owner);
-}
-
-void CCommandAI::InsertCommandDescription(unsigned int cmdDescIdx, const SCommandDescription& cmdDesc)
+void
+CCommandAI::UpdateCommandDescription(unsigned int cmdDescIdx,
+                                     const Command& cmd)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool CCommandAI::RemoveCommandDescription(unsigned int cmdDescIdx)
+void
+CCommandAI::UpdateCommandDescription(unsigned int cmdDescIdx,
+                                     const SCommandDescription& modCmdDesc)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::UpdateNonQueueingCommands()
+void
+CCommandAI::InsertCommandDescription(unsigned int cmdDescIdx,
+                                     const SCommandDescription& cmdDesc)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::ClearCommandDependencies() {
-	while (!commandDeathDependences.empty()) {
-		DeleteDeathDependence(*commandDeathDependences.begin(), DEPENDENCE_COMMANDQUE);
-	}
-}
-
-void CCommandAI::AddCommandDependency(const Command& c) {
-	int cpos;
-	if (c.IsObjectCommand(cpos)) {
-		int refId = c.params[cpos];
-		CObject* ref = (refId < unitHandler->MaxUnits()) ?
-				static_cast<CObject*>(unitHandler->GetUnit(refId)) :
-				static_cast<CObject*>(featureHandler->GetFeature(refId - unitHandler->MaxUnits()));
-		if (ref) {
-			AddDeathDependence(ref, DEPENDENCE_COMMANDQUE);
-		}
-	}
-}
-
-
-bool CCommandAI::IsAttackCapable() const
+bool
+CCommandAI::RemoveCommandDescription(unsigned int cmdDescIdx)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-static inline const CUnit* GetCommandUnit(const Command& c, int idx) {
-	if (idx >= c.params.size()) {
-		return NULL;
-	}
-
-	if (c.IsAreaCommand()) {
-		return NULL;
-	}
-
-	const CUnit* unit = unitHandler->GetUnit(c.params[idx]);
-	return unit;
-}
-
-static inline bool IsCommandInMap(const Command& c)
+void
+CCommandAI::UpdateNonQueueingCommands()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static inline bool AdjustGroundAttackCommand(const Command& c, bool fromSynced, bool aiOrder)
+void
+CCommandAI::ClearCommandDependencies()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-bool CCommandAI::AllowedCommand(const Command& c, bool fromSynced)
+void
+CCommandAI::AddCommandDependency(const Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::GiveCommand(const Command& c, bool fromSynced)
+bool
+CCommandAI::IsAttackCapable() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::GiveCommandReal(const Command& c, bool fromSynced)
+static inline const CUnit*
+GetCommandUnit(const Command& c, int idx)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-inline void CCommandAI::SetCommandDescParam0(const Command& c)
+static inline bool
+IsCommandInMap(const Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CCommandAI::ExecuteStateCommand(const Command& c)
+static inline bool
+AdjustGroundAttackCommand(const Command& c, bool fromSynced, bool aiOrder)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::ClearTargetLock(const Command &c) {
-	if (((c.GetID() == CMD_ATTACK) || (c.GetID() == CMD_MANUALFIRE)) && (c.options & META_KEY) == 0) {
-		// no meta-bit attack lock, clear the order
-		owner->DropCurrentAttackTarget();
-	}
-}
-
-
-void CCommandAI::GiveAllowedCommand(const Command& c, bool fromSynced)
+bool
+CCommandAI::AllowedCommand(const Command& c, bool fromSynced)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::GiveWaitCommand(const Command& c)
+void
+CCommandAI::GiveCommand(const Command& c, bool fromSynced)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::ExecuteInsert(const Command& c, bool fromSynced)
+void
+CCommandAI::GiveCommandReal(const Command& c, bool fromSynced)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::ExecuteRemove(const Command& c)
+inline void
+CCommandAI::SetCommandDescParam0(const Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CCommandAI::WillCancelQueued(const Command& c)
+bool
+CCommandAI::ExecuteStateCommand(const Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-CCommandQueue::iterator CCommandAI::GetCancelQueued(const Command& c, CCommandQueue& q)
+void
+CCommandAI::ClearTargetLock(const Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-int CCommandAI::CancelCommands(const Command &c, CCommandQueue& q, bool& first)
+void
+CCommandAI::GiveAllowedCommand(const Command& c, bool fromSynced)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-std::vector<Command> CCommandAI::GetOverlapQueued(const Command& c)
+void
+CCommandAI::GiveWaitCommand(const Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-std::vector<Command> CCommandAI::GetOverlapQueued(const Command& c, CCommandQueue& q)
+void
+CCommandAI::ExecuteInsert(const Command& c, bool fromSynced)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-int CCommandAI::UpdateTargetLostTimer(int targetUnitID)
+void
+CCommandAI::ExecuteRemove(const Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::ExecuteAttack(Command& c)
+bool
+CCommandAI::WillCancelQueued(const Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::ExecuteStop(Command &c)
+CCommandQueue::iterator
+CCommandAI::GetCancelQueued(const Command& c, CCommandQueue& q)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::SlowUpdate()
+int
+CCommandAI::CancelCommands(const Command& c, CCommandQueue& q, bool& first)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-int CCommandAI::GetDefaultCmd(const CUnit* pointed, const CFeature* feature)
+std::vector<Command>
+CCommandAI::GetOverlapQueued(const Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandAI::AddDeathDependence(CObject* o, DependenceType dep) {
-	if (dep == DEPENDENCE_COMMANDQUE) {
-		if (commandDeathDependences.insert(o).second) // prevent multiple dependencies for the same object
-			CObject::AddDeathDependence(o, dep);
-		return;
-	}
-	CObject::AddDeathDependence(o, dep);
-}
-
-
-void CCommandAI::DeleteDeathDependence(CObject* o, DependenceType dep) {
-	if (dep == DEPENDENCE_COMMANDQUE) {
-		if (commandDeathDependences.erase(o))
-			CObject::DeleteDeathDependence(o, dep);
-		return;
-	}
-	CObject::DeleteDeathDependence(o,dep);
-}
-
-
-void CCommandAI::DependentDied(CObject* o)
+std::vector<Command>
+CCommandAI::GetOverlapQueued(const Command& c, CCommandQueue& q)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void CCommandAI::FinishCommand()
+int
+CCommandAI::UpdateTargetLostTimer(int targetUnitID)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CCommandAI::AddStockpileWeapon(CWeapon* weapon)
+void
+CCommandAI::ExecuteAttack(Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CCommandAI::StockpileChanged(CWeapon* weapon)
+void
+CCommandAI::ExecuteStop(Command& c)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CCommandAI::UpdateStockpileIcon()
+void
+CCommandAI::SlowUpdate()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CCommandAI::WeaponFired(CWeapon* weapon, const bool searchForNewTarget)
+int
+CCommandAI::GetDefaultCmd(const CUnit* pointed, const CFeature* feature)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CCommandAI::PushOrUpdateReturnFight(const float3& cmdPos1, const float3& cmdPos2)
+void
+CCommandAI::AddDeathDependence(CObject* o, DependenceType dep)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CCommandAI::HasCommand(int cmdID) const {
-	if (commandQue.empty())
-		return false;
-	if (cmdID < 0)
-		return ((commandQue.front()).IsBuildCommand());
-
-	return ((commandQue.front()).GetID() == cmdID);
-}
-
-bool CCommandAI::HasMoreMoveCommands(bool skipFirstCmd) const
+void
+CCommandAI::DeleteDeathDependence(CObject* o, DependenceType dep)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CCommandAI::SkipParalyzeTarget(const CUnit* target)
+void
+CCommandAI::DependentDied(CObject* o)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool CCommandAI::CanChangeFireState() {
-	const UnitDef* ud = owner->unitDef;
-	const bool b = (!ud->weapons.empty() || ud->canKamikaze || ud->IsFactoryUnit());
-
-	return (ud->canFireControl && b);
-}
-
-
-void CCommandAI::StopAttackingAllyTeam(int ally)
+void
+CCommandAI::FinishCommand()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void CCommandAI::SetScriptMaxSpeed(float speed, bool persistent) {
-	if (!persistent) {
-		// find the first CMD_SET_WANTED_MAX_SPEED and modify it
-		// NOTE:
-		//     this has no effect if the unit does not already have
-		//     such an order, and only lasts until a new move-order
-		//     is given (hence non-persistent)
-		CCommandQueue::iterator it;
-
-		for (it = commandQue.begin(); it != commandQue.end(); ++it) {
-			Command& c = *it;
-
-			if (c.GetID() != CMD_SET_WANTED_MAX_SPEED)
-				continue;
-
-			owner->moveType->SetWantedMaxSpeed(c.params[0] = speed);
-			break;
-		}
-	} else {
-		// permanently change the unit's speed
-		owner->moveType->SetMaxSpeed(speed);
-	}
+void
+CCommandAI::AddStockpileWeapon(CWeapon* weapon)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void CCommandAI::SlowUpdateMaxSpeed() {
-	if (commandQue.size() < 2)
-		return;
-
-	// grab the second command
-	const CCommandQueue::const_iterator it = ++(commandQue.begin());
-	const Command& c = *it;
-
-	// treat any following CMD_SET_WANTED_MAX_SPEED commands as options
-	// to the current command (and ignore them when it's their turn)
-	if (c.GetID() != CMD_SET_WANTED_MAX_SPEED)
-		return;
-
-	assert(!c.params.empty());
-	owner->moveType->SetWantedMaxSpeed(c.params[0]);
+void
+CCommandAI::StockpileChanged(CWeapon* weapon)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
+void
+CCommandAI::UpdateStockpileIcon()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+CCommandAI::WeaponFired(CWeapon* weapon, const bool searchForNewTarget)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+CCommandAI::PushOrUpdateReturnFight(const float3& cmdPos1,
+                                    const float3& cmdPos2)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+bool
+CCommandAI::HasCommand(int cmdID) const
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+bool
+CCommandAI::HasMoreMoveCommands(bool skipFirstCmd) const
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+bool
+CCommandAI::SkipParalyzeTarget(const CUnit* target)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+bool
+CCommandAI::CanChangeFireState()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+CCommandAI::StopAttackingAllyTeam(int ally)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+CCommandAI::SetScriptMaxSpeed(float speed, bool persistent)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+CCommandAI::SlowUpdateMaxSpeed()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}

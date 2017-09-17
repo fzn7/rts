@@ -3,22 +3,22 @@
 
 #include "SoundSource.h"
 
-#include <climits>
 #include <alc.h>
+#include <climits>
 
 #include "ALShared.h"
 #include "EFX.h"
-#include "System/Sound/IAudioChannel.h"
 #include "OggStream.h"
-#include "System/Sound/SoundLog.h"
 #include "SoundBuffer.h"
 #include "SoundItem.h"
+#include "System/Sound/IAudioChannel.h"
+#include "System/Sound/SoundLog.h"
 
 #include "Sound.h" //remove when unified ElmoInMeters
 
 #include "Sim/Misc/GlobalConstants.h"
-#include "System/float3.h"
 #include "System/Util.h"
+#include "System/float3.h"
 #include "System/myMath.h"
 
 float CSoundSource::referenceDistance = 200.0f;
@@ -27,15 +27,15 @@ float CSoundSource::heightRolloffModifier = 1.0f;
 static const float ROLLOFF_FACTOR = 5.f;
 
 CSoundSource::CSoundSource()
-	: curPlaying(NULL)
-	, curChannel(NULL)
-	, curStream(NULL)
-	, curVolume(1.f)
-	, loopStop(1e9)
-	, in3D(false)
-	, efxEnabled(false)
-	, efxUpdates(0)
-	, curHeightRolloffModifier(1)
+  : curPlaying(NULL)
+  , curChannel(NULL)
+  , curStream(NULL)
+  , curVolume(1.f)
+  , loopStop(1e9)
+  , in3D(false)
+  , efxEnabled(false)
+  , efxUpdates(0)
+  , curHeightRolloffModifier(1)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -47,75 +47,97 @@ CSoundSource::~CSoundSource()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSoundSource::Update()
+void
+CSoundSource::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-int CSoundSource::GetCurrentPriority() const
+int
+CSoundSource::GetCurrentPriority() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool CSoundSource::IsPlaying(const bool checkOpenAl) const
+bool
+CSoundSource::IsPlaying(const bool checkOpenAl) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSoundSource::Stop()
+void
+CSoundSource::Stop()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSoundSource::Play(IAudioChannel* channel, SoundItem* item, float3 pos, float3 velocity, float volume, bool relative)
+void
+CSoundSource::Play(IAudioChannel* channel,
+                   SoundItem* item,
+                   float3 pos,
+                   float3 velocity,
+                   float volume,
+                   bool relative)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CSoundSource::PlayAsync(IAudioChannel* channel, SoundItem* buffer, float3 pos, float3 velocity, float volume, bool relative)
+void
+CSoundSource::PlayAsync(IAudioChannel* channel,
+                        SoundItem* buffer,
+                        float3 pos,
+                        float3 velocity,
+                        float volume,
+                        bool relative)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CSoundSource::PlayStream(IAudioChannel* channel, const std::string& file, float volume)
+void
+CSoundSource::PlayStream(IAudioChannel* channel,
+                         const std::string& file,
+                         float volume)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSoundSource::StreamStop()
+void
+CSoundSource::StreamStop()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSoundSource::StreamPause()
+void
+CSoundSource::StreamPause()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-float CSoundSource::GetStreamTime()
+float
+CSoundSource::GetStreamTime()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-float CSoundSource::GetStreamPlayTime()
+float
+CSoundSource::GetStreamPlayTime()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSoundSource::UpdateVolume()
+void
+CSoundSource::UpdateVolume()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

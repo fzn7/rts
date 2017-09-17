@@ -2,9 +2,8 @@
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Futex.h"
-#include <sys/syscall.h>
 #include <linux/futex.h>
-
+#include <sys/syscall.h>
 
 spring_futex::spring_futex() noexcept
 {
@@ -12,35 +11,32 @@ spring_futex::spring_futex() noexcept
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
 spring_futex::~spring_futex()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void spring_futex::lock()
+void
+spring_futex::lock()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool spring_futex::try_lock() noexcept
+bool
+spring_futex::try_lock() noexcept
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void spring_futex::unlock()
+void
+spring_futex::unlock()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
-
 
 /*
 recursive_futex::recursive_futex() noexcept
@@ -77,4 +73,3 @@ void recursive_futex::unlock()
     std::cout << _FUNCTION_ << std::endl;
 }
 */
-

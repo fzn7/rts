@@ -3,36 +3,61 @@
 
 #include "Backend.h"
 
-#include <cstdio>
 #include <cstdarg>
+#include <cstdio>
 #include <set>
 
-
-
-
 namespace {
-	std::set<log_sink_ptr>& log_formatter_getSinks() {
-		static std::set<log_sink_ptr> sinks;
-		return sinks;
-	}
+std::set<log_sink_ptr>&
+log_formatter_getSinks()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
-	std::set<log_cleanup_ptr>& log_formatter_getCleanupFuncs() {
-		static std::set<log_cleanup_ptr> cleanupFuncs;
-		return cleanupFuncs;
-	}
+std::set<log_cleanup_ptr>&
+log_formatter_getCleanupFuncs()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 }
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-extern char* log_formatter_format(const char* section, int level, const char* fmt, va_list arguments);
+extern char*
+log_formatter_format(const char* section,
+                     int level,
+                     const char* fmt,
+                     va_list arguments);
 
-void log_backend_registerSink(log_sink_ptr sink) { log_formatter_getSinks().insert(sink); }
-void log_backend_unregisterSink(log_sink_ptr sink) { log_formatter_getSinks().erase(sink); }
+void
+log_backend_registerSink(log_sink_ptr sink)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+void
+log_backend_unregisterSink(log_sink_ptr sink)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
-void log_backend_registerCleanup(log_cleanup_ptr cleanupFunc) { log_formatter_getCleanupFuncs().insert(cleanupFunc); }
-void log_backend_unregisterCleanup(log_cleanup_ptr cleanupFunc) { log_formatter_getCleanupFuncs().erase(cleanupFunc); }
+void
+log_backend_registerCleanup(log_cleanup_ptr cleanupFunc)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+void
+log_backend_unregisterCleanup(log_cleanup_ptr cleanupFunc)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
 /**
  * @name logging_backend
@@ -41,24 +66,26 @@ void log_backend_unregisterCleanup(log_cleanup_ptr cleanupFunc) { log_formatter_
 ///@{
 
 /// Eventually formats and routes the record to all sinks
-void log_backend_record(const char* section, int level, const char* fmt, va_list arguments)
+void
+log_backend_record(const char* section,
+                   int level,
+                   const char* fmt,
+                   va_list arguments)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
 /// Passes on a cleanup request to all sinks
-void log_backend_cleanup() {
-	const std::set<log_cleanup_ptr>& cleanupFuncs = log_formatter_getCleanupFuncs();
-
-	for (auto si = cleanupFuncs.begin(); si != cleanupFuncs.end(); ++si) {
-		(*si)();
-	}
+void
+log_backend_cleanup()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-///@}
+    ///@}
 
 #ifdef __cplusplus
 } // extern "C"
 #endif
-

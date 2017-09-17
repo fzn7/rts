@@ -12,27 +12,32 @@
  * Instantiates the loader, attempts to dlopen the
  * shared object lazily.
  */
-SoLib::SoLib(const char* fileName) : so(NULL)
+SoLib::SoLib(const char* fileName)
+  : so(NULL)
 {
-	so = dlopen(fileName, RTLD_LAZY);
-	if (so == NULL) {
-		SharedLib::reportError(dlerror(), __FILE__, __LINE__, "SoLib::SoLib");
-	}
+    so = dlopen(fileName, RTLD_LAZY);
+    if (so == NULL) {
+        SharedLib::reportError(dlerror(), __FILE__, __LINE__, "SoLib::SoLib");
+    }
 }
 
 /**
  * Just dlcloses the shared object
  */
-void SoLib::Unload() {
+void
+SoLib::Unload()
+{
 
-	if (so != NULL) {
-		dlclose(so);
-		so = NULL;
-	}
+    if (so != NULL) {
+        dlclose(so);
+        so = NULL;
+    }
 }
 
-bool SoLib::LoadFailed() {
-	return so == NULL;
+bool
+SoLib::LoadFailed()
+{
+    return so == NULL;
 }
 
 /**
@@ -40,20 +45,22 @@ bool SoLib::LoadFailed() {
  */
 SoLib::~SoLib()
 {
-	Unload();
+    Unload();
 }
 
 /**
  * Attempts to locate the symbol address with dlsym
  */
-void* SoLib::FindAddress(const char* symbol)
+void*
+SoLib::FindAddress(const char* symbol)
 {
-	if (so != NULL) {
-		void* p = dlsym(so, symbol);
-		if (p == NULL) {
-			//SharedLib::reportError(dlerror(), __FILE__, __LINE__, "SoLib::FindAddress");
-		}
-		return p;
-	}
-	return NULL;
+    if (so != NULL) {
+        void* p = dlsym(so, symbol);
+        if (p == NULL) {
+            // SharedLib::reportError(dlerror(), __FILE__, __LINE__,
+            // "SoLib::FindAddress");
+        }
+        return p;
+    }
+    return NULL;
 }

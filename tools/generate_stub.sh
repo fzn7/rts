@@ -19,7 +19,7 @@ for f in $(find ${basedir} -name '*.cpp');
 		mkdir -p $outdir
 
 		generated="${outputpath}_generated.cpp"
-		cat $f > $generated
+		./clang-format $f -style=file > $generated
 
 		if cat "$generated" | grep 'iostream' >/dev/null ; 
 			then echo "skip $generated"; 

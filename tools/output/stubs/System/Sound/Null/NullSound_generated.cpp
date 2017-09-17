@@ -6,7 +6,8 @@
 
 #include "System/Sound/SoundLog.h"
 
-void NullSound::PrintDebugInfo() {
-	LOG("Null Sound System");
+void
+NullSound::PrintDebugInfo()
+{
+    LOG("Null Sound System");
 }
-

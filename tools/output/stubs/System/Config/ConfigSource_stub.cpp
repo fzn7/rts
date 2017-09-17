@@ -7,11 +7,11 @@
 #include "System/Platform/ScopedFileLock.h"
 
 #ifdef WIN32
-	#include <io.h>
+#include <io.h>
 #endif
-#include <string.h>
-#include <stdexcept>
 #include <boost/bind.hpp>
+#include <stdexcept>
+#include <string.h>
 
 /******************************************************************************/
 
@@ -22,27 +22,15 @@ typedef map<string, string> StringMap;
 
 /******************************************************************************/
 
-bool ReadOnlyConfigSource::IsSet(const string& key) const
+bool
+ReadOnlyConfigSource::IsSet(const string& key) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-string ReadOnlyConfigSource::GetString(const string& key) const
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-/******************************************************************************/
-
-void ReadWriteConfigSource::SetString(const string& key, const string& value)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-void ReadWriteConfigSource::Delete(const string& key)
+string
+ReadOnlyConfigSource::GetString(const string& key) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -50,53 +38,63 @@ void ReadWriteConfigSource::Delete(const string& key)
 
 /******************************************************************************/
 
-FileConfigSource::FileConfigSource(const string& filename) : filename(filename)
+void
+ReadWriteConfigSource::SetString(const string& key, const string& value)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void FileConfigSource::SetStringInternal(const std::string& key, const std::string& value)
+void
+ReadWriteConfigSource::Delete(const string& key)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void FileConfigSource::SetString(const string& key, const string& value)
+/******************************************************************************/
+
+FileConfigSource::FileConfigSource(const string& filename)
+  : filename(filename)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void FileConfigSource::DeleteInternal(const string& key)
+void
+FileConfigSource::SetStringInternal(const std::string& key,
+                                    const std::string& value)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void FileConfigSource::Delete(const string& key)
+void
+FileConfigSource::SetString(const string& key, const string& value)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void FileConfigSource::ReadModifyWrite(boost::function<void ()> modify) {
-	FILE* file = fopen(filename.c_str(), "r+");
+void
+FileConfigSource::DeleteInternal(const string& key)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
-	if (file) {
-		ScopedFileLock scoped_lock(fileno(file), true);
-		Read(file);
-		modify();
-		Write(file);
-	}
-	else {
-		modify();
-	}
+void
+FileConfigSource::Delete(const string& key)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
 
-	// must be outside above 'if (file)' block because of the lock.
-	if (file) {
-		fclose(file);
-	}
+void
+FileConfigSource::ReadModifyWrite(boost::function<void()> modify)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -109,17 +107,18 @@ void FileConfigSource::ReadModifyWrite(boost::function<void ()> modify) {
  * Precondition: end must point to the last character of the string,
  * i.e. the one before the terminating '\0'.
  */
-char* FileConfigSource::Strip(char* begin, char* end) {
-	while (end >= begin && isspace(*end)) --end;
-	while (begin <= end && isspace(*begin)) ++begin;
-	*(end + 1) = '\0';
-	return begin;
+char*
+FileConfigSource::Strip(char* begin, char* end)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
  * @brief Rewind file and re-read it.
  */
-void FileConfigSource::Read(FILE* file)
+void
+FileConfigSource::Read(FILE* file)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -128,7 +127,8 @@ void FileConfigSource::Read(FILE* file)
 /**
  * @brief Truncate file and write data to it.
  */
-void FileConfigSource::Write(FILE* file)
+void
+FileConfigSource::Write(FILE* file)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -144,7 +144,6 @@ DefaultConfigSource::DefaultConfigSource()
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /**
  * @brief Fill with safemode values of declared configuration variables.
@@ -163,7 +162,6 @@ DedicatedConfigSource::DedicatedConfigSource()
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /**
  * @brief Fill with headless values of declared configuration variables.

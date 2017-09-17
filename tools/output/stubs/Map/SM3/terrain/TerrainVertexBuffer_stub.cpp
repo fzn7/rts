@@ -1,25 +1,18 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
-#include "TerrainBase.h"
 #include "TerrainVertexBuffer.h"
+#include "TerrainBase.h"
 
 using namespace terrain;
 
 int VertexBuffer::totalBufferSize = 0;
 
 VertexBuffer::VertexBuffer()
-	: data(NULL)
-	, id(0)
-	, size(0)
-	, type(GL_ARRAY_BUFFER_ARB)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-void VertexBuffer::Init(int bytesize)
+  : data(NULL)
+  , id(0)
+  , size(0)
+  , type(GL_ARRAY_BUFFER_ARB)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -31,37 +24,40 @@ VertexBuffer::~VertexBuffer()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void VertexBuffer::Free()
+void
+VertexBuffer::Free()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void* VertexBuffer::LockData()
+void*
+VertexBuffer::LockData()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void VertexBuffer::UnlockData()
+void
+VertexBuffer::UnlockData()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void* VertexBuffer::Bind()
+void*
+VertexBuffer::Bind()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void VertexBuffer::Unbind()
+void
+VertexBuffer::Unbind()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 IndexBuffer::IndexBuffer()
 {

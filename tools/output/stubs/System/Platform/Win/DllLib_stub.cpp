@@ -11,7 +11,8 @@
 /**
  * Attempts to LoadLibrary on the given DLL
  */
-DllLib::DllLib(const char* fileName) : dll(NULL)
+DllLib::DllLib(const char* fileName)
+  : dll(NULL)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -20,14 +21,18 @@ DllLib::DllLib(const char* fileName) : dll(NULL)
 /**
  * Does a FreeLibrary on the given DLL
  */
-void DllLib::Unload() {
-
-	FreeLibrary(dll);
-	dll = NULL;
+void
+DllLib::Unload()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-bool DllLib::LoadFailed() {
-	return dll == NULL;
+bool
+DllLib::LoadFailed()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -42,7 +47,8 @@ DllLib::~DllLib()
 /**
  * Attempts to locate the given symbol with GetProcAddress
  */
-void* DllLib::FindAddress(const char* symbol)
+void*
+DllLib::FindAddress(const char* symbol)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

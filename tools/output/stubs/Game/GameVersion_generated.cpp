@@ -8,9 +8,9 @@
 
 #include "System/VersionGenerated.h"
 
-#include <cstring>
-#include <boost/version.hpp>
 #include <boost/config.hpp>
+#include <boost/version.hpp>
+#include <cstring>
 #include <stdio.h>
 
 /**
@@ -18,200 +18,214 @@
  * Take special care when moving this file.
  * The build-bot refers to this file to append the exact SCM version.
  */
-namespace SpringVersion
-{
+namespace SpringVersion {
 
-const std::string& GetMajor()
+const std::string&
+GetMajor()
 {
-	static const std::string major = SPRING_VERSION_ENGINE_MAJOR;
-	return major;
+    static const std::string major = SPRING_VERSION_ENGINE_MAJOR;
+    return major;
 }
 
-const std::string& GetMinor()
+const std::string&
+GetMinor()
 {
-	static const std::string minor = "0";
-	return minor;
+    static const std::string minor = "0";
+    return minor;
 }
 
-const std::string& GetPatchSet()
+const std::string&
+GetPatchSet()
 {
-	static const std::string patchSet = SPRING_VERSION_ENGINE_PATCH_SET;
-	return patchSet;
+    static const std::string patchSet = SPRING_VERSION_ENGINE_PATCH_SET;
+    return patchSet;
 }
 
-const std::string& GetCommits()
+const std::string&
+GetCommits()
 {
-	static const std::string patchSet = SPRING_VERSION_ENGINE_COMMITS;
-	return patchSet;
+    static const std::string patchSet = SPRING_VERSION_ENGINE_COMMITS;
+    return patchSet;
 }
 
-const std::string& GetHash()
+const std::string&
+GetHash()
 {
-	static const std::string patchSet = SPRING_VERSION_ENGINE_HASH;
-	return patchSet;
+    static const std::string patchSet = SPRING_VERSION_ENGINE_HASH;
+    return patchSet;
 }
 
-const std::string& GetBranch()
+const std::string&
+GetBranch()
 {
-	static const std::string patchSet = SPRING_VERSION_ENGINE_BRANCH;
-	return patchSet;
+    static const std::string patchSet = SPRING_VERSION_ENGINE_BRANCH;
+    return patchSet;
 }
 
-std::string GetAdditional()
+std::string
+GetAdditional()
 {
-	std::string additional = SPRING_VERSION_ENGINE_ADDITIONAL;
+    std::string additional = SPRING_VERSION_ENGINE_ADDITIONAL;
 
-	additional += additional.empty() ? "" : " ";
+    additional += additional.empty() ? "" : " ";
 
-	additional += ""
+    additional += ""
 #define GV_ADD_SPACE ""
 
 #if defined DEBUG
-	GV_ADD_SPACE "Debug"
-	#undef  GV_ADD_SPACE
-	#define GV_ADD_SPACE " "
+      GV_ADD_SPACE "Debug"
+#undef GV_ADD_SPACE
+#define GV_ADD_SPACE " "
 #endif
 
 #if defined PROFILE
-	GV_ADD_SPACE "Profile"
-	#undef  GV_ADD_SPACE
-	#define GV_ADD_SPACE " "
+      GV_ADD_SPACE "Profile"
+#undef GV_ADD_SPACE
+#define GV_ADD_SPACE " "
 #endif
 
 #if defined TRACE_SYNC
-	GV_ADD_SPACE "Sync-Trace"
-	#undef  GV_ADD_SPACE
-	#define GV_ADD_SPACE " "
+      GV_ADD_SPACE "Sync-Trace"
+#undef GV_ADD_SPACE
+#define GV_ADD_SPACE " "
 #endif
 
 #if defined SYNCDEBUG
-	GV_ADD_SPACE "Sync-Debug"
-	#undef  GV_ADD_SPACE
-	#define GV_ADD_SPACE " "
+      GV_ADD_SPACE "Sync-Debug"
+#undef GV_ADD_SPACE
+#define GV_ADD_SPACE " "
 #endif
 
 #if !defined SYNCCHECK
-	GV_ADD_SPACE "Sync-Check-Disabled"
-	#undef  GV_ADD_SPACE
-	#define GV_ADD_SPACE " "
+      GV_ADD_SPACE "Sync-Check-Disabled"
+#undef GV_ADD_SPACE
+#define GV_ADD_SPACE " "
 #endif
 
-#if defined  __SUPPORT_SNAN__
-	GV_ADD_SPACE "Signal-NaNs"
-	#undef  GV_ADD_SPACE
-	#define GV_ADD_SPACE " "
+#if defined __SUPPORT_SNAN__
+      GV_ADD_SPACE "Signal-NaNs"
+#undef GV_ADD_SPACE
+#define GV_ADD_SPACE " "
 #endif
 
 #if defined HEADLESS && !defined DEDICATED
-	GV_ADD_SPACE "Headless"
-	#undef  GV_ADD_SPACE
-	#define GV_ADD_SPACE " "
+      GV_ADD_SPACE "Headless"
+#undef GV_ADD_SPACE
+#define GV_ADD_SPACE " "
 #endif
 
 #if defined DEDICATED
-	GV_ADD_SPACE "Dedicated"
-	#undef GV_ADD_SPACE
-	#define GV_ADD_SPACE " "
+      GV_ADD_SPACE "Dedicated"
+#undef GV_ADD_SPACE
+#define GV_ADD_SPACE " "
 #endif
 
 #if defined UNITSYNC
-	GV_ADD_SPACE "Unitsync"
-	#undef  GV_ADD_SPACE
-	#define GV_ADD_SPACE " "
+      GV_ADD_SPACE "Unitsync"
+#undef GV_ADD_SPACE
+#define GV_ADD_SPACE " "
 #endif
-	;
+      ;
 
-	return additional;
+    return additional;
 }
 
 #define QUOTEME_(x) #x
 #define QUOTEME(x) QUOTEME_(x)
 
-const std::string& GetCompiler()
+const std::string&
+GetCompiler()
 {
-	static const std::string compiler = ""
+    static const std::string compiler =
+      ""
 #ifdef __GNUC__
-	//"gcc-" QUOTEME(__GNUC__) "." QUOTEME(__GNUC_MINOR__) "." QUOTEME(__GNUC_PATCHLEVEL__);
-	"gcc-" __VERSION__;
+      //"gcc-" QUOTEME(__GNUC__) "." QUOTEME(__GNUC_MINOR__) "."
+      //QUOTEME(__GNUC_PATCHLEVEL__);
+      "gcc-" __VERSION__;
 #elif defined(_MSC_VER)
-	#ifdef _MSC_FULL_VER
-		"msvc-" QUOTEME(_MSC_FULL_VER);
-	#else
-		"msvc-" QUOTEME(_MSC_VER);
-	#endif
+#ifdef _MSC_FULL_VER
+      "msvc-" QUOTEME(_MSC_FULL_VER);
+#else
+      "msvc-" QUOTEME(_MSC_VER);
+#endif
 #elif defined(__VERSION__)
-	"unknown-" __VERSION__;
+      "unknown-" __VERSION__;
 #else
-	"unknown";
+      "unknown";
 #endif
-	return compiler;
+    return compiler;
 }
 
-const std::string& GetBuildEnvironment()
+const std::string&
+GetBuildEnvironment()
 {
-	static const std::string environment = "boost-"
+    static const std::string environment = "boost-"
 #ifdef BOOST_VERSION
-	QUOTEME(BOOST_VERSION)
+      QUOTEME(BOOST_VERSION)
 #else
-	"unknown"
+                                           "unknown"
 #endif
-	", "
+        ", "
 #ifdef BOOST_STDLIB
-	BOOST_STDLIB;
+      BOOST_STDLIB;
 #else
-	"unknown stdlib";
+                                           "unknown stdlib";
 #endif
-	return environment;
+    return environment;
 }
 
-bool IsRelease()
+bool
+IsRelease()
 {
-	static const bool release = SPRING_VERSION_ENGINE_RELEASE;
-	return release;
+    static const bool release = SPRING_VERSION_ENGINE_RELEASE;
+    return release;
 }
 
-bool IsHeadless()
+bool
+IsHeadless()
 {
 #ifdef HEADLESS
-	return true;
+    return true;
 #else
-	return false;
+    return false;
 #endif
 }
 
-bool IsUnitsync()
+bool
+IsUnitsync()
 {
 #ifdef UNITSYNC
-	return true;
+    return true;
 #else
-	return false;
+    return false;
 #endif
 }
 
-const std::string& Get()
+const std::string&
+Get()
 {
-	static const std::string base = IsRelease()
-			? GetMajor()
-			: (GetMajor() + "." + GetPatchSet() + ".1");
+    static const std::string base =
+      IsRelease() ? GetMajor() : (GetMajor() + "." + GetPatchSet() + ".1");
 
-	return base;
+    return base;
 }
 
-const std::string& GetSync()
+const std::string&
+GetSync()
 {
-	static const std::string sync = IsRelease()
-			? GetMajor()
-			: SPRING_VERSION_ENGINE;
+    static const std::string sync =
+      IsRelease() ? GetMajor() : SPRING_VERSION_ENGINE;
 
-	return sync;
+    return sync;
 }
 
-const std::string& GetFull()
+const std::string&
+GetFull()
 {
-	static const std::string full = SPRING_VERSION_ENGINE
-			+ (GetAdditional().empty() ? "" : (" (" + GetAdditional() + ")"));
+    static const std::string full =
+      SPRING_VERSION_ENGINE +
+      (GetAdditional().empty() ? "" : (" (" + GetAdditional() + ")"));
 
-	return full;
+    return full;
 }
-
 }

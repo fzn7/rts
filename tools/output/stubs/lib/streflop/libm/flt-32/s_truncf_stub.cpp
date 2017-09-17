@@ -24,13 +24,12 @@
 
 #include "math_private.h"
 
-
 namespace streflop_libm {
 Simple
-__truncf (Simple x)
+__truncf(Simple x)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__truncf, truncf)
+weak_alias(__truncf, truncf)
 }

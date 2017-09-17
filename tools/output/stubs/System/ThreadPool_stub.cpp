@@ -7,15 +7,15 @@
 #include "TimeProfiler.h"
 #include "Util.h"
 #if !defined(UNITSYNC) && !defined(UNIT_TEST)
-	#include "OffscreenGLContext.h"
+#include "OffscreenGLContext.h"
 #endif
 
-#include <deque>
-#include <vector>
-#include <utility>
 #include <boost/optional.hpp>
 #include <boost/thread.hpp>
 #include <boost/thread/shared_mutex.hpp>
+#include <deque>
+#include <utility>
+#include <vector>
 
 static std::deque<std::shared_ptr<ITaskGroup>> taskGroups;
 static std::deque<void*> thread_group;
@@ -33,105 +33,106 @@ static bool hasOGLthreads = false;
 static __declspec(thread) int threadnum(0);
 static __declspec(thread) bool exitThread(false);
 #else
-static __thread int threadnum(0); 
+static __thread int threadnum(0);
 static __thread bool exitThread(false);
 #endif
 
-
 static int spinlockMs = 5;
-
 
 namespace ThreadPool {
 
-int GetThreadNum()
+int
+GetThreadNum()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void SetThreadNum(const int idx)
+static void
+SetThreadNum(const int idx)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-int GetMaxThreads()
+int
+GetMaxThreads()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-int GetNumThreads()
+int
+GetNumThreads()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool HasThreads()
+bool
+HasThreads()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /// returns false, when no further tasks were found
-static bool DoTask(boost::shared_lock<boost::shared_mutex>& lk_)
+static bool
+DoTask(boost::shared_lock<boost::shared_mutex>& lk_)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static bool DoTask(std::shared_ptr<ITaskGroup> tg)
+static bool
+DoTask(std::shared_ptr<ITaskGroup> tg)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 __FORCE_ALIGN_STACK__
-static void WorkerLoop(int id)
+static void
+WorkerLoop(int id)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void WaitForFinished(std::shared_ptr<ITaskGroup> taskgroup)
+void
+WaitForFinished(std::shared_ptr<ITaskGroup> taskgroup)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void PushTaskGroup(std::shared_ptr<ITaskGroup> taskgroup)
+void
+PushTaskGroup(std::shared_ptr<ITaskGroup> taskgroup)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void NotifyWorkerThreads()
+void
+NotifyWorkerThreads()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void SetThreadCount(int num)
+void
+SetThreadCount(int num)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void SetThreadSpinTime(int milliSeconds)
+void
+SetThreadSpinTime(int milliSeconds)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 }
 
 #endif
-

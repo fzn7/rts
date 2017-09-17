@@ -24,16 +24,14 @@
 
 #include "math_private.h"
 
-
 static const Simple huge = 1.0e30f;
-
 
 namespace streflop_libm {
 Simple
-__roundf (Simple x)
+__roundf(Simple x)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__roundf, roundf)
+weak_alias(__roundf, roundf)
 }

@@ -5,22 +5,23 @@
 #include <SDL_syswm.h>
 
 #ifndef HEADLESS
-	#include <X11/Xlib.h>
-	#undef KeyPress
-	#undef KeyRelease
-	#undef GrayScale
+#include <X11/Xlib.h>
+#undef KeyPress
+#undef KeyRelease
+#undef GrayScale
 #endif
 
 namespace WindowManagerHelper {
 
-void BlockCompositing(SDL_Window* window)
+void
+BlockCompositing(SDL_Window* window)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-int GetWindowState(SDL_Window* window)
+int
+GetWindowState(SDL_Window* window)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

@@ -4,8 +4,8 @@
 #include "Clipboard.h"
 #include <SDL_clipboard.h>
 
-
-std::string CClipboard::GetContents() const
+std::string
+CClipboard::GetContents() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

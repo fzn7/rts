@@ -10,13 +10,14 @@
  *
  * Developed at SunPro, a Sun Microsystems, Inc. business.
  * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice 
+ * software is freely granted, provided that this notice
  * is preserved.
  * ====================================================
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: s_floorf.c,v 1.4f 1995/05/10 20:47:22 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: s_floorf.c,v 1.4f 1995/05/10 20:47:22 jtc Exp $";
 #endif
 
 /*
@@ -39,14 +40,14 @@ static Simple huge = 1.0e30f;
 #endif
 
 #ifdef __STDC__
-	Simple __floorf(Simple x)
+Simple
+__floorf(Simple x)
 #else
-	Simple __floorf(x)
-	Simple x;
+Simple __floorf(x) Simple x;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__floorf, floorf)
+weak_alias(__floorf, floorf)
 }

@@ -8,9 +8,9 @@
 
 #include "System/VersionGenerated.h"
 
-#include <cstring>
-#include <boost/version.hpp>
 #include <boost/config.hpp>
+#include <boost/version.hpp>
+#include <cstring>
 #include <stdio.h>
 
 /**
@@ -18,43 +18,52 @@
  * Take special care when moving this file.
  * The build-bot refers to this file to append the exact SCM version.
  */
-namespace SpringVersion
+namespace SpringVersion {
+
+const std::string&
+GetMajor()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const std::string& GetMinor()
+const std::string&
+GetMinor()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const std::string& GetPatchSet()
+const std::string&
+GetPatchSet()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const std::string& GetCommits()
+const std::string&
+GetCommits()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const std::string& GetHash()
+const std::string&
+GetHash()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const std::string& GetBranch()
+const std::string&
+GetBranch()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-std::string GetAdditional()
+std::string
+GetAdditional()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -63,52 +72,59 @@ std::string GetAdditional()
 #define QUOTEME_(x) #x
 #define QUOTEME(x) QUOTEME_(x)
 
-const std::string& GetCompiler()
+const std::string&
+GetCompiler()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const std::string& GetBuildEnvironment()
+const std::string&
+GetBuildEnvironment()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool IsRelease()
+bool
+IsRelease()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool IsHeadless()
+bool
+IsHeadless()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-bool IsUnitsync()
+bool
+IsUnitsync()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const std::string& Get()
+const std::string&
+Get()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const std::string& GetSync()
+const std::string&
+GetSync()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const std::string& GetFull()
+const std::string&
+GetFull()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 }

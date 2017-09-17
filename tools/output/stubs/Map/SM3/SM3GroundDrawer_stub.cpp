@@ -1,21 +1,20 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
 #include "SM3GroundDrawer.h"
 #include "SM3Map.h"
 #include "terrain/TerrainNode.h"
 
 #include "Game/Camera.h"
 #include "Map/MapInfo.h"
-#include "Rendering/GlobalRendering.h"
-#include "Rendering/ShadowHandler.h"
 #include "Rendering/Env/IGroundDecalDrawer.h"
-#include "Rendering/ProjectileDrawer.h"
 #include "Rendering/Env/ISky.h"
 #include "Rendering/Env/SunLighting.h"
-#include "Rendering/Shaders/Shader.h"
 #include "Rendering/GL/myGL.h"
+#include "Rendering/GlobalRendering.h"
+#include "Rendering/ProjectileDrawer.h"
+#include "Rendering/Shaders/Shader.h"
+#include "Rendering/ShadowHandler.h"
 #include "System/Config/ConfigHandler.h"
 #include "System/Log/ILog.h"
 
@@ -35,32 +34,36 @@ CSM3GroundDrawer::~CSM3GroundDrawer()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void SpringCamToTerrainCam(CCamera &sc, terrain::Camera& tc)
+static void
+SpringCamToTerrainCam(CCamera& sc, terrain::Camera& tc)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSM3GroundDrawer::Update()
+void
+CSM3GroundDrawer::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSM3GroundDrawer::Draw(const DrawPass::e& drawPass)
+void
+CSM3GroundDrawer::Draw(const DrawPass::e& drawPass)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CSM3GroundDrawer::DrawShadowPass()
+void
+CSM3GroundDrawer::DrawShadowPass()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSM3GroundDrawer::DrawObjects(const DrawPass::e& drawPass)
+void
+CSM3GroundDrawer::DrawObjects(const DrawPass::e& drawPass)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -68,25 +71,29 @@ void CSM3GroundDrawer::DrawObjects(const DrawPass::e& drawPass)
 
 const int maxQuadDepth = 4;
 
-void CSM3GroundDrawer::IncreaseDetail()
+void
+CSM3GroundDrawer::IncreaseDetail()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSM3GroundDrawer::DecreaseDetail()
+void
+CSM3GroundDrawer::DecreaseDetail()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CSM3GroundDrawer::SetDetail(int newGroundDetail)
+void
+CSM3GroundDrawer::SetDetail(int newGroundDetail)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-int CSM3GroundDrawer::GetGroundDetail(const DrawPass::e& drawPass) const
+int
+CSM3GroundDrawer::GetGroundDetail(const DrawPass::e& drawPass) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

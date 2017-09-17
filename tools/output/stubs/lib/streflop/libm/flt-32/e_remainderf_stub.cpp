@@ -10,13 +10,14 @@
  *
  * Developed at SunPro, a Sun Microsystems, Inc. business.
  * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice 
+ * software is freely granted, provided that this notice
  * is preserved.
  * ====================================================
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: e_remainderf.c,v 1.4f 1995/05/10 20:46:08 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: e_remainderf.c,v 1.4f 1995/05/10 20:46:08 jtc Exp $";
 #endif
 
 #include "SMath.h"
@@ -29,12 +30,11 @@ static const Simple zero = 0.0f;
 static Simple zero = 0.0f;
 #endif
 
-
 #ifdef __STDC__
-	Simple __ieee754_remainderf(Simple x, Simple p)
+Simple
+__ieee754_remainderf(Simple x, Simple p)
 #else
-	Simple __ieee754_remainderf(x,p)
-	Simple x,p;
+Simple __ieee754_remainderf(x, p) Simple x, p;
 #endif
 {
     //stub method

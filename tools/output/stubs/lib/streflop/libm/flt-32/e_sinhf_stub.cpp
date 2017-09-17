@@ -10,7 +10,7 @@
  *
  * Developed at SunPro, a Sun Microsystems, Inc. business.
  * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice 
+ * software is freely granted, provided that this notice
  * is preserved.
  * ====================================================
  */
@@ -30,10 +30,10 @@ static Simple one = 1.0f, shuge = 1.0e37f;
 #endif
 
 #ifdef __STDC__
-	Simple __ieee754_sinhf(Simple x)
+Simple
+__ieee754_sinhf(Simple x)
 #else
-	Simple __ieee754_sinhf(x)
-	Simple x;
+Simple __ieee754_sinhf(x) Simple x;
 #endif
 {
     //stub method

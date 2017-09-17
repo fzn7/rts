@@ -1,70 +1,63 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
 #include <string>
 
 #include "LuaInputReceiver.h"
 #include "System/EventHandler.h"
 
-
 LuaInputReceiver* luaInputReceiver = NULL;
 
-
 LuaInputReceiver::LuaInputReceiver()
-: CInputReceiver(FRONT)
+  : CInputReceiver(FRONT)
+{}
+
+LuaInputReceiver::~LuaInputReceiver() {}
+
+bool
+LuaInputReceiver::KeyPressed(int key, bool isRepeat)
 {
+    return eventHandler.KeyPress(key, isRepeat);
 }
 
-
-LuaInputReceiver::~LuaInputReceiver()
+bool
+LuaInputReceiver::KeyReleased(int key)
 {
+    return eventHandler.KeyRelease(key);
 }
 
-
-bool LuaInputReceiver::KeyPressed(int key, bool isRepeat)
+bool
+LuaInputReceiver::MousePress(int x, int y, int button)
 {
-	return eventHandler.KeyPress(key, isRepeat);
+    return eventHandler.MousePress(x, y, button);
 }
 
-
-bool LuaInputReceiver::KeyReleased(int key)
+void
+LuaInputReceiver::MouseMove(int x, int y, int dx, int dy, int button)
 {
-	return eventHandler.KeyRelease(key);
+    eventHandler.MouseMove(x, y, dx, dy, button);
 }
 
-
-bool LuaInputReceiver::MousePress(int x, int y, int button)
+void
+LuaInputReceiver::MouseRelease(int x, int y, int button)
 {
-	return eventHandler.MousePress(x, y, button);
+    eventHandler.MouseRelease(x, y, button);
 }
 
-
-void LuaInputReceiver::MouseMove(int x, int y, int dx, int dy, int button)
+bool
+LuaInputReceiver::IsAbove(int x, int y)
 {
-	eventHandler.MouseMove(x, y, dx, dy, button);
+    return eventHandler.IsAbove(x, y);
 }
 
-
-void LuaInputReceiver::MouseRelease(int x, int y, int button)
+std::string
+LuaInputReceiver::GetTooltip(int x, int y)
 {
-	eventHandler.MouseRelease(x, y, button);
+    return eventHandler.GetTooltip(x, y);
 }
 
-
-bool LuaInputReceiver::IsAbove(int x, int y)
+void
+LuaInputReceiver::Draw()
 {
-	return eventHandler.IsAbove(x, y);
-}
-
-
-std::string LuaInputReceiver::GetTooltip(int x, int y)
-{
-	return eventHandler.GetTooltip(x, y);
-}
-
-
-void LuaInputReceiver::Draw()
-{
-	return eventHandler.DrawScreen();
+    return eventHandler.DrawScreen();
 }

@@ -25,10 +25,16 @@
 
 #include "math_private.h"
 
-static const Simple two23[2] =
+static const Simple two23[2] = {
+    8.3886080000e+06f,  /* 0x4B000000 */
+    -8.3886080000e+06f, /* 0xCB000000 */
+};
+
+long long int
+__llrintf(Simple x)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-weak_alias (__llrintf, llrintf)
+weak_alias(__llrintf, llrintf)

@@ -1,7 +1,6 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
 #include "EmgProjectile.h"
 #include "Game/Camera.h"
 #include "Map/Ground.h"
@@ -14,38 +13,41 @@
 
 CR_BIND_DERIVED(CEmgProjectile, CWeaponProjectile, )
 
-CR_REG_METADATA(CEmgProjectile,(
-	CR_SETFLAG(CF_Synced),
-	CR_MEMBER(intensity),
-	CR_MEMBER(color)
-))
+CR_REG_METADATA(CEmgProjectile,
+                (CR_SETFLAG(CF_Synced), CR_MEMBER(intensity), CR_MEMBER(color)))
 
-
-CEmgProjectile::CEmgProjectile(const ProjectileParams& params): CWeaponProjectile(params)
+CEmgProjectile::CEmgProjectile(const ProjectileParams& params)
+  : CWeaponProjectile(params)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CEmgProjectile::Update()
+void
+CEmgProjectile::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CEmgProjectile::Draw()
+void
+CEmgProjectile::Draw()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-int CEmgProjectile::ShieldRepulse(const float3& shieldPos, float shieldForce, float shieldMaxSpeed)
+int
+CEmgProjectile::ShieldRepulse(const float3& shieldPos,
+                              float shieldForce,
+                              float shieldMaxSpeed)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-int CEmgProjectile::GetProjectilesCount() const
+int
+CEmgProjectile::GetProjectilesCount() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

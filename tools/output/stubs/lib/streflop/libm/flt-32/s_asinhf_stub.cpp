@@ -16,7 +16,8 @@
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: s_asinhf.c,v 1.5f 1995/05/12 04:57:39 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: s_asinhf.c,v 1.5f 1995/05/12 04:57:39 jtc Exp $";
 #endif
 
 #include "SMath.h"
@@ -28,19 +29,19 @@ static const Simple
 #else
 static Simple
 #endif
-one =  1.0000000000e+00f, /* 0x3F800000 */
-ln2 =  6.9314718246e-01f, /* 0x3f317218 */
-huge=  1.0000000000e+30f;
+  one = 1.0000000000e+00f, /* 0x3F800000 */
+  ln2 = 6.9314718246e-01f, /* 0x3f317218 */
+  huge = 1.0000000000e+30f;
 
 #ifdef __STDC__
-	Simple __asinhf(Simple x)
+Simple
+__asinhf(Simple x)
 #else
-	Simple __asinhf(x)
-	Simple x;
+Simple __asinhf(x) Simple x;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__asinhf, asinhf)
+weak_alias(__asinhf, asinhf)
 }

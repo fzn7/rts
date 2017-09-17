@@ -16,7 +16,8 @@
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: e_coshf.c,v 1.6f 1996/04/08 15:43:41 phil Exp $";
+static char rcsid[] =
+  "$NetBSD: e_coshf.c,v 1.6f 1996/04/08 15:43:41 phil Exp $";
 #endif
 
 #include "SMath.h"
@@ -25,16 +26,16 @@ static char rcsid[] = "$NetBSD: e_coshf.c,v 1.6f 1996/04/08 15:43:41 phil Exp $"
 namespace streflop_libm {
 #ifdef __STDC__
 static const Simple huge = 1.0e30f;
-static const Simple one = 1.0f, half=0.5f;
+static const Simple one = 1.0f, half = 0.5f;
 #else
-static Simple one = 1.0f, half=0.5f, huge = 1.0e30f;
+static Simple one = 1.0f, half = 0.5f, huge = 1.0e30f;
 #endif
 
 #ifdef __STDC__
-	Simple __ieee754_coshf(Simple x)
+Simple
+__ieee754_coshf(Simple x)
 #else
-	Simple __ieee754_coshf(x)
-	Simple x;
+Simple __ieee754_coshf(x) Simple x;
 #endif
 {
     //stub method

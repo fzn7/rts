@@ -9,23 +9,22 @@
 #include "Map/ReadMap.h"
 #include "Sim/Misc/QuadField.h"
 #include "Sim/Units/CommandAI/BuilderCAI.h"
-#include "System/creg/STL_Set.h"
 #include "System/EventHandler.h"
 #include "System/TimeProfiler.h"
 #include "System/Util.h"
+#include "System/creg/STL_Set.h"
 
 CFeatureHandler* featureHandler = NULL;
 
 /******************************************************************************/
 
 CR_BIND(CFeatureHandler, )
-CR_REG_METADATA(CFeatureHandler, (
-	CR_MEMBER(idPool),
-	CR_MEMBER(toBeFreedFeatureIDs),
-	CR_MEMBER(activeFeatures),
-	CR_MEMBER(features),
-	CR_MEMBER(updateFeatures)
-))
+CR_REG_METADATA(CFeatureHandler,
+                (CR_MEMBER(idPool),
+                 CR_MEMBER(toBeFreedFeatureIDs),
+                 CR_MEMBER(activeFeatures),
+                 CR_MEMBER(features),
+                 CR_MEMBER(updateFeatures)))
 
 /******************************************************************************/
 
@@ -35,108 +34,102 @@ CFeatureHandler::~CFeatureHandler()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CFeatureHandler::LoadFeaturesFromMap()
+void
+CFeatureHandler::LoadFeaturesFromMap()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-CFeature* CFeatureHandler::LoadFeature(const FeatureLoadParams& params) {
-	// need to check this BEFORE creating the instance
-	if (!CanAddFeature(params.featureID))
-		return nullptr;
-
-	// Initialize() calls AddFeature -> no memory-leak
-	CFeature* feature = new CFeature();
-	feature->Initialize(params);
-	return feature;
-}
-
-
-bool CFeatureHandler::NeedAllocateNewFeatureIDs(const CFeature* feature) const
+CFeature*
+CFeatureHandler::LoadFeature(const FeatureLoadParams& params)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CFeatureHandler::AllocateNewFeatureIDs(const CFeature* feature)
+bool
+CFeatureHandler::NeedAllocateNewFeatureIDs(const CFeature* feature) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CFeatureHandler::InsertActiveFeature(CFeature* feature)
+void
+CFeatureHandler::AllocateNewFeatureIDs(const CFeature* feature)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-bool CFeatureHandler::AddFeature(CFeature* feature)
+void
+CFeatureHandler::InsertActiveFeature(CFeature* feature)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CFeatureHandler::DeleteFeature(CFeature* feature)
+bool
+CFeatureHandler::AddFeature(CFeature* feature)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-CFeature* CFeatureHandler::GetFeature(int id)
+void
+CFeatureHandler::DeleteFeature(CFeature* feature)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-CFeature* CFeatureHandler::CreateWreckage(
-	const FeatureLoadParams& cparams,
-	const int numWreckLevels,
-	bool emitSmoke)
+CFeature*
+CFeatureHandler::GetFeature(int id)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-void CFeatureHandler::Update()
+CFeature*
+CFeatureHandler::CreateWreckage(const FeatureLoadParams& cparams,
+                                const int numWreckLevels,
+                                bool emitSmoke)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CFeatureHandler::TryFreeFeatureID(int id)
+void
+CFeatureHandler::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CFeatureHandler::UpdateFeature(CFeature* feature)
+bool
+CFeatureHandler::TryFreeFeatureID(int id)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CFeatureHandler::SetFeatureUpdateable(CFeature* feature)
+bool
+CFeatureHandler::UpdateFeature(CFeature* feature)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CFeatureHandler::TerrainChanged(int x1, int y1, int x2, int y2)
+void
+CFeatureHandler::SetFeatureUpdateable(CFeature* feature)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
+void
+CFeatureHandler::TerrainChanged(int x1, int y1, int x2, int y2)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}

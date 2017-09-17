@@ -8,7 +8,9 @@
 #include "math_private.h"
 
 namespace streflop_libm {
-Simple __expf(Simple x) {
+Simple
+__expf(Simple x)
+{
     return __ieee754_expf(x);
 }
 }

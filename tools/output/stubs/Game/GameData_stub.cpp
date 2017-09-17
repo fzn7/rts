@@ -13,57 +13,44 @@
 using namespace netcode;
 
 GameData::GameData()
-	: mapChecksum(0)
-	, modChecksum(0)
-	, randomSeed(0)
+  : mapChecksum(0)
+  , modChecksum(0)
+  , randomSeed(0)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-GameData::GameData(const std::string& setup)
-	: setupText(setup)
-	, mapChecksum(0)
-	, modChecksum(0)
-	, randomSeed(0)
+const netcode::RawPacket*
+GameData::Pack() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-GameData::GameData(boost::shared_ptr<const RawPacket> pckt)
+void
+GameData::SetSetupText(const std::string& newSetup)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-const netcode::RawPacket* GameData::Pack() const
+void
+GameData::SetMapChecksum(const unsigned checksum)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void GameData::SetSetupText(const std::string& newSetup)
+void
+GameData::SetModChecksum(const unsigned checksum)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void GameData::SetMapChecksum(const unsigned checksum)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-void GameData::SetModChecksum(const unsigned checksum)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-void GameData::SetRandomSeed(const unsigned seed)
+void
+GameData::SetRandomSeed(const unsigned seed)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

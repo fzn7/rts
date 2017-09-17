@@ -8,15 +8,19 @@
 /*
 Calculate speed-multiplier for given height and slope data.
 */
-float CMoveMath::GroundSpeedMod(const MoveDef& moveDef, float height, float slope)
+float
+CMoveMath::GroundSpeedMod(const MoveDef& moveDef, float height, float slope)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-float CMoveMath::GroundSpeedMod(const MoveDef& moveDef, float height, float slope, float dirSlopeMod)
+float
+CMoveMath::GroundSpeedMod(const MoveDef& moveDef,
+                          float height,
+                          float slope,
+                          float dirSlopeMod)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-

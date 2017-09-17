@@ -16,7 +16,8 @@
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: s_finitef.c,v 1.4f 1995/05/10 20:47:18 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: s_finitef.c,v 1.4f 1995/05/10 20:47:18 jtc Exp $";
 #endif
 
 /*
@@ -29,15 +30,14 @@ static char rcsid[] = "$NetBSD: s_finitef.c,v 1.4f 1995/05/10 20:47:18 jtc Exp $
 
 namespace streflop_libm {
 #ifdef __STDC__
-	int __finitef(Simple x)
+int
+__finitef(Simple x)
 #else
-	int __finitef(x)
-	Simple x;
+int __finitef(x) Simple x;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-hidden_def (__finitef)
-weak_alias (__finitef, finitef)
+hidden_def(__finitef) weak_alias(__finitef, finitef)
 }

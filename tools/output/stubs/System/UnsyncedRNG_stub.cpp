@@ -6,61 +6,57 @@
 
 #include <limits.h>
 
-
-
 UnsyncedRNG::UnsyncedRNG()
-: randSeed(0)
+  : randSeed(0)
 #ifdef USE_BOOST_RNG
-, distInt(0, RANDINT_MAX)
-, distSphere(3)
-, gen01(rng, dist01)
-, genInt(rng, distInt)
-, genSphere(rng, distSphere)
+  , distInt(0, RANDINT_MAX)
+  , distSphere(3)
+  , gen01(rng, dist01)
+  , genInt(rng, distInt)
+  , genSphere(rng, distSphere)
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void UnsyncedRNG::operator=(const UnsyncedRNG& urng)
+void
+UnsyncedRNG::Seed(unsigned seed)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void UnsyncedRNG::Seed(unsigned seed)
+int
+UnsyncedRNG::RandInt()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-int UnsyncedRNG::RandInt()
+float
+UnsyncedRNG::RandFloat()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-float UnsyncedRNG::RandFloat()
+float3
+UnsyncedRNG::RandVector()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-float3 UnsyncedRNG::RandVector()
+float3
+UnsyncedRNG::RandVector2D()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-float3 UnsyncedRNG::RandVector2D()
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-int UnsyncedRNG::operator()(int n)
+int
+UnsyncedRNG::operator()(int n)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

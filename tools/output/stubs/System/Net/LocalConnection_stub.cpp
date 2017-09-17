@@ -3,9 +3,9 @@
 
 #include <boost/format.hpp>
 
+#include "Exception.h"
 #include "LocalConnection.h"
 #include "Net/Protocol/BaseNetProtocol.h"
-#include "Exception.h"
 #include "ProtocolDef.h"
 #include "System/Log/ILog.h"
 
@@ -14,7 +14,7 @@ namespace netcode {
 // static stuff
 unsigned CLocalConnection::instances = 0;
 
-std::deque< boost::shared_ptr<const RawPacket> > CLocalConnection::pqueues[2];
+std::deque<boost::shared_ptr<const RawPacket>> CLocalConnection::pqueues[2];
 boost::mutex CLocalConnection::mutexes[2];
 
 CLocalConnection::CLocalConnection()
@@ -29,61 +29,67 @@ CLocalConnection::~CLocalConnection()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CLocalConnection::Close(bool flush)
+void
+CLocalConnection::Close(bool flush)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CLocalConnection::SendData(boost::shared_ptr<const RawPacket> packet)
+void
+CLocalConnection::SendData(boost::shared_ptr<const RawPacket> packet)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-boost::shared_ptr<const RawPacket> CLocalConnection::GetData()
+boost::shared_ptr<const RawPacket>
+CLocalConnection::GetData()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-boost::shared_ptr<const RawPacket> CLocalConnection::Peek(unsigned ahead) const
+boost::shared_ptr<const RawPacket>
+CLocalConnection::Peek(unsigned ahead) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CLocalConnection::DeleteBufferPacketAt(unsigned index)
+void
+CLocalConnection::DeleteBufferPacketAt(unsigned index)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-std::string CLocalConnection::Statistics() const
+std::string
+CLocalConnection::Statistics() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-std::string CLocalConnection::GetFullAddress() const
+std::string
+CLocalConnection::GetFullAddress() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CLocalConnection::HasIncomingData() const
+bool
+CLocalConnection::HasIncomingData() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-unsigned int CLocalConnection::GetPacketQueueSize() const
+unsigned int
+CLocalConnection::GetPacketQueueSize() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace netcode
-

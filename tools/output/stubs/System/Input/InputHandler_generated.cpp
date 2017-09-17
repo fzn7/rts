@@ -6,29 +6,29 @@
 
 InputHandler input;
 
-InputHandler::InputHandler()
+InputHandler::InputHandler() {}
+
+void
+InputHandler::PushEvent(const SDL_Event& ev)
 {
+    sig(ev);
 }
 
-void InputHandler::PushEvent(const SDL_Event& ev)
+void
+InputHandler::PushEvents()
 {
-	sig(ev);
+    SCOPED_TIMER("InputHandler::PushEvents");
+    SDL_Event event;
+
+    while (SDL_PollEvent(&event)) {
+        // SDL_PollEvent may modify FPU flags
+        streflop::streflop_init<streflop::Simple>();
+        PushEvent(event);
+    }
 }
 
-void InputHandler::PushEvents()
+boost::signals2::connection
+InputHandler::AddHandler(SignalType::slot_function_type handler)
 {
-	SCOPED_TIMER("InputHandler::PushEvents");
-	SDL_Event event;
-
-	while (SDL_PollEvent(&event)) {
-		// SDL_PollEvent may modify FPU flags
-		streflop::streflop_init<streflop::Simple>();
-		PushEvent(event);
-	}
-}
-
-
-boost::signals2::connection InputHandler::AddHandler(SignalType::slot_function_type handler)
-{
-	return sig.connect(handler);
+    return sig.connect(handler);
 }

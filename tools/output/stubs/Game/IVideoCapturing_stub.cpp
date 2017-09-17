@@ -3,34 +3,29 @@
 
 #include "IVideoCapturing.h"
 
-
-#if       defined AVI_CAPTURING
+#if defined AVI_CAPTURING
 #include "AviVideoCapturing.h"
-#else  // defined AVI_CAPTURING
+#else // defined AVI_CAPTURING
 #include "DummyVideoCapturing.h"
 #endif // defined AVI_CAPTURING
 
 #include <cstdlib> // for NULL
 
-IVideoCapturing* IVideoCapturing::GetInstance()
+IVideoCapturing*
+IVideoCapturing::GetInstance()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void IVideoCapturing::FreeInstance()
+void
+IVideoCapturing::FreeInstance()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-IVideoCapturing::IVideoCapturing()
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
+IVideoCapturing::IVideoCapturing() {}
 
 IVideoCapturing::~IVideoCapturing()
 {
@@ -38,11 +33,9 @@ IVideoCapturing::~IVideoCapturing()
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void IVideoCapturing::SetCapturing(bool enabled) {
-
-	if (!GetInstance()->IsCapturing() && enabled) {
-		GetInstance()->StartCapturing();
-	} else if (GetInstance()->IsCapturing() && !enabled) {
-		GetInstance()->StopCapturing();
-	}
+void
+IVideoCapturing::SetCapturing(bool enabled)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

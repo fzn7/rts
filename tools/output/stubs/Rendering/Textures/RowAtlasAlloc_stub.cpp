@@ -10,44 +10,43 @@
 // texture spacing in the atlas (in pixels)
 static const int ATLAS_PADDING = 1;
 
-
 CRowAtlasAlloc::CRowAtlasAlloc()
-: nextRowPos(0)
+  : nextRowPos(0)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-inline int CRowAtlasAlloc::CompareTex(SAtlasEntry* tex1, SAtlasEntry* tex2)
+inline int
+CRowAtlasAlloc::CompareTex(SAtlasEntry* tex1, SAtlasEntry* tex2)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CRowAtlasAlloc::EstimateNeededSize()
+void
+CRowAtlasAlloc::EstimateNeededSize()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-CRowAtlasAlloc::Row* CRowAtlasAlloc::AddRow(int glyphWidth, int glyphHeight)
+CRowAtlasAlloc::Row*
+CRowAtlasAlloc::AddRow(int glyphWidth, int glyphHeight)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CRowAtlasAlloc::Allocate()
+bool
+CRowAtlasAlloc::Allocate()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-CRowAtlasAlloc::Row* CRowAtlasAlloc::FindRow(int glyphWidth, int glyphHeight)
+CRowAtlasAlloc::Row*
+CRowAtlasAlloc::FindRow(int glyphWidth, int glyphHeight)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

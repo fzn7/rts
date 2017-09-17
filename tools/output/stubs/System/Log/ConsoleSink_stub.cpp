@@ -13,14 +13,11 @@
 
 #include <cstdio>
 
-
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 static bool colorizedOutput = false;
-
-
 
 /**
  * @name logging_sink_console
@@ -28,15 +25,16 @@ static bool colorizedOutput = false;
  */
 ///@{
 
-
-void log_console_colorizedOutput(bool enable) {
-	colorizedOutput = enable;
+void
+log_console_colorizedOutput(bool enable)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-
 /// Records a log entry
-static void log_sink_record_console(const char* section, int level,
-		const char* record)
+static void
+log_sink_record_console(const char* section, int level, const char* record)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
@@ -44,20 +42,14 @@ static void log_sink_record_console(const char* section, int level,
 
 ///@}
 
-
 namespace {
-	/// Auto-registers the sink defined in this file before main() is called
-	struct ConsoleSinkRegistrator {
-		ConsoleSinkRegistrator() {
-			log_backend_registerSink(&log_sink_record_console);
-		}
-		~ConsoleSinkRegistrator() {
-			log_backend_unregisterSink(&log_sink_record_console);
-		}
-	} consoleSinkRegistrator;
+/// Auto-registers the sink defined in this file before main() is called
+struct ConsoleSinkRegistrator
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef __cplusplus
 } // extern "C"
 #endif
-

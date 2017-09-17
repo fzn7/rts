@@ -24,16 +24,14 @@
 
 #include "math_private.h"
 
-
 static const Simple zero = 0.0f;
-
 
 namespace streflop_libm {
 Simple
-__remquof (Simple x, Simple y, int *quo)
+__remquof(Simple x, Simple y, int* quo)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__remquof, remquof)
+weak_alias(__remquof, remquof)
 }

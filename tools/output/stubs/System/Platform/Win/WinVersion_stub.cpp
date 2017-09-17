@@ -55,24 +55,26 @@
 
 #endif
 
-typedef void (WINAPI *PGNSI)(LPSYSTEM_INFO);
-typedef BOOL (WINAPI *PGPI)(DWORD, DWORD, DWORD, DWORD, PDWORD);
+typedef void(WINAPI* PGNSI)(LPSYSTEM_INFO);
+typedef BOOL(WINAPI* PGPI)(DWORD, DWORD, DWORD, DWORD, PDWORD);
 
 #ifndef SM_SERVERR2
 #define SM_SERVERR2 89
 #endif
 
-// this is a modified version of http://msdn.microsoft.com/en-us/library/ms724429(VS.85).aspx
-// always provide a long enough buffer
-std::string GetOSDisplayString()
+// this is a modified version of
+// http://msdn.microsoft.com/en-us/library/ms724429(VS.85).aspx always provide a
+// long enough buffer
+std::string
+GetOSDisplayString()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
 // this tries to read info about the CPU and available memory
-std::string GetHardwareInfoString()
+std::string
+GetHardwareInfoString()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

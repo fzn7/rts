@@ -16,23 +16,24 @@
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: s_nextafterf.c,v 1.4f 1995/05/10 20:48:01 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: s_nextafterf.c,v 1.4f 1995/05/10 20:48:01 jtc Exp $";
 #endif
 
+#include "../streflop_libm_bridge.h"
 #include "SMath.h"
 #include "math_private.h"
-#include "../streflop_libm_bridge.h"
 
 namespace streflop_libm {
 #ifdef __STDC__
-	Simple __nextafterf(Simple x, Simple y)
+Simple
+__nextafterf(Simple x, Simple y)
 #else
-	Simple __nextafterf(x,y)
-	Simple x,y;
+Simple __nextafterf(x, y) Simple x, y;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__nextafterf, nextafterf)
+weak_alias(__nextafterf, nextafterf)
 }

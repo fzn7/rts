@@ -12,13 +12,15 @@ std::map<ALuint, std::string> alParamToName;
 std::map<std::string, ALuint> nameToALFilterParam;
 std::map<ALuint, std::string> alFilterParamToName;
 
-static void InitPresets()
+static void
+InitPresets()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-static void InitConversionTables()
+static void
+InitConversionTables()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

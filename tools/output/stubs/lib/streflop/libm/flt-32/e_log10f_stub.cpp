@@ -16,7 +16,8 @@
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: e_log10f.c,v 1.5f 1995/05/10 20:45:53 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: e_log10f.c,v 1.5f 1995/05/10 20:45:53 jtc Exp $";
 #endif
 
 #include "SMath.h"
@@ -28,22 +29,22 @@ static const Simple
 #else
 static Simple
 #endif
-two25      =  3.3554432000e+07f, /* 0x4c000000 */
-ivln10     =  4.3429449201e-01f, /* 0x3ede5bd9 */
-log10_2hi  =  3.0102920532e-01f, /* 0x3e9a2080 */
-log10_2lo  =  7.9034151668e-07f; /* 0x355427db */
+  two25 = 3.3554432000e+07f,     /* 0x4c000000 */
+  ivln10 = 4.3429449201e-01f,    /* 0x3ede5bd9 */
+  log10_2hi = 3.0102920532e-01f, /* 0x3e9a2080 */
+  log10_2lo = 7.9034151668e-07f; /* 0x355427db */
 
 #ifdef __STDC__
-static const Simple zero   =  0.0f;
+static const Simple zero = 0.0f;
 #else
-static Simple zero   =  0.0f;
+static Simple zero = 0.0f;
 #endif
 
 #ifdef __STDC__
-	Simple __ieee754_log10f(Simple x)
+Simple
+__ieee754_log10f(Simple x)
 #else
-	Simple __ieee754_log10f(x)
-	Simple x;
+Simple __ieee754_log10f(x) Simple x;
 #endif
 {
     //stub method

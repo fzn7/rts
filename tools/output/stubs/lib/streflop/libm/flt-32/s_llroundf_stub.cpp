@@ -24,12 +24,11 @@
 
 #include "math_private.h"
 
-
 long long int
-__llroundf (Simple x)
+__llroundf(Simple x)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-weak_alias (__llroundf, llroundf)
+weak_alias(__llroundf, llroundf)

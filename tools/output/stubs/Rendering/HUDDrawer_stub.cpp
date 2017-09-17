@@ -3,68 +3,76 @@
 
 #include "HUDDrawer.h"
 
-#include "Rendering/Fonts/glFont.h"
-#include "Rendering/GlobalRendering.h"
-#include "Rendering/GL/myGL.h"
 #include "Game/Camera.h"
 #include "Game/GlobalUnsynced.h"
 #include "Game/Players/Player.h"
 #include "Game/Players/PlayerHandler.h"
+#include "Rendering/Fonts/glFont.h"
+#include "Rendering/GL/myGL.h"
+#include "Rendering/GlobalRendering.h"
+#include "Sim/Misc/GlobalSynced.h"
 #include "Sim/MoveTypes/MoveType.h"
 #include "Sim/Units/Unit.h"
 #include "Sim/Weapons/Weapon.h"
 #include "Sim/Weapons/WeaponDef.h"
-#include "Sim/Misc/GlobalSynced.h"
 #include "System/myMath.h"
 
-
-HUDDrawer* HUDDrawer::GetInstance()
+HUDDrawer*
+HUDDrawer::GetInstance()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void HUDDrawer::PushState()
+void
+HUDDrawer::PushState()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-void HUDDrawer::PopState()
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-void HUDDrawer::DrawModel(const CUnit* unit)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-void HUDDrawer::DrawUnitDirectionArrow(const CUnit* unit)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-void HUDDrawer::DrawCameraDirectionArrow(const CUnit* unit)
+void
+HUDDrawer::PopState()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void HUDDrawer::DrawWeaponStates(const CUnit* unit)
+void
+HUDDrawer::DrawModel(const CUnit* unit)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void HUDDrawer::DrawTargetReticle(const CUnit* unit)
+void
+HUDDrawer::DrawUnitDirectionArrow(const CUnit* unit)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+void
+HUDDrawer::DrawCameraDirectionArrow(const CUnit* unit)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void HUDDrawer::Draw(const CUnit* unit)
+void
+HUDDrawer::DrawWeaponStates(const CUnit* unit)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+HUDDrawer::DrawTargetReticle(const CUnit* unit)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+
+void
+HUDDrawer::Draw(const CUnit* unit)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

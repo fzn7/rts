@@ -10,13 +10,14 @@
  *
  * Developed at SunPro, a Sun Microsystems, Inc. business.
  * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice 
+ * software is freely granted, provided that this notice
  * is preserved.
  * ====================================================
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: e_acoshf.c,v 1.5f 1995/05/12 04:57:20 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: e_acoshf.c,v 1.5f 1995/05/12 04:57:20 jtc Exp $";
 #endif
 
 #include "SMath.h"
@@ -24,18 +25,18 @@ static char rcsid[] = "$NetBSD: e_acoshf.c,v 1.5f 1995/05/12 04:57:20 jtc Exp $"
 
 namespace streflop_libm {
 #ifdef __STDC__
-static const Simple 
+static const Simple
 #else
-static Simple 
+static Simple
 #endif
-one	= 1.0f,
-ln2	= 6.9314718246e-01f;  /* 0x3f317218 */
+  one = 1.0f,
+  ln2 = 6.9314718246e-01f; /* 0x3f317218 */
 
 #ifdef __STDC__
-	Simple __ieee754_acoshf(Simple x)
+Simple
+__ieee754_acoshf(Simple x)
 #else
-	Simple __ieee754_acoshf(x)
-	Simple x;
+Simple __ieee754_acoshf(x) Simple x;
 #endif
 {
     //stub method

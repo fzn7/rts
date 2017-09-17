@@ -6,58 +6,71 @@
  * Error handling based on platform.
  */
 
-
 #include "errorhandler.h"
 
-#include <string>
-#include <sstream>
-#include <boost/bind.hpp>
-#include <boost/thread.hpp>
 #include "Game/GlobalUnsynced.h"
 #include "System/Log/ILog.h"
 #include "System/Log/LogSinkHandler.h"
 #include "System/Util.h"
+#include <boost/bind.hpp>
+#include <boost/thread.hpp>
+#include <sstream>
+#include <string>
 
 #if !defined(DEDICATED) || defined(_MSC_VER)
-	#include "System/SpringApp.h"
-	#include "System/Platform/Threading.h"
-	#include "System/Platform/Watchdog.h"
+#include "System/SpringApp.h"
+#include "System/Platform/Threading.h"
+#include "System/Platform/Watchdog.h"
 #endif
 #if !defined(DEDICATED) && !defined(HEADLESS)
-	#include "System/Platform/MessageBox.h"
+#include "System/Platform/MessageBox.h"
 #endif
 #ifdef DEDICATED
-	#include "Net/GameServer.h"
+#include "Net/GameServer.h"
 #endif
 
-static void ExitMessage(const std::string& msg, const std::string& caption, unsigned int flags, bool forced)
+static void
+ExitMessage(const std::string& msg,
+            const std::string& caption,
+            unsigned int flags,
+            bool forced)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
 volatile bool shutdownSucceeded = false;
 
 __FORCE_ALIGN_STACK__
-void ForcedExit(const std::string& msg, const std::string& caption, unsigned int flags) {
-
-	for (unsigned int n = 0; !shutdownSucceeded && (n < 10); ++n) {
-		boost::this_thread::sleep(boost::posix_time::seconds(1));
-	}
-
-	if (!shutdownSucceeded) {
-		ExitMessage(msg, caption, flags, true);
-	}
+void
+ForcedExit(const std::string& msg,
+           const std::string& caption,
+           unsigned int flags)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void ErrorMessageBox(const std::string& msg, const std::string& caption, unsigned int flags, bool fromMain)
+void
+ErrorMessageBox(const std::string& msg,
+                const std::string& caption,
+                unsigned int flags,
+                bool fromMain)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
 static int exitcode = 0;
-void SetExitCode(int code) { exitcode = code; }
-int GetExitCode() { return exitcode; }
-
+void
+SetExitCode(int code)
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}
+int
+GetExitCode()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
+}

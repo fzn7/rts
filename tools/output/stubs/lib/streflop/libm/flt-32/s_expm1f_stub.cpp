@@ -16,7 +16,8 @@
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: s_expm1f.c,v 1.5f 1995/05/10 20:47:11 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: s_expm1f.c,v 1.5f 1995/05/10 20:47:11 jtc Exp $";
 #endif
 
 #include "SMath.h"
@@ -31,27 +32,27 @@ static const Simple
 #else
 static Simple
 #endif
-one		= 1.0f,
-o_threshold	= 8.8721679688e+01f,/* 0x42b17180 */
-ln2_hi		= 6.9313812256e-01f,/* 0x3f317180 */
-ln2_lo		= 9.0580006145e-06f,/* 0x3717f7d1 */
-invln2		= 1.4426950216e+00f,/* 0x3fb8aa3b */
-	/* scaled coefficients related to expm1 */
-Q1  =  -3.3333335072e-02f, /* 0xbd088889 */
-Q2  =   1.5873016091e-03f, /* 0x3ad00d01 */
-Q3  =  -7.9365076090e-05f, /* 0xb8a670cd */
-Q4  =   4.0082177293e-06f, /* 0x36867e54 */
-Q5  =  -2.0109921195e-07f; /* 0xb457edbb */
+  one = 1.0f,
+  o_threshold = 8.8721679688e+01f, /* 0x42b17180 */
+  ln2_hi = 6.9313812256e-01f,      /* 0x3f317180 */
+  ln2_lo = 9.0580006145e-06f,      /* 0x3717f7d1 */
+  invln2 = 1.4426950216e+00f,      /* 0x3fb8aa3b */
+                                   /* scaled coefficients related to expm1 */
+  Q1 = -3.3333335072e-02f,         /* 0xbd088889 */
+  Q2 = 1.5873016091e-03f,          /* 0x3ad00d01 */
+  Q3 = -7.9365076090e-05f,         /* 0xb8a670cd */
+  Q4 = 4.0082177293e-06f,          /* 0x36867e54 */
+  Q5 = -2.0109921195e-07f;         /* 0xb457edbb */
 
 #ifdef __STDC__
-	Simple __expm1f(Simple x)
+Simple
+__expm1f(Simple x)
 #else
-	Simple __expm1f(x)
-	Simple x;
+Simple __expm1f(x) Simple x;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__expm1f, expm1f)
+weak_alias(__expm1f, expm1f)
 }

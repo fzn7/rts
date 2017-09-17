@@ -4,12 +4,12 @@
 #include "AudioChannel.h"
 
 #include "ALShared.h"
-#include "System/Sound/ISound.h"
-#include "SoundItem.h"
-#include "System/Sound/SoundLog.h"
-#include "SoundSource.h"
 #include "Sim/Misc/GuiSoundSet.h"
 #include "Sim/Objects/WorldObject.h"
+#include "SoundItem.h"
+#include "SoundSource.h"
+#include "System/Sound/ISound.h"
+#include "System/Sound/SoundLog.h"
 
 #include <climits>
 
@@ -17,106 +17,116 @@ extern boost::recursive_mutex soundMutex;
 
 const size_t AudioChannel::MAX_STREAM_QUEUESIZE = 10;
 
-
 AudioChannel::AudioChannel()
-	: curStreamSrc(NULL)
+  : curStreamSrc(NULL)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void AudioChannel::SetVolume(float newVolume)
+void
+AudioChannel::Enable(bool newState)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void AudioChannel::Enable(bool newState)
+void
+AudioChannel::SoundSourceFinished(CSoundSource* sndSource)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void AudioChannel::SoundSourceFinished(CSoundSource* sndSource)
+void
+AudioChannel::FindSourceAndPlay(size_t id,
+                                const float3& pos,
+                                const float3& velocity,
+                                float volume,
+                                bool relative)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void AudioChannel::FindSourceAndPlay(size_t id, const float3& pos, const float3& velocity, float volume, bool relative)
+void
+AudioChannel::PlaySample(size_t id, float volume)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AudioChannel::PlaySample(size_t id, float volume)
+void
+AudioChannel::PlaySample(size_t id, const float3& pos, float volume)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AudioChannel::PlaySample(size_t id, const float3& pos, float volume)
+void
+AudioChannel::PlaySample(size_t id,
+                         const float3& pos,
+                         const float3& velocity,
+                         float volume)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AudioChannel::PlaySample(size_t id, const float3& pos, const float3& velocity, float volume)
+void
+AudioChannel::PlaySample(size_t id, const CWorldObject* obj, float volume)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void AudioChannel::PlaySample(size_t id, const CWorldObject* obj, float volume)
+void
+AudioChannel::PlayRandomSample(const GuiSoundSet& soundSet,
+                               const CWorldObject* obj)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void AudioChannel::PlayRandomSample(const GuiSoundSet& soundSet, const CWorldObject* obj)
+void
+AudioChannel::PlayRandomSample(const GuiSoundSet& soundSet, const float3& pos)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AudioChannel::PlayRandomSample(const GuiSoundSet& soundSet, const float3& pos)
+void
+AudioChannel::StreamPlay(const std::string& filepath,
+                         float volume,
+                         bool enqueue)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void AudioChannel::StreamPlay(const std::string& filepath, float volume, bool enqueue)
+void
+AudioChannel::StreamPause()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AudioChannel::StreamPause()
+void
+AudioChannel::StreamStop()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void AudioChannel::StreamStop()
+float
+AudioChannel::StreamGetTime()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-float AudioChannel::StreamGetTime()
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
-float AudioChannel::StreamGetPlayTime()
+float
+AudioChannel::StreamGetPlayTime()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

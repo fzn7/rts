@@ -10,7 +10,7 @@
  *
  * Developed at SunPro, a Sun Microsystems, Inc. business.
  * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice 
+ * software is freely granted, provided that this notice
  * is preserved.
  * ====================================================
  */
@@ -30,14 +30,14 @@ static Simple huge = 1.0e30f;
 #endif
 
 #ifdef __STDC__
-	Simple __ceilf(Simple x)
+Simple
+__ceilf(Simple x)
 #else
-	Simple __ceilf(x)
-	Simple x;
+Simple __ceilf(x) Simple x;
 #endif
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-weak_alias (__ceilf, ceilf)
+weak_alias(__ceilf, ceilf)
 }

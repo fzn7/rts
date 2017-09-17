@@ -3,7 +3,6 @@
 
 #include "CommandColors.h"
 
-
 #include "Rendering/GL/myGL.h"
 #include "System/FileSystem/FileHandler.h"
 #include "System/FileSystem/SimpleParser.h"
@@ -11,19 +10,17 @@
 
 #include <cstdio>
 #include <cstring>
+#include <map>
 #include <string>
 #include <vector>
-#include <map>
 
+using std::map;
 using std::string;
 using std::vector;
-using std::map;
 
 /******************************************************************************/
 
-
 CCommandColors cmdColors;
-
 
 CCommandColors::CCommandColors()
 {
@@ -31,85 +28,79 @@ CCommandColors::CCommandColors()
     std::cout << _FUNCTION_ << std::endl;
 }
 
+CCommandColors::~CCommandColors() {}
 
-CCommandColors::~CCommandColors()
+static bool
+ParseBlendMode(const string& word, unsigned int& mode)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static bool ParseBlendMode(const string& word, unsigned int& mode)
+static bool
+IsValidSrcMode(unsigned int mode)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static bool IsValidSrcMode(unsigned int mode)
+static bool
+IsValidDstMode(unsigned int mode)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-
-static bool IsValidDstMode(unsigned int mode)
+static bool
+SafeAtoF(float& var, const string& value)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static bool SafeAtoF(float& var, const string& value)
+static bool
+SafeAtoI(unsigned int& var, const string& value)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-static bool SafeAtoI(unsigned int& var, const string& value)
+bool
+CCommandColors::LoadConfigFromFile(const string& filename)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CCommandColors::LoadConfigFromFile(const string& filename)
+bool
+CCommandColors::LoadConfigFromString(const string& cfg)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-bool CCommandColors::LoadConfigFromString(const string& cfg)
+void
+CCommandColors::SetCustomCmdData(int cmdID,
+                                 int cmdIconID,
+                                 const float color[4],
+                                 bool showArea)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-
-void CCommandColors::SetCustomCmdData(int cmdID, int cmdIconID,
-                                      const float color[4], bool showArea)
+void
+CCommandColors::ClearCustomCmdData(int cmdID)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
-
-void CCommandColors::ClearCustomCmdData(int cmdID)
-{
-    //stub method
-    std::cout << _FUNCTION_ << std::endl;
-}
-
 
 const CCommandColors::DrawData*
-	CCommandColors::GetCustomCmdData(int cmdID) const
+CCommandColors::GetCustomCmdData(int cmdID) const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
-
 
 /******************************************************************************/

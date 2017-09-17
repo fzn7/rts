@@ -3,8 +3,8 @@
 
 #include "IAILibraryManager.h"
 
-#include "AILibraryManager.h"
 #include "AIInterfaceKey.h"
+#include "AILibraryManager.h"
 #include "SkirmishAIKey.h"
 #include "System/FileSystem/SimpleParser.h" // for Split()
 
@@ -14,104 +14,45 @@
 
 IAILibraryManager* IAILibraryManager::gAILibraryManager = NULL;
 
-IAILibraryManager* IAILibraryManager::GetInstance() {
-	if (gAILibraryManager == NULL)
-		gAILibraryManager = new CAILibraryManager();
-
-	return gAILibraryManager;
+IAILibraryManager*
+IAILibraryManager::GetInstance()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void IAILibraryManager::Destroy() {
-	// SafeDelete
-	IAILibraryManager* tmp = gAILibraryManager;
-	gAILibraryManager = NULL;
-	delete tmp;
+void
+IAILibraryManager::Destroy()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void IAILibraryManager::OutputAIInterfacesInfo() {
-
-	const IAILibraryManager* myLibManager = IAILibraryManager::GetInstance();
-	const T_interfaceSpecs& keys =
-			myLibManager->GetInterfaceKeys();
-
-	printf("#\n");
-	printf("# Available Spring Skirmish AIs\n");
-	printf("# -----------------------------\n");
-	printf("# %-20s %s\n", "[Name]", "[Version]");
-
-	T_interfaceSpecs::const_iterator key;
-	for (key = keys.begin(); key != keys.end(); ++key) {
-		printf("  %-20s %s\n",
-				key->GetShortName().c_str(), key->GetVersion().c_str());
-	}
-
-	printf("#\n");
+void
+IAILibraryManager::OutputAIInterfacesInfo()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-SkirmishAIKey IAILibraryManager::ResolveSkirmishAIKey(
-		const SkirmishAIKey& skirmishAIKey) const {
-
-	std::vector<SkirmishAIKey> fittingKeys
-			= FittingSkirmishAIKeys(skirmishAIKey);
-	if (!fittingKeys.empty()) {
-		// look for the one with the highest version number,
-		// in case there are multiple fitting ones.
-		size_t bestIndex = 0;
-		const std::string* bestVersion = &(fittingKeys[0].GetVersion());
-		for (size_t k = 1; k < fittingKeys.size(); ++k) {
-			if (IAILibraryManager::VersionCompare(fittingKeys[k].GetVersion(), *bestVersion) > 0) {
-				bestIndex = k;
-				bestVersion = &(fittingKeys[k].GetVersion());
-			}
-		}
-		bestVersion = NULL;
-		return fittingKeys[bestIndex];
-	} else {
-		return SkirmishAIKey();
-	}
+SkirmishAIKey
+IAILibraryManager::ResolveSkirmishAIKey(
+  const SkirmishAIKey& skirmishAIKey) const
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-void IAILibraryManager::OutputSkirmishAIInfo() {
-
-	const IAILibraryManager* myLibManager = IAILibraryManager::GetInstance();
-	const T_skirmishAIKeys& keys = myLibManager->GetSkirmishAIKeys();
-
-	printf("#\n");
-	printf("# Available Spring Skirmish AIs\n");
-	printf("# -----------------------------\n");
-	printf("# %-20s %-20s %-20s %s\n",
-			"[Name]", "[Version]", "[Interface-name]", "[Interface-version]");
-
-	T_skirmishAIKeys::const_iterator key;
-	for (key = keys.begin(); key != keys.end(); ++key) {
-		printf("# %-20s %-20s %-20s %s\n",
-				key->GetShortName().c_str(),
-				key->GetVersion().c_str(),
-				key->GetInterface().GetShortName().c_str(),
-				key->GetInterface().GetVersion().c_str());
-	}
-
-	const T_dupSkirm& duplicateSkirmishAIInfos =
-			myLibManager->GetDuplicateSkirmishAIInfos();
-	for (T_dupSkirm::const_iterator info = duplicateSkirmishAIInfos.begin();
-			info != duplicateSkirmishAIInfos.end(); ++info) {
-		printf("# WARNING: Duplicate Skirmish AI Info found:\n");
-		printf("# \tfor Skirmish AI: %s %s\n",
-				info->first.GetShortName().c_str(),
-				info->first.GetVersion().c_str());
-		printf("# \tin files:\n");
-		std::set<std::string>::const_iterator dir;
-		for (dir = info->second.begin(); dir != info->second.end(); ++dir) {
-			printf("# \t%s\n", dir->c_str());
-		}
-	}
-
-	printf("#\n");
+void
+IAILibraryManager::OutputSkirmishAIInfo()
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
-int IAILibraryManager::VersionCompare(
-		const std::string& version1,
-		const std::string& version2)
+int
+IAILibraryManager::VersionCompare(const std::string& version1,
+                                  const std::string& version2)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

@@ -4,9 +4,10 @@
 #include "ProjectileFunctors.h"
 #include "Projectile.h"
 
-
-bool ProjectileDistanceComparator::operator() (const CProjectile* arg1, const CProjectile* arg2) const {
-	if (arg1->GetSortDist() != arg2->GetSortDist()) // strict ordering required
-		return (arg1->GetSortDist() > arg2->GetSortDist());
-	return (arg1 > arg2);
+bool
+ProjectileDistanceComparator::operator()(const CProjectile* arg1,
+                                         const CProjectile* arg2) const
+{
+    //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

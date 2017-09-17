@@ -3,7 +3,5 @@
 
 #include "Color.h"
 
-CR_BIND(SColor, (0,0,0,0))
-CR_REG_METADATA(SColor,(
-	CR_MEMBER(i)
-))
+CR_BIND(SColor, (0, 0, 0, 0))
+CR_REG_METADATA(SColor, (CR_MEMBER(i)))

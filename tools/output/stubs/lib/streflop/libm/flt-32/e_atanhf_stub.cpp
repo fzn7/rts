@@ -10,13 +10,14 @@
  *
  * Developed at SunPro, a Sun Microsystems, Inc. business.
  * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice 
+ * software is freely granted, provided that this notice
  * is preserved.
  * ====================================================
  */
 
 #if defined(LIBM_SCCS) && !defined(lint)
-static char rcsid[] = "$NetBSD: e_atanhf.c,v 1.4f 1995/05/10 20:44:56 jtc Exp $";
+static char rcsid[] =
+  "$NetBSD: e_atanhf.c,v 1.4f 1995/05/10 20:44:56 jtc Exp $";
 #endif
 
 #include "SMath.h"
@@ -36,10 +37,10 @@ static Simple zero = 0.0f;
 #endif
 
 #ifdef __STDC__
-	Simple __ieee754_atanhf(Simple x)
+Simple
+__ieee754_atanhf(Simple x)
 #else
-	Simple __ieee754_atanhf(x)
-	Simple x;
+Simple __ieee754_atanhf(x) Simple x;
 #endif
 {
     //stub method

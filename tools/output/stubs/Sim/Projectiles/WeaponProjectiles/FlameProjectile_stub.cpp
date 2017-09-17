@@ -1,7 +1,6 @@
 #include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
-
 #include "FlameProjectile.h"
 #include "Game/Camera.h"
 #include "Map/Ground.h"
@@ -14,50 +13,56 @@
 
 CR_BIND_DERIVED(CFlameProjectile, CWeaponProjectile, )
 
-CR_REG_METADATA(CFlameProjectile,(
-	CR_SETFLAG(CF_Synced),
-	CR_MEMBER(spread),
-	CR_MEMBER(curTime),
-	CR_MEMBER(physLife),
-	CR_MEMBER(invttl)
-))
+CR_REG_METADATA(CFlameProjectile,
+                (CR_SETFLAG(CF_Synced),
+                 CR_MEMBER(spread),
+                 CR_MEMBER(curTime),
+                 CR_MEMBER(physLife),
+                 CR_MEMBER(invttl)))
 
-
-CFlameProjectile::CFlameProjectile(const ProjectileParams& params):CWeaponProjectile(params)
-	, curTime(0.0f)
-	, physLife(0.0f)
-	, invttl(1.0f / ttl)
-	, spread(params.spread)
+CFlameProjectile::CFlameProjectile(const ProjectileParams& params)
+  : CWeaponProjectile(params)
+  , curTime(0.0f)
+  , physLife(0.0f)
+  , invttl(1.0f / ttl)
+  , spread(params.spread)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CFlameProjectile::Collision()
+void
+CFlameProjectile::Collision()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CFlameProjectile::Update()
+void
+CFlameProjectile::Update()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-void CFlameProjectile::Draw()
+void
+CFlameProjectile::Draw()
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-int CFlameProjectile::ShieldRepulse(const float3& shieldPos, float shieldForce, float shieldMaxSpeed)
+int
+CFlameProjectile::ShieldRepulse(const float3& shieldPos,
+                                float shieldForce,
+                                float shieldMaxSpeed)
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;
 }
 
-int CFlameProjectile::GetProjectilesCount() const
+int
+CFlameProjectile::GetProjectilesCount() const
 {
     //stub method
     std::cout << _FUNCTION_ << std::endl;

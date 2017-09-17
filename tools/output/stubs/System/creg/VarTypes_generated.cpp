@@ -19,80 +19,99 @@ using std::string;
 
 // type instance allocators
 
-void BasicType::Serialize(ISerializer* s, void* inst)
+void
+BasicType::Serialize(ISerializer* s, void* inst)
 {
-	s->SerializeInt(inst, GetSize());
+    s->SerializeInt(inst, GetSize());
 }
 
-std::string BasicType::GetName() const
+std::string
+BasicType::GetName() const
 {
-	switch(id) {
+    switch (id) {
 #if defined(SYNCDEBUG) || defined(SYNCCHECK)
-		case crSyncedInt:   return "synced int";
-		case crSyncedFloat: return "synced float";
+        case crSyncedInt:
+            return "synced int";
+        case crSyncedFloat:
+            return "synced float";
 #endif
-		case crInt:   return "int";
-		case crFloat: return "float";
-	};
-	return std::string();
+        case crInt:
+            return "int";
+        case crFloat:
+            return "float";
+    };
+    return std::string();
 }
 
-size_t BasicType::GetSize() const
+size_t
+BasicType::GetSize() const
 {
-	return size;
+    return size;
 }
 
-boost::shared_ptr<IType> IType::CreateBasicType(BasicTypeID t, size_t size)
+boost::shared_ptr<IType>
+IType::CreateBasicType(BasicTypeID t, size_t size)
 {
-	return boost::shared_ptr<IType>(new BasicType(t, size));
+    return boost::shared_ptr<IType>(new BasicType(t, size));
 }
 
-std::string StringType::GetName() const
+std::string
+StringType::GetName() const
 {
-	return "string";
+    return "string";
 }
 
-size_t StringType::GetSize() const
+size_t
+StringType::GetSize() const
 {
-	return sizeof(std::string);
+    return sizeof(std::string);
 }
 
-StringType::StringType(boost::shared_ptr<IType> charType) : DynamicArrayType<string>(charType) {}
+StringType::StringType(boost::shared_ptr<IType> charType)
+  : DynamicArrayType<string>(charType)
+{}
 
-boost::shared_ptr<IType> IType::CreateStringType()
+boost::shared_ptr<IType>
+IType::CreateStringType()
 {
-	DeduceType<char> charType;
-	return boost::shared_ptr<IType>(new StringType(charType.Get()));
+    DeduceType<char> charType;
+    return boost::shared_ptr<IType>(new StringType(charType.Get()));
 }
 
-void ObjectInstanceType::Serialize(ISerializer* s, void* inst)
+void
+ObjectInstanceType::Serialize(ISerializer* s, void* inst)
 {
-	s->SerializeObjectInstance(inst, objectClass);
+    s->SerializeObjectInstance(inst, objectClass);
 }
 
-std::string ObjectInstanceType::GetName() const
+std::string
+ObjectInstanceType::GetName() const
 {
-	return objectClass->name;
+    return objectClass->name;
 }
 
-size_t ObjectInstanceType::GetSize() const
+size_t
+ObjectInstanceType::GetSize() const
 {
-	return objectClass->size;
+    return objectClass->size;
 }
 
-boost::shared_ptr<IType> IType::CreateObjInstanceType(Class* objectType)
+boost::shared_ptr<IType>
+IType::CreateObjInstanceType(Class* objectType)
 {
-	return boost::shared_ptr<IType>(new ObjectInstanceType(objectType));
+    return boost::shared_ptr<IType>(new ObjectInstanceType(objectType));
 }
 
-string StaticArrayBaseType::GetName() const
+string
+StaticArrayBaseType::GetName() const
 {
-	char sstr[16];
-	SNPRINTF(sstr, 16, "%d", size);
-	return elemType->GetName() + "[" + std::string(sstr) + "]";
+    char sstr[16];
+    SNPRINTF(sstr, 16, "%d", size);
+    return elemType->GetName() + "[" + std::string(sstr) + "]";
 }
 
-boost::shared_ptr<IType> IType::CreateIgnoredType(size_t size)
+boost::shared_ptr<IType>
+IType::CreateIgnoredType(size_t size)
 {
-	return boost::shared_ptr<IType>(new IgnoredType(size));
+    return boost::shared_ptr<IType>(new IgnoredType(size));
 }
