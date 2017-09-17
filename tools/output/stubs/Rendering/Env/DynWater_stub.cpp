@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -45,46 +46,55 @@ CDynWater::CDynWater()
 	, camPosZ(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CDynWater::~CDynWater()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::UpdateWater(CGame* game)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::DrawReflection(CGame* game)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::DrawRefraction(CGame* game)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::DrawWaves()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::DrawHeightTex()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -97,45 +107,54 @@ static CVertexArray* va;
 static inline void DrawVertexAQ(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::DrawWaterSurface()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::DrawDetailNormalTex()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::AddShipWakes()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::AddExplosions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::AddExplosion(const float3& pos, float strength, float size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::DrawUpdateSquare(float dx, float dy, int* resetTexs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::DrawSingleUpdateSquare(float startx, float starty, float endx, float endy)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDynWater::DrawOuterSurface()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

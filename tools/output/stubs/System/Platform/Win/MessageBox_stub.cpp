@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/Platform/MessageBox.h"
@@ -12,6 +13,7 @@ namespace Platform {
 void MsgBox(const std::string& message, const std::string& caption, const unsigned int& flags)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 }; //namespace Platform

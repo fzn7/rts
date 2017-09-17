@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <boost/cstdint.hpp>
@@ -43,75 +44,88 @@ CFreeController::CFreeController()
   gndLock(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFreeController::SetTrackingInfo(const float3& target, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFreeController::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CFreeController::GetDir() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFreeController::KeyMove(float3 move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFreeController::MouseMove(float3 move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFreeController::ScreenEdgeMove(float3 move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFreeController::MouseWheelMove(float move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFreeController::SetPos(const float3& newPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CFreeController::SwitchFrom() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFreeController::SwitchTo(const int oldCam, const bool showText)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFreeController::GetState(StateMap& sm) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CFreeController::SetState(const StateMap& sm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "BeamLaser.h"
@@ -51,6 +52,7 @@ CR_REG_METADATA_SUB(CBeamLaser, SweepFireState, (
 void CBeamLaser::SweepFireState::Init(const float3& newTargetPos, const float3& muzzlePos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CBeamLaser::SweepFireState::GetTargetDist2D() const {
@@ -74,6 +76,7 @@ CBeamLaser::CBeamLaser(CUnit* owner, const WeaponDef* def)
 	, salvoDamageMult(1.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -81,39 +84,47 @@ CBeamLaser::CBeamLaser(CUnit* owner, const WeaponDef* def)
 void CBeamLaser::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBeamLaser::UpdatePosAndMuzzlePos()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CBeamLaser::GetPredictedImpactTime(float3 p) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBeamLaser::UpdateSweep()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBeamLaser::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CBeamLaser::GetFireDir(bool sweepFire, bool scriptCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBeamLaser::FireImpl(const bool scriptCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBeamLaser::FireInternal(float3 curDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

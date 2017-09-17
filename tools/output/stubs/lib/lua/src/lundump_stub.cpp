@@ -1,3 +1,4 @@
+#include <iostream>
 /*
 ** $Id: lundump.c,v 2.7.1.4 2008/04/04 19:51:41 roberto Exp $
 ** load precompiled Lua chunks
@@ -36,6 +37,7 @@ typedef struct {
 static void error(LoadState* S, const char* why)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 
@@ -47,31 +49,37 @@ static void error(LoadState* S, const char* why)
 static void LoadBlock(LoadState* S, void* b, size_t size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int LoadChar(LoadState* S)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int LoadInt(LoadState* S)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static lua_Number LoadNumber(LoadState* S)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static TString* LoadString(LoadState* S)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void LoadCode(LoadState* S, Proto* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static Proto* LoadFunction(LoadState* S, TString* p);
@@ -79,21 +87,25 @@ static Proto* LoadFunction(LoadState* S, TString* p);
 static void LoadConstants(LoadState* S, Proto* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void LoadDebug(LoadState* S, Proto* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static Proto* LoadFunction(LoadState* S, TString* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void LoadHeader(LoadState* S)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*
@@ -102,6 +114,7 @@ static void LoadHeader(LoadState* S)
 Proto* luaU_undump (lua_State* L, ZIO* Z, Mbuffer* buff, const char* name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*
@@ -110,4 +123,5 @@ Proto* luaU_undump (lua_State* L, ZIO* Z, Mbuffer* buff, const char* name)
 void luaU_header (char* h)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

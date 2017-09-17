@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Single-precision floating point 2^x.
    Copyright (C) 1997,1998,2000,2001,2005,2006 Free Software Foundation, Inc.
@@ -47,5 +48,6 @@ Simple
 __ieee754_exp2f (Simple x)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

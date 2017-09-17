@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -27,11 +28,13 @@ CPathManager::CPathManager()
 , nextPathID(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CPathManager::~CPathManager()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 boost::int64_t CPathManager::Finalize() {
@@ -56,6 +59,7 @@ boost::int64_t CPathManager::Finalize() {
 void CPathManager::FinalizePath(MultiPath* path, const float3 startPos, const float3 goalPos, const bool cantGetCloser)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -339,6 +343,7 @@ Store a new multipath into the pathmap.
 unsigned int CPathManager::Store(MultiPath* path)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -346,12 +351,14 @@ unsigned int CPathManager::Store(MultiPath* path)
 void CPathManager::MedRes2MaxRes(MultiPath& multiPath, const float3& startPos, const CSolidObject* owner, bool synced) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // converts part of a low-res path into a med-res path
 void CPathManager::LowRes2MedRes(MultiPath& multiPath, const float3& startPos, const CSolidObject* owner, bool synced) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -492,12 +499,14 @@ void CPathManager::TerrainChange(unsigned int x1, unsigned int z1, unsigned int 
 void CPathManager::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // used to deposit heat on the heat-map as a unit moves along its path
 void CPathManager::UpdatePath(const CSolidObject* owner, unsigned int pathID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -506,11 +515,13 @@ void CPathManager::UpdatePath(const CSolidObject* owner, unsigned int pathID)
 void CPathManager::GetDetailedPath(unsigned pathID, std::vector<float3>& points) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPathManager::GetDetailedPathSquares(unsigned pathID, std::vector<int2>& points) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "MetalExtraction.h"
@@ -19,16 +20,19 @@ CMetalExtractionTexture::CMetalExtractionTexture()
 , updateN(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMetalExtractionTexture::IsUpdateNeeded()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMetalExtractionTexture::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

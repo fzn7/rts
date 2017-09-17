@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LuaShaderContainer.h"
@@ -23,12 +24,14 @@ enum {
 static void ParseUniformsTable(Shader::IProgramObject* program, const LuaTable* root, const std::string& fieldName, int type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void ParseUniformSetupTables(Shader::IProgramObject* program, const LuaTable* root)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -73,6 +76,7 @@ static void ParseShaderTable(
 static void LoadTextures(Shader::IProgramObject* program, const LuaTable* root)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -80,5 +84,6 @@ namespace Shader {
 bool LoadFromLua(Shader::IProgramObject* program, const std::string& filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 };

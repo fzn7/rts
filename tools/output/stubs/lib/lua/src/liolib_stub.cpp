@@ -1,3 +1,4 @@
+#include <iostream>
 /*
 ** $Id: liolib.c,v 2.73.1.4 2010/05/14 15:33:51 roberto Exp $
 ** Standard I/O (and system) library
@@ -32,6 +33,7 @@ static const char *const fnames[] = {"input", "output"};
 static FILE* lua_fopen(lua_State* L, const char* filename, const char* mode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

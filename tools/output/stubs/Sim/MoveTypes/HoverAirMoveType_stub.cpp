@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -93,47 +94,56 @@ CHoverAirMoveType::CHoverAirMoveType(CUnit* owner) :
 	lastMoveRate(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CHoverAirMoveType::SetGoal(const float3& pos, float distance)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::SetState(AircraftState newState)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::SetAllowLanding(bool allowLanding)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::StartMoving(float3 pos, float goalRadius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::StartMoving(float3 pos, float goalRadius, float speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::KeepPointingTo(float3 pos, float distance, bool aggressive)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::ExecuteStop()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::StopMoving(bool callScript, bool hardStop)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -141,11 +151,13 @@ void CHoverAirMoveType::StopMoving(bool callScript, bool hardStop)
 void CHoverAirMoveType::UpdateLanded()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::UpdateTakeoff()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -153,12 +165,14 @@ void CHoverAirMoveType::UpdateTakeoff()
 void CHoverAirMoveType::UpdateHovering()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CHoverAirMoveType::UpdateFlying()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -166,6 +180,7 @@ void CHoverAirMoveType::UpdateFlying()
 void CHoverAirMoveType::UpdateLanding()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -173,66 +188,78 @@ void CHoverAirMoveType::UpdateLanding()
 void CHoverAirMoveType::UpdateHeading()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::UpdateBanking(bool noBanking)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CHoverAirMoveType::UpdateVerticalSpeed(const float4& spd, float curRelHeight, float curVertSpeed) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CHoverAirMoveType::UpdateAirPhysics()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CHoverAirMoveType::UpdateMoveRate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CHoverAirMoveType::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /// Returns true if indicated position is a suitable landing spot
 bool CHoverAirMoveType::CanLandAt(const float3& pos) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::ForceHeading(short h)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::Takeoff()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHoverAirMoveType::Land()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CHoverAirMoveType::HandleCollisions(bool checkCollisions)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

@@ -19,21 +19,25 @@ using std::string;
 ConfigVariable::MetaDataMap& ConfigVariable::GetMutableMetaDataMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const ConfigVariable::MetaDataMap& ConfigVariable::GetMetaDataMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ConfigVariable::AddMetaData(const ConfigVariableMetaData* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const ConfigVariableMetaData* ConfigVariable::GetMetaData(const string& key)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef DEBUG
@@ -49,6 +53,7 @@ CONFIG(std::string, test)
 static inline string Quote(const string& type, const string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -57,6 +62,7 @@ static inline string Quote(const string& type, const string& value)
 static std::ostream& operator<< (std::ostream& out, const ConfigVariableMetaData* d)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -70,4 +76,5 @@ static std::ostream& operator<< (std::ostream& out, const ConfigVariableMetaData
 void ConfigVariable::OutputMetaDataMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

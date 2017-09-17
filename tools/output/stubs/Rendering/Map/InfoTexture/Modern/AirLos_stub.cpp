@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "AirLos.h"
@@ -17,22 +18,26 @@ CAirLosTexture::CAirLosTexture()
 , uploadTex(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CAirLosTexture::~CAirLosTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CAirLosTexture::UpdateCPU()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CAirLosTexture::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

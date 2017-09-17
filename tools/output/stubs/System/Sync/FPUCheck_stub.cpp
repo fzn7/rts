@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #ifdef USE_VALGRIND
@@ -70,11 +71,13 @@ MaskRsvd:    0    0    0  1  1  1  1  1|   0    0   1  1  1  1  1  1 = 0x1F3F
 void good_fpu_control_registers(const char* text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void good_fpu_init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 namespace springproc {

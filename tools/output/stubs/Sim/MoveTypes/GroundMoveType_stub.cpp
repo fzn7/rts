@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "GroundMoveType.h"
@@ -186,16 +187,19 @@ CGroundMoveType::CGroundMoveType(CUnit* owner):
 	wantedHeading(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGroundMoveType::~CGroundMoveType()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGroundMoveType::OwnerMoved(const short oldHeading, const float3& posDif, const float3& cmpEps) {
@@ -248,16 +252,19 @@ bool CGroundMoveType::OwnerMoved(const short oldHeading, const float3& posDif, c
 bool CGroundMoveType::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::UpdateOwnerSpeedAndHeading()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -350,11 +357,13 @@ void CGroundMoveType::StopMoving(bool callScript, bool hardStop) {
 bool CGroundMoveType::FollowPath()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::ChangeSpeed(float newWantedSpeed, bool wantReverse, bool fpsMode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*
@@ -385,26 +394,31 @@ void CGroundMoveType::ChangeHeading(short newHeading) {
 bool CGroundMoveType::CanApplyImpulse(const float3& impulse)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::UpdateSkid()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::UpdateControlledDrop()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::CheckCollisionSkid()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::CalcSkidRot()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -579,6 +593,7 @@ float3 CGroundMoveType::GetObstacleAvoidanceDir(const float3& desiredDir) {
 float CGroundMoveType::Distance2D(CSolidObject* object1, CSolidObject* object2, float marginal)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 
@@ -586,6 +601,7 @@ float CGroundMoveType::Distance2D(CSolidObject* object1, CSolidObject* object2, 
 unsigned int CGroundMoveType::GetNewPath()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::ReRequestPath(bool forceRequest) {
@@ -719,6 +735,7 @@ bool CGroundMoveType::CanGetNextWayPoint() {
 void CGroundMoveType::GetNextWayPoint()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -731,6 +748,7 @@ from current velocity.
 float3 CGroundMoveType::Here()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -776,6 +794,7 @@ void CGroundMoveType::StopEngine(bool callScript, bool hardStop) {
 void CGroundMoveType::Arrived(bool callScript)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*
@@ -785,6 +804,7 @@ No more trials will be done before a new goal is given.
 void CGroundMoveType::Fail(bool callScript)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -793,6 +813,7 @@ void CGroundMoveType::Fail(bool callScript)
 void CGroundMoveType::HandleObjectCollisions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::HandleStaticObjectCollision(
@@ -1289,6 +1310,7 @@ void CGroundMoveType::HandleFeatureCollisions(
 void CGroundMoveType::LeaveTransport()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1412,26 +1434,31 @@ bool CGroundMoveType::OnSlope(float minSlideTolerance) {
 const float3& CGroundMoveType::GetGroundNormal(const float3& p) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CGroundMoveType::GetGroundHeight(const float3& p) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::AdjustPosToWaterLine()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGroundMoveType::UpdateDirectControl()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CGroundMoveType::GetNewSpeedVector(const float hAcc, const float vAcc) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundMoveType::UpdateOwnerPos(const float3& oldSpeedVector, const float3& newSpeedVector) {
@@ -1500,6 +1527,7 @@ void CGroundMoveType::UpdateOwnerPos(const float3& oldSpeedVector, const float3&
 bool CGroundMoveType::WantReverse(const float3& wpDir, const float3& ffDir) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

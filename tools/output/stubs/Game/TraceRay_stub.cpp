@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -38,6 +39,7 @@ inline static bool TestConeHelper(
 	const CSolidObject* obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -55,6 +57,7 @@ inline static bool TestTrajectoryConeHelper(
 	const CSolidObject* obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -356,6 +359,7 @@ bool TestCone(
 	CUnit* owner)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -372,6 +376,7 @@ bool TestTrajectoryCone(
 	CUnit* owner)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

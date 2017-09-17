@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/Info.h"
@@ -73,6 +74,7 @@ static bool info_parseInfoItem(const LuaTable& root, int index, InfoItem& inf,
 		std::set<string>& infoSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -84,6 +86,7 @@ void info_parseInfo(
 		std::set<std::string>* infoSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::vector<InfoItem> info_parseInfo(
@@ -93,4 +96,5 @@ std::vector<InfoItem> info_parseInfo(
 		std::set<std::string>* infoSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

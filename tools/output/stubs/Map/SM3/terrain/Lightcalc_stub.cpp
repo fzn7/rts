@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <cstring>
@@ -25,20 +26,24 @@ using std::min;
 void BlurGrayscaleImage(int w, int h, uchar* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 Lightmap::Lightmap(Heightmap* orghm, int level, int shadowLevelDif, LightingInfo* li)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 Lightmap::~Lightmap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Lightmap::CalculateShadows (uchar* dst, int dstw, float lightX, float lightY, float lightH, float* centerhm, int hmw, int hmscale, bool directional)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

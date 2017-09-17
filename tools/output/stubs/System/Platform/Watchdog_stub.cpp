@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Watchdog.h"
@@ -27,4 +28,5 @@ CONFIG(int, HangTimeout).defaultValue(10).minimumValue(-1).maximumValue(600)
 namespace Watchdog
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

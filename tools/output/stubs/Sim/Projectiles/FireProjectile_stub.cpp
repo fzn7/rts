@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -60,26 +61,31 @@ CFireProjectile::CFireProjectile(
 	particleSize(particleSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFireProjectile::StopFire()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFireProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFireProjectile::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CFireProjectile::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

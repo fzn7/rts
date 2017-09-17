@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -21,12 +22,14 @@ CResourceBar::CResourceBar()
 	, enabled(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CResourceBar::~CResourceBar()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -53,28 +56,33 @@ static std::string FloatToSmallString(float num, float mul = 1) {
 void CResourceBar::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CResourceBar::IsAbove(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CResourceBar::GetTooltip(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CResourceBar::MousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CResourceBar::MouseMove(int x, int y, int dx, int dy, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

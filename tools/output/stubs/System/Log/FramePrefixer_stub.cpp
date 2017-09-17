@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /**
@@ -20,11 +21,13 @@ static int* frameNumRef = NULL;
 void log_framePrefixer_setFrameNumReference(int* frameNumReference)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 size_t log_framePrefixer_createPrefix(char* result, size_t resultSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef __cplusplus

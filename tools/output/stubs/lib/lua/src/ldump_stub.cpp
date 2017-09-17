@@ -1,3 +1,4 @@
+#include <iostream>
 /*
 ** $Id: ldump.c,v 2.8.1.1 2007/12/27 13:02:25 roberto Exp $
 ** save precompiled Lua chunks
@@ -29,31 +30,37 @@ typedef struct {
 static void DumpBlock(const void* b, size_t size, DumpState* D)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void DumpChar(int y, DumpState* D)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void DumpInt(int x, DumpState* D)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void DumpNumber(lua_Number x, DumpState* D)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void DumpVector(const void* b, int n, size_t size, DumpState* D)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void DumpString(const TString* s, DumpState* D)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #define DumpCode(f,D)	 DumpVector(f->code,f->sizecode,sizeof(Instruction),D)
@@ -63,21 +70,25 @@ static void DumpFunction(const Proto* f, const TString* p, DumpState* D);
 static void DumpConstants(const Proto* f, DumpState* D)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void DumpDebug(const Proto* f, DumpState* D)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void DumpFunction(const Proto* f, const TString* p, DumpState* D)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void DumpHeader(DumpState* D)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*
@@ -86,4 +97,5 @@ static void DumpHeader(DumpState* D)
 int luaU_dump (lua_State* L, const Proto* f, lua_Writer w, void* data, int strip)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

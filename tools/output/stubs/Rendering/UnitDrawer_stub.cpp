@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "UnitDrawer.h"
@@ -208,11 +209,13 @@ void CUnitDrawer::PopModelRenderState(const CSolidObject* o) { PopModelRenderSta
 CUnitDrawer::CUnitDrawer(): CEventClient("[CUnitDrawer]", 271828, false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CUnitDrawer::~CUnitDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -220,11 +223,13 @@ CUnitDrawer::~CUnitDrawer()
 void CUnitDrawer::SetUnitDrawDist(float dist)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::SetUnitIconDist(float dist)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -232,6 +237,7 @@ void CUnitDrawer::SetUnitIconDist(float dist)
 void CUnitDrawer::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -240,11 +246,13 @@ void CUnitDrawer::Update()
 void CUnitDrawer::Draw(bool drawReflection, bool drawRefraction)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::DrawOpaquePass(bool deferredPass, bool drawReflection, bool drawRefraction)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -252,22 +260,26 @@ void CUnitDrawer::DrawOpaquePass(bool deferredPass, bool drawReflection, bool dr
 void CUnitDrawer::DrawOpaqueUnits(int modelType, bool drawReflection, bool drawRefraction)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 inline void CUnitDrawer::DrawOpaqueUnit(CUnit* unit, bool drawReflection, bool drawRefraction)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDrawer::DrawOpaqueAIUnits(int modelType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::DrawOpaqueAIUnit(const TempDrawUnit& unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -275,6 +287,7 @@ void CUnitDrawer::DrawOpaqueAIUnit(const TempDrawUnit& unit)
 void CUnitDrawer::DrawUnitIcons()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -314,6 +327,7 @@ bool CUnitDrawer::CanDrawOpaqueUnit(
 bool CUnitDrawer::CanDrawOpaqueUnitShadow(const CUnit* unit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -351,6 +365,7 @@ void CUnitDrawer::DrawOpaqueUnitsShadow(int modelType) {
 void CUnitDrawer::DrawShadowPass()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -358,6 +373,7 @@ void CUnitDrawer::DrawShadowPass()
 void CUnitDrawer::DrawIcon(CUnit* unit, bool useDefaultIcon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -368,11 +384,13 @@ void CUnitDrawer::DrawIcon(CUnit* unit, bool useDefaultIcon)
 void CUnitDrawer::SetupAlphaDrawing(bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::ResetAlphaDrawing(bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -380,11 +398,13 @@ void CUnitDrawer::ResetAlphaDrawing(bool deferredPass)
 void CUnitDrawer::DrawAlphaPass()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::DrawAlphaUnits(int modelType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 inline void CUnitDrawer::DrawAlphaUnit(CUnit* unit, int modelType, bool drawGhostBuildingsPass) {
@@ -450,26 +470,31 @@ inline void CUnitDrawer::DrawAlphaUnit(CUnit* unit, int modelType, bool drawGhos
 void CUnitDrawer::DrawAlphaAIUnits(int modelType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::DrawAlphaAIUnit(const TempDrawUnit& unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::DrawAlphaAIUnitBorder(const TempDrawUnit& unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::UpdateGhostedBuildings()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::DrawGhostedBuildings(int modelType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -480,16 +505,19 @@ void CUnitDrawer::DrawGhostedBuildings(int modelType)
 void CUnitDrawer::SetupOpaqueDrawing(bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::ResetOpaqueDrawing(bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const IUnitDrawerState* CUnitDrawer::GetWantedDrawerState(bool alphaPass) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -497,6 +525,7 @@ const IUnitDrawerState* CUnitDrawer::GetWantedDrawerState(bool alphaPass) const
 void CUnitDrawer::SetTeamColour(int team, const float2 alpha) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -510,6 +539,7 @@ void CUnitDrawer::SetTeamColour(int team, const float2 alpha) const
 void CUnitDrawer::SetupBasicS3OTexture0()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -525,17 +555,20 @@ void CUnitDrawer::SetupBasicS3OTexture0()
 void CUnitDrawer::SetupBasicS3OTexture1()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDrawer::CleanupBasicS3OTexture1()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::CleanupBasicS3OTexture0()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -544,44 +577,52 @@ void CUnitDrawer::CleanupBasicS3OTexture0()
 void CUnitDrawer::PushIndividualOpaqueState(const S3DModel* model, int teamID, bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::PushIndividualAlphaState(const S3DModel* model, int teamID, bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDrawer::PopIndividualOpaqueState(const S3DModel* model, int teamID, bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::PopIndividualAlphaState(const S3DModel* model, int teamID, bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDrawer::PushIndividualOpaqueState(const CUnit* unit, bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::PopIndividualOpaqueState(const CUnit* unit, bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDrawer::DrawIndividual(const CUnit* unit, bool noLuaCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::DrawIndividualNoTrans(const CUnit* unit, bool noLuaCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -590,16 +631,19 @@ void CUnitDrawer::DrawIndividualNoTrans(const CUnit* unit, bool noLuaCall)
 static void DIDResetPrevProjection(bool toScreen)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void DIDResetPrevModelView()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static bool DIDCheckMatrixMode(int wantedMode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -609,12 +653,14 @@ static bool DIDCheckMatrixMode(int wantedMode)
 void CUnitDrawer::DrawIndividualDefOpaque(const SolidObjectDef* objectDef, int teamID, bool rawState, bool toScreen)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // used for drawing building orders (with translucency)
 void CUnitDrawer::DrawIndividualDefAlpha(const SolidObjectDef* objectDef, int teamID, bool rawState, bool toScreen)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -627,6 +673,7 @@ typedef const void (*DrawModelBuildStageFunc)(const CUnit*, const double*, const
 static const void DrawModelNoopBuildStage(const CUnit*, const double*, const double*, bool)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static const void DrawModelWireBuildStage(
@@ -698,11 +745,13 @@ static const DrawModelBuildStageFunc drawModelBuildStageFuncs[] = {
 void CUnitDrawer::DrawUnitModelBeingBuiltShadow(const CUnit* unit, bool noLuaCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::DrawUnitModelBeingBuiltOpaque(const CUnit* unit, bool noLuaCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -748,6 +797,7 @@ void CUnitDrawer::DrawUnitNoTrans(
 void CUnitDrawer::DrawUnit(const CUnit* unit, unsigned int preList, unsigned int postList, bool lodCall, bool noLuaCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -809,11 +859,13 @@ bool CUnitDrawer::DrawAsIcon(const CUnit* unit, const float sqUnitCamDist) const
 bool CUnitDrawer::ShowUnitBuildSquare(const BuildInfo& buildInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CUnitDrawer::ShowUnitBuildSquare(const BuildInfo& buildInfo, const std::vector<Command>& commands)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1093,6 +1145,7 @@ void CUnitDrawer::SunChanged() {
 bool CUnitDrawer::ObjectVisibleReflection(const float3 objPos, const float3 camPos, float maxRadius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1100,10 +1153,12 @@ bool CUnitDrawer::ObjectVisibleReflection(const float3 objPos, const float3 camP
 void CUnitDrawer::AddTempDrawUnit(const TempDrawUnit& tdu)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitDrawer::UpdateTempDrawUnits(std::vector<TempDrawUnit>& tempDrawUnits)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

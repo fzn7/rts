@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "ConfigHandler.h"
@@ -34,11 +35,13 @@ ConfigHandler* configHandler = NULL;
 class ConfigHandlerImpl : public ConfigHandler
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ConfigHandlerImpl::~ConfigHandlerImpl()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -55,33 +58,39 @@ ConfigHandlerImpl::~ConfigHandlerImpl()
 void ConfigHandlerImpl::RemoveDefaults()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 StringMap ConfigHandlerImpl::GetDataWithoutDefaults() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ConfigHandlerImpl::Delete(const string& key)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool ConfigHandlerImpl::IsSet(const string& key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool ConfigHandlerImpl::IsReadOnly(const string& key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 string ConfigHandlerImpl::GetString(const string& key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -102,11 +111,13 @@ string ConfigHandlerImpl::GetString(const string& key) const
 void ConfigHandlerImpl::SetString(const string& key, const string& value, bool useOverlay)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ConfigHandlerImpl::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 string ConfigHandlerImpl::GetConfigFile() const {
@@ -144,11 +155,13 @@ void ConfigHandlerImpl::RemoveObserver(void* holder) {
 void ConfigHandler::Instantiate(const std::string configSource, const bool safemode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ConfigHandler::Deallocate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/

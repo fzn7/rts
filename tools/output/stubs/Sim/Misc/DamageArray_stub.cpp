@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 #include "DamageArray.h"
 #include "DamageArrayHandler.h"
@@ -25,6 +26,7 @@ DamageArray::DamageArray(float damage)
 	, craterBoost(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -41,6 +43,7 @@ DamageArray DamageArray::operator * (float damageMult) const {
 void DamageArray::SetDefaultDamage(float damage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -75,31 +78,37 @@ DynDamageArray::DynDamageArray(float damage)
 	, fromDef(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DynDamageArray::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 DamageArray DynDamageArray::GetDynamicDamages(const float3& startPos, const float3& curPos) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const DynDamageArray* DynDamageArray::IncRef(const DynDamageArray* dda)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DynDamageArray::DecRef(const DynDamageArray* dda)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 DynDamageArray* DynDamageArray::GetMutable(const DynDamageArray*& dda)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

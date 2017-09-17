@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <string.h>
@@ -45,58 +46,69 @@ CCamera::CCamera(unsigned int cameraType)
 	, projType((cameraType == CAMTYPE_SHADOW)? PROJTYPE_ORTHO: PROJTYPE_PERSP)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCamera::CopyState(const CCamera* cam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCamera::CopyStateReflect(const CCamera* cam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCamera::Update(bool updateDirs, bool updateMats, bool updatePort)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCamera::UpdateFrustum()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCamera::UpdateMatrices(unsigned int vsx, unsigned int vsy, float var)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCamera::UpdateViewPort(int px, int py, int sx, int sy)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCamera::UpdateLoadViewPort(int px, int py, int sx, int sy)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCamera::LoadMatrices() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCamera::LoadViewPort() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCamera::UpdateViewRange()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -120,11 +132,13 @@ static inline bool AABBInOriginPlane(
 bool CCamera::InView(const float3& mins, const float3& maxs) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CCamera::InView(const float3& p, float radius) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -132,6 +146,7 @@ bool CCamera::InView(const float3& p, float radius) const
 void CCamera::SetVFOV(const float angle)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CCamera::GetHFOV() const {
@@ -145,27 +160,32 @@ float CCamera::GetHFOV() const {
 float3 CCamera::GetRotFromDir(float3 fwd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CCamera::GetFwdFromRot(const float3 r)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CCamera::GetRgtFromRot(const float3 r)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCamera::UpdateDirsFromRot(const float3 r)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCamera::SetDir(const float3 dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -173,12 +193,14 @@ void CCamera::SetDir(const float3 dir)
 float3 CCamera::CalcPixelDir(int x, int y) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CCamera::CalcWindowCoordinates(const float3& objPos) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -273,6 +295,7 @@ inline void CCamera::glOrthoSpring(
 inline void CCamera::gluLookAtSpring(const float3& eye, const float3& center, const float3& up)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -377,5 +400,6 @@ void CCamera::ClipFrustumLines(bool neg, const float zmin, const float zmax) {
 float3 CCamera::GetMoveVectorFromState(bool fromKeyState) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

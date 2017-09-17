@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "UnitDef.h"
@@ -31,6 +32,7 @@ UnitDefWeapon::UnitDefWeapon()
 , mainDir(FwdVector)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 UnitDefWeapon::UnitDefWeapon(const WeaponDef* weaponDef) {
@@ -251,18 +253,21 @@ UnitDef::UnitDef()
 	, realBuildTime(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 UnitDef::UnitDef(const LuaTable& udTable, const std::string& unitName, int id)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 UnitDef::~UnitDef()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -270,6 +275,7 @@ UnitDef::~UnitDef()
 void UnitDef::ParseWeaponsTable(const LuaTable& weaponsTable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -277,6 +283,7 @@ void UnitDef::ParseWeaponsTable(const LuaTable& weaponsTable)
 void UnitDef::CreateYardMap(std::string yardMapStr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -284,6 +291,7 @@ void UnitDef::CreateYardMap(std::string yardMapStr)
 void UnitDef::SetNoCost(bool noCost)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool UnitDef::CheckTerrainConstraints(const MoveDef* moveDef, float rawHeight, float* clampedHeight) const {

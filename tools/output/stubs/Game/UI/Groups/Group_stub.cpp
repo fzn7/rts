@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -25,11 +26,13 @@ CGroup::CGroup(int id, CGroupHandler* groupHandler)
 		, handler(groupHandler)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGroup::~CGroup()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -37,34 +40,41 @@ CGroup::~CGroup()
 void CGroup::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGroup::AddUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroup::RemoveUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroup::RemoveIfEmptySpecialGroup()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroup::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroup::ClearUnits()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CGroup::CalculateCenter() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

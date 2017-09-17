@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "FileFilter.h"
@@ -17,6 +18,7 @@ using std::vector;
 class CFileFilter : public IFileFilter
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -47,6 +49,7 @@ Note that:
 void CFileFilter::AddRule(const string& rule)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -54,10 +57,12 @@ void CFileFilter::AddRule(const string& rule)
 bool CFileFilter::Match(const string& filename) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 string CFileFilter::glob_to_regex(const string& glob) // FIXME remove; duplicate in FileSystem::ConvertGlobToRegex
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

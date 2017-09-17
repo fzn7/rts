@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <fstream>
@@ -28,28 +29,33 @@ CSelectionKeyHandler::CSelectionKeyHandler()
 	: selectNumber(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSelectionKeyHandler::~CSelectionKeyHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string CSelectionKeyHandler::ReadToken(std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CSelectionKeyHandler::ReadDelimiter(std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 namespace
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -57,4 +63,5 @@ namespace
 void CSelectionKeyHandler::DoSelection(std::string selectString)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

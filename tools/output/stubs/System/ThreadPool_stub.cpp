@@ -1,3 +1,4 @@
+#include <iostream>
 #ifdef THREADPOOL
 
 #include "ThreadPool.h"
@@ -45,27 +46,32 @@ namespace ThreadPool {
 int GetThreadNum()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void SetThreadNum(const int idx)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int GetMaxThreads()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int GetNumThreads()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool HasThreads()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -73,12 +79,14 @@ bool HasThreads()
 static bool DoTask(boost::shared_lock<boost::shared_mutex>& lk_)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool DoTask(std::shared_ptr<ITaskGroup> tg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -86,35 +94,41 @@ __FORCE_ALIGN_STACK__
 static void WorkerLoop(int id)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void WaitForFinished(std::shared_ptr<ITaskGroup> taskgroup)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void PushTaskGroup(std::shared_ptr<ITaskGroup> taskgroup)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void NotifyWorkerThreads()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void SetThreadCount(int num)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SetThreadSpinTime(int milliSeconds)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 }

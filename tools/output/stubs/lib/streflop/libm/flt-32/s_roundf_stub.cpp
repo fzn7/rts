@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Round Simple to integer away from zero.
    Copyright (C) 1997 Free Software Foundation, Inc.
@@ -32,6 +33,7 @@ Simple
 __roundf (Simple x)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__roundf, roundf)
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -31,11 +32,13 @@ ISky::ISky()
 // 	, cloudDensity(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ISky::~ISky()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -60,6 +63,7 @@ void ISky::SetupFog() {
 ISky* ISky::GetSky()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ISky::SetLight(bool dynamic) {

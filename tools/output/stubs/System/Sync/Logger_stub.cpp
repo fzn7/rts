@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -58,6 +59,7 @@ extern "C" void get_executable_name(char *output, int size);
 void CLogger::AddLine(const char* fmt, ...)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -69,6 +71,7 @@ void CLogger::AddLine(const char* fmt, ...)
 void CLogger::CloseSession()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -82,6 +85,7 @@ void CLogger::CloseSession()
 void CLogger::FlushBuffer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -98,6 +102,7 @@ void CLogger::FlushBuffer()
 void CLogger::CppFilt(char* sym, int size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #endif // SYNCDEBUG

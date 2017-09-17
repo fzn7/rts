@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <cstdlib>
@@ -25,6 +26,7 @@
 static std::string strformat(const char* fmt, ...)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CONFIG(std::string, CamModeName).defaultValue("");
@@ -78,108 +80,127 @@ static void RemoveGlobalCams() {
 CCameraHandler::CCameraHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CCameraHandler::~CCameraHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCameraHandler::UpdateController(CPlayer* player, bool fpsMode, bool fsEdgeMove, bool wnEdgeMove)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCameraHandler::UpdateController(CCameraController& camCon, bool keyMove, bool wheelMove, bool edgeMove)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCameraHandler::CameraTransition(float nsecs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCameraHandler::UpdateTransition()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCameraHandler::SetCameraMode(unsigned int newMode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCameraHandler::SetCameraMode(const std::string& modeName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCameraHandler::GetModeIndex(const std::string& name) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCameraHandler::PushMode()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCameraHandler::PopMode()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCameraHandler::ToggleState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCameraHandler::ToggleOverviewCamera()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCameraHandler::SaveView(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CCameraHandler::LoadView(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCameraHandler::GetState(CCameraController::StateMap& sm) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CCameraHandler::SetState(const CCameraController::StateMap& sm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCameraHandler::PushAction(const Action& action)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CCameraHandler::LoadViewData(const ViewData& vd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

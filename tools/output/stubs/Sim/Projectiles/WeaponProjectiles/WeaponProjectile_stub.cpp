@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Game/GameHelper.h"
@@ -56,12 +57,14 @@ CWeaponProjectile::CWeaponProjectile(const ProjectileParams& params)
 	, targetPos(params.end)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CWeaponProjectile::~CWeaponProjectile()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -103,61 +106,72 @@ void CWeaponProjectile::Explode(
 void CWeaponProjectile::Collision()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CWeaponProjectile::Collision(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CWeaponProjectile::Collision(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CWeaponProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeaponProjectile::UpdateInterception()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeaponProjectile::UpdateGroundBounce()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeaponProjectile::TraveledRange() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeaponProjectile::DrawOnMinimap(CVertexArray& lines, CVertexArray& points)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeaponProjectile::CanBeInterceptedBy(const WeaponDef* wd) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeaponProjectile::DependentDied(CObject* o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeaponProjectile::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

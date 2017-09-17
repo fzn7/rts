@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <cstdlib>
@@ -17,6 +18,7 @@ CPathFinderDef::CPathFinderDef(const float3& goalCenter, float goalRadius, float
 , synced(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // returns true when the goal is within our defined range
@@ -28,6 +30,7 @@ bool CPathFinderDef::IsGoal(unsigned int xSquare, unsigned int zSquare) const {
 float CPathFinderDef::Heuristic(unsigned int xSquare, unsigned int zSquare) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -67,6 +70,7 @@ CCircularSearchConstraint::CCircularSearchConstraint(
 ): CPathFinderDef(goal, goalRadius, start.SqDistance2D(goal))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -79,5 +83,6 @@ CRectangularSearchConstraint::CRectangularSearchConstraint(
 ): CPathFinderDef(goalPos, 0.0f, startPos.SqDistance2D(goalPos))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

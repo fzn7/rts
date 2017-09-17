@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -30,6 +31,7 @@
 bool LuaSyncedMoveCtrl::PushMoveCtrl(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -38,18 +40,21 @@ bool LuaSyncedMoveCtrl::PushMoveCtrl(lua_State* L)
 static inline CUnit* ParseUnit(lua_State* L, const char* caller, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline CScriptMoveType* ParseScriptMoveType(lua_State* L, const char* caller, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 template<typename DerivedMoveType>
 static inline DerivedMoveType* ParseDerivedMoveType(lua_State* L, const char* caller, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -60,18 +65,21 @@ static inline DerivedMoveType* ParseDerivedMoveType(lua_State* L, const char* ca
 int LuaSyncedMoveCtrl::IsEnabled(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::Enable(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::Disable(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -80,12 +88,14 @@ int LuaSyncedMoveCtrl::Disable(lua_State* L)
 int LuaSyncedMoveCtrl::SetTag(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::GetTag(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -95,6 +105,7 @@ int LuaSyncedMoveCtrl::GetTag(lua_State* L)
 int LuaSyncedMoveCtrl::SetProgressState(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -103,6 +114,7 @@ int LuaSyncedMoveCtrl::SetProgressState(lua_State* L)
 int LuaSyncedMoveCtrl::SetExtrapolate(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -111,48 +123,56 @@ int LuaSyncedMoveCtrl::SetExtrapolate(lua_State* L)
 int LuaSyncedMoveCtrl::SetPhysics(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetPosition(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetVelocity(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetRelativeVelocity(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetRotation(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetRotationOffset(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetRotationVelocity(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetHeading(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -161,42 +181,49 @@ int LuaSyncedMoveCtrl::SetHeading(lua_State* L)
 int LuaSyncedMoveCtrl::SetTrackSlope(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetTrackGround(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetGroundOffset(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetGravity(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetDrag(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetWindFactor(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetLimits(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -205,24 +232,28 @@ int LuaSyncedMoveCtrl::SetLimits(lua_State* L)
 int LuaSyncedMoveCtrl::SetNoBlocking(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetShotStop(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetSlopeStop(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetCollideStop(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -234,33 +265,39 @@ template<typename value_type>
 static bool SetMoveTypeValue(AMoveType* mt, const string& key, value_type value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline bool SetMoveTypeValue(lua_State* L, AMoveType* moveType, int keyIdx, int valIdx)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int SetMoveTypeData(lua_State* L, AMoveType* moveType, const char* caller)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaSyncedMoveCtrl::SetGunshipMoveTypeData(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaSyncedMoveCtrl::SetAirMoveTypeData(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaSyncedMoveCtrl::SetGroundMoveTypeData(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -271,5 +308,6 @@ int LuaSyncedMoveCtrl::SetGroundMoveTypeData(lua_State* L)
 int LuaSyncedMoveCtrl::SetMoveDef(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

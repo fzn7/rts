@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* e_lgammaf_r.c -- Simple version of e_lgamma_r.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -108,6 +109,7 @@ static Simple zero=  0.0000000000e+00f;
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -119,5 +121,6 @@ static Simple zero=  0.0000000000e+00f;
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

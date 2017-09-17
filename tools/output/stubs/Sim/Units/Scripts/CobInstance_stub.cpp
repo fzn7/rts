@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -54,6 +55,7 @@ CR_REG_METADATA(CCobInstance, (
 inline bool CCobInstance::HasFunction(int id) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 //Used by creg
@@ -62,46 +64,54 @@ CCobInstance::CCobInstance()
 	, script(nullptr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCobInstance::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCobInstance::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CCobInstance::~CCobInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::MapScriptToModelPieces(LocalModel* lmodel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCobInstance::GetFunctionId(const std::string& fname) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CCobInstance::HasBlockShot(int weaponNum) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CCobInstance::HasTargetWeight(int weaponNum) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -112,6 +122,7 @@ bool CCobInstance::HasTargetWeight(int weaponNum) const
 void CCobInstance::Create()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -119,131 +130,153 @@ void CCobInstance::Create()
 void CCobInstance::Killed()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::WindChanged(float heading, float speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::ExtractionRateChanged(float speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::RockUnit(const float3& rockDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::HitByWeapon(const float3& hitDir, int weaponDefId, float& inoutDamage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::SetSFXOccupy(int curTerrainType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::QueryLandingPads(std::vector<int>& out_pieces)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::BeginTransport(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCobInstance::QueryTransport(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::TransportPickup(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::TransportDrop(const CUnit* unit, const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::StartBuilding(float heading, float pitch)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCobInstance::QueryNanoPiece()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCobInstance::QueryBuildInfo()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCobInstance::QueryWeapon(int weaponNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::AimWeapon(int weaponNum, float heading, float pitch)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::AimShieldWeapon(CPlasmaRepulser* weapon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCobInstance::AimFromWeapon(int weaponNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::Shot(int weaponNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CCobInstance::BlockShot(int weaponNum, const CUnit* targetUnit, bool userTarget)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CCobInstance::TargetWeight(int weaponNum, const CUnit* targetUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCobInstance::AnimFinished(AnimType type, int piece, int axis)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -278,6 +311,7 @@ void CCobInstance::EndBurst(int weaponNum) { Call(COBFN_EndBurst + COBFN_Weapon_
 int CCobInstance::RealCall(int functionId, vector<int>& args, ThreadCallbackType cb, int cbParam, int* retCode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -287,58 +321,69 @@ int CCobInstance::RealCall(int functionId, vector<int>& args, ThreadCallbackType
 int CCobInstance::Call(const std::string& fname)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CCobInstance::Call(const std::string& fname, std::vector<int>& args)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CCobInstance::Call(const std::string& fname, int arg1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CCobInstance::Call(const std::string& fname, std::vector<int>& args, ThreadCallbackType cb, int cbParam, int* retCode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCobInstance::Call(int id)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CCobInstance::Call(int id, int arg1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CCobInstance::Call(int id, std::vector<int>& args)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CCobInstance::Call(int id, std::vector<int>& args, ThreadCallbackType cb, int cbParam, int* retCode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::RawCall(int fn)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CCobInstance::RawCall(int fn, std::vector<int> &args)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCobInstance::ThreadCallback(ThreadCallbackType type, int retCode, int cbParam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -348,16 +393,19 @@ void CCobInstance::ThreadCallback(ThreadCallbackType type, int retCode, int cbPa
 void CCobInstance::Signal(int signal)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::PlayUnitSound(int snr, int attr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobInstance::ShowScriptError(const std::string& msg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* s_finitef.c -- Simple version of s_finite.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -35,6 +36,7 @@ namespace streflop_libm {
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 hidden_def (__finitef)
 weak_alias (__finitef, finitef)

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -69,96 +70,112 @@ CSyncDebugger::CSyncDebugger()
 	, waitingForBlockResponse(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CSyncDebugger::~CSyncDebugger()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::Initialize(bool useBacktrace, unsigned numPlayers)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::Sync(const void* p, unsigned size, const char* op)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::Backtrace(int index, const char* prefix) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned CSyncDebugger::GetBacktraceChecksum(int index) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncDebugger::ServerReceived(const unsigned char* inbuf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncDebugger::ClientReceived(const unsigned char* inbuf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::ServerTriggerSyncErrorHandling(int serverframenum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::ClientSendChecksumResponse()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::ServerQueueBlockRequests()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::ServerHandlePendingBlockRequests()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::ClientSendBlockResponse(int block)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::ServerReceivedBlockResponses()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::ServerDumpStack()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSyncDebugger::Reset()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #endif // SYNCDEBUG

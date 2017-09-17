@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -33,24 +34,28 @@ CTooltipConsole::CTooltipConsole()
 	: enabled(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CTooltipConsole::~CTooltipConsole()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTooltipConsole::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CTooltipConsole::IsAbove(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -68,30 +73,35 @@ static void GetDecoyResources(const CUnit* unit,
                               float& eMake, float& eUse)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CTooltipConsole::MakeUnitString(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CTooltipConsole::MakeUnitStatsString(const SUnitStats& stats)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CTooltipConsole::MakeFeatureString(const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CTooltipConsole::MakeGroundString(const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -115,4 +125,5 @@ SUnitStats::SUnitStats()
 , count(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

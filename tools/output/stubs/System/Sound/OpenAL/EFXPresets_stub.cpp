@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "EFXPresets.h"
@@ -14,11 +15,13 @@ std::map<ALuint, std::string> alFilterParamToName;
 static void InitPresets()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void InitConversionTables()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 DO_ONCE(InitPresets)

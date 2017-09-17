@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "PlayerStatistics.h"
@@ -21,9 +22,11 @@ PlayerStatistics::PlayerStatistics()
 	, keyPresses(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void PlayerStatistics::swab()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

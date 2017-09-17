@@ -1,3 +1,4 @@
+#include <iostream>
 /*=========================================================================*\
 * TCP object 
 * LuaSocket toolkit
@@ -84,6 +85,7 @@ static luaL_reg func[] = {
 int tcp_open(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*=========================================================================*\
@@ -118,6 +120,7 @@ static int meth_setstats(lua_State *L) {
 static int meth_setoption(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -126,17 +129,20 @@ static int meth_setoption(lua_State *L)
 static int meth_getfd(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /* this is very dangerous, but can be handy for those that are brave enough */
 static int meth_setfd(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int meth_dirty(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -146,6 +152,7 @@ static int meth_dirty(lua_State *L)
 static int meth_accept(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -154,6 +161,7 @@ static int meth_accept(lua_State *L)
 static int meth_bind(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -162,6 +170,7 @@ static int meth_bind(lua_State *L)
 static int meth_connect(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -170,6 +179,7 @@ static int meth_connect(lua_State *L)
 static int meth_close(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -178,6 +188,7 @@ static int meth_close(lua_State *L)
 static int meth_listen(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -186,6 +197,7 @@ static int meth_listen(lua_State *L)
 static int meth_shutdown(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -194,11 +206,13 @@ static int meth_shutdown(lua_State *L)
 static int meth_getpeername(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int meth_getsockname(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -207,6 +221,7 @@ static int meth_getsockname(lua_State *L)
 static int meth_settimeout(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*=========================================================================*\
@@ -218,4 +233,5 @@ static int meth_settimeout(lua_State *L)
 static int global_create(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

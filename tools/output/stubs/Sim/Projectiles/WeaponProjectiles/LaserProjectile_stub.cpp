@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -41,11 +42,13 @@ CLaserProjectile::CLaserProjectile(const ProjectileParams& params): CWeaponProje
 	, stayTime(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLaserProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLaserProjectile::UpdateIntensity() {
@@ -121,16 +124,19 @@ void CLaserProjectile::CollisionCommon(const float3& oldPos) {
 void CLaserProjectile::Collision(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLaserProjectile::Collision(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLaserProjectile::Collision()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -138,14 +144,17 @@ void CLaserProjectile::Collision()
 void CLaserProjectile::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CLaserProjectile::ShieldRepulse(const float3& shieldPos, float shieldForce, float shieldMaxSpeed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CLaserProjectile::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

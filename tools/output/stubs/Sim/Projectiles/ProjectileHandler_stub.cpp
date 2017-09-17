@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <algorithm>
@@ -84,29 +85,34 @@ CProjectileHandler::CProjectileHandler()
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CProjectileHandler::~CProjectileHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CProjectileHandler::ConfigNotify(const std::string& key, const std::string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void MAPPOS_SANITY_CHECK(const float3 v)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CProjectileHandler::UpdateProjectileContainer(ProjectileContainer& pc, bool synced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -171,6 +177,7 @@ static void UPDATE_REF_CONTAINER(T& cont) {
 void CProjectileHandler::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -178,6 +185,7 @@ void CProjectileHandler::Update()
 void CProjectileHandler::AddProjectile(CProjectile* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -190,6 +198,7 @@ void CProjectileHandler::CheckUnitCollisions(
 	const float3 ppos1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileHandler::CheckFeatureCollisions(
@@ -199,6 +208,7 @@ void CProjectileHandler::CheckFeatureCollisions(
 	const float3 ppos1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -209,21 +219,25 @@ void CProjectileHandler::CheckShieldCollisions(
 	const float3 ppos1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileHandler::CheckUnitFeatureCollisions(ProjectileContainer& pc)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileHandler::CheckGroundCollisions(ProjectileContainer& pc)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileHandler::CheckCollisions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -231,6 +245,7 @@ void CProjectileHandler::CheckCollisions()
 void CProjectileHandler::AddGroundFlash(CGroundFlash* flash)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -256,6 +271,7 @@ void CProjectileHandler::AddNanoParticle(
 	bool highPriority)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileHandler::AddNanoParticle(
@@ -268,27 +284,32 @@ void CProjectileHandler::AddNanoParticle(
 	bool highPriority)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CProjectile* CProjectileHandler::GetProjectileBySyncedID(int id)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CProjectile* CProjectileHandler::GetProjectileByUnsyncedID(int id)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CProjectileHandler::GetParticleSaturation(const bool withRandomization) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CProjectileHandler::GetCurrentParticles() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

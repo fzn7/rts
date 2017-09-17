@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "BombDropper.h"
@@ -30,40 +31,47 @@ CBombDropper::CBombDropper(CUnit* owner, const WeaponDef* def, bool useTorps)
 	, dropTorpedoes(useTorps)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CBombDropper::GetPredictedImpactTime(float3 impactPos) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBombDropper::TestTarget(const float3 pos, const SWeaponTarget& trg) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CBombDropper::HaveFreeLineOfFire(const float3 pos, const SWeaponTarget& trg, bool useMuzzle) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBombDropper::TestRange(const float3 pos, const SWeaponTarget& trg) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBombDropper::CanFire(bool ignoreAngleGood, bool ignoreTargetType, bool ignoreRequestedDir) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBombDropper::FireImpl(const bool scriptCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

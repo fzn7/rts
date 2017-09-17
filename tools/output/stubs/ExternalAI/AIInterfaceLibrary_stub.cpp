@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "AIInterfaceLibrary.h"
@@ -21,6 +22,7 @@ CAIInterfaceLibrary::CAIInterfaceLibrary(const CAIInterfaceLibraryInfo& _info)
 	, info(_info)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CAIInterfaceLibrary::~CAIInterfaceLibrary() {
@@ -160,12 +162,14 @@ static int CALLING_CONV handleEvent_empty(int teamId, int receiver, const void* 
 SSkirmishAILibrary CAIInterfaceLibrary::EmptyInterfaceLib()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // Skirmish AI methods
 const CSkirmishAILibrary* CAIInterfaceLibrary::FetchSkirmishAILibrary(const CSkirmishAILibraryInfo& aiInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAIInterfaceLibrary::ReleaseSkirmishAILibrary(const SkirmishAIKey& key) {

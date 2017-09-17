@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -42,6 +43,7 @@ LOG_REGISTER_SECTION_GLOBAL(LOG_SECTION_SMF_GROUND_TEXTURES)
 CSMFGroundTextures::GroundSquare::~GroundSquare()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -49,21 +51,25 @@ CSMFGroundTextures::GroundSquare::~GroundSquare()
 CSMFGroundTextures::CSMFGroundTextures(CSMFReadMap* rm): smfMap(rm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundTextures::LoadTiles(CSMFMapFile& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundTextures::LoadSquareTextures(const int mipLevel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundTextures::ConvolveHeightMap(const int mapWidth, const int mipLevel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #if defined(USE_LIBSQUISH) && !defined(HEADLESS) && defined(GLEW_ARB_ES3_compatibility)
@@ -71,17 +77,20 @@ void CSMFGroundTextures::ConvolveHeightMap(const int mapWidth, const int mipLeve
 bool CSMFGroundTextures::RecompressTilesIfNeeded()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 
 inline bool CSMFGroundTextures::TexSquareInView(int btx, int bty) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundTextures::DrawUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -172,9 +181,11 @@ void CSMFGroundTextures::ExtractSquareTiles(
 void CSMFGroundTextures::LoadSquareTexture(int x, int y, int level)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundTextures::BindSquareTexture(int texSquareX, int texSquareY)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #ifdef _MSC_VER
@@ -55,31 +56,37 @@ CBasicSky::CBasicSky()
 	, updatecounter(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::CreateSkyDomeList()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CBasicSky::~CBasicSky()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CBasicSky::GetCoord(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::CreateClouds()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::UpdatePart(int ast, int aed, int a3cstart, int a4cstart) {
@@ -123,21 +130,25 @@ void CBasicSky::UpdatePart(int ast, int aed, int a3cstart, int a4cstart) {
 void CBasicSky::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::CreateRandMatrix(int **matrix,float mod)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::CreateTransformVectors()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::DrawSun()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::UpdateSunFlare() {
@@ -176,16 +187,19 @@ void CBasicSky::UpdateSunFlare() {
 void CBasicSky::InitSun()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 inline unsigned char CBasicSky::GetCloudThickness(int x,int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::CreateCover(int baseX, int baseY, float *buf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::UpdateSunDir() {
@@ -250,6 +264,7 @@ void CBasicSky::UpdateSkyTexture() {
 float3 CBasicSky::GetDirFromTexCoord(float x, float y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // should be improved
@@ -257,6 +272,7 @@ float3 CBasicSky::GetDirFromTexCoord(float x, float y)
 float CBasicSky::GetTexCoordFromDir(const float3& dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBasicSky::UpdateTexPartDot3(int x, int y, unsigned char (*texp)[4]) {

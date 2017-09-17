@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -80,46 +81,55 @@ CStarburstProjectile::CStarburstProjectile(const ProjectileParams& params): CWea
 	, curTracerPart(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CStarburstProjectile::Collision()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CStarburstProjectile::Collision(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CStarburstProjectile::Collision(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CStarburstProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CStarburstProjectile::UpdateTrajectory()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CStarburstProjectile::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CStarburstProjectile::ShieldRepulse(const float3& shieldPos, float shieldForce, float shieldMaxSpeed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CStarburstProjectile::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

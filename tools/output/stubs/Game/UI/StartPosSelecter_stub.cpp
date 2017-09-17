@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -22,33 +23,39 @@ CStartPosSelecter* CStartPosSelecter::selector = NULL;
 CStartPosSelecter::CStartPosSelecter() : CInputReceiver(BACK)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CStartPosSelecter::~CStartPosSelecter()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CStartPosSelecter::Ready(bool luaForcedReady)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CStartPosSelecter::MousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CStartPosSelecter::DrawStartBox() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CStartPosSelecter::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "FlameThrower.h"
@@ -16,11 +17,13 @@ CR_REG_METADATA(CFlameThrower,(
 CFlameThrower::CFlameThrower(CUnit* owner, const WeaponDef* def): CWeapon(owner, def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFlameThrower::FireImpl(const bool scriptCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

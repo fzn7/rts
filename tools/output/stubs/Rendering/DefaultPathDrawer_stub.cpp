@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Game/GameHelper.h"
@@ -55,6 +56,7 @@ static inline const SColor& GetBuildColor(const DefaultPathDrawer::BuildSquareSt
 DefaultPathDrawer::DefaultPathDrawer(): IPathDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DefaultPathDrawer::DrawAll() const {
@@ -75,6 +77,7 @@ void DefaultPathDrawer::DrawAll() const {
 void DefaultPathDrawer::DrawInMiniMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <string>
@@ -52,6 +53,7 @@ CResourceMapAnalyzer::CResourceMapAnalyzer(int resourceId)
 	, doubleRadius(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

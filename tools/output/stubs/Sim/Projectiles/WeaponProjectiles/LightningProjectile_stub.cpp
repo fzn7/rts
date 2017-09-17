@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -27,25 +28,30 @@ CR_REG_METADATA(CLightningProjectile,(
 CLightningProjectile::CLightningProjectile(const ProjectileParams& params): CWeaponProjectile(params)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLightningProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLightningProjectile::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLightningProjectile::DrawOnMinimap(CVertexArray& lines, CVertexArray& points)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CLightningProjectile::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

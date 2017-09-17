@@ -1,3 +1,4 @@
+#include <iostream>
 /*
 Open Asset Import Library (assimp)
 ----------------------------------------------------------------------
@@ -50,18 +51,21 @@ using namespace std;
 namespace Assimp
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void OgreImporter::ReadVertexBuffer(SubMesh &theSubMesh, XmlReader *Reader, unsigned int NumVertices)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void OgreImporter::ReadBoneWeights(SubMesh &theSubMesh, XmlReader *Reader)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -69,6 +73,7 @@ void OgreImporter::ReadBoneWeights(SubMesh &theSubMesh, XmlReader *Reader)
 void OgreImporter::ProcessSubMesh(SubMesh &theSubMesh, SubMesh &theSharedGeometry)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -77,6 +82,7 @@ void OgreImporter::ProcessSubMesh(SubMesh &theSubMesh, SubMesh &theSharedGeometr
 aiMesh* OgreImporter::CreateAssimpSubMesh(const SubMesh& theSubMesh, const vector<Bone>& Bones) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

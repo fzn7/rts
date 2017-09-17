@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* s_cosf.c -- Simple version of s_cos.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -36,6 +37,7 @@ static Simple one=1.0f;
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__cosf, cosf)
 }

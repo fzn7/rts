@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -55,16 +56,19 @@ CAirCAI::CAirCAI()
 	, lastPC2(-1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAirCAI::GiveCommandReal(const Command& c, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAirCAI::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAirCAI::AirAutoGenerateTarget(AAirMoveType* myPlane) {
@@ -112,32 +116,38 @@ bool CAirCAI::AirAutoGenerateTarget(AAirMoveType* myPlane) {
 void CAirCAI::ExecuteMove(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CAirCAI::ExecuteFight(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAirCAI::ExecuteAttack(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAirCAI::ExecuteAreaAttack(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAirCAI::ExecuteGuard(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAirCAI::GetDefaultCmd(const CUnit* pointed, const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAirCAI::IsValidTarget(const CUnit* enemy) const {
@@ -151,16 +161,19 @@ bool CAirCAI::IsValidTarget(const CUnit* enemy) const {
 void CAirCAI::FinishCommand()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAirCAI::BuggerOff(const float3& pos, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CAirCAI::SelectNewAreaAttackTargetOrPos(const Command& ac)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

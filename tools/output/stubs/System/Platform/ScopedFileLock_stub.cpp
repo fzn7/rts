@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #ifndef _WIN32
@@ -15,6 +16,7 @@
 ScopedFileLock::ScopedFileLock(int fd, bool write) : filedes(fd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -23,4 +25,5 @@ ScopedFileLock::ScopedFileLock(int fd, bool write) : filedes(fd)
 ScopedFileLock::~ScopedFileLock()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

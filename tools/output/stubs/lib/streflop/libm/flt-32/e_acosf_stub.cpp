@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* e_acosf.c -- Simple version of e_acos.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -50,5 +51,6 @@ qS4 =  7.7038154006e-02f; /* 0x3d9dc62e */
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

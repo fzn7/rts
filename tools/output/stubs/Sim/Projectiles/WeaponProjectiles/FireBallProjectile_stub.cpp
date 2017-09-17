@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -31,29 +32,35 @@ CR_REG_METADATA_SUB(CFireBallProjectile,Spark,(
 CFireBallProjectile::CFireBallProjectile(const ProjectileParams& params): CWeaponProjectile(params)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFireBallProjectile::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFireBallProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFireBallProjectile::EmitSpark()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFireBallProjectile::Collision()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CFireBallProjectile::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Rendering/GL/myGL.h"
@@ -44,11 +45,13 @@
 CWorldDrawer::CWorldDrawer(): numUpdates(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CWorldDrawer::~CWorldDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -56,11 +59,13 @@ CWorldDrawer::~CWorldDrawer()
 void CWorldDrawer::LoadPre() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CWorldDrawer::LoadPost() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -68,6 +73,7 @@ void CWorldDrawer::LoadPost() const
 void CWorldDrawer::Update(bool newSimFrame)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -75,11 +81,13 @@ void CWorldDrawer::Update(bool newSimFrame)
 void CWorldDrawer::GenerateIBLTextures() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CWorldDrawer::ResetMVPMatrices() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -87,22 +95,26 @@ void CWorldDrawer::ResetMVPMatrices() const
 void CWorldDrawer::Draw() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWorldDrawer::DrawOpaqueObjects() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CWorldDrawer::DrawAlphaObjects() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CWorldDrawer::DrawMiscObjects() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -110,5 +122,6 @@ void CWorldDrawer::DrawMiscObjects() const
 void CWorldDrawer::DrawBelowWaterOverlay() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

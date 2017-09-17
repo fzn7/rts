@@ -1,3 +1,4 @@
+#include <iostream>
 /*=========================================================================*\
 * Internet domain functions
 * LuaSocket toolkit
@@ -40,6 +41,7 @@ static luaL_reg func[] = {
 int inet_open(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*=========================================================================*\
@@ -83,6 +85,7 @@ static int inet_global_tohostname(lua_State *L) {
 static int inet_global_toip(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -92,6 +95,7 @@ static int inet_global_toip(lua_State *L)
 static int inet_global_gethostname(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -105,6 +109,7 @@ static int inet_global_gethostname(lua_State *L)
 int inet_meth_getpeername(lua_State *L, p_socket ps)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -113,6 +118,7 @@ int inet_meth_getpeername(lua_State *L, p_socket ps)
 int inet_meth_getsockname(lua_State *L, p_socket ps)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*=========================================================================*\
@@ -124,6 +130,7 @@ int inet_meth_getsockname(lua_State *L, p_socket ps)
 static void inet_pushresolved(lua_State *L, struct hostent *hp)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -174,6 +181,7 @@ const char *inet_tryconnect(p_socket ps, const char *address,
         unsigned short port, p_timeout tm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -182,6 +190,7 @@ const char *inet_tryconnect(p_socket ps, const char *address,
 const char *inet_trybind(p_socket ps, const char *address, unsigned short port)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -192,6 +201,7 @@ const char *inet_trybind(p_socket ps, const char *address, unsigned short port)
 int inet_aton(const char *cp, struct in_addr *inp)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 

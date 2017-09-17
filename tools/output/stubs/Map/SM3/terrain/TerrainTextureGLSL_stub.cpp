@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -25,6 +26,7 @@ namespace terrain {
 static void ShowInfoLog(GLhandleARB handle)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -111,12 +113,14 @@ struct Shader {
 static int closest_pot(int i)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // A framebuffer enabled as texture
 class BufferTexture : public BaseTexture
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -172,23 +176,27 @@ std::string ShaderBuilder::GenTextureRead(int tu, int tc) {
 NodeGLSLShader* ShaderBuilder::EndPass(ShaderDef* sd, const std::string &operations, uint passIndex)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ShaderBuilder::AddPPDefines(ShaderDef* sd, Shader& shader, uint passIndex)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ShaderBuilder::BuildFragmentShader(NodeGLSLShader* ns, uint passIndex, const std::string& operations, ShaderDef* sd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ShaderBuilder::BuildVertexShader(NodeGLSLShader* ns, uint passIndex, ShaderDef* sd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -196,6 +204,7 @@ void ShaderBuilder::BuildVertexShader(NodeGLSLShader* ns, uint passIndex, Shader
 bool ShaderBuilder::ProcessStage(std::vector<ShaderDef::Stage>& stages, uint &index, std::string& opstr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -261,11 +270,13 @@ void ShaderBuilder::Build(ShaderDef* shaderDef) {
 NodeGLSLShader::NodeGLSLShader()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 NodeGLSLShader::~NodeGLSLShader()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -273,11 +284,13 @@ NodeGLSLShader::~NodeGLSLShader()
 void NodeGLSLShader::BindTSM(Vector3* buf, uint vertexSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void NodeGLSLShader::UnbindTSM()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -344,25 +357,30 @@ void NodeGLSLShader::Cleanup() {
 std::string NodeGLSLShader::GetDebugDesc()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 uint NodeGLSLShader::GetVertexDataRequirements()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 void NodeGLSLShader::GetTextureUnits(BaseTexture* tex, int &imageUnit, int& coordUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 GLSLShaderHandler::GLSLShaderHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 GLSLShaderHandler::~GLSLShaderHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -386,28 +404,33 @@ void GLSLShaderHandler::BeginTexturing() {
 void GLSLShaderHandler::BeginPass(const std::vector<Blendmap*>& blendmaps, const std::vector<TiledTexture*>& textures, int pass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool GLSLShaderHandler::SetupShader(IShaderSetup* ps, NodeSetupParams& params)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void GLSLShaderHandler::BeginBuild()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void GLSLShaderHandler::EndBuild()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GLSLShaderHandler::BuildNodeSetup(ShaderDef* shaderDef, RenderSetup* renderSetup)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -429,21 +452,25 @@ int GLSLShaderHandler::MaxTextureCoords() {
 SimpleCopyShader::SimpleCopyShader(BufferTexture* buf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 SimpleCopyShader::~SimpleCopyShader()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SimpleCopyShader::Setup()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SimpleCopyShader::Cleanup()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 }

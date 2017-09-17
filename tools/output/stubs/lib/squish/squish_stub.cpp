@@ -1,3 +1,4 @@
+#include <iostream>
 /* -----------------------------------------------------------------------------
 
 	Copyright (c) 2006 Simon Brown                          si@sjbrown.co.uk
@@ -37,36 +38,43 @@ namespace squish {
 static int FixFlags( int flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Compress( u8 const* rgba, void* block, int flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CompressMasked( u8 const* rgba, int mask, void* block, int flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Decompress( u8* rgba, void const* block, int flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int GetStorageRequirements( int width, int height, int flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CompressImage( u8 const* rgba, int width, int height, void* blocks, int flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DecompressImage( u8* rgba, int width, int height, void const* blocks, int flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace squish

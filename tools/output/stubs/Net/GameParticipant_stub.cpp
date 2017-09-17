@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "GameParticipant.h"
@@ -17,20 +18,24 @@ GameParticipant::GameParticipant()
 , isMidgameJoin(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GameParticipant::SendData(boost::shared_ptr<const netcode::RawPacket> packet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GameParticipant::Connected(boost::shared_ptr<netcode::CConnection> _link, bool local)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GameParticipant::Kill(const std::string& reason, const bool flush)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "MissileLauncher.h"
@@ -14,20 +15,24 @@ CR_REG_METADATA(CMissileLauncher, )
 CMissileLauncher::CMissileLauncher(CUnit* owner, const WeaponDef* def): CWeapon(owner, def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMissileLauncher::UpdateWantedDir()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMissileLauncher::FireImpl(const bool scriptCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CMissileLauncher::HaveFreeLineOfFire(const float3 pos, const SWeaponTarget& trg, bool useMuzzle) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

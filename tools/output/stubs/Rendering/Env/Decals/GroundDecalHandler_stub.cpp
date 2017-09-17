@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <algorithm>
@@ -48,6 +49,7 @@ CGroundDecalHandler::CGroundDecalHandler()
 	: CEventClient("[CGroundDecalHandler]", 314159, false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -55,6 +57,7 @@ CGroundDecalHandler::CGroundDecalHandler()
 CGroundDecalHandler::~CGroundDecalHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundDecalHandler::LoadDecalShaders() {
@@ -120,18 +123,21 @@ void CGroundDecalHandler::SunChanged() {
 static inline void AddQuadVertices(CVertexArray* va, int x, float* yv, int z, const float* uv, unsigned char* color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void CGroundDecalHandler::DrawObjectDecal(SolidObjectGroundDecal* decal)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void CGroundDecalHandler::DrawGroundScar(CGroundDecalHandler::Scar* scar, bool fade)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -214,6 +220,7 @@ void CGroundDecalHandler::DrawObjectDecals() {
 void CGroundDecalHandler::AddScars()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundDecalHandler::DrawScars() {
@@ -239,38 +246,45 @@ void CGroundDecalHandler::DrawScars() {
 void CGroundDecalHandler::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundDecalHandler::BindTextures()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundDecalHandler::KillTextures()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundDecalHandler::BindShader(const float3& ambientColor)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundDecalHandler::DrawDecals()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGroundDecalHandler::AddDecal(CUnit* unit, const float3& newPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGroundDecalHandler::AddExplosion(float3 pos, float damage, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -278,29 +292,34 @@ void CGroundDecalHandler::LoadScar(const std::string& file, unsigned char* buf,
                                    int xoffset, int yoffset)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CGroundDecalHandler::OverlapSize(Scar* s1, Scar* s2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGroundDecalHandler::TestOverlaps(Scar* scar)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGroundDecalHandler::RemoveScar(Scar* scar, bool removeFromScars)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CGroundDecalHandler::GetSolidObjectDecalType(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -322,12 +341,14 @@ CGroundDecalHandler::Scar::~Scar() {
 void CGroundDecalHandler::MoveSolidObject(CSolidObject* object, const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGroundDecalHandler::RemoveSolidObject(CSolidObject* object, GhostSolidObject* gb)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -337,6 +358,7 @@ void CGroundDecalHandler::RemoveSolidObject(CSolidObject* object, GhostSolidObje
 void CGroundDecalHandler::ForceRemoveSolidObject(CSolidObject* object)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

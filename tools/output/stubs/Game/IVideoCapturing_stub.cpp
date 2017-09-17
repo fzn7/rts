@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "IVideoCapturing.h"
@@ -14,23 +15,27 @@
 IVideoCapturing* IVideoCapturing::GetInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void IVideoCapturing::FreeInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 IVideoCapturing::IVideoCapturing()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 IVideoCapturing::~IVideoCapturing()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void IVideoCapturing::SetCapturing(bool enabled) {

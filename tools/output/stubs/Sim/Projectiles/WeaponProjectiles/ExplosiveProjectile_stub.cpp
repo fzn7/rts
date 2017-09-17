@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -29,24 +30,29 @@ CExplosiveProjectile::CExplosiveProjectile(const ProjectileParams& params): CWea
 	, curTime(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CExplosiveProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CExplosiveProjectile::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CExplosiveProjectile::ShieldRepulse(const float3& shieldPos, float shieldForce, float shieldMaxSpeed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CExplosiveProjectile::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

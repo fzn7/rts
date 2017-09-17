@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Return classification value corresponding to argument.
    Copyright (C) 1997, 2000, 2002 Free Software Foundation, Inc.
@@ -29,6 +30,7 @@ int
 __fpclassifyf (Simple x)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 libm_hidden_def (__fpclassifyf)
 }

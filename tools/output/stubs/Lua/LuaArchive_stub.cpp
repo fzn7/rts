@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LuaArchive.h"
@@ -33,6 +34,7 @@ static const std::string GetFileName(const std::string& name){
 bool LuaArchive::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -43,18 +45,21 @@ bool LuaArchive::PushEntries(lua_State* L)
 int LuaArchive::GetMaps(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaArchive::GetGames(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaArchive::GetAllArchives(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -63,6 +68,7 @@ int LuaArchive::GetAllArchives(lua_State* L)
 int LuaArchive::HasArchive(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -71,18 +77,21 @@ int LuaArchive::HasArchive(lua_State* L)
 int LuaArchive::GetArchiveInfo(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaArchive::GetArchiveDependencies(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaArchive::GetArchiveReplaces(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -92,6 +101,7 @@ int LuaArchive::GetArchiveReplaces(lua_State* L)
 int LuaArchive::GetArchiveChecksum(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -100,4 +110,5 @@ int LuaArchive::GetArchiveChecksum(lua_State* L)
 int LuaArchive::GetAvailableAIs(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

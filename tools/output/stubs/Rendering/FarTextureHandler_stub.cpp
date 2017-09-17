@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -30,12 +31,14 @@ CFarTextureHandler* farTextureHandler = nullptr;
 CFarTextureHandler::CFarTextureHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CFarTextureHandler::~CFarTextureHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -45,6 +48,7 @@ CFarTextureHandler::~CFarTextureHandler()
 int2 CFarTextureHandler::GetTextureCoordsInt(const int farTextureNum, const int orientation) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -53,12 +57,14 @@ int2 CFarTextureHandler::GetTextureCoordsInt(const int farTextureNum, const int 
 float2 CFarTextureHandler::GetTextureCoords(const int farTextureNum, const int orientation) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CFarTextureHandler::HaveFarIcon(const CSolidObject* obj) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -68,24 +74,28 @@ bool CFarTextureHandler::HaveFarIcon(const CSolidObject* obj) const
 void CFarTextureHandler::CreateFarTexture(const CSolidObject* obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFarTextureHandler::DrawFarTexture(const CSolidObject* obj, CVertexArray* va)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFarTextureHandler::Queue(const CSolidObject* obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFarTextureHandler::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -93,5 +103,6 @@ void CFarTextureHandler::Draw()
 bool CFarTextureHandler::CheckResizeAtlas()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

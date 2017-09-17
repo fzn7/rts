@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "ExternalAI/SkirmishAIHandler.h"
@@ -483,6 +484,7 @@ DebugDrawerAI::TexSet::Texture::Texture(int w, int h, const float* data):
 	labelHeight(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 DebugDrawerAI::TexSet::Texture::~Texture() {

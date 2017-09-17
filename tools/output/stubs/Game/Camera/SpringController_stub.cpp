@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <boost/cstdint.hpp>
@@ -35,30 +36,35 @@ CSpringController::CSpringController()
 , cursorZoomOut(configHandler->GetBool("CamSpringZoomOutFromMousePos"))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSpringController::KeyMove(float3 move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSpringController::MouseMove(float3 move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSpringController::ScreenEdgeMove(float3 move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSpringController::MouseWheelMove(float move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -143,46 +149,54 @@ float CSpringController::ZoomOut(
 void CSpringController::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static float GetRotationWithCardinalLock(float rot)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CSpringController::MoveAzimuth(float move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CSpringController::GetAzimuth() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CSpringController::GetPos() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSpringController::SwitchTo(const int oldCam, const bool showText)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSpringController::GetState(StateMap& sm) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSpringController::SetState(const StateMap& sm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

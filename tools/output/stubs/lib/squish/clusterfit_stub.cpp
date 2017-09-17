@@ -1,3 +1,4 @@
+#include <iostream>
 /* -----------------------------------------------------------------------------
 
 	Copyright (c) 2006 Simon Brown                          si@sjbrown.co.uk
@@ -35,21 +36,25 @@ ClusterFit::ClusterFit( ColourSet const* colours, int flags )
   : ColourFit( colours, flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool ClusterFit::ConstructOrdering( Vec3 const& axis, int iteration )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ClusterFit::Compress3( void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ClusterFit::Compress4( void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace squish

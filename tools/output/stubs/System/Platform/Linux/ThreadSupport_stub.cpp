@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <pthread.h>
@@ -55,24 +56,28 @@ static int gettid () {
 static LinuxThreadState GetLinuxThreadState(int tid)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void ThreadSIGUSR1Handler(int signum, siginfo_t* info, void* pCtx)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool SetThreadSignalHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void SetCurrentThreadControls(bool isLoadThread)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -126,11 +131,13 @@ void ThreadStart(
 SuspendResult ThreadControls::Suspend()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 SuspendResult ThreadControls::Resume()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 }

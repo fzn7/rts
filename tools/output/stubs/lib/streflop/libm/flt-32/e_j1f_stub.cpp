@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* e_j1f.c -- Simple version of e_j1.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -62,6 +63,7 @@ static Simple zero    = 0.0f;
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef __STDC__
@@ -95,6 +97,7 @@ static Simple V0[5] = {
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /* For x >= 8, the asymptotic expansions of pone is
@@ -211,6 +214,7 @@ static Simple ps2[5] = {
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -332,5 +336,6 @@ static Simple qs2[6] = {
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

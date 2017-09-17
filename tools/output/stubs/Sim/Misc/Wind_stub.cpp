@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -33,21 +34,25 @@ CWind wind;
 CWind::CWind()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CWind::~CWind()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CWind::LoadWind(float minw, float maxw)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CWind::ResetState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -78,5 +83,6 @@ bool CWind::DelUnit(CUnit* u) {
 void CWind::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

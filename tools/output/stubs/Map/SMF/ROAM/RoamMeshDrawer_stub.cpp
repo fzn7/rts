@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "RoamMeshDrawer.h"
@@ -44,11 +45,13 @@ CRoamMeshDrawer::CRoamMeshDrawer(CSMFReadMap* rm, CSMFGroundDrawer* gd)
 	, lastGroundDetail{0, 0}
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CRoamMeshDrawer::~CRoamMeshDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -58,6 +61,7 @@ CRoamMeshDrawer::~CRoamMeshDrawer()
 void CRoamMeshDrawer::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -65,16 +69,19 @@ void CRoamMeshDrawer::Update()
 void CRoamMeshDrawer::DrawMesh(const DrawPass::e& drawPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CRoamMeshDrawer::DrawBorderMesh(const DrawPass::e& drawPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CRoamMeshDrawer::DrawInMiniMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -82,6 +89,7 @@ void CRoamMeshDrawer::DrawInMiniMap()
 void CRoamMeshDrawer::Reset(bool shadowPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -89,6 +97,7 @@ void CRoamMeshDrawer::Reset(bool shadowPass)
 bool CRoamMeshDrawer::Tessellate(std::vector<Patch>& patches, const CCamera* cam, int viewRadius, bool shadowPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -96,5 +105,6 @@ bool CRoamMeshDrawer::Tessellate(std::vector<Patch>& patches, const CCamera* cam
 void CRoamMeshDrawer::UnsyncedHeightMapUpdate(const SRectangle& rect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

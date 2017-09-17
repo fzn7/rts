@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Battery.h"
@@ -15,23 +16,27 @@ CBattery::CBattery()
 	, onBattery(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CBattery::~CBattery()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBattery::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBattery::HasBattery()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

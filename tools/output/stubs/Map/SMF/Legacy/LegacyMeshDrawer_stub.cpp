@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LegacyMeshDrawer.h"
@@ -23,11 +24,13 @@ CLegacyMeshDrawer::CLegacyMeshDrawer(CSMFReadMap* rm, CSMFGroundDrawer* gd)
 	//, waterDrawn(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CLegacyMeshDrawer::~CLegacyMeshDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -36,17 +39,20 @@ CLegacyMeshDrawer::~CLegacyMeshDrawer()
 void CLegacyMeshDrawer::DrawVertexAQ(CVertexArray* ma, int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLegacyMeshDrawer::DrawVertexAQ(CVertexArray* ma, int x, int y, float height)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLegacyMeshDrawer::DrawGroundVertexArrayQ(CVertexArray*& ma)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -54,6 +60,7 @@ void CLegacyMeshDrawer::DrawGroundVertexArrayQ(CVertexArray*& ma)
 bool CLegacyMeshDrawer::BigTexSquareRowVisible(const CCamera* cam, int bty) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -61,6 +68,7 @@ bool CLegacyMeshDrawer::BigTexSquareRowVisible(const CCamera* cam, int bty) cons
 void CLegacyMeshDrawer::FindRange(const CCamera* cam, int& xs, int& xe, int y, int lod)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -68,18 +76,21 @@ void CLegacyMeshDrawer::FindRange(const CCamera* cam, int& xs, int& xe, int y, i
 void CLegacyMeshDrawer::DoDrawGroundRow(const CCamera* cam, int bty)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLegacyMeshDrawer::UpdateLODParams(const DrawPass::e& drawPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLegacyMeshDrawer::DrawMesh(const DrawPass::e& drawPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -413,4 +424,5 @@ void CLegacyMeshDrawer::DoDrawGroundShadowLOD(int nlod) {
 void CLegacyMeshDrawer::DrawShadowMesh()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

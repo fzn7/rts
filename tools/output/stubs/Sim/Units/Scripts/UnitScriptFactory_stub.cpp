@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "UnitScriptFactory.h"
@@ -20,6 +21,7 @@
 CUnitScript* CUnitScriptFactory::CreateScript(const std::string& name, CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

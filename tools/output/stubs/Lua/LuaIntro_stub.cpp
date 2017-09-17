@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <mutex>
@@ -49,42 +50,49 @@ CLuaIntro::CLuaIntro()
 : CLuaHandle("LuaIntro", LUA_HANDLE_ORDER_INTRO, true, false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CLuaIntro::~CLuaIntro()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaIntro::RemoveSomeOpenGLFunctions(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaIntro::LoadUnsyncedCtrlFunctions(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaIntro::LoadUnsyncedReadFunctions(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaIntro::LoadSyncedReadFunctions(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 string CLuaIntro::LoadFile(const string& filename) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -94,12 +102,14 @@ string CLuaIntro::LoadFile(const string& filename) const
 void CLuaIntro::DrawLoadScreen()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaIntro::LoadProgress(const std::string& msg, const bool replace_lastline)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/

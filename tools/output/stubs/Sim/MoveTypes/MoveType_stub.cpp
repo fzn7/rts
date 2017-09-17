@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <cassert>
@@ -45,6 +46,7 @@ AMoveType::AMoveType(CUnit* owner):
 	maneuverLeash(500.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -52,11 +54,13 @@ AMoveType::AMoveType(CUnit* owner):
 void AMoveType::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void AMoveType::KeepPointingTo(CUnit* unit, float distance, bool aggressive)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float AMoveType::CalcStaticTurnRadius() const {

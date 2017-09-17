@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -16,12 +17,14 @@
 LuaScream::LuaScream()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaScream::~LuaScream()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -31,6 +34,7 @@ LuaScream::~LuaScream()
 bool LuaScream::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -40,24 +44,28 @@ bool LuaScream::PushEntries(lua_State* L)
 bool LuaScream::CreateMetatable(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaScream::meta_gc(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaScream::meta_index(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaScream::meta_newindex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -67,6 +75,7 @@ int LuaScream::meta_newindex(lua_State* L)
 int LuaScream::CreateScream(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

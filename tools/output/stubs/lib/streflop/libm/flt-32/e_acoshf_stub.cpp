@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* e_acoshf.c -- Simple version of e_acosh.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -38,5 +39,6 @@ ln2	= 6.9314718246e-01f;  /* 0x3f317218 */
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

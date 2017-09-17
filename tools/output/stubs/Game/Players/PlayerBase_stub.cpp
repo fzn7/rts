@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "PlayerBase.h"
@@ -30,9 +31,11 @@ PlayerBase::PlayerBase() :
 	desynced(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void PlayerBase::SetValue(const std::string& key, const std::string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

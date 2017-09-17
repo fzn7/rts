@@ -1,3 +1,4 @@
+#include <iostream>
 /* -----------------------------------------------------------------------------
 
 	Copyright (c) 2006 Simon Brown                          si@sjbrown.co.uk
@@ -33,11 +34,13 @@ ColourFit::ColourFit( ColourSet const* colours, int flags )
 	m_flags( flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ColourFit::Compress( void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace squish

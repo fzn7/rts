@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <utility>
@@ -80,12 +81,14 @@ CBitmap::CBitmap()
 #endif // !BITMAP_NO_OPENGL
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CBitmap::~CBitmap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -101,6 +104,7 @@ CBitmap::CBitmap(const CBitmap& old)
 #endif // !BITMAP_NO_OPENGL
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -116,6 +120,7 @@ CBitmap::CBitmap(CBitmap&& bm)
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -130,57 +135,67 @@ CBitmap::CBitmap(const unsigned char* data, int _xsize, int _ysize, int _channel
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CBitmap& CBitmap::operator=(const CBitmap& bm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CBitmap& CBitmap::operator=(CBitmap&& bm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBitmap::Alloc(int w, int h, int c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBitmap::Alloc(int w, int h)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBitmap::AllocDummy(const SColor fill)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CBitmap::Load(std::string const& filename, unsigned char defaultAlpha)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBitmap::LoadGrayscale(const std::string& filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBitmap::Save(std::string const& filename, bool opaque) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBitmap::SaveFloat(std::string const& filename) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -188,17 +203,20 @@ bool CBitmap::SaveFloat(std::string const& filename) const
 unsigned int CBitmap::CreateTexture(float aniso, bool mipmaps) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void HandleDDSMipmap(GLenum target, bool mipmaps, int num_mipmaps)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 unsigned int CBitmap::CreateDDSTexture(unsigned int texID, float aniso, bool mipmaps) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #else  // !BITMAP_NO_OPENGL
 
@@ -215,87 +233,102 @@ unsigned int CBitmap::CreateDDSTexture(unsigned int texID, float aniso, bool mip
 void CBitmap::CreateAlpha(unsigned char red, unsigned char green, unsigned char blue)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBitmap::SetTransparent(const SColor& c, const SColor trans)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBitmap::Renormalize(float3 newCol)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline static void kernelBlur(CBitmap* dst, const unsigned char* src, int x, int y, int channel, float weight)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBitmap::Blur(int iterations, float weight)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBitmap::CopySubImage(const CBitmap& src, int xpos, int ypos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CBitmap CBitmap::CanvasResize(const int newx, const int newy, const bool center) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 SDL_Surface* CBitmap::CreateSDLSurface() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CBitmap CBitmap::CreateRescaled(int newx, int newy) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBitmap::InvertColors()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBitmap::InvertAlpha()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBitmap::GrayScale()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static ILubyte TintByte(ILubyte value, float tint)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBitmap::Tint(const float tint[3])
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBitmap::ReverseYAxis()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

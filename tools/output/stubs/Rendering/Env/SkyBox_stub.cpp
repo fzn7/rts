@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -25,14 +26,17 @@ LOG_REGISTER_SECTION_GLOBAL(LOG_SECTION_SKY_BOX)
 CSkyBox::CSkyBox(const std::string& texture)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSkyBox::~CSkyBox()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSkyBox::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

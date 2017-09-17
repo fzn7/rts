@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "InputHandler.h"
@@ -17,6 +18,7 @@ Joystick* stick = NULL;
 void InitJoystick()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void FreeJoystick() {
@@ -30,14 +32,17 @@ Joystick::Joystick()
 	: myStick(nullptr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 Joystick::~Joystick()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool Joystick::HandleEvent(const SDL_Event& event)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

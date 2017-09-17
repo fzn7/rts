@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Height.h"
@@ -24,34 +25,40 @@ CHeightTexture::CHeightTexture()
 , needUpdate(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CHeightTexture::UpdateCPU()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CHeightTexture::~CHeightTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CHeightTexture::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CHeightTexture::UnsyncedHeightMapUpdate(const SRectangle& rect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CHeightTexture::IsUpdateNeeded()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

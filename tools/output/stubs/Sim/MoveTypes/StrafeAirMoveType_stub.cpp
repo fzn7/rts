@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -364,6 +365,7 @@ CStrafeAirMoveType::CStrafeAirMoveType(CUnit* owner):
 	maxRudder(0.01f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -371,6 +373,7 @@ CStrafeAirMoveType::CStrafeAirMoveType(CUnit* owner):
 bool CStrafeAirMoveType::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -504,6 +507,7 @@ bool CStrafeAirMoveType::HandleCollisions(bool checkCollisions) {
 void CStrafeAirMoveType::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -511,6 +515,7 @@ void CStrafeAirMoveType::SlowUpdate()
 void CStrafeAirMoveType::UpdateManeuver()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -518,6 +523,7 @@ void CStrafeAirMoveType::UpdateManeuver()
 void CStrafeAirMoveType::UpdateAttack()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -525,6 +531,7 @@ void CStrafeAirMoveType::UpdateAttack()
 bool CStrafeAirMoveType::UpdateFlying(float wantedHeight, float engine)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -542,12 +549,14 @@ static float GetVTOLAccelerationSign(float h, float wh, float speedy, bool ascen
 void CStrafeAirMoveType::UpdateTakeOff()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CStrafeAirMoveType::UpdateLanding()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -555,6 +564,7 @@ void CStrafeAirMoveType::UpdateLanding()
 void CStrafeAirMoveType::UpdateAirPhysics(float rudder, float aileron, float elevator, float engine, const float3& engineThrustVector)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -562,6 +572,7 @@ void CStrafeAirMoveType::UpdateAirPhysics(float rudder, float aileron, float ele
 void CStrafeAirMoveType::SetState(AAirMoveType::AircraftState newState)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -569,18 +580,21 @@ void CStrafeAirMoveType::SetState(AAirMoveType::AircraftState newState)
 float3 CStrafeAirMoveType::FindLandingPos()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CStrafeAirMoveType::BrakingDistance(float speed, float rate) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CStrafeAirMoveType::SetMaxSpeed(float speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -588,16 +602,19 @@ void CStrafeAirMoveType::SetMaxSpeed(float speed)
 void CStrafeAirMoveType::StartMoving(float3 gpos, float goalRadius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CStrafeAirMoveType::StartMoving(float3 pos, float goalRadius, float speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CStrafeAirMoveType::StopMoving(bool callScript, bool hardStop)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -605,6 +622,7 @@ void CStrafeAirMoveType::StopMoving(bool callScript, bool hardStop)
 void CStrafeAirMoveType::Takeoff()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

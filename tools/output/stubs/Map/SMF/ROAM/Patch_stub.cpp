@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 //
@@ -40,23 +41,27 @@ static std::vector<CTriNodePool> pools[CRoamMeshDrawer::MESH_COUNT];
 void CTriNodePool::InitPools(bool shadowPass, size_t newPoolSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTriNodePool::FreePools(bool shadowPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTriNodePool::ResetAll(bool shadowPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CTriNodePool* CTriNodePool::GetPool(bool shadowPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -67,18 +72,21 @@ CTriNodePool* CTriNodePool::GetPool(bool shadowPass)
 CTriNodePool::CTriNodePool(const size_t poolSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTriNodePool::Reset()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTriNodePool::Allocate(TriTreeNode*& left, TriTreeNode*& right)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -101,33 +109,39 @@ Patch::Patch()
 	, vertexIndexBuffer(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 Patch::~Patch()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Patch::Init(CSMFGroundDrawer* _drawer, int patchX, int patchZ)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Patch::Reset()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void Patch::UpdateHeightMap(const SRectangle& rect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void Patch::VBOUploadVertices()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -138,6 +152,7 @@ void Patch::VBOUploadVertices()
 void Patch::Split(TriTreeNode* tri)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -148,6 +163,7 @@ void Patch::Split(TriTreeNode* tri)
 void Patch::RecursTessellate(TriTreeNode* tri, const int2 left, const int2 right, const int2 apex, const int node)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -158,17 +174,20 @@ void Patch::RecursTessellate(TriTreeNode* tri, const int2 left, const int2 right
 void Patch::RecursRender(const TriTreeNode* tri, const int2 left, const int2 right, const int2 apex)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void Patch::GenerateIndices()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float Patch::GetHeight(int2 pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // ---------------------------------------------------------------------
@@ -239,6 +258,7 @@ float Patch::RecursComputeVariance(
 void Patch::ComputeVariance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -248,6 +268,7 @@ void Patch::ComputeVariance()
 bool Patch::Tessellate(const float3& campos, int groundDetail, bool shadowPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -258,12 +279,14 @@ bool Patch::Tessellate(const float3& campos, int groundDetail, bool shadowPass)
 void Patch::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void Patch::DrawBorder()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -334,23 +357,27 @@ void Patch::RecursBorderRender(
 void Patch::GenerateBorderIndices(CVertexArray* va)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void Patch::Upload()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Patch::SetSquareTexture() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void Patch::SwitchRenderMode(int mode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -363,6 +390,7 @@ void Patch::SwitchRenderMode(int mode)
 void Patch::UpdateVisibility(CCamera* cam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 
@@ -370,6 +398,7 @@ void Patch::UpdateVisibility(CCamera* cam)
 class CPatchInViewChecker : public CReadMap::IQuadDrawer
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool Patch::IsVisible(const CCamera* cam) const {

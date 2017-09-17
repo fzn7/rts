@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -50,6 +51,7 @@ static std::string GetUnitDefBuildOptionToolTip(const UnitDef* ud, bool disabled
 CFactoryCAI::CFactoryCAI(): CCommandAI()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -57,6 +59,7 @@ CFactoryCAI::CFactoryCAI(): CCommandAI()
 void CFactoryCAI::GiveCommandReal(const Command& c, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -64,18 +67,21 @@ void CFactoryCAI::InsertBuildCommand(CCommandQueue::iterator& it,
                                      const Command& newCmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CFactoryCAI::RemoveBuildCommand(CCommandQueue::iterator& it)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFactoryCAI::DecreaseQueueCount(const Command& buildCommand, int& numQueued)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -90,22 +96,26 @@ void CFactoryCAI::FactoryFinishBuild(const Command& command) {
 void CFactoryCAI::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFactoryCAI::ExecuteStop(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CFactoryCAI::GetDefaultCmd(const CUnit* pointed, const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFactoryCAI::UpdateIconName(int cmdID, const int& numQueued)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

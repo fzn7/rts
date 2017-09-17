@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Rendering/Shaders/Shader.h"
@@ -42,23 +43,27 @@ CONFIG(bool, UseShaderCache).defaultValue(true).description("If already compiled
 static bool glslIsValid(GLuint obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static std::string glslGetLog(GLuint obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static std::string GetShaderSource(const std::string& fileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static bool ExtractGlslVersion(std::string* src, std::string* version)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*****************************************************************/

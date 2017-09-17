@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/Platform/Win/win32.h"
@@ -62,12 +63,14 @@ CPathEstimator::CPathEstimator(IPathFinder* pf, unsigned int BLOCK_SIZE, const s
 	, blockUpdatePenalty(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CPathEstimator::~CPathEstimator()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -79,12 +82,14 @@ const int2* CPathEstimator::GetDirectionVectorsTable() {
 void CPathEstimator::InitEstimator(const std::string& cacheFileName, const std::string& map)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPathEstimator::InitBlocks()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -92,18 +97,21 @@ __FORCE_ALIGN_STACK__
 void CPathEstimator::CalcOffsetsAndPathCosts(unsigned int threadNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPathEstimator::CalculateBlockOffsets(unsigned int blockIdx, unsigned int threadNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPathEstimator::EstimatePathCosts(unsigned int blockIdx, unsigned int threadNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -113,6 +121,7 @@ void CPathEstimator::EstimatePathCosts(unsigned int blockIdx, unsigned int threa
 int2 CPathEstimator::FindOffset(const MoveDef& moveDef, unsigned int blockX, unsigned int blockZ) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -122,6 +131,7 @@ int2 CPathEstimator::FindOffset(const MoveDef& moveDef, unsigned int blockX, uns
 void CPathEstimator::CalculateVertices(const MoveDef& moveDef, int2 block, unsigned int thread)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -135,6 +145,7 @@ void CPathEstimator::CalculateVertex(
 	unsigned int threadNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -144,6 +155,7 @@ void CPathEstimator::CalculateVertex(
 void CPathEstimator::MapChanged(unsigned int x1, unsigned int z1, unsigned int x2, unsigned z2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -153,18 +165,21 @@ void CPathEstimator::MapChanged(unsigned int x1, unsigned int z1, unsigned int x
 void CPathEstimator::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const CPathCache::CacheItem* CPathEstimator::GetCache(const int2 strtBlock, const int2 goalBlock, float goalRadius, int pathType, const bool synced) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPathEstimator::AddCache(const IPath::Path* path, const IPath::SearchResult result, const int2 strtBlock, const int2 goalBlock, float goalRadius, int pathType, const bool synced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -174,6 +189,7 @@ void CPathEstimator::AddCache(const IPath::Path* path, const IPath::SearchResult
 IPath::SearchResult CPathEstimator::DoSearch(const MoveDef& moveDef, const CPathFinderDef& peDef, const CSolidObject* owner)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -326,6 +342,7 @@ bool CPathEstimator::TestBlock(
 IPath::SearchResult CPathEstimator::FinishSearch(const MoveDef& moveDef, const CPathFinderDef& pfDef, IPath::Path& foundPath) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -335,6 +352,7 @@ IPath::SearchResult CPathEstimator::FinishSearch(const MoveDef& moveDef, const C
 bool CPathEstimator::ReadFile(const std::string& cacheFileName, const std::string& map)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -344,12 +362,14 @@ bool CPathEstimator::ReadFile(const std::string& cacheFileName, const std::strin
 void CPathEstimator::WriteFile(const std::string& cacheFileName, const std::string& map)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 boost::uint32_t CPathEstimator::CalcChecksum() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -359,4 +379,5 @@ boost::uint32_t CPathEstimator::CalcChecksum() const
 unsigned int CPathEstimator::Hash() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

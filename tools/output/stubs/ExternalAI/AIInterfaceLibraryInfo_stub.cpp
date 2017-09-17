@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "AIInterfaceLibraryInfo.h"
@@ -24,6 +25,7 @@ CAIInterfaceLibraryInfo::CAIInterfaceLibraryInfo(
 	, key_description(interfaceInfo.key_description)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CAIInterfaceLibraryInfo::CAIInterfaceLibraryInfo(

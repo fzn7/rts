@@ -34,78 +34,91 @@ bool isblank(int c) {
 CUnitDefHandler::CUnitDefHandler(LuaParser* defsParser) : noCost(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CUnitDefHandler::~CUnitDefHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDefHandler::CleanBuildOptions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDefHandler::ProcessDecoys()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDefHandler::FindStartUnits()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDefHandler::UnitDefLoadSounds(UnitDef* ud, const LuaTable& udTable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDefHandler::LoadSounds(const LuaTable& soundsTable, GuiSoundSet& gsound, const string& soundName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDefHandler::LoadSound(GuiSoundSet& gsound, const string& fileName, const float volume)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const UnitDef* CUnitDefHandler::GetUnitDefByName(std::string name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const UnitDef* CUnitDefHandler::GetUnitDefByID(int defid)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool LoadBuildPic(const string& filename, CBitmap& bitmap)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned int CUnitDefHandler::GetUnitDefImage(const UnitDef* unitDef)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDefHandler::SetUnitDefImage(const UnitDef* unitDef, const std::string& texName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -113,22 +126,26 @@ void CUnitDefHandler::SetUnitDefImage(const UnitDef* unitDef,
                                       unsigned int texID, int xsize, int ysize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnitDefHandler::ToggleNoCost()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDefHandler::AssignTechLevels()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitDefHandler::AssignTechLevel(UnitDef& ud, int level)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

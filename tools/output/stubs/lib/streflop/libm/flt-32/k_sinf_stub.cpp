@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* k_sinf.c -- Simple version of k_sin.c
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -43,5 +44,6 @@ S6  =  1.5896910177e-10f; /* 0x2f2ec9d3 */
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

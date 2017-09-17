@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /**
@@ -28,12 +29,14 @@ GLsizei FBO::maxSamples = -1;
 bool FBO::IsSupported()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static GLint GetCurrentBoundFBO()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -44,6 +47,7 @@ static GLint GetCurrentBoundFBO()
 GLenum FBO::GetTextureTargetByID(const GLuint id, const unsigned int i)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -53,6 +57,7 @@ GLenum FBO::GetTextureTargetByID(const GLuint id, const unsigned int i)
 void FBO::DownloadAttachment(const GLenum attachment)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -61,6 +66,7 @@ void FBO::DownloadAttachment(const GLenum attachment)
 void FBO::GLContextLost()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -70,6 +76,7 @@ void FBO::GLContextLost()
 void FBO::GLContextReinit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -80,6 +87,7 @@ void FBO::GLContextReinit()
 FBO::FBO() : fboId(0), reloadOnAltTab(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -89,6 +97,7 @@ FBO::FBO() : fboId(0), reloadOnAltTab(false)
 FBO::~FBO()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -98,6 +107,7 @@ FBO::~FBO()
 bool FBO::IsValid() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -107,6 +117,7 @@ bool FBO::IsValid() const
 void FBO::Bind()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -116,6 +127,7 @@ void FBO::Bind()
 void FBO::Unbind()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -126,6 +138,7 @@ void FBO::Unbind()
 bool FBO::CheckStatus(std::string name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -135,6 +148,7 @@ bool FBO::CheckStatus(std::string name)
 GLenum FBO::GetStatus()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -144,6 +158,7 @@ GLenum FBO::GetStatus()
 void FBO::AttachTexture(const GLuint texId, const GLenum texTarget, const GLenum attachment, const int mipLevel, const int zSlice )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -153,6 +168,7 @@ void FBO::AttachTexture(const GLuint texId, const GLenum texTarget, const GLenum
 void FBO::AttachRenderBuffer(const GLuint rboId, const GLenum attachment)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -162,6 +178,7 @@ void FBO::AttachRenderBuffer(const GLuint rboId, const GLenum attachment)
 void FBO::Detach(const GLenum attachment)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -171,6 +188,7 @@ void FBO::Detach(const GLenum attachment)
 void FBO::DetachAll()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -180,6 +198,7 @@ void FBO::DetachAll()
 void FBO::CreateRenderBuffer(const GLenum attachment, const GLenum format, const GLsizei width, const GLsizei height)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -189,9 +208,11 @@ void FBO::CreateRenderBuffer(const GLenum attachment, const GLenum format, const
 void FBO::CreateRenderBufferMultisample(const GLenum attachment, const GLenum format, const GLsizei width, const GLsizei height, GLsizei samples)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 GLsizei FBO::GetMaxSamples()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

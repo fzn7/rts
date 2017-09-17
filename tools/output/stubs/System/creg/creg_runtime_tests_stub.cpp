@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "creg_runtime_tests.h"
@@ -14,11 +15,13 @@
 static void PreCregTest(const char* logmsg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static bool PostCregTest(int fineClasses, int brokenClasses, int ignore = 0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -27,23 +30,27 @@ static bool PostCregTest(int fineClasses, int brokenClasses, int ignore = 0)
 static bool TestCregClasses1()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool TestCregClasses2()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static bool TestCregClasses3()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool TestCregClasses4()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

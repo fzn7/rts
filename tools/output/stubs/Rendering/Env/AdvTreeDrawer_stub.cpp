@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "AdvTreeDrawer.h"
@@ -46,11 +47,13 @@ static const float HALF_MAX_TREE_HEIGHT   = MAX_TREE_HEIGHT * 0.5f;
 CAdvTreeDrawer::CAdvTreeDrawer(): ITreeDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CAdvTreeDrawer::~CAdvTreeDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -182,6 +185,7 @@ void CAdvTreeDrawer::LoadTreeShaders() {
 void CAdvTreeDrawer::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -189,6 +193,7 @@ void CAdvTreeDrawer::Update()
 static inline void SetArrayQ(CVertexArray* va, float t1, float t2, const float3& v)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeDrawer::DrawTreeVertexA(CVertexArray* va, float3& ftpos, float dx, float dy) {
@@ -266,6 +271,7 @@ void CAdvTreeDrawer::DrawTreeVertexFar(CVertexArray* va, const float3& pos, cons
 struct CAdvTreeSquareDrawer : public CReadMap::IQuadDrawer
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -274,6 +280,7 @@ struct CAdvTreeSquareDrawer : public CReadMap::IQuadDrawer
 void CAdvTreeDrawer::Draw(float treeDistance, bool drawReflection)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -281,6 +288,7 @@ void CAdvTreeDrawer::Draw(float treeDistance, bool drawReflection)
 struct CAdvTreeSquareShadowPassDrawer: public CReadMap::IQuadDrawer
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -288,11 +296,13 @@ struct CAdvTreeSquareShadowPassDrawer: public CReadMap::IQuadDrawer
 void CAdvTreeDrawer::DrawShadowPass()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CAdvTreeDrawer::AddFallingTree(int treeID, int treeType, const float3& pos, const float3& dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

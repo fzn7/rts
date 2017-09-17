@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "InfoTexture.h"
@@ -10,6 +11,7 @@ CInfoTexture::CInfoTexture()
 , texChannels(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -20,4 +22,5 @@ CInfoTexture::CInfoTexture(const std::string& _name, GLuint _texture, int2 _texS
 , texChannels(4)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

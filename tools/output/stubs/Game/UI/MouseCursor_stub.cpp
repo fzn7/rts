@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -26,12 +27,14 @@ using std::string;
 CMouseCursor* CMouseCursor::New(const string &name, HotSpot hs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMouseCursor* CMouseCursor::GetNullCursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -47,57 +50,67 @@ CMouseCursor::CMouseCursor(const string& name, HotSpot hs)
  , yofs(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMouseCursor::~CMouseCursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMouseCursor::BuildFromSpecFile(const string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMouseCursor::BuildFromFileNames(const string& name, int lastFrame)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMouseCursor::LoadCursorImage(const string& name, ImageData& image)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseCursor::Draw(int x, int y, float scale) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseCursor::DrawQuad(int x, int y) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseCursor::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseCursor::BindTexture() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMouseCursor::BindHwCursor() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

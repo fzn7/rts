@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SoundSource.h"
@@ -37,71 +38,85 @@ CSoundSource::CSoundSource()
 	, curHeightRolloffModifier(1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSoundSource::~CSoundSource()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSoundSource::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CSoundSource::GetCurrentPriority() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CSoundSource::IsPlaying(const bool checkOpenAl) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSoundSource::Stop()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSoundSource::Play(IAudioChannel* channel, SoundItem* item, float3 pos, float3 velocity, float volume, bool relative)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSoundSource::PlayAsync(IAudioChannel* channel, SoundItem* buffer, float3 pos, float3 velocity, float volume, bool relative)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSoundSource::PlayStream(IAudioChannel* channel, const std::string& file, float volume)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSoundSource::StreamStop()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSoundSource::StreamPause()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CSoundSource::GetStreamTime()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CSoundSource::GetStreamPlayTime()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSoundSource::UpdateVolume()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

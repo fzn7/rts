@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <assert.h>
@@ -92,112 +93,131 @@ CBuilder::CBuilder():
 	terraformRadius(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CBuilder::~CBuilder()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::PreInit(const UnitLoadParams& params)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBuilder::CanAssistUnit(const CUnit* u, const UnitDef* def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBuilder::CanRepairUnit(const CUnit* u) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::SetRepairTarget(CUnit* target)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::SetReclaimTarget(CSolidObject* target)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::SetResurrectTarget(CFeature* target)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::SetCaptureTarget(CUnit* target)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::StartRestore(float3 centerPos, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::StopBuild(bool callScript)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBuilder::StartBuild(BuildInfo& buildInfo, CFeature*& feature, bool& waitStance)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CBuilder::CalculateBuildTerraformCost(BuildInfo& buildInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::DependentDied(CObject *o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBuilder::ScriptStartBuilding(float3 pos, bool silent)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::HelpTerraform(CBuilder* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilder::CreateNanoParticle(const float3& goal, float radius, bool inverse, bool highPriority)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

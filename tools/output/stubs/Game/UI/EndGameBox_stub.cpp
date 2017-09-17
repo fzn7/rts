@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "EndGameBox.h"
@@ -54,44 +55,53 @@ CEndGameBox::CEndGameBox(const std::vector<unsigned char>& winningAllyTeams)
 	, graphTex(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CEndGameBox::~CEndGameBox()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CEndGameBox::MousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEndGameBox::MouseMove(int x, int y, int dx, int dy, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEndGameBox::MouseRelease(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CEndGameBox::IsAbove(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEndGameBox::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string CEndGameBox::GetTooltip(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEndGameBox::FillTeamStats()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

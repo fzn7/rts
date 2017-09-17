@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LuaUI.h"
@@ -73,6 +74,7 @@ const int CMD_INDEX_OFFSET = 1; // starting index for command descriptions
 static const char* GetVFSMode(bool lockedAccess)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -90,12 +92,14 @@ CLuaUI::CLuaUI()
 : CLuaHandle("LuaUI", LUA_HANDLE_ORDER_UI, true, false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CLuaUI::~CLuaUI()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLuaUI::InitLuaSocket(lua_State* L) {
@@ -115,24 +119,28 @@ void CLuaUI::InitLuaSocket(lua_State* L) {
 string CLuaUI::LoadFile(const string& name, const std::string& mode) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool IsDisallowedCallIn(const string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaUI::HasCallIn(lua_State* L, const string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUI::UpdateTeams()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -142,6 +150,7 @@ void CLuaUI::UpdateTeams()
 bool CLuaUI::LoadCFunctions(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -151,6 +160,7 @@ bool CLuaUI::LoadCFunctions(lua_State* L)
 bool CLuaUI::ConfigCommand(const string& command) //FIXME rename to fit event name
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -158,12 +168,14 @@ bool CLuaUI::ConfigCommand(const string& command) //FIXME rename to fit event na
 static inline float fuzzRand(float fuzz)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUI::ShockFront(const float3& pos, float power, float areaOfEffect, const float* distMod)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -182,6 +194,7 @@ bool CLuaUI::LayoutButtons(int& xButtons, int& yButtons,
                            string& menuName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -189,18 +202,21 @@ bool CLuaUI::BuildCmdDescTable(lua_State* L,
                                const vector<SCommandDescription>& cmds)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaUI::GetLuaIntMap(lua_State* L, int index, map<int, int>& intMap)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaUI::GetLuaIntList(lua_State* L, int index, vector<int>& intList)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -208,6 +224,7 @@ bool CLuaUI::GetLuaReStringList(lua_State* L, int index,
                                 vector<ReStringPair>& reStringList)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -215,6 +232,7 @@ bool CLuaUI::GetLuaReParamsList(lua_State* L, int index,
                                 vector<ReParamsPair>& reParamsCmds)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -222,6 +240,7 @@ bool CLuaUI::GetLuaCmdDescList(lua_State* L, int index,
                                vector<SCommandDescription>& cmdDescs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -234,6 +253,7 @@ bool CLuaUI::GetLuaCmdDescList(lua_State* L, int index,
 int CLuaUI::SetShockFrontFactors(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/

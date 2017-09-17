@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "TeamBase.h"
@@ -25,11 +26,13 @@ CR_REG_METADATA(TeamBase, (
 unsigned char TeamBase::teamDefaultColor[10][4] =
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void TeamBase::SetValue(const std::string& key, const std::string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

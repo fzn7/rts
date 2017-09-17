@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <algorithm>
@@ -21,6 +22,7 @@ CPathCache::CPathCache(int blocksX, int blocksZ)
 	, numHashCollisions(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CPathCache::AddPath(
@@ -93,11 +95,13 @@ const CPathCache::CacheItem* CPathCache::GetCachedPath(
 void CPathCache::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPathCache::RemoveFrontQueItem()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 boost::uint64_t CPathCache::GetHash(

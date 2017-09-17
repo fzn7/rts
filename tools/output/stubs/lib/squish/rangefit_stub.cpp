@@ -1,3 +1,4 @@
+#include <iostream>
 /* -----------------------------------------------------------------------------
 
 	Copyright (c) 2006 Simon Brown                          si@sjbrown.co.uk
@@ -34,16 +35,19 @@ RangeFit::RangeFit( ColourSet const* colours, int flags )
   : ColourFit( colours, flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void RangeFit::Compress3( void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void RangeFit::Compress4( void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace squish

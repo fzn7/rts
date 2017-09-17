@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SkirmishAILibraryInfo.h"
@@ -24,6 +25,7 @@ CSkirmishAILibraryInfo::CSkirmishAILibraryInfo(const CSkirmishAILibraryInfo& aiI
 	, options(aiInfo.options)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSkirmishAILibraryInfo::CSkirmishAILibraryInfo(

@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Compute remainder and a congruent to the quotient.
    Copyright (C) 1997 Free Software Foundation, Inc.
@@ -32,6 +33,7 @@ Simple
 __remquof (Simple x, Simple y, int *quo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__remquof, remquof)
 }

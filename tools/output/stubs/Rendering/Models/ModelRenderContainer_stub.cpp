@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "ModelRenderContainer.h"
@@ -24,11 +25,13 @@ LOG_REGISTER_SECTION_GLOBAL(LOG_SECTION_WORLD_OBJECT_MODEL_RENDERER)
 IModelRenderContainer* IModelRenderContainer::GetInstance(int modelType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 IModelRenderContainer::~IModelRenderContainer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -36,32 +39,38 @@ IModelRenderContainer::~IModelRenderContainer()
 void IModelRenderContainer::AddUnit(const CUnit* u)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void IModelRenderContainer::DelUnit(const CUnit* u)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void IModelRenderContainer::AddFeature(const CFeature* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void IModelRenderContainer::DelFeature(const CFeature* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void IModelRenderContainer::AddProjectile(const CProjectile* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void IModelRenderContainer::DelProjectile(const CProjectile* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

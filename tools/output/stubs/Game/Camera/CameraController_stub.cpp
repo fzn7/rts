@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -13,6 +14,7 @@ CONFIG(float, UseDistToGroundForIcons).defaultValue(0.95f);
 CCameraController::CCameraController()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -21,6 +23,7 @@ bool CCameraController::SetStateBool(const StateMap& sm,
                                      const std::string& name, bool& var)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -28,6 +31,7 @@ bool CCameraController::SetStateFloat(const StateMap& sm,
                                       const std::string& name, float& var)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // Uses distance to ground for large angles (near 90 degree),
@@ -49,10 +53,12 @@ bool CCameraController::GetUseDistToGroundForIcons() {
 bool CCameraController::SetState(const StateMap& sm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCameraController::GetState(StateMap& sm) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

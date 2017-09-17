@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <algorithm>
@@ -29,6 +30,7 @@ CDamageArrayHandler* damageArrayHandler;
 CDamageArrayHandler::CDamageArrayHandler(LuaParser* defsParser)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -36,5 +38,6 @@ CDamageArrayHandler::CDamageArrayHandler(LuaParser* defsParser)
 int CDamageArrayHandler::GetTypeFromName(const std::string& name) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

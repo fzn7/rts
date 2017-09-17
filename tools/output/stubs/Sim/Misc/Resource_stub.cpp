@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Resource.h"
@@ -40,9 +41,11 @@ CResourceDescription::CResourceDescription()
 , maxWorth(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CResourceDescription::~CResourceDescription()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

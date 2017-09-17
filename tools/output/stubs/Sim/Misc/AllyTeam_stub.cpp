@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "AllyTeam.h"
@@ -25,9 +26,11 @@ AllyTeam::AllyTeam()
 	, startRectRight(1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void AllyTeam::SetValue(const std::string& key, const std::string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

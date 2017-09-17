@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LosHandler.h"
@@ -49,6 +50,7 @@ CR_REG_METADATA(CLosHandler,(
 inline void SLosInstance::Init(int radius, int allyteam, int2 basePos, float baseHeight, int hashNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -75,108 +77,126 @@ ILosType::ILosType(const int mipLevel_, LosType type_)
 		CLosMap(size, type == LOS_TYPE_LOS, readMap->GetMIPHeightMapSynced(mipLevel_), int2(mapDims.mapx, mapDims.mapy)))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float ILosType::GetRadius(const CUnit* unit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float ILosType::GetHeight(const CUnit* unit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void ILosType::UpdateUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void ILosType::RemoveUnit(CUnit* unit, bool delayed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void ILosType::LosAdd(SLosInstance* li)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void ILosType::LosRemove(SLosInstance* li)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void ILosType::RefInstance(SLosInstance* li)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ILosType::UnrefInstance(SLosInstance* li)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void ILosType::DelayedUnrefInstance(SLosInstance* li)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void ILosType::AddInstanceToCache(SLosInstance* li)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline SLosInstance* ILosType::CreateInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void ILosType::DeleteInstance(SLosInstance* li)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void ILosType::UpdateInstanceStatus(SLosInstance* li, SLosInstance::TLosStatus status)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline SLosInstance::TLosStatus ILosType::OptimizeInstanceUpdate(SLosInstance* li)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline int ILosType::GetHashNum(const int allyteam, const int2 baseLos, const float radius) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ILosType::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ILosType::UpdateHeightMapSynced(SRectangle rect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -205,82 +225,96 @@ CLosHandler::CLosHandler()
 	, radarErrorSizes(teamHandler->ActiveAllyTeams(), defBaseRadarErrorSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CLosHandler::~CLosHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosHandler::UnitDestroyed(const CUnit* unit, const CUnit* attacker)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosHandler::UnitTaken(const CUnit* unit, int oldTeam, int newTeam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosHandler::UnitReverseBuilt(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosHandler::UnitLoaded(const CUnit* unit, const CUnit* transport)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosHandler::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosHandler::UpdateHeightMapSynced(SRectangle rect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLosHandler::InLos(const CUnit* unit, int allyTeam) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLosHandler::InAirLos(const CUnit* unit, int allyTeam) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLosHandler::InRadar(const float3 pos, int allyTeam) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLosHandler::InRadar(const CUnit* unit, int allyTeam) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLosHandler::InJammer(const float3 pos, int allyTeam) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLosHandler::InJammer(const CUnit* unit, int allyTeam) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* -----------------------------------------------------------------------------
 
 	Copyright (c) 2006 Simon Brown                          si@sjbrown.co.uk
@@ -32,51 +33,61 @@ namespace squish {
 static int FloatToInt( float a, int limit )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CompressAlphaDxt3( u8 const* rgba, int mask, void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DecompressAlphaDxt3( u8* rgba, void const* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void FixRange( int& min, int& max, int steps )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int FitCodes( u8 const* rgba, int mask, u8 const* codes, u8* indices )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void WriteAlphaBlock( int alpha0, int alpha1, u8 const* indices, void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void WriteAlphaBlock5( int alpha0, int alpha1, u8 const* indices, void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void WriteAlphaBlock7( int alpha0, int alpha1, u8 const* indices, void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CompressAlphaDxt5( u8 const* rgba, int mask, void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DecompressAlphaDxt5( u8* rgba, void const* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace squish

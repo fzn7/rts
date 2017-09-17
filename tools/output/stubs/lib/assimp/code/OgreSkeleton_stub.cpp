@@ -1,3 +1,4 @@
+#include <iostream>
 /*
 Open Asset Import Library (assimp)
 ----------------------------------------------------------------------
@@ -50,30 +51,35 @@ using namespace std;
 namespace Assimp
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void OgreImporter::CreateAssimpSkeleton(const std::vector<Bone> &Bones, const std::vector<Animation> &/*Animations*/)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void OgreImporter::PutAnimationsInScene(const std::vector<Bone> &Bones, const std::vector<Animation> &Animations)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 aiNode* OgreImporter::CreateAiNodeFromBone(int BoneId, const std::vector<Bone> &Bones, aiNode* ParentNode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void Bone::CalculateBoneToWorldSpaceMatrix(vector<Bone> &Bones)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #ifdef USE_VALGRIND
@@ -18,6 +19,7 @@ float2 CMyMath::headingToVectorTable[NUM_HEADINGS];
 void CMyMath::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -25,11 +27,13 @@ void CMyMath::Init()
 float3 GetVectorFromHAndPExact(const short int heading, const short int pitch)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float LinePointDist(const float3 l1, const float3 l2, const float3 p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -39,6 +43,7 @@ float LinePointDist(const float3 l1, const float3 l2, const float3 p)
 float3 ClosestPointOnLine(const float3 l1, const float3 l2, const float3 p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -55,39 +60,46 @@ float3 ClosestPointOnLine(const float3 l1, const float3 l2, const float3 p)
 std::pair<float, float> GetMapBoundaryIntersectionPoints(const float3 start, const float3 dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool ClampLineInMap(float3& start, float3& end)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool ClampRayInMap(const float3 start, float3& end)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float smoothstep(const float edge0, const float edge1, const float value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 smoothstep(const float edge0, const float edge1, float3 vec)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float linearstep(const float edge0, const float edge1, const float value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 hs2rgb(float h, float s)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

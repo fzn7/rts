@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <string>
@@ -60,6 +61,7 @@ template <typename Lambda>
 static bool GetRapidEntry(const std::string& file, RapidEntry* re, Lambda p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -68,10 +70,12 @@ static bool GetRapidEntry(const std::string& file, RapidEntry* re, Lambda p)
 std::string GetRapidPackageFromTag(const std::string& tag)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string GetRapidTagFromPackage(const std::string& pkg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

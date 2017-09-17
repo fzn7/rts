@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* k_cosf.c -- Simple version of k_cos.c
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -43,5 +44,6 @@ C6  = -1.1359647598e-11f; /* 0xad47d74e */
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

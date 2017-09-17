@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -29,29 +30,35 @@ CFlameProjectile::CFlameProjectile(const ProjectileParams& params):CWeaponProjec
 	, spread(params.spread)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFlameProjectile::Collision()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFlameProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFlameProjectile::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CFlameProjectile::ShieldRepulse(const float3& shieldPos, float shieldForce, float shieldMaxSpeed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CFlameProjectile::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

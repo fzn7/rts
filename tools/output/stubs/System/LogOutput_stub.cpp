@@ -133,6 +133,7 @@ static std::map<std::string, int> GetEnabledSections() {
 static void InitializeLogSections()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -145,27 +146,32 @@ CLogOutput::CLogOutput()
 	, filePath("")
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CLogOutput::~CLogOutput()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLogOutput::SetFileName(std::string fname)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string CLogOutput::CreateFilePath(const std::string& fileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLogOutput::RotateLogFile() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -173,6 +179,7 @@ void CLogOutput::RotateLogFile() const
 void CLogOutput::Initialize()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -180,5 +187,6 @@ void CLogOutput::Initialize()
 void CLogOutput::LogSystemInfo()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

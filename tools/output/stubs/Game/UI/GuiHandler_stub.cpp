@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "GuiHandler.h"
@@ -88,30 +89,35 @@ CGuiHandler::CGuiHandler():
 	gatherMode(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CGuiHandler::~CGuiHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::GetQueueKeystate() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::LoadDefaults()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool SafeAtoF(float& var, const std::string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -119,11 +125,13 @@ static bool SafeAtoF(float& var, const std::string& value)
 bool CGuiHandler::EnableLuaUI(bool enableCommand)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGuiHandler::DisableLuaUI()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -131,48 +139,56 @@ bool CGuiHandler::DisableLuaUI()
 bool CGuiHandler::LoadConfig(const std::string& cfg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::ParseFillOrder(const std::string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CGuiHandler::ParseIconSlot(const std::string& text) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::ReloadConfigFromFile(const std::string& fileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::ReloadConfigFromString(const std::string& cfg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::ResizeIconArray(unsigned int size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::AppendPrevAndNext(std::vector<SCommandDescription>& cmds)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CGuiHandler::FindInCommandPage()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -180,24 +196,28 @@ void CGuiHandler::RevertToCmdDesc(const SCommandDescription& cmdDesc,
                                   bool defaultCommand, bool samePage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::LayoutIcons(bool useSelectionPage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::LayoutCustomIcons(bool useSelectionPage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::GiveCommand(Command& cmd, bool fromUser)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -228,18 +248,21 @@ void CGuiHandler::GiveCommandsNow() {
 void CGuiHandler::ConvertCommands(std::vector<SCommandDescription>& cmds)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::SetShowingMetal(bool show)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -249,30 +272,35 @@ void CGuiHandler::Update()
 void CGuiHandler::SetCursorIcon() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::TryTarget(const SCommandDescription& cmdDesc) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::MousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::MouseRelease(int x, int y, int button, const float3& cameraPos, const float3& mouseDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::SetActiveCommand(int cmdIndex, bool rightMouseButton)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -281,12 +309,14 @@ bool CGuiHandler::SetActiveCommand(int cmdIndex, int button,
                                    bool alt, bool ctrl, bool meta, bool shift)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CGuiHandler::IconAtPos(int x, int y) // GetToolTip --> IconAtPos
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -310,40 +340,47 @@ struct ModGroup {
 static bool ParseCustomCmdMods(std::string& cmd, ModGroup& in, ModGroup& out)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool CheckCustomCmdMods(bool rightMouseButton, ModGroup& inMods)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::RunCustomCommands(const std::vector<std::string>& cmds, bool rightMouseButton)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::AboveGui(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned char CGuiHandler::CreateOptions(bool rightMouseButton)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 unsigned char CGuiHandler::CreateOptions(int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CGuiHandler::GetNumberInput(const SCommandDescription& cd) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // CALLINFO:
@@ -353,30 +390,35 @@ float CGuiHandler::GetNumberInput(const SCommandDescription& cd) const
 int CGuiHandler::GetDefaultCommand(int x, int y, const float3& cameraPos, const float3& mouseDir) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::ProcessLocalActions(const Action& action)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::ProcessBuildActions(const Action& action)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CGuiHandler::GetIconPosCommand(int slot) const // only called by SetActiveCommand
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::KeyPressed(int key, bool isRepeat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -384,29 +426,34 @@ bool CGuiHandler::SetActiveCommand(const Action& action,
                                    const CKeySet& ks, int actionIndex)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::KeyReleased(int key)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGuiHandler::FinishCommand(int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::IsAbove(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CGuiHandler::GetTooltip(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // CALLINFO:
@@ -417,12 +464,14 @@ std::string CGuiHandler::GetTooltip(int x, int y)
 std::string CGuiHandler::GetBuildTooltip() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 Command CGuiHandler::GetOrderPreview()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -454,6 +503,7 @@ bool ZeroRadiusAllowed(const Command &c) {
 Command CGuiHandler::GetCommand(int mouseX, int mouseY, int buttonHint, bool preview, const float3& cameraPos, const float3& mouseDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -461,23 +511,27 @@ Command CGuiHandler::GetCommand(int mouseX, int mouseY, int buttonHint, bool pre
 static bool WouldCancelAnyQueued(const BuildInfo& b)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void FillRowOfBuildPos(const BuildInfo& startInfo, float x, float z, float xstep, float zstep, int n, int facing, bool nocancel, std::vector<BuildInfo>& ret)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // Assuming both builds have the same unitdef
 std::vector<BuildInfo> CGuiHandler::GetBuildPos(const BuildInfo& startInfo, const BuildInfo& endInfo, const float3& cameraPos, const float3& mouseDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::ProcessFrontPositions(float3& pos0, const float3& pos1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -487,24 +541,28 @@ void CGuiHandler::ProcessFrontPositions(float3& pos0, const float3& pos1)
 void CGuiHandler::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static std::string FindCornerText(const std::string& corner, const vector<std::string>& params)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawCustomButton(const IconInfo& icon, bool highlight)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::DrawUnitBuildIcon(const IconInfo& icon, int unitDefID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -512,42 +570,49 @@ static inline bool ParseTextures(const std::string& texString,
 		std::string& tex1, std::string& tex2, float& xscale, float& yscale)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline bool BindUnitTexByString(const std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline bool BindIconTexByString(const std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline bool BindLuaTexByString(const std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool BindTextureString(const std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGuiHandler::DrawTexture(const IconInfo& icon, const std::string& texName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawIconFrame(const IconInfo& icon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -555,78 +620,91 @@ void CGuiHandler::DrawName(const IconInfo& icon, const std::string& text,
 		bool offsetForLEDs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawNWtext(const IconInfo& icon, const std::string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawSWtext(const IconInfo& icon, const std::string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawNEtext(const IconInfo& icon, const std::string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawSEtext(const IconInfo& icon, const std::string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawHilightQuad(const IconInfo& icon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawButtons() // Only called by Draw
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawMenuName() // Only called by drawbuttons
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawSelectionInfo()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawNumberInput() // Only called by drawbuttons
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawPrevArrow(const IconInfo& icon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawNextArrow(const IconInfo& icon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawOptionLEDs(const IconInfo& icon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -636,12 +714,14 @@ void CGuiHandler::DrawOptionLEDs(const IconInfo& icon)
 static inline void DrawSensorRange(int radius, const float* color, const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void DrawUnitDefRanges(const CUnit* unit, const UnitDef* unitdef, const float3 pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -649,6 +729,7 @@ static void DrawUnitDefRanges(const CUnit* unit, const UnitDef* unitdef, const f
 static inline GLuint GetConeList()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -656,42 +737,49 @@ static void DrawWeaponCone(const float3& pos,
                            float len, float hrads, float heading, float pitch)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline void DrawWeaponArc(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawMapStuff(bool onMinimap)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawMiniMapMarker(const float3& cameraPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawCentroidCursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawArea(float3 pos, float radius, const float* color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawFront(int button, float maxSize, float sizeDiv, bool onMinimap, const float3& cameraPos, const float3& mouseDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -707,12 +795,14 @@ struct BoxData {
 static void DrawBoxShape(const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void DrawCornerPosts(const float3& pos0, const float3& pos1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -720,24 +810,28 @@ static void StencilDrawSelectBox(const float3& pos0, const float3& pos1,
 		bool invColorSelect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void FullScreenDraw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void DrawMinMaxBox(const float3& mins, const float3& maxs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGuiHandler::DrawSelectBox(const float3& pos0, const float3& pos1, const float3& cameraPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -753,6 +847,7 @@ struct CylinderData {
 static void DrawCylinderShape(const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -760,6 +855,7 @@ void CGuiHandler::DrawSelectCircle(const float3& pos, float radius,
                                    const float* color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -769,11 +865,13 @@ void CGuiHandler::DrawSelectCircle(const float3& pos, float radius,
 void CGuiHandler::SetBuildFacing(unsigned int facing)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGuiHandler::SetBuildSpacing(int spacing)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/

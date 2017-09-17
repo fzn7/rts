@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "ClientSetup.h"
@@ -22,16 +23,19 @@ ClientSetup::ClientSetup()
 	, isHost(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ClientSetup::SanityCheck()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ClientSetup::LoadFromStartScript(const std::string& setup)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

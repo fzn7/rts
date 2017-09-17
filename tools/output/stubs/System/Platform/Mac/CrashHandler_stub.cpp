@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/Platform/CrashHandler.h"
@@ -23,11 +24,13 @@
 static void TranslateStackTrace(bool* aiCrash, StackTrace& stacktrace, const int logLevel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void LogStacktrace(const int logLevel, StackTrace& stacktrace)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // ### Unix(compliant) CrashHandler END

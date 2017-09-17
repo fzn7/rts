@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /*
  * Written by J.T. Conklin <jtc@netbsd.org>.
@@ -21,6 +22,7 @@ int
 __isinff (Simple x)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 hidden_def (__isinff)
 weak_alias (__isinff, isinff)

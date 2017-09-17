@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SelectionWidget.h"
@@ -37,21 +38,25 @@ static const std::string GetFileName(const std::string& name){
 SelectionWidget::SelectionWidget(agui::GuiElement* parent) : agui::GuiElement(parent)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 SelectionWidget::~SelectionWidget()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectionWidget::ShowModList()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectionWidget::ShowMapList()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -72,29 +77,35 @@ static void RemoveArchive(const std::string& name) {
 void SelectionWidget::UpdateAvailableScripts()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectionWidget::ShowScriptList()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectionWidget::SelectMod(const std::string& mod)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectionWidget::SelectScript(const std::string& script)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectionWidget::SelectMap(const std::string& map)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectionWidget::CleanWindow()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

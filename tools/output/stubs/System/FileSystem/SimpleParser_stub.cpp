@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -13,6 +14,7 @@ CSimpleParser::CSimpleParser(CFileHandler& fh)
 //	, inComment(false) // /* text */ comments are not implemented
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSimpleParser::CSimpleParser(const std::string& filecontent)
@@ -22,6 +24,7 @@ CSimpleParser::CSimpleParser(const std::string& filecontent)
 //	, inComment(false) // /* text */ comments are not implemented
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -29,24 +32,28 @@ CSimpleParser::CSimpleParser(const std::string& filecontent)
 int CSimpleParser::GetLineNumber() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CSimpleParser::GetLine()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CSimpleParser::GetCleanLine()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::vector<std::string> CSimpleParser::Tokenize(const std::string& line, int minWords)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

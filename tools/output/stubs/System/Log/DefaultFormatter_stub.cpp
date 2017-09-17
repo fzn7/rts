@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /**
@@ -35,11 +36,13 @@ static const int SECTION_SIZE_MAX = 20;
 static inline void ResizeBuffer(char** buffer, size_t* bufferSize, const bool copy = false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline void PrintfAppend(char** buffer, size_t* bufferSize, const char* fmt, va_list arguments)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -128,6 +131,7 @@ static inline void log_formatter_createPrefix(
 char* log_formatter_format(const char* section, int level, const char* fmt, va_list arguments)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///@}

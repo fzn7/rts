@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -20,6 +21,7 @@ CR_REG_METADATA(CBuilding, )
 CBuilding::CBuilding()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -27,11 +29,13 @@ CBuilding::CBuilding()
 void CBuilding::PreInit(const UnitLoadParams& params)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBuilding::PostInit(const CUnit* builder)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

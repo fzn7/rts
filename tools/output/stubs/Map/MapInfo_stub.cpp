@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -33,6 +34,7 @@ const CMapInfo* mapInfo = NULL;
 static void FIND_MAP_TEXTURE(std::string* filePath, const std::string& defaultDir = "maps/")
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -40,55 +42,65 @@ static void FIND_MAP_TEXTURE(std::string* filePath, const std::string& defaultDi
 CMapInfo::CMapInfo(const std::string& mapInfoFile, const string& mapName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMapInfo::~CMapInfo()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string CMapInfo::GetStringValue(const std::string& key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMapInfo::ReadGlobal()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMapInfo::ReadGui()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMapInfo::ReadAtmosphere()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMapInfo::ReadSplats()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMapInfo::ReadGrass()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMapInfo::ReadLight()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMapInfo::ReadWater()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -96,32 +108,38 @@ template<typename T>
 static bool ParseSplatDetailNormalTexture(const LuaTable& table, const T key, std::vector<std::string>& texNames)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMapInfo::ReadSMF()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMapInfo::ReadSM3()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMapInfo::ReadTerrainTypes()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMapInfo::ReadPFSConstants()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMapInfo::ReadSound()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

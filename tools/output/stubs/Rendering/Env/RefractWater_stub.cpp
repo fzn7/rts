@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -13,25 +14,30 @@ CRefractWater::CRefractWater()
 	, subSurfaceTex(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CRefractWater::LoadGfx()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CRefractWater::~CRefractWater()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CRefractWater::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CRefractWater::SetupWaterDepthTex()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

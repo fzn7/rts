@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -14,11 +15,13 @@
 static void defSurfaceCircle(const float3& center, float radius, unsigned int res)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void defSurfaceSquare(const float3& center, float xsize, float zsize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -28,11 +31,13 @@ SurfaceSquareFunc glSurfaceSquare = defSurfaceSquare;
 void setSurfaceCircleFunc(SurfaceCircleFunc func)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void setSurfaceSquareFunc(SurfaceSquareFunc func)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -45,6 +50,7 @@ void glBallisticCircle(const float3& center, const float radius,
                        unsigned int resolution, float slope)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -53,6 +59,7 @@ void glBallisticCircle(const float3& center, const float radius,
 void glDrawVolume(DrawVolumeFunc drawFunc, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

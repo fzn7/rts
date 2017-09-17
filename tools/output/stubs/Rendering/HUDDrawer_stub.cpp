@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "HUDDrawer.h"
@@ -20,42 +21,51 @@
 HUDDrawer* HUDDrawer::GetInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void HUDDrawer::PushState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 void HUDDrawer::PopState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void HUDDrawer::DrawModel(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void HUDDrawer::DrawUnitDirectionArrow(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 void HUDDrawer::DrawCameraDirectionArrow(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void HUDDrawer::DrawWeaponStates(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void HUDDrawer::DrawTargetReticle(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void HUDDrawer::Draw(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

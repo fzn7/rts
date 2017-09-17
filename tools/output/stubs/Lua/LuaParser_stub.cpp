@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -49,6 +50,7 @@ LuaParser::LuaParser(const string& _fileName,
   lowerCppKeys(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -66,18 +68,21 @@ LuaParser::LuaParser(const string& _textChunk,
   lowerCppKeys(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaParser::~LuaParser()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::SetupEnv()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -86,24 +91,28 @@ void LuaParser::SetupEnv()
 bool LuaParser::Execute()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::AddTable(LuaTable* tbl)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::RemoveTable(LuaTable* tbl)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaTable LuaParser::GetRoot()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -112,24 +121,28 @@ LuaTable LuaParser::GetRoot()
 void LuaParser::PushParam()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::GetTable(const string& name, bool overwrite)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::GetTable(int index, bool overwrite)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::EndTable()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -138,30 +151,35 @@ void LuaParser::EndTable()
 void LuaParser::AddFunc(const string& key, int (*func)(lua_State*))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::AddInt(const string& key, int value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::AddBool(const string& key, bool value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::AddFloat(const string& key, float value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::AddString(const string& key, const string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -170,30 +188,35 @@ void LuaParser::AddString(const string& key, const string& value)
 void LuaParser::AddFunc(int key, int (*func)(lua_State*))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::AddInt(int key, int value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::AddBool(int key, bool value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::AddFloat(int key, float value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaParser::AddString(int key, const string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -206,6 +229,7 @@ void LuaParser::AddString(int key, const string& value)
 int LuaParser::TimeCheck(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -214,12 +238,14 @@ int LuaParser::TimeCheck(lua_State* L)
 int LuaParser::DirList(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaParser::SubDirs(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -227,6 +253,7 @@ int LuaParser::SubDirs(lua_State* L)
 int LuaParser::Include(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -235,18 +262,21 @@ int LuaParser::Include(lua_State* L)
 int LuaParser::LoadFile(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaParser::FileExists(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaParser::DontMessWithMyCase(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -264,48 +294,56 @@ LuaTable::LuaTable()
   refnum(LUA_NOREF)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaTable::LuaTable(LuaParser* _parser)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaTable::LuaTable(const LuaTable& tbl)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaTable& LuaTable::operator=(const LuaTable& tbl)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaTable LuaTable::SubTable(int key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaTable LuaTable::SubTable(const string& mixedKey) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaTable LuaTable::SubTableExpr(const string& expr) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaTable::~LuaTable()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -314,18 +352,21 @@ LuaTable::~LuaTable()
 bool LuaTable::PushTable() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaTable::PushValue(int key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaTable::PushValue(const string& mixedKey) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -338,12 +379,14 @@ bool LuaTable::PushValue(const string& mixedKey) const
 bool LuaTable::KeyExists(int key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaTable::KeyExists(const string& key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -356,12 +399,14 @@ bool LuaTable::KeyExists(const string& key) const
 LuaTable::DataType LuaTable::GetType(int key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaTable::DataType LuaTable::GetType(const string& key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -374,18 +419,21 @@ LuaTable::DataType LuaTable::GetType(const string& key) const
 int LuaTable::GetLength() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaTable::GetLength(int key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaTable::GetLength(const string& key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -398,12 +446,14 @@ int LuaTable::GetLength(const string& key) const
 bool LuaTable::GetKeys(vector<int>& data) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaTable::GetKeys(vector<string>& data) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -416,24 +466,28 @@ bool LuaTable::GetKeys(vector<string>& data) const
 bool LuaTable::GetMap(map<int, float>& data) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaTable::GetMap(map<int, string>& data) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaTable::GetMap(map<string, float>& data) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaTable::GetMap(map<string, string>& data) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -447,6 +501,7 @@ static bool ParseTableFloat(lua_State* L,
                             int tableIndex, int index, float& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -454,11 +509,13 @@ static bool ParseTableFloat(lua_State* L,
 static bool ParseFloat3(lua_State* L, int index, float3& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static bool ParseFloat4(lua_State* L, int index, float4& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -466,6 +523,7 @@ static bool ParseFloat4(lua_State* L, int index, float4& value)
 static bool ParseBoolean(lua_State* L, int index, bool& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -478,18 +536,21 @@ static bool ParseBoolean(lua_State* L, int index, bool& value)
 int LuaTable::Get(const string& key, int def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaTable::Get(const string& key, bool def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float LuaTable::Get(const string& key, float def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -497,11 +558,13 @@ float LuaTable::Get(const string& key, float def) const
 float3 LuaTable::Get(const string& key, const float3& def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float4 LuaTable::Get(const string& key, const float4& def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -509,6 +572,7 @@ float4 LuaTable::Get(const string& key, const float4& def) const
 string LuaTable::Get(const string& key, const string& def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -521,18 +585,21 @@ string LuaTable::Get(const string& key, const string& def) const
 int LuaTable::Get(int key, int def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaTable::Get(int key, bool def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float LuaTable::Get(int key, float def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -540,11 +607,13 @@ float LuaTable::Get(int key, float def) const
 float3 LuaTable::Get(int key, const float3& def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float4 LuaTable::Get(int key, const float4& def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -552,6 +621,7 @@ float4 LuaTable::Get(int key, const float4& def) const
 string LuaTable::Get(int key, const string& def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -564,24 +634,28 @@ string LuaTable::Get(int key, const string& def) const
 float3 LuaTable::GetFloat3(int key, const float3& def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float4 LuaTable::GetFloat4(int key, const float4& def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 LuaTable::GetFloat3(const string& key, const float3& def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float4 LuaTable::GetFloat4(const string& key, const float4& def) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

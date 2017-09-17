@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "TorpedoLauncher.h"
@@ -16,15 +17,18 @@ CR_REG_METADATA(CTorpedoLauncher,(
 CTorpedoLauncher::CTorpedoLauncher(CUnit* owner, const WeaponDef* def): CWeapon(owner, def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CTorpedoLauncher::TestTarget(const float3 pos, const SWeaponTarget& trg) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTorpedoLauncher::FireImpl(const bool scriptCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

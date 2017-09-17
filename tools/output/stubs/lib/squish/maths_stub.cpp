@@ -1,3 +1,4 @@
+#include <iostream>
 /* -----------------------------------------------------------------------------
 
 	Copyright (c) 2006 Simon Brown                          si@sjbrown.co.uk
@@ -37,21 +38,25 @@ namespace squish {
 Sym3x3 ComputeWeightedCovariance( int n, Vec3 const* points, float const* weights )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static Vec3 GetMultiplicity1Evector( Sym3x3 const& matrix, float evalue )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static Vec3 GetMultiplicity2Evector( Sym3x3 const& matrix, float evalue )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 Vec3 ComputePrincipleComponent( Sym3x3 const& matrix )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace squish

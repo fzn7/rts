@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "MouseHandler.h"
@@ -99,17 +100,20 @@ CMouseHandler::CMouseHandler()
 	, lastClicked(nullptr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMouseHandler::~CMouseHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::LoadCursors()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -118,12 +122,14 @@ void CMouseHandler::LoadCursors()
 void CMouseHandler::MouseMove(int x, int y, int dx, int dy)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::MousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -134,24 +140,28 @@ void CMouseHandler::MousePress(int x, int y, int button)
 void CMouseHandler::GetSelectionBoxCoeff(const float3& pos1, const float3& dir1, const float3& pos2, const float3& dir2, float2& topright, float2& btmleft)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::MouseRelease(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::MouseWheel(float delta)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::DrawSelectionBox()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -161,42 +171,49 @@ void CMouseHandler::DrawSelectionBox()
 std::string CMouseHandler::GetCurrentTooltip()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::WarpMouse(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::ShowMouse()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::HideMouse()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::ToggleMiddleClickScroll()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::ToggleHwCursor(const bool& enable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -205,35 +222,41 @@ void CMouseHandler::ToggleHwCursor(const bool& enable)
 void CMouseHandler::ChangeCursor(const std::string& cmdName, const float& scale)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::SetCursor(const std::string& cmdName, const bool& forceRebind)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::UpdateCursors()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMouseHandler::DrawScrollCursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::DrawFPSCursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::DrawCursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -243,6 +266,7 @@ bool CMouseHandler::AssignMouseCursor(const std::string& cmdName,
                                       bool overwrite)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -251,12 +275,14 @@ bool CMouseHandler::ReplaceMouseCursor(const string& oldName,
                                        CMouseCursor::HotSpot hotSpot)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMouseHandler::SafeDeleteCursor(CMouseCursor* cursor)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -265,4 +291,5 @@ void CMouseHandler::SafeDeleteCursor(CMouseCursor* cursor)
 void CMouseHandler::ConfigNotify(const std::string& key, const std::string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Return nonzero value if number is negative.
    Copyright (C) 1997 Free Software Foundation, Inc.
@@ -28,5 +29,6 @@ int
 __signbitf (Simple x)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

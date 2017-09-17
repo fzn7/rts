@@ -83,12 +83,14 @@ namespace streflop {
 inline void init_genrand(SizedUnsignedInteger<32>::Type s, RandomState& state)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /* generates a random number on [0,0xffffffff]-interval */
 inline SizedUnsignedInteger<32>::Type genrand_int(RandomState& state)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #else
@@ -163,12 +165,14 @@ inline SizedUnsignedInteger<32>::Type genrand_int(RandomState& state)
 inline void init_genrand(SizedUnsignedInteger<64>::Type seed, RandomState& state)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /* generates a random number on [0, 2^64-1]-interval */
 inline SizedUnsignedInteger<64>::Type genrand_int(RandomState& state)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 

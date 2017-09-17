@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /* heavily based on CobInstance.cpp */
@@ -81,6 +82,7 @@ CUnitScript::CUnitScript(CUnit* unit)
 	, hasStartBuilding(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -97,6 +99,7 @@ CUnitScript::CUnitScript(CUnit* unit)
 bool CUnitScript::MoveToward(float& cur, float dest, float speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -110,6 +113,7 @@ bool CUnitScript::MoveToward(float& cur, float dest, float speed)
 bool CUnitScript::TurnToward(float& cur, float dest, float speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -124,6 +128,7 @@ bool CUnitScript::TurnToward(float& cur, float dest, float speed)
 bool CUnitScript::DoSpin(float& cur, float dest, float &speed, float accel, int divisor)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -213,6 +218,7 @@ void CUnitScript::TickAnims(int deltaTime, AnimType type, std::vector<AnimInfo>&
 bool CUnitScript::Tick(int deltaTime)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -220,11 +226,13 @@ bool CUnitScript::Tick(int deltaTime)
 CUnitScript::AnimContainerTypeIt CUnitScript::FindAnim(AnimType type, int piece, int axis)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitScript::RemoveAnim(AnimType type, const AnimContainerTypeIt& animInfoIt)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -234,65 +242,76 @@ void CUnitScript::RemoveAnim(AnimType type, const AnimContainerTypeIt& animInfoI
 void CUnitScript::AddAnim(AnimType type, int piece, int axis, float speed, float dest, float accel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::Spin(int piece, int axis, float speed, float accel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::StopSpin(int piece, int axis, float decel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::Turn(int piece, int axis, float speed, float destination)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::Move(int piece, int axis, float speed, float destination)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::MoveNow(int piece, int axis, float destination)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::TurnNow(int piece, int axis, float destination)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::SetVisibility(int piece, bool visible)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitScript::EmitSfx(int sfxType, int piece)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::AttachUnit(int piece, int u)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::DropUnit(int u)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -300,6 +319,7 @@ void CUnitScript::DropUnit(int u)
 bool CUnitScript::NeedsWait(AnimType type, int piece, int axis)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -307,18 +327,21 @@ bool CUnitScript::NeedsWait(AnimType type, int piece, int axis)
 void CUnitScript::Explode(int piece, int flags)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::Shatter(int piece, const float3& pos, const float3& speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::ShowFlare(int piece)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -326,12 +349,14 @@ void CUnitScript::ShowFlare(int piece)
 int CUnitScript::GetUnitVal(int val, int p1, int p2, int p3, int p4)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScript::SetUnitVal(int val, int param)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -360,5 +385,6 @@ int CUnitScript::ModelToScript(int lmodelPieceNum) const {
 void CUnitScript::ShowUnitScriptError(const std::string& error)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

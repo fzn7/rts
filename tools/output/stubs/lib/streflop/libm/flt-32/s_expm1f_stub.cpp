@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* s_expm1f.c -- Simple version of s_expm1.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -50,6 +51,7 @@ Q5  =  -2.0109921195e-07f; /* 0xb457edbb */
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__expm1f, expm1f)
 }

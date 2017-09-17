@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <vector>
@@ -21,6 +22,7 @@ SmoothHeightMesh* smoothGround = NULL;
 static float Interpolate(float x, float y, const int maxx, const int maxy, const float res, const float* heightmap)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -33,6 +35,7 @@ SmoothHeightMesh::SmoothHeightMesh(float mx, float my, float res, float smoothRa
 	, smoothRadius(std::max(1.0f, smoothRad))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 SmoothHeightMesh::~SmoothHeightMesh() {
@@ -46,11 +49,13 @@ SmoothHeightMesh::~SmoothHeightMesh() {
 float SmoothHeightMesh::GetHeight(float x, float y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float SmoothHeightMesh::GetHeightAboveWater(float x, float y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -58,16 +63,19 @@ float SmoothHeightMesh::GetHeightAboveWater(float x, float y)
 float SmoothHeightMesh::SetHeight(int index, float h)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float SmoothHeightMesh::AddHeight(int index, float h)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float SmoothHeightMesh::SetMaxHeight(int index, float h)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -81,6 +89,7 @@ inline static void FindMaximumColumnHeights(
 	std::vector<int>& maximaRows)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 inline static void AdvanceMaximaRows(
@@ -91,6 +100,7 @@ inline static void AdvanceMaximaRows(
 	      std::vector<int>& maximaRows)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -104,6 +114,7 @@ inline static void FindRadialMaximum(
 	      std::vector<float>& mesh)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -118,6 +129,7 @@ inline static void FixRemainingMaxima(
 	std::vector<int>& maximaRows)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -131,6 +143,7 @@ inline static void BlurHorizontal(
 	std::vector<float>& smoothed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 inline static void BlurVertical(
@@ -142,6 +155,7 @@ inline static void BlurVertical(
 	std::vector<float>& smoothed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -156,6 +170,7 @@ inline static void CheckInvariants(
 	const std::vector<int>& maximaRows)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -163,4 +178,5 @@ inline static void CheckInvariants(
 void SmoothHeightMesh::MakeSmoothMesh()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

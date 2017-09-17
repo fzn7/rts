@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "UDPConnection.h"
@@ -89,6 +90,7 @@ inline void EMULATE_PACKET_CORRUPTION(boost::uint8_t& crc) {}
 class Unpacker
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -96,6 +98,7 @@ class Unpacker
 Packet::Packet(const unsigned char* data, unsigned length)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 Packet::Packet(int _lastContinuous, int _nak)
@@ -103,6 +106,7 @@ Packet::Packet(int _lastContinuous, int _nak)
 	, nakType(_nak)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 unsigned Packet::GetSize() const {
@@ -133,6 +137,7 @@ boost::uint8_t Packet::GetChecksum() const {
 void Packet::Serialize(std::vector<boost::uint8_t>& data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -144,23 +149,27 @@ UDPConnection::UDPConnection(boost::shared_ptr<ip::udp::socket> netSocket, const
 	, mySocket(netSocket)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 UDPConnection::UDPConnection(int sourcePort, const std::string& address, const unsigned port)
 	: sharedSocket(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 UDPConnection::UDPConnection(CConnection& conn)
 	: sharedSocket(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::ReconnectTo(CConnection& conn) {
@@ -179,27 +188,32 @@ void UDPConnection::InitConnection(ip::udp::endpoint address, boost::shared_ptr<
 UDPConnection::~UDPConnection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::SendData(boost::shared_ptr<const RawPacket> data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 boost::shared_ptr<const RawPacket> UDPConnection::Peek(unsigned ahead) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef ENABLE_DEBUG_STATS
 boost::shared_ptr<const RawPacket> UDPConnection::GetData()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #else
 boost::shared_ptr<const RawPacket> UDPConnection::GetData()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 
@@ -207,21 +221,25 @@ boost::shared_ptr<const RawPacket> UDPConnection::GetData()
 void UDPConnection::DeleteBufferPacketAt(unsigned index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::ProcessRawPacket(Packet& incoming)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::Flush(const bool forced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool UDPConnection::CheckTimeout(int seconds, bool initial) const {
@@ -262,46 +280,55 @@ bool UDPConnection::CanReconnect() const {
 std::string UDPConnection::Statistics() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool UDPConnection::IsUsingAddress(const ip::udp::endpoint& from) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string UDPConnection::GetFullAddress() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::SetMTU(unsigned mtu2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::CreateChunk(const unsigned char* data, const unsigned length, const int packetNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::SendIfNecessary(bool flushed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::SendPacket(Packet& pkt)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::AckChunks(int lastAck)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::RequestResend(ChunkPtr ptr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 UDPConnection::BandwidthUsage::BandwidthUsage()
@@ -311,21 +338,25 @@ UDPConnection::BandwidthUsage::BandwidthUsage()
 	, average(0.0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::BandwidthUsage::UpdateTime(unsigned newTime)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::BandwidthUsage::DataSent(unsigned amount, bool prel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float UDPConnection::BandwidthUsage::GetAverage(bool prel) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPConnection::Close(bool flush) {

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "TextWrap.h"
@@ -20,6 +21,7 @@ template <typename T>
 static inline int SkipColorCodes(const std::u8string& text, T* pos, SColor* color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -30,6 +32,7 @@ CTextWrap::CTextWrap(const std::string& fontfile, int size, int outlinewidth, fl
 : CFontTexture(fontfile,size,outlinewidth,outlineweight)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -43,11 +46,13 @@ CTextWrap::CTextWrap(const std::string& fontfile, int size, int outlinewidth, fl
 static inline bool IsUpperCase(const char32_t& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline bool IsLowerCase(const char32_t& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -61,48 +66,56 @@ static inline bool IsLowerCase(const char32_t& c)
 static inline float GetPenalty(const char32_t& c, unsigned int strpos, unsigned int strlen)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CTextWrap::word CTextWrap::SplitWord(CTextWrap::word& w, float wantedWidth, bool smart)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTextWrap::AddEllipsis(std::list<line>& lines, std::list<word>& words, float maxWidth)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTextWrap::WrapTextConsole(std::list<word>& words, float maxWidth, float maxHeight)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTextWrap::SplitTextInWords(const std::u8string& text, std::list<word>* words, std::list<colorcode>* colorcodes)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTextWrap::RemergeColorCodes(std::list<word>* words, std::list<colorcode>& colorcodes) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CTextWrap::WrapInPlace(std::u8string& text, float _fontSize, float maxWidth, float maxHeight)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::u8string CTextWrap::Wrap(const std::u8string& text, float _fontSize, float maxWidth, float maxHeight)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*******************************************************************************/

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -32,57 +33,68 @@ CVFSHandler* vfsHandler = NULL;
 CVFSHandler::CVFSHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CVFSHandler::AddArchive(const std::string& archiveName, bool override, const std::string& type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CVFSHandler::AddArchiveWithDeps(const std::string& archiveName, bool override, const std::string& type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CVFSHandler::RemoveArchive(const std::string& archiveName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CVFSHandler::~CVFSHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string CVFSHandler::GetNormalizedPath(const std::string& rawPath)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const CVFSHandler::FileData* CVFSHandler::GetFileData(const std::string& normalizedFilePath)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CVFSHandler::LoadFile(const std::string& filePath, std::vector<boost::uint8_t>& buffer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CVFSHandler::FileExists(const std::string& filePath)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::vector<std::string> CVFSHandler::GetFilesInDir(const std::string& rawDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::vector<std::string> CVFSHandler::GetDirsInDir(const std::string& rawDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Combiner.h"
@@ -19,22 +20,26 @@ CInfoTextureCombiner::CInfoTextureCombiner()
 , disabled(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CInfoTextureCombiner::SwitchMode(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CInfoTextureCombiner::CreateShader(const std::string& filename, const bool clear, const float4 clearColor)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CInfoTextureCombiner::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

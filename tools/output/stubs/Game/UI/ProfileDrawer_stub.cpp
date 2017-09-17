@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <assert.h>
@@ -41,24 +42,28 @@ ProfileDrawer::ProfileDrawer()
 : CEventClient("[ProfileDrawer]", 199991, false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 ProfileDrawer::~ProfileDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ProfileDrawer::SetEnabled(bool enable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool ProfileDrawer::IsEnabled()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -66,30 +71,35 @@ bool ProfileDrawer::IsEnabled()
 static void DrawTimeSlice(std::deque<TimeSlice>& frames, const spring_time curTime, const spring_time maxHist, const float drawArea[4])
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void DrawThreadBarcode()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void DrawFrameBarcode()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void DrawProfiler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void DrawInfoText()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -97,20 +107,24 @@ static void DrawInfoText()
 void ProfileDrawer::DrawScreen()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool ProfileDrawer::MousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool ProfileDrawer::IsAbove(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ProfileDrawer::DbgTimingInfo(DbgTimingInfoType type, const spring_time start, const spring_time end)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

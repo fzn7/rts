@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "AssParser.h"
@@ -62,17 +63,20 @@ static const unsigned int ASS_LOGGING_OPTIONS =
 static inline float3 aiVectorToFloat3(const aiVector3D v)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline CMatrix44f aiMatrixToMatrix(const aiMatrix4x4t<float>& m)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*
 static float3 aiQuaternionToRadianAngles(const aiQuaternion q1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 */
 
@@ -82,17 +86,20 @@ static float3 aiQuaternionToRadianAngles(const aiQuaternion q1)
 class AssLogStream : public Assimp::LogStream
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CAssParser::~CAssParser()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 S3DModel* CAssParser::Load(const std::string& modelFilePath)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -100,6 +107,7 @@ S3DModel* CAssParser::Load(const std::string& modelFilePath)
 void CAssParser::CalculateModelMeshBounds(S3DModel* model, const aiScene* scene)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 */
 
@@ -270,6 +278,7 @@ void CAssParser::SetPieceParentName(
 void CAssParser::LoadPieceGeometry(SAssPiece* piece, const aiNode* pieceNode, const aiScene* scene)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 SAssPiece* CAssParser::LoadPiece(
@@ -332,6 +341,7 @@ SAssPiece* CAssParser::LoadPiece(
 void CAssParser::BuildPieceHierarchy(S3DModel* model, ModelPieceMap& pieceMap, const ParentNameMap& parentMap)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -339,24 +349,28 @@ void CAssParser::BuildPieceHierarchy(S3DModel* model, ModelPieceMap& pieceMap, c
 void CAssParser::CalculateModelDimensions(S3DModel* model, S3DModelPiece* piece)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // Calculate model radius from the min/max extents
 void CAssParser::CalculateModelProperties(S3DModel* model, const LuaTable& modelTable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static std::string FindTexture(std::string testTextureFile, const std::string& modelPath, const std::string& fallback)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static std::string FindTextureByRegex(const std::string& regex_path, const std::string& regex)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -412,23 +426,27 @@ void CAssParser::FindTextures(
 void SAssPiece::UploadGeometryVBOs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void SAssPiece::BindVertexAttribVBOs() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void SAssPiece::UnbindVertexAttribVBOs() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void SAssPiece::DrawForList() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

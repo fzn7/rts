@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SkirmishAIHandler.h"
@@ -36,11 +37,13 @@ static CSkirmishAIHandler* gSkirmishAIHandler = nullptr;
 CSkirmishAIHandler* CSkirmishAIHandler::GetInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSkirmishAIHandler::FreeInstance(CSkirmishAIHandler* handler)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -48,6 +51,7 @@ void CSkirmishAIHandler::FreeInstance(CSkirmishAIHandler* handler)
 void CSkirmishAIHandler::ResetState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSkirmishAIHandler::LoadFromSetup(const CGameSetup& setup) {
@@ -96,16 +100,19 @@ SkirmishAIData* CSkirmishAIHandler::GetSkirmishAI(const size_t skirmishAIId) {
 size_t CSkirmishAIHandler::GetSkirmishAI(const std::string& name) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSkirmishAIHandler::ids_t CSkirmishAIHandler::GetSkirmishAIsInTeam(const int teamId, const int hostPlayerId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSkirmishAIHandler::ids_t CSkirmishAIHandler::GetSkirmishAIsByPlayer(const int hostPlayerId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -217,6 +224,7 @@ bool CSkirmishAIHandler::IsLocalSkirmishAI(const SkirmishAIData& aiData) {
 void CSkirmishAIHandler::CompleteWithDefaultOptionValues(const size_t skirmishAIId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSkirmishAIHandler::CompleteSkirmishAI(const size_t skirmishAIId) {

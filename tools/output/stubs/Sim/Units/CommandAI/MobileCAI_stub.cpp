@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -94,23 +95,27 @@ CMobileCAI::CMobileCAI():
 	moveDir(gs->randFloat() > 0.5)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMobileCAI::~CMobileCAI()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::GiveCommandReal(const Command& c, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -119,6 +124,7 @@ void CMobileCAI::SlowUpdate()
 void CMobileCAI::Execute()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -127,6 +133,7 @@ void CMobileCAI::Execute()
 void CMobileCAI::ExecuteSetWantedMaxSpeed(Command &c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -135,6 +142,7 @@ void CMobileCAI::ExecuteSetWantedMaxSpeed(Command &c)
 void CMobileCAI::ExecuteMove(Command &c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMobileCAI::ExecuteLoadOnto(Command &c) {
@@ -173,6 +181,7 @@ void CMobileCAI::ExecuteLoadOnto(Command &c) {
 void CMobileCAI::ExecutePatrol(Command &c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -181,6 +190,7 @@ void CMobileCAI::ExecutePatrol(Command &c)
 void CMobileCAI::ExecuteFight(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CMobileCAI::IsValidTarget(const CUnit* enemy) const {
@@ -217,12 +227,14 @@ bool CMobileCAI::IsValidTarget(const CUnit* enemy) const {
 void CMobileCAI::ExecuteGuard(Command &c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::ExecuteStop(Command &c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -230,6 +242,7 @@ void CMobileCAI::ExecuteStop(Command &c)
 void CMobileCAI::ExecuteAttack(Command &c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -238,62 +251,74 @@ void CMobileCAI::ExecuteAttack(Command &c)
 int CMobileCAI::GetDefaultCmd(const CUnit* pointed, const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMobileCAI::SetGoal(const float3& pos, const float3& /*curPos*/, float goalRadius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMobileCAI::SetGoal(const float3& pos, const float3& /*curPos*/, float goalRadius, float speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CMobileCAI::SetFrontMoveCommandPos(const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMobileCAI::StopMove()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMobileCAI::StopMoveAndFinishCommand()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMobileCAI::StopMoveAndKeepPointing(const float3& p, const float r, bool b)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMobileCAI::BuggerOff(const float3& pos, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMobileCAI::NonMoving()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMobileCAI::FinishCommand()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CMobileCAI::MobileAutoGenerateTarget()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMobileCAI::GenerateAttackCmd()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CMobileCAI::CanWeaponAutoTarget(const CWeapon* weapon) const {
@@ -338,6 +363,7 @@ void CMobileCAI::StartSlowGuard(float speed) {
 void CMobileCAI::CalculateCancelDistance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -369,94 +395,110 @@ void CMobileCAI::SetTransportee(CUnit* unit) {
 void CMobileCAI::ExecuteLoadUnits(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::ExecuteUnloadUnits(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::ExecuteUnloadUnit(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMobileCAI::AllowedCommand(const Command& c, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMobileCAI::FindEmptySpot(const float3& center, float radius, float spread, float3& found, const CUnit* unitToUnload, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CUnit* CMobileCAI::FindUnitToTransport(float3 center, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMobileCAI::LoadStillValid(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMobileCAI::SpotIsClear(float3 pos, CUnit* unitToUnload)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMobileCAI::SpotIsClearIgnoreSelf(float3 pos, CUnit* unitToUnload)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMobileCAI::FindEmptyDropSpots(float3 startpos, float3 endpos, std::vector<float3>& dropSpots)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::UnloadUnits_Land(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::UnloadUnits_Drop(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::UnloadUnits_LandFlood(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::UnloadLand(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::UnloadDrop(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMobileCAI::UnloadLandFlood(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

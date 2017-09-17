@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "DefaultFilter.h"
@@ -111,6 +112,7 @@ void log_filter_global_setMinLevel(int level) { log_filter_checkCompileTimeMinLe
 int log_filter_section_getMinLevel(const char* section)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // called by LogOutput for each ENABLED section
@@ -118,12 +120,14 @@ int log_filter_section_getMinLevel(const char* section)
 void log_filter_section_setMinLevel(const char* section, int level)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void log_enable_and_disable(const bool enable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int log_filter_section_getNumRegisteredSections() {
@@ -150,6 +154,7 @@ const char* log_filter_section_getRegisteredIndex(int index) {
 static void log_filter_record(const char* section, int level, const char* fmt, va_list arguments)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -191,6 +196,7 @@ void log_frontend_register_runtime_section(const char* section_cstr_tmp, int lev
 void log_frontend_record(const char* section, int level, const char* fmt, ...)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void log_frontend_cleanup() {
@@ -208,9 +214,11 @@ void log_frontend_cleanup() {
 std::set<const char*> log_filter_section_getRegisteredSet()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const char* log_filter_section_getSectionCString(const char* section_cstr_tmp)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

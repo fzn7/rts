@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LosMap.h"
@@ -27,6 +28,7 @@ static std::array<std::vector<float>, ThreadPool::MAX_THREADS> isqrt_table;
 static float isqrt_lookup(unsigned r, int threadNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -38,6 +40,7 @@ template<typename F>
 void MidpointCircleAlgo(int radius, F func)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -46,6 +49,7 @@ template<typename F>
 void MidpointCircleAlgoPerLine(int radius, F func)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -60,12 +64,14 @@ void MidpointCircleAlgoPerLine(int radius, F func)
 class CLosTables
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CLosTables::CLosTables()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -83,6 +89,7 @@ CLosTables::CLosTables()
 CLosTables::LosTable CLosTables::GetLosRays(const int radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -93,6 +100,7 @@ CLosTables::LosTable CLosTables::GetLosRays(const int radius)
 std::vector<int2> CLosTables::GetCircleSurface(const int radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -102,6 +110,7 @@ std::vector<int2> CLosTables::GetCircleSurface(const int radius)
 void CLosTables::AddMissing(LosTable& losRays, const std::vector<int2>& circlePoints, const int radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -111,12 +120,14 @@ void CLosTables::AddMissing(LosTable& losRays, const std::vector<int2>& circlePo
 CLosTables::LosLine CLosTables::GetRay(int xf, int yf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosTables::Debug(const LosTable& losRays, const std::vector<int2>& points, int radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -136,18 +147,21 @@ void CLosTables::Debug(const LosTable& losRays, const std::vector<int2>& points,
 void CLosMap::AddCircle(SLosInstance* instance, int amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosMap::AddRaycast(SLosInstance* instance, int amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosMap::PrepareRaycast(SLosInstance* instance) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -157,34 +171,40 @@ void CLosMap::PrepareRaycast(SLosInstance* instance) const
 void CLosMap::LosAdd(SLosInstance* li) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline static constexpr size_t ToAngleMapIdx(const int2 p, const int radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void CastLos(float* prevAng, float* maxAng, const int2& off, std::vector<bool>& squaresMap, std::vector<float>& anglesMap, int radius, int threadNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosMap::AddSquaresToInstance(SLosInstance* li, const std::vector<bool>& squaresMap) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosMap::UnsafeLosAdd(SLosInstance* li) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosMap::SafeLosAdd(SLosInstance* li) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -171,6 +172,7 @@ CGlobalRendering::CGlobalRendering()
 	, window(nullptr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGlobalRendering::PostInit() {
@@ -296,12 +298,14 @@ void CGlobalRendering::PostInit() {
 void CGlobalRendering::SetFullScreen(bool configFullScreen, bool cmdLineWindowed, bool cmdLineFullScreen)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int2 CGlobalRendering::GetWantedViewSize(const bool fullscreen)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

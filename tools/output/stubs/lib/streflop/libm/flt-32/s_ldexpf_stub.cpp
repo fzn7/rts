@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* s_ldexpf.c -- Simple version of s_ldexp.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -31,6 +32,7 @@ namespace streflop_libm {
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 INTDEF(__ldexpf)
 weak_alias (__ldexpf, ldexpf)

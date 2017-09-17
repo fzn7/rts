@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "WeaponLoader.h"
@@ -30,6 +31,7 @@
 CWeaponLoader* CWeaponLoader::GetInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -37,6 +39,7 @@ CWeaponLoader* CWeaponLoader::GetInstance()
 void CWeaponLoader::LoadWeapons(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -44,10 +47,12 @@ void CWeaponLoader::LoadWeapons(CUnit* unit)
 CWeapon* CWeaponLoader::LoadWeapon(CUnit* owner, const UnitDefWeapon* defWeapon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CWeapon* CWeaponLoader::InitWeapon(CUnit* owner, CWeapon* weapon, const UnitDefWeapon* defWeapon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -76,22 +77,26 @@ CVertexArray* CGroundFlash::va = nullptr;
 CGroundFlash::CGroundFlash()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGroundFlash::CGroundFlash(const float3& _pos): CExpGenSpawnable()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CGroundFlash::CalcNormal(const float3 midPos, const float3 camDir, const float quadSize) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGroundFlash::GetMemberInfo(SExpGenSpawnableMemberInfo& memberInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -99,6 +104,7 @@ bool CGroundFlash::GetMemberInfo(SExpGenSpawnableMemberInfo& memberInfo)
 CStandardGroundFlash::CStandardGroundFlash()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CStandardGroundFlash::CStandardGroundFlash(
@@ -117,6 +123,7 @@ CStandardGroundFlash::CStandardGroundFlash(
 	, circleAlphaDec(ttl ? circleAlpha / ttl : 0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CStandardGroundFlash::CStandardGroundFlash(
@@ -140,27 +147,32 @@ CStandardGroundFlash::CStandardGroundFlash(
 	, circleAlphaDec(ttl ? circleAlpha / ttl : 0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CStandardGroundFlash::InitCommon(const float3& _pos, const float3& _color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CStandardGroundFlash::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CStandardGroundFlash::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CStandardGroundFlash::GetMemberInfo(SExpGenSpawnableMemberInfo& memberInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -168,27 +180,32 @@ bool CStandardGroundFlash::GetMemberInfo(SExpGenSpawnableMemberInfo& memberInfo)
 CSimpleGroundFlash::CSimpleGroundFlash()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSimpleGroundFlash::Init(const CUnit* owner, const float3& offset)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSimpleGroundFlash::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CSimpleGroundFlash::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSimpleGroundFlash::GetMemberInfo(SExpGenSpawnableMemberInfo& memberInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -210,15 +227,18 @@ CSeismicGroundFlash::CSeismicGroundFlash(
 	, ttl(_ttl)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSeismicGroundFlash::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CSeismicGroundFlash::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

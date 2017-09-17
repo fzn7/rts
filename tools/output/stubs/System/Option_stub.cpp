@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #ifndef _OPTION_CPP
@@ -164,6 +165,7 @@ static void option_parseOptionsInternal(
 		std::set<std::string>* optionsSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void option_parseOptions(
@@ -174,6 +176,7 @@ void option_parseOptions(
 		std::set<std::string>* optionsSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void option_parseOptionsLuaString(
@@ -183,6 +186,7 @@ void option_parseOptionsLuaString(
 		std::set<std::string>* optionsSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -195,6 +199,7 @@ void option_parseMapOptions(
 		std::set<std::string>* optionsSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #endif // _OPTION_CPP

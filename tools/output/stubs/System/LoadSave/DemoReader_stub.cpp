@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "DemoReader.h"
@@ -23,27 +24,32 @@ CDemoReader::CDemoReader(const std::string& filename, float curTime)
 	: playbackDemo(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CDemoReader::~CDemoReader()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 netcode::RawPacket* CDemoReader::GetData(const float readTime)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CDemoReader::ReachedEnd()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CDemoReader::LoadStats()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

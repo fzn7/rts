@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -19,6 +20,7 @@ unsigned int CCollisionHandler::numContTests = 0;
 void CCollisionHandler::PrintStats()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -32,6 +34,7 @@ bool CCollisionHandler::DetectHit(
 	bool forceTrace)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CCollisionHandler::DetectHit(
@@ -114,12 +117,14 @@ bool CCollisionHandler::Collision(
 bool CCollisionHandler::CollisionFootPrint(const CSolidObject* o, const float3& p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CCollisionHandler::Collision(const CollisionVolume* v, const CMatrix44f& m, const float3& p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -275,20 +280,24 @@ inline bool CCollisionHandler::Intersect(
 bool CCollisionHandler::Intersect(const CollisionVolume* v, const CMatrix44f& m, const float3& p0, const float3& p1, CollisionQuery* q)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CCollisionHandler::IntersectEllipsoid(const CollisionVolume* v, const float3& pi0, const float3& pi1, CollisionQuery* q)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CCollisionHandler::IntersectCylinder(const CollisionVolume* v, const float3& pi0, const float3& pi1, CollisionQuery* q)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CCollisionHandler::IntersectBox(const CollisionVolume* v, const float3& pi0, const float3& pi1, CollisionQuery* q)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

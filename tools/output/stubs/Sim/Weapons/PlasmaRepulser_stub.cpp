@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/creg/STL_List.h"
@@ -44,61 +45,72 @@ CPlasmaRepulser::CPlasmaRepulser(CUnit* owner, const WeaponDef* def): CWeapon(ow
 	isEnabled(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPlasmaRepulser::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CPlasmaRepulser::IsRepulsing(CWeaponProjectile* p) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CPlasmaRepulser::IsActive() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CPlasmaRepulser::HaveFreeLineOfFire(const float3 pos, const SWeaponTarget& trg, bool useMuzzle) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CPlasmaRepulser::CanIntercept(unsigned interceptedType, int allyTeam) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPlasmaRepulser::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // Returns true if the projectile is destroyed.
 bool CPlasmaRepulser::IncomingProjectile(CWeaponProjectile* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPlasmaRepulser::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CPlasmaRepulser::IncomingBeam(const CWeapon* emitter, const float3& start, float damageMultiplier)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPlasmaRepulser::DependentDied(CObject* o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -33,63 +34,75 @@ CTextureAtlas::CTextureAtlas(unsigned int allocType)
 	, freeTexture(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CTextureAtlas::~CTextureAtlas()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void* CTextureAtlas::AddTex(std::string name, int xsize, int ysize, TextureType texType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CTextureAtlas::AddTexFromMem(std::string name, int xsize, int ysize, TextureType texType, void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CTextureAtlas::AddTexFromFile(std::string name, std::string file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CTextureAtlas::Finalize()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTextureAtlas::CreateTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CTextureAtlas::GetBPP(TextureType texType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTextureAtlas::BindTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CTextureAtlas::TextureExists(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 AtlasedTexture& CTextureAtlas::GetTexture(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 AtlasedTexture& CTextureAtlas::GetTextureWithBackup(const std::string& name, const std::string& backupName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int2 CTextureAtlas::GetSize() const {

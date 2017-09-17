@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "UDPListener.h"
@@ -25,6 +26,7 @@
 namespace netcode
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string UDPListener::TryBindSocket(int port, SocketPtr* socket, const std::string& ip) {
@@ -153,36 +155,43 @@ void UDPListener::Update() {
 boost::shared_ptr<UDPConnection> UDPListener::SpawnConnection(const std::string& ip, const unsigned port)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPListener::SetAcceptingConnections(const bool enable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool UDPListener::IsAcceptingConnections() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool UDPListener::HasIncomingConnections() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 boost::weak_ptr<UDPConnection> UDPListener::PreviewConnection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 boost::shared_ptr<UDPConnection> UDPListener::AcceptConnection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPListener::RejectConnection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void UDPListener::UpdateConnections() {

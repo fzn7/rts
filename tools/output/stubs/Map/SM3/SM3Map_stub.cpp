@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -30,6 +31,7 @@ CONFIG(int, SM3MaxTextureStages).defaultValue(10);
 struct Sm3LoadCB: terrain::ILoadCallback
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -53,11 +55,13 @@ CSM3ReadMap::CSM3ReadMap(const std::string& mapName)
 	, numFeatures(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSM3ReadMap::~CSM3ReadMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -65,6 +69,7 @@ CSM3ReadMap::~CSM3ReadMap()
 void CSM3ReadMap::ConfigNotify(const std::string& key, const std::string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -117,38 +122,45 @@ void CSM3ReadMap::KillGroundDrawer() {
 void CSM3ReadMap::UpdateHeightMapUnsynced(const SRectangle& update)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSM3ReadMap::DrawMinimap() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // Feature creation
 int CSM3ReadMap::GetNumFeatures()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CSM3ReadMap::GetNumFeatureTypes()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSM3ReadMap::GetFeatureInfo(MapFeatureInfo* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const char* CSM3ReadMap::GetFeatureTypeName(int typeID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSM3ReadMap::LoadFeatureData()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSM3ReadMap::InfoMap::InfoMap() :
@@ -157,6 +169,7 @@ CSM3ReadMap::InfoMap::InfoMap() :
 	, data(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 CSM3ReadMap::InfoMap::~InfoMap() {
 	delete[] data;
@@ -169,20 +182,24 @@ CSM3ReadMap::InfoMap::~InfoMap() {
 unsigned char* CSM3ReadMap::GetInfoMap(const std::string& name, MapBitmapInfo* bm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSM3ReadMap::FreeInfoMap(const std::string& name, unsigned char* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 struct DrawGridParms
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSM3ReadMap::GridVisibility(CCamera* cam, IQuadDrawer* cb, float maxDist, int quadSize, int extraSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

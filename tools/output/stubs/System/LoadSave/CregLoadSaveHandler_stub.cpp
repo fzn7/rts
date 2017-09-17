@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <sstream>
@@ -42,22 +43,26 @@ CCregLoadSaveHandler::CCregLoadSaveHandler()
 	: iss(nullptr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void WriteString(std::ostream& s, const std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void PrintSize(const char* txt, int size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif //USING_CREG
 
 static void ReadString(std::istream& s, std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -65,16 +70,19 @@ static void ReadString(std::istream& s, std::string& str)
 void CCregLoadSaveHandler::SaveGame(const std::string& path)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /// this just loads the mapname and some other early stuff
 void CCregLoadSaveHandler::LoadGameStartInfo(const std::string& path)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /// this should be called on frame 0 when the game has started
 void CCregLoadSaveHandler::LoadGame()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

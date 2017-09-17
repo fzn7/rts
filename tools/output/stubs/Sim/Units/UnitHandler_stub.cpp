@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <cassert>
@@ -48,52 +49,61 @@ CUnitHandler::CUnitHandler()
 	maxUnitRadius(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CUnitHandler::~CUnitHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitHandler::DeleteScripts()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitHandler::InsertActiveUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnitHandler::AddUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitHandler::DeleteUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitHandler::DeleteUnitsNow()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitHandler::DeleteUnitNow(CUnit* delUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitHandler::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -101,11 +111,13 @@ void CUnitHandler::Update()
 void CUnitHandler::AddBuilderCAI(CBuilderCAI* b)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitHandler::RemoveBuilderCAI(CBuilderCAI* b)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -113,4 +125,5 @@ void CUnitHandler::RemoveBuilderCAI(CBuilderCAI* b)
 bool CUnitHandler::CanBuildUnit(const UnitDef* unitdef, int team) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

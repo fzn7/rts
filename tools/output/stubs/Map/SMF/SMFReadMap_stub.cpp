@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -37,6 +38,7 @@ CSMFReadMap::CSMFReadMap(std::string mapname)
 	, groundDrawer(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -44,59 +46,69 @@ CSMFReadMap::CSMFReadMap(std::string mapname)
 void CSMFReadMap::ParseHeader()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::LoadHeightMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::LoadMinimap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::InitializeWaterHeightColors()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::CreateSpecularTex()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFReadMap::CreateSplatDetailTextures()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::CreateGrassTex()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::CreateDetailTex()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::CreateShadingTex()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::CreateNormalTex()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -104,77 +116,90 @@ void CSMFReadMap::CreateNormalTex()
 void CSMFReadMap::UpdateHeightMapUnsynced(const SRectangle& update)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::UpdateVertexNormalsUnsynced(const SRectangle& update)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::UpdateFaceNormalsUnsynced(const SRectangle& update)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::UpdateNormalTexture(const SRectangle& update)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::UpdateShadingTexture(const SRectangle& update)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const float CSMFReadMap::GetCenterHeightUnsynced(const int x, const int y) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::UpdateShadingTexPart(int idx1, int idx2, unsigned char* dst) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CSMFReadMap::DiffuseSunCoeff(const int x, const int y) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CSMFReadMap::GetLightValue(const int x, const int y) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFReadMap::SunChanged()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::UpdateShadingTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::DrawMinimap() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::GridVisibility(CCamera* cam, IQuadDrawer* qd, float maxDist, int quadSize, int extraSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -189,18 +214,21 @@ const char* CSMFReadMap::GetFeatureTypeName(int typeID) { return file.GetFeature
 unsigned char* CSMFReadMap::GetInfoMap(const std::string& name, MapBitmapInfo* bmInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::FreeInfoMap(const std::string& name, unsigned char *data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFReadMap::ConfigureTexAnisotropyLevels()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

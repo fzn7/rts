@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Rendering/GL/myGL.h"
@@ -32,33 +33,39 @@ CInfoConsole::CInfoConsole()
 	, maxLines(1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CInfoConsole::~CInfoConsole()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CInfoConsole::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CInfoConsole::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CInfoConsole::PushNewLinesToEventHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CInfoConsole::GetRawLines(std::deque<RawLine>& lines)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -66,15 +73,18 @@ void CInfoConsole::RecordLogMessage(const std::string& section, int level,
 			const std::string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CInfoConsole::LastMessagePosition(const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const float3& CInfoConsole::GetMsgPos(const float3& defaultPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

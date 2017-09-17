@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "EngineOutHandler.h"
@@ -459,6 +460,7 @@ void CEngineOutHandler::PlayerCommandGiven(
 		const std::vector<int>& selectedUnitIds, const Command& c, int playerId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEngineOutHandler::CommandFinished(const CUnit& unit, const Command& command) {

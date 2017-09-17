@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Backend.h"
@@ -43,6 +44,7 @@ void log_backend_unregisterCleanup(log_cleanup_ptr cleanupFunc) { log_formatter_
 void log_backend_record(const char* section, int level, const char* fmt, va_list arguments)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /// Passes on a cleanup request to all sinks

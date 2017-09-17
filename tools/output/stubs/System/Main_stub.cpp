@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /**
@@ -29,6 +30,7 @@
 int Run(int argc, char* argv[])
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -39,6 +41,7 @@ int Run(int argc, char* argv[])
 static bool SetNvOptimusProfile(const std::string& processFileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -54,6 +57,7 @@ static bool SetNvOptimusProfile(const std::string& processFileName)
 int main(int argc, char* argv[])
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -62,6 +66,7 @@ int main(int argc, char* argv[])
 int WINAPI WinMain(HINSTANCE hInstanceIn, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 

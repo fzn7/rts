@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/EventHandler.h"
@@ -65,21 +66,25 @@ void AddQueueEvent(dlEvent* ev) {
 void QueueDownloadStarted(int ID) //queue from other thread download started event
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void QueueDownloadFinished(int ID) //queue from other thread download started event
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void QueueDownloadFailed(int ID, int errorID) //queue from other thread download started event
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void QueueDownloadProgress(int ID, long downloaded, long total) //queue from other thread download started event
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -87,17 +92,20 @@ LuaVFSDownload::LuaVFSDownload():
 	CEventClient("[LuaVFSDownload]", 314161, false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 LuaVFSDownload::~LuaVFSDownload()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaVFSDownload::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 struct DownloadItem {
@@ -124,6 +132,7 @@ __FORCE_ALIGN_STACK__
 int Download(int ID, const std::string& filename, DownloadEnum::Category cat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void StartDownload() {
@@ -161,10 +170,12 @@ void StartDownload() {
 int LuaVFSDownload::DownloadArchive(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaVFSDownload::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

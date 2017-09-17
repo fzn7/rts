@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "AICheats.h"
@@ -38,16 +39,19 @@ CUnit* CAICheats::GetUnit(int unitId) const {
 CAICheats::CAICheats(CSkirmishAIWrapper* ai): ai(ai)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CAICheats::~CAICheats()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICheats::EnableCheatEvents(bool enable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -55,26 +59,31 @@ void CAICheats::EnableCheatEvents(bool enable)
 void CAICheats::SetMyIncomeMultiplier(float incomeMultiplier)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICheats::GiveMeMetal(float amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICheats::GiveMeEnergy(float amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICheats::CreateUnit(const char* name, const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const UnitDef* CAICheats::GetUnitDef(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -82,17 +91,20 @@ const UnitDef* CAICheats::GetUnitDef(int unitId) const
 float3 CAICheats::GetUnitPos(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CAICheats::GetUnitVelocity(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int FilterUnitsVector(const std::vector<CUnit*>& units, int* unitIds, int unitIds_max, bool (*includeUnit)(CUnit*) = NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline bool unit_IsNeutral(CUnit* unit) {
@@ -111,21 +123,25 @@ static inline bool unit_IsEnemy(CUnit* unit) {
 int CAICheats::GetEnemyUnits(int* unitIds, int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICheats::GetEnemyUnits(int* unitIds, const float3& pos, float radius, int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICheats::GetNeutralUnits(int* unitIds, int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICheats::GetNeutralUnits(int* unitIds, const float3& pos, float radius, int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICheats::GetFeatures(int* features, int max) const {
@@ -143,86 +159,103 @@ int CAICheats::GetFeatures(int* features, int max, const float3& pos,
 int CAICheats::GetUnitTeam(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICheats::GetUnitAllyTeam(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICheats::GetUnitHealth(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICheats::GetUnitMaxHealth(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICheats::GetUnitPower(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICheats::GetUnitExperience(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICheats::IsUnitActivated(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICheats::UnitBeingBuilt(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICheats::GetUnitResourceInfo(int unitId, UnitResourceInfo* unitResInf) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const CCommandQueue* CAICheats::GetCurrentUnitCommands(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICheats::GetBuildingFacing(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICheats::IsUnitCloaked(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICheats::IsUnitParalyzed(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CAICheats::IsUnitNeutral(int unitId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CAICheats::GetProperty(int id, int property, void *data) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICheats::GetValue(int id, void* data) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICheats::HandleCommand(int commandId, void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

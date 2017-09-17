@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LuaAIImplHandler.h"
@@ -20,16 +21,19 @@
 CLuaAIImplHandler& CLuaAIImplHandler::GetInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CLuaAIImplHandler::CLuaAIImplHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CLuaAIImplHandler::~CLuaAIImplHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::vector< std::vector<InfoItem> > CLuaAIImplHandler::LoadInfos() {

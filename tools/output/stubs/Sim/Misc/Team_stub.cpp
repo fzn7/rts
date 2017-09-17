@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Team.h"
@@ -70,27 +71,32 @@ CTeam::CTeam():
 	highlight(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTeam::SetDefaultStartPos()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTeam::ClampStartPosInStartBox(float3* pos) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CTeam::UseMetal(float amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CTeam::UseEnergy(float amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -98,51 +104,60 @@ bool CTeam::UseEnergy(float amount)
 void CTeam::AddMetal(float amount, bool useIncomeMultiplier)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTeam::AddEnergy(float amount, bool useIncomeMultiplier)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CTeam::HaveResources(const SResourcePack& amount) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTeam::AddResources(SResourcePack amount, bool useIncomeMultiplier)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CTeam::UseResources(const SResourcePack& amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTeam::GiveEverythingTo(const unsigned toTeam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTeam::Died(bool normalDeath)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTeam::AddPlayer(int playerNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTeam::KillAIs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -150,23 +165,27 @@ void CTeam::KillAIs()
 void CTeam::ResetResourceState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTeam::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTeam::AddUnit(CUnit* unit, AddType type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CTeam::RemoveUnit(CUnit* unit, RemoveType type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string CTeam::GetControllerName() const {

@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* s_atanf.c -- Simple version of s_atan.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -78,6 +79,7 @@ huge   = 1.0e30f;
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__atanf, atanf)
 }

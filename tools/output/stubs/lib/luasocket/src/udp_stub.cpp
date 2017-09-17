@@ -1,3 +1,4 @@
+#include <iostream>
 /*=========================================================================*\
 * UDP object 
 * LuaSocket toolkit
@@ -88,6 +89,7 @@ static luaL_reg func[] = {
 int udp_open(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*=========================================================================*\

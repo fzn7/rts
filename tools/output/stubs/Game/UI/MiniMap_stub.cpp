@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <SDL_keycode.h>
@@ -186,24 +187,28 @@ CMiniMap::CMiniMap()
 CMiniMap::~CMiniMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::ParseGeometry(const string& geostr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::ToggleMaximized(bool _maxspect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::SetMaximizedGeometry()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -212,12 +217,14 @@ void CMiniMap::SetMaximizedGeometry()
 void CMiniMap::SetSlaveMode(bool newMode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::ConfigCommand(const std::string& line)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -225,12 +232,14 @@ void CMiniMap::ConfigCommand(const std::string& line)
 void CMiniMap::SetGeometry(int px, int py, int sx, int sy)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::UpdateGeometry()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -239,12 +248,14 @@ void CMiniMap::UpdateGeometry()
 void CMiniMap::MoveView(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::SelectUnits(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -252,18 +263,21 @@ void CMiniMap::SelectUnits(int x, int y)
 bool CMiniMap::MousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::MouseMove(int x, int y, int dx, int dy, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::MouseRelease(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -271,24 +285,28 @@ void CMiniMap::MouseRelease(int x, int y, int button)
 CUnit* CMiniMap::GetSelectUnit(const float3& pos) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CMiniMap::GetMapPosition(int x, int y) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::ProxyMousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::ProxyMouseRelease(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -297,18 +315,21 @@ void CMiniMap::ProxyMouseRelease(int x, int y, int button)
 bool CMiniMap::IsAbove(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CMiniMap::GetTooltip(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::AddNotification(float3 pos, float3 color, float alpha)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -317,29 +338,34 @@ void CMiniMap::AddNotification(float3 pos, float3 color, float alpha)
 void CMiniMap::DrawCircle(const float3& pos, float radius) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CMiniMap::DrawSquare(const float3& pos, float xsize, float zsize) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawSurfaceCircle(const float3& pos, float radius, unsigned int)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawSurfaceSquare(const float3& pos, float xsize, float ysize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::ApplyConstraintsMatrix() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -348,18 +374,21 @@ void CMiniMap::ApplyConstraintsMatrix() const
 void CMiniMap::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::ResizeTextureCache()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::UpdateTextureCache()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -368,12 +397,14 @@ void CMiniMap::UpdateTextureCache()
 void CMiniMap::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawForReal(bool use_geo, bool updateTex)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -383,42 +414,49 @@ void CMiniMap::DrawForReal(bool use_geo, bool updateTex)
 void CMiniMap::DrawCameraFrustumAndMouseSelection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawFrame()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawMinimizedButton()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::IntBox::DrawBox() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::IntBox::DrawTextureBox() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawButtons()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawNotes()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -426,36 +464,42 @@ void CMiniMap::DrawNotes()
 bool CMiniMap::RenderCachedTexture(bool use_geo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawBackground() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawUnitIcons() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawUnitRanges() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::DrawWorldStuff() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMiniMap::SetClipPlanes(const bool lua) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

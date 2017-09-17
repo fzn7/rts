@@ -134,6 +134,7 @@ static SDL_Window* window;
 static bool MultisampleVerify()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -149,6 +150,7 @@ static bool MultisampleVerify()
 SpringApp::SpringApp(int argc, char** argv): cmdline(new CmdLineParams(argc, argv))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -157,6 +159,7 @@ SpringApp::SpringApp(int argc, char** argv): cmdline(new CmdLineParams(argc, arg
 SpringApp::~SpringApp()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -166,6 +169,7 @@ SpringApp::~SpringApp()
 bool SpringApp::Initialize()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -178,6 +182,7 @@ bool SpringApp::Initialize()
 bool SpringApp::InitWindow(const char* title)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -188,6 +193,7 @@ bool SpringApp::InitWindow(const char* title)
 bool SpringApp::CreateSDLWindow(const char* title)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -195,6 +201,7 @@ bool SpringApp::CreateSDLWindow(const char* title)
 void SpringApp::GetDisplayGeometry()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -204,12 +211,14 @@ void SpringApp::GetDisplayGeometry()
 void SpringApp::SaveWindowPosition()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void SpringApp::SetupViewportGeometry()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -219,18 +228,21 @@ void SpringApp::SetupViewportGeometry()
 void SpringApp::InitOpenGL()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void SpringApp::LoadFonts()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // initialize basic systems for command line help / output
 static void ConsolePrintInitialize(const std::string& configSource, bool safemode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -241,28 +253,33 @@ static void ConsolePrintInitialize(const std::string& configSource, bool safemod
 void SpringApp::ParseCmdLine(const std::string& binaryName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CGameController* SpringApp::LoadSaveFile(const std::string& saveFile)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CGameController* SpringApp::RunScript(const std::string& buf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SpringApp::StartScript(const std::string& inputFile)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SpringApp::LoadSpringMenu()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -271,6 +288,7 @@ void SpringApp::LoadSpringMenu()
 void SpringApp::Startup()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -278,6 +296,7 @@ void SpringApp::Startup()
 void SpringApp::Reload(const std::string& script)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -289,6 +308,7 @@ void SpringApp::Reload(const std::string& script)
 int SpringApp::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -299,6 +319,7 @@ int SpringApp::Update()
 int SpringApp::Run()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -309,10 +330,12 @@ int SpringApp::Run()
 void SpringApp::ShutDown()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool SpringApp::MainEventHandler(const SDL_Event& event)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

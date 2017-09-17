@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -93,21 +94,25 @@ CBuilderCAI::CBuilderCAI():
 	range3D(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CBuilderCAI::~CBuilderCAI()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBuilderCAI::InitStatic()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBuilderCAI::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -115,6 +120,7 @@ void CBuilderCAI::PostLoad()
 inline float CBuilderCAI::GetBuildRange(const float targetRadius) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -122,11 +128,13 @@ inline float CBuilderCAI::GetBuildRange(const float targetRadius) const
 bool CBuilderCAI::IsInBuildRange(const CWorldObject* obj) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CBuilderCAI::IsInBuildRange(const float3& objPos, const float objRadius) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -134,17 +142,20 @@ bool CBuilderCAI::IsInBuildRange(const float3& objPos, const float objRadius) co
 inline bool CBuilderCAI::MoveInBuildRange(const CWorldObject* obj, const bool checkMoveTypeForFailed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CBuilderCAI::MoveInBuildRange(const float3& objPos, float objRadius, const bool checkMoveTypeForFailed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBuilderCAI::IsBuildPosBlocked(const BuildInfo& build, const CUnit** nanoFrame) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -152,54 +163,63 @@ bool CBuilderCAI::IsBuildPosBlocked(const BuildInfo& build, const CUnit** nanoFr
 inline bool CBuilderCAI::OutOfImmobileRange(const Command& cmd) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CBuilderCAI::GetBuildOptionRadius(const UnitDef* ud, int cmdId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::CancelRestrictedUnit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::GiveCommandReal(const Command& c, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::ReclaimFeature(CFeature* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::FinishCommand()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::ExecuteStop(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::ExecuteBuildCmd(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -216,24 +236,28 @@ bool CBuilderCAI::TargetInterceptable(const CUnit* unit, float targetSpeed) {
 void CBuilderCAI::ExecuteRepair(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::ExecuteCapture(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::ExecuteGuard(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::ExecuteReclaim(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -253,63 +277,74 @@ bool CBuilderCAI::ResurrectObject(CFeature *feature) {
 void CBuilderCAI::ExecuteResurrect(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::ExecutePatrol(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::ExecuteFight(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::ExecuteRestore(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CBuilderCAI::GetDefaultCmd(const CUnit* pointed, const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::AddUnitToReclaimers(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::RemoveUnitFromReclaimers(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBuilderCAI::AddUnitToFeatureReclaimers(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBuilderCAI::RemoveUnitFromFeatureReclaimers(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBuilderCAI::AddUnitToResurrecters(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBuilderCAI::RemoveUnitFromResurrecters(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -327,18 +362,21 @@ void CBuilderCAI::RemoveUnitFromResurrecters(CUnit* unit)
 bool CBuilderCAI::IsUnitBeingReclaimed(const CUnit* unit, CUnit *friendUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBuilderCAI::IsFeatureBeingReclaimed(int featureId, CUnit *friendUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CBuilderCAI::IsFeatureBeingResurrected(int featureId, CUnit *friendUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -358,6 +396,7 @@ bool CBuilderCAI::ReclaimObject(CSolidObject* object) {
 int CBuilderCAI::FindReclaimTarget(const float3& pos, float radius, unsigned char cmdopt, ReclaimOption recoptions, float bestStartDist) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -369,6 +408,7 @@ int CBuilderCAI::FindReclaimTarget(const float3& pos, float radius, unsigned cha
 bool CBuilderCAI::FindReclaimTargetAndReclaim(const float3& pos, float radius, unsigned char cmdopt, ReclaimOption recoptions)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -378,6 +418,7 @@ bool CBuilderCAI::FindResurrectableFeatureAndResurrect(const float3& pos,
 													   bool freshOnly)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -386,6 +427,7 @@ bool CBuilderCAI::FindCaptureTargetAndCapture(const float3& pos, float radius,
 											  bool healthyOnly)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -395,6 +437,7 @@ bool CBuilderCAI::FindRepairTargetAndRepair(const float3& pos, float radius,
 											bool builtOnly)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

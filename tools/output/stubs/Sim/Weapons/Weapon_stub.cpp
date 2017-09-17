@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/creg/STL_Map.h"
@@ -162,160 +163,187 @@ CWeapon::CWeapon(CUnit* owner, const WeaponDef* def):
 	fireSoundVolume(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CWeapon::~CWeapon()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::SetWeaponNum(int num)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline bool CWeapon::CobBlockShot() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CWeapon::TargetWeight(const CUnit* targetUnit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::UpdateWeaponPieces(const bool updateAimFrom)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::UpdateWeaponVectors()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::UpdateWantedDir()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CWeapon::GetPredictedImpactTime(float3 p) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::UpdateAim()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::ReAimWeapon()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::CanFire(bool ignoreAngleGood, bool ignoreTargetType, bool ignoreRequestedDir) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CWeapon::UpdateFire()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::UpdateStockpile()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::UpdateSalvo()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::Attack(const SWeaponTarget& newTarget)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::SetAttackTarget(const SWeaponTarget& newTarget)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::DropCurrentTarget()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::AllowWeaponAutoTarget() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CWeapon::AutoTarget()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::HoldIfTargetInvalid()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::DependentDied(CObject* o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::TargetUnderWater(const float3 tgtPos, const SWeaponTarget& target)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::TargetInWater(const float3 tgtPos, const SWeaponTarget& target)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::CheckTargetAngleConstraint(const float3 worldTargetDir, const float3 worldWeaponDir) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -325,29 +353,34 @@ float3 CWeapon::GetTargetBorderPos(
 	const float3 rawTargetDir) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::TryTarget(const float3 tgtPos, const SWeaponTarget& trg, bool preFire) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::TestTarget(const float3 tgtPos, const SWeaponTarget& trg) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CWeapon::TestRange(const float3 tgtPos, const SWeaponTarget& trg) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::HaveFreeLineOfFire(const float3 pos, const SWeaponTarget& trg, bool useMuzzle) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -359,54 +392,63 @@ bool CWeapon::TryTarget(const SWeaponTarget& trg) const {
 bool CWeapon::TryTargetRotate(const CUnit* unit, bool userTarget, bool manualFire)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::TryTargetRotate(float3 pos, bool userTarget, bool manualFire)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWeapon::TryTargetHeading(short heading, const SWeaponTarget& trg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::Fire(bool scriptCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::UpdateInterceptTarget()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 ProjectileParams CWeapon::GetProjectileParams()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CWeapon::GetRange2D(const float yDiff) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWeapon::StopAttackingAllyTeam(const int ally)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -425,40 +467,47 @@ void CWeapon::StopAttackingAllyTeam(const int ally)
 void CWeapon::AdjustTargetPosToWater(float3& tgtPos, bool attackGround) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CWeapon::GetUnitPositionWithError(const CUnit* unit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CWeapon::GetUnitLeadTargetPos(const CUnit* unit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CWeapon::GetLeadVec(const CUnit* unit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CWeapon::ExperienceErrorScale() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CWeapon::MoveErrorExperience() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CWeapon::GetLeadTargetPos(const SWeaponTarget& target) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

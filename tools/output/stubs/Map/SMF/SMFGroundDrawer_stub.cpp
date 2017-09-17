@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SMFReadMap.h"
@@ -46,11 +47,13 @@ CSMFGroundDrawer::CSMFGroundDrawer(CSMFReadMap* rm)
 	, meshDrawer(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSMFGroundDrawer::~CSMFGroundDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -58,6 +61,7 @@ CSMFGroundDrawer::~CSMFGroundDrawer()
 IMeshDrawer* CSMFGroundDrawer::SwitchMeshDrawer(int mode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -136,11 +140,13 @@ inline void CSMFGroundDrawer::DrawWaterPlane(bool drawWaterReflection) {
 ISMFRenderState* CSMFGroundDrawer::SelectRenderState(const DrawPass::e& drawPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CSMFGroundDrawer::HaveLuaRenderState() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -148,28 +154,33 @@ bool CSMFGroundDrawer::HaveLuaRenderState() const
 void CSMFGroundDrawer::DrawDeferredPass(const DrawPass::e& drawPass, bool alphaTest)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundDrawer::DrawForwardPass(const DrawPass::e& drawPass, bool alphaTest)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundDrawer::Draw(const DrawPass::e& drawPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFGroundDrawer::DrawBorder(const DrawPass::e drawPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSMFGroundDrawer::DrawShadowPass()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -177,11 +188,13 @@ void CSMFGroundDrawer::DrawShadowPass()
 void CSMFGroundDrawer::SetLuaShader(const LuaMapShaderData* luaMapShaderData)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundDrawer::SetupBigSquare(const int bigSquareX, const int bigSquareY)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -189,11 +202,13 @@ void CSMFGroundDrawer::SetupBigSquare(const int bigSquareX, const int bigSquareY
 void CSMFGroundDrawer::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundDrawer::UpdateRenderState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundDrawer::SunChanged() {
@@ -210,6 +225,7 @@ void CSMFGroundDrawer::SunChanged() {
 bool CSMFGroundDrawer::UpdateGeometryBuffer(bool init)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -217,16 +233,19 @@ bool CSMFGroundDrawer::UpdateGeometryBuffer(bool init)
 void CSMFGroundDrawer::IncreaseDetail()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundDrawer::DecreaseDetail()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSMFGroundDrawer::SetDetail(int newGroundDetail)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -234,5 +253,6 @@ void CSMFGroundDrawer::SetDetail(int newGroundDetail)
 int CSMFGroundDrawer::GetGroundDetail(const DrawPass::e& drawPass) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <assert.h>
@@ -46,6 +47,7 @@ CPlayer::CPlayer()
 	, ping(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -53,28 +55,33 @@ CPlayer::CPlayer()
 void CPlayer::SetControlledTeams()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPlayer::UpdateControlledTeams()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPlayer::StartSpectating()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPlayer::JoinTeam(int newTeam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPlayer::GameFrame(int frameNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -82,9 +89,11 @@ void CPlayer::GameFrame(int frameNum)
 void CPlayer::StartControllingUnit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPlayer::StopControllingUnit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

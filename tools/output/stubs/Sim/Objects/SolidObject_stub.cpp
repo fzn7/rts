@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -135,57 +136,67 @@ CSolidObject::CSolidObject():
 	buildFacing(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSolidObject::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSolidObject::UpdatePhysicalState(float eps)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSolidObject::SetVoidState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CSolidObject::ClearVoidState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSolidObject::UpdateVoidState(bool set)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSolidObject::SetMass(float newMass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSolidObject::UnBlock()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSolidObject::Block()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 YardMapStatus CSolidObject::GetGroundBlockingMaskAtPos(float3 gpos) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -193,16 +204,19 @@ YardMapStatus CSolidObject::GetGroundBlockingMaskAtPos(float3 gpos) const
 int2 CSolidObject::GetMapPos(const float3& position) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CSolidObject::GetDragAccelerationVec(const float4& params) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CSolidObject::GetWantedUpDir(bool useGroundNormal) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -210,16 +224,19 @@ float3 CSolidObject::GetWantedUpDir(bool useGroundNormal) const
 void CSolidObject::SetDirVectorsEuler(const float3 angles)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSolidObject::SetHeadingFromDirection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSolidObject::UpdateDirVectors(bool useGroundNormal)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -227,6 +244,7 @@ void CSolidObject::UpdateDirVectors(bool useGroundNormal)
 void CSolidObject::ForcedSpin(const float3& newDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -234,5 +252,6 @@ void CSolidObject::ForcedSpin(const float3& newDir)
 void CSolidObject::Kill(CUnit* killer, const float3& impulse, bool crushed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

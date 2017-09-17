@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "CommandDrawer.h"
@@ -26,6 +27,7 @@
 static const CUnit* GetTrackableUnit(const CUnit* caiOwner, const CUnit* cmdUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CommandDrawer* CommandDrawer::GetInstance() {
@@ -56,11 +58,13 @@ void CommandDrawer::AddLuaQueuedUnit(const CUnit* unit) {
 void CommandDrawer::DrawLuaQueuedUnitSetCommands() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CommandDrawer::DrawCommands(const CCommandAI* cai) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -68,6 +72,7 @@ void CommandDrawer::DrawCommands(const CCommandAI* cai) const
 void CommandDrawer::DrawAirCAICommands(const CAirCAI* cai) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -75,6 +80,7 @@ void CommandDrawer::DrawAirCAICommands(const CAirCAI* cai) const
 void CommandDrawer::DrawBuilderCAICommands(const CBuilderCAI* cai) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -82,6 +88,7 @@ void CommandDrawer::DrawBuilderCAICommands(const CBuilderCAI* cai) const
 void CommandDrawer::DrawFactoryCAICommands(const CFactoryCAI* cai) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -89,21 +96,25 @@ void CommandDrawer::DrawFactoryCAICommands(const CFactoryCAI* cai) const
 void CommandDrawer::DrawMobileCAICommands(const CMobileCAI* cai) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CommandDrawer::DrawWaitIcon(const Command& cmd) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CommandDrawer::DrawDefaultCommand(const Command& c, const CUnit* owner) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CommandDrawer::DrawQuedBuildingSquares(const CBuilderCAI* cai) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

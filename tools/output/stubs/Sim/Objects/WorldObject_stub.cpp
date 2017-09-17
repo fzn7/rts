@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "WorldObject.h"
@@ -24,5 +25,6 @@ CR_REG_METADATA(CWorldObject, (
 void CWorldObject::SetRadiusAndHeight(const S3DModel* mdl)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

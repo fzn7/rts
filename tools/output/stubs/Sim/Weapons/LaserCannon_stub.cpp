@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LaserCannon.h"
@@ -18,16 +19,19 @@ CLaserCannon::CLaserCannon(CUnit* owner, const WeaponDef* def)
 	: CWeapon(owner, def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLaserCannon::UpdateRange(const float val)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLaserCannon::FireImpl(const bool scriptCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "MoveDefHandler.h"
@@ -65,11 +66,13 @@ static const float MAX_ALLOWED_WATER_DAMAGE_HMM = 1e4f;
 static float DegreesToMaxSlope(float degrees)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static MoveDef::SpeedModClass ParseSpeedModClass(const std::string& moveDefName, const LuaTable& moveDefTable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -77,12 +80,14 @@ static MoveDef::SpeedModClass ParseSpeedModClass(const std::string& moveDefName,
 MoveDefHandler::MoveDefHandler(LuaParser* defsParser)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 MoveDef* MoveDefHandler::GetMoveDefByName(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -122,6 +127,7 @@ MoveDef::MoveDef()
 	, flowMapping(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 MoveDef::MoveDef(const LuaTable& moveDefTable, int moveDefID) {

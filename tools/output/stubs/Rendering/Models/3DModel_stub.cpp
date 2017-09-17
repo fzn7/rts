@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "3DModel.h"
@@ -54,6 +55,7 @@ CR_REG_METADATA(LocalModel, (
 void S3DModel::DeletePieces(S3DModelPiece* piece)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -73,51 +75,60 @@ S3DModelPiece::S3DModelPiece()
 	, dispListID(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 S3DModelPiece::~S3DModelPiece()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void S3DModelPiece::CreateDispList()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void S3DModelPiece::DrawStatic() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 S3DModelPiece::GetEmitPos() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 S3DModelPiece::GetEmitDir() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void S3DModelPiece::CreateShatterPieces()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void S3DModelPiece::CreateShatterPiecesVariation(const int num)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void S3DModelPiece::Shatter(float pieceChance, int modelType, int texType, int team, const float3 pos, const float3 speed, const CMatrix44f& m) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -129,37 +140,44 @@ void S3DModelPiece::Shatter(float pieceChance, int modelType, int texType, int t
 void LocalModel::DrawPieces() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LocalModel::DrawPiecesLOD(unsigned int lod) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LocalModel::SetLODCount(unsigned int count)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LocalModel::SetOriginalPieces(const S3DModelPiece* mp, int& idx)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LocalModel::SetModel(const S3DModel* model, bool initialize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 LocalModelPiece* LocalModel::CreateLocalModelPieces(const S3DModelPiece* mpParent)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LocalModel::UpdateBoundingVolume()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -182,6 +200,7 @@ LocalModelPiece::LocalModelPiece(const S3DModelPiece* piece)
 	, parent(NULL) // set later
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LocalModelPiece::SetDirty() {
@@ -195,27 +214,32 @@ void LocalModelPiece::SetDirty() {
 void LocalModelPiece::UpdateMatrix() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LocalModelPiece::UpdateMatricesRec(bool updateChildMatrices) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LocalModelPiece::UpdateParentMatricesRec() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LocalModelPiece::Draw() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LocalModelPiece::DrawLOD(unsigned int lod) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -223,12 +247,14 @@ void LocalModelPiece::DrawLOD(unsigned int lod) const
 void LocalModelPiece::SetLODCount(unsigned int count)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LocalModelPiece::GetEmitDirPos(float3& emitPos, float3& emitDir) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/

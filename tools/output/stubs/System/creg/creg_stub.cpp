@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /*
@@ -24,16 +25,19 @@ using namespace creg;
 static std::unordered_map<const Class*, std::vector<Class*>>& derivedClasses()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static std::unordered_map<std::string, Class*>& mapNameToClass()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static std::vector<Class*>& classes()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // -------------------------------------------------------------------
@@ -55,6 +59,7 @@ ClassBinder::ClassBinder(const char* className, ClassFlags cf,
 	, destructor(destructorProc)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -65,16 +70,19 @@ ClassBinder::ClassBinder(const char* className, ClassFlags cf,
 const std::vector<Class*>& System::GetClasses()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 Class* System::GetClass(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void System::AddClass(Class* c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -89,68 +97,81 @@ Class::Class(const char* _name)
 , currentMemberFlags(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool Class::IsSubclassOf(Class* other) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::vector<Class*> Class::GetImplementations()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const std::vector<Class*>& Class::GetDerivedClasses() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void Class::BeginFlag(ClassMemberFlag flag)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Class::EndFlag(ClassMemberFlag flag)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Class::SetFlag(ClassFlags flag)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Class::AddMember(const char* name, boost::shared_ptr<IType> type, unsigned int offset, int alignment)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 Class::Member* Class::FindMember(const char* name, const bool inherited)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Class::SetMemberFlag(const char* name, ClassMemberFlag f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void* Class::CreateInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Class::DeleteInstance(void* inst)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void Class::CalculateChecksum(unsigned int& checksum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

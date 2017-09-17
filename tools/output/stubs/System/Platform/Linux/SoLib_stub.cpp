@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /**
@@ -14,6 +15,7 @@
 SoLib::SoLib(const char* fileName) : so(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -37,6 +39,7 @@ bool SoLib::LoadFailed() {
 SoLib::~SoLib()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -45,4 +48,5 @@ SoLib::~SoLib()
 void* SoLib::FindAddress(const char* symbol)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

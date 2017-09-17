@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Truncate argument to nearest integral value not larger than the argument.
    Copyright (C) 1997, 1998 Free Software Foundation, Inc.
@@ -29,6 +30,7 @@ Simple
 __truncf (Simple x)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__truncf, truncf)
 }

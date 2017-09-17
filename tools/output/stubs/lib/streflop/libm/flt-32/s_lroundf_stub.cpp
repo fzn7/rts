@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Round Simple value to long int.
    Copyright (C) 1997 Free Software Foundation, Inc.
@@ -28,6 +29,7 @@ long int
 __lroundf (Simple x)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 weak_alias (__lroundf, lroundf)

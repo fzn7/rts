@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "FileSystemInitializer.h"
@@ -16,21 +17,25 @@ bool FileSystemInitializer::initialized = false;
 void FileSystemInitializer::PreInitializeConfigHandler(const std::string& configSource, const bool safemode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void FileSystemInitializer::InitializeLogOutput(const std::string& filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void FileSystemInitializer::Initialize()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void FileSystemInitializer::Cleanup(bool deallocConfigHandler)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

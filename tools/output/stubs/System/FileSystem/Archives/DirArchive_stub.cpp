@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -16,11 +17,13 @@ CDirArchiveFactory::CDirArchiveFactory()
 	: IArchiveFactory("sdd")
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 IArchive* CDirArchiveFactory::DoCreateArchive(const std::string& filePath) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -29,29 +32,35 @@ CDirArchive::CDirArchive(const std::string& archiveName)
 	, dirName(archiveName + '/')
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CDirArchive::~CDirArchive()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CDirArchive::IsOpen()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 unsigned int CDirArchive::NumFiles() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CDirArchive::GetFile(unsigned int fid, std::vector<boost::uint8_t>& buffer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDirArchive::FileInfo(unsigned int fid, std::string& name, int& size) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

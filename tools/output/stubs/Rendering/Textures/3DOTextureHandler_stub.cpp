@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -37,32 +38,38 @@ struct TexFile {
 C3DOTextureHandler::C3DOTextureHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 C3DOTextureHandler::~C3DOTextureHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::vector<TexFile*> C3DOTextureHandler::LoadTexFiles()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 C3DOTextureHandler::UnitTexture* C3DOTextureHandler::Get3DOTexture(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void C3DOTextureHandler::Set3doAtlases() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 TexFile* C3DOTextureHandler::CreateTex(const std::string& name, const std::string& name2, bool teamcolor)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <vector>
@@ -23,19 +24,23 @@ CBenchmark::CBenchmark()
 	: CEventClient("[CBenchmark]", 271990, false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CBenchmark::~CBenchmark()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBenchmark::GameFrame(int gameFrame)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBenchmark::DrawWorld()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

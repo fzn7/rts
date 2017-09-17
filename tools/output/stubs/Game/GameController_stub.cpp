@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -14,40 +15,47 @@ CGameController::CGameController()
 	, ignoreNextChar(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CGameController::~CGameController()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGameController::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGameController::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CGameController::KeyPressed(int key, bool isRepeat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CGameController::KeyReleased(int key)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameController::PasteClipboard()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

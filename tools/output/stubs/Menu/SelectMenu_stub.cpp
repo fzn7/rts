@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SelectMenu.h"
@@ -48,41 +49,49 @@ CONFIG(std::string, MenuArchive).defaultValue("Spring Bitmaps").description("Arc
 class ConnectWindow : public agui::Window
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 SelectMenu::~SelectMenu()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool SelectMenu::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectMenu::Single()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectMenu::Quit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectMenu::ShowConnectWindow(bool show)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectMenu::ShowSettingsWindow(bool show, std::string name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectMenu::ShowSettingsList()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SelectMenu::SelectSetting(std::string setting) {
@@ -105,9 +114,11 @@ void SelectMenu::CleanWindow() {
 void SelectMenu::DirectConnect(const std::string& addr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool SelectMenu::HandleEventSelf(const SDL_Event& ev)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -14,9 +15,11 @@ IMapDamage::IMapDamage():
 	mapHardness(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 IMapDamage* IMapDamage::GetMapDamage()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -41,41 +42,49 @@ CR_REG_METADATA_SUB(CCobThread, CallInfo,(
 CCobThread::CCobThread()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CCobThread::~CCobThread()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCobThread::SetCallback(CCobInstance::ThreadCallbackType cb, int cbp)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCobThread::Start(int functionId, const vector<int>& args, bool schedule)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const string& CCobThread::GetName()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CCobThread::CheckStack(unsigned int size, bool warn)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CCobThread::GetStackVal(int pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CCobThread::GetWakeTime() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // Command documentation from http://visualta.tauniverse.com/Downloads/cob-commands.txt
@@ -178,21 +187,25 @@ const int DROP   = 0x10084000;
 int CCobThread::POP()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CCobThread::Tick()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCobThread::ShowError(const string& msg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 string CCobThread::GetOpcodeName(int opcode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -200,6 +213,7 @@ string CCobThread::GetOpcodeName(int opcode)
 void CCobThread::LuaCall()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -210,4 +224,5 @@ void CCobThread::LuaCall()
 void CCobThread::AnimFinished(CUnitScript::AnimType type, int piece, int axis)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

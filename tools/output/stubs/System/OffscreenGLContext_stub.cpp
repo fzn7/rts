@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "lib/streflop/streflop_cond.h" //! must happen before OffscreenGLContext.h, which includes agl.h
@@ -33,6 +34,7 @@ void COffscreenGLContext::WorkerThreadFree() {}
 COffscreenGLContext::COffscreenGLContext()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -43,12 +45,14 @@ COffscreenGLContext::~COffscreenGLContext() {
 void COffscreenGLContext::WorkerThreadPost()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void COffscreenGLContext::WorkerThreadFree()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -62,6 +66,7 @@ void COffscreenGLContext::WorkerThreadFree()
 COffscreenGLContext::COffscreenGLContext()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -73,12 +78,14 @@ COffscreenGLContext::~COffscreenGLContext() {
 void COffscreenGLContext::WorkerThreadPost()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void COffscreenGLContext::WorkerThreadFree()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #else
@@ -91,6 +98,7 @@ void COffscreenGLContext::WorkerThreadFree()
 COffscreenGLContext::COffscreenGLContext()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -103,12 +111,14 @@ COffscreenGLContext::~COffscreenGLContext() {
 void COffscreenGLContext::WorkerThreadPost()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void COffscreenGLContext::WorkerThreadFree()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #endif
@@ -122,24 +132,28 @@ COffscreenGLThread::COffscreenGLThread(boost::function<void()> f) :
 	glOffscreenCtx() //! may trigger an opengl_error exception!
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 COffscreenGLThread::~COffscreenGLThread()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool COffscreenGLThread::IsFinished(boost::posix_time::time_duration wait)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void COffscreenGLThread::Join()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -147,6 +161,7 @@ __FORCE_ALIGN_STACK__
 void COffscreenGLThread::WrapFunc(boost::function<void()> f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

@@ -205,11 +205,13 @@ namespace ArchiveNameResolver {
 std::string GetGame(const std::string& lazyName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string GetMap(const std::string& lazyName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } //namespace ArchiveNameResolver

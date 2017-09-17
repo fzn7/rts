@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "GameSetupDrawer.h"
@@ -28,17 +29,20 @@ GameSetupDrawer* GameSetupDrawer::instance = NULL;
 void GameSetupDrawer::Enable()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void GameSetupDrawer::Disable()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GameSetupDrawer::StartCountdown(unsigned time)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -47,15 +51,18 @@ GameSetupDrawer::GameSetupDrawer():
 	lastTick(spring_notime)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 GameSetupDrawer::~GameSetupDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void GameSetupDrawer::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

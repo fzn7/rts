@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <boost/cstdint.hpp>
@@ -32,39 +33,47 @@ CGroupHandler::CGroupHandler(int teamId)
 , firstUnusedGroup(FIRST_SPECIAL_GROUP)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGroupHandler::~CGroupHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroupHandler::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGroupHandler::GroupCommand(int num)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGroupHandler::GroupCommand(int num, const std::string& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGroup* CGroupHandler::CreateNewGroup()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroupHandler::RemoveGroup(CGroup* group)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroupHandler::PushGroupChange(int id)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

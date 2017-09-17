@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -34,6 +35,7 @@ CBeamLaserProjectile::CBeamLaserProjectile(const ProjectileParams& params): CWea
 	, midtexx(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -41,19 +43,23 @@ CBeamLaserProjectile::CBeamLaserProjectile(const ProjectileParams& params): CWea
 void CBeamLaserProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBeamLaserProjectile::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBeamLaserProjectile::DrawOnMinimap(CVertexArray& lines, CVertexArray& points)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CBeamLaserProjectile::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

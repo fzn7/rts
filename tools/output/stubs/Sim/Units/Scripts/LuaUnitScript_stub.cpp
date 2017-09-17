@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #define LUA_SYNCED_ONLY
@@ -26,11 +27,13 @@ using std::vector;
 static inline LocalModelPiece* ParseLocalModelPiece(lua_State* L, CUnitScript* script, const char* caller)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline int ToLua(lua_State* L, const float3& v)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*
@@ -184,54 +187,63 @@ CLuaUnitScript::CLuaUnitScript(lua_State* L, CUnit* unit)
 	, inKilled(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CLuaUnitScript::~CLuaUnitScript()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::HandleFreed(CLuaHandle* handle)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::UpdateCallIn()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::UpdateCallIn(const string& fname, int ref)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::RemoveCallIn(const string& fname)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::ShowScriptError(const string& msg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaUnitScript::HasBlockShot(int weaponNum) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaUnitScript::HasTargetWeight(int weaponNum) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -242,66 +254,77 @@ bool CLuaUnitScript::HasTargetWeight(int weaponNum) const
 inline float CLuaUnitScript::PopNumber(int fn, float def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline bool CLuaUnitScript::PopBoolean(int fn, bool def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void CLuaUnitScript::RawPushFunction(int functionId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void CLuaUnitScript::PushFunction(int id)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void CLuaUnitScript::PushUnit(const CUnit* targetUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline bool CLuaUnitScript::RunCallIn(int id, int inArgs, int outArgs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::RunQueryCallIn(int fn)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::RunQueryCallIn(int fn, float arg1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::Call(int fn, float arg1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::Call(int fn, float arg1, float arg2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::Call(int fn, float arg1, float arg2, float arg3)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -312,156 +335,182 @@ void CLuaUnitScript::Call(int fn, float arg1, float arg2, float arg3)
 void CLuaUnitScript::Create()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::Killed()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::WindChanged(float heading, float speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::ExtractionRateChanged(float speed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::RockUnit(const float3& rockDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::HitByWeapon(const float3& hitDir, int weaponDefId, float& inoutDamage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::SetSFXOccupy(int curTerrainType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::QueryLandingPads(std::vector<int>& out_pieces)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::BeginTransport(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::QueryTransport(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::TransportPickup(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::TransportDrop(const CUnit* unit, const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::StartBuilding(float heading, float pitch)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::QueryNanoPiece()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::QueryBuildInfo()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::QueryWeapon(int weaponNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::AimWeapon(int weaponNum, float heading, float pitch)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void  CLuaUnitScript::AimShieldWeapon(CPlasmaRepulser* weapon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::AimFromWeapon(int weaponNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::Shot(int weaponNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaUnitScript::BlockShot(int weaponNum, const CUnit* targetUnit, bool userTarget)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CLuaUnitScript::TargetWeight(int weaponNum, const CUnit* targetUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::AnimFinished(AnimType type, int piece, int axis)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaUnitScript::RawCall(int functionId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 string CLuaUnitScript::GetScriptName(int functionId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaUnitScript::RawRunCallIn(int functionId, int inArgs, int outArgs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -488,12 +537,14 @@ void CLuaUnitScript::EndBurst(int weaponNum) { Call(LUAFN_EndBurst, weaponNum + 
 static void PushEntry(lua_State* L, const char* name, lua_CFunction fun)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaUnitScript::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -508,18 +559,21 @@ bool CLuaUnitScript::PushEntries(lua_State* L)
 static inline CUnit* ParseRawUnit(lua_State* L, const char* caller, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline CUnit* ParseUnit(lua_State* L, const char* caller, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline int ParseAxis(lua_State* L, const char* caller, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -530,18 +584,21 @@ static inline int ParseAxis(lua_State* L, const char* caller, int index)
 int CLuaUnitScript::CreateScript(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::UpdateCallIn(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::CallAsUnit(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -550,18 +607,21 @@ int CLuaUnitScript::CallAsUnit(lua_State* L)
 int CLuaUnitScript::GetUnitValue(lua_State* L, CUnitScript* script, int arg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::GetUnitCOBValue(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::GetUnitValue(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -570,126 +630,147 @@ int CLuaUnitScript::GetUnitValue(lua_State* L)
 int CLuaUnitScript::SetUnitValue(lua_State* L, CUnitScript* script, int arg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::SetUnitCOBValue(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::SetUnitValue(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::SetPieceVisibility(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::EmitSfx(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::AttachUnit(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::DropUnit(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::Explode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::ShowFlare(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::Spin(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::StopSpin(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::Turn(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::Move(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::IsInAnimation(lua_State* L, const char* caller, AnimType type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::IsInTurn(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::IsInMove(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::IsInSpin(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::WaitForAnimation(lua_State* L, const char* caller, AnimType type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::WaitForTurn(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::WaitForMove(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::SetDeathScriptFinished(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -697,18 +778,21 @@ int CLuaUnitScript::SetDeathScriptFinished(lua_State* L)
 int CLuaUnitScript::GetPieceTranslation(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::GetPieceRotation(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaUnitScript::GetPiecePosDir(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -717,4 +801,5 @@ int CLuaUnitScript::GetPiecePosDir(lua_State* L)
 int CLuaUnitScript::GetActiveUnitID(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

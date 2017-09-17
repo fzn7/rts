@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/Matrix44f.h"
@@ -14,88 +15,104 @@ CR_REG_METADATA(CMatrix44f, CR_MEMBER(m))
 CMatrix44f::CMatrix44f()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMatrix44f::CMatrix44f(const CMatrix44f& mat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f::CMatrix44f(const float3 pos, const float3 x, const float3 y, const float3 z)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMatrix44f::CMatrix44f(const float rotX, const float rotY, const float rotZ)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMatrix44f::CMatrix44f(const float3 p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMatrix44f::IsOrthoNormal() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CMatrix44f::IsIdentity() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMatrix44f& CMatrix44f::LoadIdentity()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f& CMatrix44f::RotateX(float angle)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f& CMatrix44f::RotateY(float angle)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f& CMatrix44f::RotateZ(float angle)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f& CMatrix44f::Rotate(float angle, const float3 axis)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f& CMatrix44f::RotateEulerXYZ(const float3 angles)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMatrix44f& CMatrix44f::RotateEulerYXZ(const float3 angles)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMatrix44f& CMatrix44f::RotateEulerZXY(const float3 angles)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMatrix44f& CMatrix44f::RotateEulerZYX(const float3 angles)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -111,11 +128,13 @@ CMatrix44f& CMatrix44f::RotateEulerZYX(const float3 angles)
 CMatrix44f& CMatrix44f::Scale(const float3 scales)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CMatrix44f& CMatrix44f::Translate(const float x, const float y, const float z)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -124,48 +143,56 @@ __FORCE_ALIGN_STACK__
 static inline void MatrixMatrixMultiplySSE(const CMatrix44f& m1, const CMatrix44f& m2, CMatrix44f* mout)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f CMatrix44f::operator* (const CMatrix44f& m2) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f& CMatrix44f::operator>>= (const CMatrix44f& m2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f& CMatrix44f::operator<<= (const CMatrix44f& m2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 __FORCE_ALIGN_STACK__
 float3 CMatrix44f::operator* (const float3 v) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 __FORCE_ALIGN_STACK__
 float4 CMatrix44f::operator* (const float4 v) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMatrix44f::SetUpVector(const float3 up)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f& CMatrix44f::Transpose()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -174,12 +201,14 @@ CMatrix44f& CMatrix44f::Transpose()
 CMatrix44f& CMatrix44f::InvertAffineInPlace()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CMatrix44f CMatrix44f::InvertAffine() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -187,6 +216,7 @@ template<typename T>
 static inline T CalculateCofactor(const T m[4][4], const int ei, const int ej)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -195,6 +225,7 @@ static inline T CalculateCofactor(const T m[4][4], const int ei, const int ej)
 bool CMatrix44f::InvertInPlace()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -203,6 +234,7 @@ bool CMatrix44f::InvertInPlace()
 CMatrix44f CMatrix44f::Invert(bool* status) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

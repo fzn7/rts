@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "CollisionVolume.h"
@@ -43,6 +44,7 @@ CollisionVolume::CollisionVolume():
 	defaultToPieceTree(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CollisionVolume& CollisionVolume::operator = (const CollisionVolume& v) {
@@ -107,17 +109,20 @@ CollisionVolume::CollisionVolume(
 void CollisionVolume::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CollisionVolume::InitSphere(float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CollisionVolume::InitBox(const float3& scales, const float3& offsets)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CollisionVolume::InitShape(
@@ -128,6 +133,7 @@ void CollisionVolume::InitShape(
 	const int pAxis)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -315,6 +321,7 @@ float CollisionVolume::GetPointSurfaceDistance(const CMatrix44f& mv, const float
 float CollisionVolume::GetCylinderDistance(const float3& pv, size_t axisA, size_t axisB, size_t axisC) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #define MAX_ITERATIONS 10
@@ -324,5 +331,6 @@ float CollisionVolume::GetCylinderDistance(const float3& pv, size_t axisA, size_
 float CollisionVolume::GetEllipsoidDistance(const float3& pv) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

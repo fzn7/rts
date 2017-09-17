@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -30,23 +31,27 @@ Threading::AtomicCounterInt64 CObject::cur_sync_id(0);
 CObject::CObject() : detached(false), listeners(), listening()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CObject::~CObject()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef USING_CREG
 void CObject::Serialize(creg::ISerializer* ser)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CObject::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #endif //USING_CREG
@@ -54,6 +59,7 @@ void CObject::PostLoad()
 void CObject::DependentDied(CObject* obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // NOTE that we can be listening to a single object from several different places,
@@ -62,10 +68,12 @@ void CObject::DependentDied(CObject* obj)
 void CObject::AddDeathDependence(CObject* obj, DependenceType dep)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CObject::DeleteDeathDependence(CObject* obj, DependenceType dep)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

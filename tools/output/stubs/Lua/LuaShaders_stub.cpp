@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -31,6 +32,7 @@ int LuaShaders::activeShaderDepth = 0;
 bool LuaShaders::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -40,12 +42,14 @@ bool LuaShaders::PushEntries(lua_State* L)
 LuaShaders::LuaShaders()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 LuaShaders::~LuaShaders()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -55,6 +59,7 @@ LuaShaders::~LuaShaders()
 inline void CheckDrawingEnabled(lua_State* L, const char* caller)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -64,29 +69,34 @@ inline void CheckDrawingEnabled(lua_State* L, const char* caller)
 GLuint LuaShaders::GetProgramName(unsigned int progIdx) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 GLuint LuaShaders::GetProgramName(lua_State* L, int index) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned int LuaShaders::AddProgram(const Program& p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaShaders::RemoveProgram(unsigned int progIdx)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaShaders::DeleteProgram(Program& p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -96,6 +106,7 @@ bool LuaShaders::DeleteProgram(Program& p)
 int LuaShaders::GetShaderLog(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -111,17 +122,20 @@ enum {
 static void ParseUniformType(lua_State* L, int loc, int type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static bool ParseUniformsTable(lua_State* L, const char* fieldName, int index, int type, GLuint progName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool ParseUniformSetupTables(lua_State* L, int index, GLuint progName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -238,30 +252,35 @@ static bool ParseShaderTable(
 static void ApplyGeometryParameters(lua_State* L, int table, GLuint prog)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaShaders::CreateShader(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaShaders::DeleteShader(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaShaders::UseShader(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaShaders::ActiveShader(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -271,18 +290,21 @@ int LuaShaders::ActiveShader(lua_State* L)
 static const char* UniformTypeString(GLenum type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaShaders::GetActiveUniforms(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaShaders::GetUniformLocation(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -292,28 +314,33 @@ int LuaShaders::GetUniformLocation(lua_State* L)
 int LuaShaders::Uniform(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaShaders::UniformInt(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaShaders::UniformArray(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaShaders::UniformMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaShaders::SetShaderParameter(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

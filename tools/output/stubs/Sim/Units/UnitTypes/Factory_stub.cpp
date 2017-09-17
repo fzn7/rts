@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -48,16 +49,19 @@ CFactory::CFactory():
 	lastBuildUpdateFrame(-1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFactory::KillUnit(CUnit* attacker, bool selfDestruct, bool reclaimed, bool showDeathSequence)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFactory::PreInit(const UnitLoadParams& params)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -65,6 +69,7 @@ void CFactory::PreInit(const UnitLoadParams& params)
 float3 CFactory::CalcBuildPos(int buildPiece)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -72,12 +77,14 @@ float3 CFactory::CalcBuildPos(int buildPiece)
 void CFactory::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*
 void CFactory::SlowUpdate(void)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 */
 
@@ -187,16 +194,19 @@ void CFactory::FinishBuild(CUnit* buildee) {
 unsigned int CFactory::QueueBuild(const UnitDef* buildeeDef, const Command& buildCmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFactory::StopBuild()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFactory::DependentDied(CObject* o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -204,6 +214,7 @@ void CFactory::DependentDied(CObject* o)
 void CFactory::SendToEmptySpot(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFactory::AssignBuildeeOrders(CUnit* unit) {
@@ -284,10 +295,12 @@ void CFactory::AssignBuildeeOrders(CUnit* unit) {
 bool CFactory::ChangeTeam(int newTeam, ChangeType type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFactory::CreateNanoParticle(bool highPriority)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

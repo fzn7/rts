@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -51,31 +52,37 @@ CAdvSky::CAdvSky()
 	, updatecounter(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::CreateSkyDomeList()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CAdvSky::~CAdvSky()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CAdvSky::GetCoord(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::CreateClouds()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 inline void CAdvSky::UpdatePart(int ast, int aed, int a3cstart, int a4cstart) {
@@ -116,26 +123,31 @@ inline void CAdvSky::UpdatePart(int ast, int aed, int a3cstart, int a4cstart) {
 void CAdvSky::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::CreateRandMatrix(int **matrix,float mod)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::CreateRandDetailMatrix(unsigned char* matrix,int size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::CreateTransformVectors()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::DrawSun()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::UpdateSunFlare() {
@@ -176,16 +188,19 @@ void CAdvSky::UpdateSunFlare() {
 void CAdvSky::InitSun()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::CreateCover(int baseX, int baseY, float *buf) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::CreateDetailTex()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::UpdateSunDir() {
@@ -249,6 +264,7 @@ void CAdvSky::UpdateSkyTexture() {
 float3 CAdvSky::GetDirFromTexCoord(float x, float y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // should be improved
@@ -256,6 +272,7 @@ float3 CAdvSky::GetDirFromTexCoord(float x, float y)
 float CAdvSky::GetTexCoordFromDir(const float3& dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvSky::UpdateTexPartDot3(int x, int y, unsigned char (*texp)[4]) {

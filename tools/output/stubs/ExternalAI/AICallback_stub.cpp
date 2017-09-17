@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "ExternalAI/AICallback.h"
@@ -132,21 +133,25 @@ CAICallback::CAICallback(int teamId)
 	, gh(grouphandlers[teamId])
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::SendTextMsg(const char* text, int zone)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::SetLastMsgPos(const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::AddNotification(const float3& pos, const float3& color, float alpha)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -154,11 +159,13 @@ void CAICallback::AddNotification(const float3& pos, const float3& color, float 
 bool CAICallback::SendResources(float mAmount, float eAmount, int receivingTeamId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::SendUnits(const std::vector<int>& unitIds, int receivingTeamId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -166,6 +173,7 @@ int CAICallback::SendUnits(const std::vector<int>& unitIds, int receivingTeamId)
 bool CAICallback::PosInCamera(const float3& pos, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // see if the AI hasn't modified any parts of this callback
@@ -173,161 +181,193 @@ bool CAICallback::PosInCamera(const float3& pos, float radius)
 void CAICallback::verify()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetCurrentFrame()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetMyTeam()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetMyAllyTeam()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetPlayerTeam(int playerId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const char* CAICallback::GetTeamSide(int teamId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void* CAICallback::CreateSharedMemArea(char* name, int size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::ReleasedSharedMemArea(char* name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::CreateGroup()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::EraseGroup(int groupId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICallback::AddUnitToGroup(int unitId, int groupId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICallback::RemoveUnitFromGroup(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetUnitGroup(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::vector<const SCommandDescription*>* CAICallback::GetGroupCommands(int groupId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GiveGroupOrder(int groupId, Command* c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GiveOrder(int unitId, Command* c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::vector<const SCommandDescription*>* CAICallback::GetUnitCommands(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const CCommandQueue* CAICallback::GetCurrentUnitCommands(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetUnitAiHint(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetUnitTeam(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetUnitAllyTeam(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetUnitHealth(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetUnitMaxHealth(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetUnitSpeed(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetUnitPower(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetUnitExperience(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetUnitMaxRange(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const UnitDef* CAICallback::GetUnitDef(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const UnitDef* CAICallback::GetUnitDef(const char* unitName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 const UnitDef* CAICallback::GetUnitDefById(int unitDefId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CAICallback::GetUnitPos(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CAICallback::GetUnitVelocity(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -389,21 +429,25 @@ bool CAICallback::IsUnitNeutral(int unitId) {
 int CAICallback::InitPath(const float3& start, const float3& end, int pathType, float goalRadius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CAICallback::GetNextWaypoint(int pathId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::FreePath(int pathId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetPathLength(float3 start, float3 end, int pathType, float goalRadius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICallback::SetPathNodeCost(unsigned int x, unsigned int z, float cost) {
@@ -419,6 +463,7 @@ float CAICallback::GetPathNodeCost(unsigned int x, unsigned int z) {
 static int FilterUnitsVector(const std::vector<CUnit*>& units, int* unitIds, int unitIds_max, bool (*includeUnit)(const CUnit*) = NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -480,40 +525,47 @@ static inline bool unit_IsNeutralAndInLos(const CUnit* unit) {
 int CAICallback::GetEnemyUnits(int* unitIds, int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetEnemyUnitsInRadarAndLos(int* unitIds, int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetEnemyUnits(int* unitIds, const float3& pos, float radius,
 		int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CAICallback::GetFriendlyUnits(int* unitIds, int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetFriendlyUnits(int* unitIds, const float3& pos, float radius,
 		int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CAICallback::GetNeutralUnits(int* unitIds, int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetNeutralUnits(int* unitIds, const float3& pos, float radius, int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -522,11 +574,13 @@ int CAICallback::GetNeutralUnits(int* unitIds, const float3& pos, float radius, 
 int CAICallback::GetMapWidth()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetMapHeight()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -563,11 +617,13 @@ float CAICallback::GetGravity() const {
 const float* CAICallback::GetHeightMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const float* CAICallback::GetCornersHeightMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetMinHeight() { return readMap->GetInitMinHeight(); }
@@ -576,31 +632,37 @@ float CAICallback::GetMaxHeight() { return readMap->GetInitMaxHeight(); }
 const float* CAICallback::GetSlopeMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const unsigned short* CAICallback::GetLosMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const unsigned short* CAICallback::GetRadarMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const unsigned short* CAICallback::GetJammerMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const unsigned char* CAICallback::GetMetalMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetElevation(float x, float z)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -609,41 +671,49 @@ float CAICallback::GetElevation(float x, float z)
 void CAICallback::LineDrawerStartPath(const float3& pos, const float* color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::LineDrawerFinishPath()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::LineDrawerDrawLine(const float3& endPos, const float* color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::LineDrawerDrawLineAndIcon(int commandId, const float3& endPos, const float* color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::LineDrawerDrawIconAtLastPos(int commandId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::LineDrawerBreak(const float3& endPos, const float* color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::LineDrawerRestart()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::LineDrawerRestartSameColor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -652,22 +722,26 @@ int CAICallback::CreateSplineFigure(const float3& pos1, const float3& pos2,
 		int lifetime, int group)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::CreateLineFigure(const float3& pos1, const float3& pos2,
 		float width, int arrow, int lifetime, int group)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::SetFigureColor(int group, float red, float green, float blue, float alpha)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::DeleteFigureGroup(int group)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -708,162 +782,193 @@ void CAICallback::DrawUnit(
 bool CAICallback::CanBuildAt(const UnitDef* unitDef, const float3& pos, int facing)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CAICallback::ClosestBuildSite(const UnitDef* unitDef, const float3& pos, float searchRadius, int minDist, int facing)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CAICallback::GetMetal()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetMetalIncome()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetMetalUsage()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetMetalStorage()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetEnergy()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetEnergyIncome()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetEnergyUsage()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetEnergyStorage()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICallback::GetUnitResourceInfo(int unitId, UnitResourceInfo* unitResInf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICallback::IsUnitActivated(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICallback::UnitBeingBuilt(int unitId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetFeatures(int* featureIds, int featureIds_sizeMax)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetFeatures(int* featureIds, int featureIds_sizeMax, const float3& pos, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const FeatureDef* CAICallback::GetFeatureDef(int featureId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 const FeatureDef* CAICallback::GetFeatureDefById(int featureDefId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetFeatureHealth(int featureId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetFeatureReclaimLeft(int featureId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 CAICallback::GetFeaturePos(int featureId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICallback::GetValue(int id, void *data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::HandleCommand(int commandId, void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CAICallback::IsDebugDrawerEnabled() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CAICallback::GetNumUnitDefs ()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::GetUnitDefList (const UnitDef** list)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CAICallback::GetUnitDefRadius(int def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CAICallback::GetUnitDefHeight(int def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CAICallback::GetProperty(int unitId, int property, void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CAICallback::GetFileSize(const char *filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CAICallback::GetFileSize(const char* filename, const char* modes)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CAICallback::ReadFile(const char* filename, void* buffer, int bufferLength)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -871,6 +976,7 @@ bool CAICallback::ReadFile(const char* filename, const char* modes,
 		void* buffer, int bufferLength)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -878,6 +984,7 @@ bool CAICallback::ReadFile(const char* filename, const char* modes,
 int CAICallback::GetSelectedUnits(int* unitIds, int unitIds_max)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -893,33 +1000,39 @@ float3 CAICallback::GetMousePos() {
 void CAICallback::GetMapPoints(std::vector<PointMarker>& pm, int pm_sizeMax, bool includeAllies)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAICallback::GetMapLines(std::vector<LineMarker>& lm, int lm_sizeMax, bool includeAllies)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const WeaponDef* CAICallback::GetWeapon(const char* weaponName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 const WeaponDef* CAICallback::GetWeaponDefById(int weaponDefId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CAICallback::CanBuildUnit(int unitDefID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const float3* CAICallback::GetStartPos()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

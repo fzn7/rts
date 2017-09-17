@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -82,90 +83,105 @@ CR_REG_METADATA_SUB(CWaitCommandsAI,GatherWait , (
 CWaitCommandsAI::CWaitCommandsAI()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CWaitCommandsAI::~CWaitCommandsAI()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::DrawCommands() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::AddTimeWait(const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::AddDeathWait(const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::AddSquadWait(const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::AddGatherWait(const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::AcknowledgeCommand(const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::AddLocalUnit(CUnit* unit, const CUnit* builder)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::RemoveWaitCommand(CUnit* unit, const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::ClearUnitQueue(CUnit* unit, const CCommandQueue& queue)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWaitCommandsAI::InsertWaitObject(Wait* wait)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::RemoveWaitObject(Wait* wait)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::AddIcon(const Command& cmd, const float3& pos) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -183,6 +199,7 @@ const string CWaitCommandsAI::Wait::noText = "";
 CWaitCommandsAI::KeyType CWaitCommandsAI::Wait::GetNewKey()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -190,18 +207,21 @@ CWaitCommandsAI::KeyType CWaitCommandsAI::Wait::GetNewKey()
 CWaitCommandsAI::KeyType CWaitCommandsAI::Wait::GetKeyFromFloat(float f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::Wait::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // static
 float CWaitCommandsAI::Wait::GetFloatFromKey(KeyType k)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -212,12 +232,14 @@ CWaitCommandsAI::Wait::Wait(float _code)
 	deadTime(spring_gettime() + spring_secs(maxNetDelay))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CWaitCommandsAI::Wait::~Wait()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -225,12 +247,14 @@ CWaitCommandsAI::Wait::WaitState
 	CWaitCommandsAI::Wait::GetWaitState(const CUnit* unit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CWaitCommandsAI::Wait::IsWaitingOn(const CUnit* unit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -238,18 +262,21 @@ void CWaitCommandsAI::Wait::SendCommand(const Command& cmd,
 																				const CUnitSet& unitSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::Wait::SendWaitCommand(const CUnitSet& unitSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CUnitSet::iterator CWaitCommandsAI::Wait::RemoveUnitFromSet(CUnitSet::iterator it, CUnitSet& unitSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -262,6 +289,7 @@ CWaitCommandsAI::TimeWait*
 	CWaitCommandsAI::TimeWait::New(const Command& cmd, CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -269,6 +297,7 @@ CWaitCommandsAI::TimeWait*
 	CWaitCommandsAI::TimeWait::New(int duration, CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -276,6 +305,7 @@ CWaitCommandsAI::TimeWait::TimeWait(const Command& cmd, CUnit* _unit)
 : Wait(CMD_WAITCODE_TIMEWAIT)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -283,48 +313,56 @@ CWaitCommandsAI::TimeWait::TimeWait(int _duration, CUnit* _unit)
 : Wait(CMD_WAITCODE_TIMEWAIT)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CWaitCommandsAI::TimeWait::~TimeWait()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::TimeWait::DependentDied(CObject* object)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::TimeWait::AddUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::TimeWait::RemoveUnit(CUnit* _unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::TimeWait::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const string& CWaitCommandsAI::TimeWait::GetStateText() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::TimeWait::Draw() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -337,6 +375,7 @@ CWaitCommandsAI::DeathWait*
 	CWaitCommandsAI::DeathWait::New(const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -344,48 +383,56 @@ CWaitCommandsAI::DeathWait::DeathWait(const Command& cmd)
 : Wait(CMD_WAITCODE_DEATHWAIT)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CWaitCommandsAI::DeathWait::~DeathWait()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::DeathWait::DependentDied(CObject* object)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::DeathWait::AddUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::DeathWait::RemoveUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::DeathWait::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::DeathWait::Draw() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::DeathWait::AddUnitPosition(const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -393,6 +440,7 @@ void CWaitCommandsAI::DeathWait::SelectAreaUnits(
 	const float3& pos0, const float3& pos1, CUnitSet& units, bool enemies)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -405,6 +453,7 @@ CWaitCommandsAI::SquadWait*
 	CWaitCommandsAI::SquadWait::New(const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -412,48 +461,56 @@ CWaitCommandsAI::SquadWait::SquadWait(const Command& cmd)
 : Wait(CMD_WAITCODE_SQUADWAIT)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CWaitCommandsAI::SquadWait::~SquadWait()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::SquadWait::DependentDied(CObject* object)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::SquadWait::AddUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::SquadWait::RemoveUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::SquadWait::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::SquadWait::UpdateText()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::SquadWait::Draw() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -466,6 +523,7 @@ CWaitCommandsAI::GatherWait*
 	CWaitCommandsAI::GatherWait::New(const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -473,36 +531,42 @@ CWaitCommandsAI::GatherWait::GatherWait(const Command& cmd)
 : Wait(CMD_WAITCODE_GATHERWAIT)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CWaitCommandsAI::GatherWait::~GatherWait()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::GatherWait::DependentDied(CObject* object)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::GatherWait::AddUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::GatherWait::RemoveUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CWaitCommandsAI::GatherWait::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

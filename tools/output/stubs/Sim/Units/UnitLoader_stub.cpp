@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -36,6 +37,7 @@
 CUnitLoader* CUnitLoader::GetInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -43,12 +45,14 @@ CUnitLoader* CUnitLoader::GetInstance()
 CUnit* CUnitLoader::LoadUnit(const std::string& name, const UnitLoadParams& params)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CUnit* CUnitLoader::LoadUnit(const UnitLoadParams& cparams)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -56,12 +60,14 @@ CUnit* CUnitLoader::LoadUnit(const UnitLoadParams& cparams)
 void CUnitLoader::ParseAndExecuteGiveUnitsCommand(const std::vector<std::string>& args, int team)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitLoader::GiveUnits(const std::string& objectName, float3 pos, int amount, int team, int featureAllyTeam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -70,9 +76,11 @@ void CUnitLoader::GiveUnits(const std::string& objectName, float3 pos, int amoun
 void CUnitLoader::FlattenGround(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnitLoader::RestoreGround(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

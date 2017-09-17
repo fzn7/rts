@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/Platform/CrashHandler.h"
@@ -81,6 +82,7 @@ static void LogStacktrace(const int logLevel, StackTrace& stacktrace);
 static std::string GetBinaryLocation()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #define LOG_SECTION_CRASHHANDLER "CrashHandler"
@@ -102,6 +104,7 @@ LOG_REGISTER_SECTION_GLOBAL(LOG_SECTION_CRASHHANDLER);
 static std::string CreateAbsolutePath(const std::string& relativePath)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -134,12 +137,14 @@ static std::string CreateAbsolutePath(const std::string& relativePath)
 static std::string LocateSymbolFile(const std::string& binaryFile)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static char* fgets_addr2line(char* line, int maxLength, FILE* cmdOut)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -150,6 +155,7 @@ static char* fgets_addr2line(char* line, int maxLength, FILE* cmdOut)
 static uintptr_t HexToInt(const char* hexStr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -158,11 +164,13 @@ static uintptr_t HexToInt(const char* hexStr)
 static void ExtractSymbols(char** lines, StackTrace& stacktrace)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int CommonStringLength(const std::string& str1, const std::string& str2, int* len)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -175,6 +183,7 @@ static int CommonStringLength(const std::string& str1, const std::string& str2, 
 static void FindBaseMemoryAddresses(std::map<std::string,uintptr_t>& binPath_baseMemAddr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -183,6 +192,7 @@ static void FindBaseMemoryAddresses(std::map<std::string,uintptr_t>& binPath_bas
 static std::string ExtractPath(const std::string& line)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -191,6 +201,7 @@ static std::string ExtractPath(const std::string& line)
 static uintptr_t ExtractAddr(const StackFrame& frame)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -202,11 +213,13 @@ static uintptr_t ExtractAddr(const StackFrame& frame)
 static void TranslateStackTrace(bool* aiCrash, StackTrace& stacktrace, const int logLevel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void LogStacktrace(const int logLevel, StackTrace& stacktrace)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #endif  // !(__APPLE__)
@@ -234,10 +247,12 @@ typedef struct sigaction sigaction_t;
 static sigaction_t& GetSigAction(void (*sigact_handler)(int, siginfo_t*, void*))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 namespace CrashHandler
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

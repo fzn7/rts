@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <limits>
@@ -118,23 +119,27 @@ void CInterceptHandler::Update(bool forced) {
 void CInterceptHandler::AddInterceptorWeapon(CWeapon* weapon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CInterceptHandler::RemoveInterceptorWeapon(CWeapon* weapon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CInterceptHandler::AddInterceptTarget(CWeaponProjectile* target, const float3& destination)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CInterceptHandler::DependentDied(CObject* o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

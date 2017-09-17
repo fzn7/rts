@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <map>
@@ -65,75 +66,89 @@ CPreGame::CPreGame(boost::shared_ptr<ClientSetup> setup)
 	, wantDemo(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CPreGame::~CPreGame()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPreGame::LoadSetupscript(const std::string& script)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPreGame::LoadDemo(const std::string& demo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPreGame::LoadSavefile(const std::string& save, bool usecreg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CPreGame::KeyPressed(int k, bool isRepeat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CPreGame::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CPreGame::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPreGame::AddGameSetupArchivesToVFS(const CGameSetup* setup, bool mapOnly)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPreGame::StartServer(const std::string& setupscript)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPreGame::UpdateClientNet()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPreGame::StartServerForDemo(const std::string& demoName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPreGame::ReadDataFromDemo(const std::string& demoName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CPreGame::GameDataReceived(boost::shared_ptr<const netcode::RawPacket> packet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

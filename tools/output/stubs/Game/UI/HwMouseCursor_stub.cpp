@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/Platform/Win/win32.h"
@@ -148,6 +149,7 @@ class CHwX11Cursor : public IHwCursor {
 IHwCursor* GetNewHwCursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -163,53 +165,63 @@ IHwCursor* GetNewHwCursor()
 void CHwWinCursor::PushImage(int xsize, int ysize, void* mem)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHwWinCursor::SetDelay(float delay)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHwWinCursor::PushFrame(int index, float delay)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHwWinCursor::resizeImage(ImageData *image, int new_x, int new_y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHwWinCursor::buildIco(unsigned char* dst, ImageData &image)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline int GetBestCursorSize(const int minSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CHwWinCursor::Finish()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHwWinCursor::Bind()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CHwWinCursor::CHwWinCursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CHwWinCursor::~CHwWinCursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #else
@@ -217,41 +229,49 @@ CHwWinCursor::~CHwWinCursor()
 void CHwX11Cursor::resizeImage(XcursorImage*& image, const int new_x, const int new_y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHwX11Cursor::PushImage(int xsize, int ysize, void* mem)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHwX11Cursor::SetDelay(float delay)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHwX11Cursor::PushFrame(int index, float delay)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHwX11Cursor::Finish()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CHwX11Cursor::Bind()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CHwX11Cursor::CHwX11Cursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CHwX11Cursor::~CHwX11Cursor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #endif

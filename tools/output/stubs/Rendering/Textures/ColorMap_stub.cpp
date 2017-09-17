@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <sstream>
@@ -29,43 +30,51 @@ CColorMap::CColorMap()
 	, nysize(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CColorMap::CColorMap(const std::vector<float>& vec)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CColorMap::CColorMap(const std::string& fileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CColorMap::LoadMap(const unsigned char* buf, int num)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CColorMap* CColorMap::LoadFromBitmapFile(const std::string& fileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CColorMap* CColorMap::LoadFromFloatVector(const std::vector<float>& vec)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CColorMap* CColorMap::LoadFromDefString(const std::string& dString)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CColorMap::GetColor(unsigned char* color, float pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

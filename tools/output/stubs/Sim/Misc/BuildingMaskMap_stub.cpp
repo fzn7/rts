@@ -1,3 +1,4 @@
+#include <iostream>
 #include "BuildingMaskMap.h"
 #include "GlobalConstants.h"
 
@@ -12,12 +13,14 @@ CR_REG_METADATA(BuildingMaskMap, (
 bool BuildingMaskMap::CheckBounds(unsigned int x, unsigned int z)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // sets mask value for tile[x,z] in 2*SQUARE_SIZE coordinates
 bool BuildingMaskMap::SetTileMask(unsigned int x, unsigned int z, boost::uint16_t value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // tests previously set mask for tile[x,z] in 2*SQUARE_SIZE coordinates against supplied value
@@ -25,4 +28,5 @@ bool BuildingMaskMap::SetTileMask(unsigned int x, unsigned int z, boost::uint16_
 bool BuildingMaskMap::TestTileMaskUnsafe(unsigned int x, unsigned int z, boost::uint16_t value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

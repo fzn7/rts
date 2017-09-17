@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Los.h"
@@ -17,22 +18,26 @@ CLosTexture::CLosTexture()
 , uploadTex(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CLosTexture::~CLosTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosTexture::UpdateCPU()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLosTexture::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

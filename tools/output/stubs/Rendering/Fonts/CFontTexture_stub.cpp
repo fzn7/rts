@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "CFontTexture.h"
@@ -95,6 +96,7 @@ static boost::recursive_mutex m;
 class FtLibraryHandler
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -102,6 +104,7 @@ class FtLibraryHandler
 static std::shared_ptr<FontFace> GetFontFace(const std::string& fontfile, const int size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 
@@ -110,6 +113,7 @@ static std::shared_ptr<FontFace> GetFontFace(const std::string& fontfile, const 
 static std::shared_ptr<FontFace> GetFontForCharacters(std::list<char32_t>& characters, const FT_Face origFace, const int origSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -142,11 +146,13 @@ CFontTexture::CFontTexture(const std::string& fontfile, int size, int _outlinesi
 	, face(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CFontTexture::~CFontTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -161,18 +167,21 @@ void CFontTexture::Update() {
 const GlyphInfo& CFontTexture::GetGlyph(char32_t ch)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CFontTexture::GetKerning(const GlyphInfo& lgl, const GlyphInfo& rgl)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFontTexture::LoadBlock(char32_t start, char32_t end)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -180,16 +189,19 @@ void CFontTexture::LoadBlock(char32_t start, char32_t end)
 void CFontTexture::LoadGlyph(std::shared_ptr<FontFace>& f, char32_t ch, unsigned index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFontTexture::CreateTexture(const int width, const int height)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFontTexture::UpdateTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

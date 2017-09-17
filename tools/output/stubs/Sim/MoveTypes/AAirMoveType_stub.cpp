@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "AAirMoveType.h"
@@ -60,11 +61,13 @@ AAirMoveType::AAirMoveType(CUnit* unit):
 	lastColWarningType(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 AAirMoveType::~AAirMoveType()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void AAirMoveType::DependentDied(CObject* o) {
@@ -89,37 +92,44 @@ bool AAirMoveType::Update() {
 void AAirMoveType::UpdateLanded()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void AAirMoveType::LandAt(float3 pos, float distanceSq)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void AAirMoveType::UpdateLandingHeight()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void AAirMoveType::UpdateLanding()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void AAirMoveType::SetWantedAltitude(float altitude)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void AAirMoveType::SetDefaultAltitude(float altitude)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void AAirMoveType::CheckForCollision()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

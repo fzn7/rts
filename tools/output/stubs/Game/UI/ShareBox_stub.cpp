@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "ShareBox.h"
@@ -23,46 +24,55 @@ int CShareBox::lastShareTeam = 0;
 CShareBox::CShareBox()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CShareBox::~CShareBox()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShareBox::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CShareBox::IsAbove(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string CShareBox::GetTooltip(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CShareBox::MousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShareBox::MouseRelease(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShareBox::MouseMove(int x, int y, int dx, int dy, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CShareBox::KeyPressed(int key, bool isRepeat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

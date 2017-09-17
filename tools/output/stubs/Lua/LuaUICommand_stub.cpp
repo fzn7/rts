@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -19,6 +20,7 @@
 bool LuaUICommand::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -28,6 +30,7 @@ bool LuaUICommand::PushEntries(lua_State* L)
 int LuaUICommand::GetUICommands(lua_State* L) 
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // // TODO: FUTURE

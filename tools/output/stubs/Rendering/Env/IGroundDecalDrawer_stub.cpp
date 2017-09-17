@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "IGroundDecalDrawer.h"
@@ -18,22 +19,26 @@ int IGroundDecalDrawer::decalLevel = 0;
 static IGroundDecalDrawer* GetInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void IGroundDecalDrawer::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void IGroundDecalDrawer::FreeInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void IGroundDecalDrawer::SetDrawDecals(bool v)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

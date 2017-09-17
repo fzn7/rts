@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /**
@@ -70,41 +71,48 @@ LOG_REGISTER_SECTION_GLOBAL(LOG_SECTION_BUMP_WATER)
 static void GLSLDefineConst4f(string& str, const string& name, const float x, const float y, const float z, const float w)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void GLSLDefineConstf4(string& str, const string& name, const float3& v, const float& alpha)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void GLSLDefineConstf3(string& str, const string& name, const float3& v)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void GLSLDefineConstf2(string& str, const string& name, const float& x, const float& y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void GLSLDefineConstf1(string& str, const string& name, const float& x)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static GLuint LoadTexture(const string& filename, const float anisotropy = 0.0f, int* sizeX = NULL, int* sizeY = NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void DrawRadialDisc(CVertexArray* va)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -130,23 +138,27 @@ CBumpWater::CBumpWater()
 	, wasVisibleLastFrame(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CBumpWater::~CBumpWater()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBumpWater::SetupUniforms(string& definitions)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBumpWater::GetUniformLocations(const Shader::IProgramObject* shader)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -157,12 +169,14 @@ void CBumpWater::GetUniformLocations(const Shader::IProgramObject* shader)
 void CBumpWater::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBumpWater::UpdateWater(CGame* game)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -173,23 +187,27 @@ void CBumpWater::UpdateWater(CGame* game)
 CBumpWater::CoastAtlasRect::CoastAtlasRect(const SRectangle& rect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CBumpWater::UnsyncedHeightMapUpdate(const SRectangle& rect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBumpWater::UploadCoastline(const bool forceFull)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBumpWater::UpdateCoastmap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -200,6 +218,7 @@ void CBumpWater::UpdateCoastmap()
 void CBumpWater::UpdateDynWaves(const bool initialize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -210,28 +229,33 @@ void CBumpWater::UpdateDynWaves(const bool initialize)
 void CBumpWater::SetUniforms()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBumpWater::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBumpWater::DrawRefraction(CGame* game)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBumpWater::DrawReflection(CGame* game)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CBumpWater::OcclusionQuery()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <windows.h>
@@ -31,18 +32,21 @@ int dummyStackLock = stackLockInit();
 static void SigAbrtHandler(int signal)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /** Convert exception code to human readable string. */
 static const char* ExceptionName(DWORD exceptionCode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool InitImageHlpDll()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -70,6 +74,7 @@ static DWORD __stdcall AllocTest(void *param) {
 inline static void StacktraceInline(const char *threadName, LPEXCEPTION_POINTERS e, HANDLE hThread = INVALID_HANDLE_VALUE, const int logLevel = LOG_LEVEL_ERROR)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void Stacktrace(const char *threadName, LPEXCEPTION_POINTERS e, HANDLE hThread = INVALID_HANDLE_VALUE, const int logLevel = LOG_LEVEL_ERROR) {
@@ -80,6 +85,7 @@ static void Stacktrace(const char *threadName, LPEXCEPTION_POINTERS e, HANDLE hT
 void Stacktrace(Threading::NativeThreadHandle thread, const std::string& threadName, const int logLevel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void PrepareStacktrace(const int logLevel) {
@@ -123,6 +129,7 @@ void NewHandler() {
 LONG CALLBACK ExceptionHandler(LPEXCEPTION_POINTERS e)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -130,6 +137,7 @@ LONG CALLBACK ExceptionHandler(LPEXCEPTION_POINTERS e)
 void Install()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -137,6 +145,7 @@ void Install()
 void Remove()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 }; // namespace CrashHandler

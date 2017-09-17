@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Compute sine and cosine of argument.
    Copyright (C) 1997, 2000 Free Software Foundation, Inc.
@@ -29,6 +30,7 @@ void
 __sincosf (Simple x, Simple *sinx, Simple *cosx)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__sincosf, sincosf)
 }

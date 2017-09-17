@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -66,36 +67,42 @@ CScriptMoveType::CScriptMoveType(CUnit* owner):
 	scriptNotify(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CScriptMoveType::~CScriptMoveType()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CScriptMoveType::CheckNotify()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CScriptMoveType::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CScriptMoveType::CheckLimits()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CScriptMoveType::SetPhysics(const float3& _pos, const float3& _vel, const float3& _rot)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -107,28 +114,33 @@ void CScriptMoveType::SetVelocity(const float3& _vel) { owner->SetVelocityAndSpe
 void CScriptMoveType::SetRelativeVelocity(const float3& _relVel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CScriptMoveType::SetRotation(const float3& _rot)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CScriptMoveType::SetRotationVelocity(const float3& _rotVel)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CScriptMoveType::SetHeading(short heading)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CScriptMoveType::SetNoBlocking(bool state)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

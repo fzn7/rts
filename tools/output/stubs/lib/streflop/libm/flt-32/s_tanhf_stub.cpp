@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* s_tanhf.c -- Simple version of s_tanh.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -36,6 +37,7 @@ static Simple one=1.0f, two=2.0f, tiny = 1.0e-30f;
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__tanhf, tanhf)
 }

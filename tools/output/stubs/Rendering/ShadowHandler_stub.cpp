@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 #include <cfloat>
 
@@ -41,16 +42,19 @@ bool CShadowHandler::firstInit = true;
 void CShadowHandler::Reload(const char* argv)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShadowHandler::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShadowHandler::Kill()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShadowHandler::FreeTextures() {
@@ -69,6 +73,7 @@ void CShadowHandler::FreeTextures() {
 void CShadowHandler::LoadShadowGenShaderProgs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -76,71 +81,84 @@ void CShadowHandler::LoadShadowGenShaderProgs()
 bool CShadowHandler::InitDepthTarget()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CShadowHandler::WorkaroundUnsupportedFboRenderTargets()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CShadowHandler::DrawShadowPasses()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShadowHandler::SetShadowMapSizeFactors()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static CMatrix44f ComposeLightMatrix(const ISkyLight* light)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static CMatrix44f ComposeScaleMatrix(const float4 scales)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShadowHandler::SetShadowMatrix(CCamera* playerCam, CCamera* shadowCam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShadowHandler::SetShadowCamera(CCamera* shadowCam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CShadowHandler::SetupShadowTexSampler(unsigned int texUnit, bool enable) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShadowHandler::SetupShadowTexSamplerRaw() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShadowHandler::ResetShadowTexSampler(unsigned int texUnit, bool disable) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CShadowHandler::ResetShadowTexSamplerRaw() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CShadowHandler::CreateShadows()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -310,6 +328,7 @@ float CShadowHandler::GetOrthoProjectedFrustumRadius(CCamera* cam, float3& projP
 void CShadowHandler::CalcMinMaxView()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 

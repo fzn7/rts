@@ -77,6 +77,7 @@ CSkirmishAIWrapper::CSkirmishAIWrapper():
 	dieing(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CSkirmishAIWrapper::CSkirmishAIWrapper(const int skirmishAIId):
@@ -94,6 +95,7 @@ CSkirmishAIWrapper::CSkirmishAIWrapper(const int skirmishAIId):
 	dieing(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSkirmishAIWrapper::CreateCallback() {
@@ -236,6 +238,7 @@ void CSkirmishAIWrapper::Release(int reason) {
 static void streamCopy(/*const*/ std::istream* in, std::ostream* out)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static std::string createTempFileName(const char* action, int teamId, int skirmishAIId) {
@@ -250,11 +253,13 @@ static std::string createTempFileName(const char* action, int teamId, int skirmi
 void CSkirmishAIWrapper::Load(std::istream* loadStream)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSkirmishAIWrapper::Save(std::ostream* saveStream)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "CobScriptNames.h"
@@ -17,21 +18,25 @@ static map<string, int> scriptMap;
 const vector<string>& CCobUnitScriptNames::GetScriptNames()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const std::map<std::string, int>& CCobUnitScriptNames::GetScriptMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCobUnitScriptNames::GetScriptNumber(const std::string& fname)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const string& CCobUnitScriptNames::GetScriptName(int num)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

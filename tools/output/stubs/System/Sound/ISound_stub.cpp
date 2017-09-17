@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "ISound.h"
@@ -42,11 +43,13 @@ ISound::ISound()
 	, numAbortedPlays(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ISound::Initialize(bool forceNullSound)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #define SafeDelete(var) \
@@ -56,22 +59,26 @@ void ISound::Initialize(bool forceNullSound)
 void ISound::Shutdown()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool ISound::IsNullAudio()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool ISound::ChangeOutput(bool forceNullSound)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool ISound::LoadSoundDefs(const std::string& filename, const std::string& modes)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

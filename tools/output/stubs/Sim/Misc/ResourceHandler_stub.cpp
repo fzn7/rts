@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "ResourceHandler.h"
@@ -31,10 +32,12 @@ CResourceHandler* CResourceHandler::GetInstance() {
 void CResourceHandler::CreateInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 void CResourceHandler::FreeInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -44,32 +47,38 @@ void CResourceHandler::FreeInstance()
 CResourceHandler::CResourceHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CResourceHandler::AddResource(const CResourceDescription& resource)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CResourceHandler::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const CResourceDescription* CResourceHandler::GetResource(int resourceId) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const CResourceDescription* CResourceHandler::GetResourceByName(const std::string& resourceName) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int CResourceHandler::GetResourceId(const std::string& resourceName) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const unsigned char* CResourceHandler::GetResourceMap(int resourceId) const {

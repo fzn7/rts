@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Game/Game.h"
@@ -48,35 +49,42 @@ static std::map<int, unsigned int> mySyncChecksums;
 void CGame::AddTraffic(int playerID, int packetCode, int length)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::SendClientProcUsage()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned int CGame::GetNumQueuedSimFrameMessages(unsigned int maxFrames) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::UpdateNumQueuedSimFrames()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::UpdateNetMessageProcessingTimeLeft()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CGame::GetNetMessageProcessingTimeLimit() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::ClientReadNet()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

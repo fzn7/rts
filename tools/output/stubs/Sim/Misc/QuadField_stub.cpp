@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <algorithm>
@@ -52,6 +53,7 @@ CQuadField* quadField = NULL;
 void CQuadField::Resize(int quad_size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 */
 #endif
@@ -60,34 +62,40 @@ void CQuadField::Resize(int quad_size)
 CQuadField::Quad::Quad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CQuadField::Quad::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CQuadField::CQuadField(int2 mapDims, int quad_size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CQuadField::~CQuadField()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int2 CQuadField::WorldPosToQuadField(const float3 p) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CQuadField::WorldPosToQuadFieldIdx(const float3 p) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -95,12 +103,14 @@ int CQuadField::WorldPosToQuadFieldIdx(const float3 p) const
 const std::vector<int>& CQuadField::GetQuads(float3 pos, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const std::vector<int>& CQuadField::GetQuadsRectangle(const float3& mins, const float3& maxs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif // UNIT_TEST
 
@@ -109,6 +119,7 @@ const std::vector<int>& CQuadField::GetQuadsRectangle(const float3& mins, const 
 const std::vector<int>& CQuadField::GetQuadsOnRay(const float3& start, const float3& dir, float length)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -116,33 +127,39 @@ const std::vector<int>& CQuadField::GetQuadsOnRay(const float3& start, const flo
 void CQuadField::MovedUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CQuadField::RemoveUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CQuadField::MovedRepulser(CPlasmaRepulser* repulser)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CQuadField::RemoveRepulser(CPlasmaRepulser* repulser)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CQuadField::AddFeature(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CQuadField::RemoveFeature(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -150,16 +167,19 @@ void CQuadField::RemoveFeature(CFeature* feature)
 void CQuadField::MovedProjectile(CProjectile* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CQuadField::AddProjectile(CProjectile* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CQuadField::RemoveProjectile(CProjectile* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -169,27 +189,32 @@ void CQuadField::RemoveProjectile(CProjectile* p)
 const std::vector<CUnit*>& CQuadField::GetUnits(const float3& pos, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::vector<CUnit*>& CQuadField::GetUnitsExact(const float3& pos, float radius, bool spherical)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::vector<CUnit*>& CQuadField::GetUnitsExact(const float3& mins, const float3& maxs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const std::vector<CFeature*>& CQuadField::GetFeaturesExact(const float3& pos, float radius, bool spherical)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::vector<CFeature*>& CQuadField::GetFeaturesExact(const float3& mins, const float3& maxs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -197,11 +222,13 @@ const std::vector<CFeature*>& CQuadField::GetFeaturesExact(const float3& mins, c
 const std::vector<CProjectile*>& CQuadField::GetProjectilesExact(const float3& pos, float radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::vector<CProjectile*>& CQuadField::GetProjectilesExact(const float3& mins, const float3& maxs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

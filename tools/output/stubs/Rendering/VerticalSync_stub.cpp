@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -23,12 +24,14 @@ CVerticalSync VSync;
 CVerticalSync::CVerticalSync()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CVerticalSync::~CVerticalSync()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -37,12 +40,14 @@ CVerticalSync::~CVerticalSync()
 void CVerticalSync::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CVerticalSync::SetInterval(int i)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -51,6 +56,7 @@ void CVerticalSync::SetInterval(int i)
 void CVerticalSync::Delay() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <cstdio>
@@ -36,6 +37,7 @@ static std::vector<const CAIInterfaceLibraryInfo*> infos;
 void CHECK_INTERFACE_ID(const int interfaceId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

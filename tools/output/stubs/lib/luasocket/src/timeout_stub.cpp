@@ -1,3 +1,4 @@
+#include <iostream>
 /*=========================================================================*\
 * Timeout management functions
 * LuaSocket toolkit
@@ -181,6 +182,7 @@ int timeout_meth_settimeout(lua_State *L, p_timeout tm) {
 static int timeout_lua_gettime(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -189,4 +191,5 @@ static int timeout_lua_gettime(lua_State *L)
 int timeout_lua_sleep(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

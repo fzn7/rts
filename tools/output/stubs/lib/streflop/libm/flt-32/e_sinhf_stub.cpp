@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* e_sinhf.c -- Simple version of e_sinh.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -36,5 +37,6 @@ static Simple one = 1.0f, shuge = 1.0e37f;
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

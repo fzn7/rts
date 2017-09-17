@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -36,25 +37,30 @@ CFlareProjectile::CFlareProjectile(const float3& pos, const float3& speed, CUnit
 	lastSub(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CFlareProjectile::~CFlareProjectile()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFlareProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFlareProjectile::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CFlareProjectile::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

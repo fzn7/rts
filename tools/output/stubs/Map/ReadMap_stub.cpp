@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -114,18 +115,21 @@ MapTexture::~MapTexture() {
 CReadMap* CReadMap::LoadMap(const std::string& mapname)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef USING_CREG
 void CReadMap::Serialize(creg::ISerializer* s)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif //USING_CREG
 
@@ -138,66 +142,77 @@ CReadMap::CReadMap()
 	, boundingRadius(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CReadMap::~CReadMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::Initialize()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned int CReadMap::CalcHeightmapChecksum()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned int CReadMap::CalcTypemapChecksum()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::UpdateDraw(bool firstCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::UpdateHeightMapSynced(SRectangle rect, bool initialize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::UpdateCenterHeightmap(const SRectangle& rect, bool initialize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::UpdateMipHeightmaps(const SRectangle& rect, bool initialize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::UpdateFaceNormals(const SRectangle& rect, bool initialize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::UpdateSlopemap(const SRectangle& rect, bool initialize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -205,30 +220,35 @@ void CReadMap::UpdateSlopemap(const SRectangle& rect, bool initialize)
 void CReadMap::HeightMapUpdateLOSCheck(const SRectangle& rect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::InitHeightMapDigestsVectors()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CReadMap::HasHeightMapChanged(const int lmx, const int lmy)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::UpdateLOS(const SRectangle& rect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CReadMap::BecomeSpectator()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CReadMap::HasVisibleWater() const { return (!mapInfo->map.voidWater && !IsAboveWater()); }

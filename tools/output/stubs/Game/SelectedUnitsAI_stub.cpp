@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SelectedUnitsAI.h"
@@ -44,6 +45,7 @@ CSelectedUnitsHandlerAI::CSelectedUnitsHandlerAI()
 	, numColumns(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -51,23 +53,27 @@ inline void CSelectedUnitsHandlerAI::AddUnitSetMaxSpeedCommand(CUnit* unit,
                                                         unsigned char options)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 inline void CSelectedUnitsHandlerAI::AddGroupSetMaxSpeedCommand(CUnit* unit,
                                                          unsigned char options)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline bool MayRequireSetMaxSpeedCommand(const Command &c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CSelectedUnitsHandlerAI::GiveCommandNet(Command &c, int player)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -131,18 +137,21 @@ void CSelectedUnitsHandlerAI::CalculateGroupData(int player, bool queueing) {
 void CSelectedUnitsHandlerAI::MakeFrontMove(Command* c,int player)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CSelectedUnitsHandlerAI::CreateUnitOrder(std::multimap<float,int>& out,int player)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CSelectedUnitsHandlerAI::MoveToPos(int unit, float3 nextCornerPos, float3 dir, Command* command, std::vector<std::pair<int,Command> >* frontcmds, bool* newline)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -156,6 +165,7 @@ struct DistInfo {
 void CSelectedUnitsHandlerAI::SelectAttack(const Command& cmd, int player)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -248,4 +258,5 @@ void CSelectedUnitsHandlerAI::SelectRectangleUnits(
 float3 CSelectedUnitsHandlerAI::LastQueuePosition(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

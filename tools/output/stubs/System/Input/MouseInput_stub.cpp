@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /*
@@ -39,12 +40,14 @@ IMouseInput* mouseInput = NULL;
 IMouseInput::IMouseInput()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool IMouseInput::HandleSDLMouseEvent(const SDL_Event& event)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -54,6 +57,7 @@ bool IMouseInput::HandleSDLMouseEvent(const SDL_Event& event)
 class CWin32MouseInput : public IMouseInput
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -61,6 +65,7 @@ class CWin32MouseInput : public IMouseInput
 IMouseInput* IMouseInput::GetInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void IMouseInput::FreeInstance(IMouseInput* mouseInp) {

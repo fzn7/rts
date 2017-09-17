@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "ExpGenSpawner.h"
@@ -23,22 +24,26 @@ CExpGenSpawner::CExpGenSpawner() :
 	explosionGenerator(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CExpGenSpawner::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CExpGenSpawner::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CExpGenSpawner::GetMemberInfo(SExpGenSpawnableMemberInfo& memberInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

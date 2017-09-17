@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "DataDirLocater.h"
@@ -37,17 +38,20 @@ CONFIG(std::string, SpringData).defaultValue("")
 static inline std::string GetSpringBinaryName()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline std::string GetUnitsyncLibName()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static std::string GetBinaryLocation()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -56,6 +60,7 @@ DataDir::DataDir(const std::string& path)
 	, writable(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 DataDirLocater::DataDirLocater()
@@ -63,141 +68,166 @@ DataDirLocater::DataDirLocater()
 	, writeDir(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DataDirLocater::UpdateIsolationModeByEnvVar()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::vector<DataDir>& DataDirLocater::GetDataDirs() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string DataDirLocater::SubstEnvVars(const std::string& in) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DataDirLocater::AddDirs(const std::string& dirs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DataDirLocater::AddDir(const std::string& dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool DataDirLocater::DeterminePermissions(DataDir* dataDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DataDirLocater::FilterUsableDataDirs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool DataDirLocater::IsWriteableDir(DataDir* dataDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DataDirLocater::FindWriteableDataDir()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DataDirLocater::AddCurWorkDir()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DataDirLocater::AddPortableDir()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DataDirLocater::AddHomeDirs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DataDirLocater::AddEtcDirs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DataDirLocater::AddShareDirs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DataDirLocater::LocateDataDirs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DataDirLocater::Check()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DataDirLocater::ChangeCwdToWriteDir()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool DataDirLocater::IsInstallDirDataDir()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool DataDirLocater::IsPortableMode()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool DataDirLocater::LooksLikeMultiVersionDataDir(const std::string& dirPath)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string DataDirLocater::GetWriteDirPath() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::vector<std::string> DataDirLocater::GetDataDirPaths() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static DataDirLocater* instance = nullptr;
 DataDirLocater& DataDirLocater::GetInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DataDirLocater::FreeInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

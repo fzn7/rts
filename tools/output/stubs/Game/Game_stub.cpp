@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Rendering/GL/myGL.h"
@@ -259,49 +260,58 @@ CGame::CGame(const std::string& mapName, const std::string& modName, ILoadSaveHa
 	, gameOver(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGame::~CGame()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::AddTimedJobs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::LoadGame(const std::string& mapName, bool threaded)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::LoadMap(const std::string& mapName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::LoadDefs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::PreLoadSimulation()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::PostLoadSimulation()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::PreLoadRendering()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::PostLoadRendering() {
@@ -312,53 +322,63 @@ void CGame::PostLoadRendering() {
 void CGame::LoadInterface()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::LoadLua()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::LoadSkirmishAIs()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::LoadFinalize()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::KillLua()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::KillMisc()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::KillRendering()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::KillInterface()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::KillSimulation()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -368,18 +388,21 @@ void CGame::KillSimulation()
 void CGame::ResizeEvent()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CGame::KeyPressed(int key, bool isRepeat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CGame::KeyReleased(int k)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -387,12 +410,14 @@ int CGame::KeyReleased(int k)
 bool CGame::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGame::UpdateUnsynced(const spring_time currentTime)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -510,29 +535,34 @@ bool CGame::Draw() {
 void CGame::DrawInputReceivers()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::DrawInterfaceWidgets()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::ParseInputTextGeometry(const string& geo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::DrawInputText()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::StartPlaying()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -626,17 +656,20 @@ void CGame::SimFrame() {
 void CGame::GameEnd(const std::vector<unsigned char>& winningAllyTeams, bool timeout)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::SendNetChat(std::string message, int destination)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::HandleChatMsg(const ChatMessage& msg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -723,6 +756,7 @@ void CGame::DrawSkip(bool blackscreen) {
 void CGame::ReloadCOB(const string& msg, int player)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -730,23 +764,27 @@ void CGame::ReloadCOB(const string& msg, int player)
 void CGame::ReColorTeams()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGame::IsLagging(float maxLatency) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::SaveGame(const std::string& filename, bool overwrite, bool usecreg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGame::ReloadGame()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -993,15 +1031,18 @@ bool CGame::ProcessKeyPressAction(unsigned int key, const Action& action) {
 bool CGame::ProcessAction(const Action& action, unsigned int key, bool isRepeat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGame::ActionReceived(const Action& action, int playerID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGame::ActionPressed(unsigned int key, const Action& action, bool isRepeat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

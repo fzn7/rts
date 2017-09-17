@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -92,11 +93,13 @@ CCommandAI::CCommandAI():
 	targetLostTimer(TARGET_LOST_TIMER)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CCommandAI::~CCommandAI()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -131,17 +134,20 @@ void CCommandAI::UpdateCommandDescription(unsigned int cmdDescIdx, const SComman
 void CCommandAI::InsertCommandDescription(unsigned int cmdDescIdx, const SCommandDescription& cmdDesc)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CCommandAI::RemoveCommandDescription(unsigned int cmdDescIdx)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandAI::UpdateNonQueueingCommands()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -168,6 +174,7 @@ void CCommandAI::AddCommandDependency(const Command& c) {
 bool CCommandAI::IsAttackCapable() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -188,11 +195,13 @@ static inline const CUnit* GetCommandUnit(const Command& c, int idx) {
 static inline bool IsCommandInMap(const Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline bool AdjustGroundAttackCommand(const Command& c, bool fromSynced, bool aiOrder)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -200,30 +209,35 @@ static inline bool AdjustGroundAttackCommand(const Command& c, bool fromSynced, 
 bool CCommandAI::AllowedCommand(const Command& c, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandAI::GiveCommand(const Command& c, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandAI::GiveCommandReal(const Command& c, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void CCommandAI::SetCommandDescParam0(const Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CCommandAI::ExecuteStateCommand(const Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -238,84 +252,98 @@ void CCommandAI::ClearTargetLock(const Command &c) {
 void CCommandAI::GiveAllowedCommand(const Command& c, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandAI::GiveWaitCommand(const Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandAI::ExecuteInsert(const Command& c, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandAI::ExecuteRemove(const Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CCommandAI::WillCancelQueued(const Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CCommandQueue::iterator CCommandAI::GetCancelQueued(const Command& c, CCommandQueue& q)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCommandAI::CancelCommands(const Command &c, CCommandQueue& q, bool& first)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::vector<Command> CCommandAI::GetOverlapQueued(const Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::vector<Command> CCommandAI::GetOverlapQueued(const Command& c, CCommandQueue& q)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCommandAI::UpdateTargetLostTimer(int targetUnitID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandAI::ExecuteAttack(Command& c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandAI::ExecuteStop(Command &c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandAI::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCommandAI::GetDefaultCmd(const CUnit* pointed, const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -342,6 +370,7 @@ void CCommandAI::DeleteDeathDependence(CObject* o, DependenceType dep) {
 void CCommandAI::DependentDied(CObject* o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -349,31 +378,37 @@ void CCommandAI::DependentDied(CObject* o)
 void CCommandAI::FinishCommand()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCommandAI::AddStockpileWeapon(CWeapon* weapon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCommandAI::StockpileChanged(CWeapon* weapon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCommandAI::UpdateStockpileIcon()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCommandAI::WeaponFired(CWeapon* weapon, const bool searchForNewTarget)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CCommandAI::PushOrUpdateReturnFight(const float3& cmdPos1, const float3& cmdPos2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -389,12 +424,14 @@ bool CCommandAI::HasCommand(int cmdID) const {
 bool CCommandAI::HasMoreMoveCommands(bool skipFirstCmd) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CCommandAI::SkipParalyzeTarget(const CUnit* target)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CCommandAI::CanChangeFireState() {
@@ -408,6 +445,7 @@ bool CCommandAI::CanChangeFireState() {
 void CCommandAI::StopAttackingAllyTeam(int ally)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

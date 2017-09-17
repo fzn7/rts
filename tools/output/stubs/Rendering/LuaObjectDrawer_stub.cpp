@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LuaObjectDrawer.h"
@@ -112,6 +113,7 @@ static DECL_ARRAY(std::vector<const CSolidObject*>, objectBuckets, MAX_TEAMS);
 static float GetLODFloat(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -187,11 +189,13 @@ static const void SetObjectTeamColorNoType(const bool deferredPass, const CSolid
 static const void SetObjectTeamColorCustom(const bool deferredPass, const CSolidObject* o, const LuaMaterial* m, const float2 alpha)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static const void SetObjectTeamColorEngine(const bool deferredPass, const CSolidObject* o, const LuaMaterial* m, const float2 alpha)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static const TeamColorFunc teamColorFuncs[] = {
@@ -209,28 +213,33 @@ static inline unsigned int GetTeamColorFuncIndex(const CSolidObject* o, const Lu
 void LuaObjectDrawer::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaObjectDrawer::Kill()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaObjectDrawer::Update(bool init)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaObjectDrawer::ReadLODScales(LuaObjType objType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaObjectDrawer::SetDrawPassGlobalLODFactor(LuaObjType objType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -241,6 +250,7 @@ LuaMatType LuaObjectDrawer::GetDrawPassAlphaMat() { return alphaMats[water->Draw
 void LuaObjectDrawer::DrawMaterialBins(LuaObjType objType, LuaMatType matType, bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaObjectDrawer::DrawMaterialBin(
@@ -341,6 +351,7 @@ void LuaObjectDrawer::DrawBinObject(
 void LuaObjectDrawer::DrawDeferredPass(LuaObjType objType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -349,17 +360,20 @@ void LuaObjectDrawer::DrawDeferredPass(LuaObjType objType)
 bool LuaObjectDrawer::DrawSingleObjectCommon(const CSolidObject* obj, LuaObjType objType, bool applyTrans)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaObjectDrawer::DrawSingleObject(const CSolidObject* obj, LuaObjType objType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool LuaObjectDrawer::DrawSingleObjectNoTrans(const CSolidObject* obj, LuaObjType objType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -368,11 +382,13 @@ bool LuaObjectDrawer::DrawSingleObjectNoTrans(const CSolidObject* obj, LuaObjTyp
 void LuaObjectDrawer::SetObjectLOD(CSolidObject* obj, LuaObjType objType, unsigned int lodCount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool LuaObjectDrawer::AddObjectForLOD(CSolidObject* obj, LuaObjType objType, bool useAlphaMat, bool useShadowMat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -380,16 +396,19 @@ bool LuaObjectDrawer::AddObjectForLOD(CSolidObject* obj, LuaObjType objType, boo
 bool LuaObjectDrawer::AddOpaqueMaterialObject(CSolidObject* obj, LuaObjType objType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool LuaObjectDrawer::AddAlphaMaterialObject(CSolidObject* obj, LuaObjType objType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool LuaObjectDrawer::AddShadowMaterialObject(CSolidObject* obj, LuaObjType objType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -397,15 +416,18 @@ bool LuaObjectDrawer::AddShadowMaterialObject(CSolidObject* obj, LuaObjType objT
 void LuaObjectDrawer::DrawOpaqueMaterialObjects(LuaObjType objType, bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaObjectDrawer::DrawAlphaMaterialObjects(LuaObjType objType, bool)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaObjectDrawer::DrawShadowMaterialObjects(LuaObjType objType, bool)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

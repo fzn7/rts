@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <SDL.h>
@@ -60,17 +61,20 @@ CLoadScreen::CLoadScreen(const std::string& _mapName, const std::string& _modNam
 	last_draw(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLoadScreen::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CLoadScreen::~CLoadScreen()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -79,12 +83,14 @@ CLoadScreen::~CLoadScreen()
 void CLoadScreen::CreateInstance(const std::string& mapName, const std::string& modName, ILoadSaveHandler* saveFile)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLoadScreen::DeleteInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -93,30 +99,35 @@ void CLoadScreen::DeleteInstance()
 void CLoadScreen::ResizeEvent()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLoadScreen::KeyPressed(int k, bool isRepeat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLoadScreen::KeyReleased(int k)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLoadScreen::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLoadScreen::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -126,6 +137,7 @@ bool CLoadScreen::Draw()
 void CLoadScreen::SetLoadMessage(const std::string& text, bool replace_lastline)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -134,30 +146,35 @@ void CLoadScreen::SetLoadMessage(const std::string& text, bool replace_lastline)
 static string SelectPicture(const std::string& dir, const std::string& prefix)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLoadScreen::RandomStartPicture(const std::string& sidePref)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLoadScreen::LoadStartPicture(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLoadScreen::UnloadStartPicture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLoadScreen::Stop()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Game/Camera.h"
@@ -122,17 +123,20 @@ void CubeMapHandler::Free() {
 void CubeMapHandler::UpdateReflectionTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CubeMapHandler::CreateReflectionFace(unsigned int glType, const float3& camDir, bool skyOnly)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CubeMapHandler::UpdateSpecularTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CubeMapHandler::CreateSpecularFacePart(
@@ -145,6 +149,7 @@ void CubeMapHandler::CreateSpecularFacePart(
 	unsigned char* buf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CubeMapHandler::CreateSpecularFace(
@@ -155,6 +160,7 @@ void CubeMapHandler::CreateSpecularFace(
 	const float3& ydif)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CubeMapHandler::UpdateSpecularFace(
@@ -167,5 +173,6 @@ void CubeMapHandler::UpdateSpecularFace(
 	unsigned char* buf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

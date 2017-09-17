@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* e_expf.c -- Simple version of e_exp.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -53,5 +54,6 @@ P5   =  4.1381369442e-08f; /* 0x3331bb4c */
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "ConfigSource.h"
@@ -24,11 +25,13 @@ typedef map<string, string> StringMap;
 bool ReadOnlyConfigSource::IsSet(const string& key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 string ReadOnlyConfigSource::GetString(const string& key) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -36,11 +39,13 @@ string ReadOnlyConfigSource::GetString(const string& key) const
 void ReadWriteConfigSource::SetString(const string& key, const string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ReadWriteConfigSource::Delete(const string& key)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -48,26 +53,31 @@ void ReadWriteConfigSource::Delete(const string& key)
 FileConfigSource::FileConfigSource(const string& filename) : filename(filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void FileConfigSource::SetStringInternal(const std::string& key, const std::string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void FileConfigSource::SetString(const string& key, const string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void FileConfigSource::DeleteInternal(const string& key)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void FileConfigSource::Delete(const string& key)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void FileConfigSource::ReadModifyWrite(boost::function<void ()> modify) {
@@ -112,6 +122,7 @@ char* FileConfigSource::Strip(char* begin, char* end) {
 void FileConfigSource::Read(FILE* file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -120,6 +131,7 @@ void FileConfigSource::Read(FILE* file)
 void FileConfigSource::Write(FILE* file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -130,6 +142,7 @@ void FileConfigSource::Write(FILE* file)
 DefaultConfigSource::DefaultConfigSource()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -139,6 +152,7 @@ DefaultConfigSource::DefaultConfigSource()
 SafemodeConfigSource::SafemodeConfigSource()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -147,6 +161,7 @@ SafemodeConfigSource::SafemodeConfigSource()
 DedicatedConfigSource::DedicatedConfigSource()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -156,6 +171,7 @@ DedicatedConfigSource::DedicatedConfigSource()
 HeadlessConfigSource::HeadlessConfigSource()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/

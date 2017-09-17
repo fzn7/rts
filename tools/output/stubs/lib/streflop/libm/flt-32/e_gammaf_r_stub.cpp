@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Implementation of gamma function according to ISO C.
    Copyright (C) 1997, 1999, 2001, 2004 Free Software Foundation, Inc.
@@ -28,5 +29,6 @@ Simple
 __ieee754_gammaf_r (Simple x, int *signgamp)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

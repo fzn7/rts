@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "UnitDef.h"
@@ -194,35 +195,41 @@ CUnit::CUnit()
 , stunned(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CUnit::~CUnit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::InitStatic()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::PreInit(const UnitLoadParams& params)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::PostInit(const CUnit* builder)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -232,23 +239,27 @@ void CUnit::PostLoad()
 void CUnit::FinishedBuilding(bool postInit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::KillUnit(CUnit* attacker, bool selfDestruct, bool reclaimed, bool showDeathSequence)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::ForcedKillUnit(CUnit* attacker, bool selfDestruct, bool reclaimed, bool showDeathSequence)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::ForcedMove(const float3& newPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -256,60 +267,71 @@ void CUnit::ForcedMove(const float3& newPos)
 float3 CUnit::GetErrorVector(int argAllyTeam) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::UpdatePosErrorParams(bool updateError, bool updateDelta)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::Drop(const float3& parentPos, const float3& parentDir, CUnit* parent)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::DeleteScript()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::EnableScriptMoveType()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::DisableScriptMoveType()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::UpdateResources()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::SetLosStatus(int at, unsigned short newStatus)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned short CUnit::CalcLosStatus(int at)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::UpdateLosStatus(int at)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -331,35 +353,41 @@ void CUnit::SetStunned(bool stun) {
 void CUnit::SlowUpdate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::CanUpdateWeapons() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::SlowUpdateWeapons()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::HaveTarget() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CUnit::GetFlankingDamageBonus(const float3& attackDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::DoWaterDamage()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -367,6 +395,7 @@ void CUnit::DoWaterDamage()
 static void AddUnitDamageStats(CUnit* unit, float damage, bool dealt)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::DoDamage(
@@ -527,6 +556,7 @@ void CUnit::ApplyImpulse(const float3& impulse) {
 CMatrix44f CUnit::GetTransformMatrix(const bool synced) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -535,70 +565,82 @@ CMatrix44f CUnit::GetTransformMatrix(const bool synced) const
 void CUnit::AddExperience(float exp)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::SetMass(float newMass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::DoSeismicPing(float pingSize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::ChangeLos(int losRad, int airRad)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::ChangeTeam(int newteam, ChangeType type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::ChangeTeamReset()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::IsIdle() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::AttackUnit(CUnit* targetUnit, bool isUserTarget, bool wantManualFire, bool fpsMode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CUnit::AttackGround(const float3& pos, bool isUserTarget, bool wantManualFire, bool fpsMode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::DropCurrentAttackTarget()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::SetLastAttacker(CUnit* attacker)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::DependentDied(CObject* o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -606,22 +648,26 @@ void CUnit::DependentDied(CObject* o)
 void CUnit::UpdatePhysicalState(float eps)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::UpdateTerrainType()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::CalculateTerrainType()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::SetGroup(CGroup* newGroup, bool fromFactory)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -631,6 +677,7 @@ bool CUnit::SetGroup(CGroup* newGroup, bool fromFactory)
 bool CUnit::AddBuildPower(CUnit* builder, float amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -640,94 +687,110 @@ bool CUnit::AddBuildPower(CUnit* builder, float amount)
 void CUnit::SetMetalStorage(float newStorage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::SetEnergyStorage(float newStorage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::AllowedReclaim(CUnit* builder) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::UseMetal(float metal)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::AddMetal(float metal, bool useIncomeMultiplier)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::UseEnergy(float energy)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CUnit::AddEnergy(float energy, bool useIncomeMultiplier)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::AddHarvestedMetal(float metal)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::SetStorage(const SResourcePack& newStorage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::HaveResources(const SResourcePack& pack) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::UseResources(const SResourcePack& pack)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::AddResources(const SResourcePack& pack, bool useIncomeMultiplier)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool CanDispatch(const CUnit* u, const CTeam* team, const SResourceOrder& order)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void GetScale(const float x1, const float x2, float* scale)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static bool LimitToFullStorage(const CUnit* u, const CTeam* team, SResourceOrder* order)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::IssueResourceOrder(SResourceOrder* order)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -737,12 +800,14 @@ bool CUnit::IssueResourceOrder(SResourceOrder* order)
 void CUnit::Activate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::Deactivate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -750,12 +815,14 @@ void CUnit::Deactivate()
 void CUnit::UpdateWind(float x, float z, float strength)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::IncomingMissile(CMissileProjectile* missile)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -763,12 +830,14 @@ void CUnit::IncomingMissile(CMissileProjectile* missile)
 void CUnit::TempHoldFire(int cmdID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::StopAttackingAllyTeam(int ally)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -806,12 +875,14 @@ bool CUnit::GetNewCloakState(bool stunCheck) {
 void CUnit::SlowUpdateCloak(bool stunCheck)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnit::ScriptDecloak(bool updateCloakTimeOut)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -821,30 +892,35 @@ void CUnit::ScriptDecloak(bool updateCloakTimeOut)
 bool CUnit::CanTransport(const CUnit* unit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::AttachUnit(CUnit* unit, int piece, bool force)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::DetachUnitCore(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::DetachUnit(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnit::DetachUnitFromAir(CUnit* unit, const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CUnit::CanLoadUnloadAtPos(const float3& wantedPos, const CUnit* unit, float* wantedHeightPtr) const {

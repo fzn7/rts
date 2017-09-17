@@ -1,3 +1,4 @@
+#include <iostream>
 /*=========================================================================*\
 * Unix domain socket 
 * LuaSocket toolkit
@@ -224,11 +225,13 @@ static int meth_bind(lua_State *L) {
 static const char *unix_tryconnect(p_unix un, const char *path)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int meth_connect(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -237,6 +240,7 @@ static int meth_connect(lua_State *L)
 static int meth_close(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -245,6 +249,7 @@ static int meth_close(lua_State *L)
 static int meth_listen(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -253,6 +258,7 @@ static int meth_listen(lua_State *L)
 static int meth_shutdown(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\

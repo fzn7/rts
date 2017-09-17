@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <SDL_keycode.h>
@@ -35,60 +36,72 @@ COverheadController::COverheadController()
 	, angle(DEFAULT_ANGLE)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void COverheadController::KeyMove(float3 move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void COverheadController::MouseMove(float3 move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void COverheadController::ScreenEdgeMove(float3 move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void COverheadController::MouseWheelMove(float move)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void COverheadController::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 COverheadController::GetPos() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void COverheadController::SetPos(const float3& newPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 COverheadController::SwitchFrom() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void COverheadController::SwitchTo(const int oldCam, const bool showText)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void COverheadController::GetState(StateMap& sm) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool COverheadController::SetState(const StateMap& sm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LightningCannon.h"
@@ -22,15 +23,18 @@ CLightningCannon::CLightningCannon(CUnit* owner, const WeaponDef* def)
 	: CWeapon(owner, def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CLightningCannon::GetPredictedImpactTime(float3 p) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLightningCannon::FireImpl(const bool scriptCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

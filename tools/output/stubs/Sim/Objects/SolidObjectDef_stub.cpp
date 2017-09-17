@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SolidObjectDef.h"
@@ -22,6 +23,7 @@ SolidObjectDecalDef::SolidObjectDecalDef()
 	, trackDecalStretch(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 SolidObjectDef::SolidObjectDef()
@@ -44,25 +46,30 @@ SolidObjectDef::SolidObjectDef()
 	, model(nullptr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SolidObjectDef::PreloadModel() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 S3DModel* SolidObjectDef::LoadModel() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float SolidObjectDef::GetModelRadius() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SolidObjectDef::ParseCollisionVolume(const LuaTable& table)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

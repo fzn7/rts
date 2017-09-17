@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LuaUnsyncedRead.h"
@@ -82,6 +83,7 @@ const int CMD_INDEX_OFFSET = 1; // starting index for command descriptions
 bool LuaUnsyncedRead::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -96,11 +98,13 @@ bool LuaUnsyncedRead::PushEntries(lua_State* L)
 static inline CUnit* ParseUnit(lua_State* L, const char* caller, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline CFeature* ParseFeature(lua_State* L, const char* caller, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -109,11 +113,13 @@ static inline CFeature* ParseFeature(lua_State* L, const char* caller, int index
 static int GetSolidObjectLuaDraw(lua_State* L, const CSolidObject* obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int GetSolidObjectNoDraw(lua_State* L, const CSolidObject* obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -128,18 +134,21 @@ static int GetSolidObjectNoDraw(lua_State* L, const CSolidObject* obj)
 int LuaUnsyncedRead::IsReplay(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetReplayLength(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetModUICtrl(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -148,36 +157,42 @@ int LuaUnsyncedRead::GetModUICtrl(lua_State* L)
 int LuaUnsyncedRead::GetViewGeometry(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetWindowGeometry(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetScreenGeometry(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetMiniMapGeometry(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetMiniMapDualScreen(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::IsAboveMiniMap(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -186,97 +201,114 @@ int LuaUnsyncedRead::IsAboveMiniMap(lua_State* L)
 int LuaUnsyncedRead::GetDrawFrame(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetFrameTimeOffset(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetLastUpdateSeconds(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetHasLag(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::IsAABBInView(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::IsSphereInView(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::IsUnitAllied(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::IsUnitInView(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::IsUnitVisible(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::IsUnitIcon(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::IsUnitSelected(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetUnitLuaDraw(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetUnitNoDraw(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetUnitNoMinimap(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetUnitNoSelect(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetFeatureLuaDraw(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetFeatureNoDraw(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -284,11 +316,13 @@ int LuaUnsyncedRead::GetFeatureNoDraw(lua_State* L)
 int LuaUnsyncedRead::GetUnitTransformMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetUnitViewPosition(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -375,17 +409,20 @@ public:
 int LuaUnsyncedRead::GetVisibleUnits(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetVisibleFeatures(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetVisibleProjectiles(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -395,24 +432,28 @@ int LuaUnsyncedRead::GetVisibleProjectiles(lua_State* L)
 int LuaUnsyncedRead::GetLocalPlayerID(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetLocalTeamID(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetLocalAllyTeamID(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetSpectatingState(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -422,24 +463,28 @@ int LuaUnsyncedRead::GetSpectatingState(lua_State* L)
 int LuaUnsyncedRead::GetSelectedUnits(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetSelectedUnitsSorted(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetSelectedUnitsCounts(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetSelectedUnitsCount(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -449,36 +494,42 @@ int LuaUnsyncedRead::GetSelectedUnitsCount(lua_State* L)
 int LuaUnsyncedRead::IsGUIHidden(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::HaveShadows(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::HaveAdvShading(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetWaterMode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetMapDrawMode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetMapSquareTexture(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -487,6 +538,7 @@ int LuaUnsyncedRead::GetMapSquareTexture(lua_State* L)
 int LuaUnsyncedRead::GetLosViewColors(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -495,50 +547,59 @@ int LuaUnsyncedRead::GetLosViewColors(lua_State* L)
 int LuaUnsyncedRead::GetCameraNames(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetCameraState(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetCameraPosition(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetCameraDirection(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetCameraFOV(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetCameraVectors(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::WorldToScreenCoords(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::TraceScreenRay(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetPixelDir(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -548,18 +609,21 @@ int LuaUnsyncedRead::GetPixelDir(lua_State* L)
 static void AddPlayerToRoster(lua_State* L, int playerID, bool includePathingFlag)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetTeamColor(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetTeamOrigColor(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -569,22 +633,26 @@ int LuaUnsyncedRead::GetTeamOrigColor(lua_State* L)
 static void PushTimer(lua_State* L, const spring_time& time)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetTimer(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetFrameTimer(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::DiffTimers(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -594,12 +662,14 @@ int LuaUnsyncedRead::DiffTimers(lua_State* L)
 int LuaUnsyncedRead::GetSoundStreamTime(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetSoundEffectParams(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -614,12 +684,14 @@ int LuaUnsyncedRead::GetSoundEffectParams(lua_State* L)
 int LuaUnsyncedRead::GetFPS(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetGameSpeed(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -628,30 +700,35 @@ int LuaUnsyncedRead::GetGameSpeed(lua_State* L)
 int LuaUnsyncedRead::GetActiveCommand(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetDefaultCommand(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetActiveCmdDescs(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetActiveCmdDesc(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetCmdDescIndex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -660,18 +737,21 @@ int LuaUnsyncedRead::GetCmdDescIndex(lua_State* L)
 int LuaUnsyncedRead::GetBuildFacing(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetBuildSpacing(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetGatherMode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -680,6 +760,7 @@ int LuaUnsyncedRead::GetGatherMode(lua_State* L)
 int LuaUnsyncedRead::GetActivePage(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -688,18 +769,21 @@ int LuaUnsyncedRead::GetActivePage(lua_State* L)
 int LuaUnsyncedRead::GetMouseState(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetMouseCursor(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetMouseStartPosition(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -707,6 +791,7 @@ int LuaUnsyncedRead::GetMouseStartPosition(lua_State* L)
 int LuaUnsyncedRead::GetClipboard(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -714,6 +799,7 @@ int LuaUnsyncedRead::GetClipboard(lua_State* L)
 int LuaUnsyncedRead::GetLastMessagePositions(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -721,12 +807,14 @@ int LuaUnsyncedRead::GetLastMessagePositions(lua_State* L)
 int LuaUnsyncedRead::GetConsoleBuffer(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetCurrentTooltip(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -736,48 +824,56 @@ int LuaUnsyncedRead::GetCurrentTooltip(lua_State* L)
 int LuaUnsyncedRead::GetKeyState(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetModKeyState(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetPressedKeys(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetInvertQueueKey(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetKeyCode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetKeySymbol(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetKeyBindings(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetActionHotKeys(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -785,18 +881,21 @@ int LuaUnsyncedRead::GetActionHotKeys(lua_State* L)
 int LuaUnsyncedRead::GetGroupList(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetSelectedGroup(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetUnitGroup(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -805,24 +904,28 @@ int LuaUnsyncedRead::GetUnitGroup(lua_State* L)
 int LuaUnsyncedRead::GetGroupUnits(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetGroupUnitsSorted(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetGroupUnitsCounts(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetGroupUnitsCount(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -832,16 +935,19 @@ int LuaUnsyncedRead::GetGroupUnitsCount(lua_State* L)
 int LuaUnsyncedRead::GetPlayerRoster(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetPlayerTraffic(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaUnsyncedRead::GetPlayerStatistics(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -851,6 +957,7 @@ int LuaUnsyncedRead::GetPlayerStatistics(lua_State* L)
 int LuaUnsyncedRead::GetDrawSelectionInfo(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -860,6 +967,7 @@ int LuaUnsyncedRead::GetDrawSelectionInfo(lua_State* L)
 int LuaUnsyncedRead::GetConfigParams(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -887,47 +995,55 @@ int LuaUnsyncedRead::GetLogSections(lua_State* L) {
 int LuaUnsyncedRead::GetAllDecals(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetDecalPos(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetDecalSize(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetDecalRotation(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetDecalTexture(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetDecalAlpha(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetDecalOwner(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaUnsyncedRead::GetDecalType(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

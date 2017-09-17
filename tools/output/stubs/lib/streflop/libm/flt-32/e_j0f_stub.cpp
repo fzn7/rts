@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* e_j0f.c -- Simple version of e_j0.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -61,6 +62,7 @@ static Simple zero = 0.0f;
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef __STDC__
@@ -88,6 +90,7 @@ v04  =  4.4111031494e-10f; /* 0x2ff280c2 */
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /* The asymptotic expansions of pzero is
@@ -202,6 +205,7 @@ static Simple pS2[5] = {
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -322,5 +326,6 @@ static Simple qS2[6] = {
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

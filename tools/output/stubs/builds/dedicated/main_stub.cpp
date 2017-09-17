@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <string>
@@ -47,6 +48,7 @@ LOG_REGISTER_SECTION_GLOBAL(LOG_SECTION_DEDICATED_SERVER)
 extern "C"
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -54,12 +56,14 @@ extern "C"
 int main(int argc, char* argv[])
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #if defined(WIN32) && !defined(_MSC_VER)
 int WINAPI WinMain(HINSTANCE hInstanceIn, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 

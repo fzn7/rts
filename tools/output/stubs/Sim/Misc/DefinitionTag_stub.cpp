@@ -26,6 +26,7 @@ DefType::~DefType() {
 std::vector<const DefType*>& DefType::GetTypes()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -37,24 +38,28 @@ DefType::DefType(const std::string& n) : name(n), luaTable(NULL) {
 void DefType::AddMetaData(const DefTagMetaData* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const DefTagMetaData* DefType::GetMetaDataByInternalKey(const string& key)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const DefTagMetaData* DefType::GetMetaDataByExternalKey(const string& key)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string DefTagMetaData::GetTypeName(const std::type_info& typeInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -64,6 +69,7 @@ std::string DefTagMetaData::GetTypeName(const std::type_info& typeInfo)
 static inline string Quote(const string& type, const string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -73,6 +79,7 @@ static inline string Quote(const string& type, const string& value)
 static std::ostream& operator<< (std::ostream& out, const DefTagMetaData* d)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -86,27 +93,32 @@ static std::ostream& operator<< (std::ostream& out, const DefTagMetaData* d)
 void DefType::OutputMetaDataMap() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DefType::OutputTagMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DefType::CheckType(const DefTagMetaData* meta, const std::type_info& want)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DefType::ReportUnknownTags(const std::string& instanceName, const LuaTable& luaTable, const std::string pre)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void DefType::Load(void* instance, const LuaTable& luaTable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

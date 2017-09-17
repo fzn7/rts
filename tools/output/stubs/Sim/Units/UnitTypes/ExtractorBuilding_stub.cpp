@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 // Used for all metal-extractors.
@@ -39,17 +40,20 @@ CExtractorBuilding::CExtractorBuilding():
 	extractionRange(0.0f), extractionDepth(0.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CExtractorBuilding::~CExtractorBuilding()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /* resets the metalMap and notifies the neighbours */
 void CExtractorBuilding::ResetExtraction()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -58,12 +62,14 @@ void CExtractorBuilding::ResetExtraction()
 bool CExtractorBuilding::IsNeighbour(CExtractorBuilding* other)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /* sets the range of extraction for this extractor, also finds overlapping neighbours. */
 void CExtractorBuilding::SetExtractionRangeAndDepth(float range, float depth)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -71,6 +77,7 @@ void CExtractorBuilding::SetExtractionRangeAndDepth(float range, float depth)
 void CExtractorBuilding::AddNeighbour(CExtractorBuilding* neighboor)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -78,6 +85,7 @@ void CExtractorBuilding::AddNeighbour(CExtractorBuilding* neighboor)
 void CExtractorBuilding::RemoveNeighbour(CExtractorBuilding* neighboor)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -85,6 +93,7 @@ void CExtractorBuilding::RemoveNeighbour(CExtractorBuilding* neighboor)
 void CExtractorBuilding::ReCalculateMetalExtraction()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -92,4 +101,5 @@ void CExtractorBuilding::ReCalculateMetalExtraction()
 void CExtractorBuilding::FinishedBuilding(bool postInit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

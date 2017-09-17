@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "restrictions.h"
@@ -30,27 +31,32 @@ CLuaSocketRestrictions* luaSocketRestrictions=0;
 CLuaSocketRestrictions::CLuaSocketRestrictions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLuaSocketRestrictions::addRule(RestrictType type, const std::string& hostname, int port, bool allowed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLuaSocketRestrictions::addRule(RestrictType type, const std::string& rule)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLuaSocketRestrictions::addRules(RestrictType type, const std::string& configstr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*
 bool isValidIpAddress(char *ipAddress)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 */
 
@@ -65,11 +71,13 @@ bool CLuaSocketRestrictions::isAllowed(RestrictType type, const char* hostname, 
 const TSocketRule* CLuaSocketRestrictions::getRule(RestrictType type, const char* hostname, int port) {
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CLuaSocketRestrictions::addIP(const char* hostname, const char* ip)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const char* CLuaSocketRestrictions::ruleToStr(RestrictType type) {
@@ -90,5 +98,6 @@ const char* CLuaSocketRestrictions::ruleToStr(RestrictType type) {
 CLuaSocketRestrictions::~CLuaSocketRestrictions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

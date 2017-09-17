@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Misc.h"
@@ -59,6 +60,7 @@
 static HMODULE GetCurrentModule()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif // defined WIN32
 
@@ -70,29 +72,34 @@ static HMODULE GetCurrentModule()
 static std::string GetUserDirFromEnvVar()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static std::string GetUserDirFromSystemApi()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 namespace Platform
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void SetOrigCWD()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string GetUserDir()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifndef WIN32
@@ -128,30 +135,36 @@ static std::string GetRealPath(const std::string& path) {
 std::string GetProcessExecutableFile()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string GetProcessExecutablePath()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string GetModuleFile(std::string moduleName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 std::string GetModulePath(const std::string& moduleName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string GetOS()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool Is64Bit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef WIN32
@@ -164,12 +177,14 @@ LPFN_ISWOW64PROCESS fnIsWow64Process;
 bool Is32BitEmulation()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #else
 // simply assume other OS don't need 32bit emulation
 bool Is32BitEmulation()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 
@@ -210,6 +225,7 @@ std::string GetShortFileName(const std::string& file) {
 std::string ExecuteProcess(const std::string& file, std::vector<std::string> args, bool asSubprocess)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace Platform

@@ -1,3 +1,4 @@
+#include <iostream>
 /* -----------------------------------------------------------------------------
 
 	Copyright (c) 2006 Simon Brown                          si@sjbrown.co.uk
@@ -32,11 +33,13 @@ ColourSet::ColourSet( u8 const* rgba, int mask, int flags )
 	m_transparent( false )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ColourSet::RemapIndices( u8 const* source, u8* target ) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace squish

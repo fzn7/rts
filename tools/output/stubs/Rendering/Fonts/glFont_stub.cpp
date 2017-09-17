@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -47,17 +48,20 @@ CglFont::CglFont(const std::string& fontfile, int size, int _outlinewidth, float
 , setColor(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CglFont* CglFont::LoadFont(const std::string& fontFile, int size, int outlinewidth, float outlineweight)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CglFont::~CglFont()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -65,12 +69,14 @@ template <typename T>
 static inline bool SkipColorCodesAndNewLines(const std::u8string& text, T* pos, float4* color, bool* colorChanged, int* skippedLines, float4* colorReset)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline void TextStripCallback(void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -80,36 +86,42 @@ static inline void TextStripCallback(void* data)
 std::string CglFont::StripColorCodes_(const std::u8string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CglFont::GetCharacterWidth(const char32_t c)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CglFont::GetTextWidth_(const std::u8string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CglFont::GetTextHeight_(const std::u8string& text, float* descender, int* numLines)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CglFont::GetTextNumLines_(const std::u8string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::list<std::string> CglFont::SplitIntoLines(const std::u8string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -119,30 +131,35 @@ std::list<std::string> CglFont::SplitIntoLines(const std::u8string& text)
 void CglFont::SetAutoOutlineColor(bool enable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CglFont::SetTextColor(const float4* color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CglFont::SetOutlineColor(const float4* color)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CglFont::SetColors(const float4* _textColor, const float4* _outlineColor)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const float4* CglFont::ChooseOutlineColor(const float4& textColor)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -152,12 +169,14 @@ const float4* CglFont::ChooseOutlineColor(const float4& textColor)
 void CglFont::Begin(const bool immediate, const bool resetColors)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CglFont::End()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -167,39 +186,46 @@ void CglFont::End()
 void CglFont::RenderString(float x, float y, const float& scaleX, const float& scaleY, const std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CglFont::RenderStringShadow(float x, float y, const float& scaleX, const float& scaleY, const std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CglFont::RenderStringOutlined(float x, float y, const float& scaleX, const float& scaleY, const std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CglFont::glWorldPrint(const float3& p, const float size, const std::string& str)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CglFont::glPrint(float x, float y, float s, const int options, const std::string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CglFont::glPrintTable(float x, float y, float s, const int options, const std::string& text)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CglFont::glFormat(float x, float y, float s, const int options, const char* fmt, ...)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

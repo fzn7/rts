@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -35,12 +36,14 @@ CCobEngine::CCobEngine()
 
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CCobFileHandler::~CCobFileHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -48,24 +51,28 @@ CCobFileHandler::~CCobFileHandler()
 void CCobEngine::AddThread(CCobThread *thread)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobEngine::TickThread(CCobThread* thread)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobEngine::Tick(int deltaTime)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCobEngine::ShowScriptError(const string& msg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -75,18 +82,21 @@ void CCobEngine::ShowScriptError(const string& msg)
 CCobFile* CCobFileHandler::GetCobFile(const string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CCobFile* CCobFileHandler::ReloadCobFile(const string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const CCobFile* CCobFileHandler::GetScriptAddr(const string& name) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "FeatureHandler.h"
@@ -31,12 +32,14 @@ CR_REG_METADATA(CFeatureHandler, (
 CFeatureHandler::~CFeatureHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeatureHandler::LoadFeaturesFromMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -55,16 +58,19 @@ CFeature* CFeatureHandler::LoadFeature(const FeatureLoadParams& params) {
 bool CFeatureHandler::NeedAllocateNewFeatureIDs(const CFeature* feature) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFeatureHandler::AllocateNewFeatureIDs(const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFeatureHandler::InsertActiveFeature(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -72,17 +78,20 @@ void CFeatureHandler::InsertActiveFeature(CFeature* feature)
 bool CFeatureHandler::AddFeature(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeatureHandler::DeleteFeature(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CFeature* CFeatureHandler::GetFeature(int id)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -92,6 +101,7 @@ CFeature* CFeatureHandler::CreateWreckage(
 	bool emitSmoke)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -99,29 +109,34 @@ CFeature* CFeatureHandler::CreateWreckage(
 void CFeatureHandler::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CFeatureHandler::TryFreeFeatureID(int id)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CFeatureHandler::UpdateFeature(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeatureHandler::SetFeatureUpdateable(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeatureHandler::TerrainChanged(int x1, int y1, int x2, int y2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

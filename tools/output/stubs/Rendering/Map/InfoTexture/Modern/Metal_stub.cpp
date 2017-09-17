@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Metal.h"
@@ -12,22 +13,26 @@ CMetalTexture::CMetalTexture()
 , metalMapChanged(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMetalTexture::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMetalTexture::MetalMapChanged(const int x, const int z)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CMetalTexture::IsUpdateNeeded()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

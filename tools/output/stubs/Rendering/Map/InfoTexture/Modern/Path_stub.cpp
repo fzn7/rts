@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Path.h"
@@ -31,6 +32,7 @@ CPathTexture::CPathTexture()
 , lastUsage(spring_gettime())
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -68,40 +70,47 @@ static SColor GetSpeedModColor(const float sm) {
 const MoveDef* CPathTexture::GetSelectedMoveDef()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const UnitDef* CPathTexture::GetCurrentBuildCmdUnitDef()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 GLuint CPathTexture::GetTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CPathTexture::ShowMoveDef(const int pathType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CPathTexture::ShowUnitDef(const int udefid)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CPathTexture::IsUpdateNeeded()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPathTexture::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

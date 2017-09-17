@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -40,36 +41,42 @@ CUnitTracker::CUnitTracker():
 	oldCamPos(500.0f, 500.0f, 500.0f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CUnitTracker::~CUnitTracker()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitTracker::Disable()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CUnitTracker::GetMode() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitTracker::IncMode()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitTracker::SetMode(int mode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -78,42 +85,49 @@ void CUnitTracker::SetMode(int mode)
 void CUnitTracker::Track()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitTracker::MakeTrackGroup()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitTracker::CleanTrackGroup()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitTracker::NextUnit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CUnit* CUnitTracker::GetTrackUnit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CUnitTracker::CalcAveragePos() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CUnitTracker::CalcExtentsPos() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -122,4 +136,5 @@ float3 CUnitTracker::CalcExtentsPos() const
 void CUnitTracker::SetCam()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

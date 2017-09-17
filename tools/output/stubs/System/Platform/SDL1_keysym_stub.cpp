@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SDL1_keysym.h"
@@ -286,11 +287,13 @@ static const unordered_bimap<int, int> SDL_keysym_bimap = {
 int SDL21_keysyms(const int SDL2_keycode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int SDL12_keysyms(const int SDL1_keycode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

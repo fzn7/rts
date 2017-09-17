@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Compute cubic root of Simple value.
    Copyright (C) 1997 Free Software Foundation, Inc.
@@ -30,6 +31,7 @@
 static const Simple factor[5] =
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__cbrtf, cbrtf)
 }

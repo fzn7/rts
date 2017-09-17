@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "IPathFinder.h"
@@ -60,18 +61,21 @@ IPathFinder::IPathFinder(unsigned int _BLOCK_SIZE)
 	, blockStates(nbrOfBlocks, int2(mapDims.mapx, mapDims.mapy))
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 IPathFinder::~IPathFinder()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void IPathFinder::ResetSearch()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -146,4 +150,5 @@ IPath::SearchResult IPathFinder::GetPath(
 IPath::SearchResult IPathFinder::InitSearch(const MoveDef& moveDef, const CPathFinderDef& pfDef, const CSolidObject* owner)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -59,6 +60,7 @@ static int GuiSoundSetTable(lua_State* L, const void* data);
 bool LuaWeaponDefs::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -67,18 +69,21 @@ bool LuaWeaponDefs::PushEntries(lua_State* L)
 static int WeaponDefIndex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int WeaponDefNewIndex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int WeaponDefMetatable(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -87,12 +92,14 @@ static int WeaponDefMetatable(lua_State* L)
 static int Next(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int Pairs(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -102,12 +109,14 @@ static int Pairs(lua_State* L)
 static int DamagesArray(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int VisualsTable(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -115,26 +124,31 @@ static int VisualsTable(lua_State* L, const void* data)
 static int NoEnemyCollide(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int NoFriendlyCollide(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int NoFeatureCollide(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int NoNeutralCollide(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int NoGroundCollide(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -142,6 +156,7 @@ static int NoGroundCollide(lua_State* L, const void* data)
 static inline int BuildCategorySet(lua_State* L, const vector<string>& cats)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -149,18 +164,21 @@ static inline int BuildCategorySet(lua_State* L, const vector<string>& cats)
 static int CategorySetFromBits(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 */
 
 /*static int CategorySetFromString(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int GuiSoundSetTable(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -171,6 +189,7 @@ static int GuiSoundSetTable(lua_State* L, const void* data)
 static bool InitParamMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

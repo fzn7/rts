@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SoundItem.h"
@@ -12,6 +13,7 @@
 namespace
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 SoundItem::SoundItem(boost::shared_ptr<SoundBuffer> _buffer, const std::map<std::string, std::string>& items)
@@ -30,24 +32,29 @@ SoundItem::SoundItem(boost::shared_ptr<SoundBuffer> _buffer, const std::map<std:
 	, in3D(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool SoundItem::PlayNow()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SoundItem::StopPlay()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float SoundItem::GetGain() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float SoundItem::GetPitch() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -14,16 +15,19 @@ namespace terrain {
 uint NodeTexEnvSetup::GetVertexDataRequirements()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string NodeTexEnvSetup::GetDebugDesc()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void NodeTexEnvSetup::GetTextureUnits(BaseTexture* tex, int& imageUnit, int& coordUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 //-----------------------------------------------------------------------
@@ -36,6 +40,7 @@ TexEnvStage::TexEnvStage()
 	, srcTexture(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 TexEnvSetupHandler::TexEnvSetupHandler()
@@ -45,40 +50,48 @@ TexEnvSetupHandler::TexEnvSetupHandler()
 	, curSetup(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int TexEnvSetupHandler::MaxTextureUnits()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 int TexEnvSetupHandler::MaxTextureCoords()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void TexEnvSetupHandler::BuildNodeSetup(ShaderDef* shaderDef, RenderSetup* renderSetup)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void TexEnvSetupHandler::BeginPass(const std::vector<Blendmap*>& blendMaps, const std::vector<TiledTexture*>& textures, int pass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void TexEnvSetupHandler::BeginTexturing()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void TexEnvSetupHandler::EndTexturing()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void TexEnvSetupHandler::SetTexCoordGen(float* tgv)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 }

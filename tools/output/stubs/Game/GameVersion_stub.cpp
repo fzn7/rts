@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 // IMPORTANT NOTE: external systems sed -i this file, so DO NOT CHANGE without
@@ -20,36 +21,43 @@
 namespace SpringVersion
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::string& GetMinor()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::string& GetPatchSet()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::string& GetCommits()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::string& GetHash()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::string& GetBranch()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string GetAdditional()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #define QUOTEME_(x) #x
@@ -58,41 +66,49 @@ std::string GetAdditional()
 const std::string& GetCompiler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::string& GetBuildEnvironment()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool IsRelease()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool IsHeadless()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool IsUnitsync()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::string& Get()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::string& GetSync()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::string& GetFull()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 }

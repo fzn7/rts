@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "StreamSink.h"
@@ -29,6 +30,7 @@ extern "C" {
 void log_sink_record_stream(const char* section, int level, const char* record)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///@}

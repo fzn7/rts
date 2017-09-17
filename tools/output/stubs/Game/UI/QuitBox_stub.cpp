@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "QuitBox.h"
@@ -29,40 +30,48 @@
 CQuitBox::CQuitBox()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CQuitBox::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CQuitBox::IsAbove(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string CQuitBox::GetTooltip(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CQuitBox::MousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CQuitBox::MouseRelease(int x,int y,int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CQuitBox::MouseMove(int x, int y, int dx, int dy, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CQuitBox::KeyPressed(int key, bool isRepeat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

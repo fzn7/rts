@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -17,24 +18,29 @@
 CAdvWater::CAdvWater(bool loadShader)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CAdvWater::~CAdvWater()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvWater::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvWater::Draw(bool useBlending)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvWater::UpdateWater(CGame* game)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <map>
@@ -133,6 +134,7 @@ static const std::unordered_map<std::string, LuaMatrixType> luaMatrixTypeMap = {
 void LuaOpenGLUtils::ResetState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -140,16 +142,19 @@ void LuaOpenGLUtils::ResetState()
 LuaMatTexture::Type LuaOpenGLUtils::GetLuaMatTextureType(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 LuaMatrixType LuaOpenGLUtils::GetLuaMatrixType(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const CMatrix44f* LuaOpenGLUtils::GetNamedMatrix(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -160,16 +165,19 @@ const CMatrix44f* LuaOpenGLUtils::GetNamedMatrix(const std::string& name)
 S3DModel* ParseModel(int defID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool ParseTexture(const S3DModel* model, LuaMatTexture& texUnit, char texNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool ParseUnitTexture(LuaMatTexture& texUnit, const std::string& texture)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -177,41 +185,48 @@ bool ParseUnitTexture(LuaMatTexture& texUnit, const std::string& texture)
 static bool ParseNamedSubTexture(LuaMatTexture& texUnit, const std::string& texName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool LuaOpenGLUtils::ParseTextureImage(lua_State* L, LuaMatTexture& texUnit, const std::string& image)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 GLuint LuaMatTexture::GetTextureID() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 GLuint LuaMatTexture::GetTextureTarget() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaMatTexture::Bind() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaMatTexture::Unbind() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int2 LuaMatTexture::GetSize() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -219,18 +234,21 @@ int2 LuaMatTexture::GetSize() const
 void LuaMatTexture::Finalize()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaMatTexture::Compare(const LuaMatTexture& a, const LuaMatTexture& b)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaMatTexture::Print(const string& indent) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

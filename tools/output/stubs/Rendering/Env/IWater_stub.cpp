@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "IWater.h"
@@ -37,12 +38,14 @@ IWater::IWater()
 	, drawRefraction(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void IWater::PushWaterMode(int nxtRendererMode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void IWater::ApplyPushedChanges(CGame* game) {
@@ -57,6 +60,7 @@ void IWater::ApplyPushedChanges(CGame* game) {
 IWater* IWater::GetWater(IWater* curRenderer, int nxtRendererMode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void IWater::ExplosionOccurred(const CExplosionParams& event) {

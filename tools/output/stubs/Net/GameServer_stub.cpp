@@ -173,77 +173,91 @@ CGameServer::CGameServer(
 , reloadingServer(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGameServer::~CGameServer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::Initialize()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::PostLoad(int newServerFrameNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::Reload(const boost::shared_ptr<const CGameSetup> newGameSetup)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::WriteDemoData()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::StripGameSetupText(const GameData* newGameData)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::AddLocalClient(const std::string& myName, const std::string& myVersion)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::AddAutohostInterface(const std::string& autohostIP, const int autohostPort)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::SkipTo(int targetFrameNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string CGameServer::GetPlayerNames(const std::vector<int>& indices) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGameServer::SendDemoData(int targetFrameNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::Broadcast(boost::shared_ptr<const netcode::RawPacket> packet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::Message(const std::string& message, bool broadcast)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::PrivateMessage(int playerNum, const std::string& message) {
@@ -253,6 +267,7 @@ void CGameServer::PrivateMessage(int playerNum, const std::string& message) {
 void CGameServer::CheckSync()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -265,6 +280,7 @@ float CGameServer::GetDemoTime() const {
 void CGameServer::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -272,6 +288,7 @@ void CGameServer::Update()
 void CGameServer::LagProtection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -279,6 +296,7 @@ void CGameServer::LagProtection()
 static std::vector<int> getPlayersInTeam(const std::vector<GameParticipant>& players, const int teamId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -288,12 +306,14 @@ static std::vector<int> getPlayersInTeam(const std::vector<GameParticipant>& pla
 static int countNumPlayersInTeam(const std::vector<GameParticipant>& players, const int teamId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /// has to be consistent with Game.cpp/CSkirmishAIHandler
 static std::vector<unsigned char> getSkirmishAIIds(const std::map<unsigned char, GameSkirmishAI>& ais, const int teamId, const int hostPlayer = -2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -303,72 +323,85 @@ static std::vector<unsigned char> getSkirmishAIIds(const std::map<unsigned char,
 static int countNumSkirmishAIsInTeam(const std::map<unsigned char, GameSkirmishAI>& ais, const int teamId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::ProcessPacket(const unsigned playerNum, boost::shared_ptr<const netcode::RawPacket> packet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::HandleConnectionAttempts()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::ServerReadNet()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::GenerateAndSendGameID()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::CheckForGameStart(bool forced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::StartGame(bool forced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::SetGamePausable(const bool arg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::PushAction(const Action& action, bool fromAutoHost)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGameServer::HasFinished() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameServer::CreateNewFrame(bool fromServerThread, bool fixedFrameTime)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::UpdateSpeedControl(int speedCtrl)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CGameServer::SpeedControlToString(int speedCtrl)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -376,82 +409,96 @@ __FORCE_ALIGN_STACK__
 void CGameServer::UpdateLoop()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::KickPlayer(const int playerNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::MutePlayer(const int playerNum, bool muteChat, bool muteDraw)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::SpecPlayer(const int player)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::ResignPlayer(const int player)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGameServer::CheckPlayersPassword(const int playerNum, const std::string& pw) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::AddAdditionalUser(const std::string& name, const std::string& passwd, bool fromDemo, bool spectator, int team, int playerNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned CGameServer::BindConnection(std::string name, const std::string& passwd, const std::string& version, bool isLocal, boost::shared_ptr<netcode::CConnection> link, bool reconnect, int netloss)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::GotChatMessage(const ChatMessage& msg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::InternalSpeedChange(float newSpeed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::UserSpeedChange(float newSpeed, int player)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned char CGameServer::ReserveNextAvailableSkirmishAIId()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::FreeSkirmishAIId(const unsigned char skirmishAIId)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGameServer::AddToPacketCache(boost::shared_ptr<const netcode::RawPacket> &pckt)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

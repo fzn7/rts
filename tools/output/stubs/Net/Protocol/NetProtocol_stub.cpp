@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <boost/scoped_ptr.hpp>
@@ -28,28 +29,33 @@ CNetProtocol* clientNet = NULL;
 CNetProtocol::CNetProtocol() : keepUpdating(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CNetProtocol::~CNetProtocol()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CNetProtocol::InitClient(const char* server_addr, unsigned portnum, const std::string& myName, const std::string& myPasswd, const std::string& myVersion)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CNetProtocol::InitLocalClient()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CNetProtocol::AttemptReconnect(const std::string& myVersion)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -64,57 +70,68 @@ bool CNetProtocol::CheckTimeout(int nsecs, bool initial) const {
 bool CNetProtocol::Connected() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string CNetProtocol::ConnectionStr() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 boost::shared_ptr<const netcode::RawPacket> CNetProtocol::Peek(unsigned ahead) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CNetProtocol::DeleteBufferPacketAt(unsigned index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float CNetProtocol::GetPacketTime(int frameNum) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 boost::shared_ptr<const netcode::RawPacket> CNetProtocol::GetData(int frameNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CNetProtocol::Send(boost::shared_ptr<const netcode::RawPacket> pkt)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CNetProtocol::Send(const netcode::RawPacket* pkt)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 __FORCE_ALIGN_STACK__
 void CNetProtocol::UpdateLoop()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CNetProtocol::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CNetProtocol::Close(bool flush)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

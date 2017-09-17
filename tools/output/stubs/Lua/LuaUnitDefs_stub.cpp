@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -60,6 +61,7 @@ static int CategorySetFromString(lua_State* L, const void* data);
 bool LuaUnitDefs::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -69,18 +71,21 @@ bool LuaUnitDefs::PushEntries(lua_State* L)
 static int UnitDefIndex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int UnitDefNewIndex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int UnitDefMetatable(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -89,12 +94,14 @@ static int UnitDefMetatable(lua_State* L)
 static int Next(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int Pairs(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -104,60 +111,70 @@ static int Pairs(lua_State* L)
 static int UnitDefToID(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int WeaponDefToID(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int WeaponDefToName(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int SafeIconType(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int CustomParamsTable(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int BuildOptions(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline int BuildCategorySet(lua_State* L, const vector<string>& cats)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int CategorySetFromBits(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int CategorySetFromString(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int WeaponsTable(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -165,6 +182,7 @@ static void PushGuiSoundSet(lua_State* L, const string& name,
                             const GuiSoundSet& soundSet)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -192,12 +210,14 @@ static int SoundsTable(lua_State* L, const void* data) {
 static int MoveDefTable(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int TotalEnergyOut(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -280,6 +300,7 @@ static int ReturnNil(lua_State* L, const void* data) {
 static bool InitParamMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

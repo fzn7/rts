@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "GameHelper.h"
@@ -52,11 +53,13 @@ CGameHelper* helper;
 CGameHelper::CGameHelper()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGameHelper::~CGameHelper()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -68,6 +71,7 @@ CGameHelper::~CGameHelper()
 float CGameHelper::CalcImpulseScale(const DamageArray& damages, const float expDistanceMod)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameHelper::DoExplosionDamage(
@@ -329,6 +333,7 @@ template<typename TFilter, typename TQuery>
 static inline void QueryUnits(TFilter filter, TQuery& query)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -587,21 +592,25 @@ namespace {
 void CGameHelper::GenerateWeaponTargets(const CWeapon* weapon, const CUnit* avoidUnit, std::multimap<float, CUnit*>& targets)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CUnit* CGameHelper::GetClosestUnit(const float3& pos, float searchRadius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CUnit* CGameHelper::GetClosestEnemyUnit(const CUnit* excludeUnit, const float3& pos, float searchRadius, int searchAllyteam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CUnit* CGameHelper::GetClosestValidTarget(const float3& pos, float searchRadius, int searchAllyteam, const CMobileCAI* cai)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CUnit* CGameHelper::GetClosestEnemyUnitNoLosTest(
@@ -628,21 +637,25 @@ CUnit* CGameHelper::GetClosestEnemyUnitNoLosTest(
 CUnit* CGameHelper::GetClosestFriendlyUnit(const CUnit* excludeUnit, const float3& pos, float searchRadius, int searchAllyteam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CUnit* CGameHelper::GetClosestEnemyAircraft(const CUnit* excludeUnit, const float3& pos, float searchRadius, int searchAllyteam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameHelper::GetEnemyUnits(const float3& pos, float searchRadius, int searchAllyteam, vector<int> &found)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameHelper::GetEnemyUnitsNoLosTest(const float3& pos, float searchRadius, int searchAllyteam, vector<int> &found)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -653,12 +666,14 @@ void CGameHelper::GetEnemyUnitsNoLosTest(const float3& pos, float searchRadius, 
 void CGameHelper::BuggerOff(float3 pos, float radius, bool spherical, bool forced, int teamId, CUnit* excludeUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float3 CGameHelper::Pos2BuildPos(const BuildInfo& buildInfo, bool synced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -669,16 +684,19 @@ struct SearchOffset {
 static bool SearchOffsetComparator (const SearchOffset& a, const SearchOffset& b)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 static const vector<SearchOffset>& GetSearchOffsetTable (int radius)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 //! only used by the AI callback of the same name
 float3 CGameHelper::ClosestBuildSite(int team, const UnitDef* unitDef, float3 pos, float searchRadius, int minDist, int facing)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // find the reference height for a build-position
@@ -686,6 +704,7 @@ float3 CGameHelper::ClosestBuildSite(int team, const UnitDef* unitDef, float3 po
 float CGameHelper::GetBuildHeight(const float3& pos, const UnitDef* unitdef, bool synced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -700,6 +719,7 @@ CGameHelper::BuildSquareStatus CGameHelper::TestUnitBuildSquare(
 	const std::vector<Command>* commands)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGameHelper::BuildSquareStatus CGameHelper::TestBuildSquare(
@@ -849,5 +869,6 @@ Command CGameHelper::GetBuildCommand(const float3& pos, const float3& dir) {
 void CGameHelper::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

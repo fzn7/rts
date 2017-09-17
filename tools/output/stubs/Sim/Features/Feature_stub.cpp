@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -91,42 +92,49 @@ CFeature::CFeature()
 , solidOnTop(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CFeature::~CFeature()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeature::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeature::ChangeTeam(int newTeam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CFeature::IsInLosForAllyTeam(int argAllyTeam) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeature::Initialize(const FeatureLoadParams& params)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CFeature::AddBuildPower(CUnit* builder, float amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -184,35 +192,41 @@ void CFeature::DoDamage(
 void CFeature::DependentDied(CObject *o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeature::SetVelocity(const float3& v)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeature::ForcedMove(const float3& newPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeature::ForcedSpin(const float3& newDir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeature::UpdateTransformAndPhysState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFeature::UpdateQuadFieldPosition(const float3& moveVec)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -256,24 +270,28 @@ bool CFeature::UpdateVelocity(
 bool CFeature::UpdatePosition()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CFeature::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeature::StartFire()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeature::EmitGeoSmoke()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

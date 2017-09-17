@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -25,28 +26,33 @@ static inline unsigned char smoothStep(int x, int y, int a) {
 CInMapDrawView::CInMapDrawView()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CInMapDrawView::~CInMapDrawView()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 struct InMapDraw_QuadDrawer: public CReadMap::IQuadDrawer
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void InMapDraw_QuadDrawer::DrawLine(const CInMapDrawModel::MapLine* line) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void InMapDraw_QuadDrawer::DrawQuad(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -54,4 +60,5 @@ void InMapDraw_QuadDrawer::DrawQuad(int x, int y)
 void CInMapDrawView::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

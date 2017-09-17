@@ -4,6 +4,8 @@ outputdir=output/stubs
 echo "clear outputdir -> ${outputdir}"
 rm -rf $outputdir
 
+#файла прописать #include <iostream>, а внутри метода std::cout << _FUNCTION_ << std::endl;
+
 for f in $(find ${basedir} -name '*.cpp');
 	do {
 		filepath=${f%.*}
@@ -15,7 +17,16 @@ for f in $(find ${basedir} -name '*.cpp');
 #		echo $f
 #		echo $outputpath
 		mkdir -p $outdir
-		perl -0777 -pe 's/^{([\s\S])+?^}$/{\n    \/\/stub method\n}/gm' < $f > "${outputpath}_stub.cpp"
+
+		generated="${outputpath}_generated.cpp"
+		cat $f > $generated
+
+		if cat "$generated" | grep 'iostream' >/dev/null ; 
+			then echo "skip $generated"; 
+			else sed -i '1s;^;#include <iostream>\n;' $generated; 
+		fi		
+
+		perl -0777 -pe 's/^{([\s\S])+?^}$/{\n    \/\/stub method\n    std::cout << _FUNCTION_ << std::endl;\n}/gm' < $generated > "${outputpath}_stub.cpp"
 #		cat $f | sed "s|^{([\s\S])+?^}$|FOOOBAR|"
 #		ruby impl_me.rb $f | sed "s|ImplClass|C${filename}|" > ${filepath:2}_mock.cpp;
 	};

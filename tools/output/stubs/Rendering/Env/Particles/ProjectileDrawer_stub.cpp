@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -260,6 +261,7 @@ void CProjectileDrawer::ParseAtlasTextures(
 	CTextureAtlas* textureAtlas)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileDrawer::LoadWeaponTextures() {
@@ -345,21 +347,25 @@ void CProjectileDrawer::LoadWeaponTextures() {
 void CProjectileDrawer::DrawProjectiles(int modelType, bool drawReflection, bool drawRefraction)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileDrawer::DrawProjectilesSet(const std::vector<CProjectile*>& projectiles, bool drawReflection, bool drawRefraction)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CProjectileDrawer::CanDrawProjectile(const CProjectile* pro, const CSolidObject* owner)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileDrawer::DrawProjectileNow(CProjectile* pro, bool drawReflection, bool drawRefraction)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -367,16 +373,19 @@ void CProjectileDrawer::DrawProjectileNow(CProjectile* pro, bool drawReflection,
 void CProjectileDrawer::DrawProjectilesShadow(int modelType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileDrawer::DrawProjectilesSetShadow(const std::vector<CProjectile*>& projectiles)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileDrawer::DrawProjectileShadow(CProjectile* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -384,11 +393,13 @@ void CProjectileDrawer::DrawProjectileShadow(CProjectile* p)
 void CProjectileDrawer::DrawProjectilesMiniMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileDrawer::DrawFlyingPieces(int modelType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -455,6 +466,7 @@ void CProjectileDrawer::Draw(bool drawReflection, bool drawRefraction) {
 void CProjectileDrawer::DrawShadowPass()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -462,11 +474,13 @@ void CProjectileDrawer::DrawShadowPass()
 bool CProjectileDrawer::DrawProjectileModel(const CProjectile* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileDrawer::DrawGroundFlashes()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -565,6 +579,7 @@ void CProjectileDrawer::UpdatePerlin() {
 void CProjectileDrawer::GenerateNoiseTex(unsigned int tex)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -572,9 +587,11 @@ void CProjectileDrawer::GenerateNoiseTex(unsigned int tex)
 void CProjectileDrawer::RenderProjectileCreated(const CProjectile* p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectileDrawer::RenderProjectileDestroyed(const CProjectile* const p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

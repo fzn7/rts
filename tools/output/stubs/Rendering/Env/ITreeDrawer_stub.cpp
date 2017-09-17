@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -31,6 +32,7 @@ ITreeDrawer::ITreeDrawer()
 	: CEventClient("[ITreeDrawer]", 314444, false), drawTrees(true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ITreeDrawer::~ITreeDrawer() {
@@ -43,29 +45,34 @@ ITreeDrawer::~ITreeDrawer() {
 void ITreeDrawer::AddTrees()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ITreeDrawer::AddTree(int treeID, int treeType, const float3& pos, float size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ITreeDrawer::DeleteTree(int treeID, const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void ITreeDrawer::ResetPos(const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 ITreeDrawer* ITreeDrawer::GetTreeDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -73,16 +80,19 @@ ITreeDrawer* ITreeDrawer::GetTreeDrawer()
 void ITreeDrawer::DrawShadowPass()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ITreeDrawer::Draw(bool drawReflection)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void ITreeDrawer::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

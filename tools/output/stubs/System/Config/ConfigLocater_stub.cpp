@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #ifndef WIN32
@@ -28,18 +29,21 @@ using std::vector;
 static void AddCfgFile(vector<string>& locations, const  std::string& filepath)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void LoadCfgs(vector<string>& locations, const std::string& defCfg, const std::string& verCfg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void LoadCfgsInFolder(vector<string>& locations, const std::string& path, const bool hidden = false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -50,4 +54,5 @@ static void LoadCfgsInFolder(vector<string>& locations, const std::string& path,
 void ConfigLocater::GetDefaultLocations(vector<string>& locations)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

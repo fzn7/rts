@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -26,6 +27,7 @@ CMetalMap::CMetalMap(const unsigned char* map, int _sizeX, int _sizeZ, float _me
 	, sizeZ(_sizeZ)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -33,40 +35,47 @@ CMetalMap::CMetalMap(const unsigned char* map, int _sizeX, int _sizeZ, float _me
 static inline void ClampInt(int& var, int min, int maxPlusOne)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CMetalMap::GetMetalAmount(int x1, int z1, int x2, int z2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CMetalMap::GetMetalAmount(int x, int z)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMetalMap::SetMetalAmount(int x, int z, float m)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CMetalMap::RequestExtraction(int x, int z, float toDepth)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CMetalMap::RemoveExtraction(int x, int z, float depth)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CMetalMap::GetMetalExtraction(int x, int z)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /**
@@ -48,6 +49,7 @@ using std::vector;
 static int pushresult(lua_State* L, bool result, const char* msg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -56,18 +58,21 @@ static int pushresult(lua_State* L, bool result, const char* msg)
 bool LuaZipFileWriter::PushSynced(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaZipFileWriter::PushUnsynced(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaZipFileWriter::CreateMetatable(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -81,6 +86,7 @@ struct ZipFileWriterUserdata {
 static bool FileExists(string filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -97,36 +103,42 @@ static bool FileExists(string filename)
 bool LuaZipFileWriter::PushNew(lua_State* L, const string& filename, zipFile zip)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaZipFileWriter::open(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static ZipFileWriterUserdata* towriter(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaZipFileWriter::meta_gc(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaZipFileWriter::meta_open(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaZipFileWriter::meta_write(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -135,18 +147,21 @@ int LuaZipFileWriter::meta_write(lua_State* L)
 bool LuaZipFileReader::PushSynced(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaZipFileReader::PushUnsynced(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool LuaZipFileReader::CreateMetatable(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -171,42 +186,49 @@ struct ZipFileReaderUserdata {
 bool LuaZipFileReader::PushNew(lua_State* L, const string& filename, IArchive* archive)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaZipFileReader::open(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static ZipFileReaderUserdata* toreader(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaZipFileReader::meta_gc(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaZipFileReader::meta_open(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int test_eof (lua_State* L, ZipFileReaderUserdata* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int read_chars(lua_State* L, ZipFileReaderUserdata* f, size_t n)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -222,6 +244,7 @@ static int read_chars(lua_State* L, ZipFileReaderUserdata* f, size_t n)
 int LuaZipFileReader::meta_read(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -284,4 +307,5 @@ void RecurseZipFolder(const string& folderPath, zipFile& zip, const string& zipF
 int LuaZipFolder::ZipFolder(lua_State* L, const string& folderPath, const string& zipFilePath, bool includeFolder, const string& modes)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

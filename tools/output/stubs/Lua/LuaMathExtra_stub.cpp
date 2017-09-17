@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "lib/streflop/streflop_cond.h"
@@ -14,6 +15,7 @@ static const lua_Number POWERS_OF_TEN[] = {1.0f, 10.0f, 100.0f, 1000.0f, 10000.0
 bool LuaMathExtra::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

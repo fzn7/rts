@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <map>
@@ -27,6 +28,7 @@ static std::map<lua_State*, bool> coroutines;
 static spring::recursive_mutex* GetLuaMutex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -34,36 +36,42 @@ static spring::recursive_mutex* GetLuaMutex(lua_State* L)
 void LuaCreateMutex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaDestroyMutex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaLinkMutex(lua_State* L_parent, lua_State* L_child)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaMutexLock(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaMutexUnlock(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaMutexYield(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -73,6 +81,7 @@ void LuaMutexYield(lua_State* L)
 const char* spring_lua_getName(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -91,16 +100,19 @@ static const char* maxAllocFmtStr = "%s: cannot allocate more memory! (%u bytes 
 void* spring_lua_alloc(void* ud, void* ptr, size_t osize, size_t nsize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void spring_lua_alloc_get_stats(SLuaInfo* info)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void spring_lua_alloc_update_stats(bool clear)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 //////////////////////////////////////////////////////////
@@ -131,18 +143,21 @@ static constexpr std::array<double, 11> v = {
 static constexpr inline double Pow10d(unsigned i)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static const inline int FastLog10(const float f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static constexpr inline int GetDigitsInStdNotation(const int log10)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -150,28 +165,33 @@ static constexpr inline int GetDigitsInStdNotation(const int log10)
 static inline int PrintIntPart(char* buf, float f, const bool carrierBit = false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline int PrintFractPart(char* buf, float f, int digits, int precision)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static inline bool HandleRounding(float* fractF, int log10, int charsInStdNotation, int nDigits, bool scienceNotation, int precision)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void spring_lua_ftoa(float f, char* buf, int precision)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void spring_lua_format(float f, const char* fmt, char* buf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

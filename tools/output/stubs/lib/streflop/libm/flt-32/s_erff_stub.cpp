@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* s_erff.c -- Simple version of s_erf.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -109,6 +110,7 @@ sb7  = -2.2440952301e+01f; /* 0xc1b38712 */
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__erff, erff)
 
@@ -120,6 +122,7 @@ weak_alias (__erff, erff)
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 weak_alias (__erfcf, erfcf)
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <assert.h>
@@ -17,6 +18,7 @@ GameData::GameData()
 	, randomSeed(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -27,35 +29,42 @@ GameData::GameData(const std::string& setup)
 	, randomSeed(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 GameData::GameData(boost::shared_ptr<const RawPacket> pckt)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const netcode::RawPacket* GameData::Pack() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GameData::SetSetupText(const std::string& newSetup)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GameData::SetMapChecksum(const unsigned checksum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GameData::SetModChecksum(const unsigned checksum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GameData::SetRandomSeed(const unsigned seed)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

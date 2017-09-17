@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -35,23 +36,27 @@ void CCategoryHandler::CreateInstance() {
 void CCategoryHandler::RemoveInstance()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned int CCategoryHandler::GetCategory(std::string name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned int CCategoryHandler::GetCategories(std::string names)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::vector<std::string> CCategoryHandler::GetCategoryNames(unsigned int bits) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

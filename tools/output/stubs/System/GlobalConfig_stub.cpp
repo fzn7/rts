@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/Net/UDPConnection.h"
@@ -65,14 +66,17 @@ GlobalConfig* globalConfig = NULL;
 GlobalConfig::GlobalConfig()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GlobalConfig::Instantiate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void GlobalConfig::Deallocate()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

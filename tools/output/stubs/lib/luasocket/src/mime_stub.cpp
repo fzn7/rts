@@ -1,3 +1,4 @@
+#include <iostream>
 /*=========================================================================*\
 * MIME support functions
 * LuaSocket toolkit
@@ -84,6 +85,7 @@ static UC b64unbase[256];
 MIME_API int luaopen_mime_core(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*=========================================================================*\
@@ -99,6 +101,7 @@ MIME_API int luaopen_mime_core(lua_State *L)
 static int mime_global_wrp(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -107,6 +110,7 @@ static int mime_global_wrp(lua_State *L)
 static void b64setup(UC *b64unbase) 
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -118,6 +122,7 @@ static size_t b64encode(UC c, UC *input, size_t size,
         luaL_Buffer *buffer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -129,6 +134,7 @@ static size_t b64pad(const UC *input, size_t size,
         luaL_Buffer *buffer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -140,6 +146,7 @@ static size_t b64decode(UC c, UC *input, size_t size,
         luaL_Buffer *buffer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -154,6 +161,7 @@ static size_t b64decode(UC c, UC *input, size_t size,
 static int mime_global_b64(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -165,6 +173,7 @@ static int mime_global_b64(lua_State *L)
 static int mime_global_unb64(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -186,6 +195,7 @@ static int mime_global_unb64(lua_State *L)
 static void qpsetup(UC *qpclass, UC *qpunbase)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -194,6 +204,7 @@ static void qpsetup(UC *qpclass, UC *qpunbase)
 static void qpquote(UC c, luaL_Buffer *buffer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -204,6 +215,7 @@ static size_t qpencode(UC c, UC *input, size_t size,
         const char *marker, luaL_Buffer *buffer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -212,6 +224,7 @@ static size_t qpencode(UC c, UC *input, size_t size,
 static size_t qppad(UC *input, size_t size, luaL_Buffer *buffer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -225,6 +238,7 @@ static size_t qppad(UC *input, size_t size, luaL_Buffer *buffer)
 static int mime_global_qp(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -268,6 +282,7 @@ static size_t qpdecode(UC c, UC *input, size_t size, luaL_Buffer *buffer) {
 static int mime_global_unqp(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -282,6 +297,7 @@ static int mime_global_unqp(lua_State *L)
 static int mime_global_qpwrp(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -300,6 +316,7 @@ static int eolprocess(int c, int last, const char *marker,
         luaL_Buffer *buffer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -312,6 +329,7 @@ static int eolprocess(int c, int last, const char *marker,
 static int mime_global_eol(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -320,6 +338,7 @@ static int mime_global_eol(lua_State *L)
 static size_t dot(int c, size_t state, luaL_Buffer *buffer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -329,5 +348,6 @@ static size_t dot(int c, size_t state, luaL_Buffer *buffer)
 static int mime_global_dot(lua_State *L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

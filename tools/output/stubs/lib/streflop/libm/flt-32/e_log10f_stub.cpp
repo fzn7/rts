@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* e_log10f.c -- Simple version of e_log10.c.
  * Conversion to Simple by Ian Lance Taylor, Cygnus Support, ian@cygnus.com.
@@ -46,5 +47,6 @@ static Simple zero   =  0.0f;
 #endif
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 }

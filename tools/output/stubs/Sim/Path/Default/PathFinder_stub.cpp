@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <cstring>
@@ -34,6 +35,7 @@ CPathFinder::CPathFinder()
 	: IPathFinder(1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -300,18 +302,21 @@ bool CPathFinder::TestBlock(
 IPath::SearchResult CPathFinder::FinishSearch(const MoveDef& moveDef, const CPathFinderDef& pfDef, IPath::Path& foundPath) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /** Helper function for AdjustFoundPath */
 static inline void FixupPath3Pts(const MoveDef& moveDef, const float3 p1, float3& p2, const float3 p3)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPathFinder::SmoothMidWaypoint(const int2 testsqr, const int2 prevsqr, const MoveDef& moveDef, IPath::Path& foundPath, const float3 nextPoint) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -326,4 +331,5 @@ void CPathFinder::AdjustFoundPath(const MoveDef& moveDef, IPath::Path& foundPath
 	std::deque<int2>& previous, int2 curquare) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

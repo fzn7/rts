@@ -1,3 +1,4 @@
+#include <iostream>
 /*=========================================================================*\
 * Socket compatibilization module for Unix
 * LuaSocket toolkit
@@ -206,6 +207,7 @@ int socket_send(p_socket ps, const char *data, size_t count,
         size_t *sent, p_timeout tm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\
@@ -215,6 +217,7 @@ int socket_sendto(p_socket ps, const char *data, size_t count, size_t *sent,
         SA *addr, socklen_t len, p_timeout tm)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /*-------------------------------------------------------------------------*\

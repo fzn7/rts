@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <vector>
@@ -39,6 +40,7 @@ static int currentVertexArray = 0;
 CVertexArray* GetVertexArray()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -47,6 +49,7 @@ CVertexArray* GetVertexArray()
 void PrintAvailableResolutions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifdef GL_ARB_debug_output
@@ -63,6 +66,7 @@ void PrintAvailableResolutions()
 void _APIENTRY OpenGLDebugMessageCallback(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar* message, const GLvoid* userParam)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif // GL_ARB_debug_output
 
@@ -70,12 +74,14 @@ void _APIENTRY OpenGLDebugMessageCallback(GLenum source, GLenum type, GLuint id,
 static bool GetAvailableVideoRAM(GLint* memory)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void ShowCrappyGpuWarning(const char* glVendor, const char* glRenderer)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -83,12 +89,14 @@ static void ShowCrappyGpuWarning(const char* glVendor, const char* glRenderer)
 void LoadExtensions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void UnloadExtensions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -96,6 +104,7 @@ void UnloadExtensions()
 void WorkaroundATIPointSizeBug()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -103,30 +112,35 @@ void WorkaroundATIPointSizeBug()
 void glSaveTexture(const GLuint textureID, const std::string& filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void glSpringBindTextures(GLuint first, GLsizei count, const GLuint* textures)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void glSpringTexStorage2D(const GLenum target, GLint levels, const GLint internalFormat, const GLsizei width, const GLsizei height)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void glBuildMipmaps(const GLenum target, GLint internalFormat, const GLsizei width, const GLsizei height, const GLenum format, const GLenum type, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void glSpringMatrix2dProj(const int sizex, const int sizey)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -135,6 +149,7 @@ void glSpringMatrix2dProj(const int sizex, const int sizey)
 void ClearScreen()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -153,6 +168,7 @@ static unsigned int LoadProgram(GLenum, const char*, const char*);
 bool ProgramStringIsNative(GLenum target, const char* filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -169,28 +185,33 @@ bool ProgramStringIsNative(GLenum target, const char* filename)
 static bool CheckParseErrors(GLenum target, const char* filename, const char* program)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static unsigned int LoadProgram(GLenum target, const char* filename, const char* program_type)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 unsigned int LoadVertexProgram(const char* filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 unsigned int LoadFragmentProgram(const char* filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void glSafeDeleteProgram(GLuint program)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -199,6 +220,7 @@ void glSafeDeleteProgram(GLuint program)
 void glClearErrors()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -207,6 +229,7 @@ void glClearErrors()
 void SetTexGen(const float& scaleX, const float& scaleZ, const float& offsetX, const float& offsetZ)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/

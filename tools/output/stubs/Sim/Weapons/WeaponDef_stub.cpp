@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "WeaponDef.h"
@@ -254,6 +255,7 @@ WEAPONDUMMYTAG(float, soundHitWetVolume).fallbackName("soundHitVolume").defaultV
 WeaponDef::WeaponDef()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 WeaponDef::WeaponDef(const LuaTable& wdTable, const std::string& name_, int id_)
@@ -268,6 +270,7 @@ WeaponDef::WeaponDef(const LuaTable& wdTable, const std::string& name_, int id_)
 	, collisionFlags(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -322,12 +325,14 @@ void WeaponDef::LoadSound(
 	std::vector<GuiSoundSet::Data>& soundData)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 S3DModel* WeaponDef::LoadModel()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 S3DModel* WeaponDef::LoadModel() const {

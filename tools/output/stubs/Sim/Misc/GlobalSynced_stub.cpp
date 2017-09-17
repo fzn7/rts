@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "GlobalSynced.h"
@@ -49,12 +50,14 @@ CR_REG_METADATA(CGlobalSynced, (
 CGlobalSynced::CGlobalSynced()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CGlobalSynced::~CGlobalSynced()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -88,6 +91,7 @@ void CGlobalSynced::ResetState() {
 void CGlobalSynced::LoadFromSetup(const CGameSetup* setup)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -98,6 +102,7 @@ void CGlobalSynced::LoadFromSetup(const CGameSetup* setup)
 int CGlobalSynced::randInt()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -108,6 +113,7 @@ int CGlobalSynced::randInt()
 float CGlobalSynced::randFloat()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -118,4 +124,5 @@ float CGlobalSynced::randFloat()
 float3 CGlobalSynced::randVector()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

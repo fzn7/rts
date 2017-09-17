@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "RectangleOptimizer.h"
@@ -25,69 +26,81 @@ CRectangleOptimizer::CRectangleOptimizer()
 	, needsUpdate(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CRectangleOptimizer::~CRectangleOptimizer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned CRectangleOptimizer::GetTotalArea() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CRectangleOptimizer::Optimize()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CRectangleOptimizer::StageMerge()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CRectangleOptimizer::StageOverlap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CRectangleOptimizer::StageSplitTooLarge()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline std::bitset<4> CRectangleOptimizer::GetEdgesInRect(const SRectangle& rect1, const SRectangle& rect2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline std::bitset<4> CRectangleOptimizer::GetSharedEdges(const SRectangle& rect1, const SRectangle& rect2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline bool CRectangleOptimizer::AreMergable(const SRectangle& rect1, const SRectangle& rect2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CRectangleOptimizer::HandleMerge(SRectangle& rect1, SRectangle& rect2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CRectangleOptimizer::HandleOverlapping(SRectangle* rect1, SRectangle* rect2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

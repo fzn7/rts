@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LuaRules.h"
@@ -43,11 +44,13 @@ CLuaRules::CLuaRules()
 : CLuaHandleSynced("LuaRules", LUA_HANDLE_ORDER_RULES)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CLuaRules::~CLuaRules()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -55,12 +58,14 @@ CLuaRules::~CLuaRules()
 bool CLuaRules::AddSyncedCode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaRules::AddUnsyncedCode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -70,6 +75,7 @@ bool CLuaRules::AddUnsyncedCode(lua_State* L)
 int CLuaRules::UnpackCobArg(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -77,6 +83,7 @@ void CLuaRules::Cob2Lua(const LuaHashString& name, const CUnit* unit,
                         int& argsCount, int args[MAX_LUA_COB_ARGS])
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -89,6 +96,7 @@ void CLuaRules::Cob2Lua(const LuaHashString& name, const CUnit* unit,
 int CLuaRules::PermitHelperAIs(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/

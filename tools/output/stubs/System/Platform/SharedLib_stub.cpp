@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #if defined BUILDING_AI
@@ -27,6 +28,7 @@
 SharedLib* SharedLib::Instantiate(const char* fileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /**
@@ -35,12 +37,14 @@ SharedLib* SharedLib::Instantiate(const char* fileName)
 SharedLib* SharedLib::Instantiate(const std::string& fileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const char* SharedLib::GetLibExtension() 
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SharedLib::reportError(const char* errorMsg, const char* fileName, int lineNumber, const char* function) {

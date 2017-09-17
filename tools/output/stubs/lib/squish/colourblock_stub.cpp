@@ -1,3 +1,4 @@
+#include <iostream>
 /* -----------------------------------------------------------------------------
 
 	Copyright (c) 2006 Simon Brown                          si@sjbrown.co.uk
@@ -30,36 +31,43 @@ namespace squish {
 static int FloatToInt( float a, int limit )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int FloatTo565( Vec3::Arg colour )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void WriteColourBlock( int a, int b, u8* indices, void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void WriteColourBlock3( Vec3::Arg start, Vec3::Arg end, u8 const* indices, void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void WriteColourBlock4( Vec3::Arg start, Vec3::Arg end, u8 const* indices, void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int Unpack565( u8 const* packed, u8* colour )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void DecompressColour( u8* rgba, void const* block, bool isDxt1 )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace squish

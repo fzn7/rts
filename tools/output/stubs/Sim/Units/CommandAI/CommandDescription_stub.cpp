@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "CommandDescription.h"
@@ -29,6 +30,7 @@ CR_REG_METADATA(SCommandDescription, (
 bool SCommandDescription::operator != (const SCommandDescription& cd) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CCommandDescriptionCache* commandDescriptionCache = nullptr;
@@ -41,22 +43,26 @@ CR_REG_METADATA(CCommandDescriptionCache, (
 int CCommandDescriptionCache::CalcHash(const SCommandDescription& cd) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const SCommandDescription* CCommandDescriptionCache::GetPtr(const SCommandDescription& cd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandDescriptionCache::DecRef(const SCommandDescription& cd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CCommandDescriptionCache::DecRef(std::vector<const SCommandDescription*>& cmdDescs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

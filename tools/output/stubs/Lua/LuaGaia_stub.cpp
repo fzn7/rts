@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -49,24 +50,28 @@ CLuaGaia::CLuaGaia()
 : CLuaHandleSynced("LuaGaia", LUA_HANDLE_ORDER_GAIA)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CLuaGaia::~CLuaGaia()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaGaia::AddSyncedCode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CLuaGaia::AddUnsyncedCode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/

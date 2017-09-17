@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /**
@@ -32,6 +33,7 @@
 static void ExitMessage(const std::string& msg, const std::string& caption, unsigned int flags, bool forced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -52,6 +54,7 @@ void ForcedExit(const std::string& msg, const std::string& caption, unsigned int
 void ErrorMessageBox(const std::string& msg, const std::string& caption, unsigned int flags, bool fromMain)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static int exitcode = 0;

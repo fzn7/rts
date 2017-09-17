@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -46,6 +47,7 @@ static int CustomParamsTable(lua_State* L, const void* data);
 bool LuaFeatureDefs::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -54,18 +56,21 @@ bool LuaFeatureDefs::PushEntries(lua_State* L)
 /*static void PushFeatureDef(lua_State* L, const FeatureDef* fd, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int FeatureDefNewIndex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int FeatureDefMetatable(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -74,12 +79,14 @@ static int FeatureDefMetatable(lua_State* L)
 static int Next(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static int Pairs(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -91,6 +98,7 @@ static int Pairs(lua_State* L)
 static int CustomParamsTable(lua_State* L, const void* data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -127,6 +135,7 @@ static int ColVolTable(lua_State* L, const void* data) {
 static bool InitParamMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

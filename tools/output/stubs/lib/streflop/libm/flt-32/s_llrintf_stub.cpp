@@ -1,3 +1,4 @@
+#include <iostream>
 /* See the import.pl script for potential modifications */
 /* Round argument to nearest integral value according to current rounding
    direction.
@@ -27,6 +28,7 @@
 static const Simple two23[2] =
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 weak_alias (__llrintf, llrintf)

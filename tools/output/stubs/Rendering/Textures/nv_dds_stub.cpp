@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 // This software contains source code provided by NVIDIA Corporation.
@@ -186,26 +187,31 @@ CDDSImage::CDDSImage()
     m_valid(false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CDDSImage::~CDDSImage()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDDSImage::create_textureFlat(unsigned int format, unsigned int components, const CTexture &baseImage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDDSImage::create_texture3D(unsigned int format, unsigned int components, const CTexture &baseImage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 inline bool same_size(const CTexture &a, const CTexture &b)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CDDSImage::create_textureCubemap(unsigned int format, unsigned int components,
@@ -214,6 +220,7 @@ void CDDSImage::create_textureCubemap(unsigned int format, unsigned int componen
                                       const CTexture &positiveZ, const CTexture &negativeZ)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -224,16 +231,19 @@ void CDDSImage::create_textureCubemap(unsigned int format, unsigned int componen
 bool CDDSImage::load(string filename, bool flipImage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CDDSImage::write_texture(const CTexture &texture, FILE *fp)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CDDSImage::save(std::string filename, bool flipImage)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -241,11 +251,13 @@ bool CDDSImage::save(std::string filename, bool flipImage)
 void CDDSImage::clear()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CDDSImage::is_compressed() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #ifndef BITMAP_NO_OPENGL
@@ -255,6 +267,7 @@ bool CDDSImage::is_compressed() const
 bool CDDSImage::upload_texture1D()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -272,6 +285,7 @@ bool CDDSImage::upload_texture1D()
 bool CDDSImage::upload_texture2D(unsigned int imageIndex, int target)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -279,11 +293,13 @@ bool CDDSImage::upload_texture2D(unsigned int imageIndex, int target)
 bool CDDSImage::upload_texture3D()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CDDSImage::upload_textureRectangle()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -291,6 +307,7 @@ bool CDDSImage::upload_textureRectangle()
 bool CDDSImage::upload_textureCubemap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #endif // !BITMAP_NO_OPENGL
@@ -300,6 +317,7 @@ bool CDDSImage::upload_textureCubemap()
 inline unsigned int CDDSImage::clamp_size(unsigned int size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -311,6 +329,7 @@ inline unsigned int CDDSImage::clamp_size(unsigned int size)
 inline unsigned int CDDSImage::size_dxtc(unsigned int width, unsigned int height)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -318,6 +337,7 @@ inline unsigned int CDDSImage::size_dxtc(unsigned int width, unsigned int height
 inline unsigned int CDDSImage::size_rgb(unsigned int width, unsigned int height)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -325,6 +345,7 @@ inline unsigned int CDDSImage::size_rgb(unsigned int width, unsigned int height)
 void CDDSImage::flip(CSurface &surface)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -332,6 +353,7 @@ void CDDSImage::flip(CSurface &surface)
 void CDDSImage::swap(void *byte1, void *byte2, unsigned int size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -339,6 +361,7 @@ void CDDSImage::swap(void *byte1, void *byte2, unsigned int size)
 void CDDSImage::flip_blocks_dxtc1(DXTColBlock *line, unsigned int numBlocks)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -346,6 +369,7 @@ void CDDSImage::flip_blocks_dxtc1(DXTColBlock *line, unsigned int numBlocks)
 void CDDSImage::flip_blocks_dxtc3(DXTColBlock *line, unsigned int numBlocks)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -353,6 +377,7 @@ void CDDSImage::flip_blocks_dxtc3(DXTColBlock *line, unsigned int numBlocks)
 void CDDSImage::flip_dxt5_alpha(DXT5AlphaBlock *block)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -360,6 +385,7 @@ void CDDSImage::flip_dxt5_alpha(DXT5AlphaBlock *block)
 void CDDSImage::flip_blocks_dxtc5(DXTColBlock *line, unsigned int numBlocks)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -372,6 +398,7 @@ CTexture::CTexture()
   : CSurface()  // initialize base class part
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -380,11 +407,13 @@ CTexture::CTexture(unsigned int w, unsigned int h, unsigned int d, unsigned int 
   : CSurface(w, h, d, imgsize, pixels)  // initialize base class part
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CTexture::~CTexture()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -393,6 +422,7 @@ CTexture::CTexture(const CTexture &copy)
   : CSurface(copy)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -400,16 +430,19 @@ CTexture::CTexture(const CTexture &copy)
 CTexture &CTexture::operator= (const CTexture &rhs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTexture::create(unsigned int w, unsigned int h, unsigned int d, unsigned int imgsize, const unsigned char *pixels)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CTexture::clear()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -426,6 +459,7 @@ CSurface::CSurface()
     m_pixels(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -438,6 +472,7 @@ CSurface::CSurface(unsigned int w, unsigned int h, unsigned int d, unsigned int 
     m_pixels(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -450,6 +485,7 @@ CSurface::CSurface(const CSurface &copy)
     m_pixels(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -457,6 +493,7 @@ CSurface::CSurface(const CSurface &copy)
 CSurface &CSurface::operator= (const CSurface &rhs)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -464,6 +501,7 @@ CSurface &CSurface::operator= (const CSurface &rhs)
 CSurface::~CSurface()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -471,6 +509,7 @@ CSurface::~CSurface()
 CSurface::operator unsigned char*() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -478,6 +517,7 @@ CSurface::operator unsigned char*() const
 void CSurface::create(unsigned int w, unsigned int h, unsigned int d, unsigned int imgsize, const unsigned char *pixels)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -485,4 +525,5 @@ void CSurface::create(unsigned int w, unsigned int h, unsigned int d, unsigned i
 void CSurface::clear()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

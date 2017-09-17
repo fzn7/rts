@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "BasicTreeDrawer.h"
@@ -27,16 +28,19 @@ static const float MAX_TREE_HEIGHT_6  = MAX_TREE_HEIGHT * 0.6f;
 CBasicTreeDrawer::CBasicTreeDrawer(): ITreeDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CBasicTreeDrawer::~CBasicTreeDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void inline SetArrayQ(CVertexArray* va, float t1, float t2, float3 v)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -44,5 +48,6 @@ static void inline SetArrayQ(CVertexArray* va, float t1, float t2, float3 v)
 struct CBasicTreeSquareDrawer : public CReadMap::IQuadDrawer
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "LuaHandleSynced.h"
@@ -66,18 +67,21 @@ CUnsyncedLuaHandle::CUnsyncedLuaHandle(CLuaHandleSynced* _base, const string& _n
 	, base(*_base)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CUnsyncedLuaHandle::~CUnsyncedLuaHandle()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnsyncedLuaHandle::Init(const string& code, const string& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -88,30 +92,35 @@ bool CUnsyncedLuaHandle::Init(const string& code, const string& file)
 void CUnsyncedLuaHandle::RecvFromSynced(lua_State* srcState, int args)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnsyncedLuaHandle::DrawUnit(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnsyncedLuaHandle::DrawFeature(const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnsyncedLuaHandle::DrawShield(const CUnit* unit, const CWeapon* weapon)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CUnsyncedLuaHandle::DrawProjectile(const CProjectile* projectile)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -136,18 +145,21 @@ CSyncedLuaHandle::CSyncedLuaHandle(CLuaHandleSynced* _base, const string& _name,
 	, origNextRef(-1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CSyncedLuaHandle::~CSyncedLuaHandle()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncedLuaHandle::Init(const string& code, const string& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -158,18 +170,21 @@ bool CSyncedLuaHandle::Init(const string& code, const string& file)
 bool CSyncedLuaHandle::SyncedActionFallback(const string& msg, int playerID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncedLuaHandle::CommandFallback(const CUnit* unit, const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncedLuaHandle::AllowCommand(const CUnit* unit, const Command& cmd, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -177,6 +192,7 @@ bool CSyncedLuaHandle::AllowUnitCreation(const UnitDef* unitDef,
                                   const CUnit* builder, const BuildInfo* buildInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -184,6 +200,7 @@ bool CSyncedLuaHandle::AllowUnitCreation(const UnitDef* unitDef,
 bool CSyncedLuaHandle::AllowUnitTransfer(const CUnit* unit, int newTeam, bool capture)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -191,6 +208,7 @@ bool CSyncedLuaHandle::AllowUnitBuildStep(const CUnit* builder,
                                    const CUnit* unit, float part)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -198,6 +216,7 @@ bool CSyncedLuaHandle::AllowFeatureCreation(const FeatureDef* featureDef,
                                      int teamID, const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -205,12 +224,14 @@ bool CSyncedLuaHandle::AllowFeatureBuildStep(const CUnit* builder,
                                       const CFeature* feature, float part)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncedLuaHandle::AllowResourceLevel(int teamID, const string& type, float level)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -218,36 +239,42 @@ bool CSyncedLuaHandle::AllowResourceTransfer(int oldTeam, int newTeam,
                                       const string& type, float amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncedLuaHandle::AllowDirectUnitControl(int playerID, const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncedLuaHandle::AllowBuilderHoldFire(const CUnit* unit, int action)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncedLuaHandle::AllowStartPosition(int playerID, unsigned char readyState, const float3& clampedPos, const float3& rawPickPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncedLuaHandle::MoveCtrlNotify(const CUnit* unit, int data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CSyncedLuaHandle::TerraformComplete(const CUnit* unit, const CUnit* build)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -271,6 +298,7 @@ bool CSyncedLuaHandle::UnitPreDamaged(
 	float* impulseMult)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CSyncedLuaHandle::FeaturePreDamaged(
@@ -283,6 +311,7 @@ bool CSyncedLuaHandle::FeaturePreDamaged(
 	float* impulseMult)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CSyncedLuaHandle::ShieldPreDamaged(
@@ -294,12 +323,14 @@ bool CSyncedLuaHandle::ShieldPreDamaged(
 	const CUnit* beamCarrier)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CSyncedLuaHandle::AllowWeaponTargetCheck(unsigned int attackerID, unsigned int attackerWeaponNum, unsigned int attackerWeaponDefID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -311,6 +342,7 @@ bool CSyncedLuaHandle::AllowWeaponTarget(
 	float* targetPriority)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -352,42 +384,49 @@ bool CSyncedLuaHandle::AllowWeaponInterceptTarget(
 int CSyncedLuaHandle::SyncedRandom(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CSyncedLuaHandle::SyncedRandomSeed(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CSyncedLuaHandle::SyncedNext(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CSyncedLuaHandle::SyncedPairs(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CSyncedLuaHandle::SendToUnsynced(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CSyncedLuaHandle::AddSyncedActionFallback(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CSyncedLuaHandle::RemoveSyncedActionFallback(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -440,24 +479,28 @@ CLuaHandleSynced::CLuaHandleSynced(const string& _name, int _order)
 	, unsyncedLuaHandle(this, _name, _order + 1)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CLuaHandleSynced::~CLuaHandleSynced()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaHandleSynced::Init(const string& syncedFile, const string& unsyncedFile, const string& modes)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 string CLuaHandleSynced::LoadFile(const string& filename, const string& modes) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 //
@@ -467,12 +510,14 @@ string CLuaHandleSynced::LoadFile(const string& filename, const string& modes) c
 int CLuaHandleSynced::LoadStringData(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CLuaHandleSynced::CallAsTeam(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

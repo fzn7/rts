@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "NullUnitScript.h"
@@ -19,10 +20,12 @@ CNullUnitScript::CNullUnitScript(CUnit *u)
 	: CUnitScript(u)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CNullUnitScript::ShowScriptError(const std::string& msg)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

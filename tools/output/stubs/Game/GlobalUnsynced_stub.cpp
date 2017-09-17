@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /**
@@ -58,28 +59,33 @@ CR_REG_METADATA(CGlobalUnsynced, (
 CGlobalUnsynced::CGlobalUnsynced()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGlobalUnsynced::~CGlobalUnsynced()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGlobalUnsynced::ResetState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGlobalUnsynced::LoadFromSetup(const CGameSetup* setup)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGlobalUnsynced::SetMyPlayer(const int myNumber)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CPlayer* CGlobalUnsynced::GetMyPlayer() {

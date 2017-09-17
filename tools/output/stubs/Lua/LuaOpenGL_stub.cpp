@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -103,11 +104,13 @@ std::set<unsigned int> LuaOpenGL::occlusionQueries;
 static inline CUnit* ParseUnit(lua_State* L, const char* caller, int index, bool allyCheck = true)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline CUnit* ParseDrawUnit(lua_State* L, const char* caller, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -116,11 +119,13 @@ static inline CUnit* ParseDrawUnit(lua_State* L, const char* caller, int index)
 static inline bool IsFeatureVisible(const lua_State* L, const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static CFeature* ParseFeature(lua_State* L, const char* caller, int index)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -132,11 +137,13 @@ static CFeature* ParseFeature(lua_State* L, const char* caller, int index)
 void LuaOpenGL::Init()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::Free()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -146,6 +153,7 @@ void LuaOpenGL::Free()
 bool LuaOpenGL::PushEntries(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -155,6 +163,7 @@ bool LuaOpenGL::PushEntries(lua_State* L)
 void LuaOpenGL::ResetGLState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -178,12 +187,14 @@ const GLbitfield AttribBits =
 void LuaOpenGL::EnableCommon(DrawMode mode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::DisableCommon(DrawMode mode)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -195,18 +206,21 @@ void LuaOpenGL::DisableCommon(DrawMode mode)
 void LuaOpenGL::EnableDrawGenesis()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::DisableDrawGenesis()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::ResetDrawGenesis()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -218,16 +232,19 @@ void LuaOpenGL::ResetDrawGenesis()
 void LuaOpenGL::EnableDrawWorld()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::DisableDrawWorld()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::ResetDrawWorld()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -239,16 +256,19 @@ void LuaOpenGL::ResetDrawWorld()
 void LuaOpenGL::EnableDrawWorldPreUnit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::DisableDrawWorldPreUnit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::ResetDrawWorldPreUnit()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -260,16 +280,19 @@ void LuaOpenGL::ResetDrawWorldPreUnit()
 void LuaOpenGL::EnableDrawWorldShadow()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::DisableDrawWorldShadow()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::ResetDrawWorldShadow()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -281,16 +304,19 @@ void LuaOpenGL::ResetDrawWorldShadow()
 void LuaOpenGL::EnableDrawWorldReflection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::DisableDrawWorldReflection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::ResetDrawWorldReflection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -302,16 +328,19 @@ void LuaOpenGL::ResetDrawWorldReflection()
 void LuaOpenGL::EnableDrawWorldRefraction()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::DisableDrawWorldRefraction()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void LuaOpenGL::ResetDrawWorldRefraction()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -323,18 +352,21 @@ void LuaOpenGL::ResetDrawWorldRefraction()
 void LuaOpenGL::EnableDrawScreenEffects()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::DisableDrawScreenEffects()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::ResetDrawScreenEffects()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -346,18 +378,21 @@ void LuaOpenGL::ResetDrawScreenEffects()
 void LuaOpenGL::EnableDrawScreen()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::DisableDrawScreen()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::ResetDrawScreen()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -369,18 +404,21 @@ void LuaOpenGL::ResetDrawScreen()
 void LuaOpenGL::EnableDrawInMiniMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::DisableDrawInMiniMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::ResetDrawInMiniMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -392,18 +430,21 @@ void LuaOpenGL::ResetDrawInMiniMap()
 void LuaOpenGL::EnableDrawInMiniMapBackground()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::DisableDrawInMiniMapBackground()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::ResetDrawInMiniMapBackground()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -413,36 +454,42 @@ void LuaOpenGL::ResetDrawInMiniMapBackground()
 void LuaOpenGL::SetupWorldLighting()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::RevertWorldLighting()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::SetupScreenMatrices()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::RevertScreenMatrices()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::SetupScreenLighting()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::RevertScreenLighting()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -452,30 +499,35 @@ void LuaOpenGL::RevertScreenLighting()
 void LuaOpenGL::ResetGenesisMatrices()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::ResetWorldMatrices()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::ResetWorldShadowMatrices()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::ResetScreenMatrices()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void LuaOpenGL::ResetMiniMapMatrices()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -486,6 +538,7 @@ void LuaOpenGL::ResetMiniMapMatrices()
 inline void LuaOpenGL::CheckDrawingEnabled(lua_State* L, const char* caller)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -494,48 +547,56 @@ inline void LuaOpenGL::CheckDrawingEnabled(lua_State* L, const char* caller)
 int LuaOpenGL::HasExtension(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::GetNumber(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::GetString(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::ConfigScreen(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::GetViewSizes(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::SlaveMiniMap(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::ConfigMiniMap(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::DrawMiniMap(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -548,30 +609,35 @@ int LuaOpenGL::DrawMiniMap(lua_State* L)
 int LuaOpenGL::BeginText(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::EndText(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Text(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::GetTextWidth(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::GetTextHeight(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -580,39 +646,46 @@ int LuaOpenGL::GetTextHeight(lua_State* L)
 static void GLObjectPiece(lua_State* L, const CSolidObject* obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void GLObjectPieceMultMatrix(lua_State* L, const CSolidObject* obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static bool GLObjectDrawWithLuaMat(lua_State* L, CSolidObject* obj, LuaObjType objType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void GLObjectShape(lua_State* L, const SolidObjectDef* def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void GLObjectTextures(lua_State* L, const CSolidObject* obj)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void GLObjectShapeTextures(lua_State* L, const SolidObjectDef* def)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::UnitCommon(lua_State* L, bool applyTransform, bool callDrawUnit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::Unit(lua_State* L) { return (UnitCommon(L, true, true)); }
@@ -621,33 +694,39 @@ int LuaOpenGL::UnitRaw(lua_State* L) { return (UnitCommon(L, false, false)); }
 int LuaOpenGL::UnitTextures(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::UnitShape(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::UnitShapeTextures(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::UnitMultMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::UnitPiece(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::UnitPieceMatrix(lua_State* L) { return (UnitPieceMultMatrix(L)); }
 int LuaOpenGL::UnitPieceMultMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -656,6 +735,7 @@ int LuaOpenGL::UnitPieceMultMatrix(lua_State* L)
 int LuaOpenGL::FeatureCommon(lua_State* L, bool applyTransform, bool callDrawFeature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::Feature(lua_State* L) { return (FeatureCommon(L, true, true)); }
@@ -664,27 +744,32 @@ int LuaOpenGL::FeatureRaw(lua_State* L) { return (FeatureCommon(L, false, false)
 int LuaOpenGL::FeatureTextures(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::FeatureShape(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::FeatureShapeTextures(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::FeatureMultMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::FeaturePiece(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -692,6 +777,7 @@ int LuaOpenGL::FeaturePieceMatrix(lua_State* L) { return (FeaturePieceMultMatrix
 int LuaOpenGL::FeaturePieceMultMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -701,24 +787,28 @@ int LuaOpenGL::FeaturePieceMultMatrix(lua_State* L)
 int LuaOpenGL::DrawListAtUnit(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::DrawFuncAtUnit(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::DrawGroundCircle(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::DrawGroundQuad(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -740,12 +830,14 @@ struct VertexData {
 static bool ParseVertexData(lua_State* L, VertexData& vd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Shape(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -754,6 +846,7 @@ int LuaOpenGL::Shape(lua_State* L)
 int LuaOpenGL::BeginEnd(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -762,42 +855,49 @@ int LuaOpenGL::BeginEnd(lua_State* L)
 int LuaOpenGL::Vertex(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Normal(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::TexCoord(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::MultiTexCoord(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::SecondaryColor(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::FogCoord(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::EdgeFlag(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -806,12 +906,14 @@ int LuaOpenGL::EdgeFlag(lua_State* L)
 int LuaOpenGL::Rect(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::TexRect(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -820,12 +922,14 @@ int LuaOpenGL::TexRect(lua_State* L)
 int LuaOpenGL::Color(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Material(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -834,132 +938,154 @@ int LuaOpenGL::Material(lua_State* L)
 int LuaOpenGL::ResetState(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::ResetMatrices(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Lighting(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::ShadeModel(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Scissor(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Viewport(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::ColorMask(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::DepthMask(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::DepthTest(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::DepthClamp(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Culling(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::LogicOp(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Fog(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Blending(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::BlendEquation(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::BlendFunc(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::BlendEquationSeparate(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::BlendFuncSeparate(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Smoothing(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::AlphaTest(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::PolygonMode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::PolygonOffset(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -968,42 +1094,49 @@ int LuaOpenGL::PolygonOffset(lua_State* L)
 int LuaOpenGL::StencilTest(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::StencilMask(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::StencilFunc(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::StencilOp(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::StencilMaskSeparate(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::StencilFuncSeparate(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::StencilOpSeparate(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1012,48 +1145,56 @@ int LuaOpenGL::StencilOpSeparate(lua_State* L)
 int LuaOpenGL::LineStipple(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::LineWidth(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::PointSize(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::PointSprite(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::PointParameter(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Texture(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::CreateTexture(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::DeleteTexture(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1061,18 +1202,21 @@ int LuaOpenGL::DeleteTexture(lua_State* L)
 int LuaOpenGL::DeleteTextureFBO(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::TextureInfo(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::CopyToTexture(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1080,48 +1224,56 @@ int LuaOpenGL::CopyToTexture(lua_State* L)
 int LuaOpenGL::RenderToTexture(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::GenerateMipmap(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::ActiveTexture(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::TexEnv(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::MultiTexEnv(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void SetTexGenState(GLenum target, bool state)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::TexGen(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::MultiTexGen(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1130,6 +1282,7 @@ int LuaOpenGL::MultiTexGen(lua_State* L)
 int LuaOpenGL::Clear(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1138,36 +1291,42 @@ int LuaOpenGL::Clear(lua_State* L)
 int LuaOpenGL::Translate(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Scale(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Rotate(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Ortho(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Frustum(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Billboard(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1176,12 +1335,14 @@ int LuaOpenGL::Billboard(lua_State* L)
 int LuaOpenGL::Light(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::ClipPlane(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1190,48 +1351,56 @@ int LuaOpenGL::ClipPlane(lua_State* L)
 int LuaOpenGL::MatrixMode(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::LoadIdentity(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::LoadMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::MultMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::PushMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::PopMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::PushPopMatrix(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::GetMatrixData(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -1239,18 +1408,21 @@ int LuaOpenGL::GetMatrixData(lua_State* L)
 int LuaOpenGL::PushAttrib(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::PopAttrib(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::UnsafeState(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1259,18 +1431,21 @@ int LuaOpenGL::UnsafeState(lua_State* L)
 int LuaOpenGL::CreateList(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::CallList(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::DeleteList(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1279,12 +1454,14 @@ int LuaOpenGL::DeleteList(lua_State* L)
 int LuaOpenGL::Flush(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::Finish(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1293,24 +1470,28 @@ int LuaOpenGL::Finish(lua_State* L)
 static int PixelFormatSize(GLenum f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void PushPixelData(lua_State* L, int fSize, const float*& data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::ReadPixels(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::SaveImage(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1319,24 +1500,28 @@ int LuaOpenGL::SaveImage(lua_State* L)
 int LuaOpenGL::CreateQuery(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::DeleteQuery(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::RunQuery(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::GetQuery(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -1345,28 +1530,33 @@ int LuaOpenGL::GetQuery(lua_State* L)
 int LuaOpenGL::GetGlobalTexNames(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::GetGlobalTexCoords(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int LuaOpenGL::GetShadowMapParams(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::GetAtmosphere(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 int LuaOpenGL::GetSun(lua_State* L)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "SpringTime.h"
@@ -195,23 +196,27 @@ static boost::mutex sleepTimeMutex;
 static void thread_yield()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void spring_time::sleep()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void spring_time::sleep_until()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #if defined USING_CREG && !defined UNIT_TEST
 void spring_time::Serialize(creg::ISerializer* s)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 

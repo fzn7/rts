@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <string>
@@ -43,82 +44,96 @@ CLuaLoadSaveHandler::CLuaLoadSaveHandler()
 	, loadfile(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CLuaLoadSaveHandler::~CLuaLoadSaveHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::SaveGame(const std::string& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::SaveEventClients()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::SaveGameStartInfo()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::SaveAIData()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::SaveHeightmap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::SaveEntireFile(const char* file, const char* what, const void* data, int size, bool throwOnError)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::LoadGameStartInfo(const std::string& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::LoadGame()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::LoadEventClients()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::LoadAIData()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CLuaLoadSaveHandler::LoadHeightmap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string CLuaLoadSaveHandler::LoadEntireFile(const std::string& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 /* heavily based on CobEngine.cpp */
@@ -48,36 +49,42 @@ void CUnitScriptEngine::KillStatic() {
 CUnitScriptEngine::CUnitScriptEngine() : currentScript(nullptr)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CUnitScriptEngine::~CUnitScriptEngine()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScriptEngine::CheckForDuplicates(const char* name, const CUnitScript* instance)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScriptEngine::AddInstance(CUnitScript *instance)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScriptEngine::RemoveInstance(CUnitScript *instance)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CUnitScriptEngine::Tick(int deltaTime)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 

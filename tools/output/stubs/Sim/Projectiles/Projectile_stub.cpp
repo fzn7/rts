@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Projectile.h"
@@ -88,6 +89,7 @@ CProjectile::CProjectile()
 	, collisionFlags(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CProjectile::CProjectile(
@@ -126,41 +128,48 @@ CProjectile::CProjectile(
 	, collisionFlags(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CProjectile::~CProjectile()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CProjectile::Init(const CUnit* owner, const float3& offset)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CProjectile::Delete()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CProjectile::DrawOnMinimap(CVertexArray& lines, CVertexArray& points)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CProjectile::DrawArray()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -193,4 +202,5 @@ CMatrix44f CProjectile::GetTransformMatrix(bool offsetPos) const {
 bool CProjectile::GetMemberInfo(SExpGenSpawnableMemberInfo& memberInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

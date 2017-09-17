@@ -1,3 +1,4 @@
+#include <iostream>
 /* -----------------------------------------------------------------------------
 
 	Copyright (c) 2006 Simon Brown                          si@sjbrown.co.uk
@@ -33,27 +34,32 @@ namespace squish {
 struct SourceBlock
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 SingleColourFit::SingleColourFit( ColourSet const* colours, int flags )
   : ColourFit( colours, flags )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SingleColourFit::Compress3( void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SingleColourFit::Compress4( void* block )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void SingleColourFit::ComputeEndPoints( SingleColourLookup const* const* lookups )
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 } // namespace squish

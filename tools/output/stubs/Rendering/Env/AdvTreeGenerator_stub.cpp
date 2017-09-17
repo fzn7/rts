@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <cstring>
@@ -34,76 +35,91 @@ CAdvTreeGenerator* treeGen;
 CAdvTreeGenerator::CAdvTreeGenerator()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CAdvTreeGenerator::~CAdvTreeGenerator()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::Draw() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::DrawTrunk(const float3& start, const float3& end, const float3& orto1, const float3& orto2, float size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::MainTrunk(int numBranch,float height,float width)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::TrunkIterator(const float3& start, const float3& dir, float length, float size, int depth)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::CreateLeaves(const float3& start, const float3& dir, float length, float3& orto1,float3& orto2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::CreateFarTex(Shader::IProgramObject* treeShader)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::CreateFarView(unsigned char* mem,int dx,int dy,unsigned int displist)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CAdvTreeGenerator::CreateGranTex(unsigned char* data, int xpos, int ypos, int xsize)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::CreateGranTexBranch(const float3& start, const float3& end)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::PineTree(int numBranch, float height)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::DrawPineTrunk(const float3 &start, const float3 &end, float size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CAdvTreeGenerator::DrawPineBranch(const float3 &start, const float3 &dir, float size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CAdvTreeGenerator::CreateLeafTex(unsigned int baseTex, int xpos, int ypos,unsigned char buf[256][2048][4])
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

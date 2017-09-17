@@ -87,11 +87,13 @@ CExplosionGeneratorHandler* explGenHandler = NULL;
 unsigned int CCustomExplosionGenerator::GetFlagsFromTable(const LuaTable& table)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 unsigned int CCustomExplosionGenerator::GetFlagsFromHeight(float height, float groundHeight)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -99,18 +101,21 @@ unsigned int CCustomExplosionGenerator::GetFlagsFromHeight(float height, float g
 void ClassAliasList::Load(const LuaTable& aliasTable)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string ClassAliasList::ResolveAlias(const string& name) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 string ClassAliasList::FindAlias(const string& className) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -121,11 +126,13 @@ string ClassAliasList::FindAlias(const string& className) const
 CExplosionGeneratorHandler::CExplosionGeneratorHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CExplosionGeneratorHandler::~CExplosionGeneratorHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CExplosionGeneratorHandler::ParseExplosionTables() {
@@ -202,6 +209,7 @@ void CExplosionGeneratorHandler::ReloadGenerators(const std::string& tag) {
 unsigned int CExplosionGeneratorHandler::LoadGeneratorID(const std::string& tag)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // creates either a standard or a custom explosion generator instance
@@ -212,11 +220,13 @@ unsigned int CExplosionGeneratorHandler::LoadGeneratorID(const std::string& tag)
 IExplosionGenerator* CExplosionGeneratorHandler::LoadGenerator(const string& tag)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 IExplosionGenerator* CExplosionGeneratorHandler::GetGenerator(unsigned int expGenID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CExplosionGeneratorHandler::GenExplosion(
@@ -466,6 +476,7 @@ bool CStdExplosionGenerator::Explosion(
 void CCustomExplosionGenerator::ExecuteExplosionCode(const char* code, float damage, char* instance, int spawnIndex, const float3& dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -477,6 +488,7 @@ void CCustomExplosionGenerator::ParseExplosionCode(
 	string& code)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -484,6 +496,7 @@ void CCustomExplosionGenerator::ParseExplosionCode(
 bool CCustomExplosionGenerator::Load(CExplosionGeneratorHandler* handler, const string& tag)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CCustomExplosionGenerator::Reload(CExplosionGeneratorHandler* handler, const std::string& tag) {
@@ -549,5 +562,6 @@ bool CCustomExplosionGenerator::Explosion(
 bool CCustomExplosionGenerator::OutputProjectileClassInfo()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

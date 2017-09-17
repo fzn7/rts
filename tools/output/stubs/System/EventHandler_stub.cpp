@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "System/EventHandler.h"
@@ -24,6 +25,7 @@ void CEventHandler::SetupEvent(const string& eName,
                                EventClientList* list, int props)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -32,16 +34,19 @@ void CEventHandler::SetupEvent(const string& eName,
 CEventHandler::CEventHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CEventHandler::~CEventHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEventHandler::SetupEvents()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -51,11 +56,13 @@ void CEventHandler::SetupEvents()
 void CEventHandler::AddClient(CEventClient* ec)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEventHandler::RemoveClient(CEventClient* ec)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -65,30 +72,35 @@ void CEventHandler::RemoveClient(CEventClient* ec)
 void CEventHandler::GetEventList(vector<string>& list) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::IsKnown(const string& eName) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::IsManaged(const string& eName) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::IsUnsynced(const string& eName) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::IsController(const string& eName) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -97,12 +109,14 @@ bool CEventHandler::IsController(const string& eName) const
 bool CEventHandler::InsertEvent(CEventClient* ec, const string& ciName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::RemoveEvent(CEventClient* ec, const string& ciName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -111,12 +125,14 @@ bool CEventHandler::RemoveEvent(CEventClient* ec, const string& ciName)
 void CEventHandler::ListInsert(EventClientList& ecList, CEventClient* ec)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::ListRemove(EventClientList& ecList, CEventClient* ec)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -147,72 +163,84 @@ void CEventHandler::ListRemove(EventClientList& ecList, CEventClient* ec)
 bool CEventHandler::CommandFallback(const CUnit* unit, const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowCommand(const CUnit* unit, const Command& cmd, bool fromSynced)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowUnitCreation(const UnitDef* unitDef, const CUnit* builder, const BuildInfo* buildInfo)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowUnitTransfer(const CUnit* unit, int newTeam, bool capture)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowUnitBuildStep(const CUnit* builder, const CUnit* unit, float part)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowFeatureCreation(const FeatureDef* featureDef, int allyTeamID, const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowFeatureBuildStep(const CUnit* builder, const CFeature* feature, float part)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowResourceLevel(int teamID, const string& type, float level)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowResourceTransfer(int oldTeam, int newTeam, const string& type, float amount)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowDirectUnitControl(int playerID, const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowBuilderHoldFire(const CUnit* unit, int action)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AllowStartPosition(int playerID, unsigned char readyState, const float3& clampedPos, const float3& rawPickPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -220,18 +248,21 @@ bool CEventHandler::AllowStartPosition(int playerID, unsigned char readyState, c
 bool CEventHandler::TerraformComplete(const CUnit* unit, const CUnit* build)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::MoveCtrlNotify(const CUnit* unit, int data)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CEventHandler::AllowWeaponTargetCheck(unsigned int attackerID, unsigned int attackerWeaponNum, unsigned int attackerWeaponDefID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -249,6 +280,7 @@ bool CEventHandler::AllowWeaponTarget(
 bool CEventHandler::AllowWeaponInterceptTarget(const CUnit* interceptorUnit, const CWeapon* interceptorWeapon, const CProjectile* interceptorTarget)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -294,6 +326,7 @@ bool CEventHandler::ShieldPreDamaged(
 bool CEventHandler::SyncedActionFallback(const string& line, int playerID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -312,72 +345,84 @@ bool CEventHandler::SyncedActionFallback(const string& line, int playerID)
 void CEventHandler::Save(zipFile archive)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::GamePreload()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::GameStart()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::GameOver(const std::vector<unsigned char>& winningAllyTeams)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::GamePaused(int playerID, bool paused)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::GameFrame(int gameFrame)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::GameID(const unsigned char* gameID, unsigned int numBytes)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::TeamDied(int teamID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::TeamChanged(int teamID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::PlayerChanged(int playerID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::PlayerAdded(int playerID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::PlayerRemoved(int playerID, int reason)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -387,6 +432,7 @@ void CEventHandler::PlayerRemoved(int playerID, int reason)
 void CEventHandler::UnitHarvestStorageFull(const CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 /******************************************************************************/
@@ -395,24 +441,28 @@ void CEventHandler::UnitHarvestStorageFull(const CUnit* unit)
 void CEventHandler::CollectGarbage()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::DbgTimingInfo(DbgTimingInfoType type, const spring_time start, const spring_time end)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::Load(IArchive* archive)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -420,17 +470,20 @@ void CEventHandler::Update()
 void CEventHandler::SunChanged()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEventHandler::ViewResize()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::GameProgress(int gameFrame)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -509,81 +562,95 @@ DRAW_ENTITY_CALLIN(Projectile, (const CProjectile* projectile), (projectile))
 bool CEventHandler::CommandNotify(const Command& cmd)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::KeyPress(int key, bool isRepeat)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::KeyRelease(int key)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::TextInput(const std::string& utf8)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::MousePress(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::MouseRelease(int x, int y, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::MouseMove(int x, int y, int dx, int dy, int button)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::MouseWheel(bool up, float value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CEventHandler::JoystickEvent(const std::string& event, int val1, int val2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CEventHandler::IsAbove(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 string CEventHandler::GetTooltip(int x, int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::AddConsoleLine(const std::string& msg, const std::string& section, int level)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CEventHandler::LastMessagePosition(const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CEventHandler::GroupChanged(int groupID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -592,31 +659,37 @@ bool CEventHandler::GameSetup(const string& state, bool& ready,
                                   const map<int, string>& playerStates)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEventHandler::DownloadQueued(int ID, const string& archiveName, const string& archiveType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEventHandler::DownloadStarted(int ID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEventHandler::DownloadFinished(int ID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEventHandler::DownloadFailed(int ID, int errorID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CEventHandler::DownloadProgress(int ID, long downloaded, long total)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 string CEventHandler::WorldTooltip(const CUnit* unit,
@@ -624,6 +697,7 @@ string CEventHandler::WorldTooltip(const CUnit* unit,
                                    const float3* groundPos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -632,6 +706,7 @@ bool CEventHandler::MapDrawCmd(int playerID, int type,
                                    const string* label)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -641,5 +716,6 @@ bool CEventHandler::MapDrawCmd(int playerID, int type,
 void CEventHandler::MetalMapChanged(const int x, const int z)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

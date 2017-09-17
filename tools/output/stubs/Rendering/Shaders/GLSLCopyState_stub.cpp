@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "GLSLCopyState.h"
@@ -43,6 +44,7 @@ std::map<GLenum, int> bindingType;
 static void CreateBindingTypeMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 DO_ONCE(CreateBindingTypeMap)
@@ -51,30 +53,35 @@ DO_ONCE(CreateBindingTypeMap)
 static void CopyShaderState_Uniforms(GLuint newProgID, GLuint oldProgID, std::unordered_map<std::size_t, Shader::UniformState, fast_hash>* uniformStates)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void CopyShaderState_UniformBlocks(GLuint newProgID, GLuint oldProgID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void CopyShaderState_ShaderStorage(GLuint newProgID, GLuint oldProgID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void CopyShaderState_Attributes(GLuint newProgID, GLuint oldProgID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 static void CopyShaderState_TransformFeedback(GLuint newProgID, GLuint oldProgID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -82,11 +89,13 @@ static void CopyShaderState_TransformFeedback(GLuint newProgID, GLuint oldProgID
 static bool CopyShaderState_ContainsGeometryShader(GLuint oldProgID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void CopyShaderState_Geometry(GLuint newProgID, GLuint oldProgID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 #endif
 

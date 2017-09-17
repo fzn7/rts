@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <assert.h>
@@ -22,17 +23,20 @@ CR_REG_METADATA(CGroundBlockingObjectMap, (
 void CGroundBlockingObjectMap::AddGroundBlockingObject(CSolidObject* object)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGroundBlockingObjectMap::AddGroundBlockingObject(CSolidObject* object, const YardMapStatus& mask)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGroundBlockingObjectMap::RemoveGroundBlockingObject(CSolidObject* object)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -55,12 +59,14 @@ CSolidObject* CGroundBlockingObjectMap::GroundBlocked(const float3& pos) const {
 bool CGroundBlockingObjectMap::GroundBlocked(int x, int z, const CSolidObject* ignoreObj) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGroundBlockingObjectMap::GroundBlocked(const float3& pos, const CSolidObject* ignoreObj) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -72,6 +78,7 @@ bool CGroundBlockingObjectMap::GroundBlocked(const float3& pos, const CSolidObje
 void CGroundBlockingObjectMap::OpenBlockingYard(CSolidObject* object)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -85,28 +92,33 @@ void CGroundBlockingObjectMap::OpenBlockingYard(CSolidObject* object)
 void CGroundBlockingObjectMap::CloseBlockingYard(CSolidObject* object)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline bool CGroundBlockingObjectMap::CheckYard(CSolidObject* yardUnit, const YardMapStatus& mask) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGroundBlockingObjectMap::CanOpenYard(CSolidObject* yardUnit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGroundBlockingObjectMap::CanCloseYard(CSolidObject* yardUnit) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 unsigned int CGroundBlockingObjectMap::CalcChecksum() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

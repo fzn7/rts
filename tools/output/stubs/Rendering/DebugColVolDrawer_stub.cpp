@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "DebugColVolDrawer.h"
@@ -24,6 +25,7 @@ static unsigned int volumeDisplayListIDs[3] = {0, 0, 0};
 static inline void DrawCollisionVolume(const CollisionVolume* vol)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -32,12 +34,14 @@ static inline void DrawCollisionVolume(const CollisionVolume* vol)
 static void DrawUnitDebugPieceTree(const LocalModelPiece* lmp, const LocalModelPiece* lap, int lapf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 */
 
 static void DrawObjectDebugPieces(const CSolidObject* o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -45,6 +49,7 @@ static void DrawObjectDebugPieces(const CSolidObject* o)
 static inline void DrawObjectMidAndAimPos(const CSolidObject* o)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -52,11 +57,13 @@ static inline void DrawObjectMidAndAimPos(const CSolidObject* o)
 static inline void DrawFeatureColVol(const CFeature* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static inline void DrawUnitColVol(const CUnit* u)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -90,4 +97,5 @@ public:
 namespace DebugColVolDrawer
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

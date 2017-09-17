@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <algorithm>
@@ -21,26 +22,31 @@ TdfParser::parse_error::parse_error(size_t l, size_t c, std::string const& f) th
 	, filename(f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 TdfParser::TdfSection* TdfParser::TdfSection::construct_subsection(const std::string& name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool TdfParser::TdfSection::remove(const std::string& key, bool caseSensitive)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void TdfParser::TdfSection::add_name_value(const std::string& name, const std::string& value)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 TdfParser::TdfSection::~TdfSection()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -48,16 +54,19 @@ TdfParser::TdfSection::~TdfSection()
 TdfParser::TdfParser(char const* buf, size_t size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 TdfParser::TdfParser(std::string const& filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 TdfParser::~TdfParser()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void TdfParser::print(std::ostream & out) const {
@@ -131,51 +140,61 @@ void TdfParser::parse_buffer(char const* buf, size_t size) {
 void TdfParser::LoadBuffer(char const* buf, size_t size)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void TdfParser::LoadFile(std::string const& filename)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string TdfParser::SGetValueDef(std::string const& defaultValue, std::string const& location) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool TdfParser::SGetValue(std::string &value, std::string const& location) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool TdfParser::GetValue(bool& val, const std::string& location) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const TdfParser::valueMap_t& TdfParser::GetAllValues(std::string const& location) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::vector<std::string> TdfParser::GetSectionList(std::string const& location) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool TdfParser::SectionExist(std::string const& location) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::vector<std::string> TdfParser::GetLocationVector(std::string const& location) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 float3 TdfParser::GetFloat3(float3 def, std::string const& location) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

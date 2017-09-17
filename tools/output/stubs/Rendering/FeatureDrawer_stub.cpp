@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "FeatureDrawer.h"
@@ -101,6 +102,7 @@ static const void SetFeatureAlphaMatSSP(const CFeature* f) { glAlphaFunc(GL_GREA
 static const void SetFeatureAlphaMatFFP(const CFeature* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -123,12 +125,14 @@ CFeatureDrawer* featureDrawer = nullptr;
 CFeatureDrawer::CFeatureDrawer(): CEventClient("[CFeatureDrawer]", 313373, false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CFeatureDrawer::~CFeatureDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -136,6 +140,7 @@ CFeatureDrawer::~CFeatureDrawer()
 void CFeatureDrawer::RenderFeatureCreated(const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -143,50 +148,59 @@ void CFeatureDrawer::RenderFeatureCreated(const CFeature* feature)
 void CFeatureDrawer::RenderFeatureDestroyed(const CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeatureDrawer::FeatureMoved(const CFeature* feature, const float3& oldpos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFeatureDrawer::UpdateDrawQuad(CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeatureDrawer::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 inline void CFeatureDrawer::UpdateDrawPos(CFeature* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeatureDrawer::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFeatureDrawer::DrawOpaquePass(bool deferredPass, bool, bool)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFeatureDrawer::DrawOpaqueFeatures(int modelType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CFeatureDrawer::CanDrawFeature(const CFeature* feature) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -219,6 +233,7 @@ void CFeatureDrawer::DrawFeatureNoTrans(
 void CFeatureDrawer::DrawFeature(const CFeature* feature, unsigned int preList, unsigned int postList, bool lodCall, bool noLuaCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -227,22 +242,26 @@ void CFeatureDrawer::DrawFeature(const CFeature* feature, unsigned int preList, 
 void CFeatureDrawer::PushIndividualState(const CFeature* feature, bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFeatureDrawer::PopIndividualState(const CFeature* feature, bool deferredPass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CFeatureDrawer::DrawIndividual(const CFeature* feature, bool noLuaCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFeatureDrawer::DrawIndividualNoTrans(const CFeature* feature, bool noLuaCall)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -250,11 +269,13 @@ void CFeatureDrawer::DrawIndividualNoTrans(const CFeature* feature, bool noLuaCa
 void CFeatureDrawer::DrawAlphaPass()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CFeatureDrawer::DrawAlphaFeatures(int modelType)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -263,6 +284,7 @@ void CFeatureDrawer::DrawAlphaFeatures(int modelType)
 void CFeatureDrawer::DrawShadowPass()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -367,4 +389,5 @@ void CFeatureDrawer::FlagVisibleFeatures(
 void CFeatureDrawer::GetVisibleFeatures(CCamera* cam, int extraSize, bool drawFar)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

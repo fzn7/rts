@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "BaseGroundDrawer.h"
@@ -17,12 +18,14 @@ CONFIG(float, GroundLODScaleTerrainReflection).defaultValue(1.0f);
 CBaseGroundDrawer::CBaseGroundDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CBaseGroundDrawer::~CBaseGroundDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -30,5 +33,6 @@ CBaseGroundDrawer::~CBaseGroundDrawer()
 void CBaseGroundDrawer::DrawTrees(bool drawReflection) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

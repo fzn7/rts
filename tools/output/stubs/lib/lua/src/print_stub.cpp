@@ -1,3 +1,4 @@
+#include <iostream>
 /*
 ** $Id: print.c,v 1.55a 2006/05/31 13:30:05 lhf Exp $
 ** print bytecodes
@@ -23,16 +24,19 @@
 static void PrintString(const TString* ts)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void PrintConstant(const Proto* f, int i)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void PrintCode(const Proto* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 #define SS(x)	(x==1)?"":"s"
@@ -41,24 +45,29 @@ static void PrintCode(const Proto* f)
 static void PrintHeader(const Proto* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void PrintConstants(const Proto* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void PrintLocals(const Proto* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void PrintUpvalues(const Proto* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void PrintFunction(const Proto* f, int full)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

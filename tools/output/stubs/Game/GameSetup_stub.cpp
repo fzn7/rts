@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "GameSetup.h"
@@ -81,38 +82,45 @@ CGameSetup* gameSetup = nullptr;
 bool CGameSetup::LoadReceivedScript(const std::string& script, bool isHost)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGameSetup::LoadSavedScript(const std::string& file, const std::string& script)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const std::map<std::string, std::string>& CGameSetup::GetMapOptions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::map<std::string, std::string>& CGameSetup::GetModOptions()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const std::vector<PlayerBase>& CGameSetup::GetPlayerStartingData()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::vector<TeamBase>& CGameSetup::GetTeamStartingData()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::vector<AllyTeam>& CGameSetup::GetAllyStartingData()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -120,76 +128,91 @@ const std::vector<AllyTeam>& CGameSetup::GetAllyStartingData()
 void CGameSetup::ResetState()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::PostLoad()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::LoadUnitRestrictions(const TdfParser& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::LoadStartPositionsFromMap()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::LoadStartPositions(bool withoutMap)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::LoadMutators(const TdfParser& file, std::vector<std::string>& mutatorsList)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::LoadPlayers(const TdfParser& file, std::set<std::string>& nameList)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::LoadSkirmishAIs(const TdfParser& file, std::set<std::string>& nameList)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::LoadTeams(const TdfParser& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::LoadAllyTeams(const TdfParser& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::RemapPlayers()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::RemapTeams()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGameSetup::RemapAllyteams()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 // TODO: RemapSkirmishAIs()
 bool CGameSetup::Init(const std::string& buf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 const std::string CGameSetup::MapFile() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -20,16 +21,19 @@
 typedef struct tagCOBHeader
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CCobFile::~CCobFile()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CCobFile::GetFunctionId(const string &name)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include <cmath>
@@ -50,6 +51,7 @@ static UnsyncedRNG rng;
 static float GetCamDistOfGrassBlock(const int x, const int y, const bool square = false)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -72,11 +74,13 @@ static const bool GrassSortNear(const CGrassDrawer::InviewNearGrass& a, const CG
 class CGrassBlockDrawer: public CReadMap::IQuadDrawer
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 CGrassDrawer::~CGrassDrawer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -199,6 +203,7 @@ struct STurfParams {
 static STurfParams GetTurfParams(UnsyncedRNG& rng, const int x, const int y)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -206,110 +211,129 @@ static STurfParams GetTurfParams(UnsyncedRNG& rng, const int x, const int y)
 void CGrassDrawer::DrawNear(const std::vector<InviewNearGrass>& inviewGrass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::DrawBillboard(const int x, const int y, const float dist, VA_TYPE_TN* va_tn)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::DrawFarBillboards(const std::vector<GrassStruct*>& inviewFarGrass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::DrawNearBillboards(const std::vector<InviewNearGrass>& inviewNearGrass)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::DrawShadow()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::SetupGlStateNear()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::ResetGlStateNear()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::SetupGlStateFar()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::ResetGlStateFar()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::CreateGrassDispList(int listNum)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGrassDrawer::CreateGrassBladeTex(unsigned char* buf)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void CGrassDrawer::CreateFarTex()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::ResetPos(const int grassBlockX, const int grassBlockZ)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::ResetPos(const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::AddGrass(const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::RemoveGrass(const float3& pos)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CGrassDrawer::UnsyncedHeightMapUpdate(const SRectangle& rect)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

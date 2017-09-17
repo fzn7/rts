@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "InMapDrawModel.h"
@@ -29,51 +30,60 @@ CInMapDrawModel::CInMapDrawModel()
 	, numLines(0)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CInMapDrawModel::~CInMapDrawModel()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CInMapDrawModel::MapDrawPrimitive::IsLocalPlayerAllowedToSee(const CInMapDrawModel* inMapDrawModel) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CInMapDrawModel::AllowedMsg(const CPlayer* sender) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CInMapDrawModel::AddPoint(const float3& constPos, const std::string& label, int playerID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CInMapDrawModel::AddLine(const float3& constPos1, const float3& constPos2, int playerID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CInMapDrawModel::EraseNear(const float3& constPos, int playerID)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CInMapDrawModel::EraseAll()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 const CInMapDrawModel::DrawQuad* CInMapDrawModel::GetDrawQuad(int x, int y) const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

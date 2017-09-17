@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 
@@ -26,39 +27,46 @@
 CGZFileHandler::CGZFileHandler(const char* fileName, const char* modes) : CFileHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 CGZFileHandler::CGZFileHandler(const std::string& fileName, const std::string& modes): CFileHandler()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGZFileHandler::ReadToBuffer(const std::string& path)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool CGZFileHandler::UncompressBuffer()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGZFileHandler::TryReadFromPWD(const std::string& fileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGZFileHandler::TryReadFromRawFS(const std::string& fileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool CGZFileHandler::TryReadFromModFS(const std::string& fileName)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

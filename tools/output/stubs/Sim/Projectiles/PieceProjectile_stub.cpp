@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #include "Sim/Projectiles/PieceProjectile.h"
@@ -54,30 +55,35 @@ CPieceProjectile::CPieceProjectile(
 	smokeTrail(NULL)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPieceProjectile::Collision()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPieceProjectile::Collision(CFeature* f)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPieceProjectile::Collision(CUnit* unit)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPieceProjectile::Collision(CUnit* unit, CFeature* feature)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -85,34 +91,40 @@ void CPieceProjectile::Collision(CUnit* unit, CFeature* feature)
 float3 CPieceProjectile::RandomVertexPos() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 float CPieceProjectile::GetDrawAngle() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPieceProjectile::Update()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPieceProjectile::DrawOnMinimap(CVertexArray& lines, CVertexArray& points)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 void CPieceProjectile::Draw()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 int CPieceProjectile::GetProjectilesCount() const
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }

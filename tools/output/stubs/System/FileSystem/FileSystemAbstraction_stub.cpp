@@ -1,3 +1,4 @@
+#include <iostream>
 /* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
 
 #if defined(_MSC_VER) && !defined(S_ISDIR)
@@ -44,11 +45,13 @@
 std::string FileSystemAbstraction::RemoveLocalPathPrefix(const std::string& path)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool FileSystemAbstraction::IsFSRoot(const std::string& p)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool FileSystemAbstraction::IsPathSeparator(char aChar) {
@@ -101,37 +104,44 @@ std::string FileSystemAbstraction::EnsureNoPathSepAtEnd(const std::string& path)
 std::string FileSystemAbstraction::StripTrailingSlashes(const std::string& path)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string FileSystemAbstraction::GetParent(const std::string& path)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 size_t FileSystemAbstraction::GetFileSize(const std::string& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool FileSystemAbstraction::IsReadableFile(const std::string& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 std::string FileSystemAbstraction::GetFileModificationDate(const std::string& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 char FileSystemAbstraction::GetNativePathSeparator()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool FileSystemAbstraction::IsAbsolutePath(const std::string& path)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
@@ -152,53 +162,63 @@ bool FileSystemAbstraction::IsAbsolutePath(const std::string& path)
 bool FileSystemAbstraction::MkDir(const std::string& dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool FileSystemAbstraction::DeleteFile(const std::string& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool FileSystemAbstraction::FileExists(const std::string& file)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 bool FileSystemAbstraction::DirExists(const std::string& dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool FileSystemAbstraction::DirIsWritable(const std::string& dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 bool FileSystemAbstraction::ComparePaths(const std::string& path1, const std::string& path2)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 
 std::string FileSystemAbstraction::GetCwd()
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void FileSystemAbstraction::ChDir(const std::string& dir)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 static void FindFiles(std::vector<std::string>& matches, const std::string& datadir, const std::string& dir, const boost::regex& regexPattern, int flags)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
 void FileSystemAbstraction::FindFiles(std::vector<std::string>& matches, const std::string& dataDir, const std::string& dir, const std::string& regex, int flags)
 {
     //stub method
+    std::cout << _FUNCTION_ << std::endl;
 }
 
