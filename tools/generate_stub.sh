@@ -26,7 +26,7 @@ for f in $(find ${basedir} -name '*.cpp');
 			else sed -i '1s;^;#include <iostream>\n;' $generated; 
 		fi		
 
-		perl -0777 -pe 's/^{([\s\S])+?^}$/{\n    \/\/stub method\n    std::cout << _FUNCTION_ << std::endl;\n}/gm' < $generated > "${outputpath}_stub.cpp"
+		perl -0777 -pe 's/^{([\s\S])+?^}$/{\n    \/\/stub method\n    std::cout << __FUNCTION__ << std::endl;\n}/gm' < $generated > "${outputpath}_stub.cpp"
 #		cat $f | sed "s|^{([\s\S])+?^}$|FOOOBAR|"
 #		ruby impl_me.rb $f | sed "s|ImplClass|C${filename}|" > ${filepath:2}_mock.cpp;
 	};
