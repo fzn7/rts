@@ -1,0 +1,30 @@
+// TODO: Substitue CMapInfo with your actual class name
+q(const).int CMapInfo::NUM_TERRAIN_TYPES(){}
+std::string CMapInfo::GetStringValue(const std::string & key){}
+CMapInfo::map_t CMapInfo::map(){}
+CMapInfo::gui_t CMapInfo::gui(){}
+CMapInfo::atmosphere_t CMapInfo::atmosphere(){}
+CMapInfo::splats_t CMapInfo::splats(){}
+CMapInfo::grass_t CMapInfo::grass(){}
+CMapInfo::light_t CMapInfo::light(){}
+CMapInfo::water_t CMapInfo::water(){}
+CMapInfo::smf_t CMapInfo::smf(){}
+CMapInfo::sm3_t CMapInfo::sm3(){}
+CMapInfo::pfs_t CMapInfo::pfs(){}
+CMapInfo::TerrainType CMapInfo::terrainTypes(){}
+EAXSfxProps CMapInfo::efxprops(){}
+void CMapInfo::ReadGlobal(){}
+void CMapInfo::ReadGui(){}
+void CMapInfo::ReadAtmosphere(){}
+void CMapInfo::ReadSplats(){}
+void CMapInfo::ReadGrass(){}
+void CMapInfo::ReadLight(){}
+void CMapInfo::ReadWater(){}
+void CMapInfo::ReadSMF(){}
+void CMapInfo::ReadSM3(){}
+void CMapInfo::ReadTerrainTypes(){}
+void CMapInfo::ReadPFSConstants(){}
+void CMapInfo::ReadSound(){}
+MapParser CMapInfo::parser(){}
+LuaTable CMapInfo::resRoot(){}
+q(const).CMapInfo CMapInfo::mapInfo(){}

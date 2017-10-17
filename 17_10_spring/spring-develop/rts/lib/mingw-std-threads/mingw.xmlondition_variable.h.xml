@@ -1,0 +1,1679 @@
+<?xml version="1.0" ?> 
+<top id="1" addr="0x7f911e661950" >
+    <attributelist id="2" addr="0x7f911e661950" >
+        <attribute name="outfile" value="./rts/lib/mingw-std-threads/mingw.xmlondition_variable.h.xml" id="3" addr="0x7f911e6833b0" />
+        <attribute name="name" value="impl_me" id="4" addr="0x7f911e6833b0" />
+        <attribute name="module" value="impl_me" id="5" addr="0x7f911e6768b0" />
+        <attribute name="inputfile" value="./rts/lib/mingw-std-threads/mingw.condition_variable.h.i" id="6" addr="0x7f911e6833b0" />
+        <attribute name="classes" value="0x7f911e673ed0" id="7" addr="0x7f911e673ed0" />
+        <attribute name="infile" value="./rts/lib/mingw-std-threads/mingw.condition_variable.h.i" id="8" addr="0x7f911e6833b0" />
+        <attribute name="outfile_h" value="./rts/lib/mingw-std-threads/mingw.condition_variable.h.h" id="9" addr="0x7f911e6833b0" />
+    </attributelist >
+
+    <include id="10" addr="0x7f911e671c10" >
+        <attributelist id="11" addr="0x7f911e671c10" >
+            <attribute name="name" value="/usr/share/swig3.0/swig.swg" id="12" addr="0x7f911e6833b0" />
+        </attributelist >
+
+        <include id="13" addr="0x7f911e671c70" >
+            <attributelist id="14" addr="0x7f911e671c70" >
+                <attribute name="name" value="/usr/share/swig3.0/swigwarnings.swg" id="15" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <include id="16" addr="0x7f911e671dd0" >
+                <attributelist id="17" addr="0x7f911e671dd0" >
+                    <attribute name="name" value="/usr/share/swig3.0/swigwarn.swg" id="18" addr="0x7f911e6833b0" />
+                </attributelist >
+             
+            </include >
+        </include >
+        <namespace id="19" addr="0x7f911e673a30" >
+            <attributelist id="20" addr="0x7f911e673a30" >
+                <attribute name="name" value="std" id="21" addr="0x7f911e6833b0" />
+                <attribute name="sym_symtab" value="0x7f911e6608b0" id="22" addr="0x7f911e6608b0" />
+                <attribute name="symtab" value="0x7f911e673990" id="23" addr="0x7f911e673990" />
+                <attribute name="sym_nextSibling" value="0x7f911e676a90" id="24" addr="0x7f911e676a90" />
+                <attribute name="csym_nextSibling" value="0x7f911e676a90" id="25" addr="0x7f911e676a90" />
+                <attribute name="sym_name" value="std" id="26" addr="0x7f911e6833b0" />
+                <attribute name="sym_overname" value="__SWIG_0" id="27" addr="0x7f911e6833b0" />
+                <typescope id="28" addr="0x7f911e681430" >
+                    <attributelist id="29" addr="0x7f911e681430" >
+                        <attribute name="name" value="std" id="30" addr="0x7f911e6833b0" />
+                        <typetab id="31" addr="0x7f911e681330" >
+                            <attributelist id="32" addr="0x7f911e681330" >
+                                <attribute name="cv_status" value="enum std::cv_status" id="33" addr="0x7f911e6833b0" />
+                                <attribute name="initializer_list" value="initializer_list" id="34" addr="0x7f911e6833b0" />
+                                <attribute name="condition_variable" value="condition_variable" id="35" addr="0x7f911e6833b0" />
+                                <attribute name="condition_variable_any" value="condition_variable_any" id="36" addr="0x7f911e6833b0" />
+                            </attributelist >
+                            <typetabsitem id="37" addr="0x7f911e681610" >
+                                <attributelist id="38" addr="0x7f911e681610" >
+                                </attributelist >
+                            </typetabsitem >
+                            <typetabsitem id="39" addr="0x7f911e681530" >
+                                <attributelist id="40" addr="0x7f911e681530" >
+                                </attributelist >
+                            </typetabsitem >
+                            <typetabsitem id="41" addr="0x7f911e681e70" >
+                                <attributelist id="42" addr="0x7f911e681e70" >
+                                </attributelist >
+                            </typetabsitem >
+                            <typetabsitem id="43" addr="0x7f911e681850" >
+                                <attributelist id="44" addr="0x7f911e681850" >
+                                </attributelist >
+                            </typetabsitem >
+                        </typetab >
+                        <attribute name="parent" value="0x7f911e660990" id="45" addr="0x7f911e660990" />
+                        <attribute name="qname" value="std" id="46" addr="0x7f911e6833b0" />
+                        <attribute name="symtab" value="0x7f911e673990" id="47" addr="0x7f911e673990" />
+                    </attributelist >
+                    <typescopesitem id="48" addr="0x7f911e6738f0" >
+                        <attributelist id="49" addr="0x7f911e6738f0" >
+                        </attributelist >
+                    </typescopesitem >
+                    <typescopesitem id="50" addr="0x7f911e681330" >
+                        <attributelist id="51" addr="0x7f911e681330" >
+                            <attribute name="cv_status" value="enum std::cv_status" id="52" addr="0x7f911e6833b0" />
+                            <attribute name="initializer_list" value="initializer_list" id="53" addr="0x7f911e6833b0" />
+                            <attribute name="condition_variable" value="condition_variable" id="54" addr="0x7f911e6833b0" />
+                            <attribute name="condition_variable_any" value="condition_variable_any" id="55" addr="0x7f911e6833b0" />
+                        </attributelist >
+                    </typescopesitem >
+                    <typescopesitem id="56" addr="0x7f911e660990" >
+                        <attributelist id="57" addr="0x7f911e660990" >
+                            <attribute name="name" value="" id="58" addr="0x7f911e6833b0" />
+                            <typetab id="59" addr="0x7f911e6609f0" >
+                                <attributelist id="60" addr="0x7f911e6609f0" >
+                                </attributelist >
+                            </typetab >
+                        </attributelist >
+                    </typescopesitem >
+                    <typescopesitem id="61" addr="0x7f911e681350" >
+                        <attributelist id="62" addr="0x7f911e681350" >
+                        </attributelist >
+                    </typescopesitem >
+                    <typescopesitem id="63" addr="0x7f911e673990" >
+                        <attributelist id="64" addr="0x7f911e673990" >
+                            <attribute name="name" value="std" id="65" addr="0x7f911e6833b0" />
+                            <attribute name="csymtab" value="0x7f911e6739d0" id="66" addr="0x7f911e6739d0" />
+                            <attribute name="symtab" value="0x7f911e673970" id="67" addr="0x7f911e673970" />
+                        </attributelist >
+                    </typescopesitem >
+                </typescope >
+            </attributelist >
+
+            <template id="68" addr="0x7f911e673bb0" >
+                <attributelist id="69" addr="0x7f911e673bb0" >
+                    <attribute name="templatetype" value="class" id="70" addr="0x7f911e6833b0" />
+                    <attribute name="sym_typename" value="1" id="71" addr="0x7f911e6833b0" />
+                    <attribute name="name" value="initializer_list" id="72" addr="0x7f911e6833b0" />
+                    <attribute name="sym_symtab" value="0x7f911e673990" id="73" addr="0x7f911e673990" />
+                    <attribute name="symtab" value="0x7f911e673d90" id="74" addr="0x7f911e673d90" />
+                    <attribute name="allows_typedef" value="1" id="75" addr="0x7f911e6833b0" />
+                    <attribute name="kind" value="class" id="76" addr="0x7f911e6833b0" />
+                    <attribute name="sym_name" value="initializer_list" id="77" addr="0x7f911e6833b0" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="78" addr="0x7f911e6833b0" />
+                    <attribute name="templateparms" value="0x7f911e673ad0" id="79" addr="0x7f911e673ad0" />
+                </attributelist >
+
+                <access id="80" addr="0x7f911e673f50" >
+                    <attributelist id="81" addr="0x7f911e673f50" >
+                        <attribute name="kind" value="public" id="82" addr="0x7f911e6833b0" />
+                    </attributelist >
+                 
+                </access >
+            </template >
+            <typemap id="83" addr="0x7f911e674550" >
+                <attributelist id="84" addr="0x7f911e674550" >
+                    <kwargs id="85" addr="0x7f911e674290" >
+                        <attributelist id="86" addr="0x7f911e674290" >
+                            <attribute name="name" value="warning" id="87" addr="0x7f911e6833b0" />
+                            <attribute name="value" value="476:Initialization using std::initializer_list." id="88" addr="0x7f911e6833b0" />
+                        </attributelist >
+                        <kwargssitem id="89" addr="0x7f911e6743d0" >
+                            <attributelist id="90" addr="0x7f911e6743d0" >
+                            </attributelist >
+                        </kwargssitem >
+                        <kwargssitem id="91" addr="0x7f911e674270" >
+                            <attributelist id="92" addr="0x7f911e674270" >
+                            </attributelist >
+                        </kwargssitem >
+                    </kwargs >
+                    <attribute name="code" value="" id="93" addr="0x7f911e6833b0" />
+                    <attribute name="method" value="in" id="94" addr="0x7f911e6833b0" />
+                </attributelist >
+
+                <typemapitem id="95" addr="0x7f911e674470" >
+                    <attributelist id="96" addr="0x7f911e674470" >
+                        <parmlist id="97" addr="0x7f911e6744b0" >
+                            <parm id="98">
+                                <attributelist id="99" addr="0x7f911e6744b0" >
+                                    <attribute name="type" value="std::initializer_list&lt;(T)>" id="100" addr="0x7f911e6833b0" />
+                                </attributelist >
+                            </parm >
+                        </parmlist >
+                    </attributelist >
+                 
+                </typemapitem >
+            </typemap >
+            <typemap id="101" addr="0x7f911e6748d0" >
+                <attributelist id="102" addr="0x7f911e6748d0" >
+                    <kwargs id="103" addr="0x7f911e674670" >
+                        <attributelist id="104" addr="0x7f911e674670" >
+                            <attribute name="name" value="precedence" id="105" addr="0x7f911e6833b0" />
+                            <attribute name="value" value="0" id="106" addr="0x7f911e6833b0" />
+                        </attributelist >
+                        <kwargssitem id="107" addr="0x7f911e674690" >
+                            <attributelist id="108" addr="0x7f911e674690" >
+                            </attributelist >
+                        </kwargssitem >
+                        <kwargssitem id="109" addr="0x7f911e6746b0" >
+                            <attributelist id="110" addr="0x7f911e6746b0" >
+                            </attributelist >
+                        </kwargssitem >
+                    </kwargs >
+                    <attribute name="code" value="" id="111" addr="0x7f911e6833b0" />
+                    <attribute name="method" value="typecheck" id="112" addr="0x7f911e6833b0" />
+                </attributelist >
+
+                <typemapitem id="113" addr="0x7f911e674810" >
+                    <attributelist id="114" addr="0x7f911e674810" >
+                        <parmlist id="115" addr="0x7f911e674850" >
+                            <parm id="116">
+                                <attributelist id="117" addr="0x7f911e674850" >
+                                    <attribute name="type" value="std::initializer_list&lt;(T)>" id="118" addr="0x7f911e6833b0" />
+                                </attributelist >
+                            </parm >
+                        </parmlist >
+                    </attributelist >
+                 
+                </typemapitem >
+            </typemap >
+        </namespace >
+        <typemap id="119" addr="0x7f911e674af0" >
+            <attributelist id="120" addr="0x7f911e674af0" >
+                <attribute name="code" value="delete [] $1;" id="121" addr="0x7f911e6833b0" />
+                <attribute name="method" value="newfree" id="122" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="123" addr="0x7f911e674a10" >
+                <attributelist id="124" addr="0x7f911e674a10" >
+                    <parmlist id="125" addr="0x7f911e674a50" >
+                        <parm id="126">
+                            <attributelist id="127" addr="0x7f911e674a50" >
+                                <attribute name="type" value="p.char" id="128" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="129" addr="0x7f911e674cd0" >
+            <attributelist id="130" addr="0x7f911e674cd0" >
+                <attribute name="code" value="{&#10;  delete [] $1;&#10;  if ($input) {&#10;     $1 = ($1_type) (new char[strlen((const char *)$input)+1]);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="131" addr="0x7f911e6833b0" />
+                <attribute name="method" value="memberin" id="132" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="133" addr="0x7f911e674c10" >
+                <attributelist id="134" addr="0x7f911e674c10" >
+                    <parmlist id="135" addr="0x7f911e674c50" >
+                        <parm id="136">
+                            <attributelist id="137" addr="0x7f911e674c50" >
+                                <attribute name="type" value="p.char" id="138" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="139" addr="0x7f911e674f30" >
+            <attributelist id="140" addr="0x7f911e674f30" >
+                <kwargs id="141" addr="0x7f911e674d70" >
+                    <attributelist id="142" addr="0x7f911e674d70" >
+                        <attribute name="name" value="warning" id="143" addr="0x7f911e6833b0" />
+                        <attribute name="value" value="451:Setting a const char * variable may leak memory." id="144" addr="0x7f911e6833b0" />
+                    </attributelist >
+                    <kwargssitem id="145" addr="0x7f911e674d90" >
+                        <attributelist id="146" addr="0x7f911e674d90" >
+                        </attributelist >
+                    </kwargssitem >
+                    <kwargssitem id="147" addr="0x7f911e674d50" >
+                        <attributelist id="148" addr="0x7f911e674d50" >
+                        </attributelist >
+                    </kwargssitem >
+                </kwargs >
+                <attribute name="code" value="{&#10;  if ($input) {&#10;     $1 = ($1_type) (new char[strlen((const char *)$input)+1]);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="149" addr="0x7f911e6833b0" />
+                <attribute name="method" value="memberin" id="150" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="151" addr="0x7f911e674e70" >
+                <attributelist id="152" addr="0x7f911e674e70" >
+                    <parmlist id="153" addr="0x7f911e674eb0" >
+                        <parm id="154">
+                            <attributelist id="155" addr="0x7f911e674eb0" >
+                                <attribute name="type" value="p.q(const).char" id="156" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="157" addr="0x7f911e675110" >
+            <attributelist id="158" addr="0x7f911e675110" >
+                <attribute name="code" value="{&#10;  delete [] $1;&#10;  if ($input) {&#10;     $1 = ($1_type) (new char[strlen((const char *)$input)+1]);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="159" addr="0x7f911e6833b0" />
+                <attribute name="method" value="globalin" id="160" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="161" addr="0x7f911e675050" >
+                <attributelist id="162" addr="0x7f911e675050" >
+                    <parmlist id="163" addr="0x7f911e675090" >
+                        <parm id="164">
+                            <attributelist id="165" addr="0x7f911e675090" >
+                                <attribute name="type" value="p.char" id="166" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="167" addr="0x7f911e675370" >
+            <attributelist id="168" addr="0x7f911e675370" >
+                <kwargs id="169" addr="0x7f911e6751b0" >
+                    <attributelist id="170" addr="0x7f911e6751b0" >
+                        <attribute name="name" value="warning" id="171" addr="0x7f911e6833b0" />
+                        <attribute name="value" value="451:Setting a const char * variable may leak memory." id="172" addr="0x7f911e6833b0" />
+                    </attributelist >
+                    <kwargssitem id="173" addr="0x7f911e6751d0" >
+                        <attributelist id="174" addr="0x7f911e6751d0" >
+                        </attributelist >
+                    </kwargssitem >
+                    <kwargssitem id="175" addr="0x7f911e675190" >
+                        <attributelist id="176" addr="0x7f911e675190" >
+                        </attributelist >
+                    </kwargssitem >
+                </kwargs >
+                <attribute name="code" value="{&#10;  if ($input) {&#10;     $1 = ($1_type) (new char[strlen((const char *)$input)+1]);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="177" addr="0x7f911e6833b0" />
+                <attribute name="method" value="globalin" id="178" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="179" addr="0x7f911e6752b0" >
+                <attributelist id="180" addr="0x7f911e6752b0" >
+                    <parmlist id="181" addr="0x7f911e6752f0" >
+                        <parm id="182">
+                            <attributelist id="183" addr="0x7f911e6752f0" >
+                                <attribute name="type" value="p.q(const).char" id="184" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="185" addr="0x7f911e675590" >
+            <attributelist id="186" addr="0x7f911e675590" >
+                <attribute name="code" value="{&#10;  if($input) {&#10;    strncpy((char*)$1, (const char *)$input, $1_dim0-1);&#10;    $1[$1_dim0-1] = 0;&#10;  } else {&#10;    $1[0] = 0;&#10;  }&#10;}" id="187" addr="0x7f911e6833b0" />
+                <attribute name="method" value="memberin" id="188" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="189" addr="0x7f911e6754d0" >
+                <attributelist id="190" addr="0x7f911e6754d0" >
+                    <parmlist id="191" addr="0x7f911e675510" >
+                        <parm id="192">
+                            <attributelist id="193" addr="0x7f911e675510" >
+                                <attribute name="type" value="a(ANY).char" id="194" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="195" addr="0x7f911e6757b0" >
+            <attributelist id="196" addr="0x7f911e6757b0" >
+                <attribute name="code" value="{&#10;  if($input) {&#10;    strncpy((char*)$1, (const char *)$input, $1_dim0-1);&#10;    $1[$1_dim0-1] = 0;&#10;  } else {&#10;    $1[0] = 0;&#10;  }&#10;}" id="197" addr="0x7f911e6833b0" />
+                <attribute name="method" value="globalin" id="198" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="199" addr="0x7f911e6756f0" >
+                <attributelist id="200" addr="0x7f911e6756f0" >
+                    <parmlist id="201" addr="0x7f911e675730" >
+                        <parm id="202">
+                            <attributelist id="203" addr="0x7f911e675730" >
+                                <attribute name="type" value="a(ANY).char" id="204" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="205" addr="0x7f911e675990" >
+            <attributelist id="206" addr="0x7f911e675990" >
+                <attribute name="code" value="{&#10;  if ($input) strcpy((char *)$1, (const char *)$input);&#10;  else $1[0] = 0;&#10;}" id="207" addr="0x7f911e6833b0" />
+                <attribute name="method" value="memberin" id="208" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="209" addr="0x7f911e6758d0" >
+                <attributelist id="210" addr="0x7f911e6758d0" >
+                    <parmlist id="211" addr="0x7f911e675910" >
+                        <parm id="212">
+                            <attributelist id="213" addr="0x7f911e675910" >
+                                <attribute name="type" value="a().char" id="214" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="215" addr="0x7f911e675b70" >
+            <attributelist id="216" addr="0x7f911e675b70" >
+                <attribute name="code" value="{&#10;  if ($input) strcpy((char *)$1, (const char *)$input);&#10;  else $1[0] = 0;&#10;}" id="217" addr="0x7f911e6833b0" />
+                <attribute name="method" value="globalin" id="218" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="219" addr="0x7f911e675ab0" >
+                <attributelist id="220" addr="0x7f911e675ab0" >
+                    <parmlist id="221" addr="0x7f911e675af0" >
+                        <parm id="222">
+                            <attributelist id="223" addr="0x7f911e675af0" >
+                                <attribute name="type" value="a().char" id="224" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="225" addr="0x7f911e675d90" >
+            <attributelist id="226" addr="0x7f911e675d90" >
+                <attribute name="code" value="{&#10;  size_t ii;&#10;  $1_basetype *b = ($1_basetype *) $1;&#10;  for (ii = 0; ii &lt; (size_t)$1_size; ii++) b[ii] = *(($1_basetype *) $input + ii);&#10;}" id="227" addr="0x7f911e6833b0" />
+                <attribute name="method" value="memberin" id="228" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="229" addr="0x7f911e675cd0" >
+                <attributelist id="230" addr="0x7f911e675cd0" >
+                    <parmlist id="231" addr="0x7f911e675d10" >
+                        <parm id="232">
+                            <attributelist id="233" addr="0x7f911e675d10" >
+                                <attribute name="type" value="a(ANY).SWIGTYPE" id="234" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="235" addr="0x7f911e675fb0" >
+            <attributelist id="236" addr="0x7f911e675fb0" >
+                <attribute name="code" value="{&#10;  size_t ii;&#10;  $1_basetype *b = ($1_basetype *) $1;&#10;  for (ii = 0; ii &lt; (size_t)$1_size; ii++) b[ii] = *(($1_basetype *) $input + ii);&#10;}" id="237" addr="0x7f911e6833b0" />
+                <attribute name="method" value="globalin" id="238" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="239" addr="0x7f911e675ef0" >
+                <attributelist id="240" addr="0x7f911e675ef0" >
+                    <parmlist id="241" addr="0x7f911e675f30" >
+                        <parm id="242">
+                            <attributelist id="243" addr="0x7f911e675f30" >
+                                <attribute name="type" value="a(ANY).SWIGTYPE" id="244" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="245" addr="0x7f911e676210" >
+            <attributelist id="246" addr="0x7f911e676210" >
+                <attribute name="code" value="{&#10;  $basetype (*inp)[$1_dim1] = ($basetype (*)[$1_dim1])($input);&#10;  $basetype (*dest)[$1_dim1] = ($basetype (*)[$1_dim1])($1);&#10;  size_t ii = 0;&#10;  for (; ii &lt; $1_dim0; ++ii) {&#10;    $basetype *ip = inp[ii];&#10;    $basetype *dp = dest[ii];&#10;    size_t jj = 0;&#10;    for (; jj &lt; $1_dim1; ++jj) dp[jj] = ip[jj];&#10;  }&#10;}" id="247" addr="0x7f911e6833b0" />
+                <attribute name="method" value="memberin" id="248" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="249" addr="0x7f911e6760f0" >
+                <attributelist id="250" addr="0x7f911e6760f0" >
+                    <parmlist id="251" addr="0x7f911e676190" >
+                        <parm id="252">
+                            <attributelist id="253" addr="0x7f911e676190" >
+                                <attribute name="type" value="a(ANY).a(ANY).SWIGTYPE" id="254" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="255" addr="0x7f911e676470" >
+            <attributelist id="256" addr="0x7f911e676470" >
+                <attribute name="code" value="{&#10;  $basetype (*inp)[$1_dim1] = ($basetype (*)[$1_dim1])($input);&#10;  $basetype (*dest)[$1_dim1] = ($basetype (*)[$1_dim1])($1);&#10;  size_t ii = 0;&#10;  for (; ii &lt; $1_dim0; ++ii) {&#10;    $basetype *ip = inp[ii];&#10;    $basetype *dp = dest[ii];&#10;    size_t jj = 0;&#10;    for (; jj &lt; $1_dim1; ++jj) dp[jj] = ip[jj];&#10;  }&#10;}" id="257" addr="0x7f911e6833b0" />
+                <attribute name="method" value="globalin" id="258" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <typemapitem id="259" addr="0x7f911e676350" >
+                <attributelist id="260" addr="0x7f911e676350" >
+                    <parmlist id="261" addr="0x7f911e6763f0" >
+                        <parm id="262">
+                            <attributelist id="263" addr="0x7f911e6763f0" >
+                                <attribute name="type" value="a(ANY).a(ANY).SWIGTYPE" id="264" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <insert id="265" addr="0x7f911e676530" >
+            <attributelist id="266" addr="0x7f911e676530" >
+                <attribute name="code" value="&#10;#ifdef __cplusplus&#10;/* SwigValueWrapper is described in swig.swg */&#10;template&lt;typename T> class SwigValueWrapper {&#10;  struct SwigMovePointer {&#10;    T *ptr;&#10;    SwigMovePointer(T *p) : ptr(p) { }&#10;    ~SwigMovePointer() { delete ptr; }&#10;    SwigMovePointer&amp; operator=(SwigMovePointer&amp; rhs) { T* oldptr = ptr; ptr = 0; delete oldptr; ptr = rhs.ptr; rhs.ptr = 0; return *this; }&#10;  } pointer;&#10;  SwigValueWrapper&amp; operator=(const SwigValueWrapper&lt;T>&amp; rhs);&#10;  SwigValueWrapper(const SwigValueWrapper&lt;T>&amp; rhs);&#10;public:&#10;  SwigValueWrapper() : pointer(0) { }&#10;  SwigValueWrapper&amp; operator=(const T&amp; t) { SwigMovePointer tmp(new T(t)); pointer = tmp; return *this; }&#10;  operator T&amp;() const { return *pointer.ptr; }&#10;  T *operator&amp;() { return pointer.ptr; }&#10;};" id="267" addr="0x7f911e6833b0" />
+                <attribute name="section" value="runtime" id="268" addr="0x7f911e6833b0" />
+            </attributelist >
+         
+        </insert >
+        <insert id="269" addr="0x7f911e676610" >
+            <attributelist id="270" addr="0x7f911e676610" >
+                <attribute name="code" value="&#10;template &lt;typename T> T SwigValueInit() {&#10;  return T();&#10;}&#10;#endif&#10;" id="271" addr="0x7f911e6833b0" />
+                <attribute name="section" value="runtime" id="272" addr="0x7f911e6833b0" />
+            </attributelist >
+         
+        </insert >
+        <insert id="273" addr="0x7f911e6766f0" >
+            <attributelist id="274" addr="0x7f911e6766f0" >
+                <attribute name="code" value="/* -----------------------------------------------------------------------------&#10; *  This section contains generic SWIG labels for method/variable&#10; *  declarations/attributes, and other compiler dependent labels.&#10; * ----------------------------------------------------------------------------- */&#10;&#10;/* template workaround for compilers that cannot correctly implement the C++ standard */&#10;#ifndef SWIGTEMPLATEDISAMBIGUATOR&#10;# if defined(__SUNPRO_CC) &amp;&amp; (__SUNPRO_CC &lt;= 0x560)&#10;#  define SWIGTEMPLATEDISAMBIGUATOR template&#10;# elif defined(__HP_aCC)&#10;/* Needed even with `aCC -AA' when `aCC -V' reports HP ANSI C++ B3910B A.03.55 */&#10;/* If we find a maximum version that requires this, the test would be __HP_aCC &lt;= 35500 for A.03.55 */&#10;#  define SWIGTEMPLATEDISAMBIGUATOR template&#10;# else&#10;#  define SWIGTEMPLATEDISAMBIGUATOR&#10;# endif&#10;#endif&#10;&#10;/* inline attribute */&#10;#ifndef SWIGINLINE&#10;# if defined(__cplusplus) || (defined(__GNUC__) &amp;&amp; !defined(__STRICT_ANSI__))&#10;#   define SWIGINLINE inline&#10;# else&#10;#   define SWIGINLINE&#10;# endif&#10;#endif&#10;&#10;/* attribute recognised by some compilers to avoid 'unused' warnings */&#10;#ifndef SWIGUNUSED&#10;# if defined(__GNUC__)&#10;#   if !(defined(__cplusplus)) || (__GNUC__ > 3 || (__GNUC__ == 3 &amp;&amp; __GNUC_MINOR__ >= 4))&#10;#     define SWIGUNUSED __attribute__ ((__unused__))&#10;#   else&#10;#     define SWIGUNUSED&#10;#   endif&#10;# elif defined(__ICC)&#10;#   define SWIGUNUSED __attribute__ ((__unused__))&#10;# else&#10;#   define SWIGUNUSED&#10;# endif&#10;#endif&#10;&#10;#ifndef SWIG_MSC_UNSUPPRESS_4505&#10;# if defined(_MSC_VER)&#10;#   pragma warning(disable : 4505) /* unreferenced local function has been removed */&#10;# endif&#10;#endif&#10;&#10;#ifndef SWIGUNUSEDPARM&#10;# ifdef __cplusplus&#10;#   define SWIGUNUSEDPARM(p)&#10;# else&#10;#   define SWIGUNUSEDPARM(p) p SWIGUNUSED&#10;# endif&#10;#endif&#10;&#10;/* internal SWIG method */&#10;#ifndef SWIGINTERN&#10;# define SWIGINTERN static SWIGUNUSED&#10;#endif&#10;&#10;/* internal inline SWIG method */&#10;#ifndef SWIGINTERNINLINE&#10;# define SWIGINTERNINLINE SWIGINTERN SWIGINLINE&#10;#endif&#10;&#10;/* exporting methods */&#10;#if (__GNUC__ >= 4) || (__GNUC__ == 3 &amp;&amp; __GNUC_MINOR__ >= 4)&#10;#  ifndef GCC_HASCLASSVISIBILITY&#10;#    define GCC_HASCLASSVISIBILITY&#10;#  endif&#10;#endif&#10;&#10;#ifndef SWIGEXPORT&#10;# if defined(_WIN32) || defined(__WIN32__) || defined(__CYGWIN__)&#10;#   if defined(STATIC_LINKED)&#10;#     define SWIGEXPORT&#10;#   else&#10;#     define SWIGEXPORT __declspec(dllexport)&#10;#   endif&#10;# else&#10;#   if defined(__GNUC__) &amp;&amp; defined(GCC_HASCLASSVISIBILITY)&#10;#     define SWIGEXPORT __attribute__ ((visibility(&quot;default&quot;)))&#10;#   else&#10;#     define SWIGEXPORT&#10;#   endif&#10;# endif&#10;#endif&#10;&#10;/* calling conventions for Windows */&#10;#ifndef SWIGSTDCALL&#10;# if defined(_WIN32) || defined(__WIN32__) || defined(__CYGWIN__)&#10;#   define SWIGSTDCALL __stdcall&#10;# else&#10;#   define SWIGSTDCALL&#10;# endif&#10;#endif&#10;&#10;/* Deal with Microsoft's attempt at deprecating C standard runtime functions */&#10;#if !defined(SWIG_NO_CRT_SECURE_NO_DEPRECATE) &amp;&amp; defined(_MSC_VER) &amp;&amp; !defined(_CRT_SECURE_NO_DEPRECATE)&#10;# define _CRT_SECURE_NO_DEPRECATE&#10;#endif&#10;&#10;/* Deal with Microsoft's attempt at deprecating methods in the standard C++ library */&#10;#if !defined(SWIG_NO_SCL_SECURE_NO_DEPRECATE) &amp;&amp; defined(_MSC_VER) &amp;&amp; !defined(_SCL_SECURE_NO_DEPRECATE)&#10;# define _SCL_SECURE_NO_DEPRECATE&#10;#endif&#10;&#10;/* Deal with Apple's deprecated 'AssertMacros.h' from Carbon-framework */&#10;#if defined(__APPLE__) &amp;&amp; !defined(__ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES)&#10;# define __ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES 0&#10;#endif&#10;&#10;/* Intel's compiler complains if a variable which was never initialised is&#10; * cast to void, which is a common idiom which we use to indicate that we&#10; * are aware a variable isn't used.  So we just silence that warning.&#10; * See: https://github.com/swig/swig/issues/192 for more discussion.&#10; */&#10;#ifdef __INTEL_COMPILER&#10;# pragma warning disable 592&#10;#endif&#10;" id="275" addr="0x7f911e6833b0" />
+                <attribute name="section" value="runtime" id="276" addr="0x7f911e6833b0" />
+            </attributelist >
+         
+        </insert >
+    </include >
+    <include id="277" addr="0x7f911e676870" >
+        <attributelist id="278" addr="0x7f911e676870" >
+            <attribute name="name" value="./rts/lib/mingw-std-threads/mingw.condition_variable.h.i" id="279" addr="0x7f911e6833b0" />
+            <attribute name="module" value="" id="280" addr="0x7f911e676910" />
+            <attribute name="options" value="0x7f911e6767d0" id="281" addr="0x7f911e6767d0" />
+        </attributelist >
+
+        <module id="282" addr="0x7f911e6768b0" >
+            <attributelist id="283" addr="0x7f911e6768b0" >
+                <attribute name="name" value="impl_me" id="284" addr="0x7f911e6833b0" />
+            </attributelist >
+         
+        </module >
+        <insert id="285" addr="0x7f911e676950" >
+            <attributelist id="286" addr="0x7f911e676950" >
+                <attribute name="code" value="&#10;#include &quot;mingw.condition_variable.h&quot;&#10;" id="287" addr="0x7f911e6833b0" />
+            </attributelist >
+         
+        </insert >
+        <include id="288" addr="0x7f911e6769d0" >
+            <attributelist id="289" addr="0x7f911e6769d0" >
+                <attribute name="name" value="./rts/lib/mingw-std-threads/mingw.condition_variable.h" id="290" addr="0x7f911e6833b0" />
+            </attributelist >
+
+            <namespace id="291" addr="0x7f911e676a90" >
+                <attributelist id="292" addr="0x7f911e676a90" >
+                    <attribute name="sym_name" value="std" id="293" addr="0x7f911e6833b0" />
+                    <attribute name="name" value="std" id="294" addr="0x7f911e6833b0" />
+                    <attribute name="sym_previousSibling" value="0x7f911e673a30" id="295" addr="0x7f911e673a30" />
+                    <typescope id="296" addr="0x7f911e681430" >
+                        <attributelist id="297" addr="0x7f911e681430" >
+                            <attribute name="name" value="std" id="298" addr="0x7f911e6833b0" />
+                            <typetab id="299" addr="0x7f911e681330" >
+                                <attributelist id="300" addr="0x7f911e681330" >
+                                    <attribute name="cv_status" value="enum std::cv_status" id="301" addr="0x7f911e6833b0" />
+                                    <attribute name="initializer_list" value="initializer_list" id="302" addr="0x7f911e6833b0" />
+                                    <attribute name="condition_variable" value="condition_variable" id="303" addr="0x7f911e6833b0" />
+                                    <attribute name="condition_variable_any" value="condition_variable_any" id="304" addr="0x7f911e6833b0" />
+                                </attributelist >
+                                <typetabsitem id="305" addr="0x7f911e681610" >
+                                    <attributelist id="306" addr="0x7f911e681610" >
+                                    </attributelist >
+                                </typetabsitem >
+                                <typetabsitem id="307" addr="0x7f911e681530" >
+                                    <attributelist id="308" addr="0x7f911e681530" >
+                                    </attributelist >
+                                </typetabsitem >
+                                <typetabsitem id="309" addr="0x7f911e681e70" >
+                                    <attributelist id="310" addr="0x7f911e681e70" >
+                                    </attributelist >
+                                </typetabsitem >
+                                <typetabsitem id="311" addr="0x7f911e681850" >
+                                    <attributelist id="312" addr="0x7f911e681850" >
+                                    </attributelist >
+                                </typetabsitem >
+                            </typetab >
+                            <attribute name="parent" value="0x7f911e660990" id="313" addr="0x7f911e660990" />
+                            <attribute name="qname" value="std" id="314" addr="0x7f911e6833b0" />
+                            <attribute name="symtab" value="0x7f911e673990" id="315" addr="0x7f911e673990" />
+                        </attributelist >
+                        <typescopesitem id="316" addr="0x7f911e6738f0" >
+                            <attributelist id="317" addr="0x7f911e6738f0" >
+                            </attributelist >
+                        </typescopesitem >
+                        <typescopesitem id="318" addr="0x7f911e681330" >
+                            <attributelist id="319" addr="0x7f911e681330" >
+                                <attribute name="cv_status" value="enum std::cv_status" id="320" addr="0x7f911e6833b0" />
+                                <attribute name="initializer_list" value="initializer_list" id="321" addr="0x7f911e6833b0" />
+                                <attribute name="condition_variable" value="condition_variable" id="322" addr="0x7f911e6833b0" />
+                                <attribute name="condition_variable_any" value="condition_variable_any" id="323" addr="0x7f911e6833b0" />
+                            </attributelist >
+                        </typescopesitem >
+                        <typescopesitem id="324" addr="0x7f911e660990" >
+                            <attributelist id="325" addr="0x7f911e660990" >
+                                <attribute name="name" value="" id="326" addr="0x7f911e6833b0" />
+                                <typetab id="327" addr="0x7f911e6609f0" >
+                                    <attributelist id="328" addr="0x7f911e6609f0" >
+                                    </attributelist >
+                                </typetab >
+                            </attributelist >
+                        </typescopesitem >
+                        <typescopesitem id="329" addr="0x7f911e681350" >
+                            <attributelist id="330" addr="0x7f911e681350" >
+                            </attributelist >
+                        </typescopesitem >
+                        <typescopesitem id="331" addr="0x7f911e673990" >
+                            <attributelist id="332" addr="0x7f911e673990" >
+                                <attribute name="name" value="std" id="333" addr="0x7f911e6833b0" />
+                                <attribute name="csymtab" value="0x7f911e6739d0" id="334" addr="0x7f911e6739d0" />
+                                <attribute name="symtab" value="0x7f911e673970" id="335" addr="0x7f911e673970" />
+                            </attributelist >
+                        </typescopesitem >
+                    </typescope >
+                    <attribute name="symtab" value="0x7f911e673990" id="336" addr="0x7f911e673990" />
+                    <attribute name="sym_symtab" value="0x7f911e6608b0" id="337" addr="0x7f911e6608b0" />
+                </attributelist >
+
+                <enum id="338" addr="0x7f911e676c70" >
+                    <attributelist id="339" addr="0x7f911e676c70" >
+                        <attribute name="name" value="std::cv_status" id="340" addr="0x7f911e6833b0" />
+                        <attribute name="symtab" value="0x7f911e676dd0" id="341" addr="0x7f911e676dd0" />
+                        <attribute name="sym_symtab" value="0x7f911e673990" id="342" addr="0x7f911e673990" />
+                        <attribute name="sym_name" value="cv_status" id="343" addr="0x7f911e6833b0" />
+                        <attribute name="enumtype" value="std::cv_status" id="344" addr="0x7f911e6833b0" />
+                        <attribute name="scopedenum" value="1" id="345" addr="0x7f911e6833b0" />
+                        <attribute name="type" value="enum cv_status" id="346" addr="0x7f911e6833b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="347" addr="0x7f911e6833b0" />
+                        <attribute name="enumkey" value="enum class" id="348" addr="0x7f911e6833b0" />
+                    </attributelist >
+
+                    <enumitem id="349" addr="0x7f911e676af0" >
+                        <attributelist id="350" addr="0x7f911e676af0" >
+                            <attribute name="sym_name" value="no_timeout" id="351" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="no_timeout" id="352" addr="0x7f911e6833b0" />
+                            <attribute name="feature_immutable" value="1" id="353" addr="0x7f911e6833b0" />
+                            <attribute name="value" value="std::cv_status::no_timeout" id="354" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="int" id="355" addr="0x7f911e6833b0" />
+                            <attribute name="enumvalueex" value="0" id="356" addr="0x7f911e6833b0" />
+                            <attribute name="_last" value="0x7f911e676bd0" id="357" addr="0x7f911e676bd0" />
+                            <attribute name="sym_symtab" value="0x7f911e676dd0" id="358" addr="0x7f911e676dd0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="359" addr="0x7f911e6833b0" />
+                            <attribute name="firstenumitem" value="1" id="360" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </enumitem >
+                    <enumitem id="361" addr="0x7f911e676bd0" >
+                        <attributelist id="362" addr="0x7f911e676bd0" >
+                            <attribute name="sym_name" value="timeout" id="363" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="timeout" id="364" addr="0x7f911e6833b0" />
+                            <attribute name="feature_immutable" value="1" id="365" addr="0x7f911e6833b0" />
+                            <attribute name="value" value="std::cv_status::timeout" id="366" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="int" id="367" addr="0x7f911e6833b0" />
+                            <attribute name="enumvalueex" value="no_timeout + 1" id="368" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e676dd0" id="369" addr="0x7f911e676dd0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="370" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </enumitem >
+                </enum >
+                <class id="371" addr="0x7f911e676f30" >
+                    <attributelist id="372" addr="0x7f911e676f30" >
+                        <attribute name="name" value="std::condition_variable_any" id="373" addr="0x7f911e6833b0" />
+                        <attribute name="sym_symtab" value="0x7f911e673990" id="374" addr="0x7f911e673990" />
+                        <attribute name="symtab" value="0x7f911e677010" id="375" addr="0x7f911e677010" />
+                        <attribute name="allows_typedef" value="1" id="376" addr="0x7f911e6833b0" />
+                        <attribute name="typepass_visit" value="1" id="377" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_visit" value="1" id="378" addr="0x7f911e6833b0" />
+                        <attribute name="kind" value="class" id="379" addr="0x7f911e6833b0" />
+                        <attribute name="sym_name" value="condition_variable_any" id="380" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_noassign" value="1" id="381" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_has_constructor" value="1" id="382" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_public_constructor" value="1" id="383" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_has_copy_constructor" value="1" id="384" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_copy_constructor" value="1" id="385" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_default_constructor" value="1" id="386" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_has_destructor" value="1" id="387" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_default_destructor" value="1" id="388" addr="0x7f911e6833b0" />
+                        <attribute name="module" value="impl_me" id="389" addr="0x7f911e6768b0" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="390" addr="0x7f911e6833b0" />
+                        <typescope id="391" addr="0x7f911e681930" >
+                            <attributelist id="392" addr="0x7f911e681930" >
+                                <attribute name="name" value="condition_variable_any" id="393" addr="0x7f911e6833b0" />
+                                <typetab id="394" addr="0x7f911e681950" >
+                                    <attributelist id="395" addr="0x7f911e681950" >
+                                        <attribute name="native_handle_type" value="HANDLE" id="396" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                    <typetabsitem id="397" addr="0x7f911e681ad0" >
+                                        <attributelist id="398" addr="0x7f911e681ad0" >
+                                        </attributelist >
+                                    </typetabsitem >
+                                </typetab >
+                                <attribute name="parent" value="0x7f911e681430" id="399" addr="0x7f911e681430" />
+                                <attribute name="qname" value="std::condition_variable_any" id="400" addr="0x7f911e6833b0" />
+                                <attribute name="symtab" value="0x7f911e677010" id="401" addr="0x7f911e677010" />
+                            </attributelist >
+                            <typescopesitem id="402" addr="0x7f911e6818b0" >
+                                <attributelist id="403" addr="0x7f911e6818b0" >
+                                </attributelist >
+                            </typescopesitem >
+                            <typescopesitem id="404" addr="0x7f911e681950" >
+                                <attributelist id="405" addr="0x7f911e681950" >
+                                    <attribute name="native_handle_type" value="HANDLE" id="406" addr="0x7f911e6833b0" />
+                                </attributelist >
+                            </typescopesitem >
+                            <typescopesitem id="407" addr="0x7f911e681430" >
+                                <attributelist id="408" addr="0x7f911e681430" >
+                                    <attribute name="name" value="std" id="409" addr="0x7f911e6833b0" />
+                                    <typetab id="410" addr="0x7f911e681330" >
+                                        <attributelist id="411" addr="0x7f911e681330" >
+                                            <attribute name="cv_status" value="enum std::cv_status" id="412" addr="0x7f911e6833b0" />
+                                            <attribute name="initializer_list" value="initializer_list" id="413" addr="0x7f911e6833b0" />
+                                            <attribute name="condition_variable" value="condition_variable" id="414" addr="0x7f911e6833b0" />
+                                            <attribute name="condition_variable_any" value="condition_variable_any" id="415" addr="0x7f911e6833b0" />
+                                        </attributelist >
+                                        <typetabsitem id="416" addr="0x7f911e681610" >
+                                            <attributelist id="417" addr="0x7f911e681610" >
+                                            </attributelist >
+                                        </typetabsitem >
+                                        <typetabsitem id="418" addr="0x7f911e681530" >
+                                            <attributelist id="419" addr="0x7f911e681530" >
+                                            </attributelist >
+                                        </typetabsitem >
+                                        <typetabsitem id="420" addr="0x7f911e681e70" >
+                                            <attributelist id="421" addr="0x7f911e681e70" >
+                                            </attributelist >
+                                        </typetabsitem >
+                                        <typetabsitem id="422" addr="0x7f911e681850" >
+                                            <attributelist id="423" addr="0x7f911e681850" >
+                                            </attributelist >
+                                        </typetabsitem >
+                                    </typetab >
+                                    <attribute name="parent" value="0x7f911e660990" id="424" addr="0x7f911e660990" />
+                                    <attribute name="qname" value="std" id="425" addr="0x7f911e6833b0" />
+                                    <attribute name="symtab" value="0x7f911e673990" id="426" addr="0x7f911e673990" />
+                                </attributelist >
+                            </typescopesitem >
+                            <typescopesitem id="427" addr="0x7f911e681970" >
+                                <attributelist id="428" addr="0x7f911e681970" >
+                                </attributelist >
+                            </typescopesitem >
+                            <typescopesitem id="429" addr="0x7f911e677010" >
+                                <attributelist id="430" addr="0x7f911e677010" >
+                                    <attribute name="name" value="condition_variable_any" id="431" addr="0x7f911e6833b0" />
+                                    <attribute name="csymtab" value="0x7f911e677050" id="432" addr="0x7f911e677050" />
+                                    <attribute name="symtab" value="0x7f911e676ff0" id="433" addr="0x7f911e676ff0" />
+                                </attributelist >
+                            </typescopesitem >
+                        </typescope >
+                    </attributelist >
+
+                    <access id="434" addr="0x7f911e677090" >
+                        <attributelist id="435" addr="0x7f911e677090" >
+                            <attribute name="kind" value="protected" id="436" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </access >
+                    <cdecl id="437" addr="0x7f911e6771b0" >
+                        <attributelist id="438" addr="0x7f911e6771b0" >
+                            <attribute name="ismember" value="1" id="439" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="mMutex" id="440" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="" id="441" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="protected" id="442" addr="0x7f911e6833b0" />
+                            <attribute name="kind" value="variable" id="443" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="recursive_mutex" id="444" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="445" addr="0x7f911e677010" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <cdecl id="446" addr="0x7f911e677530" >
+                        <attributelist id="447" addr="0x7f911e677530" >
+                            <attribute name="ismember" value="1" id="448" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="mNumWaiters" id="449" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="" id="450" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="protected" id="451" addr="0x7f911e6833b0" />
+                            <attribute name="kind" value="variable" id="452" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="atomic&lt;(int)>" id="453" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="454" addr="0x7f911e677010" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <cdecl id="455" addr="0x7f911e677670" >
+                        <attributelist id="456" addr="0x7f911e677670" >
+                            <attribute name="ismember" value="1" id="457" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="mWakeEvent" id="458" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="" id="459" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="protected" id="460" addr="0x7f911e6833b0" />
+                            <attribute name="kind" value="variable" id="461" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="HANDLE" id="462" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="463" addr="0x7f911e677010" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <cdecl id="464" addr="0x7f911e6778b0" >
+                        <attributelist id="465" addr="0x7f911e6778b0" >
+                            <attribute name="ismember" value="1" id="466" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="mSemaphore" id="467" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="" id="468" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="protected" id="469" addr="0x7f911e6833b0" />
+                            <attribute name="kind" value="variable" id="470" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="HANDLE" id="471" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="472" addr="0x7f911e677010" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <cdecl id="473" addr="0x7f911e677a30" >
+                        <attributelist id="474" addr="0x7f911e677a30" >
+                            <attribute name="ismember" value="1" id="475" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="mTimer" id="476" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="" id="477" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="protected" id="478" addr="0x7f911e6833b0" />
+                            <attribute name="kind" value="variable" id="479" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="HANDLE" id="480" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="481" addr="0x7f911e677010" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <access id="482" addr="0x7f911e677b10" >
+                        <attributelist id="483" addr="0x7f911e677b10" >
+                            <attribute name="kind" value="public" id="484" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </access >
+                    <cdecl id="485" addr="0x7f911e677c10" >
+                        <attributelist id="486" addr="0x7f911e677c10" >
+                            <attribute name="name" value="native_handle_type" id="487" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="488" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="489" addr="0x7f911e677010" />
+                            <attribute name="kind" value="typedef" id="490" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="native_handle_type" id="491" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="" id="492" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="493" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="HANDLE" id="494" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="495" addr="0x7f911e6833b0" />
+                            <attribute name="storage" value="typedef" id="496" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <cdecl id="497" addr="0x7f911e677df0" >
+                        <attributelist id="498" addr="0x7f911e677df0" >
+                            <attribute name="name" value="native_handle" id="499" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="500" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="501" addr="0x7f911e677010" />
+                            <attribute name="kind" value="function" id="502" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="native_handle" id="503" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="f()." id="504" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="505" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="std::condition_variable_any::native_handle_type" id="506" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{return mSemaphore;}" id="507" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="508" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <constructor id="509" addr="0x7f911e6780b0" >
+                        <attributelist id="510" addr="0x7f911e6780b0" >
+                            <attribute name="value" value="delete" id="511" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="condition_variable_any" id="512" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="513" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="514" addr="0x7f911e677010" />
+                            <attribute name="csym_nextSibling" value="0x7f911e6786d0" id="515" addr="0x7f911e6786d0" />
+                            <attribute name="copy_constructor" value="1" id="516" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="f(r.q(const).condition_variable_any)." id="517" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="518" addr="0x7f911e6833b0" />
+                            <parmlist id="519" addr="0x7f911e677ff0" >
+                                <parm id="520">
+                                    <attributelist id="521" addr="0x7f911e677ff0" >
+                                        <attribute name="type" value="r.q(const).std::condition_variable_any" id="522" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="feature_ignore" value="1" id="523" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{return mSemaphore;}" id="524" addr="0x7f911e6833b0" />
+                            <attribute name="deleted" value="1" id="525" addr="0x7f911e6833b0" />
+                            <attribute name="feature_new" value="1" id="526" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </constructor >
+                    <cdecl id="527" addr="0x7f911e6783d0" >
+                        <attributelist id="528" addr="0x7f911e6783d0" >
+                            <attribute name="value" value="delete" id="529" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="operator =" id="530" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="531" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="532" addr="0x7f911e677010" />
+                            <attribute name="kind" value="function" id="533" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="f(r.q(const).std::condition_variable_any).r." id="534" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="535" addr="0x7f911e6833b0" />
+                            <parmlist id="536" addr="0x7f911e678310" >
+                                <parm id="537">
+                                    <attributelist id="538" addr="0x7f911e678310" >
+                                        <attribute name="type" value="r.q(const).std::condition_variable_any" id="539" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="feature_ignore" value="1" id="540" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="std::condition_variable_any" id="541" addr="0x7f911e6833b0" />
+                            <attribute name="deleted" value="1" id="542" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <constructor id="543" addr="0x7f911e6786d0" >
+                        <attributelist id="544" addr="0x7f911e6786d0" >
+                            <attribute name="ismember" value="1" id="545" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="condition_variable_any" id="546" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="condition_variable_any" id="547" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="f()." id="548" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="549" addr="0x7f911e6833b0" />
+                            <attribute name="feature_new" value="1" id="550" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{}" id="551" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="552" addr="0x7f911e677010" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="553" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </constructor >
+                    <destructor id="554" addr="0x7f911e678850" >
+                        <attributelist id="555" addr="0x7f911e678850" >
+                            <attribute name="ismember" value="1" id="556" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="~condition_variable_any" id="557" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="~condition_variable_any" id="558" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="f()." id="559" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="560" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{  CloseHandle(mWakeEvent); CloseHandle(mSemaphore); CloseHandle(mTimer); }" id="561" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="562" addr="0x7f911e677010" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="563" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </destructor >
+                    <access id="564" addr="0x7f911e678910" >
+                        <attributelist id="565" addr="0x7f911e678910" >
+                            <attribute name="kind" value="protected" id="566" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </access >
+                    <template id="567" addr="0x7f911e678d90" >
+                        <attributelist id="568" addr="0x7f911e678d90" >
+                            <attribute name="templatetype" value="cdecl" id="569" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="570" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_impl" id="571" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="572" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="573" addr="0x7f911e677010" />
+                            <attribute name="decl" value="f(r.M,DWORD)." id="574" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="protected" id="575" addr="0x7f911e6833b0" />
+                            <parmlist id="576" addr="0x7f911e678bd0" >
+                                <parm id="577">
+                                    <attributelist id="578" addr="0x7f911e678bd0" >
+                                        <attribute name="name" value="lock" id="579" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.M" id="580" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="581">
+                                    <attributelist id="582" addr="0x7f911e678cf0" >
+                                        <attribute name="name" value="timeout" id="583" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="DWORD" id="584" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="type" value="bool" id="585" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        {&#10;            lock_guard&lt;recursive_mutex> guard(mMutex);&#10;            mNumWaiters++;&#10;        }&#10;        lock.unlock();&#10;            DWORD ret = WaitForSingleObject(mSemaphore, timeout);&#10;&#10;        mNumWaiters--;&#10;        SetEvent(mWakeEvent);&#10;        lock.lock();&#10;        if (ret == WAIT_OBJECT_0)&#10;            return true;&#10;        else if (ret == WAIT_TIMEOUT)&#10;            return false;&#10;//2 possible cases:&#10;//1)The point in notify_all() where we determine the count to&#10;//increment the semaphore with has not been reached yet:&#10;//we just need to decrement mNumWaiters, but setting the event does not hurt&#10;//&#10;//2)Semaphore has just been released with mNumWaiters just before&#10;//we decremented it. This means that the semaphore count&#10;//after all waiters finish won't be 0 - because not all waiters&#10;//woke up by acquiring the semaphore - we woke up by a timeout.&#10;//The notify_all() must handle this grafecully&#10;//&#10;        else&#10;            throw system_error(EPROTO, generic_category());&#10;    }" id="586" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e678a10" id="587" addr="0x7f911e678a10" />
+                        </attributelist >
+                     
+                    </template >
+                    <template id="588" addr="0x7f911e6792b0" >
+                        <attributelist id="589" addr="0x7f911e6792b0" >
+                            <attribute name="templatetype" value="cdecl" id="590" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="591" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_impl_ns" id="592" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="593" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="594" addr="0x7f911e677010" />
+                            <attribute name="decl" value="f(r.M,DWORD)." id="595" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="protected" id="596" addr="0x7f911e6833b0" />
+                            <parmlist id="597" addr="0x7f911e6790f0" >
+                                <parm id="598">
+                                    <attributelist id="599" addr="0x7f911e6790f0" >
+                                        <attribute name="name" value="lock" id="600" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.M" id="601" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="602">
+                                    <attributelist id="603" addr="0x7f911e679210" >
+                                        <attribute name="name" value="timeout" id="604" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="DWORD" id="605" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="type" value="bool" id="606" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        {&#10;            lock_guard&lt;recursive_mutex> guard(mMutex);&#10;            mNumWaiters++;&#10;        }&#10;        lock.unlock();&#10;        LARGE_INTEGER liDueTime;&#10;        liDueTime.QuadPart = - int64_t(timeout);&#10;        SetWaitableTimer(&#10;           mTimer,                 // Handle to the timer object.&#10;           &amp;liDueTime,             // When timer will become signaled.&#10;           0,                      // signal once.&#10;           NULL,           // Completion routine.&#10;           NULL,                // Argument to the completion routine.&#10;           FALSE );                // Do not restore a suspended system.&#10;        // Notice that mSemapore and mTimer are contigous in the struct so the following works&#10;        DWORD ret = WaitForMultipleObjects(2, &amp;mSemaphore, FALSE, INFINITE);&#10;&#10;        mNumWaiters--;&#10;        SetEvent(mWakeEvent);&#10;        lock.lock();&#10;        if (ret == WAIT_OBJECT_0)&#10;            return true;&#10;        else if (ret == WAIT_TIMEOUT || ret == (WAIT_OBJECT_0 + 1))&#10;            return false;&#10;&#10;        else&#10;            throw system_error(EPROTO, generic_category());&#10;    }" id="607" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e679030" id="608" addr="0x7f911e679030" />
+                        </attributelist >
+                     
+                    </template >
+                    <access id="609" addr="0x7f911e6793d0" >
+                        <attributelist id="610" addr="0x7f911e6793d0" >
+                            <attribute name="kind" value="public" id="611" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </access >
+                    <template id="612" addr="0x7f911e679710" >
+                        <attributelist id="613" addr="0x7f911e679710" >
+                            <attribute name="templatetype" value="cdecl" id="614" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="615" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait" id="616" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="617" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="618" addr="0x7f911e677010" />
+                            <attribute name="sym_name" value="wait" id="619" addr="0x7f911e6833b0" />
+                            <attribute name="csym_nextSibling" value="0x7f911e679d50" id="620" addr="0x7f911e679d50" />
+                            <attribute name="sym_nextSibling" value="0x7f911e679d50" id="621" addr="0x7f911e679d50" />
+                            <attribute name="decl" value="f(r.M)." id="622" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="623" addr="0x7f911e6833b0" />
+                            <parmlist id="624" addr="0x7f911e679670" >
+                                <parm id="625">
+                                    <attributelist id="626" addr="0x7f911e679670" >
+                                        <attribute name="name" value="lock" id="627" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.M" id="628" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e679710" id="629" addr="0x7f911e679710" />
+                            <attribute name="type" value="void" id="630" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        wait_impl(lock, INFINITE);&#10;    }" id="631" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="632" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e6794d0" id="633" addr="0x7f911e6794d0" />
+                        </attributelist >
+                     
+                    </template >
+                    <template id="634" addr="0x7f911e679d50" >
+                        <attributelist id="635" addr="0x7f911e679d50" >
+                            <attribute name="templatetype" value="cdecl" id="636" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="637" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait" id="638" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="639" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="640" addr="0x7f911e677010" />
+                            <attribute name="sym_name" value="wait" id="641" addr="0x7f911e6833b0" />
+                            <attribute name="sym_previousSibling" value="0x7f911e679710" id="642" addr="0x7f911e679710" />
+                            <attribute name="decl" value="f(r.M,Predicate)." id="643" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="644" addr="0x7f911e6833b0" />
+                            <parmlist id="645" addr="0x7f911e679b90" >
+                                <parm id="646">
+                                    <attributelist id="647" addr="0x7f911e679b90" >
+                                        <attribute name="name" value="lock" id="648" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.M" id="649" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="650">
+                                    <attributelist id="651" addr="0x7f911e679cb0" >
+                                        <attribute name="name" value="pred" id="652" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="Predicate" id="653" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e679710" id="654" addr="0x7f911e679710" />
+                            <attribute name="type" value="void" id="655" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        while(!pred())&#10;        {&#10;            wait(lock);&#10;        };&#10;    }" id="656" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_1" id="657" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e6799f0" id="658" addr="0x7f911e6799f0" />
+                        </attributelist >
+                     
+                    </template >
+                    <cdecl id="659" addr="0x7f911e67a130" >
+                        <attributelist id="660" addr="0x7f911e67a130" >
+                            <attribute name="name" value="notify_all" id="661" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="662" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="663" addr="0x7f911e677010" />
+                            <attribute name="kind" value="function" id="664" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="notify_all" id="665" addr="0x7f911e6833b0" />
+                            <attribute name="noexcept" value="true" id="666" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="f()." id="667" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="668" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="void" id="669" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        lock_guard&lt;recursive_mutex> lock(mMutex); //block any further wait requests until all current waiters are unblocked&#10;        if (mNumWaiters.load() &lt;= 0)&#10;            return;&#10;&#10;        ReleaseSemaphore(mSemaphore, mNumWaiters, NULL);&#10;        while(mNumWaiters > 0)&#10;        {&#10;            auto ret = WaitForSingleObject(mWakeEvent, 1000);&#10;            if ((ret == WAIT_FAILED) || (ret == WAIT_ABANDONED))&#10;                throw system_error(EPROTO, generic_category());&#10;        }&#10;        assert(mNumWaiters == 0);&#10;//in case some of the waiters timed out just after we released the&#10;//semaphore by mNumWaiters, it won't be zero now, because not all waiters&#10;//woke up by acquiring the semaphore. So we must zero the semaphore before&#10;//we accept waiters for the next event&#10;//See _wait_impl for details&#10;        while(WaitForSingleObject(mSemaphore, 0) == WAIT_OBJECT_0);&#10;    }" id="670" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="671" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <cdecl id="672" addr="0x7f911e67a1f0" >
+                        <attributelist id="673" addr="0x7f911e67a1f0" >
+                            <attribute name="name" value="notify_one" id="674" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="675" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="676" addr="0x7f911e677010" />
+                            <attribute name="kind" value="function" id="677" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="notify_one" id="678" addr="0x7f911e6833b0" />
+                            <attribute name="noexcept" value="true" id="679" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="f()." id="680" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="681" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="void" id="682" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        lock_guard&lt;recursive_mutex> lock(mMutex);&#10;        if (!mNumWaiters)&#10;            return;&#10;        int targetWaiters = mNumWaiters.load() - 1;&#10;        ReleaseSemaphore(mSemaphore, 1, NULL);&#10;        while(mNumWaiters > targetWaiters)&#10;        {&#10;            auto ret = WaitForSingleObject(mWakeEvent, 1000);&#10;            if ((ret == WAIT_FAILED) || (ret == WAIT_ABANDONED))&#10;                throw system_error(EPROTO, generic_category());&#10;        }&#10;        assert(mNumWaiters == targetWaiters);&#10;    }" id="683" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="684" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <template id="685" addr="0x7f911e67aa90" >
+                        <attributelist id="686" addr="0x7f911e67aa90" >
+                            <attribute name="templatetype" value="cdecl" id="687" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="688" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_for" id="689" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="690" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="691" addr="0x7f911e677010" />
+                            <attribute name="sym_name" value="wait_for" id="692" addr="0x7f911e6833b0" />
+                            <attribute name="csym_nextSibling" value="0x7f911e67b2f0" id="693" addr="0x7f911e67b2f0" />
+                            <attribute name="sym_nextSibling" value="0x7f911e67b2f0" id="694" addr="0x7f911e67b2f0" />
+                            <attribute name="decl" value="f(r.M,r.q(const).std::chrono::duration&lt;(Rep,Period)>)." id="695" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="696" addr="0x7f911e6833b0" />
+                            <parmlist id="697" addr="0x7f911e67a710" >
+                                <parm id="698">
+                                    <attributelist id="699" addr="0x7f911e67a710" >
+                                        <attribute name="name" value="lock" id="700" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.M" id="701" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="702">
+                                    <attributelist id="703" addr="0x7f911e67a9f0" >
+                                        <attribute name="name" value="rel_time" id="704" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.q(const).std::chrono::duration&lt;(Rep,Period)>" id="705" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e67aa90" id="706" addr="0x7f911e67aa90" />
+                            <attribute name="type" value="std::cv_status" id="707" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        long long timeout = chrono::duration_cast&lt;chrono::milliseconds>(rel_time).count();&#10;        if (timeout &lt; 0)&#10;            timeout = 0;&#10;        bool ret = wait_impl(lock, (DWORD)timeout);&#10;        return ret?cv_status::no_timeout:cv_status::timeout;&#10;    }" id="708" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="709" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e67a370" id="710" addr="0x7f911e67a370" />
+                        </attributelist >
+                     
+                    </template >
+                    <template id="711" addr="0x7f911e67b2f0" >
+                        <attributelist id="712" addr="0x7f911e67b2f0" >
+                            <attribute name="templatetype" value="cdecl" id="713" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="714" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_for" id="715" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="716" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="717" addr="0x7f911e677010" />
+                            <attribute name="sym_name" value="wait_for" id="718" addr="0x7f911e6833b0" />
+                            <attribute name="sym_previousSibling" value="0x7f911e67aa90" id="719" addr="0x7f911e67aa90" />
+                            <attribute name="csym_nextSibling" value="0x7f911e67bdd0" id="720" addr="0x7f911e67bdd0" />
+                            <attribute name="sym_nextSibling" value="0x7f911e67bdd0" id="721" addr="0x7f911e67bdd0" />
+                            <attribute name="decl" value="f(r.M,r.q(const).std::chrono::duration&lt;(Rep,std::nano)>)." id="722" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="723" addr="0x7f911e6833b0" />
+                            <parmlist id="724" addr="0x7f911e67af50" >
+                                <parm id="725">
+                                    <attributelist id="726" addr="0x7f911e67af50" >
+                                        <attribute name="name" value="lock" id="727" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.M" id="728" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="729">
+                                    <attributelist id="730" addr="0x7f911e67b250" >
+                                        <attribute name="name" value="rel_time" id="731" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.q(const).std::chrono::duration&lt;(Rep,std::nano)>" id="732" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e67aa90" id="733" addr="0x7f911e67aa90" />
+                            <attribute name="type" value="std::cv_status" id="734" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        int timeout = chrono::duration_cast&lt;chrono::nanoseconds>(rel_time).count() / 100;&#10;        if (timeout &lt; 0)&#10;            timeout = 0;&#10;        bool ret = wait_impl_ns(lock, (DWORD)timeout);&#10;        return ret?cv_status::no_timeout:cv_status::timeout;&#10;    }" id="735" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_1" id="736" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e67adb0" id="737" addr="0x7f911e67adb0" />
+                        </attributelist >
+                     
+                    </template >
+                    <template id="738" addr="0x7f911e67bdd0" >
+                        <attributelist id="739" addr="0x7f911e67bdd0" >
+                            <attribute name="templatetype" value="cdecl" id="740" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="741" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_for" id="742" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="743" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="744" addr="0x7f911e677010" />
+                            <attribute name="sym_name" value="wait_for" id="745" addr="0x7f911e6833b0" />
+                            <attribute name="sym_previousSibling" value="0x7f911e67b2f0" id="746" addr="0x7f911e67b2f0" />
+                            <attribute name="decl" value="f(r.M,r.q(const).std::chrono::duration&lt;(Rep,Period)>,Predicate)." id="747" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="748" addr="0x7f911e6833b0" />
+                            <parmlist id="749" addr="0x7f911e67b930" >
+                                <parm id="750">
+                                    <attributelist id="751" addr="0x7f911e67b930" >
+                                        <attribute name="name" value="lock" id="752" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.M" id="753" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="754">
+                                    <attributelist id="755" addr="0x7f911e67bc10" >
+                                        <attribute name="name" value="rel_time" id="756" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.q(const).std::chrono::duration&lt;(Rep,Period)>" id="757" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="758">
+                                    <attributelist id="759" addr="0x7f911e67bd30" >
+                                        <attribute name="name" value="pred" id="760" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="Predicate" id="761" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e67aa90" id="762" addr="0x7f911e67aa90" />
+                            <attribute name="type" value="bool" id="763" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        wait_for(lock, rel_time);&#10;        return pred();&#10;    }" id="764" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_2" id="765" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e67b5f0" id="766" addr="0x7f911e67b5f0" />
+                        </attributelist >
+                     
+                    </template >
+                    <template id="767" addr="0x7f911e67c6b0" >
+                        <attributelist id="768" addr="0x7f911e67c6b0" >
+                            <attribute name="templatetype" value="cdecl" id="769" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="770" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_until" id="771" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="772" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="773" addr="0x7f911e677010" />
+                            <attribute name="sym_name" value="wait_until" id="774" addr="0x7f911e6833b0" />
+                            <attribute name="csym_nextSibling" value="0x7f911e67d190" id="775" addr="0x7f911e67d190" />
+                            <attribute name="sym_nextSibling" value="0x7f911e67d190" id="776" addr="0x7f911e67d190" />
+                            <attribute name="decl" value="f(r.M,r.q(const).chrono::time_point&lt;(Clock,Duration)>)." id="777" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="778" addr="0x7f911e6833b0" />
+                            <parmlist id="779" addr="0x7f911e67c350" >
+                                <parm id="780">
+                                    <attributelist id="781" addr="0x7f911e67c350" >
+                                        <attribute name="name" value="lock" id="782" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.M" id="783" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="784">
+                                    <attributelist id="785" addr="0x7f911e67c610" >
+                                        <attribute name="name" value="abs_time" id="786" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.q(const).chrono::time_point&lt;(Clock,Duration)>" id="787" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e67c6b0" id="788" addr="0x7f911e67c6b0" />
+                            <attribute name="type" value="cv_status" id="789" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        return wait_for(lock, abs_time - Clock::now());&#10;    }" id="790" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="791" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e67c110" id="792" addr="0x7f911e67c110" />
+                        </attributelist >
+                     
+                    </template >
+                    <template id="793" addr="0x7f911e67d190" >
+                        <attributelist id="794" addr="0x7f911e67d190" >
+                            <attribute name="templatetype" value="cdecl" id="795" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="796" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_until" id="797" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="798" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e677010" id="799" addr="0x7f911e677010" />
+                            <attribute name="sym_name" value="wait_until" id="800" addr="0x7f911e6833b0" />
+                            <attribute name="sym_previousSibling" value="0x7f911e67c6b0" id="801" addr="0x7f911e67c6b0" />
+                            <attribute name="decl" value="f(r.M,r.q(const).std::chrono::time_point&lt;(Clock,Duration)>,Predicate)." id="802" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="803" addr="0x7f911e6833b0" />
+                            <parmlist id="804" addr="0x7f911e67ccf0" >
+                                <parm id="805">
+                                    <attributelist id="806" addr="0x7f911e67ccf0" >
+                                        <attribute name="name" value="lock" id="807" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.M" id="808" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="809">
+                                    <attributelist id="810" addr="0x7f911e67cfd0" >
+                                        <attribute name="name" value="abs_time" id="811" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.q(const).std::chrono::time_point&lt;(Clock,Duration)>" id="812" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="813">
+                                    <attributelist id="814" addr="0x7f911e67d0f0" >
+                                        <attribute name="name" value="pred" id="815" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="Predicate" id="816" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e67c6b0" id="817" addr="0x7f911e67c6b0" />
+                            <attribute name="type" value="bool" id="818" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{&#10;        auto time = abs_time - Clock::now();&#10;        if (time &lt; 0)&#10;            return pred();&#10;        else&#10;            return wait_for(lock, time, pred);&#10;    }" id="819" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_1" id="820" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e67c9d0" id="821" addr="0x7f911e67c9d0" />
+                        </attributelist >
+                     
+                    </template >
+                </class >
+                <class id="822" addr="0x7f911e67d3b0" >
+                    <attributelist id="823" addr="0x7f911e67d3b0" >
+                        <attribute name="protectedbases" value="0x7f911e682010" id="824" addr="0x7f911e682010" />
+                        <attribute name="name" value="std::condition_variable" id="825" addr="0x7f911e6833b0" />
+                        <attribute name="sym_symtab" value="0x7f911e673990" id="826" addr="0x7f911e673990" />
+                        <attribute name="symtab" value="0x7f911e67d6f0" id="827" addr="0x7f911e67d6f0" />
+                        <attribute name="allows_typedef" value="1" id="828" addr="0x7f911e6833b0" />
+                        <attribute name="typepass_visit" value="1" id="829" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_visit" value="1" id="830" addr="0x7f911e6833b0" />
+                        <attribute name="kind" value="class" id="831" addr="0x7f911e6833b0" />
+                        <attribute name="sym_name" value="condition_variable" id="832" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_default_constructor" value="1" id="833" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_copy_constructor" value="1" id="834" addr="0x7f911e6833b0" />
+                        <attribute name="allocate_default_destructor" value="1" id="835" addr="0x7f911e6833b0" />
+                        <attribute name="privatebaselist" value="0x7f911e67d510" id="836" addr="0x7f911e67d510" />
+                        <attribute name="protectedbaselist" value="0x7f911e67d570" id="837" addr="0x7f911e67d570" />
+                        <baselist id="838" addr="0x7f911e67d5d0" >
+                        </baselist >
+                        <attribute name="module" value="impl_me" id="839" addr="0x7f911e6768b0" />
+                        <attribute name="allbases" value="0x7f911e682410" id="840" addr="0x7f911e682410" />
+                        <attribute name="sym_overname" value="__SWIG_0" id="841" addr="0x7f911e6833b0" />
+                        <typescope id="842" addr="0x7f911e681f30" >
+                            <attributelist id="843" addr="0x7f911e681f30" >
+                                <attribute name="inherit" value="0x7f911e682090" id="844" addr="0x7f911e682090" />
+                                <attribute name="name" value="condition_variable" id="845" addr="0x7f911e6833b0" />
+                                <typetab id="846" addr="0x7f911e681f50" >
+                                    <attributelist id="847" addr="0x7f911e681f50" >
+                                        <attribute name="native_handle_type" value="std::condition_variable_any::native_handle_type" id="848" addr="0x7f911e6833b0" />
+                                        <attribute name="base" value="std::condition_variable_any" id="849" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                    <typetabsitem id="850" addr="0x7f911e67da30" >
+                                        <attributelist id="851" addr="0x7f911e67da30" >
+                                        </attributelist >
+                                    </typetabsitem >
+                                    <typetabsitem id="852" addr="0x7f911e682430" >
+                                        <attributelist id="853" addr="0x7f911e682430" >
+                                        </attributelist >
+                                    </typetabsitem >
+                                </typetab >
+                                <attribute name="parent" value="0x7f911e681430" id="854" addr="0x7f911e681430" />
+                                <attribute name="qname" value="std::condition_variable" id="855" addr="0x7f911e6833b0" />
+                                <attribute name="symtab" value="0x7f911e67d6f0" id="856" addr="0x7f911e67d6f0" />
+                            </attributelist >
+                            <typescopesitem id="857" addr="0x7f911e682090" >
+                                <attributelist id="858" addr="0x7f911e682090" >
+                                </attributelist >
+                            </typescopesitem >
+                            <typescopesitem id="859" addr="0x7f911e681ed0" >
+                                <attributelist id="860" addr="0x7f911e681ed0" >
+                                </attributelist >
+                            </typescopesitem >
+                            <typescopesitem id="861" addr="0x7f911e681f50" >
+                                <attributelist id="862" addr="0x7f911e681f50" >
+                                    <attribute name="native_handle_type" value="std::condition_variable_any::native_handle_type" id="863" addr="0x7f911e6833b0" />
+                                    <attribute name="base" value="std::condition_variable_any" id="864" addr="0x7f911e6833b0" />
+                                </attributelist >
+                            </typescopesitem >
+                            <typescopesitem id="865" addr="0x7f911e681430" >
+                                <attributelist id="866" addr="0x7f911e681430" >
+                                    <attribute name="name" value="std" id="867" addr="0x7f911e6833b0" />
+                                    <typetab id="868" addr="0x7f911e681330" >
+                                        <attributelist id="869" addr="0x7f911e681330" >
+                                            <attribute name="cv_status" value="enum std::cv_status" id="870" addr="0x7f911e6833b0" />
+                                            <attribute name="initializer_list" value="initializer_list" id="871" addr="0x7f911e6833b0" />
+                                            <attribute name="condition_variable" value="condition_variable" id="872" addr="0x7f911e6833b0" />
+                                            <attribute name="condition_variable_any" value="condition_variable_any" id="873" addr="0x7f911e6833b0" />
+                                        </attributelist >
+                                        <typetabsitem id="874" addr="0x7f911e681610" >
+                                            <attributelist id="875" addr="0x7f911e681610" >
+                                            </attributelist >
+                                        </typetabsitem >
+                                        <typetabsitem id="876" addr="0x7f911e681530" >
+                                            <attributelist id="877" addr="0x7f911e681530" >
+                                            </attributelist >
+                                        </typetabsitem >
+                                        <typetabsitem id="878" addr="0x7f911e681e70" >
+                                            <attributelist id="879" addr="0x7f911e681e70" >
+                                            </attributelist >
+                                        </typetabsitem >
+                                        <typetabsitem id="880" addr="0x7f911e681850" >
+                                            <attributelist id="881" addr="0x7f911e681850" >
+                                            </attributelist >
+                                        </typetabsitem >
+                                    </typetab >
+                                    <attribute name="parent" value="0x7f911e660990" id="882" addr="0x7f911e660990" />
+                                    <attribute name="qname" value="std" id="883" addr="0x7f911e6833b0" />
+                                    <attribute name="symtab" value="0x7f911e673990" id="884" addr="0x7f911e673990" />
+                                </attributelist >
+                            </typescopesitem >
+                            <typescopesitem id="885" addr="0x7f911e681f70" >
+                                <attributelist id="886" addr="0x7f911e681f70" >
+                                </attributelist >
+                            </typescopesitem >
+                            <typescopesitem id="887" addr="0x7f911e67d6f0" >
+                                <attributelist id="888" addr="0x7f911e67d6f0" >
+                                    <attribute name="inherit" value="0x7f911e6823d0" id="889" addr="0x7f911e6823d0" />
+                                    <attribute name="name" value="condition_variable" id="890" addr="0x7f911e6833b0" />
+                                    <attribute name="csymtab" value="0x7f911e67d730" id="891" addr="0x7f911e67d730" />
+                                    <attribute name="symtab" value="0x7f911e67d6d0" id="892" addr="0x7f911e67d6d0" />
+                                </attributelist >
+                            </typescopesitem >
+                        </typescope >
+                    </attributelist >
+
+                    <access id="893" addr="0x7f911e67d690" >
+                        <attributelist id="894" addr="0x7f911e67d690" >
+                            <attribute name="kind" value="protected" id="895" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </access >
+                    <cdecl id="896" addr="0x7f911e67d870" >
+                        <attributelist id="897" addr="0x7f911e67d870" >
+                            <attribute name="ismember" value="1" id="898" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="base" id="899" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="" id="900" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="protected" id="901" addr="0x7f911e6833b0" />
+                            <attribute name="storage" value="typedef" id="902" addr="0x7f911e6833b0" />
+                            <attribute name="kind" value="typedef" id="903" addr="0x7f911e6833b0" />
+                            <attribute name="type" value="std::condition_variable_any" id="904" addr="0x7f911e6833b0" />
+                            <attribute name="csym_nextSibling" value="0x7f911e67ddb0" id="905" addr="0x7f911e67ddb0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="906" addr="0x7f911e67d6f0" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <access id="907" addr="0x7f911e67d970" >
+                        <attributelist id="908" addr="0x7f911e67d970" >
+                            <attribute name="kind" value="public" id="909" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </access >
+                    <using id="910" addr="0x7f911e67da90" >
+                        <attributelist id="911" addr="0x7f911e67da90" >
+                            <attribute name="uname" value="std::condition_variable_any::native_handle_type" id="912" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="913" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="native_handle_type" id="914" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="native_handle_type" id="915" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="916" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="917" addr="0x7f911e67d6f0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="918" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </using >
+                    <using id="919" addr="0x7f911e67dc30" >
+                        <attributelist id="920" addr="0x7f911e67dc30" >
+                            <attribute name="uname" value="std::condition_variable_any::native_handle" id="921" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="922" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="native_handle" id="923" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="native_handle" id="924" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="925" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="926" addr="0x7f911e67d6f0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="927" addr="0x7f911e6833b0" />
+                        </attributelist >
+
+                        <cdecl id="928" addr="0x7f911e682650" >
+                            <attributelist id="929" addr="0x7f911e682650" >
+                                <attribute name="ismember" value="1" id="930" addr="0x7f911e6833b0" />
+                                <attribute name="sym_name" value="native_handle" id="931" addr="0x7f911e6833b0" />
+                                <attribute name="name" value="native_handle" id="932" addr="0x7f911e6833b0" />
+                                <attribute name="decl" value="f()." id="933" addr="0x7f911e6833b0" />
+                                <attribute name="access" value="public" id="934" addr="0x7f911e6833b0" />
+                                <attribute name="kind" value="function" id="935" addr="0x7f911e6833b0" />
+                                <attribute name="code" value="{return mSemaphore;}" id="936" addr="0x7f911e6833b0" />
+                                <attribute name="type" value="std::condition_variable_any::native_handle_type" id="937" addr="0x7f911e6833b0" />
+                                <attribute name="sym_overname" value="__SWIG_0" id="938" addr="0x7f911e6833b0" />
+                            </attributelist >
+                         
+                        </cdecl >
+                    </using >
+                    <using id="939" addr="0x7f911e67ddb0" >
+                        <attributelist id="940" addr="0x7f911e67ddb0" >
+                            <attribute name="uname" value="base::base" id="941" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="942" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="base" id="943" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="base" id="944" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="945" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="946" addr="0x7f911e67d6f0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="947" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </using >
+                    <using id="948" addr="0x7f911e67df30" >
+                        <attributelist id="949" addr="0x7f911e67df30" >
+                            <attribute name="uname" value="std::condition_variable_any::notify_all" id="950" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="951" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="notify_all" id="952" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="notify_all" id="953" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="954" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="955" addr="0x7f911e67d6f0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="956" addr="0x7f911e6833b0" />
+                        </attributelist >
+
+                        <cdecl id="957" addr="0x7f911e682790" >
+                            <attributelist id="958" addr="0x7f911e682790" >
+                                <attribute name="ismember" value="1" id="959" addr="0x7f911e6833b0" />
+                                <attribute name="sym_name" value="notify_all" id="960" addr="0x7f911e6833b0" />
+                                <attribute name="name" value="notify_all" id="961" addr="0x7f911e6833b0" />
+                                <attribute name="decl" value="f()." id="962" addr="0x7f911e6833b0" />
+                                <attribute name="access" value="public" id="963" addr="0x7f911e6833b0" />
+                                <attribute name="kind" value="function" id="964" addr="0x7f911e6833b0" />
+                                <attribute name="code" value="{&#10;        lock_guard&lt;recursive_mutex> lock(mMutex); //block any further wait requests until all current waiters are unblocked&#10;        if (mNumWaiters.load() &lt;= 0)&#10;            return;&#10;&#10;        ReleaseSemaphore(mSemaphore, mNumWaiters, NULL);&#10;        while(mNumWaiters > 0)&#10;        {&#10;            auto ret = WaitForSingleObject(mWakeEvent, 1000);&#10;            if ((ret == WAIT_FAILED) || (ret == WAIT_ABANDONED))&#10;                throw system_error(EPROTO, generic_category());&#10;        }&#10;        assert(mNumWaiters == 0);&#10;//in case some of the waiters timed out just after we released the&#10;//semaphore by mNumWaiters, it won't be zero now, because not all waiters&#10;//woke up by acquiring the semaphore. So we must zero the semaphore before&#10;//we accept waiters for the next event&#10;//See _wait_impl for details&#10;        while(WaitForSingleObject(mSemaphore, 0) == WAIT_OBJECT_0);&#10;    }" id="965" addr="0x7f911e6833b0" />
+                                <attribute name="noexcept" value="true" id="966" addr="0x7f911e6833b0" />
+                                <attribute name="type" value="void" id="967" addr="0x7f911e6833b0" />
+                                <attribute name="sym_overname" value="__SWIG_0" id="968" addr="0x7f911e6833b0" />
+                            </attributelist >
+                         
+                        </cdecl >
+                    </using >
+                    <using id="969" addr="0x7f911e67e0b0" >
+                        <attributelist id="970" addr="0x7f911e67e0b0" >
+                            <attribute name="uname" value="std::condition_variable_any::notify_one" id="971" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="972" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="notify_one" id="973" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="notify_one" id="974" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="975" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="976" addr="0x7f911e67d6f0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="977" addr="0x7f911e6833b0" />
+                        </attributelist >
+
+                        <cdecl id="978" addr="0x7f911e682910" >
+                            <attributelist id="979" addr="0x7f911e682910" >
+                                <attribute name="ismember" value="1" id="980" addr="0x7f911e6833b0" />
+                                <attribute name="sym_name" value="notify_one" id="981" addr="0x7f911e6833b0" />
+                                <attribute name="name" value="notify_one" id="982" addr="0x7f911e6833b0" />
+                                <attribute name="decl" value="f()." id="983" addr="0x7f911e6833b0" />
+                                <attribute name="access" value="public" id="984" addr="0x7f911e6833b0" />
+                                <attribute name="kind" value="function" id="985" addr="0x7f911e6833b0" />
+                                <attribute name="code" value="{&#10;        lock_guard&lt;recursive_mutex> lock(mMutex);&#10;        if (!mNumWaiters)&#10;            return;&#10;        int targetWaiters = mNumWaiters.load() - 1;&#10;        ReleaseSemaphore(mSemaphore, 1, NULL);&#10;        while(mNumWaiters > targetWaiters)&#10;        {&#10;            auto ret = WaitForSingleObject(mWakeEvent, 1000);&#10;            if ((ret == WAIT_FAILED) || (ret == WAIT_ABANDONED))&#10;                throw system_error(EPROTO, generic_category());&#10;        }&#10;        assert(mNumWaiters == targetWaiters);&#10;    }" id="986" addr="0x7f911e6833b0" />
+                                <attribute name="noexcept" value="true" id="987" addr="0x7f911e6833b0" />
+                                <attribute name="type" value="void" id="988" addr="0x7f911e6833b0" />
+                                <attribute name="sym_overname" value="__SWIG_0" id="989" addr="0x7f911e6833b0" />
+                            </attributelist >
+                         
+                        </cdecl >
+                    </using >
+                    <cdecl id="990" addr="0x7f911e67e3f0" >
+                        <attributelist id="991" addr="0x7f911e67e3f0" >
+                            <attribute name="name" value="wait" id="992" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="993" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="994" addr="0x7f911e67d6f0" />
+                            <attribute name="kind" value="function" id="995" addr="0x7f911e6833b0" />
+                            <attribute name="sym_name" value="wait" id="996" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="f(r.unique_lock&lt;(mutex)>)." id="997" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="998" addr="0x7f911e6833b0" />
+                            <parmlist id="999" addr="0x7f911e67e350" >
+                                <parm id="1000">
+                                    <attributelist id="1001" addr="0x7f911e67e350" >
+                                        <attribute name="name" value="lock" id="1002" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.unique_lock&lt;(mutex)>" id="1003" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="type" value="void" id="1004" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{       base::wait(lock);                               }" id="1005" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="1006" addr="0x7f911e6833b0" />
+                        </attributelist >
+                     
+                    </cdecl >
+                    <template id="1007" addr="0x7f911e67e990" >
+                        <attributelist id="1008" addr="0x7f911e67e990" >
+                            <attribute name="templatetype" value="cdecl" id="1009" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="1010" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait" id="1011" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="1012" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="1013" addr="0x7f911e67d6f0" />
+                            <attribute name="csym_nextSibling" value="0x7f911e67e3f0" id="1014" addr="0x7f911e67e3f0" />
+                            <attribute name="sym_name" value="wait" id="1015" addr="0x7f911e6833b0" />
+                            <attribute name="decl" value="f(r.unique_lock&lt;(mutex)>,Predicate)." id="1016" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="1017" addr="0x7f911e6833b0" />
+                            <parmlist id="1018" addr="0x7f911e67e7d0" >
+                                <parm id="1019">
+                                    <attributelist id="1020" addr="0x7f911e67e7d0" >
+                                        <attribute name="name" value="lock" id="1021" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.unique_lock&lt;(mutex)>" id="1022" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="1023">
+                                    <attributelist id="1024" addr="0x7f911e67e8f0" >
+                                        <attribute name="name" value="pred" id="1025" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="Predicate" id="1026" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="type" value="void" id="1027" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{       base::wait(lock, pred);                         }" id="1028" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_1" id="1029" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e67e570" id="1030" addr="0x7f911e67e570" />
+                        </attributelist >
+                     
+                    </template >
+                    <template id="1031" addr="0x7f911e67f290" >
+                        <attributelist id="1032" addr="0x7f911e67f290" >
+                            <attribute name="templatetype" value="cdecl" id="1033" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="1034" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_for" id="1035" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="1036" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="1037" addr="0x7f911e67d6f0" />
+                            <attribute name="sym_name" value="wait_for" id="1038" addr="0x7f911e6833b0" />
+                            <attribute name="csym_nextSibling" value="0x7f911e67fd50" id="1039" addr="0x7f911e67fd50" />
+                            <attribute name="sym_nextSibling" value="0x7f911e67fd50" id="1040" addr="0x7f911e67fd50" />
+                            <attribute name="decl" value="f(r.unique_lock&lt;(mutex)>,r.q(const).std::chrono::duration&lt;(Rep,Period)>)." id="1041" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="1042" addr="0x7f911e6833b0" />
+                            <parmlist id="1043" addr="0x7f911e67ef10" >
+                                <parm id="1044">
+                                    <attributelist id="1045" addr="0x7f911e67ef10" >
+                                        <attribute name="name" value="lock" id="1046" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.unique_lock&lt;(mutex)>" id="1047" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="1048">
+                                    <attributelist id="1049" addr="0x7f911e67f1f0" >
+                                        <attribute name="name" value="rel_time" id="1050" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.q(const).std::chrono::duration&lt;(Rep,Period)>" id="1051" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e67f290" id="1052" addr="0x7f911e67f290" />
+                            <attribute name="type" value="std::cv_status" id="1053" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{      return base::wait_for(lock, rel_time);           }" id="1054" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="1055" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e67ec70" id="1056" addr="0x7f911e67ec70" />
+                        </attributelist >
+                     
+                    </template >
+                    <template id="1057" addr="0x7f911e67fd50" >
+                        <attributelist id="1058" addr="0x7f911e67fd50" >
+                            <attribute name="templatetype" value="cdecl" id="1059" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="1060" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_for" id="1061" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="1062" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="1063" addr="0x7f911e67d6f0" />
+                            <attribute name="sym_name" value="wait_for" id="1064" addr="0x7f911e6833b0" />
+                            <attribute name="sym_previousSibling" value="0x7f911e67f290" id="1065" addr="0x7f911e67f290" />
+                            <attribute name="decl" value="f(r.unique_lock&lt;(mutex)>,r.q(const).std::chrono::duration&lt;(Rep,Period)>,Predicate)." id="1066" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="1067" addr="0x7f911e6833b0" />
+                            <parmlist id="1068" addr="0x7f911e67f8b0" >
+                                <parm id="1069">
+                                    <attributelist id="1070" addr="0x7f911e67f8b0" >
+                                        <attribute name="name" value="lock" id="1071" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.unique_lock&lt;(mutex)>" id="1072" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="1073">
+                                    <attributelist id="1074" addr="0x7f911e67fb90" >
+                                        <attribute name="name" value="rel_time" id="1075" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.q(const).std::chrono::duration&lt;(Rep,Period)>" id="1076" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="1077">
+                                    <attributelist id="1078" addr="0x7f911e67fcb0" >
+                                        <attribute name="name" value="pred" id="1079" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="Predicate" id="1080" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e67f290" id="1081" addr="0x7f911e67f290" />
+                            <attribute name="type" value="bool" id="1082" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{        return base::wait_for(lock, rel_time, pred);   }" id="1083" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_1" id="1084" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e67f590" id="1085" addr="0x7f911e67f590" />
+                        </attributelist >
+                     
+                    </template >
+                    <template id="1086" addr="0x7f911e680610" >
+                        <attributelist id="1087" addr="0x7f911e680610" >
+                            <attribute name="templatetype" value="cdecl" id="1088" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="1089" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_until" id="1090" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="1091" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="1092" addr="0x7f911e67d6f0" />
+                            <attribute name="sym_name" value="wait_until" id="1093" addr="0x7f911e6833b0" />
+                            <attribute name="csym_nextSibling" value="0x7f911e6810d0" id="1094" addr="0x7f911e6810d0" />
+                            <attribute name="sym_nextSibling" value="0x7f911e6810d0" id="1095" addr="0x7f911e6810d0" />
+                            <attribute name="decl" value="f(r.unique_lock&lt;(mutex)>,r.q(const).chrono::time_point&lt;(Clock,Duration)>)." id="1096" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="1097" addr="0x7f911e6833b0" />
+                            <parmlist id="1098" addr="0x7f911e6802b0" >
+                                <parm id="1099">
+                                    <attributelist id="1100" addr="0x7f911e6802b0" >
+                                        <attribute name="name" value="lock" id="1101" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.unique_lock&lt;(mutex)>" id="1102" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="1103">
+                                    <attributelist id="1104" addr="0x7f911e680570" >
+                                        <attribute name="name" value="abs_time" id="1105" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.q(const).chrono::time_point&lt;(Clock,Duration)>" id="1106" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e680610" id="1107" addr="0x7f911e680610" />
+                            <attribute name="type" value="cv_status" id="1108" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{        return base::wait_for(lock, abs_time);         }" id="1109" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_0" id="1110" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e680070" id="1111" addr="0x7f911e680070" />
+                        </attributelist >
+                     
+                    </template >
+                    <template id="1112" addr="0x7f911e6810d0" >
+                        <attributelist id="1113" addr="0x7f911e6810d0" >
+                            <attribute name="templatetype" value="cdecl" id="1114" addr="0x7f911e6833b0" />
+                            <attribute name="sym_typename" value="1" id="1115" addr="0x7f911e6833b0" />
+                            <attribute name="name" value="wait_until" id="1116" addr="0x7f911e6833b0" />
+                            <attribute name="ismember" value="1" id="1117" addr="0x7f911e6833b0" />
+                            <attribute name="sym_symtab" value="0x7f911e67d6f0" id="1118" addr="0x7f911e67d6f0" />
+                            <attribute name="sym_name" value="wait_until" id="1119" addr="0x7f911e6833b0" />
+                            <attribute name="sym_previousSibling" value="0x7f911e680610" id="1120" addr="0x7f911e680610" />
+                            <attribute name="decl" value="f(r.unique_lock&lt;(mutex)>,r.q(const).std::chrono::time_point&lt;(Clock,Duration)>,Predicate)." id="1121" addr="0x7f911e6833b0" />
+                            <attribute name="access" value="public" id="1122" addr="0x7f911e6833b0" />
+                            <parmlist id="1123" addr="0x7f911e680c30" >
+                                <parm id="1124">
+                                    <attributelist id="1125" addr="0x7f911e680c30" >
+                                        <attribute name="name" value="lock" id="1126" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.unique_lock&lt;(mutex)>" id="1127" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="1128">
+                                    <attributelist id="1129" addr="0x7f911e680f10" >
+                                        <attribute name="name" value="abs_time" id="1130" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="r.q(const).std::chrono::time_point&lt;(Clock,Duration)>" id="1131" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                                <parm id="1132">
+                                    <attributelist id="1133" addr="0x7f911e681030" >
+                                        <attribute name="name" value="pred" id="1134" addr="0x7f911e6833b0" />
+                                        <attribute name="type" value="Predicate" id="1135" addr="0x7f911e6833b0" />
+                                    </attributelist >
+                                </parm >
+                            </parmlist >
+                            <attribute name="sym_overloaded" value="0x7f911e680610" id="1136" addr="0x7f911e680610" />
+                            <attribute name="type" value="bool" id="1137" addr="0x7f911e6833b0" />
+                            <attribute name="code" value="{        return base::wait_until(lock, abs_time, pred); }" id="1138" addr="0x7f911e6833b0" />
+                            <attribute name="sym_overname" value="__SWIG_1" id="1139" addr="0x7f911e6833b0" />
+                            <attribute name="templateparms" value="0x7f911e680910" id="1140" addr="0x7f911e680910" />
+                        </attributelist >
+                     
+                    </template >
+                </class >
+            </namespace >
+        </include >
+    </include >
+</top >

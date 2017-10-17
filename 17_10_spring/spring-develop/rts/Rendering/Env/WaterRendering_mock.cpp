@@ -1,0 +1,36 @@
+// TODO: Substitue CWaterRendering with your actual class name
+void CWaterRendering::Init(){}
+bool CWaterRendering::IsGlobalInstance(){}
+float CWaterRendering::repeatX(){}
+float CWaterRendering::repeatY(){}
+float3 CWaterRendering::absorb(){}
+float3 CWaterRendering::baseColor(){}
+float3 CWaterRendering::minColor(){}
+float3 CWaterRendering::surfaceColor(){}
+float CWaterRendering::surfaceAlpha(){}
+float4 CWaterRendering::planeColor(){}
+float3 CWaterRendering::diffuseColor(){}
+float3 CWaterRendering::specularColor(){}
+float CWaterRendering::ambientFactor(){}
+float CWaterRendering::diffuseFactor(){}
+float CWaterRendering::specularFactor(){}
+float CWaterRendering::specularPower(){}
+float CWaterRendering::fresnelMin(){}
+float CWaterRendering::fresnelMax(){}
+float CWaterRendering::fresnelPower(){}
+float CWaterRendering::reflDistortion(){}
+float CWaterRendering::blurBase(){}
+float CWaterRendering::blurExponent(){}
+float CWaterRendering::perlinStartFreq(){}
+float CWaterRendering::perlinLacunarity(){}
+float CWaterRendering::perlinAmplitude(){}
+float CWaterRendering::windSpeed(){}
+bool CWaterRendering::shoreWaves(){}
+bool CWaterRendering::forceRendering(){}
+bool CWaterRendering::hasWaterPlane(){}
+unsigned char CWaterRendering::numTiles(){}
+std::string CWaterRendering::texture(){}
+std::string CWaterRendering::foamTexture(){}
+std::string CWaterRendering::normalTexture(){}
+std::vector<(std::string)> CWaterRendering::causticTextures(){}
+CWaterRendering CWaterRendering::waterRenderingInst(){}

@@ -1,0 +1,126 @@
+// TODO: Substitue CWeaponDef with your actual class name
+S3DModel CWeaponDef::LoadModel(){}
+S3DModel CWeaponDef::LoadModel(){}
+std::string CWeaponDef::name(){}
+std::string CWeaponDef::type(){}
+std::string CWeaponDef::description(){}
+unsigned int CWeaponDef::ptrailExplosionGeneratorID(){}
+unsigned int CWeaponDef::impactExplosionGeneratorID(){}
+unsigned int CWeaponDef::bounceExplosionGeneratorID(){}
+GuiSoundSet CWeaponDef::fireSound(){}
+GuiSoundSet CWeaponDef::hitSound(){}
+float CWeaponDef::range(){}
+float CWeaponDef::heightmod(){}
+float CWeaponDef::accuracy(){}
+float CWeaponDef::sprayAngle(){}
+float CWeaponDef::movingAccuracy(){}
+float CWeaponDef::ownerExpAccWeight(){}
+float CWeaponDef::targetMoveError(){}
+float CWeaponDef::leadLimit(){}
+float CWeaponDef::leadBonus(){}
+float CWeaponDef::predictBoost(){}
+DynDamageArray CWeaponDef::damages(){}
+float CWeaponDef::fireStarter(){}
+bool CWeaponDef::noSelfDamage(){}
+float CWeaponDef::size(){}
+float CWeaponDef::sizeGrowth(){}
+float CWeaponDef::collisionSize(){}
+int CWeaponDef::salvosize(){}
+float CWeaponDef::salvodelay(){}
+float CWeaponDef::reload(){}
+float CWeaponDef::beamtime(){}
+bool CWeaponDef::beamburst(){}
+bool CWeaponDef::waterBounce(){}
+bool CWeaponDef::groundBounce(){}
+float CWeaponDef::bounceRebound(){}
+float CWeaponDef::bounceSlip(){}
+int CWeaponDef::numBounce(){}
+float CWeaponDef::maxAngle(){}
+float CWeaponDef::maxFireAngle(){}
+float CWeaponDef::uptime(){}
+int CWeaponDef::flighttime(){}
+float CWeaponDef::metalcost(){}
+float CWeaponDef::energycost(){}
+int CWeaponDef::projectilespershot(){}
+int CWeaponDef::id(){}
+int CWeaponDef::tdfId(){}
+bool CWeaponDef::isNulled(){}
+bool CWeaponDef::turret(){}
+bool CWeaponDef::onlyForward(){}
+bool CWeaponDef::allowNonBlockingAim(){}
+bool CWeaponDef::fixedLauncher(){}
+bool CWeaponDef::waterweapon(){}
+bool CWeaponDef::fireSubmersed(){}
+bool CWeaponDef::submissile(){}
+bool CWeaponDef::tracks(){}
+bool CWeaponDef::paralyzer(){}
+bool CWeaponDef::impactOnly(){}
+bool CWeaponDef::noAutoTarget(){}
+bool CWeaponDef::manualfire(){}
+bool CWeaponDef::sweepFire(){}
+bool CWeaponDef::canAttackGround(){}
+bool CWeaponDef::interceptSolo(){}
+int CWeaponDef::interceptor(){}
+int CWeaponDef::targetable(){}
+bool CWeaponDef::stockpile(){}
+float CWeaponDef::coverageRange(){}
+float CWeaponDef::stockpileTime(){}
+float CWeaponDef::intensity(){}
+float CWeaponDef::falloffRate(){}
+float CWeaponDef::duration(){}
+int CWeaponDef::beamLaserTTL(){}
+bool CWeaponDef::soundTrigger(){}
+bool CWeaponDef::selfExplode(){}
+bool CWeaponDef::gravityAffected(){}
+int CWeaponDef::highTrajectory(){}
+float CWeaponDef::myGravity(){}
+bool CWeaponDef::noExplode(){}
+float CWeaponDef::startvelocity(){}
+float CWeaponDef::weaponacceleration(){}
+float CWeaponDef::turnrate(){}
+float CWeaponDef::projectilespeed(){}
+float CWeaponDef::wobble(){}
+float CWeaponDef::dance(){}
+float CWeaponDef::trajectoryHeight(){}
+bool CWeaponDef::largeBeamLaser(){}
+bool CWeaponDef::laserHardStop(){}
+bool CWeaponDef::isShield(){}
+bool CWeaponDef::shieldRepulser(){}
+bool CWeaponDef::smartShield(){}
+bool CWeaponDef::exteriorShield(){}
+bool CWeaponDef::visibleShield(){}
+bool CWeaponDef::visibleShieldRepulse(){}
+int CWeaponDef::visibleShieldHitFrames(){}
+float CWeaponDef::shieldEnergyUse(){}
+float CWeaponDef::shieldRadius(){}
+float CWeaponDef::shieldForce(){}
+float CWeaponDef::shieldMaxSpeed(){}
+float CWeaponDef::shieldPower(){}
+float CWeaponDef::shieldPowerRegen(){}
+float CWeaponDef::shieldPowerRegenEnergy(){}
+float CWeaponDef::shieldStartingPower(){}
+int CWeaponDef::shieldRechargeDelay(){}
+float4 CWeaponDef::shieldGoodColor(){}
+float4 CWeaponDef::shieldBadColor(){}
+float CWeaponDef::shieldAlpha(){}
+int CWeaponDef::shieldArmorType(){}
+std::string CWeaponDef::shieldArmorTypeName(){}
+unsigned int CWeaponDef::shieldInterceptType(){}
+unsigned int CWeaponDef::interceptedByShieldType(){}
+unsigned int CWeaponDef::defInterceptType(){}
+bool CWeaponDef::avoidFriendly(){}
+bool CWeaponDef::avoidFeature(){}
+bool CWeaponDef::avoidNeutral(){}
+bool CWeaponDef::avoidGround(){}
+float CWeaponDef::targetBorder(){}
+float CWeaponDef::cylinderTargeting(){}
+float CWeaponDef::minIntensity(){}
+float CWeaponDef::heightBoostFactor(){}
+float CWeaponDef::proximityPriority(){}
+unsigned int CWeaponDef::projectileType(){}
+unsigned int CWeaponDef::collisionFlags(){}
+float CWeaponDef::cameraShake(){}
+spring::unordered_map<(std::string,std::string)> CWeaponDef::customParams(){}
+WeaponDef::Visuals CWeaponDef::visuals(){}
+void CWeaponDef::ParseWeaponSounds(const LuaTable & wdTable){}
+void CWeaponDef::LoadSound(const LuaTable & wdTable, const std::string & soundKey, const unsigned int soundIdx, std::vector<(GuiSoundSet::Data)> & soundData){}

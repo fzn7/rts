@@ -1,0 +1,44 @@
+#include <iostream>
+/* This file is part of the Spring engine (GPL v2 or later), see LICENSE.html */
+
+#include "RefractWater.h"
+#include "Map/MapInfo.h"
+#include "Map/ReadMap.h"
+#include "Rendering/GL/myGL.h"
+#include "Rendering/GlobalRendering.h"
+#include "System/bitops.h"
+
+CRefractWater::CRefractWater()
+  : CAdvWater(false)
+  , subSurfaceTex(0)
+{
+    //stub method
+    std::cout << __FUNCTION__ << std::endl;
+}
+
+void
+CRefractWater::LoadGfx()
+{
+    //stub method
+    std::cout << __FUNCTION__ << std::endl;
+}
+
+CRefractWater::~CRefractWater()
+{
+    //stub method
+    std::cout << __FUNCTION__ << std::endl;
+}
+
+void
+CRefractWater::Draw()
+{
+    //stub method
+    std::cout << __FUNCTION__ << std::endl;
+}
+
+void
+CRefractWater::SetupWaterDepthTex()
+{
+    //stub method
+    std::cout << __FUNCTION__ << std::endl;
+}

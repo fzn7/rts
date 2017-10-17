@@ -1,0 +1,21 @@
+// TODO: Substitue Cdemofile with your actual class name
+char Cdemofile::magic(){}
+int Cdemofile::version(){}
+int Cdemofile::headerSize(){}
+char Cdemofile::versionString(){}
+std::uint8_t Cdemofile::gameID(){}
+std::uint64_t Cdemofile::unixTime(){}
+int Cdemofile::scriptSize(){}
+int Cdemofile::demoStreamSize(){}
+int Cdemofile::gameTime(){}
+int Cdemofile::wallclockTime(){}
+int Cdemofile::numPlayers(){}
+int Cdemofile::playerStatSize(){}
+int Cdemofile::playerStatElemSize(){}
+int Cdemofile::numTeams(){}
+int Cdemofile::teamStatSize(){}
+int Cdemofile::teamStatElemSize(){}
+int Cdemofile::teamStatPeriod(){}
+int Cdemofile::winningAllyTeamsSize(){}
+float Cdemofile::modGameTime(){}
+std::uint32_t Cdemofile::length(){}
