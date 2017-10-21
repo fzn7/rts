@@ -1,0 +1,115 @@
+os-linux.lo: os-linux.c \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/limits.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/features.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/limits.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libcxx/stdio.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libcxx/__config \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/stdio.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/alltypes.h \
+  ../include/libunwind_i.h ../include/config.h ../include/compiler.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/sys/types.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/endian.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/stdint.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/stdint.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/sys/select.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/sys/sysmacros.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/assert.h \
+  ../include/libunwind.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/pthread.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/sched.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/compat/time.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/time.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/signal.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/signal.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libcxx/stdlib.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/compat/stdlib.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/stdlib.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/alloca.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libcxx/string.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/compat/string.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/string.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/strings.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/unistd.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/posix.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/sys/mman.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/mman.h \
+  /home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/elf.h \
+  ../include/tdep/libunwind_i.h os-linux.h
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/limits.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/features.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/limits.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libcxx/stdio.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libcxx/__config:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/stdio.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/alltypes.h:
+
+../include/libunwind_i.h:
+
+../include/config.h:
+
+../include/compiler.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/sys/types.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/endian.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/stdint.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/stdint.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/sys/select.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/sys/sysmacros.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/assert.h:
+
+../include/libunwind.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/pthread.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/sched.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/compat/time.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/time.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/signal.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/signal.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libcxx/stdlib.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/compat/stdlib.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/stdlib.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/alloca.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libcxx/string.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/compat/string.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/string.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/strings.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/unistd.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/posix.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/sys/mman.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/bits/mman.h:
+
+/home/pi/emsdk-portable/emscripten/1.37.1/system/include/libc/elf.h:
+
+../include/tdep/libunwind_i.h:
+
+os-linux.h:

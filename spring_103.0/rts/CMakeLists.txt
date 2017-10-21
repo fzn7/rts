@@ -35,14 +35,14 @@ if(DEBUG_GLSTATE)
 endif()
 
 ### give error when not found
-FIND_PACKAGE_STATIC(DevIL REQUIRED)
+#FIND_PACKAGE_STATIC(DevIL REQUIRED)
 
 ### Assemble common incude dirs
 INCLUDE_DIRECTORIES(BEFORE lib/lua/include)
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/include/AL)
 INCLUDE_DIRECTORIES(${SPRING_MINIZIP_INCLUDE_DIR})
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR})
-INCLUDE_DIRECTORIES(${IL_INCLUDE_DIR})
+#INCLUDE_DIRECTORIES(${IL_INCLUDE_DIR})
 
 ### Assemble common libraries
 Add_Subdirectory(System/Sound)
@@ -75,10 +75,14 @@ ENDIF (UNIX AND NOT MINGW)
 
 FIND_PACKAGE_STATIC(ZLIB REQUIRED)
 LIST(APPEND engineCommonLibraries ${IL_LIBRARIES} ${JPEG_LIBRARY} ${PNG_LIBRARY} ${TIFF_LIBRARY} ${GIF_LIBRARY})
-LIST(APPEND engineCommonLibraries ${Boost_REGEX_LIBRARY} ${Boost_PROGRAM_OPTIONS_LIBRARY} ${Boost_SIGNALS_LIBRARY})
-LIST(APPEND engineCommonLibraries ${Boost_SYSTEM_LIBRARY} ${Boost_CHRONO_LIBRARY_WITH_RT} ${Boost_FILESYSTEM_LIBRARY})
+LIST(APPEND engineCommonLibraries ${Boost_REGEX_LIBRARY})
+LIST(APPEND engineCommonLibraries ${Boost_SYSTEM_LIBRARY})
 LIST(APPEND engineCommonLibraries 7zip ${SPRING_MINIZIP_LIBRARY} ${ZLIB_LIBRARY})
-LIST(APPEND engineCommonLibraries lua luasocket archives streflop assimp)
+LIST(APPEND engineCommonLibraries lua luasocket archives assimp gflags)
+if (ENABLE_STREFLOP)
+LIST(APPEND engineCommonLibraries streflop)
+endif ()
+
 include_directories(${ZLIB_INCLUDE_DIR})
 
 IF (WIN32)
@@ -100,15 +104,15 @@ if    (USE_TCMALLOC AND TCMALLOC_LIBRARY)
 endif (USE_TCMALLOC AND TCMALLOC_LIBRARY)
 
 
-if(UNIX)
-	FIND_PACKAGE_STATIC(Libunwind REQUIRED)
-	LIST(APPEND engineCommonLibraries ${LIBUNWIND_LIBRARIES})
-	if(LIBUNWIND_FOUND)
-		message(STATUS "Found libunwind libraries at ${LIBUNWIND_LIBRARIES}")
-	else()
-		message(FATAL_ERROR "Couldn't find libunwind")
-	endif()
-endif()
+#if(UNIX)
+#	FIND_PACKAGE_STATIC(Libunwind)
+#	LIST(APPEND engineCommonLibraries ${LIBUNWIND_LIBRARIES})
+#	if(LIBUNWIND_FOUND)
+#		message(STATUS "Found libunwind libraries at ${LIBUNWIND_LIBRARIES}")
+#	else()
+#		message(FATAL_ERROR "Couldn't find libunwind")
+#	endif()
+#endif()
 
 
 
@@ -134,6 +138,7 @@ MakeGlobalVar(engineSources
 		${sources_engine_System}
 		${sources_engine_ExternalAI}
 	)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib/assimp/include) #FIXME: hack for rts/Rendering/Models/IModelParser.cpp
 
 ### Add headers for generated project files (e.g. Code::Blocks)
 file(GLOB_RECURSE engineHeaders "*.h" "*.hpp" "*.inl")

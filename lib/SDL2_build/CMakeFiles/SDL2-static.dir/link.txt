@@ -1,0 +1,1 @@
+/home/pi/emsdk-portable/emscripten/1.37.1/emar rc libSDL2.a  @CMakeFiles/SDL2-static.dir/objects1.rsp

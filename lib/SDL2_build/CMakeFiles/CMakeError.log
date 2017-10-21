@@ -1,0 +1,688 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_757c6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_757c6.dir/build.make CMakeFiles/cmTC_757c6.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_757c6.dir/src.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTC_757c6.dir/src.c.o   -c /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-mpreferred-stack-boundary=2'
+ERROR:root:compiler frontend failed to generate LLVM bitcode, halting
+CMakeFiles/cmTC_757c6.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_757c6.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_757c6.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_757c6/fast' failed
+make: *** [cmTC_757c6/fast] Error 2
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Determining if the function _strrev exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e9cc0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e9cc0.dir/build.make CMakeFiles/cmTC_e9cc0.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9cc0.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=_strrev -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_e9cc0.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e9cc0.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9cc0.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=_strrev -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_e9cc0.dir/objects1.rsp  -o cmTC_e9cc0.js 
+error: unresolved symbol: _strrev
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmphD2kfl.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_e9cc0.dir/build.make:98: recipe for target 'cmTC_e9cc0.js' failed
+make[1]: *** [cmTC_e9cc0.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e9cc0/fast' failed
+make: *** [cmTC_e9cc0/fast] Error 2
+
+
+Determining if the function _strupr exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1c378/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1c378.dir/build.make CMakeFiles/cmTC_1c378.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c378.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=_strupr -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_1c378.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1c378.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c378.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=_strupr -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_1c378.dir/objects1.rsp  -o cmTC_1c378.js 
+error: unresolved symbol: _strupr
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmpYw0Wcf.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_1c378.dir/build.make:98: recipe for target 'cmTC_1c378.js' failed
+make[1]: *** [cmTC_1c378.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1c378/fast' failed
+make: *** [cmTC_1c378/fast] Error 2
+
+
+Determining if the function _strlwr exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ab07b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ab07b.dir/build.make CMakeFiles/cmTC_ab07b.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab07b.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=_strlwr -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_ab07b.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ab07b.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab07b.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=_strlwr -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_ab07b.dir/objects1.rsp  -o cmTC_ab07b.js 
+error: unresolved symbol: _strlwr
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmpgHBL06.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_ab07b.dir/build.make:98: recipe for target 'cmTC_ab07b.js' failed
+make[1]: *** [cmTC_ab07b.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ab07b/fast' failed
+make: *** [cmTC_ab07b/fast] Error 2
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8c814/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8c814.dir/build.make CMakeFiles/cmTC_8c814.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c814.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=itoa -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_8c814.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8c814.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c814.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=itoa -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_8c814.dir/objects1.rsp  -o cmTC_8c814.js 
+error: unresolved symbol: itoa
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmp6A9QvD.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_8c814.dir/build.make:98: recipe for target 'cmTC_8c814.js' failed
+make[1]: *** [cmTC_8c814.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8c814/fast' failed
+make: *** [cmTC_8c814/fast] Error 2
+
+
+Determining if the function _ltoa exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7cb3c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7cb3c.dir/build.make CMakeFiles/cmTC_7cb3c.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7cb3c.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=_ltoa -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_7cb3c.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7cb3c.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cb3c.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=_ltoa -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_7cb3c.dir/objects1.rsp  -o cmTC_7cb3c.js 
+error: unresolved symbol: _ltoa
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmpEtrLhJ.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_7cb3c.dir/build.make:98: recipe for target 'cmTC_7cb3c.js' failed
+make[1]: *** [cmTC_7cb3c.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7cb3c/fast' failed
+make: *** [cmTC_7cb3c/fast] Error 2
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63106/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63106.dir/build.make CMakeFiles/cmTC_63106.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63106.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=_uitoa -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_63106.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_63106.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63106.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=_uitoa -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_63106.dir/objects1.rsp  -o cmTC_63106.js 
+error: unresolved symbol: _uitoa
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmp8FGKTI.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_63106.dir/build.make:98: recipe for target 'cmTC_63106.js' failed
+make[1]: *** [cmTC_63106.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_63106/fast' failed
+make: *** [cmTC_63106/fast] Error 2
+
+
+Determining if the function _ultoa exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ca007/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ca007.dir/build.make CMakeFiles/cmTC_ca007.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca007.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=_ultoa -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_ca007.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ca007.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca007.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=_ultoa -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_ca007.dir/objects1.rsp  -o cmTC_ca007.js 
+error: unresolved symbol: _ultoa
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmpRf_n3L.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_ca007.dir/build.make:98: recipe for target 'cmTC_ca007.js' failed
+make[1]: *** [cmTC_ca007.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ca007/fast' failed
+make: *** [cmTC_ca007/fast] Error 2
+
+
+Determining if the function _i64toa exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bcee6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bcee6.dir/build.make CMakeFiles/cmTC_bcee6.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bcee6.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=_i64toa -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_bcee6.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bcee6.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcee6.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=_i64toa -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_bcee6.dir/objects1.rsp  -o cmTC_bcee6.js 
+error: unresolved symbol: _i64toa
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmpB7K0_x.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_bcee6.dir/build.make:98: recipe for target 'cmTC_bcee6.js' failed
+make[1]: *** [cmTC_bcee6.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bcee6/fast' failed
+make: *** [cmTC_bcee6/fast] Error 2
+
+
+Determining if the function _ui64toa exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f1b35/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1b35.dir/build.make CMakeFiles/cmTC_f1b35.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1b35.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=_ui64toa -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_f1b35.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f1b35.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1b35.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=_ui64toa -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_f1b35.dir/objects1.rsp  -o cmTC_f1b35.js 
+error: unresolved symbol: _ui64toa
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmp9BDxk8.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_f1b35.dir/build.make:98: recipe for target 'cmTC_f1b35.js' failed
+make[1]: *** [cmTC_f1b35.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f1b35/fast' failed
+make: *** [cmTC_f1b35/fast] Error 2
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_743f3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_743f3.dir/build.make CMakeFiles/cmTC_743f3.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_743f3.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=_stricmp -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_743f3.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_743f3.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_743f3.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=_stricmp -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_743f3.dir/objects1.rsp  -o cmTC_743f3.js 
+error: unresolved symbol: _stricmp
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmpMFRwjT.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_743f3.dir/build.make:98: recipe for target 'cmTC_743f3.js' failed
+make[1]: *** [cmTC_743f3.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_743f3/fast' failed
+make: *** [cmTC_743f3/fast] Error 2
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c5b1b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c5b1b.dir/build.make CMakeFiles/cmTC_c5b1b.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c5b1b.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=_strnicmp -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_c5b1b.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c5b1b.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5b1b.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=_strnicmp -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_c5b1b.dir/objects1.rsp  -o cmTC_c5b1b.js 
+error: unresolved symbol: _strnicmp
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmpJmoxLp.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_c5b1b.dir/build.make:98: recipe for target 'cmTC_c5b1b.js' failed
+make[1]: *** [cmTC_c5b1b.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c5b1b/fast' failed
+make: *** [cmTC_c5b1b/fast] Error 2
+
+
+Determining if the function setjmp exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_98ac3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_98ac3.dir/build.make CMakeFiles/cmTC_98ac3.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98ac3.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=setjmp -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_98ac3.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+/usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c:7:3: warning: declaration of built-in function 'setjmp' requires inclusion of the header <setjmp.h> [-Wbuiltin-requires-header]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:5:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS setjmp
+                              ^
+1 warning generated.
+Linking C executable cmTC_98ac3.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98ac3.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=setjmp -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_98ac3.dir/objects1.rsp  -o cmTC_98ac3.js 
+#0 0x0000000000ee1a68 llvm::sys::PrintStackTrace(llvm::raw_ostream&) (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0xee1a68)
+#1 0x0000000000edfa3e llvm::sys::RunSignalHandlers() (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0xedfa3e)
+#2 0x0000000000edfb8c SignalHandler(int) (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0xedfb8c)
+#3 0x00007f6c5b854390 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x11390)
+#4 0x0000000000ead93e llvm::StringMapImpl::LookupBucketFor(llvm::StringRef) (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0xead93e)
+#5 0x0000000000b5dc46 llvm::ConstantDataSequential::getImpl(llvm::StringRef, llvm::Type*) (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0xb5dc46)
+#6 0x0000000000b5de3a llvm::ConstantDataArray::get(llvm::LLVMContext&, llvm::ArrayRef<unsigned char>) (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0xb5de3a)
+#7 0x0000000000fab5e2 (anonymous namespace)::FlattenGlobals::runOnModule(llvm::Module&) (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0xfab5e2)
+#8 0x0000000000bd4774 llvm::legacy::PassManagerImpl::run(llvm::Module&) (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0xbd4774)
+#9 0x000000000057dbd3 compileModule(char**, llvm::LLVMContext&) [clone .constprop.374] (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0x57dbd3)
+#10 0x0000000000553eb0 main (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0x553eb0)
+#11 0x00007f6c5a9f4830 __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x20830)
+#12 0x0000000000574269 _start (/home/pi/emsdk-portable/clang/e1.37.1_64bit/llc+0x574269)
+Stack dump:
+0.	Program arguments: /home/pi/emsdk-portable/clang/e1.37.1_64bit/llc /tmp/tmpikHZz7/cmTC_98ac3.bc -march=js -filetype=asm -o /tmp/tmp7ZWrPH.4.js -emscripten-global-base=8 -O3 
+1.	Running pass 'Flatten global variable initializers into byte arrays' on module '/tmp/tmpikHZz7/cmTC_98ac3.bc'.
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 91, in emscript
+    funcs, metadata, mem_init = get_and_parse_backend(infile, settings, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 157, in get_and_parse_backend
+    backend_output = open(temp_js).read()
+IOError: [Errno 2] No such file or directory: '/tmp/tmp7ZWrPH.4.js'
+CMakeFiles/cmTC_98ac3.dir/build.make:98: recipe for target 'cmTC_98ac3.js' failed
+make[1]: *** [cmTC_98ac3.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_98ac3/fast' failed
+make: *** [cmTC_98ac3/fast] Error 2
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8c18f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8c18f.dir/build.make CMakeFiles/cmTC_8c18f.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c18f.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=sysctlbyname -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_8c18f.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8c18f.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c18f.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=sysctlbyname -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_8c18f.dir/objects1.rsp  -o cmTC_8c18f.js 
+error: unresolved symbol: sysctlbyname
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmpcWTop5.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_8c18f.dir/build.make:98: recipe for target 'cmTC_8c18f.js' failed
+make[1]: *** [cmTC_8c18f.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8c18f/fast' failed
+make: *** [cmTC_8c18f/fast] Error 2
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: /home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2b603/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2b603.dir/build.make CMakeFiles/cmTC_2b603.dir/build
+make[1]: Entering directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2b603.dir/CheckFunctionExists.c.o
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc   -g -O3 -DCHECK_FUNCTION_EXISTS=alloca -s ERROR_ON_UNDEFINED_SYMBOLS=1   -o CMakeFiles/cmTC_2b603.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c
+/usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'alloca' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:5:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS alloca
+                              ^
+/usr/local/share/cmake-3.9/Modules/CheckFunctionExists.c:7:3: note: 'alloca' is a builtin with type 'void *(unsigned int)'
+<command line>:5:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS alloca
+                              ^
+1 warning generated.
+Linking C executable cmTC_2b603.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b603.dir/link.txt --verbose=1
+/home/pi/emsdk-portable/emscripten/1.37.1/emcc -g -O3 -DCHECK_FUNCTION_EXISTS=alloca -s ERROR_ON_UNDEFINED_SYMBOLS=1    @CMakeFiles/cmTC_2b603.dir/objects1.rsp  -o cmTC_2b603.js 
+error: unresolved symbol: alloca
+Aborting compilation due to previous errors | undefined
+Traceback (most recent call last):
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc", line 13, in <module>
+    emcc.run()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emcc.py", line 1635, in run
+    final = shared.Building.emscripten(final, append_ext=False, extra_args=extra_args)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/shared.py", line 1745, in emscripten
+    call_emscripten(cmdline)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1783, in _main
+    temp_files.run_and_clean(lambda: main(
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1788, in <lambda>
+    DEBUG=DEBUG,
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 1689, in main
+    temp_files=temp_files, DEBUG=DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 93, in emscript
+    glue, forwarded_data = compiler_glue(metadata, settings, libraries, compiler_engine, temp_files, DEBUG)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/emscripten.py", line 293, in compiler_glue
+    cwd=path_from_root('src'), error_limit=300)
+  File "/home/pi/emsdk-portable/emscripten/1.37.1/tools/jsrun.py", line 122, in run_js
+    raise Exception('Expected the command ' + str(command) + ' to finish with return code ' + str(assert_returncode) + ', but it returned with code ' + str(proc.returncode) + ' instead! Output: ' + str(ret)[:error_limit])
+Exception: Expected the command ['/home/pi/emsdk-portable/node/4.1.1_64bit/bin/node', '/home/pi/emsdk-portable/emscripten/1.37.1/src/compiler.js', '/tmp/tmpHwok3V.txt', '/home/pi/emsdk-portable/emscripten/1.37.1/src/library_pthread_stub.js'] to finish with return code 0, but it returned with code 1 instead! Output: // The Module object: Our interface to the outside world. We import
+// and export values on it, and do the work to get that through
+// closure compiler if necessary. There are various ways Module can be used:
+// 1. Not defined. We create it here
+// 2. A function parameter, function(Module) { ..gener
+CMakeFiles/cmTC_2b603.dir/build.make:98: recipe for target 'cmTC_2b603.js' failed
+make[1]: *** [cmTC_2b603.js] Error 1
+make[1]: Leaving directory '/home/pi/rts/lib/SDL2_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2b603/fast' failed
+make: *** [cmTC_2b603/fast] Error 2
+
+
