@@ -569,7 +569,7 @@ endif (NOT "${AI_TYPES}" STREQUAL "NONE")
 Add_Subdirectory(rts/System)
 
 # additional tools
-Add_Subdirectory(tools)
+# Add_Subdirectory(tools)
 
 # man pages & user-docs
 Add_Subdirectory(doc)
