@@ -23,13 +23,15 @@
 #endif
 
 
-#if (defined(__alpha__) || defined(__arm__) || defined(__aarch64__) || defined(__mips__) || defined(__powerpc__) || defined(__sparc__) || defined(__m68k__) || defined(__ia64__))
+/*#if (defined(__alpha__) || defined(__arm__) || defined(__aarch64__) || defined(__mips__) || defined(__powerpc__) || defined(__sparc__) || defined(__m68k__) || defined(__ia64__))
 #define __is_x86_arch__ 0
 #elif (defined(__i386__) || defined(__x86_64__) || defined(__amd64__) || defined(_M_AMD64) || defined(_M_IX86) || defined(_M_X64))
 #define __is_x86_arch__ 1
 #else
 #error unknown CPU-architecture
-#endif
+#endif*/
+
+#define __is_x86_arch__ 1
 
 
 /* define a common indicator for 32bit or 64bit-ness */
