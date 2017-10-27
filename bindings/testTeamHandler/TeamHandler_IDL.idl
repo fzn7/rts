@@ -1,0 +1,26 @@
+
+interface CGameSetup
+{
+	void CGameSetup();
+};
+
+interface CTeamHandler
+{
+	void CTeamHandler();
+	void LoadFromSetup([Const] CGameSetup setup);
+	[Const] boolean Ally(long a, long b) ;
+	void SetAlly(long allyteamA, long allyteamB, boolean allied);
+	
+	
+	[Const] long AllyTeam(long team);
+
+	[Const] boolean ValidAllyTeam(long id);
+
+
+	[Const] boolean AlliedTeams(long teamA, long teamB);
+
+	[Const] boolean AlliedAllyTeams(long allyA, long allyB);
+
+
+	void SetAllyTeam(long team, long allyteam);
+};
