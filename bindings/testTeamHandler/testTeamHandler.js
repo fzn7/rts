@@ -1,13 +1,20 @@
 var script = require('./PSim');
-
-
+var fs = require('fs');
+gameConfig = fs.readFileSync('gameConfig.tdf', 'utf8');
+console.log("GAME");
 var teamhandler = new script.CTeamHandler();
-
 var setup = new script.CGameSetup();
-//setup.GetTeamStartingDataCont();
-//var Setup = setup.ptr;
+console.log("Initialization");
+var init = setup.Init(gameConfig);
+console.log("Initialization success: " + init);
 
-//teamhandler.LoadFromSetup(Setup);
+var Obj = setup;
 
-var c = teamhandler.ValidAllyTeam(1);
-console.log(c);
+
+teamhandler.LoadFromSetup(Obj);
+var c = teamhandler.ValidAllyTeam(0);
+console.log("ValidAllyTeam: " + c);
+
+
+teamhandler.SetAlly(1, 4, true);
+console.log("Ally: " + teamhandler.Ally(3, 2));
