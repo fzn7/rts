@@ -1,75 +1,69 @@
-[GAME]
+[game]
 {
-[groundflash]
-   {
-      flashSize = 45;
-      flashAlpha = 0.9;
-      circleGrowth = 3;
-      circleAlpha = 0.3;
-      ttl = 30;
-      color = 1, 0.5, 0;
-air=1;
-     ground=1;
-      water=1;
+[ai1]
+{
+[options]
+{
 }
-[heatcloud_MED_EXPLOSION_FX01]
-   {
-class=heatcloud;
-      [properties]
-      {
-texture=explodeheat;
-      heat = 30;
-      maxheat = 30;
-      heatFalloff = 1;
-      size = 30;
-      sizeGrowth = -0.3;
-      sizemod = 0;
-      sizemodmod = 0;
-      speed = 0, 1.5, 0;
-      pos = 0, 5, 0;
-      }
-air=1;
-      water=1;
-      ground=1;
-      count=1;
+host=1;
+isfromdemo=0;
+name=1: NullAI;
+shortname=NullAI;
+team=1;
 }
- 
- 
-[MOREDOTS]
-  {
-class=CSimpleParticleSystem;
- 
-   [properties]
-   {    
-   alwaysVisible=1;
-   Texture=randdots;
- 
-   colorMap = 1.0 1.0 1.0 0.05   0.2 0.9 0.5 0.01  0.1 0.8 0.1 0.00;
- 
-   pos      = 0, 2, 0;
-   gravity     = 0, -0.1, 0;
-   emitVector  = 0, 1, 0;
-   emitRot     = 45;
-   emitRotSpread  = 32;
- 
-   sizeGrowth  = 0.5;
-   sizeMod     = 1;
- 
-   airdrag        = 0.8;
-   particleLife      = 5;
-   particleLifeSpread   = 7;
-   numParticles      = 16;
-   particleSpeed     = 8;
-   particleSpeedSpread  = 3;
-   particleSize      = 20;
-   particleSizeSpread   = 0;
- 
-   directional    = 1;
-   useAirLos      = 0;
-   }
-air=1;
-ground=1;
-count=1;
+[allyteam0]
+{
+numallies=0;
 }
- 
+[allyteam1]
+{
+numallies=0;
+}
+[player1]
+{
+name=0;
+spectator=0;
+team=0;
+}
+[team0]
+{
+allyteam=0;
+handicap=0;
+rgbcolor=0.35294118523598 0.35294118523598 1;
+side=;
+startposx=0;
+startposz=0;
+teamleader=1;
+}
+[team1]
+{
+allyteam=1;
+handicap=0;
+rgbcolor=0.7843137383461 0 0;
+side=;
+startposx=0;
+startposz=0;
+teamleader=1;
+}
+diminishingmms=0;
+gamemode=0;
+gamestartdelay=0;
+gametype=Hunted 1.2;
+ghostedbuildings=1;
+hostip=127.0.0.1;
+hostport=8452;
+ishost=1;
+limitdgun=0;
+mapname=Hunted - v04;
+maxspeed=20;
+minspeed=0.1;
+myplayername=0;
+myplayernum=1;
+numplayers=1;
+numrestrictions=0;
+numteams=2;
+numusers=2;
+startenergy=1000;
+startmetal=1000;
+startpostype=3;
 }
