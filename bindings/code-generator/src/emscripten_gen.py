@@ -51,7 +51,7 @@ if len(sys.argv) != 2:
 clang.cindex.Config.set_library_file('/usr/lib/x86_64-linux-gnu/libclang-3.8.so.1')
 
 index = clang.cindex.Index.create()
-translation_unit = index.parse(sys.argv[1], ['-x', 'c++', '-std=c++11', '-D__CODE_GENERATOR__'])
+translation_unit = index.parse(sys.argv[1], ['-x', 'c++', '-std=c++14', '-D__CODE_GENERATOR__'])
 
 classes = build_classes(translation_unit.cursor)
 tpl = Template(filename='bind.mako')
