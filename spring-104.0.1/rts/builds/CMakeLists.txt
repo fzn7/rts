@@ -94,6 +94,6 @@ IF    (WIN32)
 ENDIF (WIN32)
 
 # the build targets
-AddEngineBuild(legacy)
+# AddEngineBuild(legacy)
 AddEngineBuild(dedicated)
 AddEngineBuild(headless)

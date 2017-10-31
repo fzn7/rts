@@ -35,14 +35,14 @@ if(DEBUG_GLSTATE)
 endif()
 
 ### give error when not found
-FIND_PACKAGE_STATIC(DevIL REQUIRED)
+FIND_PACKAGE_STATIC(DevIL)
 
 ### Assemble common incude dirs
 INCLUDE_DIRECTORIES(BEFORE lib/lua/include)
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/include/AL)
 INCLUDE_DIRECTORIES(${SPRING_MINIZIP_INCLUDE_DIR})
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR})
-INCLUDE_DIRECTORIES(${IL_INCLUDE_DIR})
+#INCLUDE_DIRECTORIES(${IL_INCLUDE_DIR})
 
 ### Assemble common libraries
 Add_Subdirectory(System/Sound)
@@ -105,12 +105,12 @@ endif (USE_TCMALLOC AND TCMALLOC_LIBRARY)
 
 
 if(UNIX)
-	FIND_PACKAGE_STATIC(Libunwind REQUIRED)
+	FIND_PACKAGE_STATIC(Libunwind)
 	LIST(APPEND engineCommonLibraries ${LIBUNWIND_LIBRARIES})
 	if(LIBUNWIND_FOUND)
 		message(STATUS "Found libunwind libraries at ${LIBUNWIND_LIBRARIES}")
 	else()
-		message(FATAL_ERROR "Couldn't find libunwind")
+		message(STATUS "Couldn't find libunwind")
 	endif()
 endif()
 
