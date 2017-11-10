@@ -1,1 +1,5 @@
 boost_*.tar.gz
+**/.idea/
+bindings/python-bindings-generator/target/*.idl
+bindings/python-bindings-generator/src/*.h
+bindings/python-bindings-generator/**/*.pyc
