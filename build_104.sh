@@ -1,3 +1,6 @@
+#force copy gl headers
+cp -r emscriptenGl/* ~/emsdk-portable/emscripten
+
 cd spring-104.0.1
 rm CMakeCache.txt
 
@@ -17,4 +20,4 @@ emconfigure cmake . \
 -DCUSTOM_COMPILER_DEFINITIONS=-msse
 
 make clean
-make engineSim 
+make engineSim

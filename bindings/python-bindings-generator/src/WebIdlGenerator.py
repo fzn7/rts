@@ -9,6 +9,7 @@ from CppToIdlTypeConverter import *
 class UmlClass:
     def __init__(self):
         self.fqn = None
+        self.node = None
         self.parents = []
         self.privateFields = []
         self.privateMethods = []
@@ -30,8 +31,16 @@ class UmlClass:
 class UmlMethod:
     def __init__(self):
         self.name = ""
-        self.returnType = ""
+        self.returnType = None
         self.params = []
+        self.node = None
+
+
+class UmlMethodType:
+    def __init__(self):
+        self.name = ""
+        self.node = None
+        self.type = None
 
 
 class UmlMethodParam:
@@ -39,6 +48,7 @@ class UmlMethodParam:
         self.name = ""
         self.kind = ""
         self.type = ""
+        self.node = None
 
 
 class WebIdlClass:
@@ -163,7 +173,9 @@ class WebIdlGenerator:
         for k in self.classes:
             print self.classes.get(k).fqn
 
-        idl_classes = {k: self.converter.convert_class(v, WebIdlClass()) for k, v in self.classes.items()}
+        interfaces = list(filter(lambda item: len(item[1].publicMethods) > 0, self.classes.items()))
+
+        idl_classes = {k: self.converter.convert_class(v, WebIdlClass()) for k, v in interfaces}
 
         rendered = tpl.render(
             classes=idl_classes,

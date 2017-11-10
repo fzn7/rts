@@ -42,7 +42,6 @@ def processClassField(cursor):
     name = cursor.spelling
     return name, type
 
-
 def processClassMethod(cursor):
     if cursor.kind == clang.cindex.CursorKind.FUNCTION_TEMPLATE:
         #todo templates
@@ -51,12 +50,22 @@ def processClassMethod(cursor):
         method = UmlMethod()
         method.name = cursor.spelling or cursor.displayname
 
+        method.node = cursor
+
         for c in cursor.get_children():
-            method.params.append(processClassMethodParam(method, c))
+            if c.kind == clang.cindex.CursorKind.PARM_DECL:
+                method.params.append(processClassMethodParam(method, c))
+            if c.kind == clang.cindex.CursorKind.TYPE_REF:
+                #todo
+                processClassMethodType(method, c)
+
+        method.returnType = processType(method, cursor, cursor.result_type)
 
         filter(None, method.params)
 
-        return method
+        returnType, argumentTypes = cursor.type.spelling.split(' ', 1)
+
+        return returnType, cursor.spelling, method
 
 
 def processClassMethodParam(method, cursor):
@@ -66,9 +75,23 @@ def processClassMethodParam(method, cursor):
 
         method_param = UmlMethodParam()
         method_param.name = text
+        method_param.node = cursor
         method_param.kind = kind
-        method_param.type = cursor.type.spelling
+        method_param.type = processType(method, cursor, cursor.type)
         return method_param
+
+
+def processClassMethodType(menthod, cursor):
+    print "skipped part {}".format(cursor.kind)
+    return None
+
+
+def processType(method, cursor, type):
+    result = UmlMethodType()
+    result.name = cursor.spelling
+    result.node = cursor
+    result.type = type
+    return result
 
 
 def processClassMemberDeclaration(umlClass, cursor):
@@ -96,9 +119,7 @@ def processClassMemberDeclaration(umlClass, cursor):
         try:
             returnType, argumentTypes = cursor.type.spelling.split(' ', 1)
             if cursor.access_specifier == clang.cindex.AccessSpecifier.PUBLIC:
-                umlClass.publicMethods.append(
-                    (returnType, cursor.spelling, processClassMethod(cursor))
-                )
+                umlClass.publicMethods.append(processClassMethod(cursor))
             elif cursor.access_specifier == clang.cindex.AccessSpecifier.PRIVATE:
                 umlClass.privateMethods.append(
                     (returnType, cursor.spelling, argumentTypes)
@@ -112,7 +133,7 @@ def processClassMemberDeclaration(umlClass, cursor):
     elif cursor.kind == clang.cindex.CursorKind.FUNCTION_TEMPLATE:
         returnType, argumentTypes = cursor.type.spelling.split(' ', 1)
         if cursor.access_specifier == clang.cindex.AccessSpecifier.PUBLIC:
-            umlClass.publicMethods.append((returnType, cursor.spelling, processClassMethod(cursor)))
+            umlClass.publicMethods.append(processClassMethod(cursor))
         elif cursor.access_specifier == clang.cindex.AccessSpecifier.PRIVATE:
             umlClass.privateMethods.append((returnType, cursor.spelling, argumentTypes))
         elif cursor.access_specifier == clang.cindex.AccessSpecifier.PROTECTED:
@@ -122,6 +143,9 @@ def processClassMemberDeclaration(umlClass, cursor):
 def processClass(cursor, inclusionConfig):
     """ Processes an ast node that is a class. """
     umlClass = UmlClass()  # umlClass is the datastructure for the DotGenerator
+
+    umlClass.node = cursor
+
     # that stores the necessary information about a single class.
     # We extract this information from the clang ast hereafter ...
     if cursor.kind == clang.cindex.CursorKind.CLASS_TEMPLATE:

@@ -1,7 +1,8 @@
 from WebIdlGenerator import *
 import sys
 import re
-
+import clang.cindex
+import asciitree  # m
 
 class CppToIdlTypeConverter:
     """
@@ -22,15 +23,18 @@ class CppToIdlTypeConverter:
 
     def __init__(self):
         self.fqn = ""
+
         self.conversion_map = {
             "bool": "boolean",
             "float": "float",
+            "short": "short ",
             "double": "double",
             "char": "byte",
             "char*": "DOMString",
             "unsigned char": "octet",
             "unsigned short int": "unsigned short",
             "unsigned long": "unsigned long",
+            "unsigned int": "unsigned long",
             "int": "long",
             "void": "void",
             "void*": "VoidPtr"
@@ -52,36 +56,71 @@ class CppToIdlTypeConverter:
             return '{} {}'.format(self.convert_type(method.name, param.type), param.name)
 
     def convert_type(self, method, type):
-        tokens = type.split(" ")
-        result = []
+        kind = type.type.kind
 
-        while len(tokens) > 0:
-            token = tokens.pop(0)
-            print token
+        result = None
 
-        result = self.conversion_map.get(type)
+        is_const_qualified = type.type.is_const_qualified()
+
+        if (kind == clang.cindex.TypeKind.VOID or
+                    kind == clang.cindex.TypeKind.BOOL or
+                    kind == clang.cindex.TypeKind.SHORT or
+                    kind == clang.cindex.TypeKind.FLOAT or
+                    kind == clang.cindex.TypeKind.INT or
+                    kind == clang.cindex.TypeKind.UINT):
+            if is_const_qualified:
+                result = self.get_primitive_type(type.type.spelling.split(" ")[1])
+            else:
+                result = self.get_primitive_type(type.type.spelling)
+        if kind == clang.cindex.TypeKind.POINTER:
+            result = self.parse_pointer_type(type.type.spelling)
+        if kind == clang.cindex.TypeKind.LVALUEREFERENCE:
+            result = self.parse_pointer_type(type.type.spelling)
+        if kind == clang.cindex.TypeKind.RVALUEREFERENCE:
+            self.dump_cursor(type.node)
+            result = "__operator__"
+        if kind == clang.cindex.TypeKind.UNEXPOSED:
+            self.dump_cursor(type.node)
+            result = self.get_primitive_type(type.type.spelling, True)
+
+        if result:
+            if is_const_qualified:
+                return "[const] {}".format(result)
+            else:
+                return result
+
+        return "__undefined__"
+
+    def get_primitive_type(self, str, return_not_modify=False):
+        print "get_primitive_type {}".format(str)
+
+        if return_not_modify:
+            return str
+
+        result = self.conversion_map.get(str)
 
         if result:
             return result
 
-        # guess it is classname
-        if type.endswith("&") or type.endswith("*"):
-            class_type = type[:-2].strip().split(" ")
+        return "__{} {}".format(result, str)
 
-            if len(class_type) == 1:
-                return class_type[0]
+    def parse_pointer_type(self, type):
+        decl = type.split(" ")
+        el = decl.pop(0)
+        if el == "const":
+            result = "[const] {}".format(
+                self.get_primitive_type(decl.pop(0), True)
+            )
+        else:
+            result = self.get_primitive_type(el, True)
 
-            if len(class_type) == 2:
-                return class_type.join(" ")
-
-        print "[WARN] can not convert \"{}\" type from \"{}\" method".format(type, method)
-        return "undefined"
+        return result
 
     def check_hidden_method(self, method):
         result = False
 
         for item in method:
-            if re.match("(\\bany\\b|\\bundefined\\b)", item):
+            if re.match("(\\b__undefined__\\b|\\b__operator__\\b)", item):
                 result = True
 
         return result
@@ -89,9 +128,10 @@ class CppToIdlTypeConverter:
     def convert_method(self, *function_tuple):
         return_argument = function_tuple[0][0]
         function_name = function_tuple[0][1]
+        method = function_tuple[0][2]
 
-        function_params = self.convert_function_params(function_tuple[0][2])
-        converted_argument = self.convert_type(function_name, return_argument)
+        function_params = self.convert_function_params(method)
+        converted_argument = self.convert_type(function_name, method.returnType)
 
         result = converted_argument, function_name, "{}".format(function_params)
 
@@ -103,3 +143,14 @@ class CppToIdlTypeConverter:
         idl_instance.publicMethods = map(self.convert_method, filter(None, uml_instance.publicMethods))
 
         return idl_instance
+
+    def dump_cursor(self, cursor):
+        print asciitree.draw_tree(cursor, self.node_children, self.print_node)
+
+    def node_children(self, node):
+        return list(c for c in node.get_children() if c.location.file.name == sys.argv[1])
+
+    def print_node(self, node):
+        text = node.spelling or node.displayname
+        kind = str(node.kind)[str(node.kind).index('.') + 1:]
+        return '{} {} | {}'.format(kind, text, node.type.spelling)
