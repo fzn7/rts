@@ -23,7 +23,7 @@ class CppToIdlTypeConverter:
 
     def __init__(self):
         self.fqn = ""
-
+        self.counter = 0
         self.conversion_map = {
             "bool": "boolean",
             "float": "float",
@@ -40,6 +40,10 @@ class CppToIdlTypeConverter:
             "void*": "VoidPtr"
         }
 
+    def getCounter(self):
+        self.counter += 1
+        return self.counter
+
     def convert_function_params(self, method):
         if method:
             params = []
@@ -53,6 +57,10 @@ class CppToIdlTypeConverter:
 
     def convert_function_param(self, method, param):
         if param:
+            if param.name == "":
+                param.name = "arg{}".format(self.getCounter())
+            if param.name == "object":
+                param.name = "obj"
             return '{} {}'.format(self.convert_type(method.name, param.type), param.name)
 
     def convert_type(self, method, type):
@@ -85,7 +93,7 @@ class CppToIdlTypeConverter:
 
         if result:
             if is_const_qualified:
-                return "[const] {}".format(result)
+                return "[Const] {}".format(result)
             else:
                 return result
 
@@ -95,24 +103,33 @@ class CppToIdlTypeConverter:
         print "get_primitive_type {}".format(str)
 
         if return_not_modify:
-            return str
+            return self.sanitize_string(str)
 
         result = self.conversion_map.get(str)
 
         if result:
             return result
 
+        if not result:
+            return "__undefined__"
+
         return "__{} {}".format(result, str)
 
     def parse_pointer_type(self, type):
         decl = type.split(" ")
         el = decl.pop(0)
+
         if el == "const":
-            result = "[const] {}".format(
-                self.get_primitive_type(decl.pop(0), True)
+            primitive = decl.pop(0)
+            result = "[Const] {}".format(
+                self.get_primitive_type(primitive, True)
             )
         else:
-            result = self.get_primitive_type(el, True)
+            primitive = el
+            result = self.get_primitive_type(primitive, True)
+
+        if primitive == "void":
+            return "__undefined__"
 
         return result
 
@@ -120,7 +137,7 @@ class CppToIdlTypeConverter:
         result = False
 
         for item in method:
-            if re.match("(\\b__undefined__\\b|\\b__operator__\\b)", item):
+            if re.match("(\\b__undefined__\\b|\\b__operator__\\b|\\boperator\\b)", item):
                 result = True
 
         return result
@@ -137,9 +154,12 @@ class CppToIdlTypeConverter:
 
         return result + (self.check_hidden_method(result),)
 
+    def sanitize_string(self, str):
+        return "__".join(str.split("::"))
+
     def convert_class(self, uml_instance, idl_instance):
         print "--- process class: {}".format(uml_instance.fqn)
-        idl_instance.fqn = uml_instance.fqn
+        idl_instance.fqn = self.sanitize_string(uml_instance.fqn)
         idl_instance.publicMethods = map(self.convert_method, filter(None, uml_instance.publicMethods))
 
         return idl_instance
