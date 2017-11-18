@@ -20,6 +20,9 @@ class CppToIdlTypeConverter:
    void	void
    void*	any or VoidPtr (see void*)
    """
+    UNDEFINED = "__undefined__"
+    OPERATOR = "__operator__"
+    CONSTANT_EXTENDED_ATTR = "[Const]"
 
     def __init__(self):
         self.fqn = ""
@@ -86,24 +89,27 @@ class CppToIdlTypeConverter:
             result = self.parse_pointer_type(type.type.spelling)
         if kind == clang.cindex.TypeKind.RVALUEREFERENCE:
             self.dump_cursor(type.node)
-            result = "__operator__"
+            result = self.OPERATOR
         if kind == clang.cindex.TypeKind.UNEXPOSED:
             self.dump_cursor(type.node)
             result = self.get_primitive_type(type.type.spelling, True)
 
         if result:
             if is_const_qualified:
-                return "[Const] {}".format(result)
+                return "{} {}".format(self.CONSTANT_EXTENDED_ATTR, result)
             else:
                 return result
 
-        return "__undefined__"
+        return self.UNDEFINED
 
-    def get_primitive_type(self, str, return_not_modify=False):
+    def get_primitive_type(self, str, is_pointer=False):
         print "get_primitive_type {}".format(str)
 
-        if return_not_modify:
-            return self.sanitize_string(str)
+        if is_pointer:
+            if self.conversion_map.get(str):
+                return self.conversion_map.get(str)
+            else:
+                return self.sanitize_string(str)
 
         result = self.conversion_map.get(str)
 
@@ -111,7 +117,7 @@ class CppToIdlTypeConverter:
             return result
 
         if not result:
-            return "__undefined__"
+            return self.UNDEFINED
 
         return "__{} {}".format(result, str)
 
@@ -121,7 +127,7 @@ class CppToIdlTypeConverter:
 
         if el == "const":
             primitive = decl.pop(0)
-            result = "[Const] {}".format(
+            result = "{} {}".format(self.CONSTANT_EXTENDED_ATTR,
                 self.get_primitive_type(primitive, True)
             )
         else:
@@ -129,7 +135,7 @@ class CppToIdlTypeConverter:
             result = self.get_primitive_type(primitive, True)
 
         if primitive == "void":
-            return "__undefined__"
+            return self.UNDEFINED
 
         return result
 
@@ -137,7 +143,10 @@ class CppToIdlTypeConverter:
         result = False
 
         for item in method:
-            if re.match("(\\b__undefined__\\b|\\b__operator__\\b|\\boperator\\b)", item):
+            restricted = [self.UNDEFINED, self.OPERATOR, "operator"]
+            restricted_pattern = '(\\b{0}\\b)'.format('\\b|\\b'.join(restricted))
+
+            if re.match(restricted_pattern, item):
                 result = True
 
         return result
