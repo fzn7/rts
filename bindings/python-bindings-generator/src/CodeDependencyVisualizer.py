@@ -10,7 +10,12 @@ import jsonpickle
 
 from WebIdlGenerator import *
 
-clang.cindex.Config.set_library_file('../bin/libclang.dll')
+if os.name == "nt":
+    clang.cindex.Config.set_library_file('../bin/libclang.dll')
+
+if os.name == "posix":
+    clang.cindex.Config.set_library_file('../bin/libclang.so')
+
 index = clang.cindex.Index.create()
 webidlGenerator = WebIdlGenerator()
 
