@@ -170,10 +170,14 @@ class WebIdlGenerator:
         """
         tpl = Template(filename='bind_idl.mako')
 
-        for k in self.classes:
-            print self.classes.get(k).fqn
+        #for k in self.classes:
+        #    print self.classes.get(k).fqn
 
         interfaces = list(filter(lambda item: len(item[1].publicMethods) > 0, self.classes.items()))
+        interfaces = list(filter(lambda item: item[1].fqn[0] == "C", interfaces))
+
+        print "--- public interfaces to convert ---"
+        print ", ".join(map(lambda i: i[1].fqn, interfaces))
 
         idl_classes = {k: self.converter.convert_class(v, WebIdlClass()) for k, v in interfaces}
 

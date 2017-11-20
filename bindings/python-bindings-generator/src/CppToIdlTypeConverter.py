@@ -20,9 +20,13 @@ class CppToIdlTypeConverter:
    void	void
    void*	any or VoidPtr (see void*)
    """
-    UNDEFINED = "__undefined__"
-    OPERATOR = "__operator__"
+    UNDEFINED = "_undefined_"
+    OPERATOR = "_operator_"
+    IGNORED = "_ignored_"
     CONSTANT_EXTENDED_ATTR = "[Const]"
+
+    EXCLUDE_STRINGS = [
+    ]
 
     def __init__(self):
         self.fqn = ""
@@ -56,7 +60,7 @@ class CppToIdlTypeConverter:
 
             return ', '.join(map(str, params))
 
-        return "undefined"
+        return self.UNDEFINED
 
     def convert_function_param(self, method, param):
         if param:
@@ -88,10 +92,10 @@ class CppToIdlTypeConverter:
         if kind == clang.cindex.TypeKind.LVALUEREFERENCE:
             result = self.parse_pointer_type(type.type.spelling)
         if kind == clang.cindex.TypeKind.RVALUEREFERENCE:
-            self.dump_cursor(type.node)
+            #self.dump_cursor(type.node)
             result = self.OPERATOR
         if kind == clang.cindex.TypeKind.UNEXPOSED:
-            self.dump_cursor(type.node)
+            #self.dump_cursor(type.node)
             result = self.get_primitive_type(type.type.spelling, True)
 
         if result:
@@ -103,13 +107,12 @@ class CppToIdlTypeConverter:
         return self.UNDEFINED
 
     def get_primitive_type(self, str, is_pointer=False):
-        print "get_primitive_type {}".format(str)
-
         if is_pointer:
-            if self.conversion_map.get(str):
-                return self.conversion_map.get(str)
-            else:
-                return self.sanitize_string(str)
+            return self.IGNORED
+            #if self.conversion_map.get(str):
+            #    return self.conversion_map.get(str)
+            #else:
+            #    return self.sanitize_string(str)
 
         result = self.conversion_map.get(str)
 
@@ -143,10 +146,11 @@ class CppToIdlTypeConverter:
         result = False
 
         for item in method:
-            restricted = [self.UNDEFINED, self.OPERATOR, "operator"]
+            restricted = [self.UNDEFINED, self.OPERATOR, self.IGNORED]
+            restricted += self.EXCLUDE_STRINGS
             restricted_pattern = '(\\b{0}\\b)'.format('\\b|\\b'.join(restricted))
 
-            if re.match(restricted_pattern, item):
+            if re.search(restricted_pattern, item):
                 result = True
 
         return result
@@ -167,7 +171,7 @@ class CppToIdlTypeConverter:
         return "__".join(str.split("::"))
 
     def convert_class(self, uml_instance, idl_instance):
-        print "--- process class: {}".format(uml_instance.fqn)
+        #print "--- process class: {}".format(uml_instance.fqn)
         idl_instance.fqn = self.sanitize_string(uml_instance.fqn)
         idl_instance.publicMethods = map(self.convert_method, filter(None, uml_instance.publicMethods))
 

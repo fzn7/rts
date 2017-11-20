@@ -87,7 +87,7 @@ def processClassMethodParam(method, cursor):
 
 
 def processClassMethodType(menthod, cursor):
-    print "skipped part {}".format(cursor.kind)
+    #print "skipped part {}".format(cursor.kind)
     return None
 
 

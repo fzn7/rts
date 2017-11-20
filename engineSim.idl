@@ -1,0 +1,765 @@
+interface CLosMap
+{
+    //void AddCircle(_ignored_ instance, long amount);
+    //void AddRaycast(_ignored_ instance, long amount);
+    //void PrepareRaycast(_ignored_ instance);
+    long At(long p);
+    //_ignored_ front();
+};
+interface CUnitDefHandler
+{
+    void Init();
+    void ProcessDecoys();
+    void AssignTechLevels();
+    boolean ToggleNoCost();
+    //[Const] _ignored_ GetUnitDefByName(_ignored_ name);
+    //[Const] _ignored_ GetUnitDefByID(long id);
+    boolean IsValidUnitDefID([Const] long id);
+    //unsigned long GetUnitDefImage([Const] _ignored_ unitDef);
+    //void SetUnitDefImage([Const] _ignored_ unitDef, [Const] _ignored_ texName);
+    //void SetUnitDefImage([Const] _ignored_ unitDef, unsigned long texID, long sizex, long sizey);
+    //long PushNewUnitDef([Const] _ignored_ unitName, [Const] _ignored_ udTable);
+};
+interface CUnitScriptEngine
+{
+    //void AddInstance(_ignored_ instance);
+    //void RemoveInstance(_ignored_ instance);
+    //void ReloadScripts([Const] _ignored_ udef);
+    void Tick(long deltaTime);
+    void InitStatic();
+    void KillStatic();
+};
+interface CWeaponDefHandler
+{
+    //[Const] _ignored_ GetWeaponDef(_ignored_ weaponname);
+    //[Const] _ignored_ GetWeaponDefByID(long weaponDefId);
+};
+interface CCobThreadPtr_less
+{
+    //boolean operator()([Const] _ignored_ a, [Const] _ignored_ b);
+};
+interface CGeometricObjects
+{
+    long AddSpline(long b1, long b2, long b3, long b4, float width, long arrow, long lifeTime, long group);
+    void DeleteGroup(long group);
+    void SetColor(long group, float r, float g, float b, float a);
+    long CalcSpline();
+    long AddLine(long start, long end, float width, long arrow, long lifetime, long group);
+    void Update();
+    void MarkSquare(long mapSquare);
+};
+interface CExplosionCreator
+{
+    //void AddExplosionListener(_ignored_ listener);
+    //void RemoveExplosionListener(_ignored_ listener);
+    //void FireExplosionEvent([Const] _ignored_ event);
+};
+interface CQuadField__Quad
+{
+    void PostLoad();
+};
+interface CCobFileHandler
+{
+    //_ignored_ GetCobFile([Const] _ignored_ name);
+    //_ignored_ ReloadCobFile([Const] _ignored_ name);
+    //[Const] _ignored_ GetScriptAddr([Const] _ignored_ name);
+};
+interface CRectangularSearchConstraint
+{
+    boolean WithinConstraints(long xSquare, long zSquare);
+};
+interface CollisionQuery
+{
+    //void Reset([Const] _ignored_ cq);
+    boolean InsideHit();
+    boolean IngressHit();
+    boolean EgressHit();
+    boolean AnyHit();
+    //[Const] _ignored_ GetIngressPos();
+    //[Const] _ignored_ GetEgressPos();
+    //[Const] _ignored_ GetHitPos();
+    //float GetHitPosDist([Const] _ignored_ pos, [Const] _ignored_ dir);
+    //float GetIngressPosDist([Const] _ignored_ pos, [Const] _ignored_ dir);
+    //float GetEgressPosDist([Const] _ignored_ pos, [Const] _ignored_ dir);
+    //[Const] _ignored_ GetHitPiece();
+    //void SetHitPiece([Const] _ignored_ p);
+};
+interface CUnitLoader
+{
+    //_ignored_ GetInstance();
+    //_ignored_ NewCommandAI(_ignored_ u, [Const] _ignored_ ud);
+    //_ignored_ LoadUnit([Const] _ignored_ name, [Const] _ignored_ params);
+    //_ignored_ LoadUnit([Const] _ignored_ params);
+    //_ignored_ LoadWeapon(_ignored_ owner, [Const] _ignored_ udw);
+    //void ParseAndExecuteGiveUnitsCommand([Const] _ignored_ args, long team);
+    //void GiveUnits([Const] _ignored_ objectName, long pos, long amount, long team, long allyTeamFeatures);
+    //void FlattenGround([Const] _ignored_ unit);
+    //void RestoreGround([Const] _ignored_ unit);
+};
+interface CCircularSearchConstraint
+{
+    boolean WithinConstraints(long xSquare, long zSquare);
+};
+interface CCobEngine
+{
+    //void AddThread(_ignored_ thread);
+    void Tick(long deltaTime);
+    //void ShowScriptError([Const] _ignored_ msg);
+    long GetCurrentTime();
+};
+interface CBeamLaser__SweepFireState
+{
+    //void Update([Const] _ignored_ newTargetDir);
+    //void SetSweepTempDir([Const] _ignored_ dir);
+    //void SetSweepCurrDir([Const] _ignored_ dir);
+    //[Const] _ignored_ GetSweepTempDir();
+    //[Const] _ignored_ GetSweepCurrDir();
+    float GetTargetDist2D();
+    float GetTargetDist3D();
+    //boolean StartSweep([Const] _ignored_ newTargetPos);
+    boolean StopSweep();
+    void SetSweepFiring(boolean b);
+    void SetDamageAllies(boolean b);
+    boolean IsSweepFiring();
+    boolean DamageAllies();
+};
+interface CFactoryCAI
+{
+    //long GetDefaultCmd([Const] _ignored_ pointed, [Const] _ignored_ feature);
+    void SlowUpdate();
+    //void GiveCommandReal([Const] _ignored_ c, boolean fromSynced);
+    //void InsertBuildCommand(_ignored_ it, [Const] _ignored_ c);
+    //boolean RemoveBuildCommand(_ignored_ it);
+    //void DecreaseQueueCount([Const] _ignored_ c, _ignored_ buildOption);
+    //void FactoryFinishBuild([Const] _ignored_ command);
+    //void ExecuteStop(_ignored_ c);
+};
+interface CBuilder
+{
+    //float f3Dist([Const] _ignored_ a, [Const] _ignored_ b);
+    //float f3SqDist([Const] _ignored_ a, [Const] _ignored_ b);
+    //float f3Len([Const] _ignored_ a);
+    //float f3SqLen([Const] _ignored_ a);
+    void Update();
+    void SlowUpdate();
+    //void DependentDied(_ignored_ o);
+    //boolean UpdateTerraform([Const] _ignored_ fCommand);
+    //boolean AssistTerraform([Const] _ignored_ fCommand);
+    //boolean UpdateBuild([Const] _ignored_ fCommand);
+    //boolean UpdateReclaim([Const] _ignored_ fCommand);
+    //boolean UpdateResurrect([Const] _ignored_ fCommand);
+    //boolean UpdateCapture([Const] _ignored_ fCommand);
+    //boolean StartBuild(_ignored_ buildInfo, _ignored_ feature, _ignored_ inWaitStance, _ignored_ limitReached);
+    //float CalculateBuildTerraformCost(_ignored_ buildInfo);
+    void StopBuild(boolean callScript);
+    //void SetRepairTarget(_ignored_ target);
+    //void SetReclaimTarget(_ignored_ obj);
+    void StartRestore(long centerPos, float radius);
+    boolean ScriptStartBuilding(long pos, boolean silent);
+    //void HelpTerraform(_ignored_ unit);
+    //void CreateNanoParticle([Const] _ignored_ goal, float radius, boolean inverse, boolean highPriority);
+    //void SetResurrectTarget(_ignored_ feature);
+    //void SetCaptureTarget(_ignored_ unit);
+    //boolean CanAssistUnit([Const] _ignored_ u, [Const] _ignored_ def);
+    //boolean CanRepairUnit([Const] _ignored_ u);
+    //[Const] _ignored_ GetNanoPieceCache();
+};
+interface CAirCAI
+{
+    //long GetDefaultCmd([Const] _ignored_ pointed, [Const] _ignored_ feature);
+    void SlowUpdate();
+    //void GiveCommandReal([Const] _ignored_ c, boolean fromSynced);
+    //void AddUnit(_ignored_ unit);
+    void FinishCommand();
+    //void BuggerOff([Const] _ignored_ pos, float radius);
+    //void ExecuteGuard(_ignored_ c);
+    //void ExecuteAreaAttack(_ignored_ c);
+    //void ExecuteAttack(_ignored_ c);
+    //void ExecuteFight(_ignored_ c);
+    //void ExecuteMove(_ignored_ c);
+    //boolean IsValidTarget([Const] _ignored_ enemy);
+};
+interface CPathManager__MultiPath
+{
+    //_ignored_ operator=([Const] _ignored_ mp);
+    //_ignored_ operator=(_operator_ mp);
+};
+interface CollisionVolume
+{
+    void PostLoad();
+    //_ignored_ operator=([Const] _ignored_ arg5);
+    //boolean InitDefault([Const] _ignored_ params);
+    void InitSphere(float radius);
+    //void InitBox([Const] _ignored_ scales, [Const] _ignored_ offsets);
+    //void InitShape([Const] _ignored_ scales, [Const] _ignored_ offsets, [Const] long vType, [Const] long tType, [Const] long pAxis);
+    //void RescaleAxes([Const] _ignored_ scales);
+    //void SetAxisScales([Const] _ignored_ scales);
+    //void FixTypeAndScale(_ignored_ scales);
+    void SetBoundingRadius();
+    //void SetOffsets([Const] _ignored_ offsets);
+    long GetVolumeType();
+    void SetVolumeType(long type);
+    void SetIgnoreHits(boolean b);
+    void SetUseContHitTest(boolean b);
+    void SetDefaultToPieceTree(boolean b);
+    void SetDefaultToFootPrint(boolean b);
+    long GetPrimaryAxis();
+    long GetSecondaryAxis(long axis);
+    float GetBoundingRadius();
+    float GetBoundingRadiusSq();
+    float GetOffset(long axis);
+    //[Const] _ignored_ GetOffsets();
+    float GetScale(long axis);
+    float GetHScale(long axis);
+    float GetHScaleSq(long axis);
+    //[Const] _ignored_ GetScales();
+    //[Const] _ignored_ GetHScales();
+    //[Const] _ignored_ GetHSqScales();
+    //[Const] _ignored_ GetHIScales();
+    boolean IgnoreHits();
+    boolean UseContHitTest();
+    boolean DefaultToSphere();
+    boolean DefaultToFootPrint();
+    boolean DefaultToPieceTree();
+    long GetWorldSpacePos();
+    //float GetPointSurfaceDistance([Const] _ignored_ u, [Const] _ignored_ lmp, [Const] _ignored_ pos);
+};
+interface CFactory
+{
+    //void StartBuild([Const] _ignored_ buildeeDef);
+    //void UpdateBuild(_ignored_ buildee);
+    //void FinishBuild(_ignored_ buildee);
+    void StopBuild();
+    //unsigned long QueueBuild([Const] _ignored_ buildeeDef, [Const] _ignored_ buildCmd);
+    void Update();
+    //void DependentDied(_ignored_ o);
+    void CreateNanoParticle(boolean highPriority);
+    long CalcBuildPos();
+    //void KillUnit(_ignored_ attacker, boolean selfDestruct, boolean reclaimed, boolean showDeathSequence);
+    //void PreInit([Const] _ignored_ params);
+    boolean ChangeTeam(long newTeam, long type);
+    //[Const] _ignored_ GetNanoPieceCache();
+};
+interface CommonDefHandler
+{
+    //long LoadSoundFile([Const] _ignored_ fileName);
+};
+interface CStarburstProjectile
+{
+    //void Collision(_ignored_ unit);
+};
+interface CNullUnitScript
+{
+    void RawCall(long functionId);
+    void Create();
+    void Killed();
+    void WindChanged(float heading, float speed);
+    void ExtractionRateChanged(float speed);
+    //void WorldRockUnit([Const] _ignored_ rockDir);
+    //void RockUnit([Const] _ignored_ rockDir);
+    //void WorldHitByWeapon([Const] _ignored_ hitDir, long weaponDefId, _ignored_ inoutDamage);
+    //void HitByWeapon([Const] _ignored_ hitDir, long weaponDefId, _ignored_ inoutDamage);
+    void SetSFXOccupy(long curTerrainType);
+    //void QueryLandingPads(_ignored_ out_pieces);
+    //void BeginTransport([Const] _ignored_ unit);
+    //long QueryTransport([Const] _ignored_ unit);
+    //void TransportPickup([Const] _ignored_ unit);
+    //void TransportDrop([Const] _ignored_ unit, [Const] _ignored_ pos);
+    void StartBuilding(float heading, float pitch);
+    long QueryNanoPiece();
+    long QueryBuildInfo();
+    void Destroy();
+    void StartMoving(boolean reversing);
+    void StopMoving();
+    //void StartSkidding([Const] _ignored_ arg6);
+    void StopSkidding();
+    void ChangeHeading(short  deltaHeading);
+    void StartUnload();
+    void EndTransport();
+    void StartBuilding();
+    void StopBuilding();
+    void Falling();
+    void Landed();
+    void Activate();
+    void Deactivate();
+    void MoveRate(long curRate);
+    void FireWeapon(long weaponNum);
+    void EndBurst(long weaponNum);
+    long QueryWeapon(long weaponNum);
+    void AimWeapon(long weaponNum, float heading, float pitch);
+    //void AimShieldWeapon(_ignored_ weapon);
+    long AimFromWeapon(long weaponNum);
+    void Shot(long weaponNum);
+    //boolean BlockShot(long weaponNum, [Const] _ignored_ targetUnit, boolean userTarget);
+    //float TargetWeight(long weaponNum, [Const] _ignored_ targetUnit);
+    void AnimFinished(long type, long piece, long axis);
+};
+interface CLuaUnitScriptNames
+{
+    //[Const] _ignored_ GetScriptNames();
+    //long GetScriptNumber([Const] _ignored_ fname);
+    //[Const] _ignored_ GetScriptName(long num);
+};
+interface CCollisionHandler
+{
+    void PrintStats();
+    //boolean DetectHit([Const] _ignored_ o, [Const] _ignored_ m, [Const] long p0, [Const] long p1, _ignored_ cq, boolean forceTrace);
+    //boolean MouseHit([Const] _ignored_ o, [Const] _ignored_ m, [Const] _ignored_ p0, [Const] _ignored_ p1, [Const] _ignored_ v, _ignored_ cq);
+    //boolean IntersectEllipsoid([Const] _ignored_ v, [Const] _ignored_ pi0, [Const] _ignored_ pi1, _ignored_ cq);
+    //boolean IntersectCylinder([Const] _ignored_ v, [Const] _ignored_ pi0, [Const] _ignored_ pi1, _ignored_ cq);
+    //boolean IntersectBox([Const] _ignored_ v, [Const] _ignored_ pi0, [Const] _ignored_ pi1, _ignored_ cq);
+};
+interface ClassAliasList
+{
+    //void Load([Const] _ignored_ arg2);
+    void Clear();
+    //_ignored_ ResolveAlias([Const] _ignored_ alias);
+    //_ignored_ FindAlias([Const] _ignored_ className);
+};
+interface CCommandQueue
+{
+    boolean empty();
+    //_undefined_ size();
+    //void push_back([Const] _ignored_ cmd);
+    //void push_front([Const] _ignored_ cmd);
+    //_undefined_ insert(_undefined_ pos, [Const] _ignored_ cmd);
+    void pop_back();
+    void pop_front();
+    //_undefined_ erase(_undefined_ pos);
+    //_undefined_ erase(_undefined_ first, _undefined_ last);
+    void clear();
+    //_undefined_ end();
+    //_undefined_ end();
+    //_undefined_ begin();
+    //_undefined_ begin();
+    //_undefined_ rend();
+    //_undefined_ rend();
+    //_undefined_ rbegin();
+    //_undefined_ rbegin();
+    //_ignored_ back();
+    //[Const] _ignored_ back();
+    //_ignored_ front();
+    //[Const] _ignored_ front();
+    //_ignored_ at(_undefined_ i);
+    //[Const] _ignored_ at(_undefined_ i);
+    //_ignored_ operator[](_undefined_ i);
+    //[Const] _ignored_ operator[](_undefined_ i);
+};
+interface CFeatureDefHandler
+{
+    void LoadFeatureDefsFromMap();
+    //[Const] _ignored_ GetFeatureDef(_ignored_ name, [Const] boolean showError);
+    //[Const] _ignored_ GetFeatureDefByID(long id);
+    //_ignored_ CreateDefaultGeoFeatureDef([Const] _ignored_ name);
+    //_ignored_ CreateFeatureDef([Const] _ignored_ luaTable, [Const] _ignored_ name);
+    //_ignored_ GetNewFeatureDef();
+    //void AddFeatureDef([Const] _ignored_ name, _ignored_ feature, boolean isDefaultFeature);
+};
+interface CCobUnitScriptNames
+{
+    //[Const] _ignored_ GetScriptNames();
+    //long GetScriptNumber([Const] _ignored_ fname);
+    //[Const] _ignored_ GetScriptName(long num);
+};
+interface CBuilding
+{
+    //void PostInit([Const] _ignored_ builder);
+    //void ForcedMove([Const] _ignored_ newPos);
+};
+interface CUnitScriptFactory
+{
+    void InitStatic();
+    //_ignored_ CreateScript(_ignored_ unit, [Const] _ignored_ udef);
+    //_ignored_ CreateCOBScript(_ignored_ unit, _ignored_ F);
+    //_ignored_ CreateLuaScript(_ignored_ unit, _ignored_ L);
+};
+interface CLosHandler
+{
+    void IncreaseAllyTeamRadarErrorSize(long allyTeam);
+    void DecreaseAllyTeamRadarErrorSize(long allyTeam);
+    void SetAllyTeamRadarErrorSize(long allyTeam, float size);
+    float GetAllyTeamRadarErrorSize(long allyTeam);
+    void SetBaseRadarErrorSize(float size);
+    void SetBaseRadarErrorMult(float mult);
+    float GetBaseRadarErrorSize();
+    float GetBaseRadarErrorMult();
+    //boolean WantsEvent([Const] _ignored_ eventName);
+    boolean GetFullRead();
+    long GetReadAllyTeam();
+    //void UnitDestroyed([Const] _ignored_ unit, [Const] _ignored_ attacker);
+    //void UnitTaken([Const] _ignored_ unit, long oldTeam, long newTeam);
+    //void UnitLoaded([Const] _ignored_ unit, [Const] _ignored_ transport);
+    //void UnitReverseBuilt([Const] _ignored_ unit);
+    void Update();
+    void UpdateHeightMapSynced(long rect);
+};
+interface CPathEstimator
+{
+    void MapChanged(unsigned long x1, unsigned long z1, unsigned long x2, unsigned long z2);
+    void Update();
+    //_ignored_ GetParent();
+    long GetPathChecksum();
+    //[Const] _ignored_ GetDirectionVectorsTable();
+};
+interface CCannon
+{
+    void Init();
+    void UpdateRange([Const] float val);
+    void UpdateWantedDir();
+    void SlowUpdate();
+    float GetRange2D(float yDiff, float rFact);
+    float GetRange2D([Const] float yDiff);
+};
+interface CWeaponLoader
+{
+    void InitStatic();
+    void KillStatic();
+    //void LoadWeapons(_ignored_ unit);
+    //void InitWeapons(_ignored_ unit);
+    //void FreeWeapons(_ignored_ unit);
+};
+interface CCustomExplosionGenerator
+{
+    boolean OutputProjectileClassInfo();
+    //unsigned long GetFlagsFromTable([Const] _ignored_ table);
+    unsigned long GetFlagsFromHeight(float height, float groundHeight);
+    //boolean Load(_ignored_ handler, [Const] _ignored_ tag);
+    //boolean Reload(_ignored_ handler, [Const] _ignored_ tag);
+    //boolean Explosion([Const] _ignored_ pos, [Const] _ignored_ dir, float damage, float radius, float gfxMod, _ignored_ owner, _ignored_ hit);
+};
+interface CWeapon
+{
+    //boolean Attack([Const] _ignored_ newTarget);
+    //void SetAttackTarget([Const] _ignored_ newTarget);
+    void DropCurrentTarget();
+    void AimScriptFinished(boolean retCode);
+    boolean HaveTarget();
+    //[Const] _ignored_ GetCurrentTarget();
+    //[Const] _ignored_ GetCurrentTargetPos();
+    //[Const] _ignored_ GetAimFromPos();
+    boolean HasIncomingProjectile(long projID);
+    void AddIncomingProjectile(long projID);
+    //boolean TestTarget([Const] long tgtPos, [Const] _ignored_ trg);
+    //boolean TestRange([Const] long tgtPos, [Const] _ignored_ trg);
+    //boolean HaveFreeLineOfFire([Const] long srcPos, [Const] long tgtPos, [Const] _ignored_ trg);
+    boolean CanFire(boolean ignoreAngleGood, boolean ignoreTargetType, boolean ignoreRequestedDir);
+    //boolean TryTarget([Const] _ignored_ trg);
+    //boolean TryTargetRotate([Const] _ignored_ unit, boolean userTarget, boolean manualFire);
+    //boolean TryTargetHeading(short  heading, [Const] _ignored_ trg);
+    boolean CheckTargetAngleConstraint([Const] long worldTargetDir, [Const] long worldWeaponDir);
+    long GetTargetBorderPos();
+    //void AdjustTargetPosToWater(_ignored_ tgtPos, boolean attackGround);
+    long GetUnitPositionWithError();
+    long GetUnitLeadTargetPos();
+    long GetLeadTargetPos();
+    //float TargetWeight([Const] _ignored_ unit);
+    float GetRange2D([Const] float yDiff);
+    void UpdateRange([Const] float val);
+    boolean AutoTarget();
+    void AimReady([Const] long value);
+    void Fire([Const] boolean scriptCall);
+    float ExperienceErrorScale();
+    float MoveErrorExperience();
+    float AccuracyExperience();
+    float SprayAngleExperience();
+    long SalvoErrorExperience();
+    void StopAttackingAllyTeam([Const] long ally);
+};
+interface CResourceMapAnalyzer
+{
+    void Init();
+    //[Const] _ignored_ GetSpots();
+    long GetNearestSpot();
+    float GetAverageIncome();
+    long GetNumSpots();
+};
+interface CLuaUnitScript
+{
+    boolean HasFunction(long id);
+    boolean HasBlockShot(long weaponNum);
+    boolean HasTargetWeight(long weaponNum);
+    void RawCall(long functionId);
+    void Create();
+    void Killed();
+    void WindChanged(float heading, float speed);
+    void ExtractionRateChanged(float speed);
+    //void WorldRockUnit([Const] _ignored_ rockDir);
+    //void RockUnit([Const] _ignored_ rockDir);
+    //void WorldHitByWeapon([Const] _ignored_ hitDir, long weaponDefId, _ignored_ inoutDamage);
+    //void HitByWeapon([Const] _ignored_ hitDir, long weaponDefId, _ignored_ inoutDamage);
+    void SetSFXOccupy(long curTerrainType);
+    //void QueryLandingPads(_ignored_ out_pieces);
+    //void BeginTransport([Const] _ignored_ unit);
+    //long QueryTransport([Const] _ignored_ unit);
+    //void TransportPickup([Const] _ignored_ unit);
+    //void TransportDrop([Const] _ignored_ unit, [Const] _ignored_ pos);
+    void StartBuilding(float heading, float pitch);
+    long QueryNanoPiece();
+    long QueryBuildInfo();
+    void Destroy();
+    void StartMoving(boolean reversing);
+    void StopMoving();
+    //void StartSkidding([Const] _ignored_ vel);
+    void StopSkidding();
+    void ChangeHeading(short  deltaHeading);
+    void StartUnload();
+    void EndTransport();
+    void StartBuilding();
+    void StopBuilding();
+    void Falling();
+    void Landed();
+    void Activate();
+    void Deactivate();
+    void MoveRate(long curRate);
+    void FireWeapon(long weaponNum);
+    void EndBurst(long weaponNum);
+    long QueryWeapon(long weaponNum);
+    void AimWeapon(long weaponNum, float heading, float pitch);
+    //void AimShieldWeapon(_ignored_ weapon);
+    long AimFromWeapon(long weaponNum);
+    void Shot(long weaponNum);
+    //boolean BlockShot(long weaponNum, [Const] _ignored_ targetUnit, boolean userTarget);
+    //float TargetWeight(long weaponNum, [Const] _ignored_ targetUnit);
+    void AnimFinished(long type, long piece, long axis);
+    //void HandleFreed(_ignored_ handle);
+    //boolean PushEntries(_ignored_ L);
+};
+interface CUnitScript
+{
+    boolean PieceExists(unsigned long scriptPieceNum);
+    //_ignored_ GetScriptLocalModelPiece();
+    long ScriptToModel(long scriptPieceNum);
+    long ModelToScript(long lmodelPieceNum);
+    long GetPiecePos();
+    long GetPieceMatrix();
+    //boolean GetEmitDirPos(long scriptPieceNum, _ignored_ pos, _ignored_ dir);
+    boolean IsBusy();
+    //_ignored_ GetUnit();
+    //[Const] _ignored_ GetUnit();
+    boolean Tick(long tickRate);
+    //boolean TickMoveAnim(long tickRate, _ignored_ lmp, _ignored_ ai);
+    //boolean TickTurnAnim(long tickRate, _ignored_ lmp, _ignored_ ai);
+    //boolean TickSpinAnim(long tickRate, _ignored_ lmp, _ignored_ ai);
+    //void TickAnims(long tickRate, [Const] _ignored_ tickAnimFunc, _ignored_ liveAnims, _ignored_ doneAnims);
+    void Spin(long piece, long axis, float speed, float accel);
+    void StopSpin(long piece, long axis, float decel);
+    void Turn(long piece, long axis, float speed, float destination);
+    void Move(long piece, long axis, float speed, float destination);
+    void MoveNow(long piece, long axis, float destination);
+    void TurnNow(long piece, long axis, float destination);
+    boolean NeedsWait(long type, long piece, long axis);
+    void SetVisibility(long piece, boolean visible);
+    boolean EmitSfx(long sfxType, long sfxPiece);
+    //boolean EmitRelSFX(long sfxType, [Const] _ignored_ relPos, [Const] _ignored_ relDir);
+    //boolean EmitAbsSFX(long sfxType, [Const] _ignored_ absPos, [Const] _ignored_ absDir, [Const] _ignored_ relDir);
+    void AttachUnit(long piece, long unit);
+    void DropUnit(long unit);
+    void Explode(long piece, long flags);
+    //void Shatter(long piece, [Const] _ignored_ pos, [Const] _ignored_ speed);
+    void ShowFlare(long piece);
+    long GetUnitVal(long val, long p1, long p2, long p3, long p4);
+    void SetUnitVal(long val, long param);
+    boolean IsInAnimation(long type, long piece, long axis);
+    boolean HaveAnimations();
+    boolean HasSetSFXOccupy();
+    boolean HasRockUnit();
+    boolean HasStartBuilding();
+    boolean HasBlockShot(long weaponNum);
+    boolean HasTargetWeight(long weaponNum);
+    void RawCall(long functionId);
+    void Create();
+    void Killed();
+    void WindChanged(float heading, float speed);
+    void ExtractionRateChanged(float speed);
+    //void WorldRockUnit([Const] _ignored_ rockDir);
+    //void RockUnit([Const] _ignored_ rockDir);
+    //void WorldHitByWeapon([Const] _ignored_ hitDir, long weaponDefId, _ignored_ inoutDamage);
+    //void HitByWeapon([Const] _ignored_ hitDir, long weaponDefId, _ignored_ inoutDamage);
+    void SetSFXOccupy(long curTerrainType);
+    //void QueryLandingPads(_ignored_ out_pieces);
+    //void BeginTransport([Const] _ignored_ unit);
+    //long QueryTransport([Const] _ignored_ unit);
+    //void TransportPickup([Const] _ignored_ unit);
+    //void TransportDrop([Const] _ignored_ unit, [Const] _ignored_ pos);
+    void StartBuilding(float heading, float pitch);
+    long QueryNanoPiece();
+    long QueryBuildInfo();
+    void Destroy();
+    void StartMoving(boolean reversing);
+    void StopMoving();
+    //void StartSkidding([Const] _ignored_ arg3);
+    void StopSkidding();
+    void ChangeHeading(short  deltaHeading);
+    void StartUnload();
+    void EndTransport();
+    void StartBuilding();
+    void StopBuilding();
+    void Falling();
+    void Landed();
+    void Activate();
+    void Deactivate();
+    void MoveRate(long curRate);
+    void FireWeapon(long weaponNum);
+    void EndBurst(long weaponNum);
+    long QueryWeapon(long weaponNum);
+    void AimWeapon(long weaponNum, float heading, float pitch);
+    //void AimShieldWeapon(_ignored_ weapon);
+    long AimFromWeapon(long weaponNum);
+    void Shot(long weaponNum);
+    //boolean BlockShot(long weaponNum, [Const] _ignored_ targetUnit, boolean userTarget);
+    //float TargetWeight(long weaponNum, [Const] _ignored_ targetUnit);
+    void AnimFinished(long type, long piece, long axis);
+};
+interface CMobileCAI
+{
+    //void SetGoal([Const] _ignored_ pos, [Const] _ignored_ curPos, float goalRadius);
+    //void BuggerOff([Const] _ignored_ pos, float radius);
+    //boolean SetFrontMoveCommandPos([Const] _ignored_ pos);
+    void StopMove();
+    void StopMoveAndFinishCommand();
+    //void StopMoveAndKeepPointing([Const] _ignored_ p, [Const] float r, boolean b);
+    //boolean AllowedCommand([Const] _ignored_ c, boolean fromSynced);
+    //long GetDefaultCmd([Const] _ignored_ pointed, [Const] _ignored_ feature);
+    void SlowUpdate();
+    //void GiveCommandReal([Const] _ignored_ c, boolean fromSynced);
+    void NonMoving();
+    void FinishCommand();
+    boolean CanSetMaxSpeed();
+    void StopSlowGuard();
+    void StartSlowGuard(float speed);
+    //void ExecuteAttack(_ignored_ c);
+    //void ExecuteStop(_ignored_ c);
+    void Execute();
+    //void ExecuteGuard(_ignored_ c);
+    //void ExecuteFight(_ignored_ c);
+    //void ExecutePatrol(_ignored_ c);
+    //void ExecuteMove(_ignored_ c);
+    //void ExecuteSetWantedMaxSpeed(_ignored_ c);
+    //void ExecuteLoadOnto(_ignored_ c);
+    //void ExecuteUnloadUnit(_ignored_ c);
+    //void ExecuteUnloadUnits(_ignored_ c);
+    //void ExecuteLoadUnits(_ignored_ c);
+    long GetCancelDistance();
+    //boolean IsValidTarget([Const] _ignored_ enemy);
+    //boolean CanWeaponAutoTarget([Const] _ignored_ weapon);
+    //void SetTransportee(_ignored_ unit);
+    //boolean FindEmptySpot([Const] _ignored_ unloadee, [Const] _ignored_ center, float radius, float spread, _ignored_ found, boolean fromSynced);
+    //boolean FindEmptyDropSpots(long startpos, long endpos, _ignored_ dropSpots);
+    //_ignored_ FindUnitToTransport(long center, float radius);
+    //boolean LoadStillValid(_ignored_ unit);
+    //boolean SpotIsClear(long pos, _ignored_ u);
+    //boolean SpotIsClearIgnoreSelf(long pos, _ignored_ unloadee);
+    //void UnloadUnits_Land(_ignored_ c);
+    //void UnloadUnits_Drop(_ignored_ c);
+    //void UnloadUnits_LandFlood(_ignored_ c);
+    //void UnloadLand(_ignored_ c);
+    //void UnloadDrop(_ignored_ c);
+    //void UnloadLandFlood(_ignored_ c);
+};
+interface CExtractorBuilding
+{
+    void ResetExtraction();
+    void SetExtractionRangeAndDepth(float range, float depth);
+    void ReCalculateMetalExtraction();
+    //boolean IsNeighbour(_ignored_ neighbour);
+    //void AddNeighbour(_ignored_ neighbour);
+    //void RemoveNeighbour(_ignored_ neighbour);
+    float GetExtractionRange();
+    float GetExtractionDepth();
+    void FinishedBuilding(boolean postInit);
+};
+interface CBuilderCAI
+{
+    void InitStatic();
+    void PostLoad();
+    //long GetDefaultCmd([Const] _ignored_ unit, [Const] _ignored_ feature);
+    void SlowUpdate();
+    void FinishCommand();
+    //void GiveCommandReal([Const] _ignored_ c, boolean fromSynced);
+    //void BuggerOff([Const] _ignored_ pos, float radius);
+    //boolean TargetInterceptable([Const] _ignored_ unit, float uspeed);
+    //void ExecuteBuildCmd(_ignored_ c);
+    //void ExecutePatrol(_ignored_ c);
+    //void ExecuteFight(_ignored_ c);
+    //void ExecuteGuard(_ignored_ c);
+    //void ExecuteStop(_ignored_ c);
+    //void ExecuteRepair(_ignored_ c);
+    //void ExecuteCapture(_ignored_ c);
+    //void ExecuteReclaim(_ignored_ c);
+    //void ExecuteResurrect(_ignored_ c);
+    //void ExecuteRestore(_ignored_ c);
+    //boolean ReclaimObject(_ignored_ o);
+    //boolean ResurrectObject(_ignored_ feature);
+    //boolean IsUnitBeingReclaimed([Const] _ignored_ unit, _ignored_ friendUnit);
+    //boolean IsFeatureBeingReclaimed(long featureId, _ignored_ friendUnit);
+    //boolean IsFeatureBeingResurrected(long featureId, _ignored_ friendUnit);
+    //boolean IsInBuildRange([Const] _ignored_ obj);
+};
+interface CLosTableHelper
+{
+    void GenerateForLosSize(long losSize);
+    [Const] long GetLosTableRaySquare();
+    long GetLosTableRaySize();
+    long GetLosTableSize();
+};
+interface CScriptMoveType
+{
+    boolean Update();
+    void ForceUpdates();
+    //void SetPhysics([Const] _ignored_ pos, [Const] _ignored_ vel, [Const] _ignored_ rot);
+    //void SetPosition([Const] _ignored_ pos);
+    //void SetVelocity([Const] _ignored_ vel);
+    //void SetRelativeVelocity([Const] _ignored_ rvel);
+    //void SetRotation([Const] _ignored_ rot);
+    //void SetRotationVelocity([Const] _ignored_ rvel);
+    void SetHeading(short  heading);
+    void SetNoBlocking(boolean state);
+    void StartMoving(long float3, float goalRadius);
+    void KeepPointingTo(long float3, float distance, boolean aggressive);
+    //void KeepPointingTo(_ignored_ unit, float distance, boolean aggressive);
+    void StopMoving(boolean callScript, boolean hardStop, boolean cancelRaw);
+    //void SetGoal([Const] _ignored_ pos, float distance);
+    void SetMaxSpeed(float speed);
+    void SetWantedMaxSpeed(float speed);
+    void LeaveTransport();
+};
+interface CModInfo
+{
+    void ResetState();
+    //void Init([Const] _ignored_ modArchive);
+};
+interface CMoveMath
+{
+    //float yLevel([Const] _ignored_ moveDef, [Const] _ignored_ pos);
+    //float yLevel([Const] _ignored_ moveDef, long xSquare, long zSquare);
+    //float GetPosSpeedMod([Const] _ignored_ moveDef, unsigned long xSquare, unsigned long zSquare);
+    long IsBlocked();
+    long IsBlockedNoSpeedModCheck();
+    long IsBlockedNoSpeedModCheckThreadUnsafe();
+    long IsBlockedStructure();
+    //boolean CrushResistant([Const] _ignored_ colliderMD, [Const] _ignored_ collidee);
+    //boolean IsNonBlocking([Const] _ignored_ colliderMD, [Const] _ignored_ collidee, [Const] _ignored_ collider);
+    //boolean IsNonBlocking([Const] _ignored_ collidee, [Const] _ignored_ collider);
+    long ObjectBlockType();
+    long SquareIsBlocked();
+    long RangeIsBlocked();
+};
+interface CGlobalSynced
+{
+    void ResetState();
+    //void LoadFromSetup([Const] _ignored_ arg4);
+    long GetLuaSimFrame();
+    long GetTempNum();
+    boolean PreSimFrame();
+};
+interface CExplosionGeneratorHandler
+{
+    void ParseExplosionTables();
+    //void ReloadGenerators([Const] _ignored_ arg1);
+    //unsigned long LoadGeneratorID([Const] _ignored_ tag);
+    //_ignored_ LoadGenerator([Const] _ignored_ tag);
+    //_ignored_ GetGenerator(unsigned long expGenID);
+    //boolean GenExplosion(unsigned long expGenID, [Const] _ignored_ pos, [Const] _ignored_ dir, float damage, float radius, float gfxMod, _ignored_ owner, _ignored_ hit);
+    //[Const] _ignored_ GetExplosionTableRoot();
+    //[Const] _ignored_ GetProjectileClasses();
+};
