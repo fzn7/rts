@@ -1,0 +1,10 @@
+1)streflop || if(ENABLE_STREFLOP);ADD_SUBDIRECTORY(streflop);endif () || spring-104.0.1/rts/lib/CMakeLists.txt || unknown FP unit 'sse'
+2)minizip || ADD_SUBDIRECTORY(minizip) || spring-104.0.1/rts/lib/CMakeLists.txt || file not found 'zlib.h'
+3)###Assemble libraries  ||| spring-104.0.1/rts/builds/dedicated/CMakeLists.txt
+archives || 'zlib.h' file not found
+engineSystemNet || несоответсвие типов, вызов из System/Net/Socket.cpp 6 строка, связано с asio
+
+enginededicatedsources SET(enginededicatedsources system_files || file not found 'unzip/minizip.h'
+						sources_engine_NetServer || несоответсвие типов, вызов из Net/AutohostInterface.cpp 3 строка, связано с asio
+4)lua include/LuaUser.cpp ./spring-104.0.1/rts/lib/lua/CMakeLists.txt || ошибка с constexpr
+
