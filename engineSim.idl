@@ -3,7 +3,7 @@ interface CLosMap
     //void AddCircle(_ignored_ instance, long amount);
     //void AddRaycast(_ignored_ instance, long amount);
     //void PrepareRaycast(_ignored_ instance);
-    long At(long p);
+    //long At(long p); //clear (unstandart type 'int2')
     //_ignored_ front();
 };
 interface CUnitDefHandler
@@ -20,6 +20,7 @@ interface CUnitDefHandler
     //void SetUnitDefImage([Const] _ignored_ unitDef, unsigned long texID, long sizex, long sizey);
     //long PushNewUnitDef([Const] _ignored_ unitName, [Const] _ignored_ udTable);
 };
+
 interface CUnitScriptEngine
 {
     //void AddInstance(_ignored_ instance);
@@ -38,26 +39,32 @@ interface CCobThreadPtr_less
 {
     //boolean operator()([Const] _ignored_ a, [Const] _ignored_ b);
 };
+
 interface CGeometricObjects
 {
     long AddSpline(long b1, long b2, long b3, long b4, float width, long arrow, long lifeTime, long group);
     void DeleteGroup(long group);
     void SetColor(long group, float r, float g, float b, float a);
-    long CalcSpline();
+    //long CalcSpline(); //clear (few arguments)
     long AddLine(long start, long end, float width, long arrow, long lifetime, long group);
     void Update();
     void MarkSquare(long mapSquare);
 };
+
 interface CExplosionCreator
 {
     //void AddExplosionListener(_ignored_ listener);
     //void RemoveExplosionListener(_ignored_ listener);
     //void FireExplosionEvent([Const] _ignored_ event);
 };
+/* clean (nonexistent class)
 interface CQuadField__Quad
 {
     void PostLoad();
 };
+*/
+
+
 interface CCobFileHandler
 {
     //_ignored_ GetCobFile([Const] _ignored_ name);
@@ -107,6 +114,7 @@ interface CCobEngine
     //void ShowScriptError([Const] _ignored_ msg);
     long GetCurrentTime();
 };
+/* //clean (nonexistent class)
 interface CBeamLaser__SweepFireState
 {
     //void Update([Const] _ignored_ newTargetDir);
@@ -123,6 +131,8 @@ interface CBeamLaser__SweepFireState
     boolean IsSweepFiring();
     boolean DamageAllies();
 };
+*/
+
 interface CFactoryCAI
 {
     //long GetDefaultCmd([Const] _ignored_ pointed, [Const] _ignored_ feature);
@@ -179,11 +189,14 @@ interface CAirCAI
     //void ExecuteMove(_ignored_ c);
     //boolean IsValidTarget([Const] _ignored_ enemy);
 };
+
+/* //clean (nonexistent class)
 interface CPathManager__MultiPath
 {
     //_ignored_ operator=([Const] _ignored_ mp);
     //_ignored_ operator=(_operator_ mp);
 };
+*/
 interface CollisionVolume
 {
     void PostLoad();
@@ -221,9 +234,10 @@ interface CollisionVolume
     boolean DefaultToSphere();
     boolean DefaultToFootPrint();
     boolean DefaultToPieceTree();
-    long GetWorldSpacePos();
+    //long GetWorldSpacePos(); // clean (few arguments)
     //float GetPointSurfaceDistance([Const] _ignored_ u, [Const] _ignored_ lmp, [Const] _ignored_ pos);
 };
+
 interface CFactory
 {
     //void StartBuild([Const] _ignored_ buildeeDef);
@@ -234,12 +248,13 @@ interface CFactory
     void Update();
     //void DependentDied(_ignored_ o);
     void CreateNanoParticle(boolean highPriority);
-    long CalcBuildPos();
+    //long CalcBuildPos(); // clean (unstandart type 'float3')
     //void KillUnit(_ignored_ attacker, boolean selfDestruct, boolean reclaimed, boolean showDeathSequence);
     //void PreInit([Const] _ignored_ params);
-    boolean ChangeTeam(long newTeam, long type);
+    //boolean ChangeTeam(long newTeam, long type); // clean (unstandart type 'CUnit::ChangeType')
     //[Const] _ignored_ GetNanoPieceCache();
 };
+
 interface CommonDefHandler
 {
     //long LoadSoundFile([Const] _ignored_ fileName);
@@ -248,6 +263,7 @@ interface CStarburstProjectile
 {
     //void Collision(_ignored_ unit);
 };
+/*
 interface CNullUnitScript
 {
     void RawCall(long functionId);
@@ -294,6 +310,7 @@ interface CNullUnitScript
     //float TargetWeight(long weaponNum, [Const] _ignored_ targetUnit);
     void AnimFinished(long type, long piece, long axis);
 };
+*/
 interface CLuaUnitScriptNames
 {
     //[Const] _ignored_ GetScriptNames();
@@ -368,11 +385,12 @@ interface CBuilding
 };
 interface CUnitScriptFactory
 {
-    void InitStatic();
+    //void InitStatic(); // clear
     //_ignored_ CreateScript(_ignored_ unit, [Const] _ignored_ udef);
     //_ignored_ CreateCOBScript(_ignored_ unit, _ignored_ F);
     //_ignored_ CreateLuaScript(_ignored_ unit, _ignored_ L);
 };
+
 interface CLosHandler
 {
     void IncreaseAllyTeamRadarErrorSize(long allyTeam);
@@ -391,8 +409,9 @@ interface CLosHandler
     //void UnitLoaded([Const] _ignored_ unit, [Const] _ignored_ transport);
     //void UnitReverseBuilt([Const] _ignored_ unit);
     void Update();
-    void UpdateHeightMapSynced(long rect);
+    //void UpdateHeightMapSynced(long rect); // clean (unstandart type 'SRectangle')
 };
+
 interface CPathEstimator
 {
     void MapChanged(unsigned long x1, unsigned long z1, unsigned long x2, unsigned long z2);
@@ -412,8 +431,8 @@ interface CCannon
 };
 interface CWeaponLoader
 {
-    void InitStatic();
-    void KillStatic();
+    //void InitStatic(); // clear
+    //void KillStatic(); // clear
     //void LoadWeapons(_ignored_ unit);
     //void InitWeapons(_ignored_ unit);
     //void FreeWeapons(_ignored_ unit);
@@ -427,6 +446,7 @@ interface CCustomExplosionGenerator
     //boolean Reload(_ignored_ handler, [Const] _ignored_ tag);
     //boolean Explosion([Const] _ignored_ pos, [Const] _ignored_ dir, float damage, float radius, float gfxMod, _ignored_ owner, _ignored_ hit);
 };
+/*
 interface CWeapon
 {
     //boolean Attack([Const] _ignored_ newTarget);
@@ -465,13 +485,14 @@ interface CWeapon
     long SalvoErrorExperience();
     void StopAttackingAllyTeam([Const] long ally);
 };
+*/
 interface CResourceMapAnalyzer
 {
-    void Init();
+    //void Init(); // clear (is a private function)
     //[Const] _ignored_ GetSpots();
-    long GetNearestSpot();
+    //long GetNearestSpot(); // clear (in a function few arguments)
     float GetAverageIncome();
-    long GetNumSpots();
+    //long GetNumSpots(); //clear 
 };
 interface CLuaUnitScript
 {
@@ -500,8 +521,8 @@ interface CLuaUnitScript
     void StartMoving(boolean reversing);
     void StopMoving();
     //void StartSkidding([Const] _ignored_ vel);
-    void StopSkidding();
-    void ChangeHeading(short  deltaHeading);
+    //void StopSkidding(); //clear
+    //void ChangeHeading(short  deltaHeading); // clear
     void StartUnload();
     void EndTransport();
     void StartBuilding();
@@ -520,18 +541,28 @@ interface CLuaUnitScript
     void Shot(long weaponNum);
     //boolean BlockShot(long weaponNum, [Const] _ignored_ targetUnit, boolean userTarget);
     //float TargetWeight(long weaponNum, [Const] _ignored_ targetUnit);
-    void AnimFinished(long type, long piece, long axis);
+    //void AnimFinished(long type, long piece, long axis); //clear(first type it is enum)
     //void HandleFreed(_ignored_ handle);
     //boolean PushEntries(_ignored_ L);
 };
+/* clean
+enum CUnitScript_AnimType {
+	"CUnitScript::ANone",
+	"CUnitScript::ATurn",
+	"CUnitScript::ASpin",
+	"CUnitScript::AMove"
+};
 interface CUnitScript
 {
+	void CUnitScript();
+	//CUnitScript_AnimType GetEnum();
+	//CUnitScript_AnimType GetEnumFromNameSpace();
     boolean PieceExists(unsigned long scriptPieceNum);
     //_ignored_ GetScriptLocalModelPiece();
     long ScriptToModel(long scriptPieceNum);
     long ModelToScript(long lmodelPieceNum);
-    long GetPiecePos();
-    long GetPieceMatrix();
+    //long GetPiecePos(); //clear (few arguments)
+    //long GetPieceMatrix(); //clear (few arguments)
     //boolean GetEmitDirPos(long scriptPieceNum, _ignored_ pos, _ignored_ dir);
     boolean IsBusy();
     //_ignored_ GetUnit();
@@ -610,6 +641,7 @@ interface CUnitScript
     //float TargetWeight(long weaponNum, [Const] _ignored_ targetUnit);
     void AnimFinished(long type, long piece, long axis);
 };
+*/
 interface CMobileCAI
 {
     //void SetGoal([Const] _ignored_ pos, [Const] _ignored_ curPos, float goalRadius);
@@ -695,6 +727,7 @@ interface CBuilderCAI
     //boolean IsFeatureBeingResurrected(long featureId, _ignored_ friendUnit);
     //boolean IsInBuildRange([Const] _ignored_ obj);
 };
+/* // clean
 interface CLosTableHelper
 {
     void GenerateForLosSize(long losSize);
@@ -702,6 +735,8 @@ interface CLosTableHelper
     long GetLosTableRaySize();
     long GetLosTableSize();
 };
+*/
+
 interface CScriptMoveType
 {
     boolean Update();
@@ -723,6 +758,7 @@ interface CScriptMoveType
     void SetWantedMaxSpeed(float speed);
     void LeaveTransport();
 };
+
 interface CModInfo
 {
     void ResetState();
@@ -733,16 +769,16 @@ interface CMoveMath
     //float yLevel([Const] _ignored_ moveDef, [Const] _ignored_ pos);
     //float yLevel([Const] _ignored_ moveDef, long xSquare, long zSquare);
     //float GetPosSpeedMod([Const] _ignored_ moveDef, unsigned long xSquare, unsigned long zSquare);
-    long IsBlocked();
-    long IsBlockedNoSpeedModCheck();
-    long IsBlockedNoSpeedModCheckThreadUnsafe();
-    long IsBlockedStructure();
+    //long IsBlocked(); // clean (few arguments)
+    //long IsBlockedNoSpeedModCheck(); // clean (few arguments)
+    //long IsBlockedNoSpeedModCheckThreadUnsafe(); // clean (few arguments)
+    //long IsBlockedStructure(); // clean (few arguments)
     //boolean CrushResistant([Const] _ignored_ colliderMD, [Const] _ignored_ collidee);
     //boolean IsNonBlocking([Const] _ignored_ colliderMD, [Const] _ignored_ collidee, [Const] _ignored_ collider);
     //boolean IsNonBlocking([Const] _ignored_ collidee, [Const] _ignored_ collider);
-    long ObjectBlockType();
-    long SquareIsBlocked();
-    long RangeIsBlocked();
+    //long ObjectBlockType(); // clean (few arguments)
+    //long SquareIsBlocked(); // clean (few arguments)
+    //long RangeIsBlocked(); // clean (few arguments)
 };
 interface CGlobalSynced
 {
