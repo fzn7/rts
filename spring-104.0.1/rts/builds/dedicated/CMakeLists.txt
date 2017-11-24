@@ -22,8 +22,10 @@ SET(ENGINE_SRC_ROOT_DIR "${CMAKE_SOURCE_DIR}/rts")
 ### Assemble libraries
 LIST(APPEND engineDedicatedLibraries ${Boost_REGEX_LIBRARY})
 LIST(APPEND engineDedicatedLibraries ${Boost_SYSTEM_LIBRARY})
-LIST(APPEND engineDedicatedLibraries lua archives 7zip ${SPRING_MINIZIP_LIBRARY} ${ZLIB_LIBRARY} gflags)
-LIST(APPEND engineDedicatedLibraries headlessStubs engineSystemNet)
+#LIST(APPEND engineDedicatedLibraries lua archives 7zip ${SPRING_MINIZIP_LIBRARY} ${ZLIB_LIBRARY} gflags)
+LIST(APPEND engineDedicatedLibraries lua 7zip ${SPRING_MINIZIP_LIBRARY} ${ZLIB_LIBRARY} gflags)
+#LIST(APPEND engineDedicatedLibraries headlessStubs engineSystemNet)
+LIST(APPEND engineDedicatedLibraries headlessStubs)
 LIST(APPEND engineDedicatedLibraries ${LIBUNWIND_LIBRARIES})
 
 IF (WIN32)
@@ -133,8 +135,8 @@ IF    (WIN32)
 ENDIF (WIN32)
 
 SET(engineDedicatedSources
-	${system_files}
-	${sources_engine_NetServer}
+#	${system_files}
+#	${sources_engine_NetServer}
 	${sources_engine_System_Log}
 	${ENGINE_SRC_ROOT_DIR}/Game/ClientSetup.cpp
 	${ENGINE_SRC_ROOT_DIR}/Game/GameSetup.cpp
@@ -167,7 +169,7 @@ ADD_EXECUTABLE(engine-dedicated
 		${sources_engine_System_Log_sinkFile}
 		${sources_engine_System_Log_sinkOutputDebugString}
 		${ENGINE_ICON}
-		main
+#		main
 	)
 TARGET_LINK_LIBRARIES(engine-dedicated ${engineDedicatedLibraries})
 IF    (MINGW)
