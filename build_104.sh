@@ -21,5 +21,7 @@ emconfigure cmake . \
 emconfigure cmake . \
 -DCUSTOM_COMPILER_DEFINITIONS=-msse
 
+emconfigure cmake . --graphviz=spring-build-graph.dot
+
 make clean
 make engine-dedicated

@@ -7,3 +7,6 @@ lib/
 bindings/python-bindings-generator/bin/libclang.so
 *.pkl
 *.out
+spring-104.0.1/spring-build-graph.*
+spring-104.0.1/spring-dedicated.js
+spring-104.0.1/spring-dedicated.js.mem
