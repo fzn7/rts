@@ -35,10 +35,12 @@ interface CWeaponDefHandler
     //[Const] _ignored_ GetWeaponDef(_ignored_ weaponname);
     //[Const] _ignored_ GetWeaponDefByID(long weaponDefId);
 };
+/* //clean (not found "LuaInclude.h")
 interface CCobThreadPtr_less
 {
     //boolean operator()([Const] _ignored_ a, [Const] _ignored_ b);
 };
+*/
 
 interface CGeometricObjects
 {
@@ -64,13 +66,14 @@ interface CQuadField__Quad
 };
 */
 
-
+/* //clean (not found "LuaInclude.h")
 interface CCobFileHandler
 {
     //_ignored_ GetCobFile([Const] _ignored_ name);
     //_ignored_ ReloadCobFile([Const] _ignored_ name);
     //[Const] _ignored_ GetScriptAddr([Const] _ignored_ name);
 };
+*/
 interface CRectangularSearchConstraint
 {
     boolean WithinConstraints(long xSquare, long zSquare);
@@ -107,6 +110,7 @@ interface CCircularSearchConstraint
 {
     boolean WithinConstraints(long xSquare, long zSquare);
 };
+/* //clean (not found "LuaInclude.h")
 interface CCobEngine
 {
     //void AddThread(_ignored_ thread);
@@ -114,6 +118,7 @@ interface CCobEngine
     //void ShowScriptError([Const] _ignored_ msg);
     long GetCurrentTime();
 };
+*/
 /* //clean (nonexistent class)
 interface CBeamLaser__SweepFireState
 {
