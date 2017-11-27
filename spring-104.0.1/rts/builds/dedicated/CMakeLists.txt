@@ -22,8 +22,8 @@ SET(ENGINE_SRC_ROOT_DIR "${CMAKE_SOURCE_DIR}/rts")
 ### Assemble libraries
 LIST(APPEND engineDedicatedLibraries ${Boost_REGEX_LIBRARY})
 LIST(APPEND engineDedicatedLibraries ${Boost_SYSTEM_LIBRARY})
-LIST(APPEND engineDedicatedLibraries lua archives 7zip ${SPRING_MINIZIP_LIBRARY} ${ZLIB_LIBRARY} gflags)
-LIST(APPEND engineDedicatedLibraries headlessStubs engineSystemNet)
+LIST(APPEND engineDedicatedLibraries lua 7zip ${SPRING_MINIZIP_LIBRARY} ${ZLIB_LIBRARY} gflags) #archives) 
+LIST(APPEND engineDedicatedLibraries headless Stubs) #engineSystemNet)
 LIST(APPEND engineDedicatedLibraries ${LIBUNWIND_LIBRARIES})
 
 IF (WIN32)
@@ -84,10 +84,11 @@ ELSEIF	(WIN32)
 		${ENGINE_SRC_ROOT_DIR}/System/Platform/Win/CrashHandler.cpp)
 ELSE	()
 	SET(sources_engine_Platform_CrashHandler
-		${ENGINE_SRC_ROOT_DIR}/System/Platform/CpuID.cpp
+		#${ENGINE_SRC_ROOT_DIR}/System/Platform/CpuID.cpp
 		${ENGINE_SRC_ROOT_DIR}/System/Platform/Threading.cpp
-		${ENGINE_SRC_ROOT_DIR}/System/Platform/Linux/CrashHandler.cpp
-		${ENGINE_SRC_ROOT_DIR}/System/Platform/Linux/ThreadSupport.cpp)
+		#${ENGINE_SRC_ROOT_DIR}/System/Platform/Linux/CrashHandler.cpp
+		#${ENGINE_SRC_ROOT_DIR}/System/Platform/Linux/ThreadSupport.cpp
+		)
 ENDIF	()
 
 SET(system_files
@@ -95,19 +96,19 @@ SET(system_files
 	${sources_engine_System_Threading}
 	${sources_engine_System_Log}
 	${sources_engine_Platform_CrashHandler}
-	${ENGINE_SRC_ROOT_DIR}/Net/AutohostInterface.cpp
+	#${ENGINE_SRC_ROOT_DIR}/Net/AutohostInterface.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/Config/ConfigHandler.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/Config/ConfigLocater.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/Config/ConfigSource.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/Config/ConfigVariable.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/CRC.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/Platform/errorhandler.cpp
-	${ENGINE_SRC_ROOT_DIR}/System/Platform/CpuID.cpp
-	${ENGINE_SRC_ROOT_DIR}/System/Platform/Misc.cpp
+	#${ENGINE_SRC_ROOT_DIR}/System/Platform/CpuID.cpp
+	#${ENGINE_SRC_ROOT_DIR}/System/Platform/Misc.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/Platform/ScopedFileLock.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/Platform/Threading.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/TdfParser.cpp
-	${ENGINE_SRC_ROOT_DIR}/System/GlobalConfig.cpp
+	#${ENGINE_SRC_ROOT_DIR}/System/GlobalConfig.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/Info.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/LogOutput.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/TimeUtil.cpp
@@ -134,7 +135,7 @@ ENDIF (WIN32)
 
 SET(engineDedicatedSources
 	${system_files}
-	${sources_engine_NetServer}
+	#${sources_engine_NetServer}
 	${sources_engine_System_Log}
 	${ENGINE_SRC_ROOT_DIR}/Game/ClientSetup.cpp
 	${ENGINE_SRC_ROOT_DIR}/Game/GameSetup.cpp

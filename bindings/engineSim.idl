@@ -1,0 +1,1307 @@
+interface CMissileLauncher
+{
+};
+interface LuaParser
+{
+};
+interface CTorpedoProjectile
+{
+};
+interface SmoothHeightMesh
+{
+    //float GetHeight(float, float)
+    //float GetHeightAboveWater(float, float)
+    //float SetHeight(int, float)
+    //float AddHeight(int, float)
+    //float SetMaxHeight(int, float)
+    //int GetMaxX() const
+    //int GetMaxY() const
+    //float GetFMaxX() const
+    //float GetFMaxY() const
+    //float GetResolution() const
+    //const GetMeshDatafloat *() const
+    //const GetOriginalMeshDatafloat *() const
+};
+interface CResourceHandler
+{
+};
+interface CWeaponDefHandler
+{
+    //const GetWeaponDefWeaponDef *(int) const
+    //const GetWeaponDefByIDWeaponDef *(int) const
+};
+interface CBuilder
+{
+    //float f3Dist(const int &, const int &) const
+    //float f3SqDist(const int &, const int &) const
+    //float f3Len(const int &) const
+    //float f3SqLen(const int &) const
+    void Update()
+    void SlowUpdate()
+    //bool UpdateTerraform(const Command &)
+    //bool AssistTerraform(const Command &)
+    //bool UpdateBuild(const Command &)
+    //bool UpdateReclaim(const Command &)
+    //bool UpdateResurrect(const Command &)
+    //bool UpdateCapture(const Command &)
+    //bool StartBuild(BuildInfo &, CFeature *&, bool &, bool &)
+    //float CalculateBuildTerraformCost(BuildInfo &)
+    //bool ScriptStartBuilding(int, bool)
+    //bool CanAssistUnit(const int *, const UnitDef *) const
+    //bool CanRepairUnit(const int *) const
+    //const GetNanoPieceCacheint &() const
+};
+interface CGeometricObjects
+{
+    //int AddSpline(int, int, int, int, float, int, int, int)
+    //int CalcSpline(float, const int &, const int &, const int &, const int &)
+    //int AddLine(int, int, float, int, int, int)
+    void Update()
+};
+interface CBeamLaser
+{
+};
+interface CWeaponProjectile
+{
+};
+interface UnitDefImage
+{
+};
+interface CLuaHandle
+{
+};
+interface SolidObjectGroundDecal
+{
+};
+interface SResourceOrder
+{
+};
+interface PathFlowMap
+{
+    //PathFlowMap GetInstance*()
+    void Update()
+    //const GetFlowVecint &(unsigned int, unsigned int) const
+    //float GetFlowCost(unsigned int, unsigned int, const MoveDef &, unsigned int) const
+    //float GetMaxFlow() const
+    //unsigned GetFrontBufferIdxint () const
+    //unsigned GetBackBufferIdxint () const
+};
+interface CUnitHandler
+{
+};
+interface CSmokeTrailProjectile
+{
+};
+interface CPathFinderDef
+{
+};
+interface PathVector
+{
+    //value_type operator[]&(size_type)
+    //const operator[]value_type &(size_type) const
+    //reverse_iterator rbegin()
+    //reverse_iterator rend()
+    //const_reverse_iterator rbegin() const
+    //const_reverse_iterator rend() const
+    void pop_back()
+    //PathNode back*() const
+    //const frontvalue_type &() const
+    //value_type front&()
+    //bool empty() const
+    //size_type size() const
+    //size_type max_size() const
+    //iterator begin()
+    //iterator end()
+    //const_iterator begin() const
+    //const_iterator end() const
+    void clear()
+};
+interface CDamageArrayHandler
+{
+};
+interface CQuadField
+{
+};
+interface QTPFS::IPathSearch
+{
+    //bool Execute(unsigned int, unsigned int)
+    //bool SharedFinalize(const QTPFS::IPath *, QTPFS::IPath *)
+    //PathSearchTrace::Execution GetExecutionTrace*()
+    //const GetHashint (int, int) const
+    //unsigned GetIDint () const
+    //unsigned GetTeamint () const
+};
+interface CommonDefHandler
+{
+    //int LoadSoundFile(const int &)
+};
+interface SExpGenSpawnableMemberInfo
+{
+};
+interface SLosInstance::RLE
+{
+};
+interface CLuaUnitScriptNames
+{
+    //int GetScriptNumber(const int &)
+    //const GetScriptNameint &(int)
+};
+interface ProjectileDistanceComparator
+{
+    //bool operator()(const CProjectile *, const CProjectile *) const
+};
+interface DefType
+{
+    //const GetNameint &() const
+    //DefTagBuilder<T> AddTag(const char *)
+    //T GetTag(const int &)
+    void OutputTagMap()
+};
+interface CCollisionHandler
+{
+    void PrintStats()
+    //bool DetectHit(const CSolidObject *, const CMatrix44f &, const int, const int, CollisionQuery *, bool)
+    //bool MouseHit(const CSolidObject *, const CMatrix44f &, const int &, const int &, const CollisionVolume *, CollisionQuery *)
+    //bool IntersectEllipsoid(const CollisionVolume *, const int &, const int &, CollisionQuery *)
+    //bool IntersectCylinder(const CollisionVolume *, const int &, const int &, CollisionQuery *)
+    //bool IntersectBox(const CollisionVolume *, const int &, const int &, CollisionQuery *)
+};
+interface binary_heap
+{
+    void pop()
+    //TNode top()
+    //bool empty() const
+    //int size() const
+    //int capacity() const
+    void clear()
+    void reset()
+};
+interface CFireBallProjectile
+{
+};
+interface CFlameThrower
+{
+};
+interface CFeatureDefHandler
+{
+    void LoadFeatureDefsFromMap()
+    //const GetFeatureDefFeatureDef *(int, const bool) const
+    //const GetFeatureDefByIDFeatureDef *(int) const
+    //FeatureDef CreateDefaultGeoFeatureDef*(const int &)
+    //FeatureDef CreateFeatureDef*(const LuaTable &, const int &)
+    //FeatureDef GetNewFeatureDef&()
+};
+interface NanoPieceCache
+{
+};
+interface UnitDef::SoundStruct
+{
+};
+interface CPathEstimator
+{
+    void Update()
+    //IPathFinder GetParent*()
+    //int GetPathChecksum() const
+    //const GetDirectionVectorsTableint *()
+};
+interface CHoverAirMoveType
+{
+};
+interface CLargeBeamLaserProjectile
+{
+};
+interface CUnitScriptEngine
+{
+    void InitStatic()
+    void KillStatic()
+};
+interface CWeapon
+{
+    //bool Attack(const int &)
+    void DropCurrentTarget()
+    //bool HaveTarget() const
+    //const GetCurrentTargetint &() const
+    //const GetCurrentTargetPosint &() const
+    //const GetAimFromPosint &(bool) const
+    //bool HasIncomingProjectile(int) const
+    //bool TestTarget(const int, const int &) const
+    //bool TestRange(const int, const int &) const
+    //bool HaveFreeLineOfFire(const int, const int, const int &) const
+    //bool CanFire(bool, bool, bool) const
+    //bool TryTarget(const int &) const
+    //bool TryTargetRotate(const CUnit *, bool, bool)
+    //bool TryTargetHeading(short, const int &)
+    //bool CheckTargetAngleConstraint(const int, const int) const
+    //int GetTargetBorderPos(const CUnit *, const int, const int) const
+    //int GetUnitPositionWithError(const CUnit *) const
+    //int GetUnitLeadTargetPos(const CUnit *) const
+    //int GetLeadTargetPos(const int &) const
+    //float TargetWeight(const CUnit *) const
+    //float GetRange2D(const float) const
+    //bool AutoTarget()
+    //float ExperienceErrorScale() const
+    //float MoveErrorExperience() const
+    //float AccuracyExperience() const
+    //float SprayAngleExperience() const
+    //int SalvoErrorExperience() const
+};
+interface CLuaUnitScript
+{
+    //bool HasFunction(int) const
+    //bool HasBlockShot(int) const
+    //bool HasTargetWeight(int) const
+    void Create()
+    void Killed()
+    //int QueryTransport(const CUnit *)
+    //int QueryNanoPiece()
+    //int QueryBuildInfo()
+    void Destroy()
+    void StopMoving()
+    void StopSkidding()
+    void StartUnload()
+    void EndTransport()
+    void StartBuilding()
+    void StopBuilding()
+    void Falling()
+    void Landed()
+    void Activate()
+    void Deactivate()
+    //int QueryWeapon(int)
+    //int AimFromWeapon(int)
+    //bool BlockShot(int, const CUnit *, bool)
+    //float TargetWeight(int, const CUnit *)
+    //bool PushEntries(lua_State *)
+};
+interface CCommandAI
+{
+};
+interface CMobileCAI
+{
+    //bool SetFrontMoveCommandPos(const int &)
+    void StopMove()
+    void StopMoveAndFinishCommand()
+    //bool AllowedCommand(const Command &, bool)
+    //int GetDefaultCmd(const CUnit *, const CFeature *)
+    void SlowUpdate()
+    void NonMoving()
+    void FinishCommand()
+    //bool CanSetMaxSpeed() const
+    void StopSlowGuard()
+    void Execute()
+    //int GetCancelDistance()
+    //bool IsValidTarget(const CUnit *) const
+    //bool CanWeaponAutoTarget(const CWeapon *) const
+    //bool FindEmptySpot(const CUnit *, const int &, float, float, int &, bool)
+    //bool FindEmptyDropSpots(int, int, int)
+    //CUnit FindUnitToTransport*(int, float)
+    //bool LoadStillValid(CUnit *)
+    //bool SpotIsClear(int, CUnit *)
+    //bool SpotIsClearIgnoreSelf(int, CUnit *)
+};
+interface CBeamLaserProjectile
+{
+};
+interface ProjectileParams
+{
+};
+interface CBombDropper
+{
+};
+interface CLosTableHelper
+{
+    //const GetLosTableRaySquareint (int, int, int)
+    //int GetLosTableRaySize(int, int)
+    //int GetLosTableSize(int)
+};
+interface CCommandQueue
+{
+    //bool empty() const
+    //size_type size() const
+    //iterator insert(iterator, const Command &)
+    void pop_back()
+    void pop_front()
+    //iterator erase(iterator)
+    //iterator erase(iterator, iterator)
+    void clear()
+    //iterator end()
+    //const_iterator end() const
+    //iterator begin()
+    //const_iterator begin() const
+    //reverse_iterator rend()
+    //const_reverse_iterator rend() const
+    //reverse_iterator rbegin()
+    //const_reverse_iterator rbegin() const
+    //Command back&()
+    //const backCommand &() const
+    //Command front&()
+    //const frontCommand &() const
+    //Command at&(size_type)
+    //const atCommand &(size_type) const
+    //Command operator[]&(size_type)
+    //const operator[]Command &(size_type) const
+};
+interface CGroup
+{
+};
+interface CFlareProjectile
+{
+};
+interface CPathCache
+{
+};
+interface CResourceDescription
+{
+};
+interface CExplosionGeneratorHandler
+{
+    void ParseExplosionTables()
+    //unsigned LoadGeneratorIDint (const int &)
+    //IExplosionGenerator LoadGenerator*(const int &)
+    //IExplosionGenerator GetGenerator*(unsigned int)
+    //bool GenExplosion(unsigned int, const float3 &, const float3 &, float, float, float, CUnit *, CUnit *)
+    //const GetExplosionTableRootLuaTable *() const
+    //const GetProjectileClassesClassAliasList &() const
+};
+interface CLaserCannon
+{
+};
+interface AllyTeam
+{
+};
+interface CCobThreadPtr_less
+{
+    //bool operator()(const CCobThread *const &, const CCobThread *const &) const
+};
+interface SLosInstance
+{
+};
+interface CExplosiveProjectile
+{
+};
+interface CCustomExplosionGenerator::ExpGenParams
+{
+};
+interface UnitDefWeapon
+{
+};
+interface CMeleeWeapon
+{
+};
+interface float4
+{
+};
+interface LocalModelPiece
+{
+};
+interface MoveDef
+{
+};
+interface CCircularSearchConstraint
+{
+    //bool WithinConstraints(int, int) const
+};
+interface AtlasedTexture
+{
+};
+interface float3
+{
+};
+interface CProjectileHandler
+{
+};
+interface CGameSetup
+{
+};
+interface CStarburstProjectile::TracerPart
+{
+};
+interface CPathFinder
+{
+};
+interface CBeamLaser::SweepFireState
+{
+    //const GetSweepTempDirint &() const
+    //const GetSweepCurrDirint &() const
+    //float GetTargetDist2D() const
+    //float GetTargetDist3D() const
+    //bool StartSweep(const int &) const
+    //bool StopSweep() const
+    //bool IsSweepFiring() const
+    //bool DamageAllies() const
+};
+interface CUnitScriptFactory
+{
+    void InitStatic()
+    //CUnitScript CreateScript*(CUnit *, const UnitDef *)
+    //CUnitScript CreateCOBScript*(CUnit *, CCobFile *)
+    //CUnitScript CreateLuaScript*(CUnit *, lua_State *)
+};
+interface PathHeatMap::HeatCell
+{
+};
+interface CFeature
+{
+};
+interface SideParser
+{
+    //bool Load()
+    //const GetErrorLogint &() const
+    //const GetCountunsigned int () const
+    //const GetSideNameint &(unsigned int, const int &) const
+    //const GetCaseNameint &(unsigned int, const int &) const
+    //const GetStartUnitint &(unsigned int, const int &) const
+    //bool ValidSide(unsigned int) const
+};
+interface CProjectile
+{
+};
+interface tagCOBHeader
+{
+};
+interface AAirMoveType
+{
+};
+interface SResourcePack
+{
+};
+interface CUnitScript::AnimInfo
+{
+};
+interface CStrafeAirMoveType
+{
+};
+interface CWind
+{
+};
+interface LuaTable
+{
+};
+interface MoveDefHandler
+{
+};
+interface QTPFS::NodeLayer
+{
+    void InitStatic()
+    //int MaxSpeedModTypeValue()
+    //int MaxSpeedBinTypeValue()
+    void Clear()
+    void PopQueuedUpdate()
+    //bool ExecQueuedUpdate()
+    //bool HaveQueuedUpdate() const
+    //const GetQueuedUpdateQTPFS::LayerUpdate &() const
+    //unsigned NumQueuedUpdatesint () const
+    //bool Update(const SRectangle &, const MoveDef *, const int)
+    //float GetNodeRatio() const
+    //const GetNodeQTPFS::INode *(unsigned int, unsigned int) const
+    //QTPFS::INode GetNode*(unsigned int, unsigned int)
+    //const GetNodeQTPFS::INode *(unsigned int) const
+    //QTPFS::INode GetNode*(unsigned int)
+    //unsigned GetNumLeafNodesint () const
+    //float GetMaxRelSpeedMod() const
+    //float GetAvgRelSpeedMod() const
+    //SpeedBinType GetSpeedModBin(float, float) const
+    //int GetMemFootPrint() const
+};
+interface SResourcePack::(anonymous struct at C:\Users\ilyap\projects-cpp\rts\spring-104.0.1\rts\Sim\Misc/Resource.h:16:3)
+{
+};
+interface ClassAliasList
+{
+    void Clear()
+    //int ResolveAlias(const int &) const
+    //int FindAlias(const int &) const
+};
+interface FlyingPiece
+{
+};
+interface CStarburstProjectile
+{
+};
+interface CCategoryHandler
+{
+};
+interface WeaponProjectileFactory
+{
+    //unsigned LoadProjectileint (const ProjectileParams &)
+};
+interface Command
+{
+};
+interface CCommandDescriptionCache
+{
+};
+interface CMissileProjectile
+{
+};
+interface IPathFinder
+{
+    void InitStatic()
+    void KillStatic()
+    //int GetMemFootPrint() const
+    //PathNodeStateBuffer GetNodeStateBuffer&()
+    //unsigned GetBlockSizeint () const
+    //int GetNumBlocks() const
+    //int BlockIdxToPos(const unsigned int) const
+    //int BlockPosToIdx(const int) const
+    //IPath::SearchResult GetPath(const MoveDef &, const CPathFinderDef &, const CSolidObject *, int, IPath::Path &, const unsigned int)
+    //IPathFinder GetParent*()
+};
+interface TeamBase
+{
+};
+interface CGeoSquareProjectile
+{
+};
+interface CExpGenSpawner
+{
+};
+interface FeatureLoadParams
+{
+};
+interface CLightningProjectile
+{
+};
+interface CCobEngine
+{
+    //int GetCurrentTime()
+};
+interface CRepulseGfx
+{
+};
+interface CResourceMapAnalyzer
+{
+    void Init()
+    //int GetNearestSpot(int, const UnitDef *) const
+    //float GetAverageIncome() const
+    //int GetNumSpots() const
+};
+interface PathNodeBuffer
+{
+    //unsigned GetSizeint () const
+    //const GetNodePathNode *(unsigned int) const
+    //PathNode GetNode*(unsigned int)
+};
+interface CGround
+{
+};
+interface CExtractorBuilding
+{
+    void ResetExtraction()
+    void ReCalculateMetalExtraction()
+    //bool IsNeighbour(CExtractorBuilding *)
+    //float GetExtractionRange() const
+    //float GetExtractionDepth() const
+};
+interface SResourcePack::(anonymous struct at C:\Users\ilyap\projects-cpp\rts\spring-104.0.1\rts\Sim\Misc/Resource.h:17:3)
+{
+};
+interface CGroundMoveType::MemberData
+{
+};
+interface CModInfo
+{
+    void ResetState()
+};
+interface CGroundMoveType
+{
+};
+interface CMoveMath
+{
+    //float yLevel(const MoveDef &, const int &)
+    //float yLevel(const MoveDef &, int, int)
+    //float GetPosSpeedMod(const MoveDef &, unsigned int, unsigned int)
+    //int IsBlocked(const MoveDef &, const int &, const CSolidObject *)
+    //int IsBlockedNoSpeedModCheck(const MoveDef &, int, int, const CSolidObject *)
+    //int IsBlockedNoSpeedModCheckThreadUnsafe(const MoveDef &, int, int, const CSolidObject *)
+    //int IsBlockedStructure(const MoveDef &, int, int, const CSolidObject *)
+    //bool CrushResistant(const MoveDef &, const CSolidObject *)
+    //bool IsNonBlocking(const MoveDef &, const CSolidObject *, const CSolidObject *)
+    //bool IsNonBlocking(const CSolidObject *, const CSolidObject *)
+    //int ObjectBlockType(const MoveDef &, const CSolidObject *, const CSolidObject *)
+    //int SquareIsBlocked(const MoveDef &, int, int, const CSolidObject *)
+    //int RangeIsBlocked(const MoveDef &, int, int, int, int, const CSolidObject *)
+};
+interface CGlobalSynced
+{
+    void ResetState()
+    //int GetLuaSimFrame()
+    //int GetTempNum()
+    //bool PreSimFrame() const
+};
+interface CEmgProjectile
+{
+};
+interface CLosMap
+{
+    //int At(int) const
+    //unsigned frontshort &()
+};
+interface CUnitDefHandler
+{
+    void Init()
+    void ProcessDecoys()
+    void AssignTechLevels()
+    //bool ToggleNoCost()
+    //const GetUnitDefByNameUnitDef *(int)
+    //const GetUnitDefByIDUnitDef *(int)
+    //bool IsValidUnitDefID(const int) const
+    //unsigned GetUnitDefImageint (const UnitDef *)
+    //int PushNewUnitDef(const int &, const LuaTable &)
+};
+interface AMoveType
+{
+};
+interface CCannon
+{
+    void Init()
+    void UpdateWantedDir()
+    void SlowUpdate()
+    //float GetRange2D(float, float) const
+    //float GetRange2D(const float) const
+};
+interface CPlayer
+{
+};
+interface CPathEstimator::SingleBlock
+{
+};
+interface S3DModel
+{
+};
+interface CQuadField::Quad
+{
+    void PostLoad()
+};
+interface CStarburstLauncher
+{
+};
+interface table
+{
+};
+interface QTPFS::PathSearchTrace::Execution
+{
+    //QTPFS::PathSearchTrace::Execution operator=&(const QTPFS::PathSearchTrace::Execution &)
+    //QTPFS::PathSearchTrace::Execution operator=&(QTPFS::PathSearchTrace::Execution &&)
+};
+interface TeamStatistics
+{
+    void swab()
+};
+interface BuildInfo
+{
+};
+interface CColorMap
+{
+};
+interface MoveTypeFactory
+{
+    void InitStatic()
+    //AMoveType GetMoveType*(CUnit *, const UnitDef *)
+    //AMoveType GetScriptMoveType*(CUnit *)
+};
+interface CUnit
+{
+};
+interface QTPFS::PathSearchTrace::Iteration
+{
+    //QTPFS::PathSearchTrace::Iteration operator=&(const QTPFS::PathSearchTrace::Iteration &)
+    //QTPFS::PathSearchTrace::Iteration operator=&(QTPFS::PathSearchTrace::Iteration &&)
+    void Clear()
+};
+interface IExplosionGenerator
+{
+};
+interface CFlameProjectile
+{
+};
+interface CGroundFlash
+{
+};
+interface IPathManager
+{
+    //IPathManager GetInstance*(unsigned int)
+    //unsigned GetPathFinderTypeint () const
+    //int GetPathCheckSum() const
+    //int Finalize()
+    //bool PathUpdated(unsigned int)
+    void Update()
+    //int NextWayPoint(const CSolidObject *, unsigned int, unsigned int, int, float, bool)
+    //unsigned RequestPathint (CSolidObject *, const MoveDef *, int, int, float, bool)
+    //bool SetNodeExtraCosts(const float *, unsigned int, unsigned int, bool)
+    //bool SetNodeExtraCost(unsigned int, unsigned int, float, bool)
+    //float GetNodeExtraCost(unsigned int, unsigned int, bool) const
+    //const GetNodeExtraCostsfloat *(bool) const
+    //int GetNumQueuedUpdates() const
+};
+interface QTPFS::PathCache
+{
+    //bool MarkDeadPaths(const SRectangle &)
+    void KillDeadPaths()
+    //const GetTempPathQTPFS::IPath *(unsigned int) const
+    //const GetLivePathQTPFS::IPath *(unsigned int) const
+    //const GetDeadPathQTPFS::IPath *(unsigned int) const
+    //QTPFS::IPath GetTempPath*(unsigned int)
+    //QTPFS::IPath GetLivePath*(unsigned int)
+    //QTPFS::IPath GetDeadPath*(unsigned int)
+    //const GetTempPathsint &() const
+    //const GetLivePathsint &() const
+    //const GetDeadPathsint &() const
+};
+interface CPathManager::MultiPath
+{
+    //CPathManager::MultiPath operator=&(const CPathManager::MultiPath &)
+    //CPathManager::MultiPath operator=&(CPathManager::MultiPath &&)
+};
+interface CollisionVolume
+{
+    void PostLoad()
+    //CollisionVolume operator=&(const CollisionVolume &)
+    //bool InitDefault(const int &)
+    void SetBoundingRadius()
+    //int GetVolumeType() const
+    //int GetPrimaryAxis() const
+    //int GetSecondaryAxis(int) const
+    //float GetBoundingRadius() const
+    //float GetBoundingRadiusSq() const
+    //float GetOffset(int) const
+    //const GetOffsetsint &() const
+    //float GetScale(int) const
+    //float GetHScale(int) const
+    //float GetHScaleSq(int) const
+    //const GetScalesint &() const
+    //const GetHScalesint &() const
+    //const GetHSqScalesint &() const
+    //const GetHIScalesint &() const
+    //bool IgnoreHits() const
+    //bool UseContHitTest() const
+    //bool DefaultToSphere() const
+    //bool DefaultToFootPrint() const
+    //bool DefaultToPieceTree() const
+    //int GetWorldSpacePos(const CSolidObject *, const int &) const
+    //float GetPointSurfaceDistance(const CUnit *, const LocalModelPiece *, const int &) const
+};
+interface CFactory
+{
+    void StopBuild()
+    //unsigned QueueBuildint (const UnitDef *, const Command &)
+    void Update()
+    //int CalcBuildPos(int)
+    //bool ChangeTeam(int, int)
+    //const GetNanoPieceCacheint &() const
+};
+interface DamageArray
+{
+};
+interface CNullUnitScript
+{
+    void Create()
+    void Killed()
+    //int QueryTransport(const CUnit *)
+    //int QueryNanoPiece()
+    //int QueryBuildInfo()
+    void Destroy()
+    void StopMoving()
+    void StopSkidding()
+    void StartUnload()
+    void EndTransport()
+    void StartBuilding()
+    void StopBuilding()
+    void Falling()
+    void Landed()
+    void Activate()
+    void Deactivate()
+    //int QueryWeapon(int)
+    //int AimFromWeapon(int)
+    //bool BlockShot(int, const CUnit *, bool)
+    //float TargetWeight(int, const CUnit *)
+};
+interface CTorpedoLauncher
+{
+};
+interface CCustomExplosionGenerator
+{
+    //bool OutputProjectileClassInfo()
+    //unsigned GetFlagsFromTableint (const LuaTable &)
+    //unsigned GetFlagsFromHeightint (float, float)
+    //bool Load(CExplosionGeneratorHandler *, const int &)
+    //bool Reload(CExplosionGeneratorHandler *, const int &)
+    //bool Explosion(const float3 &, const float3 &, float, float, float, CUnit *, CUnit *)
+};
+interface BuildingMaskMap
+{
+};
+interface CFireProjectile::SubParticle
+{
+};
+interface RawCommand
+{
+};
+interface CEmgCannon
+{
+};
+interface ShieldSegmentCollection
+{
+};
+interface CTeam
+{
+};
+interface CLosHandler
+{
+    //float GetAllyTeamRadarErrorSize(int) const
+    //float GetBaseRadarErrorSize() const
+    //float GetBaseRadarErrorMult() const
+    //bool WantsEvent(const int &)
+    //bool GetFullRead() const
+    //int GetReadAllyTeam() const
+    void Update()
+};
+interface CCobThread
+{
+};
+interface CTeamHandler
+{
+};
+interface CWorldObject
+{
+};
+interface SRectangle
+{
+};
+interface PathNode
+{
+    //bool operator<(const PathNode &) const
+    //bool operator>(const PathNode &) const
+    //bool operator==(const PathNode &) const
+};
+interface CLightningCannon
+{
+};
+interface CWeaponLoader
+{
+    void InitStatic()
+    void KillStatic()
+};
+interface GuiSoundSet
+{
+};
+interface SCommandDescription
+{
+};
+interface SolidObjectDecalDef
+{
+};
+interface GMTDefaultPathController
+{
+    //float GetDeltaSpeed(unsigned int, float, float, float, float, bool, bool) const
+    //short GetDeltaHeading(unsigned int, short, short, float) const
+    //short GetDeltaHeading(unsigned int, short, short, float, float, float, float *) const
+    //bool AllowSetTempGoalPosition(unsigned int, const int &) const
+    //bool IgnoreTerrain(const MoveDef &, const int &) const
+    //bool IgnoreCollision(const CUnit *, const CUnit *) const
+    //bool IgnoreCollision(const CUnit *, const CFeature *) const
+};
+interface CExpGenSpawnable
+{
+};
+interface CGroundBlockingObjectMap
+{
+};
+interface SimObjectIDPool
+{
+};
+interface CCobFile
+{
+};
+interface UnitLoadParams
+{
+};
+interface CPlasmaRepulser
+{
+};
+interface CStaticMoveType
+{
+};
+interface UnitDef
+{
+};
+interface CScriptMoveType
+{
+    //bool Update()
+    void ForceUpdates()
+    void LeaveTransport()
+};
+interface CFireProjectile
+{
+};
+interface QTPFS::PathSearch
+{
+    //bool Execute(unsigned int, unsigned int)
+    //bool SharedFinalize(const QTPFS::IPath *, QTPFS::IPath *)
+    //PathSearchTrace::Execution GetExecutionTrace*()
+    //const GetHashint (int, int) const
+    void FreeGlobalQueue()
+};
+interface QuadFieldQuery
+{
+};
+interface CPathCache::CacheItem
+{
+};
+interface ExclusiveVectors
+{
+};
+interface CFactoryCAI
+{
+    //int GetDefaultCmd(const CUnit *, const CFeature *)
+    void SlowUpdate()
+    //bool RemoveBuildCommand(CCommandQueue::iterator &)
+};
+interface WeaponDef::Visuals
+{
+};
+interface CCobUnitScriptNames
+{
+    //int GetScriptNumber(const int &)
+    //const GetScriptNameint &(int)
+};
+interface CCobThread::CallInfo
+{
+};
+interface CExplosionCreator
+{
+};
+interface CRectangularSearchConstraint
+{
+    //bool WithinConstraints(int, int) const
+};
+interface CMatrix44f
+{
+};
+interface DefTagBuilder
+{
+    //const GetDataDefTagMetaData *() const
+    //DefTagBuilder<F> declarationFile&(const char *const &)
+    //DefTagBuilder<F> declarationLine&(const int &)
+    //DefTagBuilder<F> externalName&(int)
+    //DefTagBuilder<F> fallbackName&(int)
+    //DefTagBuilder<F> description&(int)
+    //DefTagBuilder<F> defaultValue&(const T &)
+    //DefTagBuilder<F> minimumValue&(const T &)
+    //DefTagBuilder<F> maximumValue&(const T &)
+    //DefTagBuilder<F> scaleValue&(const float &)
+    //DefTagBuilder<F> scaleValueStr&(int)
+    //DefTagBuilder<F> tagFunctionPtr&(const TagFunc &)
+    //DefTagBuilder<F> tagFunctionStr&(int)
+};
+interface CCobFileHandler
+{
+    //CCobFile GetCobFile*(const int &)
+    //CCobFile ReloadCobFile*(const int &)
+    //const GetScriptAddrCCobFile *(const int &) const
+};
+interface CollisionQuery
+{
+    //bool InsideHit() const
+    //bool IngressHit() const
+    //bool EgressHit() const
+    //bool AnyHit() const
+    //const GetIngressPosint &() const
+    //const GetEgressPosint &() const
+    //const GetHitPosint &() const
+    //float GetHitPosDist(const int &, const int &) const
+    //float GetIngressPosDist(const int &, const int &) const
+    //float GetEgressPosDist(const int &, const int &) const
+    //const GetHitPieceLocalModelPiece *() const
+};
+interface CUnitLoader
+{
+    //CUnitLoader GetInstance*()
+    //CCommandAI NewCommandAI*(CUnit *, const UnitDef *)
+    //CUnit LoadUnit*(const int &, const UnitLoadParams &)
+    //CUnit LoadUnit*(const UnitLoadParams &)
+    //CWeapon LoadWeapon*(CUnit *, const UnitDefWeapon *)
+};
+interface DynDamageArray
+{
+};
+interface WeaponDef
+{
+};
+interface CFeatureHandler
+{
+};
+interface CInterceptHandler
+{
+};
+interface CLaserProjectile
+{
+};
+interface IExplosionListener
+{
+};
+interface DefTagTypedMetaData
+{
+    //T GetData(const int &) const
+    //const GetDefaultValueint &() const
+    //const GetMinimumValueint &() const
+    //const GetMaximumValueint &() const
+    //const GetScaleValueint &() const
+};
+interface CResource
+{
+};
+interface IPathController
+{
+    //float GetDeltaSpeed(unsigned int, float, float, float, float, bool, bool) const
+    //short GetDeltaHeading(unsigned int, short, short, float) const
+    //short GetDeltaHeading(unsigned int, short, short, float, float, float, float *) const
+    //bool AllowSetTempGoalPosition(unsigned int, const int &) const
+    //bool IgnoreTerrain(const MoveDef &, const int &) const
+    //bool IgnoreCollision(const CUnit *, const CUnit *) const
+    //bool IgnoreCollision(const CUnit *, const CFeature *) const
+};
+interface CAirCAI
+{
+    //int GetDefaultCmd(const CUnit *, const CFeature *)
+    void SlowUpdate()
+    void FinishCommand()
+    //bool IsValidTarget(const CUnit *) const
+};
+interface PathPriorityQueue
+{
+    void Clear()
+};
+interface CPathEstimatorDef
+{
+};
+interface SWeaponTarget
+{
+    //bool operator!=(const SWeaponTarget &) const
+    //bool operator==(const SWeaponTarget &) const
+};
+interface DefTagMetaData
+{
+    //const GetDefaultValueint &() const
+    //const GetMinimumValueint &() const
+    //const GetMaximumValueint &() const
+    //const GetScaleValueint &() const
+    //int GetKey() const
+    //const GetDeclarationFileint &() const
+    //const GetDeclarationLineint &() const
+    //const GetTagFunctionStrint &() const
+    //const GetScaleValueStrint &() const
+    //const GetDescriptionint &() const
+    //const GetFallbackNameint &() const
+    //const GetExternalNameint &() const
+    //int GetInternalName() const
+    //const GetTypeInfoint &() const
+    //int GetTypeName(const int &)
+};
+interface SideParser::Data
+{
+};
+interface CDGunWeapon
+{
+};
+interface CFileHandler
+{
+};
+interface CVertexArray
+{
+};
+interface QTPFS::LayerUpdate
+{
+};
+interface icon::CIconData
+{
+};
+interface QTPFS::PathManager
+{
+    void InitStatic()
+    //unsigned GetPathFinderTypeint () const
+    //int GetPathCheckSum() const
+    //int Finalize()
+    //bool PathUpdated(unsigned int)
+    void Update()
+    //unsigned RequestPathint (CSolidObject *, const MoveDef *, int, int, float, bool)
+    //int NextWayPoint(const CSolidObject *, unsigned int, unsigned int, int, float, bool)
+    //int GetNumQueuedUpdates() const
+};
+interface UnitTrackStruct
+{
+};
+interface CPathCache::CacheQueItem
+{
+};
+interface QTPFS::INode
+{
+};
+interface CBuilding
+{
+};
+interface QTPFS::PMLoadScreen
+{
+    void SetLoadMessages()
+    void Loop()
+};
+interface SolidObjectDef
+{
+};
+interface lessCost
+{
+    //bool operator()(const PathNode *, const PathNode *) const
+};
+interface ILosType
+{
+    //int PosToSquare(const int) const
+    //bool InSight(const int, int) const
+    void Update()
+};
+interface CPathManager
+{
+};
+interface CStdExplosionGenerator
+{
+};
+interface PathNodeStateBuffer
+{
+    //PathNodeStateBuffer operator=&(const PathNodeStateBuffer &)
+    //PathNodeStateBuffer operator=&(PathNodeStateBuffer &&)
+    //unsigned GetSizeint () const
+    void Clear()
+    //unsigned GetMemFootPrintint () const
+    //float GetMaxCost(unsigned int) const
+    //float GetNodeExtraCost(unsigned int, unsigned int, bool) const
+    //const GetNodeExtraCostsfloat *(bool) const
+};
+interface CBuilderCAI
+{
+    void InitStatic()
+    void PostLoad()
+    //int GetDefaultCmd(const CUnit *, const CFeature *)
+    void SlowUpdate()
+    void FinishCommand()
+    //bool TargetInterceptable(const CUnit *, float)
+    //bool ReclaimObject(CSolidObject *)
+    //bool ResurrectObject(CFeature *)
+    //bool IsUnitBeingReclaimed(const CUnit *, CUnit *)
+    //bool IsFeatureBeingReclaimed(int, CUnit *)
+    //bool IsFeatureBeingResurrected(int, CUnit *)
+    //bool IsInBuildRange(const CWorldObject *) const
+};
+interface CUnitScript
+{
+    //bool PieceExists(unsigned int) const
+    //int GetScriptLocalModelPiece*(unsigned int) const
+    //int ScriptToModel(int) const
+    //int ModelToScript(int) const
+    //int GetPiecePos(int) const
+    //int GetPieceMatrix(int) const
+    //bool GetEmitDirPos(int, int &, int &) const
+    //bool IsBusy() const
+    //CUnit GetUnit*()
+    //const GetUnitCUnit *() const
+    //bool Tick(int)
+    //bool TickMoveAnim(int, int &, CUnitScript::AnimInfo &)
+    //bool TickTurnAnim(int, int &, CUnitScript::AnimInfo &)
+    //bool TickSpinAnim(int, int &, CUnitScript::AnimInfo &)
+    //bool NeedsWait(int, int, int)
+    //bool EmitSfx(int, int)
+    //bool EmitRelSFX(int, const int &, const int &)
+    //bool EmitAbsSFX(int, const int &, const int &, const int &)
+    //int GetUnitVal(int, int, int, int, int)
+    //bool IsInAnimation(int, int, int)
+    //bool HaveAnimations() const
+    //bool HasSetSFXOccupy() const
+    //bool HasRockUnit() const
+    //bool HasStartBuilding() const
+    //bool HasBlockShot(int) const
+    //bool HasTargetWeight(int) const
+    void Create()
+    void Killed()
+    //int QueryTransport(const CUnit *)
+    //int QueryNanoPiece()
+    //int QueryBuildInfo()
+    void Destroy()
+    void StopMoving()
+    void StopSkidding()
+    void StartUnload()
+    void EndTransport()
+    void StartBuilding()
+    void StopBuilding()
+    void Falling()
+    void Landed()
+    void Activate()
+    void Deactivate()
+    //int QueryWeapon(int)
+    //int AimFromWeapon(int)
+    //bool BlockShot(int, const CUnit *, bool)
+    //float TargetWeight(int, const CUnit *)
+};
+interface CCobInstance
+{
+};
+interface FeatureDef
+{
+};
+interface lua_State
+{
+};
+interface CRifle
+{
+};
+interface CNoWeapon
+{
+};
+interface PathFlowMap::FlowCell
+{
+};
+interface CExplosionParams
+{
+};
+interface CPathEstimator::SOffsetBlock
+{
+};
+interface PathHeatMap
+{
+    //PathHeatMap GetInstance*()
+    void Update()
+    //unsigned GetHeatMapIndexint (unsigned int, unsigned int) const
+    //const GetHeatValueint (unsigned int, unsigned int) const
+    //float GetHeatCost(unsigned int, unsigned int, const MoveDef &, unsigned int) const
+};
+interface CSolidObject
+{
+};
+interface CFireBallProjectile::Spark
+{
+};
+interface CExtractorBuilding::MetalSquareOfControl
+{
+};
+interface QTPFS::IPath
+{
+    //QTPFS::IPath operator=&(const QTPFS::IPath &)
+    //unsigned GetIDint () const
+    //unsigned GetNextPointIndexint () const
+    //unsigned GetNumPathUpdatesint () const
+    //float GetRadius() const
+    //int GetHash() const
+    //bool GetSynced() const
+    void SetBoundingBox()
+    //const GetBoundingBoxMinsint &() const
+    //const GetBoundingBoxMaxsint &() const
+    //const GetPointint &(unsigned int) const
+    //const GetSourcePointint &() const
+    //const GetTargetPointint &() const
+    //const GetOwnerCSolidObject *() const
+    //unsigned NumPointsint () const
+};
+interface ILosType::DelayedInstance
+{
+};
+interface IPath::Path
+{
+    //IPath::Path operator=&(const IPath::Path &)
+    //IPath::Path operator=&(IPath::Path &&)
+};
