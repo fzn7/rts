@@ -122,3 +122,4 @@
 #include "Sim/Weapons/WeaponDefHandler.h"
 #include "Sim/Weapons/WeaponLoader.h"
 #include "Sim/Weapons/WeaponTarget.h"
+#include "glue.cpp"
