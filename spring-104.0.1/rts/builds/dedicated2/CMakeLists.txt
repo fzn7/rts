@@ -273,39 +273,47 @@ add_library(engineSim2 STATIC
 		"${CMAKE_CURRENT_SOURCE_DIR}/Weapons/WeaponTarget.cpp"
 		)
 		
-set(system_files_Sim
-		"${ENGINE_SRC_ROOT_DIR}/System/CRC.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Color.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Config/ConfigHandler.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/EventClient.cpp"
-		#"${ENGINE_SRC_ROOT_DIR}/System/EventHandler.cpp"
-		#"${ENGINE_SRC_ROOT_DIR}/System/FileSystem/ArchiveLoader.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/FileSystem/ArchiveScanner.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/FileSystem/Archives/IArchive.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/FileSystem/DataDirsAccess.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/FileSystem/FileHandler.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/FileSystem/FileSystem.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/FileSystem/FileSystemInitializer.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/FileSystem/VFSHandler.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Log/DefaultFilter.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Log/FramePrefixer.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Matrix44f.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Object.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Platform/Threading.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Platform/Watchdog.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Rectangle.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/SafeVector.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Sound/ISound.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/StringUtil.cpp"
-		#"${ENGINE_SRC_ROOT_DIR}/System/Sync/SHA512.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Sync/SyncTracer.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Sync/SyncedFloat3.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/Threading/ThreadPool.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/TimeProfiler.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/float3.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/float4.cpp"
-		"${ENGINE_SRC_ROOT_DIR}/System/myMath.cpp"
-		#"${ENGINE_SRC_ROOT_DIR}/System/type2.cpp"
+SET(system_files_for_Sim
+	${ENGINE_SRC_ROOT_DIR}/System/CRC.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Color.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Config/ConfigHandler.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/EventClient.cpp
+	#${ENGINE_SRC_ROOT_DIR}/System/EventHandler.cpp
+	#${ENGINE_SRC_ROOT_DIR}/System/FileSystem/ArchiveLoader.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/ArchiveScanner.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/Archives/IArchive.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/DataDirsAccess.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/FileHandler.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/FileSystem.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/FileSystemInitializer.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/VFSHandler.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Log/DefaultFilter.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Log/FramePrefixer.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Matrix44f.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Object.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Platform/Threading.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Platform/Watchdog.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Rectangle.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/SafeVector.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Sound/ISound.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/StringUtil.cpp
+	#${ENGINE_SRC_ROOT_DIR}/System/Sync/SHA512.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Sync/SyncTracer.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Sync/SyncedFloat3.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/Threading/ThreadPool.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/TimeProfiler.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/float3.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/float4.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/myMath.cpp
+	#${ENGINE_SRC_ROOT_DIR}/System/type2.cpp
+	)
+SET(luafiles
+	#${ENGINE_SRC_ROOT_DIR}/Lua/LuaHandleSynced.cpp
+	#${ENGINE_SRC_ROOT_DIR}/Lua/LuaParser.cpp
+	${ENGINE_SRC_ROOT_DIR}/Lua/LuaRules.cpp
+	${ENGINE_SRC_ROOT_DIR}/Lua/LuaRulesParams.cpp
+	${ENGINE_SRC_ROOT_DIR}/Lua/LuaSyncedRead.cpp
+	#${ENGINE_SRC_ROOT_DIR}/Lua/LuaUtils.cpp
 		)
 
 SET(engineDedicatedSources
@@ -344,7 +352,8 @@ ADD_EXECUTABLE(engine-dedicated2
 		${sources_engine_System_Log_sinkOutputDebugString}
 		${ENGINE_ICON}
 		${engineSim2}
-		${system_files_Sim}
+		${system_files_for_Sim}
+		${luafiles}
 		main
 	)
 TARGET_LINK_LIBRARIES(engine-dedicated2 ${engineDedicatedLibraries})
