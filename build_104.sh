@@ -24,4 +24,5 @@ emconfigure cmake . \
 emconfigure cmake . --graphviz=spring-build-graph.dot
 
 make clean
-make engine-dedicated
+#make spring-dedicated
+make spring-dedicated2
