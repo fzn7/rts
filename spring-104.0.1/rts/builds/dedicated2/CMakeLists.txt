@@ -19,12 +19,11 @@ SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}")
 
 SET(ENGINE_SRC_ROOT_DIR "${CMAKE_SOURCE_DIR}/rts")
 
-
 ### Assemble libraries
 LIST(APPEND engineDedicatedLibraries ${Boost_REGEX_LIBRARY})
 LIST(APPEND engineDedicatedLibraries ${Boost_SYSTEM_LIBRARY})
 LIST(APPEND engineDedicatedLibraries lua 7zip ${SPRING_MINIZIP_LIBRARY} ${ZLIB_LIBRARY} gflags) #archives) 
-LIST(APPEND engineDedicatedLibraries headless Stubs) #engineSystemNet)
+LIST(APPEND engineDedicatedLibraries headlessStubs) #engineSystemNet)
 LIST(APPEND engineDedicatedLibraries ${LIBUNWIND_LIBRARIES})
 
 IF (WIN32)
@@ -70,6 +69,7 @@ INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/lua/include)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/7zip)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/asio/include)
+INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/zlib)
 
 
 
