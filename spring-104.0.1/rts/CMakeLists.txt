@@ -43,6 +43,7 @@ INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/include/AL)
 INCLUDE_DIRECTORIES(${SPRING_MINIZIP_INCLUDE_DIR})
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR})
 #INCLUDE_DIRECTORIES(${IL_INCLUDE_DIR})
+INCLUDE_DIRECTORIES(~/rts/lib/zlib)
 
 ### Assemble common libraries
 Add_Subdirectory(System/Sound)
@@ -83,7 +84,7 @@ if (ENABLE_STREFLOP)
 LIST(APPEND engineCommonLibraries streflop)
 endif ()
 
-include_directories(${ZLIB_INCLUDE_DIR})
+include_directories(${ZLIB_INCLUDE_DIRS})
 
 IF (WIN32)
 	LIST(APPEND engineCommonLibraries ${WIN32_LIBRARIES})
