@@ -43,6 +43,10 @@ IntegerTypes.h
 /home/pi/rts/spring-104.0.1/rts/lib/streflop/X87DenormalSquasher.h
 
 /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acosf.cpp
+SMath.h
+/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/SMath.h
+math_private.h
+/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/math_private.h
 
 /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acoshf.cpp
 SMath.h
