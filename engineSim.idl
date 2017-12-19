@@ -268,7 +268,7 @@ interface CStarburstProjectile
 {
     //void Collision(_ignored_ unit);
 };
-/*
+
 interface CNullUnitScript
 {
     void RawCall(long functionId);
@@ -313,9 +313,9 @@ interface CNullUnitScript
     void Shot(long weaponNum);
     //boolean BlockShot(long weaponNum, [Const] _ignored_ targetUnit, boolean userTarget);
     //float TargetWeight(long weaponNum, [Const] _ignored_ targetUnit);
-    void AnimFinished(long type, long piece, long axis);
+    //void AnimFinished(long type, long piece, long axis); //clean
 };
-*/
+
 interface CLuaUnitScriptNames
 {
     //[Const] _ignored_ GetScriptNames();
@@ -390,7 +390,7 @@ interface CBuilding
 };
 interface CUnitScriptFactory
 {
-    //void InitStatic(); // clear
+    void InitStatic(); 
     //_ignored_ CreateScript(_ignored_ unit, [Const] _ignored_ udef);
     //_ignored_ CreateCOBScript(_ignored_ unit, _ignored_ F);
     //_ignored_ CreateLuaScript(_ignored_ unit, _ignored_ L);
@@ -436,8 +436,8 @@ interface CCannon
 };
 interface CWeaponLoader
 {
-    //void InitStatic(); // clear
-    //void KillStatic(); // clear
+    void InitStatic();
+    void KillStatic();
     //void LoadWeapons(_ignored_ unit);
     //void InitWeapons(_ignored_ unit);
     //void FreeWeapons(_ignored_ unit);
@@ -451,7 +451,7 @@ interface CCustomExplosionGenerator
     //boolean Reload(_ignored_ handler, [Const] _ignored_ tag);
     //boolean Explosion([Const] _ignored_ pos, [Const] _ignored_ dir, float damage, float radius, float gfxMod, _ignored_ owner, _ignored_ hit);
 };
-/*
+
 interface CWeapon
 {
     //boolean Attack([Const] _ignored_ newTarget);
@@ -472,11 +472,11 @@ interface CWeapon
     //boolean TryTargetRotate([Const] _ignored_ unit, boolean userTarget, boolean manualFire);
     //boolean TryTargetHeading(short  heading, [Const] _ignored_ trg);
     boolean CheckTargetAngleConstraint([Const] long worldTargetDir, [Const] long worldWeaponDir);
-    long GetTargetBorderPos();
+    //long GetTargetBorderPos(); //clean float3
     //void AdjustTargetPosToWater(_ignored_ tgtPos, boolean attackGround);
-    long GetUnitPositionWithError();
-    long GetUnitLeadTargetPos();
-    long GetLeadTargetPos();
+    //long GetUnitPositionWithError(); //clean float3
+    //long GetUnitLeadTargetPos(); //clean float3
+    //long GetLeadTargetPos(); //clean float3
     //float TargetWeight([Const] _ignored_ unit);
     float GetRange2D([Const] float yDiff);
     void UpdateRange([Const] float val);
@@ -487,17 +487,17 @@ interface CWeapon
     float MoveErrorExperience();
     float AccuracyExperience();
     float SprayAngleExperience();
-    long SalvoErrorExperience();
+    //long SalvoErrorExperience(); //clean float3
     void StopAttackingAllyTeam([Const] long ally);
 };
-*/
+
 interface CResourceMapAnalyzer
 {
-    //void Init(); // clear (is a private function)
+    void Init();
     //[Const] _ignored_ GetSpots();
     //long GetNearestSpot(); // clear (in a function few arguments)
     float GetAverageIncome();
-    //long GetNumSpots(); //clear 
+    long GetNumSpots();
 };
 interface CLuaUnitScript
 {
@@ -526,8 +526,8 @@ interface CLuaUnitScript
     void StartMoving(boolean reversing);
     void StopMoving();
     //void StartSkidding([Const] _ignored_ vel);
-    //void StopSkidding(); //clear
-    //void ChangeHeading(short  deltaHeading); // clear
+    void StopSkidding();
+    void ChangeHeading(short  deltaHeading);
     void StartUnload();
     void EndTransport();
     void StartBuilding();
@@ -557,17 +557,17 @@ enum CUnitScript_AnimType {
 	"CUnitScript::ASpin",
 	"CUnitScript::AMove"
 };
+*/
 interface CUnitScript
 {
-	void CUnitScript();
 	//CUnitScript_AnimType GetEnum();
 	//CUnitScript_AnimType GetEnumFromNameSpace();
     boolean PieceExists(unsigned long scriptPieceNum);
     //_ignored_ GetScriptLocalModelPiece();
     long ScriptToModel(long scriptPieceNum);
     long ModelToScript(long lmodelPieceNum);
-    //long GetPiecePos(); //clear (few arguments)
-    //long GetPieceMatrix(); //clear (few arguments)
+    //long GetPiecePos(); //clean
+    //long GetPieceMatrix(); //clean
     //boolean GetEmitDirPos(long scriptPieceNum, _ignored_ pos, _ignored_ dir);
     boolean IsBusy();
     //_ignored_ GetUnit();
@@ -583,7 +583,7 @@ interface CUnitScript
     void Move(long piece, long axis, float speed, float destination);
     void MoveNow(long piece, long axis, float destination);
     void TurnNow(long piece, long axis, float destination);
-    boolean NeedsWait(long type, long piece, long axis);
+    //boolean NeedsWait(long type, long piece, long axis); //clean AnimType
     void SetVisibility(long piece, boolean visible);
     boolean EmitSfx(long sfxType, long sfxPiece);
     //boolean EmitRelSFX(long sfxType, [Const] _ignored_ relPos, [Const] _ignored_ relDir);
@@ -595,7 +595,7 @@ interface CUnitScript
     void ShowFlare(long piece);
     long GetUnitVal(long val, long p1, long p2, long p3, long p4);
     void SetUnitVal(long val, long param);
-    boolean IsInAnimation(long type, long piece, long axis);
+    //boolean IsInAnimation(long type, long piece, long axis); //clean enum AnimType
     boolean HaveAnimations();
     boolean HasSetSFXOccupy();
     boolean HasRockUnit();
@@ -644,9 +644,10 @@ interface CUnitScript
     void Shot(long weaponNum);
     //boolean BlockShot(long weaponNum, [Const] _ignored_ targetUnit, boolean userTarget);
     //float TargetWeight(long weaponNum, [Const] _ignored_ targetUnit);
-    void AnimFinished(long type, long piece, long axis);
+    //void AnimFinished(long type, long piece, long axis); //clean
 };
-*/
+
+
 interface CMobileCAI
 {
     //void SetGoal([Const] _ignored_ pos, [Const] _ignored_ curPos, float goalRadius);
