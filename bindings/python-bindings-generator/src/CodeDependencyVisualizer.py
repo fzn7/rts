@@ -6,9 +6,11 @@ import os
 import logging
 import argparse
 import fnmatch
+import json
 import jsonpickle
 
-from WebIdlGenerator import *
+from generator import *
+from converter.util import CacheUtil
 
 if os.name == "nt":
     clang.cindex.Config.set_library_file('../bin/libclang.dll')
@@ -240,5 +242,10 @@ if __name__ == "__main__":
     webidlFileName = args['outFile']
     logging.info("generating webidlfile " + webidlFileName)
 
+    jsonpickle.set_encoder_options('simplejson', indent=4)
+
     with open(webidlFileName, 'w') as webidlFile:
         webidlFile.write(webidlGenerator.generate())
+        webidlFile.write("/* --- Type cache ---\n{}\n */"
+                         .format(json.dumps(json.loads(jsonpickle.encode(CacheUtil.type_cache)), indent=4)))
+

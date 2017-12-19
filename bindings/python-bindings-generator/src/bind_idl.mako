@@ -1,12 +1,19 @@
 % for k,v in classes.iteritems():
-interface ${v.fqn}
+	% for comment in v.comments:
+//${comment}
+	% endfor
+interface ${v.name.label}
 {
     % for method in v.publicMethods:
-        %if method[3] == False:
-    ${method[0]} ${method[1]}(${method[2]});
-        %else:
-    //${method[0]} ${method[1]}(${method[2]});
-        %endif
+        % if method:
+            % for comment in method.comments:
+	//${comment}
+            % endfor
+    //${method.name.label}
+
+
+
+        % endif
     % endfor
 };
 % endfor
