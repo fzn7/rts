@@ -26,4 +26,6 @@ class IdlFactory:
         idl_instance.name = getIdlInstanceName(uml_instance)
         idl_instance.publicMethods = map(getIdlPublicMethod, uml_instance.publicMethods)
 
+        idl_instance.comments += ["Source: {}".format(uml_instance.node.location.file)]
+
         return idl_instance
