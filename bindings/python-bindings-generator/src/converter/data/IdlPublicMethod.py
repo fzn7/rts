@@ -34,6 +34,8 @@ class IdlPublicMethod(IdlBaseItem):
             self.comments += ["Argument list sized: {}".format(len(self.arguments))]
             self.comments += list(map(lambda argument: argument.comments, self.arguments))
 
+        self.ignoreFlag = self.validate()
+
     def parseMethodName(self, uml_method):
         idl_label = IdlLabel(uml_method.name)
         return idl_label
@@ -45,5 +47,27 @@ class IdlPublicMethod(IdlBaseItem):
 
     def parseFunctionArgument(self, uml_method_param):
         result = IdlFunctionArgument(uml_method_param)
+
+        return result
+
+    def ignoreFlagPresent(self):
+        return self.ignoreFlag
+
+    def validate(self):
+        result = False
+
+        result |= self.name.ignoreFlag
+
+        if result is True:
+            self.comments += ["Ignored by method name"]
+
+        result |= self.returnType.ignoreFlag
+        if result is True:
+            self.comments += ["Ignored by return type"]
+            self.comments += [self.returnType.comments[-1]]  # last item, hope there is ignore reason
+
+        result |= len(self.arguments) > 0
+        if result is True:
+            self.comments += ["Ignored by has arguments"]
 
         return result

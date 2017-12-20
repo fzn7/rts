@@ -16,9 +16,12 @@ interface ${v.name.label}
             % for comment in method.comments:
 	//${comment}
             % endfor
-	//${method.name.label}
-
-
+			
+			% if method.ignoreFlagPresent() is True:
+	//${method.returnType.kind.label} ${method.name.label}();
+			% else:
+	${method.returnType.kind.label} ${method.name.label}();
+			% endif	
 
         % endif
     % endfor

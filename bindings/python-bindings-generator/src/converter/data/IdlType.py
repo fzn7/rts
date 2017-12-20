@@ -1,6 +1,23 @@
 from IdlBaseItem import IdlBaseItem
 from clang.cindex import TypeKind
 from converter.util import CacheUtil
+from IdlLabel import IdlLabel
+
+conversion_map = {
+    "bool": "boolean",
+    "float": "float",
+    "short": "short ",
+    "double": "double",
+    "char": "byte",
+    "char*": "DOMString",
+    "unsigned char": "octet",
+    "unsigned short int": "unsigned short",
+    "unsigned long": "unsigned long",
+    "unsigned int": "unsigned long",
+    "int": "long",
+    "void": "void",
+    "void*": "VoidPtr"
+}
 
 
 class IdlType(IdlBaseItem):
@@ -17,30 +34,60 @@ class IdlType(IdlBaseItem):
         CacheUtil.add_type(type)
 
         type_arr = type.spelling.split(" ")
+
         self.parseConst(type_arr)
 
-        self.kind = {
-            TypeKind.VOID: "void",
-            TypeKind.BOOL: "boolean",
-            TypeKind.SHORT: "short",
-            TypeKind.FLOAT: "float",
-            TypeKind.INT: "int",
-            TypeKind.UINT: "uint",
-            TypeKind.LVALUEREFERENCE: "LVALUEREFERENCE",
-            TypeKind.RVALUEREFERENCE: "RVALUEREFERENCE",
-            TypeKind.POINTER: "POINTER",
-            TypeKind.RECORD: "RECORD",
-            TypeKind.TYPEDEF: "TYPEDEF",
-            TypeKind.ENUM: "ENUM",
-        }[type.kind]
+        raw_kind = {
+            TypeKind.VOID: lambda node: self.parsePrimitive(node),
+            TypeKind.BOOL: lambda node: self.parsePrimitive(node),
+            TypeKind.SHORT: lambda node: self.parsePrimitive(node),
+            TypeKind.FLOAT: lambda node: self.parsePrimitive(node),
+            TypeKind.INT: lambda node: self.parsePrimitive(node),
+            TypeKind.UINT: lambda node: self.parsePrimitive(node),
+            TypeKind.LVALUEREFERENCE: lambda node: self.parseComplex(node),
+            TypeKind.RVALUEREFERENCE: lambda node: self.parseComplex(node),
+            TypeKind.POINTER: lambda node: self.parseComplex(node),
+            TypeKind.RECORD: lambda node: self.parseComplex(node),
+            TypeKind.TYPEDEF: lambda node: self.parseComplex(node),
+            TypeKind.ENUM: lambda node: self.parseComplex(node),
+        }[type.kind](type)
 
-        self.comments.append("Type: name: '{}' kind: {} is_const: {} kind: {}"
-                             .format(" ".join(type_arr), type.kind, self.is_const, self.kind))
+        if raw_kind is not None:
+            self.kind = IdlLabel(raw_kind)
 
-        if type.get_declaration().location:
-            self.comments.append("Source: {}".format(type.get_declaration().location))
+            self.comments.append("Type: name: '{}' kind: {} is_const: {} kind: {}"
+                                 .format(" ".join(type_arr), type.kind, self.is_const, self.kind.label))
+
+            if type.get_declaration().location:
+                self.comments.append("Source: {}".format(type.get_declaration().location))
+
+        self.ignoreFlag = self.validate()
 
     def parseConst(self, type_arr):
         if type_arr[0] == "const":
             self.is_const = True
             type_arr.pop(0)
+
+    def parsePrimitive(self, type_node):
+        #TODO refactor duplicate
+        type_arr = type_node.spelling.split(" ")
+        if type_arr[0] == "const":
+            type_arr.pop(0)
+        spelling = " ".join(type_arr)
+        return conversion_map.get(spelling)
+
+    def parseComplex(self, type_node):
+        return "complex_type"
+
+    def validate(self):
+        result = False
+
+        if self.kind is None:
+            self.comments += ["Type kind undefined"]
+            return True
+
+        if self.kind.label == "complex_type":
+            self.comments += ["Ignored by complex type"]
+            return True
+
+        return result
