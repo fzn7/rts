@@ -12,6 +12,10 @@ def getIdlPublicMethod(uml_method_tuple):
     uml_method = uml_method_tuple[2]
     result = IdlPublicMethod(uml_method)
 
+    class_name = uml_method_tuple[0]
+    if class_name == result.name.label:
+        uml_method.comments += ["Constructor"]
+
     return result
 
 
