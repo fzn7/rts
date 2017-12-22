@@ -50,6 +50,7 @@ class IdlType(IdlBaseItem):
             TypeKind.RECORD: lambda node: self.parseComplex(node),
             TypeKind.TYPEDEF: lambda node: self.parseComplex(node),
             TypeKind.ENUM: lambda node: self.parseComplex(node),
+            TypeKind.UNEXPOSED: lambda node: self.parseComplex(node),
         }[type.kind](type)
 
         if raw_kind is not None:

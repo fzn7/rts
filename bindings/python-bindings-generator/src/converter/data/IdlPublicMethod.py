@@ -25,7 +25,7 @@ class IdlPublicMethod(IdlBaseItem):
     def parsePublicMethod(self, uml_method):
         self.name = self.parseMethodName(uml_method)
         self.returnType = self.parseReturnType(uml_method)
-        self.arguments = list(map(self.parseFunctionArgument, uml_method.params))
+        self.arguments = list(map(self.parseFunctionArgument, list(uml_method.node.get_arguments())))
 
         self.comments += self.name.comments
         self.comments += self.returnType.comments

@@ -1,0 +1,3 @@
+Проверить typedef алиасы для классов, распихать по пакетам
+проверить, что добавление include во wrapper убирает unresolved symbol
+генерировать wrapper.cpp

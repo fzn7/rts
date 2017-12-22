@@ -6,6 +6,7 @@ import asciitree  # m
 from data import *
 from IdlFactory import IdlFactory
 
+
 class CppToIdlTypeConverter:
     """
    C++	IDL

@@ -49,9 +49,10 @@ def processClassField(cursor):
     name = cursor.spelling
     return name, type
 
+
 def processClassMethod(cursor):
     if cursor.kind == clang.cindex.CursorKind.FUNCTION_TEMPLATE:
-        #todo templates
+        # todo templates
         return None
     if cursor.kind == clang.cindex.CursorKind.CXX_METHOD:
         method = UmlMethod()
@@ -63,7 +64,7 @@ def processClassMethod(cursor):
             if c.kind == clang.cindex.CursorKind.PARM_DECL:
                 method.params.append(processClassMethodParam(method, c))
             if c.kind == clang.cindex.CursorKind.TYPE_REF:
-                #todo
+                # todo
                 processClassMethodType(method, c)
 
         method.returnType = processType(method, cursor, cursor.result_type)
@@ -89,7 +90,7 @@ def processClassMethodParam(method, cursor):
 
 
 def processClassMethodType(menthod, cursor):
-    #print "skipped part {}".format(cursor.kind)
+    # print "skipped part {}".format(cursor.kind)
     return None
 
 
@@ -220,9 +221,12 @@ if __name__ == "__main__":
 
     args = vars(parser.parse_args(sys.argv[1:]))
 
-    filesToParsePatterns = ['*.cpp', '*.cxx', '*.c', '*.cc']
-    if args['withUnusedHeaders']:
-        filesToParsePatterns += ['*.h', '*.hxx', '*.hpp']
+    # filesToParsePatterns = ['*.cpp', '*.cxx', '*.c', '*.cc']
+    # if args['withUnusedHeaders']:
+    #    filesToParsePatterns += ['*.h', '*.hxx', '*.hpp']
+
+    filesToParsePatterns = ['*.h']
+
     filesToParse = findFilesInDir(args['d'], filesToParsePatterns)
     subdirectories = [x[0] for x in os.walk(args['d'])]
 
@@ -249,3 +253,5 @@ if __name__ == "__main__":
         webidlFile.write("/* --- Type cache ---\n{}\n */"
                          .format(json.dumps(json.loads(jsonpickle.encode(CacheUtil.type_cache)), indent=4)))
 
+        webidlFile.write("/* --- Source files ---\n{}\n */"
+                         .format(json.dumps(json.loads(jsonpickle.encode(CacheUtil.source_files)), indent=4)))

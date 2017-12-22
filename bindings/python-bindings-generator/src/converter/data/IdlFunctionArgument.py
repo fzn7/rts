@@ -16,7 +16,7 @@ class IdlFunctionArgument(IdlBaseItem):
         self.comments += self.type.comments
 
     def parseFunctionArgument(self, uml_function_argument):
-        self.label = IdlLabel(uml_function_argument.name)
-        self.type = IdlType(uml_function_argument.type.type)
+        self.label = IdlLabel(uml_function_argument.spelling)
+        self.type = IdlType(uml_function_argument.type)
 
 
