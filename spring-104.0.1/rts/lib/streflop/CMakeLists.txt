@@ -75,7 +75,7 @@ if   (NOT MSVC)
 		SET(cxxflags "${cxxflags} -mfpmath=sse -msse")
 	endif (NOT $ENV{CXX} MATCHES "icpc")
 endif(NOT MSVC)
-SET_SOURCE_FILES_PROPERTIES(${libm_flt32_source} PROPERTIES COMPILE_FLAGS "-DLIBM_COMPILING_FLT32 ${cxxflags}")
+SET_SOURCE_FILES_PROPERTIES(${libm_flt32_source} PROPERTIES COMPILE_FLAGS "-DLIBM_COMPILING_FLT32") #${cxxflags}")
 
 ADD_LIBRARY(streflop STATIC EXCLUDE_FROM_ALL
 	SMath.cpp
