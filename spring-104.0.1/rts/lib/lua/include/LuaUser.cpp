@@ -366,7 +366,8 @@ static inline int PrintFractPart(char* buf, float f, int digits, int precision)
 	//     for this casting.
 	//Note: We are still in synced code, so even these doubles need to sync!
 	//     Also performance seems to be unaffected by switching the FPU mode.
-	streflop::streflop_init<streflop::Double>();
+	
+	//streflop::streflop_init<streflop::Double>();
 
 	const auto old = buf;
 
@@ -387,7 +388,7 @@ static inline int PrintFractPart(char* buf, float f, int digits, int precision)
 	while (buf[-1] == '0' && (buf - old) > precision) --buf;
 	buf[0] = '\0';
 
-	streflop::streflop_init<streflop::Simple>();
+	//streflop::streflop_init<streflop::Simple>();
 	return (buf - old);
 }
 
@@ -418,6 +419,7 @@ static inline bool HandleRounding(float* fractF, int log10, int charsInStdNotati
 
 void spring_lua_ftoa(float f, char* buf, int precision)
 {
+	
 	static constexpr int MAX_DIGITS = 10;
 	static_assert(MAX_DIGITS > 6, "must have enough room for at least 1.0e+23");
 
@@ -433,8 +435,9 @@ void spring_lua_ftoa(float f, char* buf, int precision)
 		}
 		return;
 	}
+    
 
-
+	
 	int nDigits = MAX_DIGITS;
 	if (std::signbit(f)) { // use signbit() cause < doesn't work with nans
 		f = -f;
@@ -460,7 +463,9 @@ void spring_lua_ftoa(float f, char* buf, int precision)
 		nDigits -= 4; // space needed for "e+01"
 		f *= std::pow(10.0f, -e10);
 	}
+	
 
+	
 	float truncF;
 	float fractF = std::modf(f, &truncF);
 
@@ -479,8 +484,11 @@ void spring_lua_ftoa(float f, char* buf, int precision)
 	nDigits -= iDigits;
 	buf += iDigits;
 
+	
+	
 	if (precision >= 0)
 		nDigits = precision + 1; //+1 for dot
+	
 	if ((nDigits > 1) && (scienceNotation || fractF != 0 || precision > 0)) {
 		buf[0] = '.';
 		++buf;
@@ -490,11 +498,12 @@ void spring_lua_ftoa(float f, char* buf, int precision)
 		assert(fDigits >= 1);
 		buf += fDigits;
 	}
-
+	
 	if (!scienceNotation)
 		return;
-
+	
 	sprintf(buf, "e%+02d", e10);
+	
 }
 
 

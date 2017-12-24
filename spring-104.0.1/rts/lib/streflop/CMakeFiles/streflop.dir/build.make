@@ -61,6 +61,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.o: rts/lib/streflop/CMakeFile
 rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.o: rts/lib/streflop/SMath.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/streflop.dir/SMath.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/SMath.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.i: cmake_force
@@ -70,6 +71,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/SMath.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/SMath.cpp -o CMakeFiles/streflop.dir/SMath.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/streflop.dir/SMath.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/SMath.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/SMath.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/SMath.cpp > CMakeFiles/streflop.dir/SMath.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/SMath.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/SMath.cpp -o CMakeFiles/streflop.dir/SMath.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.o.requires:
 
@@ -86,6 +98,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/Random.cpp.o: rts/lib/streflop/CMakeFil
 rts/lib/streflop/CMakeFiles/streflop.dir/Random.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/Random.cpp.o: rts/lib/streflop/Random.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/Random.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/streflop.dir/Random.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/Random.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/Random.cpp.i: cmake_force
@@ -95,6 +108,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/Random.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/Random.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/Random.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/Random.cpp -o CMakeFiles/streflop.dir/Random.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/streflop.dir/Random.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/Random.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/Random.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/Random.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/Random.cpp > CMakeFiles/streflop.dir/Random.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/Random.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/Random.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/Random.cpp -o CMakeFiles/streflop.dir/Random.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/Random.cpp.o.requires:
 
@@ -111,6 +135,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/streflopC.cpp.o: rts/lib/streflop/CMake
 rts/lib/streflop/CMakeFiles/streflop.dir/streflopC.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/streflopC.cpp.o: rts/lib/streflop/streflopC.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/streflopC.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/streflop.dir/streflopC.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/streflopC.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/streflopC.cpp.i: cmake_force
@@ -120,6 +145,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/streflopC.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/streflopC.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/streflopC.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/streflopC.cpp -o CMakeFiles/streflop.dir/streflopC.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/streflop.dir/streflopC.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/streflopC.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/streflopC.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/streflopC.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/streflopC.cpp > CMakeFiles/streflop.dir/streflopC.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/streflopC.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/streflopC.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/streflopC.cpp -o CMakeFiles/streflop.dir/streflopC.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/streflopC.cpp.o.requires:
 
@@ -136,6 +172,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.o: rts/lib/streflop/libm/flt-32/e_acosf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acosf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.i: cmake_force
@@ -145,6 +182,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acosf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acosf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acosf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acosf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.o.requires:
 
@@ -161,6 +209,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.o: rts/lib/streflop/libm/flt-32/e_acoshf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acoshf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.i: cmake_force
@@ -170,6 +219,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acoshf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acoshf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acoshf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acoshf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.o.requires:
 
@@ -186,6 +246,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.o: rts/lib/streflop/libm/flt-32/e_asinf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_asinf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.i: cmake_force
@@ -195,6 +256,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_asinf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_asinf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_asinf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_asinf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.o.requires:
 
@@ -211,6 +283,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.o: rts/lib/streflop/libm/flt-32/e_atan2f.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atan2f.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.i: cmake_force
@@ -220,6 +293,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atan2f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atan2f.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atan2f.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atan2f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atan2f.cpp.o.requires:
 
@@ -236,6 +320,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.o: rts/lib/streflop/libm/flt-32/e_atanhf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atanhf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.i: cmake_force
@@ -245,6 +330,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atanhf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atanhf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atanhf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atanhf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_atanhf.cpp.o.requires:
 
@@ -261,6 +357,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.o: rts/lib/streflop/libm/flt-32/e_coshf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_coshf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.i: cmake_force
@@ -270,6 +367,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_coshf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_coshf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_coshf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_coshf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_coshf.cpp.o.requires:
 
@@ -286,6 +394,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.o: rts/lib/streflop/libm/flt-32/e_exp2f.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_exp2f.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.i: cmake_force
@@ -295,6 +404,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_exp2f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_exp2f.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_exp2f.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_exp2f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_exp2f.cpp.o.requires:
 
@@ -311,6 +431,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.o: rts/lib/streflop/libm/flt-32/e_expf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_expf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.i: cmake_force
@@ -320,6 +441,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_expf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_expf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_expf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_expf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_expf.cpp.o.requires:
 
@@ -336,6 +468,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.o: rts/lib/streflop/libm/flt-32/e_fmodf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_fmodf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.i: cmake_force
@@ -345,6 +478,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_fmodf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_fmodf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_fmodf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_fmodf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_fmodf.cpp.o.requires:
 
@@ -361,6 +505,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.o: rts/lib/s
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.o: rts/lib/streflop/libm/flt-32/e_gammaf_r.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_gammaf_r.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.i: cmake_force
@@ -370,6 +515,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.i: cmake_for
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_gammaf_r.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_gammaf_r.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_gammaf_r.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_gammaf_r.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_gammaf_r.cpp.o.requires:
 
@@ -386,6 +542,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.o: rts/lib/streflop/libm/flt-32/e_hypotf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_hypotf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.i: cmake_force
@@ -395,6 +552,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_hypotf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_hypotf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_hypotf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_hypotf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_hypotf.cpp.o.requires:
 
@@ -411,6 +579,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.o: rts/lib/strefl
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.o: rts/lib/streflop/libm/flt-32/e_j0f.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j0f.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.i: cmake_force
@@ -420,6 +589,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j0f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j0f.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j0f.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j0f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j0f.cpp.o.requires:
 
@@ -436,6 +616,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.o: rts/lib/strefl
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.o: rts/lib/streflop/libm/flt-32/e_j1f.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j1f.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.i: cmake_force
@@ -445,6 +626,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j1f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j1f.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j1f.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j1f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_j1f.cpp.o.requires:
 
@@ -461,6 +653,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.o: rts/lib/strefl
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.o: rts/lib/streflop/libm/flt-32/e_jnf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_jnf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.i: cmake_force
@@ -470,6 +663,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_jnf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_jnf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_jnf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_jnf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_jnf.cpp.o.requires:
 
@@ -486,6 +690,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.o: rts/lib/
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.o: rts/lib/streflop/libm/flt-32/e_lgammaf_r.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_lgammaf_r.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.i: cmake_force
@@ -495,6 +700,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.i: cmake_fo
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_lgammaf_r.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_lgammaf_r.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_lgammaf_r.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_lgammaf_r.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_lgammaf_r.cpp.o.requires:
 
@@ -511,6 +727,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.o: rts/lib/streflop/libm/flt-32/e_log10f.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log10f.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.i: cmake_force
@@ -520,6 +737,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log10f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log10f.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log10f.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log10f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log10f.cpp.o.requires:
 
@@ -536,6 +764,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.o: rts/lib/streflop/libm/flt-32/e_log2f.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log2f.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.i: cmake_force
@@ -545,6 +774,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log2f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log2f.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log2f.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log2f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_log2f.cpp.o.requires:
 
@@ -561,6 +801,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.o: rts/lib/streflop/libm/flt-32/e_logf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_logf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.i: cmake_force
@@ -570,6 +811,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_logf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_logf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_logf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_logf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_logf.cpp.o.requires:
 
@@ -586,6 +838,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.o: rts/lib/streflop/libm/flt-32/e_powf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_powf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.i: cmake_force
@@ -595,6 +848,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_powf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_powf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_powf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_powf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_powf.cpp.o.requires:
 
@@ -611,6 +875,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.o: rts/lib/
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.o: rts/lib/streflop/libm/flt-32/e_rem_pio2f.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_rem_pio2f.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.i: cmake_force
@@ -620,6 +885,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.i: cmake_fo
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_rem_pio2f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_rem_pio2f.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_rem_pio2f.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_rem_pio2f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_rem_pio2f.cpp.o.requires:
 
@@ -636,6 +912,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.o: rts/lib
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.o: rts/lib/streflop/libm/flt-32/e_remainderf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_remainderf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.i: cmake_force
@@ -645,6 +922,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.i: cmake_f
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_remainderf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_remainderf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_remainderf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_remainderf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_remainderf.cpp.o.requires:
 
@@ -661,6 +949,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.o: rts/lib/streflop/libm/flt-32/e_sinhf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sinhf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.i: cmake_force
@@ -670,6 +959,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sinhf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sinhf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sinhf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sinhf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sinhf.cpp.o.requires:
 
@@ -686,6 +986,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.o: rts/lib/streflop/libm/flt-32/e_sqrtf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sqrtf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.i: cmake_force
@@ -695,6 +996,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sqrtf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sqrtf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sqrtf.cpp > CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sqrtf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_sqrtf.cpp.o.requires:
 
@@ -711,6 +1023,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.o: rts/lib/streflop/libm/flt-32/k_cosf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_cosf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.i: cmake_force
@@ -720,6 +1033,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_cosf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_cosf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_cosf.cpp > CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_cosf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_cosf.cpp.o.requires:
 
@@ -736,6 +1060,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.o: rts/lib/
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.o: rts/lib/streflop/libm/flt-32/k_rem_pio2f.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_rem_pio2f.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.i: cmake_force
@@ -745,6 +1070,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.i: cmake_fo
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_rem_pio2f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_rem_pio2f.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_rem_pio2f.cpp > CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_rem_pio2f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_rem_pio2f.cpp.o.requires:
 
@@ -761,6 +1097,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.o: rts/lib/streflop/libm/flt-32/k_sinf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_sinf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.i: cmake_force
@@ -770,6 +1107,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_sinf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_sinf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_sinf.cpp > CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_sinf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_sinf.cpp.o.requires:
 
@@ -786,6 +1134,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.o: rts/lib/streflop/libm/flt-32/k_tanf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_tanf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.i: cmake_force
@@ -795,6 +1144,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_tanf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_tanf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_tanf.cpp > CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_tanf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/k_tanf.cpp.o.requires:
 
@@ -811,6 +1171,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.o: rts/lib/streflop/libm/flt-32/s_asinhf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_asinhf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.i: cmake_force
@@ -820,6 +1181,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_asinhf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_asinhf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_asinhf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_asinhf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_asinhf.cpp.o.requires:
 
@@ -836,6 +1208,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.o: rts/lib/streflop/libm/flt-32/s_atanf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_atanf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.i: cmake_force
@@ -845,6 +1218,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_atanf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_atanf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_atanf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_atanf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_atanf.cpp.o.requires:
 
@@ -861,6 +1245,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.o: rts/lib/streflop/libm/flt-32/s_cbrtf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cbrtf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.i: cmake_force
@@ -870,6 +1255,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cbrtf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cbrtf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cbrtf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cbrtf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cbrtf.cpp.o.requires:
 
@@ -886,6 +1282,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.o: rts/lib/streflop/libm/flt-32/s_ceilf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ceilf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.i: cmake_force
@@ -895,6 +1292,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ceilf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ceilf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ceilf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ceilf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ceilf.cpp.o.requires:
 
@@ -911,6 +1319,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.o: rts/lib/
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.o: rts/lib/streflop/libm/flt-32/s_copysignf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_copysignf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.i: cmake_force
@@ -920,6 +1329,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.i: cmake_fo
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_copysignf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_copysignf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_copysignf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_copysignf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_copysignf.cpp.o.requires:
 
@@ -936,6 +1356,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.o: rts/lib/streflop/libm/flt-32/s_cosf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cosf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.i: cmake_force
@@ -945,6 +1366,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cosf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cosf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cosf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cosf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_cosf.cpp.o.requires:
 
@@ -961,6 +1393,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.o: rts/lib/streflop/libm/flt-32/s_erff.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_erff.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.i: cmake_force
@@ -970,6 +1403,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_erff.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_erff.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_erff.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_erff.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_erff.cpp.o.requires:
 
@@ -986,6 +1430,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.o: rts/lib/streflop/libm/flt-32/s_expm1f.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_expm1f.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.i: cmake_force
@@ -995,6 +1440,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_expm1f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_expm1f.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_expm1f.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_expm1f.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_expm1f.cpp.o.requires:
 
@@ -1011,6 +1467,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.o: rts/lib/streflop/libm/flt-32/s_fabsf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fabsf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.i: cmake_force
@@ -1020,6 +1477,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fabsf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fabsf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fabsf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fabsf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fabsf.cpp.o.requires:
 
@@ -1036,6 +1504,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.o: rts/lib/st
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.o: rts/lib/streflop/libm/flt-32/s_finitef.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_finitef.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.i: cmake_force
@@ -1045,6 +1514,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.i: cmake_forc
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_finitef.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_finitef.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_finitef.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_finitef.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_finitef.cpp.o.requires:
 
@@ -1061,6 +1541,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.o: rts/lib/streflop/libm/flt-32/s_floorf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_floorf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.i: cmake_force
@@ -1070,6 +1551,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_floorf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_floorf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_floorf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_floorf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_floorf.cpp.o.requires:
 
@@ -1086,6 +1578,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.o: rts/li
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.o: rts/lib/streflop/libm/flt-32/s_fpclassifyf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fpclassifyf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.i: cmake_force
@@ -1095,6 +1588,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.i: cmake_
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fpclassifyf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fpclassifyf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fpclassifyf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fpclassifyf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_fpclassifyf.cpp.o.requires:
 
@@ -1111,6 +1615,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.o: rts/lib/streflop/libm/flt-32/s_frexpf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_frexpf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.i: cmake_force
@@ -1120,6 +1625,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_frexpf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_frexpf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_frexpf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_frexpf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_frexpf.cpp.o.requires:
 
@@ -1136,6 +1652,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.o: rts/lib/streflop/libm/flt-32/s_ilogbf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ilogbf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.i: cmake_force
@@ -1145,6 +1662,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ilogbf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ilogbf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ilogbf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ilogbf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ilogbf.cpp.o.requires:
 
@@ -1161,6 +1689,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.o: rts/lib/streflop/libm/flt-32/s_isinff.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isinff.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.i: cmake_force
@@ -1170,6 +1699,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isinff.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isinff.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isinff.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isinff.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isinff.cpp.o.requires:
 
@@ -1186,6 +1726,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.o: rts/lib/streflop/libm/flt-32/s_isnanf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isnanf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.i: cmake_force
@@ -1195,6 +1736,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isnanf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isnanf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isnanf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isnanf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_isnanf.cpp.o.requires:
 
@@ -1211,6 +1763,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.o: rts/lib/streflop/libm/flt-32/s_ldexpf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ldexpf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.i: cmake_force
@@ -1220,6 +1773,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ldexpf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ldexpf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ldexpf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ldexpf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_ldexpf.cpp.o.requires:
 
@@ -1236,6 +1800,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.o: rts/lib/st
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.o: rts/lib/streflop/libm/flt-32/s_llrintf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llrintf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.i: cmake_force
@@ -1245,6 +1810,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.i: cmake_forc
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llrintf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llrintf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llrintf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llrintf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llrintf.cpp.o.requires:
 
@@ -1261,6 +1837,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.o: rts/lib/s
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.o: rts/lib/streflop/libm/flt-32/s_llroundf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llroundf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.i: cmake_force
@@ -1270,6 +1847,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.i: cmake_for
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llroundf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llroundf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llroundf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llroundf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_llroundf.cpp.o.requires:
 
@@ -1286,6 +1874,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.o: rts/lib/streflop/libm/flt-32/s_log1pf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_log1pf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.i: cmake_force
@@ -1295,6 +1884,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_log1pf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_log1pf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_log1pf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_log1pf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_log1pf.cpp.o.requires:
 
@@ -1311,6 +1911,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.o: rts/lib/streflop/libm/flt-32/s_logbf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_logbf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.i: cmake_force
@@ -1320,6 +1921,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_logbf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_logbf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_logbf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_logbf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_logbf.cpp.o.requires:
 
@@ -1336,6 +1948,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.o: rts/lib/streflop/libm/flt-32/s_lrintf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lrintf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.i: cmake_force
@@ -1345,6 +1958,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lrintf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lrintf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lrintf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lrintf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lrintf.cpp.o.requires:
 
@@ -1361,6 +1985,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.o: rts/lib/st
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.o: rts/lib/streflop/libm/flt-32/s_lroundf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lroundf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.i: cmake_force
@@ -1370,6 +1995,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.i: cmake_forc
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lroundf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lroundf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lroundf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lroundf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_lroundf.cpp.o.requires:
 
@@ -1386,6 +2022,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.o: rts/lib/streflop/libm/flt-32/s_modff.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_modff.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.i: cmake_force
@@ -1395,6 +2032,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_modff.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_modff.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_modff.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_modff.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_modff.cpp.o.requires:
 
@@ -1411,6 +2059,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.o: rts/lib
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.o: rts/lib/streflop/libm/flt-32/s_nearbyintf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nearbyintf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.i: cmake_force
@@ -1420,6 +2069,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.i: cmake_f
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nearbyintf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nearbyintf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nearbyintf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nearbyintf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nearbyintf.cpp.o.requires:
 
@@ -1436,6 +2096,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.o: rts/lib
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.o: rts/lib/streflop/libm/flt-32/s_nextafterf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nextafterf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.i: cmake_force
@@ -1445,6 +2106,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.i: cmake_f
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nextafterf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nextafterf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nextafterf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nextafterf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_nextafterf.cpp.o.requires:
 
@@ -1461,6 +2133,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.o: rts/lib/st
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.o: rts/lib/streflop/libm/flt-32/s_remquof.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_remquof.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.i: cmake_force
@@ -1470,6 +2143,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.i: cmake_forc
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_remquof.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_remquof.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_remquof.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_remquof.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_remquof.cpp.o.requires:
 
@@ -1486,6 +2170,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.o: rts/lib/streflop/libm/flt-32/s_rintf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_rintf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.i: cmake_force
@@ -1495,6 +2180,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_rintf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_rintf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_rintf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_rintf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_rintf.cpp.o.requires:
 
@@ -1511,6 +2207,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.o: rts/lib/streflop/libm/flt-32/s_roundf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_roundf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.i: cmake_force
@@ -1520,6 +2217,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_roundf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_roundf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_roundf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_roundf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_roundf.cpp.o.requires:
 
@@ -1536,6 +2244,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.o: rts/lib/s
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.o: rts/lib/streflop/libm/flt-32/s_scalblnf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalblnf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.i: cmake_force
@@ -1545,6 +2254,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.i: cmake_for
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalblnf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalblnf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalblnf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalblnf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalblnf.cpp.o.requires:
 
@@ -1561,6 +2281,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.o: rts/lib/st
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.o: rts/lib/streflop/libm/flt-32/s_scalbnf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalbnf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.i: cmake_force
@@ -1570,6 +2291,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.i: cmake_forc
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalbnf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalbnf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalbnf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalbnf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_scalbnf.cpp.o.requires:
 
@@ -1586,6 +2318,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.o: rts/lib/s
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.o: rts/lib/streflop/libm/flt-32/s_signbitf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_signbitf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.i: cmake_force
@@ -1595,6 +2328,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.i: cmake_for
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_signbitf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_signbitf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_signbitf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_signbitf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_signbitf.cpp.o.requires:
 
@@ -1611,6 +2355,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.o: rts/lib/st
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.o: rts/lib/streflop/libm/flt-32/s_sincosf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sincosf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.i: cmake_force
@@ -1620,6 +2365,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.i: cmake_forc
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sincosf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sincosf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sincosf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sincosf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sincosf.cpp.o.requires:
 
@@ -1636,6 +2392,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.o: rts/lib/streflop/libm/flt-32/s_sinf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sinf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.i: cmake_force
@@ -1645,6 +2402,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sinf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sinf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sinf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sinf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_sinf.cpp.o.requires:
 
@@ -1661,6 +2429,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.o: rts/lib/streflop/libm/flt-32/s_tanf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.i: cmake_force
@@ -1670,6 +2439,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanf.cpp.o.requires:
 
@@ -1686,6 +2466,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.o: rts/lib/stre
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.o: rts/lib/streflop/libm/flt-32/s_tanhf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanhf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.i: cmake_force
@@ -1695,6 +2476,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanhf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanhf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanhf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanhf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_tanhf.cpp.o.requires:
 
@@ -1711,6 +2503,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.o: rts/lib/str
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.o: rts/lib/streflop/libm/flt-32/s_truncf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_truncf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.i: cmake_force
@@ -1720,6 +2513,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_truncf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_truncf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_truncf.cpp > CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_truncf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/s_truncf.cpp.o.requires:
 
@@ -1736,6 +2540,7 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.o: rts/lib/stref
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.o: rts/lib/streflop/CMakeFiles/streflop.dir/includes_CXX.rsp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.o: rts/lib/streflop/libm/flt-32/w_expf.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/rts/spring-104.0.1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.o"
+<<<<<<< HEAD
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -o CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/w_expf.cpp
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.i: cmake_force
@@ -1745,6 +2550,17 @@ rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.i: cmake_force
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.s"
 	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.1/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/w_expf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.s
+=======
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -o CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.o -c /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/w_expf.cpp
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.i"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -E /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/w_expf.cpp > CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.i
+
+rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.s"
+	cd /home/pi/rts/spring-104.0.1/rts/lib/streflop && /home/pi/emsdk-portable/emscripten/1.37.21/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DLIBM_COMPILING_FLT32 -I"/home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/headers" -w -O3 -mfpmath=sse -msse -S /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/w_expf.cpp -o CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.s
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
 
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/w_expf.cpp.o.requires:
 

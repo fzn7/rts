@@ -1,6 +1,8 @@
 set(SOURCE_ROOT ../../..)
 
+
 include_directories(${SOURCE_ROOT})
+include_directories(/home/pi/rts/lib/zlib)
 include_directories(${SPRING_MINIZIP_INCLUDE_DIR})
 
 add_definitions(${PIC_FLAG})

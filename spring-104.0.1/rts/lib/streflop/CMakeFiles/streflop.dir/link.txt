@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /home/pi/emsdk-portable/emscripten/1.37.1/emar rc libstreflop.a  @CMakeFiles/streflop.dir/objects1.rsp
+=======
+/home/pi/emsdk-portable/emscripten/1.37.21/emar rc libstreflop.a  @CMakeFiles/streflop.dir/objects1.rsp
+>>>>>>> 84161a092132121b1beeead3beed6d332428d2a8
