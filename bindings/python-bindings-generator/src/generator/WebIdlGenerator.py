@@ -4,6 +4,8 @@ import jsonpickle
 from mako.template import Template
 
 from converter import CppToIdlTypeConverter
+from converter.util import IdlUtil
+
 
 class UmlClass:
     def __init__(self):
@@ -164,19 +166,24 @@ class WebIdlGenerator:
         """
         tpl = Template(filename='bind_idl.mako')
 
-        #for k in self.classes:
+        # for k in self.classes:
         #    print self.classes.get(k).fqn
 
         interfaces = list(filter(lambda item: len(item[1].publicMethods) > 0, self.classes.items()))
-        interfaces = list(filter(lambda item: item[1].fqn[0] == "C", interfaces))
 
         print "--- public interfaces to convert ---"
         print ", ".join(map(lambda i: i[1].fqn, interfaces))
 
         idl_classes = {k: self.converter.convert_class(v) for k, v in interfaces}
+        config = IdlUtil.IDLUtil.get_api_config()
+        # filter by key
+        idl_classes = {k: v for k, v in filter(lambda item: item[1].name.label in config, idl_classes.iteritems())}
 
         rendered = tpl.render(
             classes=idl_classes,
             module_name='CodegenExample')
 
         return rendered
+
+    def tmp(self, item):
+        print item

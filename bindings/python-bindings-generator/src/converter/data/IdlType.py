@@ -44,6 +44,7 @@ class IdlType(IdlBaseItem):
             TypeKind.FLOAT: lambda node: self.parsePrimitive(node),
             TypeKind.INT: lambda node: self.parsePrimitive(node),
             TypeKind.UINT: lambda node: self.parsePrimitive(node),
+            TypeKind.LONG: lambda node: self.parsePrimitive(node),
             TypeKind.LVALUEREFERENCE: lambda node: self.parseComplex(node),
             TypeKind.RVALUEREFERENCE: lambda node: self.parseComplex(node),
             TypeKind.POINTER: lambda node: self.parseComplex(node),
@@ -51,6 +52,8 @@ class IdlType(IdlBaseItem):
             TypeKind.TYPEDEF: lambda node: self.parseComplex(node),
             TypeKind.ENUM: lambda node: self.parseComplex(node),
             TypeKind.UNEXPOSED: lambda node: self.parseComplex(node),
+            TypeKind.UCHAR: lambda node: self.parseComplex(node),
+            TypeKind.CONSTANTARRAY: lambda node: self.parseComplex(node),
         }[type.kind](type)
 
         if raw_kind is not None:
