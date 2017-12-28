@@ -19,7 +19,87 @@ rts/lib/streflop/CMakeFiles/streflop.dir/SMath.cpp.o
  /home/pi/rts/spring-104.0.1/rts/lib/streflop/X87DenormalSquasher.h
  /home/pi/rts/spring-104.0.1/rts/lib/streflop/streflop.h
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acosf.cpp.o
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/FPUSettings.h
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/IntegerTypes.h
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/Random.h
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/SMath.h
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/System.h
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/X87DenormalSquasher.h
  /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acosf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acoshf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_asinf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atan2f.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_atanhf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_coshf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_exp2f.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_expf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_fmodf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_gammaf_r.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_hypotf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j0f.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_j1f.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_jnf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_lgammaf_r.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log10f.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_log2f.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_logf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_powf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_rem_pio2f.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_remainderf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sinhf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_sqrtf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_cosf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_rem_pio2f.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_sinf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/k_tanf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_asinhf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_atanf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cbrtf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ceilf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_copysignf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_cosf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_erff.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_expm1f.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fabsf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_finitef.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_floorf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_fpclassifyf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_frexpf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ilogbf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isinff.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_isnanf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_ldexpf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llrintf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_llroundf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_log1pf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_logbf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lrintf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_lroundf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_modff.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nearbyintf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_nextafterf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_remquof.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_rintf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_roundf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalblnf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_scalbnf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_signbitf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sincosf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_sinf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_tanhf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/s_truncf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/t_exp2f.h
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/w_expf.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/streflop_libm_bridge.h
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/streflop.h
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/streflopC.cpp
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/streflopC.h
+ /home/pi/rts/spring-104.0.1/rts/lib/streflop/streflop_cond.h
+ rts/System/FastMath.h
+ rts/System/MainDefines.h
+ rts/System/MathConstants.h
+ rts/lib/streflop/streflop_cond.h
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_acoshf.cpp.o
  /home/pi/rts/spring-104.0.1/rts/lib/streflop/libm/flt-32/e_acoshf.cpp
 rts/lib/streflop/CMakeFiles/streflop.dir/libm/flt-32/e_asinf.cpp.o

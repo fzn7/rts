@@ -62,6 +62,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/pi/rts/spring-104.0.1/rts/lib/streflop/CMakeFiles/streflop.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

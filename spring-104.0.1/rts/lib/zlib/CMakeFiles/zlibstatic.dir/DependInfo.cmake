@@ -20,7 +20,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/pi/rts/spring-104.0.1/rts/lib/zlib/uncompr.c" "/home/pi/rts/spring-104.0.1/rts/lib/zlib/CMakeFiles/zlibstatic.dir/uncompr.o"
   "/home/pi/rts/spring-104.0.1/rts/lib/zlib/zutil.c" "/home/pi/rts/spring-104.0.1/rts/lib/zlib/CMakeFiles/zlibstatic.dir/zutil.o"
   )
-set(CMAKE_C_COMPILER_ID "Clang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/rts/spring-104.0.1/rts/lib/assimp/contrib/ConvertUTF/ConvertUTF.c
+ConvertUTF.h
+/home/pi/rts/spring-104.0.1/rts/lib/assimp/contrib/ConvertUTF/ConvertUTF.h
+stdio.h
+-
+
+/home/pi/rts/spring-104.0.1/rts/lib/assimp/contrib/ConvertUTF/ConvertUTF.h
+

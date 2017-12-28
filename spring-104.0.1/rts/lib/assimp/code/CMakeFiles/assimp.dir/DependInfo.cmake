@@ -75,6 +75,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/pi/rts/lib/boost_1_65_1"
   "rts"
+  "/home/pi/rts/lib/zlib"
   "rts/lib/assimp/."
   "rts/lib/assimp"
   "rts/lib/assimp/include"
@@ -216,6 +217,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/pi/rts/lib/boost_1_65_1"
   "rts"
+  "/home/pi/rts/lib/zlib"
   "rts/lib/assimp/."
   "rts/lib/assimp"
   "rts/lib/assimp/include"

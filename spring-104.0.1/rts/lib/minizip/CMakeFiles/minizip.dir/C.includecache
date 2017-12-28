@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/pi/rts/lib/zlib/build/include/zconf.h
+windows.h
+-
+limits.h
+-
+sys/types.h
+-
+stdarg.h
+-
+stddef.h
+-
+unistd.h
+-
+unixio.h
+-
+
+/home/pi/rts/lib/zlib/build/include/zlib.h
+zconf.h
+/home/pi/rts/lib/zlib/build/include/zconf.h
+
 /home/pi/rts/spring-104.0.1/rts/lib/minizip/ioapi.c
 ioapi.h
 /home/pi/rts/spring-104.0.1/rts/lib/minizip/ioapi.h

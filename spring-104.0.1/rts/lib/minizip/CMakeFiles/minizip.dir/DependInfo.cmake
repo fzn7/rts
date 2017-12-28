@@ -29,6 +29,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/pi/rts/lib/boost_1_65_1"
   "rts"
+  "/home/pi/rts/lib/zlib/build/include"
   )
 
 # Targets to which this target links.
