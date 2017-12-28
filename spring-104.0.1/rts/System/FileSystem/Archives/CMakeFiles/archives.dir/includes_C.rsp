@@ -1,1 +1,1 @@
--I/home/pi/rts/lib/boost_1_65_1 -I/home/pi/rts/spring-104.0.1/rts/System/FileSystem/Archives/../../.. 
+-I/home/pi/rts/lib/boost_1_65_1 -I/home/pi/rts/spring-104.0.1/rts/System/FileSystem/Archives/../../.. -I/home/pi/rts/lib/zlib -I/home/pi/rts/spring-104.0.1/rts/lib 

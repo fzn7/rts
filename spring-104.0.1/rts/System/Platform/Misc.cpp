@@ -34,7 +34,9 @@
 #include <sys/sysctl.h>
 
 #else
-
+#include <unistd.h>
+#include <dlfcn.h>
+#include <sys/statvfs.h>
 #endif
 
 
@@ -224,7 +226,16 @@ namespace Platform
 
 
 	#else
-		#error implement this
+		//#error implement this
+	char file[512];
+		const int ret = readlink("/proc/self/exe", file, sizeof(file) - 1);
+
+		if (ret >= 0) {
+			file[ret] = '\0';
+			procExeFilePath = std::string(file);
+		} else {
+			error = "[linux] failed to read /proc/self/exe";
+		}
 	#endif
 
 		if (procExeFilePath.empty())

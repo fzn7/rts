@@ -26,6 +26,8 @@ set(CMAKE_TARGET_DEFINITIONS_C
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/pi/rts/lib/boost_1_65_1"
   "rts/System/FileSystem/Archives/../../.."
+  "/home/pi/rts/lib/zlib"
+  "rts/lib"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pi/rts/spring-104.0.1/rts/System/FileSystem/Archives/BufferedArchive.cpp" "/home/pi/rts/spring-104.0.1/rts/System/FileSystem/Archives/CMakeFiles/archives.dir/BufferedArchive.cpp.o"
@@ -61,11 +63,14 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/pi/rts/lib/boost_1_65_1"
   "rts/System/FileSystem/Archives/../../.."
+  "/home/pi/rts/lib/zlib"
+  "rts/lib"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/pi/rts/spring-104.0.1/rts/lib/7z/CMakeFiles/7zip.dir/DependInfo.cmake"
+  "/home/pi/rts/spring-104.0.1/rts/lib/minizip/CMakeFiles/minizip.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

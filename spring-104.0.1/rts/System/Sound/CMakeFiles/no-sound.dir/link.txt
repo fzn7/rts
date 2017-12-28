@@ -1,0 +1,1 @@
+/home/pi/emsdk-portable/emscripten/1.37.1/emar rc libno-sound.a  @CMakeFiles/no-sound.dir/objects1.rsp

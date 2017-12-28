@@ -45,6 +45,8 @@ rts/System/FileSystem/Archives/CMakeFiles/archives.dir/IArchive.cpp.o: rts/Syste
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/IArchive.cpp.o: rts/System/FileSystem/Archives/../../../System/MainDefines.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/IArchive.cpp.o: rts/System/FileSystem/Archives/../../../System/StringUtil.h
 
+rts/System/FileSystem/Archives/CMakeFiles/archives.dir/PoolArchive.cpp.o: /home/pi/rts/lib/zlib/zconf.h
+rts/System/FileSystem/Archives/CMakeFiles/archives.dir/PoolArchive.cpp.o: /home/pi/rts/lib/zlib/zlib.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/PoolArchive.cpp.o: rts/System/FileSystem/Archives/ArchiveFactory.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/PoolArchive.cpp.o: rts/System/FileSystem/Archives/BufferedArchive.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/PoolArchive.cpp.o: rts/System/FileSystem/Archives/IArchive.h
@@ -115,6 +117,8 @@ rts/System/FileSystem/Archives/CMakeFiles/archives.dir/SevenZipArchive.cpp.o: rt
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/SevenZipArchive.cpp.o: rts/System/FileSystem/Archives/../../../lib/7z/7zFile.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/SevenZipArchive.cpp.o: rts/System/FileSystem/Archives/../../../lib/7z/Types.h
 
+rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: /home/pi/rts/lib/zlib/zconf.h
+rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: /home/pi/rts/lib/zlib/zlib.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: rts/System/FileSystem/Archives/ArchiveFactory.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: rts/System/FileSystem/Archives/IArchive.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: rts/System/FileSystem/Archives/VirtualArchive.cpp
@@ -126,7 +130,11 @@ rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: rts
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: rts/System/FileSystem/Archives/../../../System/Log/ILog.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: rts/System/FileSystem/Archives/../../../System/Log/Level.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: rts/System/FileSystem/Archives/../../../System/Log/Section.h
+rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: rts/lib/minizip/ioapi.h
+rts/System/FileSystem/Archives/CMakeFiles/archives.dir/VirtualArchive.cpp.o: rts/lib/minizip/zip.h
 
+rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: /home/pi/rts/lib/zlib/zconf.h
+rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: /home/pi/rts/lib/zlib/zlib.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: rts/System/FileSystem/Archives/ArchiveFactory.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: rts/System/FileSystem/Archives/BufferedArchive.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: rts/System/FileSystem/Archives/IArchive.h
@@ -156,6 +164,8 @@ rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: rts/Sys
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: rts/System/FileSystem/Archives/../../../System/creg/TypeDeduction.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: rts/System/FileSystem/Archives/../../../System/creg/creg.h
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: rts/System/FileSystem/Archives/../../../System/creg/creg_cond.h
+rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: rts/lib/minizip/ioapi.h
+rts/System/FileSystem/Archives/CMakeFiles/archives.dir/ZipArchive.cpp.o: rts/lib/minizip/unzip.h
 
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/__/__/Log/Backend.cpp.o: /home/pi/rts/lib/boost_1_65_1/boost/assert.hpp
 rts/System/FileSystem/Archives/CMakeFiles/archives.dir/__/__/Log/Backend.cpp.o: /home/pi/rts/lib/boost_1_65_1/boost/config.hpp

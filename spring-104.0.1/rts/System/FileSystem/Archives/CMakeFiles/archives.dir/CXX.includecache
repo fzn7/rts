@@ -4638,6 +4638,26 @@ boost/core/swap.hpp
 
 /home/pi/rts/lib/boost_1_65_1/boost/version.hpp
 
+/home/pi/rts/lib/zlib/zconf.h
+windows.h
+-
+limits.h
+-
+sys/types.h
+-
+stdarg.h
+-
+stddef.h
+-
+unistd.h
+-
+unixio.h
+-
+
+/home/pi/rts/lib/zlib/zlib.h
+zconf.h
+/home/pi/rts/lib/zlib/zconf.h
+
 /home/pi/rts/spring-104.0.1/rts/System/FileSystem/Archives/ArchiveFactory.h
 map
 -
@@ -5077,6 +5097,8 @@ utility
 -
 functional
 -
+algorithm
+-
 
 rts/System/FileSystem/Archives/../../../System/SpringHashSet.hpp
 cstdlib
@@ -5084,6 +5106,8 @@ cstdlib
 iterator
 -
 utility
+-
+algorithm
 -
 
 rts/System/FileSystem/Archives/../../../System/StringUtil.h
@@ -5249,4 +5273,34 @@ stddef.h
 -
 windows.h
 -
+
+rts/lib/minizip/ioapi.h
+stdio.h
+-
+stdlib.h
+-
+zlib.h
+rts/lib/minizip/zlib.h
+stdint.h
+-
+mz64conf.h
+rts/lib/minizip/mz64conf.h
+stdint.h
+rts/lib/minizip/stdint.h
+
+rts/lib/minizip/unzip.h
+zlib.h
+rts/lib/minizip/zlib.h
+ioapi.h
+rts/lib/minizip/ioapi.h
+bzlib.h
+rts/lib/minizip/bzlib.h
+
+rts/lib/minizip/zip.h
+zlib.h
+rts/lib/minizip/zlib.h
+ioapi.h
+rts/lib/minizip/ioapi.h
+bzlib.h
+rts/lib/minizip/bzlib.h
 
