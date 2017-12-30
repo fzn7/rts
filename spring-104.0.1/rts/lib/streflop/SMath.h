@@ -406,8 +406,8 @@ enum
 	inline Simple scalblnf(Simple x, long int n) {return scalbln(x, n);}
 
 	inline int fpclassifyf(Simple x) {return fpclassify(x);}
-	inline int isnanf(Simple x) {return isnan(x);}
-	inline int isinff(Simple x) {return isinf(x);}
+	//inline int isnanf(Simple x) {return isnan(x);}
+	//inline int isinff(Simple x) {return isinf(x);}
 	inline int isfinitef(Simple x) {return isfinite(x);}
 	inline int isnormalf(Simple x) {return isnormal(x);}
 

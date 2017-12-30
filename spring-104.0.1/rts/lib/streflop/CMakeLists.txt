@@ -1,3 +1,4 @@
+
 # Spring supplied CMake build file
 
 SET(libm_flt32_source
@@ -84,4 +85,4 @@ ADD_LIBRARY(streflop STATIC EXCLUDE_FROM_ALL
 	${libm_flt32_source}
 	)
 set_target_properties(streflop PROPERTIES COMPILE_FLAGS "${PIC_FLAG}")
-#TODO do not use -fPIC for streflop (decreases performance)
+
