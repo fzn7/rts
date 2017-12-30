@@ -1,1 +1,0 @@
-/home/pi/rts/lib/chronotext-boost/dist/emscripten/lib/libboost_regex.a /home/pi/rts/lib/chronotext-boost/dist/emscripten/lib/libboost_system.a ../../lib/lua/liblua.a -l7zip ../../lib/gflags/libgflags_nothreads.a -lheadless -lStubs -lstreflop 
