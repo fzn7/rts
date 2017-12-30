@@ -18,11 +18,11 @@ SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}")
 
 SET(ENGINE_SRC_ROOT_DIR "${CMAKE_SOURCE_DIR}/rts")
-
+ 
 ### Assemble libraries
 LIST(APPEND engineDedicatedLibraries ${Boost_REGEX_LIBRARY})
 LIST(APPEND engineDedicatedLibraries ${Boost_SYSTEM_LIBRARY})
-LIST(APPEND engineDedicatedLibraries lua 7zip ${SPRING_MINIZIP_LIBRARY} ${ZLIB_LIBRARY} gflags archives) 
+LIST(APPEND engineDedicatedLibraries lua 7zip ${SPRING_MINIZIP_LIBRARY} ${ZLIB_LIBRARY} gflags archives)  
 LIST(APPEND engineDedicatedLibraries headlessStubs) #engineSystemNet)
 LIST(APPEND engineDedicatedLibraries ${LIBUNWIND_LIBRARIES})
 
@@ -70,7 +70,6 @@ INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/lua/include)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/7zip)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/asio/include)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/zlib)
-
 
 
 ### Assemble sources
@@ -281,7 +280,7 @@ SET(system_files_for_Sim
 	${ENGINE_SRC_ROOT_DIR}/System/Config/ConfigHandler.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/EventClient.cpp
 	#${ENGINE_SRC_ROOT_DIR}/System/EventHandler.cpp
-	#${ENGINE_SRC_ROOT_DIR}/System/FileSystem/ArchiveLoader.cpp
+	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/ArchiveLoader.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/ArchiveScanner.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/Archives/IArchive.cpp
 	${ENGINE_SRC_ROOT_DIR}/System/FileSystem/DataDirsAccess.cpp

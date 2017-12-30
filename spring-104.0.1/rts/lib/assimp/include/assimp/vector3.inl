@@ -50,7 +50,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "vector3.h"
 
 #include "lib/streflop/streflop_cond.h"
-
+#include <cmath>
 // ------------------------------------------------------------------------------------------------
 /** Transformation of a vector by a 3x3 matrix */
 template <typename TReal>

@@ -1,0 +1,1 @@
+/home/pi/rts/lib/chronotext-boost/dist/emscripten/lib/libboost_regex.a /home/pi/rts/lib/chronotext-boost/dist/emscripten/lib/libboost_system.a ../../lib/lua/liblua.a ../../lib/7z/lib7zip.a ../../lib/gflags/libgflags_nothreads.a ../../System/FileSystem/Archives/libarchives.a ../../lib/headlessStubs/libheadlessStubs.a -lstreflop ../../lib/7z/lib7zip.a 

@@ -1,3 +1,4 @@
+
 # Spring supplied CMake build file
 
 SET(libm_flt32_source
@@ -72,10 +73,10 @@ SET(cxxflags "-I\"${CMAKE_CURRENT_SOURCE_DIR}/libm/headers\"")
 if   (NOT MSVC)
 	SET(cxxflags "${cxxflags} -w -O3")
 	if (NOT $ENV{CXX} MATCHES "icpc")
-		SET(cxxflags "${cxxflags} -mfpmath=sse -msse")
+		SET(cxxflags "${cxxflags} -msse")
 	endif (NOT $ENV{CXX} MATCHES "icpc")
 endif(NOT MSVC)
-SET_SOURCE_FILES_PROPERTIES(${libm_flt32_source} PROPERTIES COMPILE_FLAGS "-DLIBM_COMPILING_FLT32") #${cxxflags}")
+SET_SOURCE_FILES_PROPERTIES(${libm_flt32_source} PROPERTIES COMPILE_FLAGS "-DLIBM_COMPILING_FLT32 ${cxxflags}")
 
 ADD_LIBRARY(streflop STATIC EXCLUDE_FROM_ALL
 	SMath.cpp
@@ -84,4 +85,4 @@ ADD_LIBRARY(streflop STATIC EXCLUDE_FROM_ALL
 	${libm_flt32_source}
 	)
 set_target_properties(streflop PROPERTIES COMPILE_FLAGS "${PIC_FLAG}")
-#TODO do not use -fPIC for streflop (decreases performance)
+

@@ -1,0 +1,1 @@
+/home/pi/emsdk-portable/emscripten/1.37.1/em++    -std=c++11  -pipe -fno-strict-aliasing  -fvisibility=hidden  -fvisibility-inlines-hidden -pthread  -O2      -Wformat -Wformat-security -DNDEBUG -g  -O2 -g @CMakeFiles/engine-dedicated2.dir/objects1.rsp  -o ../../../spring-dedicated2.js @CMakeFiles/engine-dedicated2.dir/linklibs.rsp

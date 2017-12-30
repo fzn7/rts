@@ -1,0 +1,1 @@
+/home/pi/emsdk-portable/emscripten/1.37.1/emar rc libgflags_nothreads.a  @CMakeFiles/gflags_nothreads_static.dir/objects1.rsp

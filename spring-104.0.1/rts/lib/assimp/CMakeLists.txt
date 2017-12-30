@@ -136,7 +136,7 @@ ENDIF(ASSIMP_DOUBLE_PRECISION)
 #  ${CMAKE_CURRENT_LIST_DIR}/include/assimp/config.h.in
 #  ${CMAKE_CURRENT_LIST_DIR}/include/assimp/config.h
 #)
-
+include_directories(/home/pi/rts/lib/zlib)
 include_directories(
     ./
     ${CMAKE_CURRENT_BINARY_DIR}
