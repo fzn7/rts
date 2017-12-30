@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpr-sha1.a  CMakeFiles/pr-sha1.dir/sha1.cpp.o
+/usr/bin/ranlib libpr-sha1.a

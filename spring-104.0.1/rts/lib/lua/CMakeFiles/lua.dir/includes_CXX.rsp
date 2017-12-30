@@ -1,1 +1,0 @@
--I/home/pi/rts/spring-104.0.1/rts/lib/lua/include -I/home/pi/rts/spring-104.0.1/rts/lib/lua/../streflop -I/home/pi/rts/lib/boost_1_65_1 -I/home/pi/rts/spring-104.0.1/rts -I/home/pi/emsdk-portable/emscripten/1.37.1/system/include 
