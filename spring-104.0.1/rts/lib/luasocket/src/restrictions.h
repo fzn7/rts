@@ -22,7 +22,7 @@ public:
 
 	enum RestrictType{
 		TCP_CONNECT=0,
-		TCP_LISTEN,
+		TCP_L1STEN,
 		UDP_CONNECT,
 		UDP_LISTEN,
 		ALL_RULES

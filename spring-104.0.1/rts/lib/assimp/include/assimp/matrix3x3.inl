@@ -53,6 +53,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <algorithm>
 #include "lib/streflop/streflop_cond.h"
 #include <limits>
+#include <cmath>
 
 // ------------------------------------------------------------------------------------------------
 // Construction from a 4x4 matrix. The remaining parts of the matrix are ignored.

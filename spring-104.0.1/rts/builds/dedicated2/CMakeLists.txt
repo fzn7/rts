@@ -69,6 +69,7 @@ INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/lua/include)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/7zip)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/asio/include)
+INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/zlib)
 
 
 ### Assemble sources
@@ -91,6 +92,8 @@ ELSE	()
 ENDIF	()
 
 SET(system_files
+	#${ENGINE_SRC_ROOT_DIR}/Rendering/Models/OBJParser.cpp
+	#${ENGINE_SRC_ROOT_DIR}/Game/GameVersion.cpp
 	${sources_engine_System_FileSystem}
 	${sources_engine_System_Threading}
 	${sources_engine_System_Log}
