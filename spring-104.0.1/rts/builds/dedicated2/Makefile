@@ -1037,6 +1037,33 @@ __/__/System/EventClient.cpp.s:
 	cd /home/pi/rts/spring-104.0.1 && $(MAKE) -f rts/builds/dedicated2/CMakeFiles/engine-dedicated2.dir/build.make rts/builds/dedicated2/CMakeFiles/engine-dedicated2.dir/__/__/System/EventClient.cpp.s
 .PHONY : __/__/System/EventClient.cpp.s
 
+__/__/System/FileSystem/ArchiveLoader.o: __/__/System/FileSystem/ArchiveLoader.cpp.o
+
+.PHONY : __/__/System/FileSystem/ArchiveLoader.o
+
+# target to build an object file
+__/__/System/FileSystem/ArchiveLoader.cpp.o:
+	cd /home/pi/rts/spring-104.0.1 && $(MAKE) -f rts/builds/dedicated2/CMakeFiles/engine-dedicated2.dir/build.make rts/builds/dedicated2/CMakeFiles/engine-dedicated2.dir/__/__/System/FileSystem/ArchiveLoader.cpp.o
+.PHONY : __/__/System/FileSystem/ArchiveLoader.cpp.o
+
+__/__/System/FileSystem/ArchiveLoader.i: __/__/System/FileSystem/ArchiveLoader.cpp.i
+
+.PHONY : __/__/System/FileSystem/ArchiveLoader.i
+
+# target to preprocess a source file
+__/__/System/FileSystem/ArchiveLoader.cpp.i:
+	cd /home/pi/rts/spring-104.0.1 && $(MAKE) -f rts/builds/dedicated2/CMakeFiles/engine-dedicated2.dir/build.make rts/builds/dedicated2/CMakeFiles/engine-dedicated2.dir/__/__/System/FileSystem/ArchiveLoader.cpp.i
+.PHONY : __/__/System/FileSystem/ArchiveLoader.cpp.i
+
+__/__/System/FileSystem/ArchiveLoader.s: __/__/System/FileSystem/ArchiveLoader.cpp.s
+
+.PHONY : __/__/System/FileSystem/ArchiveLoader.s
+
+# target to generate assembly for a file
+__/__/System/FileSystem/ArchiveLoader.cpp.s:
+	cd /home/pi/rts/spring-104.0.1 && $(MAKE) -f rts/builds/dedicated2/CMakeFiles/engine-dedicated2.dir/build.make rts/builds/dedicated2/CMakeFiles/engine-dedicated2.dir/__/__/System/FileSystem/ArchiveLoader.cpp.s
+.PHONY : __/__/System/FileSystem/ArchiveLoader.cpp.s
+
 __/__/System/FileSystem/ArchiveNameResolver.o: __/__/System/FileSystem/ArchiveNameResolver.cpp.o
 
 .PHONY : __/__/System/FileSystem/ArchiveNameResolver.o
@@ -2548,6 +2575,9 @@ help:
 	@echo "... __/__/System/EventClient.o"
 	@echo "... __/__/System/EventClient.i"
 	@echo "... __/__/System/EventClient.s"
+	@echo "... __/__/System/FileSystem/ArchiveLoader.o"
+	@echo "... __/__/System/FileSystem/ArchiveLoader.i"
+	@echo "... __/__/System/FileSystem/ArchiveLoader.s"
 	@echo "... __/__/System/FileSystem/ArchiveNameResolver.o"
 	@echo "... __/__/System/FileSystem/ArchiveNameResolver.i"
 	@echo "... __/__/System/FileSystem/ArchiveNameResolver.s"
