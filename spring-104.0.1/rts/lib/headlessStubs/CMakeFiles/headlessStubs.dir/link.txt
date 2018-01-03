@@ -1,0 +1,1 @@
+/home/pi/emsdk-portable/emscripten/1.37.1/emar rc libheadlessStubs.a  @CMakeFiles/headlessStubs.dir/objects1.rsp
