@@ -1,9 +1,0 @@
-[submodule "lib/zlib"]
-	path = lib/zlib
-	url = https://github.com/emscripten-ports/zlib.git
-[submodule "lib/chronotext-boost"]
-	path = lib/chronotext-boost
-	url = https://github.com/arielm/chronotext-boost.git
-[submodule "lib/SDL2"]
-	path = lib/SDL2
-	url = https://github.com/emscripten-ports/SDL2.git
