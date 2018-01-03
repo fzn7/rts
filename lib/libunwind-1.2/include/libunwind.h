@@ -26,7 +26,8 @@
 #elif defined __tilegx__
 # include "libunwind-tilegx.h"
 #else
-# error "Unsupported arch"
+//# error "Unsupported arch"
+#include "libunwind-x86.h"
 #endif
 
 #else /* UNW_REMOTE_ONLY */

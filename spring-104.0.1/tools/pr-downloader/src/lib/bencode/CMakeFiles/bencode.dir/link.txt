@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbencode.a  CMakeFiles/bencode.dir/bencode.cpp.o
+/usr/bin/ranlib libbencode.a

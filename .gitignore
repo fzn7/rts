@@ -7,3 +7,9 @@ lib/
 bindings/python-bindings-generator/bin/libclang.so
 *.pkl
 *.out
+spring-104.0.1/spring-build-graph.*
+spring-104.0.1/spring-dedicated.js
+spring-104.0.1/spring-dedicated.js.mem
+spring-104.0.1/spring-dedicated2.js.mem
+spring-104.0.1/spring-dedicated2.js
+spring-104.0.1/rts/lib/streflop/CMakeFiles/streflop.dir/

@@ -126,15 +126,16 @@ size_t DefaultIOStream::FileSize() const
         if (0 != err)
             return 0;
         mCachedSize = (size_t) (fileStat.st_size);
-#elif defined __gnu_linux__ || defined __APPLE__ || defined __MACH__ || defined __MINGW32__
+#else
+//#elif defined __gnu_linux__ || defined __APPLE__ || defined __MACH__ || defined __MINGW32__
         struct stat fileStat;
         int err = stat(mFilename.c_str(), &fileStat );
         if (0 != err)
             return 0;
         const unsigned long long cachedSize = fileStat.st_size;
         mCachedSize = static_cast< size_t >( cachedSize );
-#else
-#   error "Unknown platform"
+//#else
+//#   error "Unknown platform"
 #endif
     }
     return mCachedSize;

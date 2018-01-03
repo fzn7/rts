@@ -79,7 +79,7 @@ else  (NO_CREG)
 endif (NO_CREG)
 MakeGlobalVar(sources_engine_System_FileSystem
 		"${CMAKE_CURRENT_SOURCE_DIR}/FileSystem/ArchiveNameResolver.cpp"
-		"${CMAKE_CURRENT_SOURCE_DIR}/FileSystem/ArchiveLoader.cpp"
+		#"${CMAKE_CURRENT_SOURCE_DIR}/FileSystem/ArchiveLoader.cpp"
 		"${CMAKE_CURRENT_SOURCE_DIR}/FileSystem/ArchiveScanner.cpp"
 		"${CMAKE_CURRENT_SOURCE_DIR}/FileSystem/CacheDir.cpp"
 		"${CMAKE_CURRENT_SOURCE_DIR}/FileSystem/DataDirLocater.cpp"
@@ -140,8 +140,8 @@ Set(sources_engine_System_Threading_Mac
 		"${CMAKE_CURRENT_SOURCE_DIR}/Platform/Mac/Signal.cpp"
 	)
 Set(sources_engine_System_Threading_Linux
-		"${CMAKE_CURRENT_SOURCE_DIR}/Platform/Linux/Futex.cpp"
-		"${CMAKE_CURRENT_SOURCE_DIR}/Platform/Linux/ThreadSupport.cpp"
+		#"${CMAKE_CURRENT_SOURCE_DIR}/Platform/Linux/Futex.cpp"
+		#"${CMAKE_CURRENT_SOURCE_DIR}/Platform/Linux/ThreadSupport.cpp"
 	)
 Set(sources_engine_System_Threading_Windows
 		"${CMAKE_CURRENT_SOURCE_DIR}/Platform/Win/CriticalSection.cpp"
@@ -162,7 +162,7 @@ if(CMAKE_VERSION VERSION_GREATER 3.1.2)
 endif()
 
 Set(sources_engine_System_Threading
-		"${CMAKE_CURRENT_SOURCE_DIR}/Platform/CpuID.cpp"
+		#"${CMAKE_CURRENT_SOURCE_DIR}/Platform/CpuID.cpp"
 		"${CMAKE_CURRENT_SOURCE_DIR}/Platform/Threading.cpp"
 	)
 

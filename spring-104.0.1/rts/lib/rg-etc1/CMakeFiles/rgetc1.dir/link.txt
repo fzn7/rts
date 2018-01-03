@@ -1,0 +1,1 @@
+/home/pi/emsdk-portable/emscripten/1.37.1/emar rc librgetc1.a  @CMakeFiles/rgetc1.dir/objects1.rsp

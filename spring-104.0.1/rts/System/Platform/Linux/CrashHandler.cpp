@@ -2,6 +2,7 @@
 
 #include "System/Platform/CrashHandler.h"
 
+#include <libunwind.h>
 #include <string>
 #include <cstring> // strnlen
 #include <list>
@@ -19,7 +20,7 @@
 #include <SDL_events.h>
 #include <sys/resource.h> //for getrlimits
 #define UNW_LOCAL_ONLY
-#include <libunwind.h>
+//#include <libunwind.h>
 #include <dlfcn.h>
 
 #include "System/FileSystem/FileSystem.h"

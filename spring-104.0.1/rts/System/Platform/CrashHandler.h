@@ -3,6 +3,7 @@
 #ifndef _CRASH_HANDLER_H_
 #define _CRASH_HANDLER_H_
 
+#include <libunwind.h>
 #include <string.h>
 #include "Threading.h"
 #include "System/Log/Level.h"

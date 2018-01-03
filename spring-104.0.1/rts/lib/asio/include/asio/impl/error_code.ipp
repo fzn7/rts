@@ -107,7 +107,9 @@ public:
     return buf;
 #else
     char buf[256] = "";
-    return strerror_r(value, buf, sizeof(buf));
+    //return strerror_r(value, buf, sizeof(buf));
+    strerror_r(value, buf, sizeof(buf));
+    return buf;
 #endif
 #endif // defined(ASIO_WINDOWS)
   }
