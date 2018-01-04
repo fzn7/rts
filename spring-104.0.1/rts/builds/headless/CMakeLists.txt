@@ -48,7 +48,7 @@ INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/slimsig/include)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/streflop)
 INCLUDE_DIRECTORIES(/home/pi/rts/lib/include)
 INCLUDE_DIRECTORIES(/home/pi/rts/lib/libunwind-1.2/include)
-
+INCLUDE_DIRECTORIES(/home/pi/rts/lib/zlib)
 ### Build the executable
 SET(CMAKE_CXX_FLAGS_RELEASE "-Os")
 #ADD_EXECUTABLE(engine-headless ${engineSources} ${ENGINE_ICON})
