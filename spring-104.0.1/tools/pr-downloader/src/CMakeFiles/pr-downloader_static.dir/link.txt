@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpr-downloader_static.a  CMakeFiles/pr-downloader_static.dir/pr-downloader.cpp.o
-/usr/bin/ranlib libpr-downloader_static.a
