@@ -1,12 +1,33 @@
 % for k,v in classes.iteritems():
-interface ${v.fqn}
+    % if v.ignoreFlagPresent() is True:
+        % for comment in v.comments:
+//${comment}
+        % endfor
+/*interface ${v.name.label}
+    % else:
+        % for comment in v.comments:
+//${comment}
+        % endfor
+interface ${v.name.label}
+    % endif
 {
     % for method in v.publicMethods:
-        %if method[3] == False:
-    ${method[0]} ${method[1]}(${method[2]});
-        %else:
-    //${method[0]} ${method[1]}(${method[2]});
-        %endif
+        % if method:
+            % for comment in method.comments:
+	//${comment}
+            % endfor
+			
+			% if method.ignoreFlagPresent() is True:
+	//${method.returnType.kind.label} ${method.name.label}();
+			% else:
+	${method.returnType.kind.label} ${method.name.label}();
+			% endif	
+
+        % endif
     % endfor
+    % if v.ignoreFlagPresent() is True:
+};*/
+    % else:
 };
+    % endif
 % endfor

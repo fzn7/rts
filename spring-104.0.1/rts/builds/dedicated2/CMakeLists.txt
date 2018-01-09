@@ -345,7 +345,7 @@ SET(engineDedicatedSources
 
 
 # Compile dedicated server executable
-ADD_EXECUTABLE(engine-dedicated2
+ADD_LIBRARY(engine-dedicated2 STATIC
 		${ENGINE_SRC_ROOT_DIR}/Map/MapParser.cpp
 		${engineDedicatedSources}
 		${sources_engine_System_Log_sinkConsole}
@@ -355,7 +355,6 @@ ADD_EXECUTABLE(engine-dedicated2
 		${engineSim2}
 		${system_files_for_Sim}
 		${luafiles}
-		main
 	)
 TARGET_LINK_LIBRARIES(engine-dedicated2 ${engineDedicatedLibraries})
 IF    (MINGW)
@@ -366,7 +365,7 @@ IF    (MSVC)
 ENDIF (MSVC)
 Add_Dependencies(engine-dedicated2 generateVersionFiles)
 
-INSTALL(TARGETS engine-dedicated2 DESTINATION ${BINDIR})
+#INSTALL(TARGETS engine-dedicated2 DESTINATION ${BINDIR})
 
 # Only build & install spring-dedicated executable & dependencies
 # use cases:

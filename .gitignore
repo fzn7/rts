@@ -13,3 +13,10 @@ spring-104.0.1/spring-dedicated.js.mem
 spring-104.0.1/spring-dedicated2.js.mem
 spring-104.0.1/spring-dedicated2.js
 spring-104.0.1/rts/lib/streflop/CMakeFiles/streflop.dir/
+*.a
+*.o
+libengine-engine-dedicated2/*.js
+*.swp
+libengine-engine-dedicated2/glue.cpp
+libengine-engine-dedicated2/index.html
+libengine-engine-dedicated2/engineSim.idl
