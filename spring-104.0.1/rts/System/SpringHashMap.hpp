@@ -10,6 +10,7 @@
 #include <iterator>
 #include <utility>
 #include <functional>
+#include <algorithm>
 
 #define DCHECK_EQ_F(a, b)
 #define DCHECK_LT_F(a, b)

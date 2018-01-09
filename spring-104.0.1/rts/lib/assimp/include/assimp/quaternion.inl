@@ -50,7 +50,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "quaternion.h"
 
 #include "lib/streflop/streflop_cond.h"
-
+#include <cmath>
 // ---------------------------------------------------------------------------
 template<typename TReal>
 bool aiQuaterniont<TReal>::operator== (const aiQuaterniont& o) const

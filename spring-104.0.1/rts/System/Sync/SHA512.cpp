@@ -2,6 +2,7 @@
 
 #include <cassert>
 #include <cstring>
+#include <stdio.h>
 
 #include "SHA512.hpp"
 

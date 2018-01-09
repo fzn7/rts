@@ -231,11 +231,11 @@ bool DownloadQueue::Remove(int id)
 		}
 
 		if (it == queue.begin()) {
-			SetAbortDownloads(true);
+			//SetAbortDownloads(true);
 			lck.unlock();
 			Join();
 			lck.lock();
-			SetAbortDownloads(false);
+			//SetAbortDownloads(false);
 			thread = new spring::thread(std::bind(&DownloadQueue::Pump, this));
 		} else {
 			queue.erase(it);
@@ -278,7 +278,7 @@ void LuaVFSDownload::Free(bool stopDownloads)
 {
 	eventHandler.RemoveClient(luaVFSDownload);
 	if (stopDownloads) {
-		SetAbortDownloads(true);
+		//SetAbortDownloads(true);
 		downloadQueue.Join();
 	}
 }
