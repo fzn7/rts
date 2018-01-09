@@ -31,7 +31,7 @@ CLuaSocketRestrictions::CLuaSocketRestrictions()
 {
 #ifndef TEST
 	addRules(TCP_CONNECT, configHandler->GetString("TCPAllowConnect"));
-	addRules(TCP_LISTEN,  configHandler->GetString("TCPAllowListen"));
+	addRules(TCP_L1STEN,  configHandler->GetString("TCPAllowListen"));
 	addRules(UDP_CONNECT, configHandler->GetString("UDPAllowConnect"));
 	addRules(UDP_LISTEN,  configHandler->GetString("UDPAllowListen"));
 #endif
@@ -150,8 +150,8 @@ const char* CLuaSocketRestrictions::ruleToStr(RestrictType type) {
 	switch(type) {
 		case TCP_CONNECT:
 			return "TCP_CONNECT";
-		case TCP_LISTEN:
-			return "TCP_LISTEN ";
+		case TCP_L1STEN:
+			return "TCP_L1STEN ";
 		case UDP_LISTEN:
 			return "UDP_LISTEN ";
 		case UDP_CONNECT:

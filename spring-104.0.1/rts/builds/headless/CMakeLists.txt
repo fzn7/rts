@@ -45,10 +45,14 @@ LIST(APPEND engineHeadlessLibraries pr-downloader_static)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/assimp/include)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/asio/include)
 INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/slimsig/include)
-
-
+INCLUDE_DIRECTORIES(${ENGINE_SRC_ROOT_DIR}/lib/streflop)
+INCLUDE_DIRECTORIES(/home/pi/rts/lib/include)
+INCLUDE_DIRECTORIES(/home/pi/rts/lib/libunwind-1.2/include)
+INCLUDE_DIRECTORIES(/home/pi/rts/lib/zlib)
 ### Build the executable
-ADD_EXECUTABLE(engine-headless ${engineSources} ${ENGINE_ICON})
+SET(CMAKE_CXX_FLAGS_RELEASE "-Os")
+#ADD_EXECUTABLE(engine-headless ${engineSources} ${ENGINE_ICON})
+ADD_LIBRARY(engine-headless STATIC ${engineSources} ${ENGINE_ICON})
 TARGET_LINK_LIBRARIES(engine-headless no-sound ${engineHeadlessLibraries} no-sound)
 
 IF    (MINGW)
@@ -58,11 +62,13 @@ ENDIF (MINGW)
 
 
 ### Install the executable
+SET(CMAKE_CXX_FLAGS_RELEASE "-Oz")
 INSTALL(TARGETS engine-headless DESTINATION ${BINDIR})
 
 # Only build & install spring-headless executable & dependencies
 # use cases:
 # * make spring-headless
 # * make install-spring-headless
+SET(CMAKE_CXX_FLAGS_RELEASE "-Oz")
 CreateEngineBuildAndInstallTarget(headless)
 

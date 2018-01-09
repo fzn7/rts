@@ -235,7 +235,7 @@ bool isAllowed(p_socket ps, const char *address, unsigned short port, bool conne
 	if (connect)
             type = CLuaSocketRestrictions::TCP_CONNECT;
         else
-            type = CLuaSocketRestrictions::TCP_LISTEN;
+            type = CLuaSocketRestrictions::TCP_L1STEN;
     else //SOCK_DGRAM
         if (connect)
             type = CLuaSocketRestrictions::UDP_CONNECT;
