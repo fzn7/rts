@@ -1,0 +1,1 @@
+/usr/bin/gcc   -rdynamic CMakeFiles/minigzip.dir/test/minigzip.o  -o ../minigzip -Wl,-rpath,/home/pi/rts/spring-104.0.1/tools/DemoTool ../libz.so.1.2.8 
