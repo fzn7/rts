@@ -12,6 +12,7 @@ class UmlClass:
         self.fqn = None
         self.node = None
         self.parents = []
+        self.constructors = []
         self.privateFields = []
         self.privateMethods = []
         self.publicFields = []
@@ -28,6 +29,10 @@ class UmlClass:
     def toJSON(self):
         return jsonpickle.encode(self, unpicklable=False)
 
+class UmlConstructor:
+    def __init__(self):
+        self.params = []
+        self.node = None
 
 class UmlMethod:
     def __init__(self):
@@ -64,7 +69,12 @@ class WebIdlGenerator:
         self.converter = CppToIdlTypeConverter()
 
     def addClass(self, aClass):
-        self.classes[aClass.fqn] = aClass
+        if self.classes.has_key(aClass.fqn):
+            if len(aClass.publicMethods) > len(self.classes[aClass.fqn].publicMethods):
+                self.classes[aClass.fqn] = aClass
+        else:
+            self.classes[aClass.fqn] = aClass
+
 
     def _genFields(self, accessPrefix, fields):
         ret = "".join([(accessPrefix + fieldName + ": " + fieldType + "\l") for fieldName, fieldType in fields])
@@ -169,6 +179,9 @@ class WebIdlGenerator:
         # for k in self.classes:
         #    print self.classes.get(k).fqn
 
+        print "--- public interfaces discovered ---"
+        print ", ".join(map(lambda i: i[1].fqn, self.classes.items()))
+
         interfaces = list(filter(lambda item: len(item[1].publicMethods) > 0, self.classes.items()))
 
         print "--- public interfaces to convert ---"
@@ -183,7 +196,7 @@ class WebIdlGenerator:
             classes=idl_classes,
             module_name='CodegenExample')
 
-        return rendered
+        return rendered, idl_classes
 
     def tmp(self, item):
         print item

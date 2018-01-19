@@ -45,6 +45,7 @@ class IdlType(IdlBaseItem):
             TypeKind.INT: lambda node: self.parsePrimitive(node),
             TypeKind.UINT: lambda node: self.parsePrimitive(node),
             TypeKind.LONG: lambda node: self.parsePrimitive(node),
+            TypeKind.DOUBLE: lambda node: self.parsePrimitive(node),
             TypeKind.LVALUEREFERENCE: lambda node: self.parseComplex(node),
             TypeKind.RVALUEREFERENCE: lambda node: self.parseComplex(node),
             TypeKind.POINTER: lambda node: self.parseComplex(node),
@@ -54,6 +55,15 @@ class IdlType(IdlBaseItem):
             TypeKind.UNEXPOSED: lambda node: self.parseComplex(node),
             TypeKind.UCHAR: lambda node: self.parseComplex(node),
             TypeKind.CONSTANTARRAY: lambda node: self.parseComplex(node),
+            TypeKind.CHAR_S: lambda node: self.parseComplex(node),
+            TypeKind.ULONG: lambda node: self.parseComplex(node),
+            TypeKind.LONGDOUBLE: lambda node: self.parseComplex(node),
+            TypeKind.SCHAR: lambda node: self.parseComplex(node),
+            TypeKind.WCHAR: lambda node: self.parseComplex(node),
+            TypeKind.USHORT: lambda node: self.parseComplex(node),
+            TypeKind.ULONGLONG: lambda node: self.parseComplex(node),
+            TypeKind.LONGLONG: lambda node: self.parseComplex(node),
+            TypeKind.MEMBERPOINTER: lambda node: self.parseComplex(node),
         }[type.kind](type)
 
         if raw_kind is not None:
@@ -64,6 +74,10 @@ class IdlType(IdlBaseItem):
 
             if type.get_declaration().location:
                 self.comments.append("Source: {}".format(type.get_declaration().location))
+        else:
+            self.kind = IdlLabel("__Unknown_type")
+            self.comments.append("Type: name: '{}' kind: {} is_const: {} kind: {}"
+                                 .format(" ".join(type_arr), type.kind, self.is_const, self.kind.label))
 
         self.ignoreFlag = self.validate()
 

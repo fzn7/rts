@@ -1,4 +1,8 @@
 {
-  "CTorpedoProjectile": {},
-  "IPathFinder": {}
+  "SmoothHeightMesh": {},
+  "IPathFinder": {},
+  "CGameSetup": {},
+  "CTeamHandler": {},
+  "CPreGame": {},
+  "GlobalConfig": {}
 }
