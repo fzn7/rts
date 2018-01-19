@@ -20,3 +20,4 @@ libengine-engine-dedicated2/*.js
 libengine-engine-dedicated2/glue.cpp
 libengine-engine-dedicated2/index.html
 libengine-engine-dedicated2/engineSim.idl
+bindings/python-bindings-generator/target/

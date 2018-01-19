@@ -19,4 +19,3 @@ class IdlFunctionArgument(IdlBaseItem):
         self.label = IdlLabel(uml_function_argument.spelling)
         self.type = IdlType(uml_function_argument.type)
 
-

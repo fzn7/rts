@@ -11,6 +11,8 @@ class IdlInstance(IdlBaseItem):
         self.name = None
         self.sourceFile = None
         self.parentEntity = None
+        self.constructors = []
+        self.defaultConstructor = None
         self.publicMethods = []
 
         self.ignoreFlag = self.validate(uml_instance)

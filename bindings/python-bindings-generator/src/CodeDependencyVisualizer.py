@@ -8,6 +8,7 @@ import argparse
 import fnmatch
 import json
 import jsonpickle
+import re
 
 from generator import *
 from converter.util import CacheUtil
@@ -31,6 +32,13 @@ def findFilesInDir(rootDir, patterns):
             for filename in fnmatch.filter(files, p):
                 foundFiles.append(os.path.join(root, filename))
     return foundFiles
+
+
+def parseClassConstructor(cursor):
+    constructor = UmlConstructor()
+    constructor.name = cursor.spelling or cursor.displayname
+    constructor.node = cursor
+    return constructor
 
 
 def processClassField(cursor):
@@ -75,7 +83,6 @@ def processClassMethod(cursor):
 
         return returnType, cursor.spelling, method
 
-
 def processClassMethodParam(method, cursor):
     if cursor.kind == clang.cindex.CursorKind.PARM_DECL:
         text = cursor.spelling or cursor.displayname
@@ -105,6 +112,8 @@ def processType(method, cursor, type):
 def processClassMemberDeclaration(umlClass, cursor):
     """ Processes a cursor corresponding to a class member declaration and
     appends the extracted information to the given umlClass """
+    if cursor.kind == clang.cindex.CursorKind.CONSTRUCTOR:
+        umlClass.constructors.append(parseClassConstructor(cursor))
     if cursor.kind == clang.cindex.CursorKind.CXX_BASE_SPECIFIER:
         for baseClass in cursor.get_children():
             if baseClass.kind == clang.cindex.CursorKind.TEMPLATE_REF:
@@ -207,6 +216,9 @@ if __name__ == "__main__":
     parser.add_argument('-d', required=True, help="directory with source files to parse (searches recusively)")
     parser.add_argument('-o', '--outFile', default='engineSim.idl',
                         help="output file name / name of generated dot file")
+    parser.add_argument('-gw', '--glueWrapperFile', default='my_glue_wrapper.cpp',
+                        help="name of the glue wrapper file")
+    parser.add_argument('-root', help="root path for all source manipulations")
     parser.add_argument('-u', '--withUnusedHeaders', help="parse unused header files (slow)")
     parser.add_argument('-a', '--associations', action="store_true", help="draw class member assiciations")
     parser.add_argument('-i', '--inheritances', action="store_true", help="draw class inheritances")
@@ -227,8 +239,14 @@ if __name__ == "__main__":
 
     filesToParsePatterns = ['*.h']
 
-    filesToParse = findFilesInDir(args['d'], filesToParsePatterns)
-    subdirectories = [x[0] for x in os.walk(args['d'])]
+    filesToParse = []
+    for i in args['d'].split(","):
+        filesToParse += findFilesInDir(i, filesToParsePatterns)
+
+    #pat = re.compile("GameSetup")
+    #filesToParse = filter(lambda file: re.search(pat, file), filesToParse)
+
+    # subdirectories = [x[0] for x in os.walk(args['d'])]
 
     loggingFormat = "%(levelname)s - %(module)s: %(message)s"
     logging.basicConfig(format=loggingFormat, level=logging.INFO)
@@ -248,10 +266,23 @@ if __name__ == "__main__":
 
     jsonpickle.set_encoder_options('simplejson', indent=4)
 
+    generator_result = webidlGenerator.generate()
+
     with open(webidlFileName, 'w') as webidlFile:
-        webidlFile.write(webidlGenerator.generate())
+        webidlFile.write(generator_result[0])
         webidlFile.write("/* --- Type cache ---\n{}\n */"
                          .format(json.dumps(json.loads(jsonpickle.encode(CacheUtil.type_cache)), indent=4)))
 
         webidlFile.write("/* --- Source files ---\n{}\n */"
                          .format(json.dumps(json.loads(jsonpickle.encode(CacheUtil.source_files)), indent=4)))
+
+    glueWrapperFileName = args['glueWrapperFile']
+    logging.info("generating glueWrapperFile " + glueWrapperFileName)
+
+    with open(glueWrapperFileName, 'w') as glueWrapperFile:
+        tpl = Template(filename='bind_glue_wrapper.mako')
+        rendered = tpl.render(
+            sources=CacheUtil.get_wrapper_includes_list(os.path.abspath(args['root']), generator_result[1])
+        )
+
+        glueWrapperFile.write(rendered)

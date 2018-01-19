@@ -1,8 +1,8 @@
 from IdlBaseItem import IdlBaseItem
 import re
 
-pattern = re.compile("::")
-
+namespace_pattern = re.compile("::")
+reserved_pattern = re.compile("__")
 
 class IdlLabel(IdlBaseItem):
     def __init__(self, label=None):
@@ -12,8 +12,10 @@ class IdlLabel(IdlBaseItem):
         self.parseLabel(label)
 
     def parseLabel(self, label):
-        if pattern.search(label):
-            self.label = label.replace("::", "_")
+        if namespace_pattern.search(label):
+            #self.label = label.replace("::", "_")
+            self.ignoreFlag = True
+        if reserved_pattern.match(label):
             self.ignoreFlag = True
         else:
             self.label = label
