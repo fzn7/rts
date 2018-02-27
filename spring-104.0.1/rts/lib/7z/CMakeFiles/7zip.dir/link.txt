@@ -1,1 +1,0 @@
-/home/pi/emsdk-portable/emscripten/1.37.1/emar rc lib7zip.a  @CMakeFiles/7zip.dir/objects1.rsp

@@ -39,6 +39,7 @@ void WriteTeamstatHistory(CDemoReader& reader, unsigned team, const std::string&
 
 int main (int argc, char* argv[])
 {
+	std::cout << "COMPILE" << std::endl;
 	std::string filename;
 
 	gflags::SetUsageMessage(std::string("Usage: ") + argv[0] + " [options] path_to_demo.sdfz");
